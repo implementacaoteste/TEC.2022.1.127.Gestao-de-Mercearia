@@ -67,6 +67,7 @@ GO
 CREATE TABLE [dbo].[Cliente](
 	[Id] [int] NOT NULL,
 	[Nome] [varchar](150) NULL,
+	[Cpf] [varchar](20) NULL,
 	[Endereço] [varchar](150) NULL,
 	[Telefone] [varchar](15) NULL,
  CONSTRAINT [PK_Cliente] PRIMARY KEY CLUSTERED 
@@ -80,6 +81,9 @@ CREATE TABLE [dbo].[Estoque](
 	[Id] [int] NOT NULL,
 	[DataDeEntrada] [date] NULL,
 	[DataDeSaida] [date] NULL,
+	[EstoqueMinimo] [INT] NULL,
+	[EstoqueMaximo] [INT] NULL,
+	/* FK PRODUTO*/
  CONSTRAINT [PK_Estoque] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -106,10 +110,13 @@ GO
 CREATE TABLE [dbo].[Produto](
 	[Id] [int] NOT NULL,
 	[Nome] [varchar](150) NULL,
-	[Descrição] [varchar](50) NULL,
+	[Descricao] [varchar](50) NULL,
 	[Categoria] [varchar](50) NULL,
-	[Preço] [float] NULL,
+	[CodigoDeBarra] [varchar](50) NULL,
+	[Marca] [varchar](50) NULL,
+	[Preco] [float] NULL,
 	[QuantidadeEmEstoque] [int] NULL,
+	/*FK FORNECEDOR*/
  CONSTRAINT [PK_Produto] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -139,7 +146,7 @@ CREATE TABLE [dbo].[Venda](
 	[IdFuncionario] [int] NOT NULL,
 	[IdCliente] [int] NOT NULL,
 	[IdProduto] [int] NOT NULL,
-	[PreçoVenda] [float] NULL,
+	[PrecoVenda] [float] NULL,
 	[IdFormaPagamento] [int] NULL,
 	[DataVenda] [date] NULL,
  CONSTRAINT [PK_Venda] PRIMARY KEY CLUSTERED 
