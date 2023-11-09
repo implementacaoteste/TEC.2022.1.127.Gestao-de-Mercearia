@@ -14,14 +14,16 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Cliente(Nome, CPF, Endereco, Fone) 
-                                    VALUES(@Nome, @CPF, @Endereco, @Fone)";
+
+                cmd.CommandText = @"INSERT INTO Cliente(Nome, CPF, Endereco, Fone, Email) 
+                                    VALUES(@Nome, @CPF, @Endereco, @Fone, @Email)";
 
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Nome", _cliente.Nome);
                 cmd.Parameters.AddWithValue("@CPF", _cliente.CPF);
                 cmd.Parameters.AddWithValue("@Endereco", _cliente.endereco);
+                cmd.Parameters.AddWithValue("@Email", _cliente.Email);
                 cmd.Parameters.AddWithValue("@Fone", _cliente.Fone);
 
 
@@ -48,7 +50,9 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
+
                 cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, Fone FROM Cliente";
+
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cn.Open();
@@ -87,7 +91,9 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
+
                 cmd.CommandText = @"SELECT Id, Nome, CPF, Endereco, Email, Fone FROM Cliente WHERE Nome LIKE @Nome";
+
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Nome", "%" + _nome + "%");
 
