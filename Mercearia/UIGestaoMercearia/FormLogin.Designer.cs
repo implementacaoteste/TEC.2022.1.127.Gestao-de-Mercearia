@@ -62,7 +62,7 @@
             this.buttonEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEntrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonEntrar.ForeColor = System.Drawing.Color.White;
-            this.buttonEntrar.Location = new System.Drawing.Point(12, 220);
+            this.buttonEntrar.Location = new System.Drawing.Point(12, 215);
             this.buttonEntrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.Size = new System.Drawing.Size(366, 39);
@@ -108,7 +108,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(390, 292);
+            this.ClientSize = new System.Drawing.Size(390, 284);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
