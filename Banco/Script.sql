@@ -157,6 +157,7 @@ CREATE TABLE [dbo].[Usuario](
 	[Nome] [varchar](150) NULL,
 	[NomeUsuario] [varchar](50) NULL,
 	[Email] [varchar](150) NULL,
+	[Endereco] [varchar](150) NULL,
 	[CPF] [varchar](15) NULL,
 	[Ativo] [bit] NULL,
 	[Senha] [varchar](50) NULL,
