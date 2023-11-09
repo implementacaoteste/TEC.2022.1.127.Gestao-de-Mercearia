@@ -112,7 +112,51 @@ namespace DAL
                 cn.Close();
             }
         }
+        public List<Produto> BuscarTodos()
+        {
+            List<Produto> produtos = new List<Produto>();
+            Produto produto = new Produto();
 
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = "SELECT Id, Nome, Descricao, Categoria, CodigoDeBarra, Marca, Preco, QuantidadeEmEstoque, IdFornecedor FROM Produto";
+                cmd.CommandType = System.Data.CommandType.Text;
 
+                cn.Open();
+
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    while (rd.Read())
+                    {
+                        produto = new Produto();
+                        produto.Id = Convert.ToInt32(rd["Id"]);
+                        produto.Nome = rd["Nome"].ToString();
+                        produto.Descricao = rd["Descricao"].ToString();
+                        produto.Categoria = rd["Categoria"].ToString();
+                        produto.CodigoDeBarra = rd["CodigoDeBarra"].ToString();
+                        produto.Marca = rd["Marca"].ToString();
+                        produto.Preco = Convert.ToDouble(rd["Preco"]);
+                        produto.QuantidadeEmEstoque = Convert.ToInt32(rd["QuantidadeEmEstoque"]);
+                        produto.IdFornecedor = Convert.ToInt32(rd["IdFornecedor"]);
+                        produtos.Add(produto);
+
+                    }
+                    return produtos;
+                }
+
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar todos os produtos");
+
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }
