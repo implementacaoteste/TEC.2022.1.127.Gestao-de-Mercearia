@@ -14,15 +14,18 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Cliente(Nome, CPF, Email, Fone) 
-                                    VALUES(@Nome, @CPF, @Email, @Fone)";
+
+                cmd.CommandText = @"INSERT INTO Cliente(Nome, CPF, Endereco, Fone, Email) 
+                                    VALUES(@Nome, @CPF, @Endereco, @Fone, @Email)";
 
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Nome", _cliente.Nome);
                 cmd.Parameters.AddWithValue("@CPF", _cliente.CPF);
+                cmd.Parameters.AddWithValue("@Endereco", _cliente.endereco);
                 cmd.Parameters.AddWithValue("@Email", _cliente.Email);
                 cmd.Parameters.AddWithValue("@Fone", _cliente.Fone);
+
 
                 cmd.Connection = cn;
                 cn.Open();
@@ -47,7 +50,9 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Fone FROM Cliente";
+
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, Fone FROM Cliente";
+
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cn.Open();
@@ -59,7 +64,8 @@ namespace DAL
                         cliente.Id = (int)rd["Id"];
                         cliente.Nome = rd["Nome"].ToString();
                         cliente.CPF = rd["CPF"].ToString();
-                        cliente.Email = rd["email"].ToString();
+                        cliente.Email = rd["Email"].ToString();
+                        cliente.endereco = rd["Endereco"].ToString();
                         cliente.Fone = rd["Fone"].ToString();
 
                         clienteList.Add(cliente);
@@ -85,7 +91,9 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Fone FROM Cliente WHERE Nome LIKE @Nome";
+
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Endereco, Email, Fone FROM Cliente WHERE Nome LIKE @Nome";
+
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Nome", "%" + _nome + "%");
 
@@ -98,7 +106,8 @@ namespace DAL
                         cliente.Id = (int)rd["Id"];
                         cliente.Nome = rd["Nome"].ToString();
                         cliente.CPF = rd["CPF"].ToString();
-                        cliente.Email = rd["email"].ToString();
+                        cliente.endereco = rd["Endereco"].ToString();
+                        cliente.Email = rd["Email"].ToString();
                         cliente.Fone = rd["Fone"].ToString();
 
                         clienteList.Add(cliente);
@@ -123,7 +132,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Fone FROM Cliente WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, Fone FROM Cliente WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
 
@@ -135,7 +144,8 @@ namespace DAL
                         cliente.Id = (int)rd["Id"];
                         cliente.Nome = rd["Nome"].ToString();
                         cliente.CPF = rd["CPF"].ToString();
-                        cliente.Email = rd["email"].ToString();
+                        cliente.Email = rd["Email"].ToString();
+                        cliente.endereco = rd["Endereco"].ToString();
                         cliente.Fone = rd["Fone"].ToString();
                     }
                 }
@@ -158,7 +168,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Fone FROM Cliente WHERE CPF = @CPF";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, Fone FROM Cliente WHERE CPF = @CPF";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@CPF", _CPF);
 
@@ -170,7 +180,8 @@ namespace DAL
                         cliente.Id = (int)rd["Id"];
                         cliente.Nome = rd["Nome"].ToString();
                         cliente.CPF = rd["CPF"].ToString();
-                        cliente.Email = rd["email"].ToString();
+                        cliente.Email = rd["Email"].ToString();
+                        cliente.endereco = rd["Endereco"].ToString();
                         cliente.Fone = rd["Fone"].ToString();
                     }
                 }
@@ -195,7 +206,8 @@ namespace DAL
                 cmd.CommandText = @"UPDATE Cliente SET 
                                         Nome = @Nome, 
                                         CPF = @CPF, 
-                                        Email = @Email, 
+                                       Endereco = @Endereco
+                                       Email = @Email
                                         Fone = @Fone 
                                     WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -204,6 +216,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@Nome", _cliente.Nome);
                 cmd.Parameters.AddWithValue("@CPF", _cliente.CPF);
                 cmd.Parameters.AddWithValue("@Email", _cliente.Email);
+                cmd.Parameters.AddWithValue("@Endereco", _cliente.endereco);
                 cmd.Parameters.AddWithValue("@Fone", _cliente.Fone);
 
                 cmd.Connection = cn;
