@@ -198,6 +198,48 @@ namespace DAL
             {
                 cn.Close();
             }
+
+        }
+        public Produto BuscarPorId(int _id)
+        {
+            Produto produto = new Produto();
+
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = @"SELECT Id, Nome, Descricao, Categoria, CodigoDeBarra, Marca, Preco, QuantidadeEmEstoque, IdFornecedor FROM Produto WHERE Id = @Id";
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@Id", _id);
+
+                cn.Open();
+
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    produto = new Produto();
+                    produto.Id = Convert.ToInt32(rd["Id"]);
+                    produto.Nome = rd["Nome"].ToString();
+                    produto.Descricao = rd["Descricao"].ToString();
+                    produto.Categoria = rd["Categoria"].ToString();
+                    produto.CodigoDeBarra = rd["CodigoDeBarra"].ToString();
+                    produto.Marca = rd["Marca"].ToString();
+                    produto.Preco = Convert.ToDouble(rd["Preco"]);
+                    produto.QuantidadeEmEstoque = Convert.ToInt32(rd["QuantidadeEmEstoque"]);
+                    produto.IdFornecedor = Convert.ToInt32(rd["IdFornecedor"]);
+                    
+                }
+                return produto;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar por id no banco de dados",ex);
+            }
+            finally
+            {
+                cn.Close();
+            }
         }
     }
 }
