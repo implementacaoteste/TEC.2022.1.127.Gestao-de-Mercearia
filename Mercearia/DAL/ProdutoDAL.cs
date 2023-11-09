@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    internal class ProdutoDAL
+    public class ProdutoDAL
     {
         public void Inserir(Produto _produto)
         {
