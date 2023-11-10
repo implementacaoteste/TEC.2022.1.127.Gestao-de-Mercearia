@@ -128,8 +128,8 @@ namespace DAL
                         funcionario.Nome = rd["Nome"].ToString();
                         funcionario.Fone = rd["Fone"].ToString();
                         funcionario.Ativo = Convert.ToBoolean(rd["Ativo"]);
-                        funcionario.Profissao = rd["CodigoDeBarra"].ToString();
-                        funcionario.Salario = (double)rd["Marca"];
+                        funcionario.Profissao = rd["Profissao"].ToString();
+                        funcionario.Salario = (double)rd["Salario"];
 
                         funcionarios.Add(funcionario);
 
@@ -149,6 +149,45 @@ namespace DAL
             }
         }
 
+        public List<Funcionario> BuscarPorNome(string _nome)
+        {
+            List<Funcionario> funcionarios = new List<Funcionario>();
+            Funcionario funcionario = new Funcionario();
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = "SELECT Id, Nome, Fone, Ativo, Profissao, Salario";
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Parameters.AddWithValue("@Nome", "%" + _nome + "%");
+                cn.Open();
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    while (rd.Read())
+                    {
+                        funcionario = new Funcionario();
+                        funcionario.Id = Convert.ToInt32(rd["Id"]);
+                        funcionario.Nome = rd["Nome"].ToString();
+                        funcionario.Fone = rd["Fone"].ToString();
+                        funcionario.Ativo = Convert.ToBoolean(rd["Ativo"]);
+                        funcionario.Profissao = rd["Profissao"].ToString();
+                        funcionario.Salario = (double)rd["Salario"];
+                        funcionarios.Add(funcionario);
+                    }
+                }
+                return funcionarios;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar por nome no banco de dados", ex);
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+        }
 
 
     }
