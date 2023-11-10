@@ -158,7 +158,7 @@ namespace DAL
             {
                 SqlCommand cmd = cn.CreateCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Id, Nome, Fone, Ativo, Profissao, Salario";
+                cmd.CommandText = "SELECT Id, Nome, Fone, Ativo, Profissao, Salario FROM Funcionario WHERE Nome LIKE @Nome";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Nome", "%" + _nome + "%");
                 cn.Open();
