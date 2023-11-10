@@ -74,9 +74,8 @@ CREATE TABLE [dbo].[Funcionario](
 	[Id] [int] NOT NULL,
 	[Nome] [varchar](150) NULL,
 	[Telefone] [varchar](15) NULL,
-	[Login] [varchar](150) NULL,
-	[Senha] [varchar](50) NULL,
 	[Ativo] [bit] NULL,
+	[Profissao] [varchar] (150) NULL,
 	[Salario] [float] NULL,
  CONSTRAINT [PK_Funcionario] PRIMARY KEY CLUSTERED 
 (
