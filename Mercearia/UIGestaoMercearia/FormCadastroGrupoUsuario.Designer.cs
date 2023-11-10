@@ -43,19 +43,19 @@
             // nomeGrupoLabel
             // 
             nomeGrupoLabel.AutoSize = true;
-            nomeGrupoLabel.Location = new System.Drawing.Point(12, 46);
+            nomeGrupoLabel.Location = new System.Drawing.Point(12, 58);
             nomeGrupoLabel.Name = "nomeGrupoLabel";
-            nomeGrupoLabel.Size = new System.Drawing.Size(101, 16);
+            nomeGrupoLabel.Size = new System.Drawing.Size(116, 20);
             nomeGrupoLabel.TabIndex = 1;
             nomeGrupoLabel.Text = "Nome do grupo";
             // 
             // label1
             // 
             label1.Dock = System.Windows.Forms.DockStyle.Top;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label1.Location = new System.Drawing.Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(577, 46);
+            label1.Size = new System.Drawing.Size(577, 58);
             label1.TabIndex = 0;
             label1.Text = "Cadastro de grupo de usuário";
             label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -63,9 +63,10 @@
             // nomeGrupoTextBox
             // 
             this.nomeGrupoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.grupoUsuarioBindingSource, "NomeGrupo", true));
-            this.nomeGrupoTextBox.Location = new System.Drawing.Point(12, 65);
+            this.nomeGrupoTextBox.Location = new System.Drawing.Point(12, 81);
+            this.nomeGrupoTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nomeGrupoTextBox.Name = "nomeGrupoTextBox";
-            this.nomeGrupoTextBox.Size = new System.Drawing.Size(553, 22);
+            this.nomeGrupoTextBox.Size = new System.Drawing.Size(553, 27);
             this.nomeGrupoTextBox.TabIndex = 2;
             // 
             // grupoUsuarioBindingSource
@@ -74,9 +75,10 @@
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(409, 265);
+            this.buttonSalvar.Location = new System.Drawing.Point(409, 331);
+            this.buttonSalvar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalvar.Size = new System.Drawing.Size(75, 29);
             this.buttonSalvar.TabIndex = 3;
             this.buttonSalvar.Text = "&Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
@@ -85,18 +87,19 @@
             // buttonCancelar
             // 
             this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancelar.Location = new System.Drawing.Point(490, 265);
+            this.buttonCancelar.Location = new System.Drawing.Point(490, 331);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancelar.Size = new System.Drawing.Size(75, 29);
             this.buttonCancelar.TabIndex = 4;
             this.buttonCancelar.Text = "&Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             // 
             // FormCadastroGrupoUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(577, 300);
+            this.ClientSize = new System.Drawing.Size(577, 375);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(label1);
@@ -104,6 +107,7 @@
             this.Controls.Add(this.nomeGrupoTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCadastroGrupoUsuario";
