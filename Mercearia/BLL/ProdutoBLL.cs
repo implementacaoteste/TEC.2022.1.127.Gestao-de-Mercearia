@@ -26,6 +26,10 @@ namespace BLL
         {
             return new ProdutoDAL().BuscarPorId(_id);
         }
+        public Produto BuscarPorCodigoDeBarra(string _codigodebarra)
+        {
+            return new ProdutoDAL().BuscarPorCodigoDeBarra(_codigodebarra);
+        }
         public void Alterar(Produto _produto)
         {
             new ProdutoDAL().Alterar(_produto);
@@ -35,7 +39,7 @@ namespace BLL
             new ProdutoDAL().Excluir(_id);
         }
     
-
+        
 
     
     }

@@ -16,5 +16,15 @@ namespace UIGestaoMercearia
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormInicializarVenda_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
