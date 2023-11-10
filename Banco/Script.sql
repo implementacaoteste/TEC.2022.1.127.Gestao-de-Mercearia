@@ -204,7 +204,7 @@ CREATE TABLE [dbo].[Venda](
 	[IdProduto] [int] NOT NULL,
 	[PrecoVenda] [float] NULL,
 	[IdFormaPagamento] [int] NULL,
-	[DataVenda] [datetime] NULL,
+	[DataVenda] [date] NULL,
  CONSTRAINT [PK_Venda] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
