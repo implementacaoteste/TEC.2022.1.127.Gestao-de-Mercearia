@@ -74,5 +74,30 @@ namespace DAL
                 cn.Close();
             }
         }
+        public void Excluir(int _id)
+        {
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandText = @"DELETE FROM Venda WHERE Id = @Id";
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@Id", _id);
+
+                cmd.Connection = cn;
+                cn.Open();
+
+                cmd.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar excluir uma venda no banco de dados");
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }
