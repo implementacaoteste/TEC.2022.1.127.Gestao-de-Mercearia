@@ -99,5 +99,47 @@ namespace DAL
                 cn.Close();
             }
         }
+        public List<Venda> BuscarTodos()
+        {
+            List<Venda> vendas = new List<Venda>();
+            Venda venda = new Venda();
+
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = "SELECT Id, IdFuncionario, IdCliente, IdProduto, PrecoVenda, IdFormaPagamento, DataVenda FROM Venda";
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cn.Open();
+
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    while (rd.Read())
+                    {
+                        venda = new Venda();
+                        venda.Id = Convert.ToInt32(rd["Id"]);
+                        venda.IdFuncionario = Convert.ToInt32(rd["IdFuncionario"]);
+                        venda.IdCliente = Convert.ToInt32(rd["IdCliente"]);
+                        venda.IdProduto = Convert.ToInt32(rd["IdProduto"]);
+                        venda.PrecoVenda = Convert.ToDouble(rd["PrecoVenda"]);
+                        venda.IdFormaPagamento = Convert.ToInt32(rd["IdFormaPagamento"]);
+                        venda.DataVenda = Convert.ToDateTime(rd["DataVenda"]);
+                        vendas.Add(venda);
+                    }
+                    return vendas;
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar por todas as vendas no banco de dados.", ex);
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+        }
     }
 }
