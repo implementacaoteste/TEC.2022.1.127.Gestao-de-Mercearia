@@ -144,5 +144,10 @@ namespace UIGestaoMercearia
             if (e.KeyCode == Keys.Enter)
                 buttonBuscar_Click(null, null);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

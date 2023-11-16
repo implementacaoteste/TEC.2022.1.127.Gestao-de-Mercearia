@@ -28,66 +28,114 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gruposDeUsuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            System.Windows.Forms.Label label1;
+            this.buttonUsuario = new System.Windows.Forms.Button();
+            this.buttonGrupoUsuario = new System.Windows.Forms.Button();
+            this.buttonCliente = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelNomeEmpresa = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.label2 = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // label1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(856, 28);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            label1.Font = new System.Drawing.Font("Swis721 Blk BT", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            label1.Location = new System.Drawing.Point(322, 9);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(285, 40);
+            label1.TabIndex = 1;
+            label1.Text = "CAIXA ABERTO";
+            label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // cadastroToolStripMenuItem
+            // buttonUsuario
             // 
-            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usuáriosToolStripMenuItem,
-            this.gruposDeUsuáriosToolStripMenuItem,
-            this.clientesToolStripMenuItem});
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
-            this.cadastroToolStripMenuItem.Text = "Cadastro";
+            this.buttonUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonUsuario.Location = new System.Drawing.Point(12, 36);
+            this.buttonUsuario.Name = "buttonUsuario";
+            this.buttonUsuario.Size = new System.Drawing.Size(241, 29);
+            this.buttonUsuario.TabIndex = 2;
+            this.buttonUsuario.Text = "Usuários";
+            this.buttonUsuario.UseVisualStyleBackColor = false;
+            this.buttonUsuario.Click += new System.EventHandler(this.buttonUsuario_Click);
             // 
-            // usuáriosToolStripMenuItem
+            // buttonGrupoUsuario
             // 
-            this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
-            this.usuáriosToolStripMenuItem.Text = "Usuários";
-            this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
+            this.buttonGrupoUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonGrupoUsuario.Location = new System.Drawing.Point(12, 71);
+            this.buttonGrupoUsuario.Name = "buttonGrupoUsuario";
+            this.buttonGrupoUsuario.Size = new System.Drawing.Size(241, 29);
+            this.buttonGrupoUsuario.TabIndex = 3;
+            this.buttonGrupoUsuario.Text = "Grupos de usuários";
+            this.buttonGrupoUsuario.UseVisualStyleBackColor = false;
+            this.buttonGrupoUsuario.Click += new System.EventHandler(this.buttonGrupoUsuario_Click);
             // 
-            // gruposDeUsuáriosToolStripMenuItem
+            // buttonCliente
             // 
-            this.gruposDeUsuáriosToolStripMenuItem.Name = "gruposDeUsuáriosToolStripMenuItem";
-            this.gruposDeUsuáriosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            this.gruposDeUsuáriosToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
-            this.gruposDeUsuáriosToolStripMenuItem.Text = "Grupos de usuários";
-            this.gruposDeUsuáriosToolStripMenuItem.Click += new System.EventHandler(this.gruposDeUsuáriosToolStripMenuItem_Click);
+            this.buttonCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonCliente.Location = new System.Drawing.Point(12, 106);
+            this.buttonCliente.Name = "buttonCliente";
+            this.buttonCliente.Size = new System.Drawing.Size(241, 29);
+            this.buttonCliente.TabIndex = 3;
+            this.buttonCliente.Text = "Clientes";
+            this.buttonCliente.UseVisualStyleBackColor = false;
+            this.buttonCliente.Click += new System.EventHandler(this.buttonCliente_Click);
             // 
-            // clientesToolStripMenuItem
+            // panel1
             // 
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
-            this.clientesToolStripMenuItem.Text = "Clientes";
-            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.panel1.Controls.Add(this.buttonUsuario);
+            this.panel1.Controls.Add(this.buttonCliente);
+            this.panel1.Controls.Add(this.buttonGrupoUsuario);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(952, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(265, 590);
+            this.panel1.TabIndex = 4;
+            // 
+            // labelNomeEmpresa
+            // 
+            this.labelNomeEmpresa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelNomeEmpresa.BackColor = System.Drawing.Color.Transparent;
+            this.labelNomeEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.labelNomeEmpresa.Font = new System.Drawing.Font("Viner Hand ITC", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNomeEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.labelNomeEmpresa.Location = new System.Drawing.Point(12, 45);
+            this.labelNomeEmpresa.Name = "labelNomeEmpresa";
+            this.labelNomeEmpresa.Size = new System.Drawing.Size(934, 55);
+            this.labelNomeEmpresa.TabIndex = 5;
+            this.labelNomeEmpresa.Text = "Nome da Empresa";
+            this.labelNomeEmpresa.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelNomeEmpresa.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(62, 106);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "label2";
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 590);
-            this.Controls.Add(this.menuStrip1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1217, 590);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelNomeEmpresa);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(label1);
             this.KeyPreview = true;
-            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -95,20 +143,21 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormPrincipal_KeyDown);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gruposDeUsuáriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private Label label1;
+        private Button buttonUsuario;
+        private Button buttonGrupoUsuario;
+        private Button buttonCliente;
+        private Panel panel1;
+        private Label labelNomeEmpresa;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Label label2;
     }
 }
 
