@@ -136,5 +136,45 @@ namespace DAL
                 cn.Close();
             }
         }
+        public List<Estoque> BuscarTudo()
+        {
+            List<Estoque> estoqueList = new List<Estoque>();
+            Estoque estoque = new Estoque();
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+
+                cmd.CommandText = @"SELECT Id, DatadeEntrada, DatadeSaida, EstoqueMinimo, EstoqueMaximo, IdProduto FROM Estoque WHERE Id = @Id";
+
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cn.Open();
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    while (rd.Read())
+                    {
+                        estoque = new Estoque();
+                        estoque.Id = (int)rd["Id"];
+                        estoque.DatadeEntrada = Convert.ToDateTime(rd["DatadeEntrada"]);
+                        estoque.DatadeSaida = Convert.ToDateTime(rd["DatadeSaida"]);
+                        estoque.EstoqueMinimo = Convert.ToInt32(rd["EstoqueMinimo"]); ;
+                        estoque.EstoqueMaximo = Convert.ToInt32(rd["EstoqueMaximo"]);
+                        estoque.IdProduto = Convert.ToInt32(rd["IdProduto"]);
+                        estoqueList.Add(estoque);
+                    }
+                }
+                return estoqueList;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar estoque no banco de dados", ex) { Data = { { "Id", 16 } } };
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }
