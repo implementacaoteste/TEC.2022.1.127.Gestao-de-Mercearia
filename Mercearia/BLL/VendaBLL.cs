@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    internal class VendaBLL
+
+    public class VendaBLL
     {
         public void Inserir(Venda _venda)
         {
@@ -30,5 +31,6 @@ namespace BLL
         {
             new VendaDAL().Excluir(_id);
         }
+
     }
 }
