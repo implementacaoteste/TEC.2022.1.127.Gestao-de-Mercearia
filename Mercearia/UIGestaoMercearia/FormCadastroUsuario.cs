@@ -1,4 +1,4 @@
-﻿using BLL;
+using BLL;
 using Models;
 using System;
 using System.Windows.Forms;
@@ -71,6 +71,7 @@ namespace UIGestaoMercearia
                 Close();
         }
 
+
         private void cPFTextBox_TextChanged(object sender, EventArgs e)
         {
 
@@ -130,6 +131,7 @@ namespace UIGestaoMercearia
         {
 
         }
+
 
         private void ativoCheckBox_CheckedChanged(object sender, EventArgs e)
         {

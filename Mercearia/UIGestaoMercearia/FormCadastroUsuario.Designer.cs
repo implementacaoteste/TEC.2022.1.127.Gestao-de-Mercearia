@@ -58,7 +58,11 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
+
+            nomeLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+
             nomeLabel.Location = new System.Drawing.Point(3, 97);
+
             nomeLabel.Name = "nomeLabel";
             nomeLabel.Size = new System.Drawing.Size(50, 20);
             nomeLabel.TabIndex = 1;
@@ -98,7 +102,7 @@
             // senhaLabel
             // 
             senhaLabel.AutoSize = true;
-            senhaLabel.Location = new System.Drawing.Point(222, 156);
+            senhaLabel.Location = new System.Drawing.Point(231, 143);
             senhaLabel.Name = "senhaLabel";
             senhaLabel.Size = new System.Drawing.Size(49, 20);
             senhaLabel.TabIndex = 9;
@@ -248,6 +252,7 @@
             this.Controls.Add(this.cPFTextBox);
             this.Controls.Add(nomeLabel);
             this.Controls.Add(this.nomeTextBox);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
