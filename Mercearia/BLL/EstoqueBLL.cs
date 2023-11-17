@@ -18,7 +18,17 @@ namespace BLL
         {
             new EstoqueDAL().Alterar(_estoque);
         }
-        
-        
+        public void Excluir(int _id)
+        {
+            new EstoqueDAL().Excluir(_id);
+        }
+        public List<Estoque> BuscarTudo()
+        {
+            return new EstoqueDAL().BuscarTudo();
+        }   
+        public Estoque BuscarPorId(int _id)
+        {
+            return new EstoqueDAL().BuscarPorId(_id);
+        }
     }
 }
