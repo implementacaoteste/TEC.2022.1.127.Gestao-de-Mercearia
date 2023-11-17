@@ -138,6 +138,7 @@ namespace DAL
         }
         public List<Estoque> BuscarTudo()
         {
+
             List<Estoque> estoqueList = new List<Estoque>();
             Estoque estoque = new Estoque();
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
