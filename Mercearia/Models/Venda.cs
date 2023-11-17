@@ -15,5 +15,6 @@ namespace Models
         public double PrecoVenda { get; set; }
         public int IdFormaPagamento { get; set; }
         public DateTime DataVenda  { get; set; }
+       
     }
 }
