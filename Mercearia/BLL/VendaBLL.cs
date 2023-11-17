@@ -11,7 +11,6 @@ namespace BLL
 
     public class VendaBLL
     {
-
         public void Inserir(Venda _venda)
         {
             new VendaDAL().Inserir(_venda);
