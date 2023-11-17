@@ -74,9 +74,8 @@ CREATE TABLE [dbo].[Funcionario](
 	[Id] [int] NOT NULL,
 	[Nome] [varchar](150) NULL,
 	[Telefone] [varchar](15) NULL,
-	[Login] [varchar](150) NULL,
-	[Senha] [varchar](50) NULL,
 	[Ativo] [bit] NULL,
+	[Profissao] [varchar] (150) NULL,
 	[Salario] [float] NULL,
  CONSTRAINT [PK_Funcionario] PRIMARY KEY CLUSTERED 
 (
@@ -157,6 +156,7 @@ CREATE TABLE [dbo].[Usuario](
 	[Nome] [varchar](150) NULL,
 	[NomeUsuario] [varchar](50) NULL,
 	[Email] [varchar](150) NULL,
+	[Endereco] [varchar](150) NULL,
 	[CPF] [varchar](15) NULL,
 	[Ativo] [bit] NULL,
 	[Senha] [varchar](50) NULL,
@@ -204,7 +204,7 @@ CREATE TABLE [dbo].[Venda](
 	[IdProduto] [int] NOT NULL,
 	[PrecoVenda] [float] NULL,
 	[IdFormaPagamento] [int] NULL,
-	[DataVenda] [date] NULL,
+	[DataVenda] [datetime] NULL,
  CONSTRAINT [PK_Venda] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC

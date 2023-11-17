@@ -52,5 +52,10 @@ namespace UIGestaoMercearia
             if (e.KeyCode == Keys.Enter)
                 buttonEntrar_Click(null, null);
         }
+
+        private void textBoxSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

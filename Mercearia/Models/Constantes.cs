@@ -8,5 +8,7 @@ namespace Models
         public static string StringDeConexao;
         public static string DiretorioStringConexao = "C:\\Configuracao\\";
         public static string NomeArquivoConexao = "merceariaConnection.config";
+
+        public static string NomeEmpresa { get { return "Supermercado SuperTop"; } }
     }
 }
