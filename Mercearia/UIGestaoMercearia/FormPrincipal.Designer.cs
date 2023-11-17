@@ -95,6 +95,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.monthCalendar1);
             this.panel1.Controls.Add(this.buttonUsuario);
             this.panel1.Controls.Add(this.buttonCliente);
@@ -141,7 +142,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 106);
+            this.label2.Location = new System.Drawing.Point(116, 183);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 20);
             this.label2.TabIndex = 6;
@@ -163,7 +164,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1217, 590);
             this.Controls.Add(this.splitter1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.labelNomeEmpresa);
             this.Controls.Add(this.panel1);
             this.Controls.Add(label1);

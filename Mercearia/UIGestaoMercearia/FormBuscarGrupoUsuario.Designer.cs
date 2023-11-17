@@ -128,7 +128,7 @@
             // 
             // textBoxBuscar
             // 
-            this.textBoxBuscar.Location = new System.Drawing.Point(12, 115);
+            this.textBoxBuscar.Location = new System.Drawing.Point(12, 120);
             this.textBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(235, 27);
@@ -137,10 +137,10 @@
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(253, 116);
+            this.buttonBuscar.Location = new System.Drawing.Point(253, 120);
             this.buttonBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(75, 31);
+            this.buttonBuscar.Size = new System.Drawing.Size(75, 28);
             this.buttonBuscar.TabIndex = 1;
             this.buttonBuscar.Text = "&Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
@@ -148,10 +148,10 @@
             // 
             // buttonAlterar
             // 
-            this.buttonAlterar.Location = new System.Drawing.Point(334, 116);
+            this.buttonAlterar.Location = new System.Drawing.Point(334, 119);
             this.buttonAlterar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Size = new System.Drawing.Size(75, 31);
+            this.buttonAlterar.Size = new System.Drawing.Size(75, 28);
             this.buttonAlterar.TabIndex = 2;
             this.buttonAlterar.Text = "Al&terar";
             this.buttonAlterar.UseVisualStyleBackColor = true;
@@ -159,10 +159,10 @@
             // 
             // buttonAdicionarGrupoUsuario
             // 
-            this.buttonAdicionarGrupoUsuario.Location = new System.Drawing.Point(415, 116);
+            this.buttonAdicionarGrupoUsuario.Location = new System.Drawing.Point(415, 121);
             this.buttonAdicionarGrupoUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonAdicionarGrupoUsuario.Name = "buttonAdicionarGrupoUsuario";
-            this.buttonAdicionarGrupoUsuario.Size = new System.Drawing.Size(75, 31);
+            this.buttonAdicionarGrupoUsuario.Size = new System.Drawing.Size(81, 27);
             this.buttonAdicionarGrupoUsuario.TabIndex = 3;
             this.buttonAdicionarGrupoUsuario.Text = "&Adicionar";
             this.buttonAdicionarGrupoUsuario.UseVisualStyleBackColor = true;
@@ -170,10 +170,10 @@
             // 
             // buttonExcluirGrupoUsuario
             // 
-            this.buttonExcluirGrupoUsuario.Location = new System.Drawing.Point(496, 116);
+            this.buttonExcluirGrupoUsuario.Location = new System.Drawing.Point(502, 121);
             this.buttonExcluirGrupoUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonExcluirGrupoUsuario.Name = "buttonExcluirGrupoUsuario";
-            this.buttonExcluirGrupoUsuario.Size = new System.Drawing.Size(75, 31);
+            this.buttonExcluirGrupoUsuario.Size = new System.Drawing.Size(69, 27);
             this.buttonExcluirGrupoUsuario.TabIndex = 4;
             this.buttonExcluirGrupoUsuario.Text = "&Excluir";
             this.buttonExcluirGrupoUsuario.UseVisualStyleBackColor = true;
@@ -182,10 +182,10 @@
             // buttonAdicionarPermissao
             // 
             this.buttonAdicionarPermissao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdicionarPermissao.Location = new System.Drawing.Point(964, 116);
+            this.buttonAdicionarPermissao.Location = new System.Drawing.Point(955, 116);
             this.buttonAdicionarPermissao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonAdicionarPermissao.Name = "buttonAdicionarPermissao";
-            this.buttonAdicionarPermissao.Size = new System.Drawing.Size(75, 31);
+            this.buttonAdicionarPermissao.Size = new System.Drawing.Size(84, 31);
             this.buttonAdicionarPermissao.TabIndex = 5;
             this.buttonAdicionarPermissao.Text = "A&dicionar";
             this.buttonAdicionarPermissao.UseVisualStyleBackColor = true;
