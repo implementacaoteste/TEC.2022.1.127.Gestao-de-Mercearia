@@ -68,6 +68,7 @@ namespace DAL
                         cliente.CPF = rd["CPF"].ToString();
                         cliente.Email = rd["Email"].ToString();
                         cliente.Bairro = rd["Bairro"].ToString();
+                        cliente.CEP = rd["CEP"].ToString();
                         cliente.Fone = rd["Fone"].ToString();
 
                         clienteList.Add(cliente);
