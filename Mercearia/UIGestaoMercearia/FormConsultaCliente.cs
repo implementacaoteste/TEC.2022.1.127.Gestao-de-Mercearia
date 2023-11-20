@@ -114,5 +114,10 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void comboBoxBuscarPor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
