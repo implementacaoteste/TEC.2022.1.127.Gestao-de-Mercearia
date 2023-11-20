@@ -14,6 +14,7 @@ namespace UIGestaoMercearia
 {
     public partial class FormConsultaProduto : Form
     {
+
         public FormConsultaProduto()
         {
             InitializeComponent();
@@ -75,7 +76,41 @@ namespace UIGestaoMercearia
 
         private void buttonInserir_Click(object sender, EventArgs e)
         {
+            try
+            {
+                using (FormCadastroProduto frm = new FormCadastroProduto())
+                {
+                    frm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
+        private void buttonAlterar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (bindingSourceProduto.Count == 0)
+                {
+                    MessageBox.Show("Não existe produto para ser alterado.");
+                    return;
+                }
+
+                int id = ((Cliente)bindingSourceProduto.Current).Id;
+
+                /*using (FormCadastroProduto frm = new FormCadastroProduto(id))
+                {
+                    frm.ShowDialog();
+                }
+                buttonBuscar_Click(null, null);*/ //a ser implementado
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
