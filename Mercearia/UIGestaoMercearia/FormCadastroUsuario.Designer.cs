@@ -58,7 +58,10 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
+
+
             nomeLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             nomeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeLabel.Location = new System.Drawing.Point(3, 97);
             nomeLabel.Name = "nomeLabel";
@@ -70,7 +73,10 @@
             // cPFLabel
             // 
             cPFLabel.AutoSize = true;
+
+
             cPFLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             cPFLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             cPFLabel.Location = new System.Drawing.Point(327, 97);
             cPFLabel.Name = "cPFLabel";
@@ -82,7 +88,10 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
+
+
             emailLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             emailLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             emailLabel.Location = new System.Drawing.Point(437, 97);
             emailLabel.Name = "emailLabel";
@@ -94,7 +103,10 @@
             // nomeUsuarioLabel
             // 
             nomeUsuarioLabel.AutoSize = true;
+
+
             nomeUsuarioLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             nomeUsuarioLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeUsuarioLabel.Location = new System.Drawing.Point(3, 156);
             nomeUsuarioLabel.Name = "nomeUsuarioLabel";
@@ -106,7 +118,10 @@
             // senhaLabel
             // 
             senhaLabel.AutoSize = true;
+
+
             senhaLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             senhaLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             senhaLabel.Location = new System.Drawing.Point(225, 156);
             senhaLabel.Name = "senhaLabel";
@@ -119,6 +134,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             label1.Location = new System.Drawing.Point(327, 153);
             label1.Name = "label1";
@@ -185,9 +201,13 @@
             // 
             this.ativoCheckBox.AutoSize = true;
             this.ativoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.usuarioBindingSource, "Ativo", true));
+            this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ativoCheckBox.Location = new System.Drawing.Point(440, 183);
+
             this.ativoCheckBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ativoCheckBox.Location = new System.Drawing.Point(470, 183);
+
             this.ativoCheckBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ativoCheckBox.Name = "ativoCheckBox";
             this.ativoCheckBox.Size = new System.Drawing.Size(69, 24);
