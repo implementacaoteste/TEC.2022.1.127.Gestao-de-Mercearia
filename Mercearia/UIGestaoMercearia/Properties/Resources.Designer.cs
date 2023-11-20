@@ -119,5 +119,15 @@ namespace UIGestaoMercearia.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart_icon_illustration_free_vector2 {
+            get {
+                object obj = ResourceManager.GetObject("shopping-cart-icon-illustration-free-vector2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
