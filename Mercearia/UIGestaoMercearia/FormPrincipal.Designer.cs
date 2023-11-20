@@ -34,10 +34,10 @@
             this.buttonCliente = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.labelNomeEmpresa = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label2 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
             label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -117,6 +117,15 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "MENU";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(116, 183);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "label2";
+            // 
             // monthCalendar1
             // 
             this.monthCalendar1.Location = new System.Drawing.Point(9, 374);
@@ -138,15 +147,6 @@
             this.labelNomeEmpresa.Text = "Nome da Empresa";
             this.labelNomeEmpresa.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.labelNomeEmpresa.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 183);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "label2";
             // 
             // splitter1
             // 
