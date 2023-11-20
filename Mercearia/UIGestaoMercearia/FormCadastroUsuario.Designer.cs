@@ -58,7 +58,7 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            nomeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeLabel.Location = new System.Drawing.Point(3, 97);
             nomeLabel.Name = "nomeLabel";
             nomeLabel.Size = new System.Drawing.Size(50, 20);
@@ -69,6 +69,7 @@
             // cPFLabel
             // 
             cPFLabel.AutoSize = true;
+            cPFLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             cPFLabel.Location = new System.Drawing.Point(327, 97);
             cPFLabel.Name = "cPFLabel";
             cPFLabel.Size = new System.Drawing.Size(33, 20);
@@ -79,6 +80,7 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
+            emailLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             emailLabel.Location = new System.Drawing.Point(437, 97);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(52, 20);
@@ -89,6 +91,7 @@
             // nomeUsuarioLabel
             // 
             nomeUsuarioLabel.AutoSize = true;
+            nomeUsuarioLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeUsuarioLabel.Location = new System.Drawing.Point(3, 156);
             nomeUsuarioLabel.Name = "nomeUsuarioLabel";
             nomeUsuarioLabel.Size = new System.Drawing.Size(123, 20);
@@ -99,6 +102,7 @@
             // senhaLabel
             // 
             senhaLabel.AutoSize = true;
+            senhaLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             senhaLabel.Location = new System.Drawing.Point(225, 156);
             senhaLabel.Name = "senhaLabel";
             senhaLabel.Size = new System.Drawing.Size(49, 20);
@@ -109,6 +113,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             label1.Location = new System.Drawing.Point(327, 153);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(117, 20);
@@ -174,6 +179,7 @@
             // 
             this.ativoCheckBox.AutoSize = true;
             this.ativoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.usuarioBindingSource, "Ativo", true));
+            this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ativoCheckBox.Location = new System.Drawing.Point(440, 183);
             this.ativoCheckBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ativoCheckBox.Name = "ativoCheckBox";
