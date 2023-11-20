@@ -58,11 +58,8 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-
             nomeLabel.ForeColor = System.Drawing.SystemColors.Desktop;
-
             nomeLabel.Location = new System.Drawing.Point(3, 97);
-
             nomeLabel.Name = "nomeLabel";
             nomeLabel.Size = new System.Drawing.Size(50, 20);
             nomeLabel.TabIndex = 1;
@@ -102,7 +99,7 @@
             // senhaLabel
             // 
             senhaLabel.AutoSize = true;
-            senhaLabel.Location = new System.Drawing.Point(231, 143);
+            senhaLabel.Location = new System.Drawing.Point(225, 156);
             senhaLabel.Name = "senhaLabel";
             senhaLabel.Size = new System.Drawing.Size(49, 20);
             senhaLabel.TabIndex = 9;
