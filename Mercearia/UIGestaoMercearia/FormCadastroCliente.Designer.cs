@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label nomeLabel;
             System.Windows.Forms.Label cPFLabel;
-            System.Windows.Forms.Label rGLabel;
             System.Windows.Forms.Label foneLabel;
             System.Windows.Forms.Label emailLabel;
             System.Windows.Forms.Label label2;
@@ -39,7 +38,6 @@
             this.nomeTextBox = new System.Windows.Forms.TextBox();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cPFTextBox = new System.Windows.Forms.TextBox();
-            this.rGTextBox = new System.Windows.Forms.TextBox();
             this.foneTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,10 +45,8 @@
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             nomeLabel = new System.Windows.Forms.Label();
             cPFLabel = new System.Windows.Forms.Label();
-            rGLabel = new System.Windows.Forms.Label();
             foneLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
@@ -81,23 +77,12 @@
             cPFLabel.TabIndex = 3;
             cPFLabel.Text = "CPF";
             // 
-            // rGLabel
-            // 
-            rGLabel.AutoSize = true;
-            rGLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            rGLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            rGLabel.Location = new System.Drawing.Point(547, 61);
-            rGLabel.Name = "rGLabel";
-            rGLabel.Size = new System.Drawing.Size(28, 20);
-            rGLabel.TabIndex = 5;
-            rGLabel.Text = "RG";
-            // 
             // foneLabel
             // 
             foneLabel.AutoSize = true;
             foneLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             foneLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            foneLabel.Location = new System.Drawing.Point(12, 116);
+            foneLabel.Location = new System.Drawing.Point(428, 171);
             foneLabel.Name = "foneLabel";
             foneLabel.Size = new System.Drawing.Size(43, 20);
             foneLabel.TabIndex = 7;
@@ -108,11 +93,33 @@
             emailLabel.AutoSize = true;
             emailLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             emailLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            emailLabel.Location = new System.Drawing.Point(120, 116);
+            emailLabel.Location = new System.Drawing.Point(12, 116);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(52, 20);
             emailLabel.TabIndex = 9;
             emailLabel.Text = "E-mail";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            label2.Location = new System.Drawing.Point(428, 116);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(35, 20);
+            label2.TabIndex = 14;
+            label2.Text = "CEP";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            label3.Location = new System.Drawing.Point(10, 171);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(51, 20);
+            label3.TabIndex = 16;
+            label3.Text = "Bairro";
             // 
             // nomeTextBox
             // 
@@ -135,37 +142,27 @@
             this.cPFTextBox.Location = new System.Drawing.Point(428, 85);
             this.cPFTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cPFTextBox.Name = "cPFTextBox";
-            this.cPFTextBox.Size = new System.Drawing.Size(116, 27);
+            this.cPFTextBox.Size = new System.Drawing.Size(222, 27);
             this.cPFTextBox.TabIndex = 4;
-            // 
-            // rGTextBox
-            // 
-            this.rGTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "RG", true));
-            this.rGTextBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rGTextBox.Location = new System.Drawing.Point(550, 85);
-            this.rGTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rGTextBox.Name = "rGTextBox";
-            this.rGTextBox.Size = new System.Drawing.Size(100, 27);
-            this.rGTextBox.TabIndex = 6;
             // 
             // foneTextBox
             // 
             this.foneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Fone", true));
             this.foneTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.foneTextBox.Location = new System.Drawing.Point(10, 140);
+            this.foneTextBox.Location = new System.Drawing.Point(428, 195);
             this.foneTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.foneTextBox.Name = "foneTextBox";
-            this.foneTextBox.Size = new System.Drawing.Size(104, 27);
+            this.foneTextBox.Size = new System.Drawing.Size(222, 27);
             this.foneTextBox.TabIndex = 8;
             // 
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Email", true));
             this.emailTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.emailTextBox.Location = new System.Drawing.Point(120, 140);
+            this.emailTextBox.Location = new System.Drawing.Point(12, 140);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(302, 27);
+            this.emailTextBox.Size = new System.Drawing.Size(410, 27);
             this.emailTextBox.TabIndex = 10;
             // 
             // label1
@@ -213,18 +210,6 @@
             this.textBox1.Size = new System.Drawing.Size(222, 27);
             this.textBox1.TabIndex = 13;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            label2.Location = new System.Drawing.Point(428, 116);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(27, 20);
-            label2.TabIndex = 14;
-            label2.Text = "CP";
-            label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // textBox2
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Email", true));
@@ -232,29 +217,8 @@
             this.textBox2.Location = new System.Drawing.Point(10, 195);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(222, 27);
+            this.textBox2.Size = new System.Drawing.Size(412, 27);
             this.textBox2.TabIndex = 15;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            label3.Location = new System.Drawing.Point(10, 171);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(51, 20);
-            label3.TabIndex = 16;
-            label3.Text = "Bairro";
-            // 
-            // textBox3
-            // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Email", true));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox3.Location = new System.Drawing.Point(238, 195);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(222, 27);
-            this.textBox3.TabIndex = 17;
             // 
             // FormCadastroCliente
             // 
@@ -262,7 +226,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(670, 348);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(label2);
@@ -274,8 +237,6 @@
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(foneLabel);
             this.Controls.Add(this.foneTextBox);
-            this.Controls.Add(rGLabel);
-            this.Controls.Add(this.rGTextBox);
             this.Controls.Add(cPFLabel);
             this.Controls.Add(this.cPFTextBox);
             this.Controls.Add(nomeLabel);
@@ -295,7 +256,6 @@
         private System.Windows.Forms.BindingSource clienteBindingSource;
         private System.Windows.Forms.TextBox nomeTextBox;
         private System.Windows.Forms.TextBox cPFTextBox;
-        private System.Windows.Forms.TextBox rGTextBox;
         private System.Windows.Forms.TextBox foneTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label label1;
@@ -303,6 +263,5 @@
         private System.Windows.Forms.Button buttonCancelar;
         private TextBox textBox1;
         private TextBox textBox2;
-        private TextBox textBox3;
     }
 }
