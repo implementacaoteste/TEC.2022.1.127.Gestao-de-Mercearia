@@ -58,10 +58,14 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
+
+
+            nomeLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             nomeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeLabel.Location = new System.Drawing.Point(3, 97);
             nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(50, 20);
+            nomeLabel.Size = new System.Drawing.Size(52, 20);
             nomeLabel.TabIndex = 1;
             nomeLabel.Text = "Nome";
             nomeLabel.Click += new System.EventHandler(this.nomeLabel_Click);
@@ -69,10 +73,14 @@
             // cPFLabel
             // 
             cPFLabel.AutoSize = true;
+
+
+            cPFLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             cPFLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             cPFLabel.Location = new System.Drawing.Point(327, 97);
             cPFLabel.Name = "cPFLabel";
-            cPFLabel.Size = new System.Drawing.Size(33, 20);
+            cPFLabel.Size = new System.Drawing.Size(35, 20);
             cPFLabel.TabIndex = 3;
             cPFLabel.Text = "CPF";
             cPFLabel.Click += new System.EventHandler(this.cPFLabel_Click);
@@ -80,10 +88,14 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
+
+
+            emailLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             emailLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             emailLabel.Location = new System.Drawing.Point(437, 97);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(52, 20);
+            emailLabel.Size = new System.Drawing.Size(53, 20);
             emailLabel.TabIndex = 5;
             emailLabel.Text = "E-mail";
             emailLabel.Click += new System.EventHandler(this.emailLabel_Click);
@@ -91,10 +103,14 @@
             // nomeUsuarioLabel
             // 
             nomeUsuarioLabel.AutoSize = true;
+
+
+            nomeUsuarioLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             nomeUsuarioLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeUsuarioLabel.Location = new System.Drawing.Point(3, 156);
             nomeUsuarioLabel.Name = "nomeUsuarioLabel";
-            nomeUsuarioLabel.Size = new System.Drawing.Size(123, 20);
+            nomeUsuarioLabel.Size = new System.Drawing.Size(129, 20);
             nomeUsuarioLabel.TabIndex = 7;
             nomeUsuarioLabel.Text = "Nome de usuário";
             nomeUsuarioLabel.Click += new System.EventHandler(this.nomeUsuarioLabel_Click);
@@ -102,10 +118,14 @@
             // senhaLabel
             // 
             senhaLabel.AutoSize = true;
+
+
+            senhaLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             senhaLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             senhaLabel.Location = new System.Drawing.Point(225, 156);
             senhaLabel.Name = "senhaLabel";
-            senhaLabel.Size = new System.Drawing.Size(49, 20);
+            senhaLabel.Size = new System.Drawing.Size(51, 20);
             senhaLabel.TabIndex = 9;
             senhaLabel.Text = "Senha";
             senhaLabel.Click += new System.EventHandler(this.senhaLabel_Click);
@@ -113,10 +133,12 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+
             label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             label1.Location = new System.Drawing.Point(327, 153);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(117, 20);
+            label1.Size = new System.Drawing.Size(125, 20);
             label1.TabIndex = 11;
             label1.Text = "Confirmar senha";
             label1.Click += new System.EventHandler(this.label1_Click);
@@ -181,9 +203,14 @@
             this.ativoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.usuarioBindingSource, "Ativo", true));
             this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ativoCheckBox.Location = new System.Drawing.Point(440, 183);
+
+            this.ativoCheckBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ativoCheckBox.Location = new System.Drawing.Point(470, 183);
+
             this.ativoCheckBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ativoCheckBox.Name = "ativoCheckBox";
-            this.ativoCheckBox.Size = new System.Drawing.Size(66, 24);
+            this.ativoCheckBox.Size = new System.Drawing.Size(69, 24);
             this.ativoCheckBox.TabIndex = 13;
             this.ativoCheckBox.Text = "Ativo";
             this.ativoCheckBox.UseVisualStyleBackColor = true;
@@ -194,7 +221,7 @@
             this.textBoxConfirmarSenha.Location = new System.Drawing.Point(330, 180);
             this.textBoxConfirmarSenha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxConfirmarSenha.Name = "textBoxConfirmarSenha";
-            this.textBoxConfirmarSenha.Size = new System.Drawing.Size(100, 27);
+            this.textBoxConfirmarSenha.Size = new System.Drawing.Size(134, 27);
             this.textBoxConfirmarSenha.TabIndex = 12;
             this.textBoxConfirmarSenha.TextChanged += new System.EventHandler(this.textBoxConfirmarSenha_TextChanged);
             // 

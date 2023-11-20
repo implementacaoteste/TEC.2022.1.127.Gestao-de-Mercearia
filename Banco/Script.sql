@@ -20,11 +20,10 @@ GO
 CREATE TABLE [dbo].[Cliente](
 	[Id] [int] NOT NULL,
 	[Nome] [varchar](150) NULL,
-	[CPF] [varchar](20) NULL,
-	[Bairro] [varchar] (150) NULL,
-	[CEP] [varchar] (10) NULL,
-	[Telefone] [varchar](15) NULL,
+	[Cpf] [varchar](20) NULL,
+	[Endereco] [varchar](150) NULL,
 	[Email] [varchar](150) NULL,
+	[Telefone] [varchar](15) NULL,
  CONSTRAINT [PK_Cliente] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC

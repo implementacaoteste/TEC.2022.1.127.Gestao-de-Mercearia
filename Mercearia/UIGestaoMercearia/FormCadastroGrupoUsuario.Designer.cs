@@ -43,9 +43,11 @@
             // nomeGrupoLabel
             // 
             nomeGrupoLabel.AutoSize = true;
+            nomeGrupoLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            nomeGrupoLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeGrupoLabel.Location = new System.Drawing.Point(12, 58);
             nomeGrupoLabel.Name = "nomeGrupoLabel";
-            nomeGrupoLabel.Size = new System.Drawing.Size(116, 20);
+            nomeGrupoLabel.Size = new System.Drawing.Size(120, 20);
             nomeGrupoLabel.TabIndex = 1;
             nomeGrupoLabel.Text = "Nome do grupo";
             // 
