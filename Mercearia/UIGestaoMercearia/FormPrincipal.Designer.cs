@@ -34,11 +34,12 @@
             this.buttonCliente = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.labelNomeEmpresa = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label2 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
+            this.buttonProdutos = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +95,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.panel1.Controls.Add(this.buttonProdutos);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.monthCalendar1);
@@ -117,6 +119,15 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "MENU";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(131, 305);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "label2";
+            // 
             // monthCalendar1
             // 
             this.monthCalendar1.Location = new System.Drawing.Point(9, 374);
@@ -139,15 +150,6 @@
             this.labelNomeEmpresa.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.labelNomeEmpresa.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 183);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "label2";
-            // 
             // splitter1
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
@@ -155,6 +157,20 @@
             this.splitter1.Size = new System.Drawing.Size(4, 590);
             this.splitter1.TabIndex = 7;
             this.splitter1.TabStop = false;
+            // 
+            // buttonProdutos
+            // 
+            this.buttonProdutos.FlatAppearance.BorderSize = 0;
+            this.buttonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProdutos.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonProdutos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonProdutos.Location = new System.Drawing.Point(17, 150);
+            this.buttonProdutos.Name = "buttonProdutos";
+            this.buttonProdutos.Size = new System.Drawing.Size(265, 33);
+            this.buttonProdutos.TabIndex = 8;
+            this.buttonProdutos.Text = "Produtos";
+            this.buttonProdutos.UseVisualStyleBackColor = true;
+            this.buttonProdutos.Click += new System.EventHandler(this.buttonProdutos_Click);
             // 
             // FormPrincipal
             // 
@@ -194,6 +210,7 @@
         private MonthCalendar monthCalendar1;
         private Label label3;
         private Splitter splitter1;
+        private Button buttonProdutos;
     }
 }
 

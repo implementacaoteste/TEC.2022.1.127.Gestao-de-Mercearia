@@ -82,5 +82,13 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void buttonProdutos_Click(object sender, EventArgs e)
+        {
+            using (FormConsultaProduto frm = new FormConsultaProduto())
+            {
+                frm.ShowDialog();
+            }
+        }
     }
 }
