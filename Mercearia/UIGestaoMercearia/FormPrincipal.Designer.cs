@@ -35,18 +35,17 @@
             this.buttonCliente = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.buttonConfig = new System.Windows.Forms.Button();
+            this.buttonEstoque = new System.Windows.Forms.Button();
+            this.buttonEstatistica = new System.Windows.Forms.Button();
+            this.buttonProdutos = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.buttonFornecedores = new System.Windows.Forms.Button();
+            this.buttonFuncionarios = new System.Windows.Forms.Button();
             this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.buttonUsuarios = new System.Windows.Forms.Button();
+            this.buttonClientes = new System.Windows.Forms.Button();
+            this.buttonGusuario = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -86,6 +85,21 @@
             label1.Text = "CAIXA ABERTO";
             label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label5
+            // 
+            label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            label5.AutoSize = true;
+            label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            label5.Font = new System.Drawing.Font("Swis721 Blk BT", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label5.ForeColor = System.Drawing.Color.White;
+            label5.Location = new System.Drawing.Point(210, 255);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(285, 40);
+            label5.TabIndex = 1;
+            label5.Text = "CAIXA ABERTO";
+            label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // buttonUsuario
             // 
@@ -145,73 +159,62 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.button10);
-            this.panel2.Controls.Add(this.button11);
-            this.panel2.Controls.Add(this.button12);
+            this.panel2.Controls.Add(this.buttonConfig);
+            this.panel2.Controls.Add(this.buttonEstoque);
+            this.panel2.Controls.Add(this.buttonEstatistica);
+            this.panel2.Controls.Add(this.buttonProdutos);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.button13);
-            this.panel2.Controls.Add(this.button14);
+            this.panel2.Controls.Add(this.buttonFornecedores);
+            this.panel2.Controls.Add(this.buttonFuncionarios);
             this.panel2.Controls.Add(this.monthCalendar2);
-            this.panel2.Controls.Add(this.button15);
-            this.panel2.Controls.Add(this.button16);
-            this.panel2.Controls.Add(this.button17);
+            this.panel2.Controls.Add(this.buttonUsuarios);
+            this.panel2.Controls.Add(this.buttonClientes);
+            this.panel2.Controls.Add(this.buttonGusuario);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(285, 688);
             this.panel2.TabIndex = 15;
             // 
-            // button8
+            // buttonConfig
             // 
-            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Location = new System.Drawing.Point(12, 373);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(261, 29);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "Clientes";
-            this.button8.UseVisualStyleBackColor = false;
+            this.buttonConfig.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonConfig.Location = new System.Drawing.Point(12, 395);
+            this.buttonConfig.Name = "buttonConfig";
+            this.buttonConfig.Size = new System.Drawing.Size(261, 37);
+            this.buttonConfig.TabIndex = 14;
+            this.buttonConfig.Text = "Configurações";
+            this.buttonConfig.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // buttonEstoque
             // 
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.Location = new System.Drawing.Point(12, 338);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(261, 29);
-            this.button9.TabIndex = 14;
-            this.button9.Text = "Grupos de usuários";
-            this.button9.UseVisualStyleBackColor = false;
+            this.buttonEstoque.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonEstoque.Location = new System.Drawing.Point(12, 352);
+            this.buttonEstoque.Name = "buttonEstoque";
+            this.buttonEstoque.Size = new System.Drawing.Size(261, 37);
+            this.buttonEstoque.TabIndex = 11;
+            this.buttonEstoque.Text = "Estoque";
+            this.buttonEstoque.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // buttonEstatistica
             // 
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Location = new System.Drawing.Point(12, 303);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(261, 29);
-            this.button10.TabIndex = 11;
-            this.button10.Text = "Clientes";
-            this.button10.UseVisualStyleBackColor = false;
+            this.buttonEstatistica.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonEstatistica.Location = new System.Drawing.Point(12, 309);
+            this.buttonEstatistica.Name = "buttonEstatistica";
+            this.buttonEstatistica.Size = new System.Drawing.Size(261, 37);
+            this.buttonEstatistica.TabIndex = 12;
+            this.buttonEstatistica.Text = "Estatística";
+            this.buttonEstatistica.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // buttonProdutos
             // 
-            this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button11.Location = new System.Drawing.Point(12, 268);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(261, 29);
-            this.button11.TabIndex = 12;
-            this.button11.Text = "Grupos de usuários";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button12.Location = new System.Drawing.Point(12, 163);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(261, 29);
-            this.button12.TabIndex = 8;
-            this.button12.Text = "Usuários";
-            this.button12.UseVisualStyleBackColor = false;
+            this.buttonProdutos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonProdutos.Location = new System.Drawing.Point(12, 177);
+            this.buttonProdutos.Name = "buttonProdutos";
+            this.buttonProdutos.Size = new System.Drawing.Size(261, 37);
+            this.buttonProdutos.TabIndex = 8;
+            this.buttonProdutos.Text = "Produtos";
+            this.buttonProdutos.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -230,25 +233,25 @@
             this.label2.Text = "Nome da Empresa";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button13
+            // buttonFornecedores
             // 
-            this.button13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button13.Location = new System.Drawing.Point(12, 233);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(261, 29);
-            this.button13.TabIndex = 9;
-            this.button13.Text = "Clientes";
-            this.button13.UseVisualStyleBackColor = false;
+            this.buttonFornecedores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonFornecedores.Location = new System.Drawing.Point(12, 266);
+            this.buttonFornecedores.Name = "buttonFornecedores";
+            this.buttonFornecedores.Size = new System.Drawing.Size(261, 37);
+            this.buttonFornecedores.TabIndex = 9;
+            this.buttonFornecedores.Text = "Fornecedores";
+            this.buttonFornecedores.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // buttonFuncionarios
             // 
-            this.button14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button14.Location = new System.Drawing.Point(12, 198);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(261, 29);
-            this.button14.TabIndex = 10;
-            this.button14.Text = "Grupos de usuários";
-            this.button14.UseVisualStyleBackColor = false;
+            this.buttonFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonFuncionarios.Location = new System.Drawing.Point(12, 220);
+            this.buttonFuncionarios.Name = "buttonFuncionarios";
+            this.buttonFuncionarios.Size = new System.Drawing.Size(261, 37);
+            this.buttonFuncionarios.TabIndex = 10;
+            this.buttonFuncionarios.Text = "Funcionários";
+            this.buttonFuncionarios.UseVisualStyleBackColor = false;
             // 
             // monthCalendar2
             // 
@@ -256,35 +259,35 @@
             this.monthCalendar2.Name = "monthCalendar2";
             this.monthCalendar2.TabIndex = 4;
             // 
-            // button15
+            // buttonUsuarios
             // 
-            this.button15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button15.Location = new System.Drawing.Point(12, 58);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(261, 29);
-            this.button15.TabIndex = 2;
-            this.button15.Text = "Usuários";
-            this.button15.UseVisualStyleBackColor = false;
+            this.buttonUsuarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonUsuarios.Location = new System.Drawing.Point(12, 45);
+            this.buttonUsuarios.Name = "buttonUsuarios";
+            this.buttonUsuarios.Size = new System.Drawing.Size(261, 37);
+            this.buttonUsuarios.TabIndex = 2;
+            this.buttonUsuarios.Text = "Usuários";
+            this.buttonUsuarios.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // buttonClientes
             // 
-            this.button16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button16.Location = new System.Drawing.Point(12, 128);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(261, 29);
-            this.button16.TabIndex = 3;
-            this.button16.Text = "Clientes";
-            this.button16.UseVisualStyleBackColor = false;
+            this.buttonClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonClientes.Location = new System.Drawing.Point(12, 134);
+            this.buttonClientes.Name = "buttonClientes";
+            this.buttonClientes.Size = new System.Drawing.Size(261, 37);
+            this.buttonClientes.TabIndex = 3;
+            this.buttonClientes.Text = "Clientes";
+            this.buttonClientes.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // buttonGusuario
             // 
-            this.button17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button17.Location = new System.Drawing.Point(12, 93);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(261, 29);
-            this.button17.TabIndex = 3;
-            this.button17.Text = "Grupos de usuários";
-            this.button17.UseVisualStyleBackColor = false;
+            this.buttonGusuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonGusuario.Location = new System.Drawing.Point(12, 88);
+            this.buttonGusuario.Name = "buttonGusuario";
+            this.buttonGusuario.Size = new System.Drawing.Size(261, 37);
+            this.buttonGusuario.TabIndex = 3;
+            this.buttonGusuario.Text = "Grupos de usuários";
+            this.buttonGusuario.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
@@ -459,21 +462,6 @@
             this.panel4.Size = new System.Drawing.Size(454, 61);
             this.panel4.TabIndex = 17;
             // 
-            // label5
-            // 
-            label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            label5.AutoSize = true;
-            label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            label5.Font = new System.Drawing.Font("Swis721 Blk BT", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label5.ForeColor = System.Drawing.Color.White;
-            label5.Location = new System.Drawing.Point(210, 255);
-            label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(285, 40);
-            label5.TabIndex = 1;
-            label5.Text = "CAIXA ABERTO";
-            label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -529,18 +517,17 @@
         private Button button2;
         private Button button3;
         private Panel panel2;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button14;
+        private Button buttonConfig;
+        private Button buttonEstoque;
+        private Button buttonEstatistica;
+        private Button buttonProdutos;
+        private Button buttonFornecedores;
+        private Button buttonFuncionarios;
         private Label label2;
         private MonthCalendar monthCalendar2;
-        private Button button15;
-        private Button button16;
-        private Button button17;
+        private Button buttonUsuarios;
+        private Button buttonClientes;
+        private Button buttonGusuario;
         private Panel panel3;
         private Label label4;
         private PictureBox pictureBox1;
