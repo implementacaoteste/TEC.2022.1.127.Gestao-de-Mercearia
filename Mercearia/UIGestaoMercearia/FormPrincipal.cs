@@ -95,5 +95,31 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void buttonFuncionarios_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void buttonFornecedores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEstatistica_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEstoque_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonConfig_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,9 +43,6 @@
             this.buttonFornecedores = new System.Windows.Forms.Button();
             this.buttonFuncionarios = new System.Windows.Forms.Button();
             this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
-            this.buttonUsuarios = new System.Windows.Forms.Button();
-            this.buttonClientes = new System.Windows.Forms.Button();
-            this.buttonGusuario = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -103,10 +100,11 @@
             // 
             // buttonUsuario
             // 
+            this.buttonUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonUsuario.Location = new System.Drawing.Point(17, 45);
+            this.buttonUsuario.Location = new System.Drawing.Point(12, 45);
             this.buttonUsuario.Name = "buttonUsuario";
-            this.buttonUsuario.Size = new System.Drawing.Size(261, 29);
+            this.buttonUsuario.Size = new System.Drawing.Size(261, 37);
             this.buttonUsuario.TabIndex = 2;
             this.buttonUsuario.Text = "Usuários";
             this.buttonUsuario.UseVisualStyleBackColor = false;
@@ -114,10 +112,11 @@
             // 
             // buttonGrupoUsuario
             // 
+            this.buttonGrupoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGrupoUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGrupoUsuario.Location = new System.Drawing.Point(17, 80);
+            this.buttonGrupoUsuario.Location = new System.Drawing.Point(12, 88);
             this.buttonGrupoUsuario.Name = "buttonGrupoUsuario";
-            this.buttonGrupoUsuario.Size = new System.Drawing.Size(261, 29);
+            this.buttonGrupoUsuario.Size = new System.Drawing.Size(261, 37);
             this.buttonGrupoUsuario.TabIndex = 3;
             this.buttonGrupoUsuario.Text = "Grupos de usuários";
             this.buttonGrupoUsuario.UseVisualStyleBackColor = false;
@@ -125,10 +124,11 @@
             // 
             // buttonCliente
             // 
+            this.buttonCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonCliente.Location = new System.Drawing.Point(17, 115);
+            this.buttonCliente.Location = new System.Drawing.Point(12, 134);
             this.buttonCliente.Name = "buttonCliente";
-            this.buttonCliente.Size = new System.Drawing.Size(261, 29);
+            this.buttonCliente.Size = new System.Drawing.Size(261, 37);
             this.buttonCliente.TabIndex = 3;
             this.buttonCliente.Text = "Clientes";
             this.buttonCliente.UseVisualStyleBackColor = false;
@@ -147,9 +147,6 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.monthCalendar1);
-            this.panel1.Controls.Add(this.buttonUsuario);
-            this.panel1.Controls.Add(this.buttonCliente);
-            this.panel1.Controls.Add(this.buttonGrupoUsuario);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(932, 0);
             this.panel1.Name = "panel1";
@@ -159,6 +156,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.panel2.Controls.Add(this.buttonGrupoUsuario);
+            this.panel2.Controls.Add(this.buttonCliente);
+            this.panel2.Controls.Add(this.buttonUsuario);
             this.panel2.Controls.Add(this.buttonConfig);
             this.panel2.Controls.Add(this.buttonEstoque);
             this.panel2.Controls.Add(this.buttonEstatistica);
@@ -167,9 +167,6 @@
             this.panel2.Controls.Add(this.buttonFornecedores);
             this.panel2.Controls.Add(this.buttonFuncionarios);
             this.panel2.Controls.Add(this.monthCalendar2);
-            this.panel2.Controls.Add(this.buttonUsuarios);
-            this.panel2.Controls.Add(this.buttonClientes);
-            this.panel2.Controls.Add(this.buttonGusuario);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -186,6 +183,7 @@
             this.buttonConfig.TabIndex = 14;
             this.buttonConfig.Text = "Configurações";
             this.buttonConfig.UseVisualStyleBackColor = false;
+            this.buttonConfig.Click += new System.EventHandler(this.buttonConfig_Click);
             // 
             // buttonEstoque
             // 
@@ -197,6 +195,7 @@
             this.buttonEstoque.TabIndex = 11;
             this.buttonEstoque.Text = "Estoque";
             this.buttonEstoque.UseVisualStyleBackColor = false;
+            this.buttonEstoque.Click += new System.EventHandler(this.buttonEstoque_Click);
             // 
             // buttonEstatistica
             // 
@@ -208,6 +207,7 @@
             this.buttonEstatistica.TabIndex = 12;
             this.buttonEstatistica.Text = "Estatística";
             this.buttonEstatistica.UseVisualStyleBackColor = false;
+            this.buttonEstatistica.Click += new System.EventHandler(this.buttonEstatistica_Click);
             // 
             // buttonProdutos
             // 
@@ -219,6 +219,7 @@
             this.buttonProdutos.TabIndex = 8;
             this.buttonProdutos.Text = "Produtos";
             this.buttonProdutos.UseVisualStyleBackColor = false;
+            this.buttonProdutos.Click += new System.EventHandler(this.buttonProdutos_Click);
             // 
             // label2
             // 
@@ -247,6 +248,7 @@
             this.buttonFornecedores.TabIndex = 9;
             this.buttonFornecedores.Text = "Fornecedores";
             this.buttonFornecedores.UseVisualStyleBackColor = false;
+            this.buttonFornecedores.Click += new System.EventHandler(this.buttonFornecedores_Click);
             // 
             // buttonFuncionarios
             // 
@@ -258,45 +260,13 @@
             this.buttonFuncionarios.TabIndex = 10;
             this.buttonFuncionarios.Text = "Funcionários";
             this.buttonFuncionarios.UseVisualStyleBackColor = false;
+            this.buttonFuncionarios.Click += new System.EventHandler(this.buttonFuncionarios_Click);
             // 
             // monthCalendar2
             // 
             this.monthCalendar2.Location = new System.Drawing.Point(9, 470);
             this.monthCalendar2.Name = "monthCalendar2";
             this.monthCalendar2.TabIndex = 4;
-            // 
-            // buttonUsuarios
-            // 
-            this.buttonUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUsuarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonUsuarios.Location = new System.Drawing.Point(12, 45);
-            this.buttonUsuarios.Name = "buttonUsuarios";
-            this.buttonUsuarios.Size = new System.Drawing.Size(261, 37);
-            this.buttonUsuarios.TabIndex = 2;
-            this.buttonUsuarios.Text = "Usuários";
-            this.buttonUsuarios.UseVisualStyleBackColor = false;
-            // 
-            // buttonClientes
-            // 
-            this.buttonClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonClientes.Location = new System.Drawing.Point(12, 134);
-            this.buttonClientes.Name = "buttonClientes";
-            this.buttonClientes.Size = new System.Drawing.Size(261, 37);
-            this.buttonClientes.TabIndex = 3;
-            this.buttonClientes.Text = "Clientes";
-            this.buttonClientes.UseVisualStyleBackColor = false;
-            // 
-            // buttonGusuario
-            // 
-            this.buttonGusuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGusuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGusuario.Location = new System.Drawing.Point(12, 88);
-            this.buttonGusuario.Name = "buttonGusuario";
-            this.buttonGusuario.Size = new System.Drawing.Size(261, 37);
-            this.buttonGusuario.TabIndex = 3;
-            this.buttonGusuario.Text = "Grupos de usuários";
-            this.buttonGusuario.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
@@ -534,9 +504,6 @@
         private Button buttonFuncionarios;
         private Label label2;
         private MonthCalendar monthCalendar2;
-        private Button buttonUsuarios;
-        private Button buttonClientes;
-        private Button buttonGusuario;
         private Panel panel3;
         private Label label4;
         private PictureBox pictureBox1;
