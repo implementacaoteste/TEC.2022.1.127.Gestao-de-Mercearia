@@ -47,7 +47,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(478, 61);
+            this.label1.Size = new System.Drawing.Size(527, 61);
             this.label1.TabIndex = 13;
             this.label1.Text = "Cadastro de fornecedor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -109,9 +109,10 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(12, 220);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 20);
+            this.label5.Size = new System.Drawing.Size(34, 20);
             this.label5.TabIndex = 20;
-            this.label5.Text = "Endereço";
+            this.label5.Text = "CEP";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox4
             // 
@@ -125,7 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(478, 293);
+            this.ClientSize = new System.Drawing.Size(527, 321);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox3);

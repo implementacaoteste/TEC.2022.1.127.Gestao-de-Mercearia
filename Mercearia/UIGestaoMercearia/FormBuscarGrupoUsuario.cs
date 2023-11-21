@@ -149,5 +149,10 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void grupoUsuarioDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

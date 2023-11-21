@@ -75,6 +75,7 @@
             this.grupoUsuarioDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grupoUsuarioDataGridView.Size = new System.Drawing.Size(559, 468);
             this.grupoUsuarioDataGridView.TabIndex = 7;
+            this.grupoUsuarioDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grupoUsuarioDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn2
             // 
