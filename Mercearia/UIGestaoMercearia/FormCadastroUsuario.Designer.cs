@@ -120,9 +120,11 @@
             senhaLabel.AutoSize = true;
 
 
+
             senhaLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 
             senhaLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+
             senhaLabel.Location = new System.Drawing.Point(225, 156);
             senhaLabel.Name = "senhaLabel";
             senhaLabel.Size = new System.Drawing.Size(51, 20);
@@ -201,13 +203,15 @@
             // 
             this.ativoCheckBox.AutoSize = true;
             this.ativoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.usuarioBindingSource, "Ativo", true));
+
+            this.ativoCheckBox.Location = new System.Drawing.Point(450, 183);
+
             this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ativoCheckBox.Location = new System.Drawing.Point(440, 183);
 
             this.ativoCheckBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ativoCheckBox.Location = new System.Drawing.Point(470, 183);
-
             this.ativoCheckBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ativoCheckBox.Name = "ativoCheckBox";
             this.ativoCheckBox.Size = new System.Drawing.Size(69, 24);
@@ -221,7 +225,11 @@
             this.textBoxConfirmarSenha.Location = new System.Drawing.Point(330, 180);
             this.textBoxConfirmarSenha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxConfirmarSenha.Name = "textBoxConfirmarSenha";
+
+            this.textBoxConfirmarSenha.Size = new System.Drawing.Size(114, 27);
+
             this.textBoxConfirmarSenha.Size = new System.Drawing.Size(134, 27);
+
             this.textBoxConfirmarSenha.TabIndex = 12;
             this.textBoxConfirmarSenha.TextChanged += new System.EventHandler(this.textBoxConfirmarSenha_TextChanged);
             // 
