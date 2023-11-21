@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UIGestaoMercearia
 {
-    public partial class FormAlterarProduto : Form
+    public partial class FormCadastroFornecedor : Form
     {
-        public FormAlterarProduto()
+        public FormCadastroFornecedor()
         {
             InitializeComponent();
         }

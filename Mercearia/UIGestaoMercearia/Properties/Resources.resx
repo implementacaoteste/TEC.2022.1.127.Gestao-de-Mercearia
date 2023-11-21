@@ -118,22 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="shopping-cart-icon-illustration-free-vector-_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopping-cart-icon-illustration-free-vector-_1_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="carrinho-de-supermercado-canes.svg.med" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\carrinho-de-supermercado-canes.svg.med.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shopping-cart-icon-illustration-free-vector (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-cart-icon-illustration-free-vector (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shopping-cart-icon-illustration-free-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopping-cart-icon-illustration-free-vector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shopping-cart-icon-illustration-free-vector1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-cart-icon-illustration-free-vector1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-icon-illustration-free-vector-_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-cart-icon-illustration-free-vector-_1_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shopping-cart-icon-illustration-free-vector (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-cart-icon-illustration-free-vector (2)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shopping-cart-icon-illustration-free-vector1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopping-cart-icon-illustration-free-vector1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shopping-cart-icon-illustration-free-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-cart-icon-illustration-free-vector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-icon-illustration-free-vector2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-cart-icon-illustration-free-vector2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

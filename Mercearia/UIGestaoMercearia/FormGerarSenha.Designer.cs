@@ -1,6 +1,6 @@
 ﻿namespace UIGestaoMercearia
 {
-    partial class FormAlterarCliente
+    partial class FormGerarSenha
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FormGerarSenha
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormAlterarCliente";
+            this.ClientSize = new System.Drawing.Size(800, 340);
+            this.Name = "FormGerarSenha";
+            this.Text = "FormGerarSenha";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
