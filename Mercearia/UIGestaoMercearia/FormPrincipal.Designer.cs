@@ -178,6 +178,7 @@
             // 
             // buttonConfig
             // 
+            this.buttonConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonConfig.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonConfig.Location = new System.Drawing.Point(12, 395);
             this.buttonConfig.Name = "buttonConfig";
@@ -188,6 +189,7 @@
             // 
             // buttonEstoque
             // 
+            this.buttonEstoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEstoque.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonEstoque.Location = new System.Drawing.Point(12, 352);
             this.buttonEstoque.Name = "buttonEstoque";
@@ -198,6 +200,7 @@
             // 
             // buttonEstatistica
             // 
+            this.buttonEstatistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEstatistica.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonEstatistica.Location = new System.Drawing.Point(12, 309);
             this.buttonEstatistica.Name = "buttonEstatistica";
@@ -208,6 +211,7 @@
             // 
             // buttonProdutos
             // 
+            this.buttonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonProdutos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonProdutos.Location = new System.Drawing.Point(12, 177);
             this.buttonProdutos.Name = "buttonProdutos";
@@ -235,6 +239,7 @@
             // 
             // buttonFornecedores
             // 
+            this.buttonFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFornecedores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonFornecedores.Location = new System.Drawing.Point(12, 266);
             this.buttonFornecedores.Name = "buttonFornecedores";
@@ -245,6 +250,7 @@
             // 
             // buttonFuncionarios
             // 
+            this.buttonFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonFuncionarios.Location = new System.Drawing.Point(12, 220);
             this.buttonFuncionarios.Name = "buttonFuncionarios";
@@ -261,6 +267,7 @@
             // 
             // buttonUsuarios
             // 
+            this.buttonUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUsuarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonUsuarios.Location = new System.Drawing.Point(12, 45);
             this.buttonUsuarios.Name = "buttonUsuarios";
@@ -271,6 +278,7 @@
             // 
             // buttonClientes
             // 
+            this.buttonClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonClientes.Location = new System.Drawing.Point(12, 134);
             this.buttonClientes.Name = "buttonClientes";
@@ -281,6 +289,7 @@
             // 
             // buttonGusuario
             // 
+            this.buttonGusuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGusuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonGusuario.Location = new System.Drawing.Point(12, 88);
             this.buttonGusuario.Name = "buttonGusuario";
