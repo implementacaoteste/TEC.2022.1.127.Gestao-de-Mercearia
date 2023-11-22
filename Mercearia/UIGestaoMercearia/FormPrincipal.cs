@@ -104,7 +104,10 @@ namespace UIGestaoMercearia
 
         private void buttonFornecedores_Click(object sender, EventArgs e)
         {
-
+            using (FormConsultaFornecedor frm = new FormConsultaFornecedor())
+            {
+                frm.ShowDialog();            
+            }
         }
 
         private void buttonEstatistica_Click(object sender, EventArgs e)
