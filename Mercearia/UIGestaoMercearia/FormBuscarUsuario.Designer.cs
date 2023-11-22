@@ -240,10 +240,10 @@
             // buttonAdicionarGrupoUsuario
             // 
             this.buttonAdicionarGrupoUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdicionarGrupoUsuario.Location = new System.Drawing.Point(1151, 105);
+            this.buttonAdicionarGrupoUsuario.Location = new System.Drawing.Point(1159, 105);
             this.buttonAdicionarGrupoUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonAdicionarGrupoUsuario.Name = "buttonAdicionarGrupoUsuario";
-            this.buttonAdicionarGrupoUsuario.Size = new System.Drawing.Size(99, 40);
+            this.buttonAdicionarGrupoUsuario.Size = new System.Drawing.Size(91, 40);
             this.buttonAdicionarGrupoUsuario.TabIndex = 6;
             this.buttonAdicionarGrupoUsuario.Text = "A&dicionar";
             this.buttonAdicionarGrupoUsuario.UseVisualStyleBackColor = true;

@@ -82,7 +82,7 @@
             foneLabel.AutoSize = true;
             foneLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             foneLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            foneLabel.Location = new System.Drawing.Point(428, 171);
+            foneLabel.Location = new System.Drawing.Point(230, 116);
             foneLabel.Name = "foneLabel";
             foneLabel.Size = new System.Drawing.Size(43, 20);
             foneLabel.TabIndex = 7;
@@ -149,10 +149,10 @@
             // 
             this.foneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Fone", true));
             this.foneTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.foneTextBox.Location = new System.Drawing.Point(428, 195);
+            this.foneTextBox.Location = new System.Drawing.Point(230, 140);
             this.foneTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.foneTextBox.Name = "foneTextBox";
-            this.foneTextBox.Size = new System.Drawing.Size(222, 27);
+            this.foneTextBox.Size = new System.Drawing.Size(192, 27);
             this.foneTextBox.TabIndex = 8;
             // 
             // emailTextBox
@@ -162,7 +162,7 @@
             this.emailTextBox.Location = new System.Drawing.Point(12, 140);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(410, 27);
+            this.emailTextBox.Size = new System.Drawing.Size(212, 27);
             this.emailTextBox.TabIndex = 10;
             // 
             // label1
@@ -199,6 +199,7 @@
             this.buttonCancelar.TabIndex = 12;
             this.buttonCancelar.Text = "&Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // textBox1
             // 
@@ -243,7 +244,7 @@
             this.Controls.Add(this.nomeTextBox);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormCadastroCliente";
-            this.Text = "FormCadastroCliente";
+            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.FormCadastroCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             this.ResumeLayout(false);

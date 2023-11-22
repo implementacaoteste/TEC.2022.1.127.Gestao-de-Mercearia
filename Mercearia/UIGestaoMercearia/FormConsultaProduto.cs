@@ -65,7 +65,7 @@ namespace UIGestaoMercearia
                     return;
 
                 int id = ((Produto)bindingSourceProduto.Current).Id;
-                new ClienteBLL().Excluir(id);
+                new ProdutoBLL().Excluir(id);
                 bindingSourceProduto.RemoveCurrent();
             }
             catch (Exception ex)
@@ -99,13 +99,13 @@ namespace UIGestaoMercearia
                     return;
                 }
 
-                int id = ((Cliente)bindingSourceProduto.Current).Id;
+                int id = ((Produto)bindingSourceProduto.Current).Id;
 
-                /*using (FormCadastroProduto frm = new FormCadastroProduto(id))
+                using (FormCadastroProduto frm = new FormCadastroProduto(id))
                 {
                     frm.ShowDialog();
                 }
-                buttonBuscar_Click(null, null);*/ //a ser implementado
+                buttonBuscar_Click(null, null);
             }
             catch (Exception ex)
             {

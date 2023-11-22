@@ -69,6 +69,7 @@ namespace DAL
                         cliente.Email = rd["Email"].ToString();
                         cliente.Bairro = rd["Bairro"].ToString();
                         cliente.Fone = rd["Fone"].ToString();
+                        cliente.CEP = rd["CEP"].ToString();
 
                         clienteList.Add(cliente);
                     }
@@ -135,7 +136,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Bairo, CEP, Fone FROM Cliente WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Bairro, CEP, Fone FROM Cliente WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
 
@@ -214,6 +215,7 @@ namespace DAL
                                        Bairro = @Bairro
                                        Email = @Email
                                         Fone = @Fone 
+                                        CEP = @CEP
                                     WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
 

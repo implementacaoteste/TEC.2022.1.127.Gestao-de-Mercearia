@@ -62,7 +62,7 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.clienteDataGridView.DataSource = this.clienteBindingSource;
-            this.clienteDataGridView.Location = new System.Drawing.Point(12, 125);
+            this.clienteDataGridView.Location = new System.Drawing.Point(24, 125);
             this.clienteDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.clienteDataGridView.Name = "clienteDataGridView";
             this.clienteDataGridView.RowHeadersWidth = 51;

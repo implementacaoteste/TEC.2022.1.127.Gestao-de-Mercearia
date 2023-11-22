@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
+            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxDescricao = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.textBoxPreco = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxQtdEstoque = new System.Windows.Forms.TextBox();
-            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -83,11 +83,15 @@
             this.textBoxNome.Size = new System.Drawing.Size(409, 27);
             this.textBoxNome.TabIndex = 14;
             // 
+            // produtoBindingSource
+            // 
+            this.produtoBindingSource.DataSource = typeof(Models.Produto);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(12, 114);
+            this.label3.Location = new System.Drawing.Point(170, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 15;
@@ -98,7 +102,7 @@
             this.textBoxDescricao.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Descricao", true));
             this.textBoxDescricao.Location = new System.Drawing.Point(12, 137);
             this.textBoxDescricao.Name = "textBoxDescricao";
-            this.textBoxDescricao.Size = new System.Drawing.Size(409, 27);
+            this.textBoxDescricao.Size = new System.Drawing.Size(152, 27);
             this.textBoxDescricao.TabIndex = 16;
             // 
             // label4
@@ -159,7 +163,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(427, 114);
+            this.label7.Location = new System.Drawing.Point(12, 114);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 20);
             this.label7.TabIndex = 23;
@@ -168,16 +172,16 @@
             // textBoxPreco
             // 
             this.textBoxPreco.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Preco", true));
-            this.textBoxPreco.Location = new System.Drawing.Point(427, 137);
+            this.textBoxPreco.Location = new System.Drawing.Point(170, 137);
             this.textBoxPreco.Name = "textBoxPreco";
-            this.textBoxPreco.Size = new System.Drawing.Size(168, 27);
+            this.textBoxPreco.Size = new System.Drawing.Size(489, 27);
             this.textBoxPreco.TabIndex = 24;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(426, 167);
+            this.label8.Location = new System.Drawing.Point(427, 167);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(169, 20);
             this.label8.TabIndex = 25;
@@ -186,14 +190,10 @@
             // textBoxQtdEstoque
             // 
             this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "QuantidadeEmEstoque", true));
-            this.textBoxQtdEstoque.Location = new System.Drawing.Point(426, 190);
+            this.textBoxQtdEstoque.Location = new System.Drawing.Point(427, 190);
             this.textBoxQtdEstoque.Name = "textBoxQtdEstoque";
-            this.textBoxQtdEstoque.Size = new System.Drawing.Size(170, 27);
+            this.textBoxQtdEstoque.Size = new System.Drawing.Size(232, 27);
             this.textBoxQtdEstoque.TabIndex = 27;
-            // 
-            // produtoBindingSource
-            // 
-            this.produtoBindingSource.DataSource = typeof(Models.Produto);
             // 
             // buttonSalvar
             // 

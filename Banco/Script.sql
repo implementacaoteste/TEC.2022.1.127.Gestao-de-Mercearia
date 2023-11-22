@@ -22,6 +22,7 @@ CREATE TABLE [dbo].[Cliente](
 	[Nome] [varchar](150) NULL,
 	[Cpf] [varchar](20) NULL,
 	[Endereco] [varchar](150) NULL,
+	[CEP] [varchar](25) NULL,
 	[Email] [varchar](150) NULL,
 	[Telefone] [varchar](15) NULL,
  CONSTRAINT [PK_Cliente] PRIMARY KEY CLUSTERED 
@@ -59,6 +60,7 @@ CREATE TABLE [dbo].[Fornecedor](
 	[Email] [varchar](150) NULL,
 	[Telefone] [varchar](50) NULL,
 	[Endereco] [varchar](50) NULL,
+	[CEP] [varchar](25) NULL,
  CONSTRAINT [PK_Fornecedor] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -156,7 +158,6 @@ CREATE TABLE [dbo].[Usuario](
 	[Nome] [varchar](150) NULL,
 	[NomeUsuario] [varchar](50) NULL,
 	[Email] [varchar](150) NULL,
-	[Endereco] [varchar](150) NULL,
 	[CPF] [varchar](15) NULL,
 	[Ativo] [bit] NULL,
 	[Senha] [varchar](50) NULL,

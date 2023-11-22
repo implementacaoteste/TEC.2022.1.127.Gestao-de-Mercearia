@@ -75,6 +75,7 @@
             this.grupoUsuarioDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grupoUsuarioDataGridView.Size = new System.Drawing.Size(559, 468);
             this.grupoUsuarioDataGridView.TabIndex = 7;
+            this.grupoUsuarioDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grupoUsuarioDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -182,7 +183,7 @@
             // buttonAdicionarPermissao
             // 
             this.buttonAdicionarPermissao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAdicionarPermissao.Location = new System.Drawing.Point(955, 116);
+            this.buttonAdicionarPermissao.Location = new System.Drawing.Point(955, 121);
             this.buttonAdicionarPermissao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonAdicionarPermissao.Name = "buttonAdicionarPermissao";
             this.buttonAdicionarPermissao.Size = new System.Drawing.Size(84, 31);
@@ -194,7 +195,7 @@
             // buttonExcluirPermissao
             // 
             this.buttonExcluirPermissao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonExcluirPermissao.Location = new System.Drawing.Point(1045, 115);
+            this.buttonExcluirPermissao.Location = new System.Drawing.Point(1045, 121);
             this.buttonExcluirPermissao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonExcluirPermissao.Name = "buttonExcluirPermissao";
             this.buttonExcluirPermissao.Size = new System.Drawing.Size(75, 31);
