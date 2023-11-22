@@ -73,6 +73,46 @@ namespace UIGestaoMercearia.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap settings_500px {
+            get {
+                object obj = ResourceManager.GetObject("settings_500px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_500px1 {
+            get {
+                object obj = ResourceManager.GetObject("settings_500px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_512px {
+            get {
+                object obj = ResourceManager.GetObject("settings_512px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shop_360px {
+            get {
+                object obj = ResourceManager.GetObject("shop_360px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shopping_cart_icon_illustration_free_vector {
             get {
                 object obj = ResourceManager.GetObject("shopping-cart-icon-illustration-free-vector", resourceCulture);
@@ -126,6 +166,16 @@ namespace UIGestaoMercearia.Properties {
         internal static System.Drawing.Bitmap shopping_cart_icon_illustration_free_vector2 {
             get {
                 object obj = ResourceManager.GetObject("shopping-cart-icon-illustration-free-vector2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unlock_360px {
+            get {
+                object obj = ResourceManager.GetObject("unlock_360px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
