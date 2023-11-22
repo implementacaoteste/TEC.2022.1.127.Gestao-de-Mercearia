@@ -45,7 +45,7 @@
             nomeGrupoLabel.AutoSize = true;
             nomeGrupoLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             nomeGrupoLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            nomeGrupoLabel.Location = new System.Drawing.Point(12, 58);
+            nomeGrupoLabel.Location = new System.Drawing.Point(12, 80);
             nomeGrupoLabel.Name = "nomeGrupoLabel";
             nomeGrupoLabel.Size = new System.Drawing.Size(120, 20);
             nomeGrupoLabel.TabIndex = 1;
@@ -67,7 +67,7 @@
             // nomeGrupoTextBox
             // 
             this.nomeGrupoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.grupoUsuarioBindingSource, "NomeGrupo", true));
-            this.nomeGrupoTextBox.Location = new System.Drawing.Point(12, 81);
+            this.nomeGrupoTextBox.Location = new System.Drawing.Point(12, 104);
             this.nomeGrupoTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nomeGrupoTextBox.Name = "nomeGrupoTextBox";
             this.nomeGrupoTextBox.Size = new System.Drawing.Size(553, 27);
