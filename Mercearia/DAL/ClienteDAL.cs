@@ -136,7 +136,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Bairo, CEP, Fone FROM Cliente WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Bairro, CEP, Fone FROM Cliente WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
 
