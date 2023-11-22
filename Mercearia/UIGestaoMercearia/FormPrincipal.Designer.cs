@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Label label5;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.buttonUsuario = new System.Windows.Forms.Button();
             this.buttonGrupoUsuario = new System.Windows.Forms.Button();
             this.buttonCliente = new System.Windows.Forms.Button();
@@ -56,15 +57,16 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             label1 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -91,7 +93,7 @@
             label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             label5.Font = new System.Drawing.Font("Swis721 Blk BT", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label5.ForeColor = System.Drawing.Color.White;
-            label5.Location = new System.Drawing.Point(210, 255);
+            label5.Location = new System.Drawing.Point(615, 10);
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(285, 40);
             label5.TabIndex = 1;
@@ -230,7 +232,7 @@
             this.label2.Font = new System.Drawing.Font("Script MT Bold", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(-58, 0);
+            this.label2.Location = new System.Drawing.Point(-26, 3);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(20, 4, 100, 4);
             this.label2.Size = new System.Drawing.Size(343, 42);
@@ -391,26 +393,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel3.Controls.Add(label1);
+            this.panel3.Controls.Add(label5);
             this.panel3.Location = new System.Drawing.Point(0, 58);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(929, 61);
             this.panel3.TabIndex = 16;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label4.Font = new System.Drawing.Font("Script MT Bold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.label4.Location = new System.Drawing.Point(264, 540);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(529, 55);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Nome da Empresa";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox1
             // 
@@ -438,8 +425,27 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(153)))), ((int)(((byte)(230)))));
             this.panel4.Location = new System.Drawing.Point(475, 118);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(454, 61);
+            this.panel4.Size = new System.Drawing.Size(454, 45);
             this.panel4.TabIndex = 17;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pictureBox2.ErrorImage = null;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 161);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(929, 527);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 18;
+            this.pictureBox2.TabStop = false;
             // 
             // FormPrincipal
             // 
@@ -448,10 +454,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1217, 688);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(label5);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.labelNomeEmpresa);
@@ -472,8 +477,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -505,9 +510,9 @@
         private Label label2;
         private MonthCalendar monthCalendar2;
         private Panel panel3;
-        private Label label4;
         private PictureBox pictureBox1;
         private Panel panel4;
+        private PictureBox pictureBox2;
     }
 }
 
