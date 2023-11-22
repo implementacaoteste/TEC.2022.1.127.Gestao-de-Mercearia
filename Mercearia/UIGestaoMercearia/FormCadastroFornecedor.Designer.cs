@@ -49,11 +49,11 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-<<<<<<< Updated upstream
+
             this.label1.Size = new System.Drawing.Size(460, 61);
-=======
+
             this.label1.Size = new System.Drawing.Size(467, 61);
->>>>>>> Stashed changes
+
             this.label1.TabIndex = 13;
             this.label1.Text = "Cadastro de fornecedor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,11 +152,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-<<<<<<< Updated upstream
+
             this.ClientSize = new System.Drawing.Size(460, 356);
-=======
+
             this.ClientSize = new System.Drawing.Size(467, 360);
->>>>>>> Stashed changes
+
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
