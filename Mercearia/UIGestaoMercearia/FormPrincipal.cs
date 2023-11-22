@@ -15,9 +15,8 @@ namespace UIGestaoMercearia
         {
             try
             {
-                
+                label2.Text = Constantes.NomeEmpresa;
                 labelNomeEmpresa.Text = Constantes.NomeEmpresa;
-                //label6.Text = Constantes.NomeEmpresa;
                 PosicionarTopo();
                 using (FormLogin frm = new FormLogin())
                 {
@@ -74,6 +73,16 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
+        private void PosicionarTopo()
+        {
+            //labelNomeEmpresa.Left = ((this.Width - panel2.Width) / 2) - labelNomeEmpresa.Width / 2 - (panel2.Width / 4);
+            labelNomeEmpresa.Left = panel3.Width / 2 - labelNomeEmpresa.Width / 2;
+            pictureBoxLogo.Left = labelNomeEmpresa.Left - pictureBoxLogo.Width;
+        }
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -88,24 +97,7 @@ namespace UIGestaoMercearia
             }
         }
 
-        private void FormPrincipal_Resize(object sender, EventArgs e)
-        {
-            PosicionarTopo();
-        }
-
-        private void PosicionarTopo()
-        {
-            //labelNomeEmpresa.Left = ((this.Width - panel2.Width) / 2) - labelNomeEmpresa.Width / 2 - (panel2.Width / 4);
-            labelNomeEmpresa.Left = panel3.Width / 2 - labelNomeEmpresa.Width/2;
-            pictureBoxLogo.Left = labelNomeEmpresa.Left - pictureBoxLogo.Width;
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
@@ -137,6 +129,16 @@ namespace UIGestaoMercearia
         private void buttonConfig_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormPrincipal_Resize(object sender, EventArgs e)
+        {
+            PosicionarTopo();
+        }
+
+        private void FormPrincipal_ResizeEnd(object sender, EventArgs e)
+        {
+            PosicionarTopo();
         }
     }
 }
