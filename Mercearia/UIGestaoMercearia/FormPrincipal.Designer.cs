@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Label label1;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             System.Windows.Forms.Label label2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.buttonUsuario = new System.Windows.Forms.Button();
             this.buttonGrupoUsuario = new System.Windows.Forms.Button();
             this.buttonCliente = new System.Windows.Forms.Button();
@@ -60,6 +60,7 @@
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -67,6 +68,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,11 +87,25 @@
             label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label2
+            // 
+            label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            label2.Font = new System.Drawing.Font("Swis721 Blk BT", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label2.ForeColor = System.Drawing.Color.White;
+            label2.Location = new System.Drawing.Point(17, 3);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(273, 40);
+            label2.TabIndex = 2;
+            label2.Text = "MENU";
+            label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // buttonUsuario
             // 
             this.buttonUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonUsuario.Location = new System.Drawing.Point(12, 45);
+            this.buttonUsuario.Location = new System.Drawing.Point(12, 53);
             this.buttonUsuario.Name = "buttonUsuario";
             this.buttonUsuario.Size = new System.Drawing.Size(261, 37);
             this.buttonUsuario.TabIndex = 2;
@@ -101,7 +117,7 @@
             // 
             this.buttonGrupoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGrupoUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGrupoUsuario.Location = new System.Drawing.Point(12, 88);
+            this.buttonGrupoUsuario.Location = new System.Drawing.Point(12, 96);
             this.buttonGrupoUsuario.Name = "buttonGrupoUsuario";
             this.buttonGrupoUsuario.Size = new System.Drawing.Size(261, 37);
             this.buttonGrupoUsuario.TabIndex = 3;
@@ -113,7 +129,7 @@
             // 
             this.buttonCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonCliente.Location = new System.Drawing.Point(12, 134);
+            this.buttonCliente.Location = new System.Drawing.Point(12, 142);
             this.buttonCliente.Name = "buttonCliente";
             this.buttonCliente.Size = new System.Drawing.Size(261, 37);
             this.buttonCliente.TabIndex = 3;
@@ -143,6 +159,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(label2);
             this.panel2.Controls.Add(this.buttonGrupoUsuario);
             this.panel2.Controls.Add(this.buttonCliente);
@@ -164,7 +181,7 @@
             // 
             this.buttonConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonConfig.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonConfig.Location = new System.Drawing.Point(12, 395);
+            this.buttonConfig.Location = new System.Drawing.Point(12, 403);
             this.buttonConfig.Name = "buttonConfig";
             this.buttonConfig.Size = new System.Drawing.Size(261, 37);
             this.buttonConfig.TabIndex = 14;
@@ -176,7 +193,7 @@
             // 
             this.buttonEstoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEstoque.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonEstoque.Location = new System.Drawing.Point(12, 352);
+            this.buttonEstoque.Location = new System.Drawing.Point(12, 360);
             this.buttonEstoque.Name = "buttonEstoque";
             this.buttonEstoque.Size = new System.Drawing.Size(261, 37);
             this.buttonEstoque.TabIndex = 11;
@@ -188,7 +205,7 @@
             // 
             this.buttonEstatistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEstatistica.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonEstatistica.Location = new System.Drawing.Point(12, 309);
+            this.buttonEstatistica.Location = new System.Drawing.Point(12, 317);
             this.buttonEstatistica.Name = "buttonEstatistica";
             this.buttonEstatistica.Size = new System.Drawing.Size(261, 37);
             this.buttonEstatistica.TabIndex = 12;
@@ -200,7 +217,7 @@
             // 
             this.buttonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonProdutos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonProdutos.Location = new System.Drawing.Point(12, 177);
+            this.buttonProdutos.Location = new System.Drawing.Point(12, 185);
             this.buttonProdutos.Name = "buttonProdutos";
             this.buttonProdutos.Size = new System.Drawing.Size(261, 37);
             this.buttonProdutos.TabIndex = 8;
@@ -212,7 +229,7 @@
             // 
             this.buttonFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFornecedores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFornecedores.Location = new System.Drawing.Point(12, 266);
+            this.buttonFornecedores.Location = new System.Drawing.Point(12, 274);
             this.buttonFornecedores.Name = "buttonFornecedores";
             this.buttonFornecedores.Size = new System.Drawing.Size(261, 37);
             this.buttonFornecedores.TabIndex = 9;
@@ -224,7 +241,7 @@
             // 
             this.buttonFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFuncionarios.Location = new System.Drawing.Point(12, 220);
+            this.buttonFuncionarios.Location = new System.Drawing.Point(12, 228);
             this.buttonFuncionarios.Name = "buttonFuncionarios";
             this.buttonFuncionarios.Size = new System.Drawing.Size(261, 37);
             this.buttonFuncionarios.TabIndex = 10;
@@ -428,19 +445,15 @@
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
-            // label2
+            // pictureBox1
             // 
-            label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            label2.Font = new System.Drawing.Font("Swis721 Blk BT", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label2.ForeColor = System.Drawing.Color.White;
-            label2.Location = new System.Drawing.Point(0, 0);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(285, 40);
-            label2.TabIndex = 2;
-            label2.Text = "MENU";
-            label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(44, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // FormPrincipal
             // 
@@ -476,6 +489,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -512,6 +526,7 @@
         private PictureBox pictureBoxLogo;
         private Panel panel4;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
     }
 }
 
