@@ -23,7 +23,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@Nome", _fornecedor.Nome);
                 cmd.Parameters.AddWithValue("@Email", _fornecedor.Email);
                 cmd.Parameters.AddWithValue("@Fone", _fornecedor.Fone);
-                cmd.Parameters.AddWithValue("@Endereco", _fornecedor.Endereco);
+                cmd.Parameters.AddWithValue("@CEP", _fornecedor.CEP);
 
                 cmd.Connection = cn;
                 cn.Open();
@@ -51,7 +51,7 @@ namespace DAL
                                         Nome = @Nome, 
                                         Email = @Email, 
                                         Fone = @Fone, 
-                                        Endereco = @Endereco, 
+                                        CEP = @CEP, 
                                     WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
 
@@ -59,7 +59,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@Nome", _fornecedor.Nome);
                 cmd.Parameters.AddWithValue("@Email", _fornecedor.Email);
                 cmd.Parameters.AddWithValue("@Fone", _fornecedor.Fone);
-                cmd.Parameters.AddWithValue("@Endereco", _fornecedor.Endereco);
+                cmd.Parameters.AddWithValue("@CEP", _fornecedor.CEP);
 
                 cmd.Connection = cn;
                 cn.Open();
@@ -110,7 +110,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Id, Nome, Email, Fone, Endereco FROM Fornecedor";
+                cmd.CommandText = "SELECT Id, Nome, Email, Fone, CEP FROM Fornecedor";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cn.Open();
@@ -124,7 +124,7 @@ namespace DAL
                         fornecedor.Nome = rd["Nome"].ToString();
                         fornecedor.Email = rd["Email"].ToString();
                         fornecedor.Fone = rd["Fone"].ToString();
-                        fornecedor.Endereco = rd["Endereco"].ToString();
+                        fornecedor.CEP = rd["CEP"].ToString();
                         fornecedores.Add(fornecedor);
 
                     }
@@ -165,7 +165,7 @@ namespace DAL
                         fornecedor.Nome = rd["Nome"].ToString();
                         fornecedor.Email = rd["Email"].ToString();
                         fornecedor.Fone = rd["Fone"].ToString();
-                        fornecedor.Endereco = rd["Endereco"].ToString();
+                        fornecedor.CEP = rd["CEP"].ToString();
                         fornecedores.Add(fornecedor);
                     }
                 }
