@@ -147,7 +147,7 @@
             this.cPFTextBox.Location = new System.Drawing.Point(225, 180);
             this.cPFTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cPFTextBox.Name = "cPFTextBox";
-            this.cPFTextBox.Size = new System.Drawing.Size(158, 27);
+            this.cPFTextBox.Size = new System.Drawing.Size(331, 27);
             this.cPFTextBox.TabIndex = 4;
             this.cPFTextBox.TextChanged += new System.EventHandler(this.cPFTextBox_TextChanged);
             // 
