@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.Label label1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
+            System.Windows.Forms.Label label2;
             this.buttonUsuario = new System.Windows.Forms.Button();
             this.buttonGrupoUsuario = new System.Windows.Forms.Button();
             this.buttonCliente = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.buttonEstoque = new System.Windows.Forms.Button();
             this.buttonEstatistica = new System.Windows.Forms.Button();
             this.buttonProdutos = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.buttonFornecedores = new System.Windows.Forms.Button();
             this.buttonFuncionarios = new System.Windows.Forms.Button();
             this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
@@ -61,6 +61,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -142,6 +143,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.panel2.Controls.Add(label2);
             this.panel2.Controls.Add(this.buttonGrupoUsuario);
             this.panel2.Controls.Add(this.buttonCliente);
             this.panel2.Controls.Add(this.buttonUsuario);
@@ -149,7 +151,6 @@
             this.panel2.Controls.Add(this.buttonEstoque);
             this.panel2.Controls.Add(this.buttonEstatistica);
             this.panel2.Controls.Add(this.buttonProdutos);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.buttonFornecedores);
             this.panel2.Controls.Add(this.buttonFuncionarios);
             this.panel2.Controls.Add(this.monthCalendar2);
@@ -206,23 +207,6 @@
             this.buttonProdutos.Text = "Produtos";
             this.buttonProdutos.UseVisualStyleBackColor = false;
             this.buttonProdutos.Click += new System.EventHandler(this.buttonProdutos_Click);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label2.Font = new System.Drawing.Font("Script MT Bold", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(-26, 3);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(20, 4, 100, 4);
-            this.label2.Size = new System.Drawing.Size(343, 42);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Nome da Empresa";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonFornecedores
             // 
@@ -444,6 +428,20 @@
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
+            // label2
+            // 
+            label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            label2.Font = new System.Drawing.Font("Swis721 Blk BT", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label2.ForeColor = System.Drawing.Color.White;
+            label2.Location = new System.Drawing.Point(0, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(285, 40);
+            label2.TabIndex = 2;
+            label2.Text = "MENU";
+            label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -474,7 +472,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
@@ -509,7 +506,6 @@
         private Button buttonProdutos;
         private Button buttonFornecedores;
         private Button buttonFuncionarios;
-        private Label label2;
         private MonthCalendar monthCalendar2;
         private Panel panel3;
         private Label label4;
