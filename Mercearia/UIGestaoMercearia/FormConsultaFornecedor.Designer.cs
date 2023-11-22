@@ -171,7 +171,6 @@
             this.Name = "FormConsultaFornecedor";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "FormConsultaFornecedor";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFornecedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceFornecedor)).EndInit();
             this.ResumeLayout(false);
