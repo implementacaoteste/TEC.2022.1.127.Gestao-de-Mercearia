@@ -12,9 +12,11 @@ namespace UIGestaoMercearia
 {
     public partial class FormCadastroFornecedor : Form
     {
-        public FormCadastroFornecedor()
+        int id;
+        public FormCadastroFornecedor(int _id = 0)
         {
             InitializeComponent();
+            id = _id;
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -35,6 +37,11 @@ namespace UIGestaoMercearia
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormCadastroFornecedor_Load(object sender, EventArgs e)
         {
 
         }

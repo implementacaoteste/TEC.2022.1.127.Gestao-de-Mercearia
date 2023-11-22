@@ -38,7 +38,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,11 +49,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-
-            this.label1.Size = new System.Drawing.Size(460, 61);
-
             this.label1.Size = new System.Drawing.Size(467, 61);
-
             this.label1.TabIndex = 13;
             this.label1.Text = "Cadastro de fornecedor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -137,27 +133,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonCancelar
             // 
-            this.button2.Location = new System.Drawing.Point(366, 319);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 29);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Excluir";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonCancelar.Location = new System.Drawing.Point(366, 319);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(82, 29);
+            this.buttonCancelar.TabIndex = 23;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormCadastroFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-
-            this.ClientSize = new System.Drawing.Size(460, 356);
-
+            this.CancelButton = this.buttonCancelar;
             this.ClientSize = new System.Drawing.Size(467, 360);
-
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
@@ -168,8 +161,13 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormCadastroFornecedor";
-            this.Text = "FormCadastroFornecedor";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.Load += new System.EventHandler(this.FormCadastroFornecedor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,6 +185,6 @@
         private Label label5;
         private TextBox textBox4;
         private Button button1;
-        private Button button2;
+        private Button buttonCancelar;
     }
 }
