@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+        
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewFornecedor = new System.Windows.Forms.DataGridView();
             this.buttonBuscar = new System.Windows.Forms.Button();

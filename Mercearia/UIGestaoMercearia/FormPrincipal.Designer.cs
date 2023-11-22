@@ -58,6 +58,8 @@
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             label1 = new System.Windows.Forms.Label();
@@ -65,8 +67,8 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -367,13 +369,14 @@
             // 
             this.labelNomeEmpresa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelNomeEmpresa.AutoSize = true;
             this.labelNomeEmpresa.BackColor = System.Drawing.Color.Transparent;
             this.labelNomeEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.labelNomeEmpresa.Font = new System.Drawing.Font("Bernard MT Condensed", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.labelNomeEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.labelNomeEmpresa.Location = new System.Drawing.Point(0, 0);
+            this.labelNomeEmpresa.Location = new System.Drawing.Point(335, 0);
             this.labelNomeEmpresa.Name = "labelNomeEmpresa";
-            this.labelNomeEmpresa.Size = new System.Drawing.Size(926, 55);
+            this.labelNomeEmpresa.Size = new System.Drawing.Size(361, 55);
             this.labelNomeEmpresa.TabIndex = 5;
             this.labelNomeEmpresa.Text = "Nome da Empresa";
             this.labelNomeEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -399,24 +402,38 @@
             this.panel3.Size = new System.Drawing.Size(929, 61);
             this.panel3.TabIndex = 16;
             // 
-            // pictureBox1
+            // label4
             // 
-            this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::UIGestaoMercearia.Properties.Resources.shopping_cart_icon_illustration_free_vector2;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(225, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(67, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label4.Font = new System.Drawing.Font("Script MT Bold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.label4.Location = new System.Drawing.Point(264, 540);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(529, 55);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Nome da Empresa";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxLogo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pictureBoxLogo.ErrorImage = null;
+            this.pictureBoxLogo.Image = global::UIGestaoMercearia.Properties.Resources.shopping_cart_icon_illustration_free_vector2;
+            this.pictureBoxLogo.InitialImage = null;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(225, 3);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(67, 52);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 2;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // panel4
             // 
@@ -456,7 +473,9 @@
             this.ClientSize = new System.Drawing.Size(1217, 688);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(label5);
+            this.Controls.Add(this.pictureBoxLogo);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.labelNomeEmpresa);
@@ -469,15 +488,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
+            this.ResizeEnd += new System.EventHandler(this.FormPrincipal_ResizeEnd);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormPrincipal_KeyDown);
+            this.Resize += new System.EventHandler(this.FormPrincipal_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -510,7 +530,8 @@
         private Label label2;
         private MonthCalendar monthCalendar2;
         private Panel panel3;
-        private PictureBox pictureBox1;
+        private Label label4;
+        private PictureBox pictureBoxLogo;
         private Panel panel4;
         private PictureBox pictureBox2;
     }
