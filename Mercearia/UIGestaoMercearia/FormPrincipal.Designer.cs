@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Label label1;
-            System.Windows.Forms.Label label2;
+            System.Windows.Forms.Label MENU;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.buttonUsuario = new System.Windows.Forms.Button();
             this.buttonGrupoUsuario = new System.Windows.Forms.Button();
             this.buttonCliente = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonConfig = new System.Windows.Forms.Button();
             this.buttonEstoque = new System.Windows.Forms.Button();
             this.buttonEstatistica = new System.Windows.Forms.Button();
@@ -60,15 +61,14 @@
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             label1 = new System.Windows.Forms.Label();
-            label2 = new System.Windows.Forms.Label();
+            MENU = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -87,19 +87,19 @@
             label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // MENU
             // 
-            label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            label2.Font = new System.Drawing.Font("Swis721 Blk BT", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label2.ForeColor = System.Drawing.Color.White;
-            label2.Location = new System.Drawing.Point(17, 3);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(273, 40);
-            label2.TabIndex = 2;
-            label2.Text = "MENU";
-            label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            MENU.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            MENU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            MENU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            MENU.Font = new System.Drawing.Font("Swis721 Blk BT", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            MENU.ForeColor = System.Drawing.Color.White;
+            MENU.Location = new System.Drawing.Point(17, 3);
+            MENU.Name = "MENU";
+            MENU.Size = new System.Drawing.Size(273, 40);
+            MENU.TabIndex = 2;
+            MENU.Text = "MENU";
+            MENU.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // buttonUsuario
             // 
@@ -160,7 +160,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(label2);
+            this.panel2.Controls.Add(MENU);
             this.panel2.Controls.Add(this.buttonGrupoUsuario);
             this.panel2.Controls.Add(this.buttonCliente);
             this.panel2.Controls.Add(this.buttonUsuario);
@@ -176,6 +176,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(285, 686);
             this.panel2.TabIndex = 15;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(44, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // buttonConfig
             // 
@@ -445,16 +455,6 @@
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(44, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 37);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -485,11 +485,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

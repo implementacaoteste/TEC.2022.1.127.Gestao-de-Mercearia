@@ -15,7 +15,6 @@ namespace UIGestaoMercearia
         {
             try
             {
-                label2.Text = Constantes.NomeEmpresa;
                 labelNomeEmpresa.Text = Constantes.NomeEmpresa;
                 PosicionarTopo();
                 using (FormLogin frm = new FormLogin())
