@@ -125,22 +125,24 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button1.Location = new System.Drawing.Point(283, 319);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(77, 29);
             this.button1.TabIndex = 22;
             this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonCancelar
             // 
+            this.buttonCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonCancelar.Location = new System.Drawing.Point(366, 319);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(82, 29);
             this.buttonCancelar.TabIndex = 23;
             this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.UseVisualStyleBackColor = false;
             this.buttonCancelar.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormCadastroFornecedor
