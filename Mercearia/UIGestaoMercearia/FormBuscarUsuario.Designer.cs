@@ -88,6 +88,7 @@
             this.usuarioDataGridView.RowTemplate.Height = 24;
             this.usuarioDataGridView.Size = new System.Drawing.Size(729, 610);
             this.usuarioDataGridView.TabIndex = 8;
+            this.usuarioDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usuarioDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -231,7 +232,7 @@
             this.buttonExcluirUsuario.Location = new System.Drawing.Point(675, 118);
             this.buttonExcluirUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonExcluirUsuario.Name = "buttonExcluirUsuario";
-            this.buttonExcluirUsuario.Size = new System.Drawing.Size(75, 28);
+            this.buttonExcluirUsuario.Size = new System.Drawing.Size(66, 28);
             this.buttonExcluirUsuario.TabIndex = 5;
             this.buttonExcluirUsuario.Text = "&Excluir";
             this.buttonExcluirUsuario.UseVisualStyleBackColor = true;

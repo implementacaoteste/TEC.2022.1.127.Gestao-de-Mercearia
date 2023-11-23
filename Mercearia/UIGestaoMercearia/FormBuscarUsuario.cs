@@ -128,5 +128,10 @@ namespace UIGestaoMercearia
             if (e.KeyCode == Keys.Escape)
                 Close();
         }
+
+        private void usuarioDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

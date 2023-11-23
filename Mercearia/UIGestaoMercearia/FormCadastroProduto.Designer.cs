@@ -210,7 +210,7 @@
             // textBox1
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "IdFornecedor", true));
-            this.textBox1.Location = new System.Drawing.Point(12, 315);
+            this.textBox1.Location = new System.Drawing.Point(12, 296);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 27);
             this.textBox1.TabIndex = 29;
@@ -219,7 +219,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(12, 292);
+            this.label9.Location = new System.Drawing.Point(12, 273);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 20);
             this.label9.TabIndex = 30;
