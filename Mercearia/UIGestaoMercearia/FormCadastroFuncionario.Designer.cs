@@ -138,7 +138,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(429, 276);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
@@ -148,7 +148,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(529, 276);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 29);

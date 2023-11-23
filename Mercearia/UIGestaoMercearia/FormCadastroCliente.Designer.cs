@@ -180,7 +180,7 @@
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonSalvar.BackColor = System.Drawing.Color.White;
             this.buttonSalvar.Location = new System.Drawing.Point(480, 306);
             this.buttonSalvar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSalvar.Name = "buttonSalvar";
@@ -192,7 +192,7 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.buttonCancelar.BackColor = System.Drawing.Color.White;
             this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancelar.Location = new System.Drawing.Point(561, 306);
             this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
