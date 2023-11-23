@@ -57,23 +57,23 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 84);
+            this.textBox1.Location = new System.Drawing.Point(12, 100);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(488, 27);
+            this.textBox1.Size = new System.Drawing.Size(611, 27);
             this.textBox1.TabIndex = 16;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(0, 137);
+            this.textBox2.Location = new System.Drawing.Point(335, 153);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(488, 27);
+            this.textBox2.Size = new System.Drawing.Size(218, 27);
             this.textBox2.TabIndex = 18;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(0, 61);
+            this.label2.Location = new System.Drawing.Point(12, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 20);
             this.label2.TabIndex = 19;
@@ -83,7 +83,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(0, 114);
+            this.label3.Location = new System.Drawing.Point(335, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 20);
             this.label3.TabIndex = 20;
@@ -93,7 +93,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(0, 167);
+            this.label4.Location = new System.Drawing.Point(12, 183);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 21;
@@ -101,16 +101,16 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(0, 190);
+            this.textBox3.Location = new System.Drawing.Point(12, 206);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(488, 27);
+            this.textBox3.Size = new System.Drawing.Size(360, 27);
             this.textBox3.TabIndex = 22;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(494, 61);
+            this.label5.Location = new System.Drawing.Point(12, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 20);
             this.label5.TabIndex = 23;
@@ -118,9 +118,9 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(494, 84);
+            this.textBox4.Location = new System.Drawing.Point(12, 153);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(129, 27);
+            this.textBox4.Size = new System.Drawing.Size(317, 27);
             this.textBox4.TabIndex = 24;
             // 
             // ativoCheckBox
@@ -128,7 +128,7 @@
             this.ativoCheckBox.AutoSize = true;
             this.ativoCheckBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ativoCheckBox.Location = new System.Drawing.Point(494, 140);
+            this.ativoCheckBox.Location = new System.Drawing.Point(562, 156);
             this.ativoCheckBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ativoCheckBox.Name = "ativoCheckBox";
             this.ativoCheckBox.Size = new System.Drawing.Size(69, 24);

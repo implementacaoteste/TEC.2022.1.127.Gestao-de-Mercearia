@@ -134,10 +134,10 @@
             // 
             // buttonSelecionar
             // 
-            this.buttonSelecionar.Location = new System.Drawing.Point(629, 566);
+            this.buttonSelecionar.Location = new System.Drawing.Point(621, 566);
             this.buttonSelecionar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSelecionar.Name = "buttonSelecionar";
-            this.buttonSelecionar.Size = new System.Drawing.Size(75, 35);
+            this.buttonSelecionar.Size = new System.Drawing.Size(83, 35);
             this.buttonSelecionar.TabIndex = 5;
             this.buttonSelecionar.Text = "&Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = true;
