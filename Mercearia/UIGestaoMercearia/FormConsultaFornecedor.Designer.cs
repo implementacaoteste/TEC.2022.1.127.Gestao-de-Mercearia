@@ -41,6 +41,11 @@
             this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
             this.bindingSourceFornecedor = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.foneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFornecedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceFornecedor)).BeginInit();
             this.SuspendLayout();
@@ -60,8 +65,16 @@
             // 
             // dataGridViewFornecedor
             // 
+            this.dataGridViewFornecedor.AutoGenerateColumns = false;
             this.dataGridViewFornecedor.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFornecedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.foneDataGridViewTextBoxColumn,
+            this.cEPDataGridViewTextBoxColumn});
+            this.dataGridViewFornecedor.DataSource = this.bindingSourceFornecedor;
             this.dataGridViewFornecedor.Location = new System.Drawing.Point(12, 122);
             this.dataGridViewFornecedor.Name = "dataGridViewFornecedor";
             this.dataGridViewFornecedor.RowHeadersWidth = 51;
@@ -160,6 +173,51 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Bucar por";
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            this.emailDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // foneDataGridViewTextBoxColumn
+            // 
+            this.foneDataGridViewTextBoxColumn.DataPropertyName = "Fone";
+            this.foneDataGridViewTextBoxColumn.HeaderText = "Fone";
+            this.foneDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.foneDataGridViewTextBoxColumn.Name = "foneDataGridViewTextBoxColumn";
+            this.foneDataGridViewTextBoxColumn.ReadOnly = true;
+            this.foneDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cEPDataGridViewTextBoxColumn
+            // 
+            this.cEPDataGridViewTextBoxColumn.DataPropertyName = "CEP";
+            this.cEPDataGridViewTextBoxColumn.HeaderText = "CEP";
+            this.cEPDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cEPDataGridViewTextBoxColumn.Name = "cEPDataGridViewTextBoxColumn";
+            this.cEPDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cEPDataGridViewTextBoxColumn.Width = 125;
+            // 
             // FormConsultaFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -206,5 +264,10 @@
         private ComboBox comboBoxBuscarPor;
         private BindingSource bindingSourceFornecedor;
         private Label label2;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn foneDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn cEPDataGridViewTextBoxColumn;
     }
 }

@@ -88,5 +88,7 @@ namespace UIGestaoMercearia
                     buttonSelecionar_Click(null, null);
             }
         }
+
+        
     }
 }

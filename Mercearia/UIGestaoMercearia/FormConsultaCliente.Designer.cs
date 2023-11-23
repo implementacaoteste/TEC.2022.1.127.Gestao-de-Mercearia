@@ -159,7 +159,7 @@
             // 
             // buttonSelecionar
             // 
-            this.buttonSelecionar.Location = new System.Drawing.Point(664, 415);
+            this.buttonSelecionar.Location = new System.Drawing.Point(664, 424);
             this.buttonSelecionar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(91, 29);
@@ -171,7 +171,7 @@
             // buttonCancelar
             // 
             this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancelar.Location = new System.Drawing.Point(761, 415);
+            this.buttonCancelar.Location = new System.Drawing.Point(761, 424);
             this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(75, 29);
@@ -232,7 +232,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(848, 478);
+            this.ClientSize = new System.Drawing.Size(848, 456);
             this.Controls.Add(this.comboBoxBuscarPor);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSelecionar);

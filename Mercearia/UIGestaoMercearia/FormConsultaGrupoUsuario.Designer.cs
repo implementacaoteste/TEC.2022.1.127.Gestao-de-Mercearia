@@ -39,6 +39,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.NomeGrupo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuarioDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,22 +52,19 @@
             // 
             // grupoUsuarioDataGridView
             // 
-            this.grupoUsuarioDataGridView.AllowUserToAddRows = false;
-            this.grupoUsuarioDataGridView.AllowUserToDeleteRows = false;
-            this.grupoUsuarioDataGridView.AllowUserToOrderColumns = true;
             this.grupoUsuarioDataGridView.AutoGenerateColumns = false;
             this.grupoUsuarioDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.grupoUsuarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grupoUsuarioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2});
+            this.dataGridViewTextBoxColumn2,
+            this.NomeGrupo});
             this.grupoUsuarioDataGridView.DataSource = this.grupoUsuarioBindingSource;
             this.grupoUsuarioDataGridView.Location = new System.Drawing.Point(12, 131);
             this.grupoUsuarioDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grupoUsuarioDataGridView.Name = "grupoUsuarioDataGridView";
-            this.grupoUsuarioDataGridView.ReadOnly = true;
             this.grupoUsuarioDataGridView.RowHeadersWidth = 51;
             this.grupoUsuarioDataGridView.RowTemplate.Height = 24;
-            this.grupoUsuarioDataGridView.Size = new System.Drawing.Size(776, 391);
+            this.grupoUsuarioDataGridView.Size = new System.Drawing.Size(1019, 391);
             this.grupoUsuarioDataGridView.TabIndex = 4;
             this.grupoUsuarioDataGridView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.grupoUsuarioDataGridView_MouseDoubleClick);
             // 
@@ -76,11 +75,10 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Grupos de usuário";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // buttonSelecionar
             // 
-            this.buttonSelecionar.Location = new System.Drawing.Point(614, 541);
+            this.buttonSelecionar.Location = new System.Drawing.Point(849, 530);
             this.buttonSelecionar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(93, 35);
@@ -91,7 +89,7 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(713, 541);
+            this.buttonCancelar.Location = new System.Drawing.Point(948, 530);
             this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(75, 35);
@@ -139,7 +137,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(800, 72);
+            this.label2.Size = new System.Drawing.Size(1035, 72);
             this.label2.TabIndex = 0;
             this.label2.Text = "Consultar grupo de usuário";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -155,12 +153,31 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(794, 88);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(229, 35);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "&Gerenciar grupos";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // NomeGrupo
+            // 
+            this.NomeGrupo.DataPropertyName = "NomeGrupo";
+            this.NomeGrupo.HeaderText = "NomeGrupo";
+            this.NomeGrupo.MinimumWidth = 6;
+            this.NomeGrupo.Name = "NomeGrupo";
+            this.NomeGrupo.Width = 125;
+            // 
             // FormConsultaGrupoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(800, 591);
+            this.ClientSize = new System.Drawing.Size(1035, 562);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -200,5 +217,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private PictureBox pictureBox1;
+        private DataGridViewTextBoxColumn NomeGrupo;
+        private Button button1;
     }
 }

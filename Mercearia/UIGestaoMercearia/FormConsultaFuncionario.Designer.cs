@@ -139,9 +139,6 @@
             // 
             // funcionarioDataGridView
             // 
-            this.funcionarioDataGridView.AllowUserToAddRows = false;
-            this.funcionarioDataGridView.AllowUserToDeleteRows = false;
-            this.funcionarioDataGridView.AllowUserToOrderColumns = true;
             this.funcionarioDataGridView.AutoGenerateColumns = false;
             this.funcionarioDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.funcionarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -155,7 +152,6 @@
             this.funcionarioDataGridView.DataSource = this.funcionarioBindingSource;
             this.funcionarioDataGridView.Location = new System.Drawing.Point(12, 120);
             this.funcionarioDataGridView.Name = "funcionarioDataGridView";
-            this.funcionarioDataGridView.ReadOnly = true;
             this.funcionarioDataGridView.RowHeadersWidth = 51;
             this.funcionarioDataGridView.RowTemplate.Height = 29;
             this.funcionarioDataGridView.Size = new System.Drawing.Size(823, 286);

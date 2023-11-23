@@ -151,9 +151,6 @@
             // 
             // grupoUsuariosDataGridView
             // 
-            this.grupoUsuariosDataGridView.AllowUserToAddRows = false;
-            this.grupoUsuariosDataGridView.AllowUserToDeleteRows = false;
-            this.grupoUsuariosDataGridView.AllowUserToOrderColumns = true;
             this.grupoUsuariosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grupoUsuariosDataGridView.AutoGenerateColumns = false;
@@ -165,7 +162,6 @@
             this.grupoUsuariosDataGridView.Location = new System.Drawing.Point(747, 150);
             this.grupoUsuariosDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grupoUsuariosDataGridView.Name = "grupoUsuariosDataGridView";
-            this.grupoUsuariosDataGridView.ReadOnly = true;
             this.grupoUsuariosDataGridView.RowHeadersWidth = 51;
             this.grupoUsuariosDataGridView.RowTemplate.Height = 24;
             this.grupoUsuariosDataGridView.Size = new System.Drawing.Size(584, 610);
@@ -178,7 +174,6 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "Grupos do usuário";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // textBox1
             // 
