@@ -44,9 +44,6 @@
             // 
             // permissaoDataGridView
             // 
-            this.permissaoDataGridView.AllowUserToAddRows = false;
-            this.permissaoDataGridView.AllowUserToDeleteRows = false;
-            this.permissaoDataGridView.AllowUserToOrderColumns = true;
             this.permissaoDataGridView.AutoGenerateColumns = false;
             this.permissaoDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.permissaoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -57,7 +54,6 @@
             this.permissaoDataGridView.Location = new System.Drawing.Point(12, 147);
             this.permissaoDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.permissaoDataGridView.Name = "permissaoDataGridView";
-            this.permissaoDataGridView.ReadOnly = true;
             this.permissaoDataGridView.RowHeadersWidth = 51;
             this.permissaoDataGridView.RowTemplate.Height = 24;
             this.permissaoDataGridView.Size = new System.Drawing.Size(776, 411);
@@ -71,11 +67,11 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Permissões a serem adicionadas";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // permissaoBindingSource
             // 
             this.permissaoBindingSource.DataSource = typeof(Models.Permissao);
+            
             // 
             // label2
             // 
@@ -134,10 +130,10 @@
             // 
             // buttonSelecionar
             // 
-            this.buttonSelecionar.Location = new System.Drawing.Point(629, 566);
+            this.buttonSelecionar.Location = new System.Drawing.Point(621, 566);
             this.buttonSelecionar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSelecionar.Name = "buttonSelecionar";
-            this.buttonSelecionar.Size = new System.Drawing.Size(75, 35);
+            this.buttonSelecionar.Size = new System.Drawing.Size(83, 35);
             this.buttonSelecionar.TabIndex = 5;
             this.buttonSelecionar.Text = "&Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = true;

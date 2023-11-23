@@ -57,5 +57,10 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
