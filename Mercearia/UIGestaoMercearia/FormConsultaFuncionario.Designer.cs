@@ -106,6 +106,7 @@
             this.buttonBuscar.TabIndex = 9;
             this.buttonBuscar.Text = "&Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // buttonAlterar
             // 

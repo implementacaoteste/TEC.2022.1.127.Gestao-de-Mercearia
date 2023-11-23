@@ -36,7 +36,7 @@
             this.grupoUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPermissoes = new System.Windows.Forms.TextBox();
             nomeGrupoLabel = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
@@ -66,6 +66,17 @@
             label1.TabIndex = 0;
             label1.Text = "Cadastro de grupo de usuário";
             label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            label2.Location = new System.Drawing.Point(12, 144);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(88, 20);
+            label2.TabIndex = 5;
+            label2.Text = "Permissões";
             // 
             // nomeGrupoTextBox
             // 
@@ -106,23 +117,12 @@
             this.buttonCancelar.UseVisualStyleBackColor = false;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
-            // label2
+            // textBoxPermissoes
             // 
-            label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            label2.Location = new System.Drawing.Point(12, 144);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(88, 20);
-            label2.TabIndex = 5;
-            label2.Text = "Permissões";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 167);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(536, 27);
-            this.textBox1.TabIndex = 6;
+            this.textBoxPermissoes.Location = new System.Drawing.Point(12, 167);
+            this.textBoxPermissoes.Name = "textBoxPermissoes";
+            this.textBoxPermissoes.Size = new System.Drawing.Size(536, 27);
+            this.textBoxPermissoes.TabIndex = 6;
             // 
             // FormCadastroGrupoUsuario
             // 
@@ -130,7 +130,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(577, 301);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPermissoes);
             this.Controls.Add(label2);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSalvar);
@@ -161,6 +161,6 @@
         private System.Windows.Forms.TextBox nomeGrupoTextBox;
         private System.Windows.Forms.Button buttonSalvar;
         private System.Windows.Forms.Button buttonCancelar;
-        private TextBox textBox1;
+        private TextBox textBoxPermissoes;
     }
 }

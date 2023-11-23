@@ -51,8 +51,8 @@ namespace UIGestaoMercearia
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        { //excluir
+        private void buttonEcluir_Click(object sender, EventArgs e)
+        { 
             try
             {
                 if (bindingSourceProduto.Count <= 0)
