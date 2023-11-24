@@ -16,17 +16,17 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Produto(Nome, Descricao, Categoria, CodigoDeBarra, Marca, Preco, QuantidadeEmEstoque, IdFornecedor) 
-                                    VALUES(@Nome, @Descricao, @Categoria, @CodigoDeBarra, @Marca, @Preco, @QuantidadeEmEstoque, @IdFornecedor)";
+                cmd.CommandText = @"INSERT INTO Produto(Nome, Descricao, IdCategoria, CodigoDeBarra, IdMarca, Preco, Quantidade, IdFornecedor) 
+                                    VALUES(@Nome, @Descricao, @IdCategoria, @CodigoDeBarra, @IdMarca, @Preco, @Quantidade, @IdFornecedor)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Nome", _produto.Nome);
                 cmd.Parameters.AddWithValue("@Descricao", _produto.Descricao);
-                cmd.Parameters.AddWithValue("@Categoria", _produto.Categoria);
+                cmd.Parameters.AddWithValue("@IdCategoria", _produto.IdCategoria);
                 cmd.Parameters.AddWithValue("@CodigoDeBarra", _produto.CodigoDeBarra);
-                cmd.Parameters.AddWithValue("@Marca", _produto.Marca);
+                cmd.Parameters.AddWithValue("@IdMarca", _produto.IdMarca);
                 cmd.Parameters.AddWithValue("@Preco", _produto.Preco);
-                cmd.Parameters.AddWithValue("@QuantidadeEmEstoque", _produto.QuantidadeEmEstoque);
+                cmd.Parameters.AddWithValue("@Quantidade", _produto.Quantidade);
                 cmd.Parameters.AddWithValue("@IdFornecedor", _produto.IdFornecedor);
 
                 cmd.Connection = cn;
@@ -53,11 +53,11 @@ namespace DAL
                 cmd.CommandText = @"UPDATE Produto SET 
                                         Nome = @Nome, 
                                         Descricao = @Descricao, 
-                                        Categoria = @Categoria, 
+                                        IdCategoria = @IdCategoria, 
                                         CodigoDeBarra = @CodigoDeBarra, 
-                                        Marca = @Marca,
+                                        IdMarca = @IdMarca,
                                         Preco = @Preco,
-                                        QuantidadeEmEstoque = @QuantidadeEmEstoque,
+                                        Quantidade = @Quantidade,
                                         IdFornecedor = @IdFornecedor
                                     WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -65,11 +65,11 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@Id", _produto.Id);
                 cmd.Parameters.AddWithValue("@Nome", _produto.Nome);
                 cmd.Parameters.AddWithValue("@Descricao", _produto.Descricao);
-                cmd.Parameters.AddWithValue("@Categoria", _produto.Categoria);
+                cmd.Parameters.AddWithValue("@IdCategoria", _produto.IdCategoria);
                 cmd.Parameters.AddWithValue("@CodigoDeBarra", _produto.CodigoDeBarra);
-                cmd.Parameters.AddWithValue("@Marca", _produto.Marca);
+                cmd.Parameters.AddWithValue("@IdMarca", _produto.IdMarca);
                 cmd.Parameters.AddWithValue("@Preco", _produto.Preco);
-                cmd.Parameters.AddWithValue("@QuantidadeEmEstoque", _produto.QuantidadeEmEstoque);
+                cmd.Parameters.AddWithValue("@Quantidade", _produto.Quantidade);
                 cmd.Parameters.AddWithValue("@IdFornecedor", _produto.IdFornecedor);
 
                 cmd.Connection = cn;
@@ -122,7 +122,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Id, Nome, Descricao, Categoria, CodigoDeBarra, Marca, Preco, QuantidadeEmEstoque, IdFornecedor FROM Produto";
+                cmd.CommandText = "SELECT Id, Nome, Descricao, IdCategoria, CodigoDeBarra, IdMarca, Preco, Quantidade, IdFornecedor FROM Produto";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cn.Open();
@@ -135,11 +135,11 @@ namespace DAL
                         produto.Id = Convert.ToInt32(rd["Id"]);
                         produto.Nome = rd["Nome"].ToString();
                         produto.Descricao = rd["Descricao"].ToString();
-                        produto.Categoria = rd["Categoria"].ToString();
+                        produto.IdCategoria = Convert.ToInt32(rd["IdCategoria"]);
                         produto.CodigoDeBarra = rd["CodigoDeBarra"].ToString();
-                        produto.Marca = rd["Marca"].ToString();
+                        produto.IdMarca = Convert.ToInt32(rd["IdMarca"]);
                         produto.Preco = Convert.ToDouble(rd["Preco"]);
-                        produto.QuantidadeEmEstoque = Convert.ToInt32(rd["QuantidadeEmEstoque"]);
+                        produto.Quantidade = Convert.ToInt32(rd["Quantidade"]);
                         produto.IdFornecedor = Convert.ToInt32(rd["IdFornecedor"]);
                         produtos.Add(produto);
 
@@ -167,7 +167,7 @@ namespace DAL
             {
                 SqlCommand cmd = cn.CreateCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Id, Nome, Descricao, CodigoDeBarra, Marca, Preco, QuantidadeEmEstoque, IdFornecedor FROM Produto WHERE Nome LIKE @Nome";
+                cmd.CommandText = "SELECT Id, Nome, Descricao, CodigoDeBarra, IdMarca, Preco, Quantidade, IdFornecedor FROM Produto WHERE Nome LIKE @Nome";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Nome", "%" + _nome + "%");
                 cn.Open();
@@ -179,11 +179,11 @@ namespace DAL
                         produto.Id = Convert.ToInt32(rd["Id"]);
                         produto.Nome = rd["Nome"].ToString();
                         produto.Descricao = rd["Descricao"].ToString();
-                        produto.Categoria = rd["Categoria"].ToString();
+                        produto.IdCategoria = Convert.ToInt32(rd["IdCategoria"]);
                         produto.CodigoDeBarra = rd["CodigoDeBarra"].ToString();
-                        produto.Marca = rd["Marca"].ToString();
+                        produto.IdMarca = Convert.ToInt32(rd["IdMarca"]);
                         produto.Preco = Convert.ToDouble(rd["Preco"]);
-                        produto.QuantidadeEmEstoque = Convert.ToInt32(rd["QuantidadeEmEstoque"]);
+                        produto.Quantidade = Convert.ToInt32(rd["Quantidade"]);
                         produto.IdFornecedor = Convert.ToInt32(rd["IdFornecedor"]);
                         produtos.Add(produto);
                     }
@@ -209,7 +209,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, Descricao, Categoria, CodigoDeBarra, Marca, Preco, QuantidadeEmEstoque, IdFornecedor FROM Produto WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, Nome, Descricao, IdCategoria, CodigoDeBarra, IdMarca, Preco, Quantidade, IdFornecedor FROM Produto WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Id", _id);
@@ -222,11 +222,11 @@ namespace DAL
                     produto.Id = Convert.ToInt32(rd["Id"]);
                     produto.Nome = rd["Nome"].ToString();
                     produto.Descricao = rd["Descricao"].ToString();
-                    produto.Categoria = rd["Categoria"].ToString();
+                    produto.IdCategoria = Convert.ToInt32(rd["IdCategoria"]);
                     produto.CodigoDeBarra = rd["CodigoDeBarra"].ToString();
-                    produto.Marca = rd["Marca"].ToString();
+                    produto.IdMarca = Convert.ToInt32(rd["IdMarca"]);
                     produto.Preco = Convert.ToDouble(rd["Preco"]);
-                    produto.QuantidadeEmEstoque = Convert.ToInt32(rd["QuantidadeEmEstoque"]);
+                    produto.Quantidade = Convert.ToInt32(rd["Quantidade"]);
                     produto.IdFornecedor = Convert.ToInt32(rd["IdFornecedor"]);
                     
                 }
@@ -250,7 +250,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, Descricao, Categoria, CodigoDeBarra, Marca, Preco, QuantidadeEmEstoque, IdFornecedor FROM Produto WHERE CodigoDeBarra = @CodigoDeBarra";
+                cmd.CommandText = @"SELECT Id, Nome, Descricao, IdCategoria, CodigoDeBarra, IdMarca, Preco, Quantidade, IdFornecedor FROM Produto WHERE CodigoDeBarra = @CodigoDeBarra";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@CodigoDeBarra", _codigodebarra);
@@ -263,11 +263,11 @@ namespace DAL
                     produto.Id = Convert.ToInt32(rd["Id"]);
                     produto.Nome = rd["Nome"].ToString();
                     produto.Descricao = rd["Descricao"].ToString();
-                    produto.Categoria = rd["Categoria"].ToString();
+                    produto.IdCategoria = Convert.ToInt32(rd["IdCategoria"]);
                     produto.CodigoDeBarra = rd["CodigoDeBarra"].ToString();
-                    produto.Marca = rd["Marca"].ToString();
+                    produto.IdMarca = Convert.ToInt32(rd["IdMarca"]);
                     produto.Preco = Convert.ToDouble(rd["Preco"]);
-                    produto.QuantidadeEmEstoque = Convert.ToInt32(rd["QuantidadeEmEstoque"]);
+                    produto.Quantidade = Convert.ToInt32(rd["Quantidade"]);
                     produto.IdFornecedor = Convert.ToInt32(rd["IdFornecedor"]);
                 }
                 return produto;
