@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,14 +38,31 @@ namespace UIGestaoMercearia
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void FormCadastroFornecedor_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void FormCadastroFornecedor_Load(object sender, EventArgs e)
+        private void buttonSalvar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Fornecedor fornecedor = (Fornecedor)fornecedorBindingSource.Current;
 
+                fornecedorBindingSource.EndEdit();
+
+                if (id == 0)
+                    new FornecedorBLL().Inserir(fornecedor);
+                else
+                    new FornecedorBLL().Alterar(fornecedor);
+
+                MessageBox.Show("Registro salvo com sucesso!");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
