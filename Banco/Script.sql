@@ -18,11 +18,7 @@ GO
 CREATE TABLE [dbo].[Categoria](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[Categoria] [varchar](50) NOT NULL,
- CONSTRAINT [PK_Categoria] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+
 GO
 /****** Object:  Table [dbo].[Cliente]    Script Date: 24/11/2023 09:28:50 ******/
 SET ANSI_NULLS ON
@@ -30,18 +26,14 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Cliente](
-	[Id] [int] NOT NULL,
+	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[Nome] [varchar](150) NULL,
 	[Cpf] [varchar](20) NULL,
 	[Endereco] [varchar](150) NULL,
 	[CEP] [varchar](25) NULL,
 	[Email] [varchar](150) NULL,
 	[Telefone] [varchar](15) NULL,
- CONSTRAINT [PK_Cliente] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+
 GO
 /****** Object:  Table [dbo].[Estoque]    Script Date: 24/11/2023 09:28:50 ******/
 SET ANSI_NULLS ON
@@ -49,18 +41,14 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Estoque](
-	[Id] [int] NOT NULL,
+	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[DataDeEntrada] [date] NULL,
 	[DataDeSaida] [date] NULL,
 	[EstoqueMinimo] [int] NULL,
 	[EstoqueMaximo] [int] NULL,
 	[QuantidadeEmEstoque] [int] NULL,
 	[IdProduto] [int] NULL,
- CONSTRAINT [PK_Estoque] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+
 GO
 /****** Object:  Table [dbo].[Fornecedor]    Script Date: 24/11/2023 09:28:50 ******/
 SET ANSI_NULLS ON
@@ -68,17 +56,13 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Fornecedor](
-	[Id] [int] NOT NULL,
+	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[Nome] [varchar](150) NULL,
 	[Email] [varchar](150) NULL,
 	[Telefone] [varchar](50) NULL,
 	[Endereco] [varchar](50) NULL,
 	[CEP] [varchar](25) NULL,
- CONSTRAINT [PK_Fornecedor] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+
 GO
 /****** Object:  Table [dbo].[Funcionario]    Script Date: 24/11/2023 09:28:50 ******/
 SET ANSI_NULLS ON
@@ -161,7 +145,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Produto](
-	[Id] [int] NOT NULL,
+	[Id] [int] PRIMARY KEY IDENTITY(1,1),
 	[Nome] [varchar](150) NULL,
 	[Descricao] [varchar](50) NULL,
 	[CodigoDeBarra] [varchar](50) NULL,
@@ -170,11 +154,7 @@ CREATE TABLE [dbo].[Produto](
 	[IdMarca] [int] NOT NULL,
 	[IdCategoria] [int] NOT NULL,
 	[IdFornecedor] [int] NULL,
- CONSTRAINT [PK_Produto] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+ )
 GO
 /****** Object:  Table [dbo].[Senha]    Script Date: 24/11/2023 09:28:50 ******/
 SET ANSI_NULLS ON
@@ -182,13 +162,9 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Senha](
-	[Id] [int] NOT NULL,
+	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[IdCliente] [int] NOT NULL,
- CONSTRAINT [PK_Senha] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+
 GO
 /****** Object:  Table [dbo].[Usuario]    Script Date: 24/11/2023 09:28:50 ******/
 SET ANSI_NULLS ON
@@ -231,18 +207,14 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Venda](
-	[Id] [int] NOT NULL,
+	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[IdFuncionario] [int] NOT NULL,
 	[IdCliente] [int] NOT NULL,
 	[IdProduto] [int] NOT NULL,
 	[PrecoVenda] [float] NULL,
 	[IdFormaPagamento] [int] NULL,
 	[DataVenda] [datetime] NULL,
- CONSTRAINT [PK_Venda] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+
 GO
 ALTER TABLE [dbo].[Usuario] ADD  DEFAULT (getdate()) FOR [DataCadastro]
 GO

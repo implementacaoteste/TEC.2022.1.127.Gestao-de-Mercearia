@@ -117,7 +117,7 @@
             // 
             // textBoxMarca
             // 
-            this.textBoxMarca.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Marca", true));
+            this.textBoxMarca.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "IdMarca", true));
             this.textBoxMarca.Location = new System.Drawing.Point(12, 190);
             this.textBoxMarca.Name = "textBoxMarca";
             this.textBoxMarca.Size = new System.Drawing.Size(409, 27);
@@ -135,7 +135,7 @@
             // 
             // textBoxCategoria
             // 
-            this.textBoxCategoria.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Categoria", true));
+            this.textBoxCategoria.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "IdCategoria", true));
             this.textBoxCategoria.Location = new System.Drawing.Point(12, 243);
             this.textBoxCategoria.Name = "textBoxCategoria";
             this.textBoxCategoria.Size = new System.Drawing.Size(409, 27);
@@ -189,7 +189,7 @@
             // 
             // textBoxQtdEstoque
             // 
-            this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "QuantidadeEmEstoque", true));
+            this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Quantidade", true));
             this.textBoxQtdEstoque.Location = new System.Drawing.Point(427, 190);
             this.textBoxQtdEstoque.Name = "textBoxQtdEstoque";
             this.textBoxQtdEstoque.Size = new System.Drawing.Size(232, 27);
