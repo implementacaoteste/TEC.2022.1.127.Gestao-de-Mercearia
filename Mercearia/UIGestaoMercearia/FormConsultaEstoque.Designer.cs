@@ -37,20 +37,20 @@
             this.textBoxBuscarPor = new System.Windows.Forms.TextBox();
             this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
             this.dataGridViewEstoque = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelGerenProd = new System.Windows.Forms.Label();
-            this.buttonSelecionar = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.bindingSourceEstoque = new System.Windows.Forms.BindingSource(this.components);
             this.datadeEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datadeSaidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estoqueMinimoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estoqueMaximoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourceEstoque = new System.Windows.Forms.BindingSource(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonSelecionar = new System.Windows.Forms.Button();
+            this.labelGerenProd = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -106,7 +106,7 @@
             // 
             // textBoxBuscarPor
             // 
-            this.textBoxBuscarPor.Location = new System.Drawing.Point(180, 13);
+            this.textBoxBuscarPor.Location = new System.Drawing.Point(181, 17);
             this.textBoxBuscarPor.Name = "textBoxBuscarPor";
             this.textBoxBuscarPor.Size = new System.Drawing.Size(402, 27);
             this.textBoxBuscarPor.TabIndex = 1;
@@ -117,7 +117,7 @@
             this.comboBoxBuscarPor.Items.AddRange(new object[] {
             "Id",
             "Todos"});
-            this.comboBoxBuscarPor.Location = new System.Drawing.Point(12, 12);
+            this.comboBoxBuscarPor.Location = new System.Drawing.Point(24, 17);
             this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             this.comboBoxBuscarPor.Size = new System.Drawing.Size(151, 28);
             this.comboBoxBuscarPor.TabIndex = 0;
@@ -140,52 +140,6 @@
             this.dataGridViewEstoque.RowTemplate.Height = 29;
             this.dataGridViewEstoque.Size = new System.Drawing.Size(982, 407);
             this.dataGridViewEstoque.TabIndex = 4;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.buttonCancelar);
-            this.panel1.Controls.Add(this.buttonSelecionar);
-            this.panel1.Controls.Add(this.labelGerenProd);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 472);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(982, 81);
-            this.panel1.TabIndex = 3;
-            // 
-            // labelGerenProd
-            // 
-            this.labelGerenProd.AutoSize = true;
-            this.labelGerenProd.BackColor = System.Drawing.SystemColors.Highlight;
-            this.labelGerenProd.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelGerenProd.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelGerenProd.Location = new System.Drawing.Point(12, 26);
-            this.labelGerenProd.Name = "labelGerenProd";
-            this.labelGerenProd.Size = new System.Drawing.Size(259, 28);
-            this.labelGerenProd.TabIndex = 0;
-            this.labelGerenProd.Text = "Gerenciamento de Estoque";
-            // 
-            // buttonSelecionar
-            // 
-            this.buttonSelecionar.Location = new System.Drawing.Point(776, 29);
-            this.buttonSelecionar.Name = "buttonSelecionar";
-            this.buttonSelecionar.Size = new System.Drawing.Size(94, 29);
-            this.buttonSelecionar.TabIndex = 1;
-            this.buttonSelecionar.Text = "&Selecionar";
-            this.buttonSelecionar.UseVisualStyleBackColor = true;
-            // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.Location = new System.Drawing.Point(876, 29);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
-            this.buttonCancelar.TabIndex = 1;
-            this.buttonCancelar.Text = "&Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            // 
-            // bindingSourceEstoque
-            // 
-            this.bindingSourceEstoque.DataSource = typeof(Models.Estoque);
             // 
             // datadeEntradaDataGridViewTextBoxColumn
             // 
@@ -227,6 +181,52 @@
             this.idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
             this.idProdutoDataGridViewTextBoxColumn.Width = 125;
             // 
+            // bindingSourceEstoque
+            // 
+            this.bindingSourceEstoque.DataSource = typeof(Models.Estoque);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.buttonCancelar);
+            this.panel1.Controls.Add(this.buttonSelecionar);
+            this.panel1.Controls.Add(this.labelGerenProd);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 472);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(982, 81);
+            this.panel1.TabIndex = 3;
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Location = new System.Drawing.Point(876, 29);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
+            this.buttonCancelar.TabIndex = 1;
+            this.buttonCancelar.Text = "&Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            // 
+            // buttonSelecionar
+            // 
+            this.buttonSelecionar.Location = new System.Drawing.Point(776, 29);
+            this.buttonSelecionar.Name = "buttonSelecionar";
+            this.buttonSelecionar.Size = new System.Drawing.Size(94, 29);
+            this.buttonSelecionar.TabIndex = 1;
+            this.buttonSelecionar.Text = "&Selecionar";
+            this.buttonSelecionar.UseVisualStyleBackColor = true;
+            // 
+            // labelGerenProd
+            // 
+            this.labelGerenProd.AutoSize = true;
+            this.labelGerenProd.BackColor = System.Drawing.SystemColors.Highlight;
+            this.labelGerenProd.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelGerenProd.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelGerenProd.Location = new System.Drawing.Point(12, 26);
+            this.labelGerenProd.Name = "labelGerenProd";
+            this.labelGerenProd.Size = new System.Drawing.Size(259, 28);
+            this.labelGerenProd.TabIndex = 0;
+            this.labelGerenProd.Text = "Gerenciamento de Estoque";
+            // 
             // FormConsultaEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -242,9 +242,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).EndInit();
             this.ResumeLayout(false);
 
         }
