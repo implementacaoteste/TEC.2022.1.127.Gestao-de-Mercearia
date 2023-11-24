@@ -35,8 +35,9 @@
             this.buttonCliente = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonGrupoUsuario = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.buttonGrupoUsuario = new System.Windows.Forms.Button();
             this.buttonEstatistica = new System.Windows.Forms.Button();
             this.buttonProdutos = new System.Windows.Forms.Button();
             this.buttonFornecedores = new System.Windows.Forms.Button();
@@ -97,7 +98,7 @@
             MENU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             MENU.Font = new System.Drawing.Font("Swis721 Blk BT", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             MENU.ForeColor = System.Drawing.Color.White;
-            MENU.Location = new System.Drawing.Point(17, 20);
+            MENU.Location = new System.Drawing.Point(17, 14);
             MENU.Name = "MENU";
             MENU.Size = new System.Drawing.Size(282, 50);
             MENU.TabIndex = 2;
@@ -107,11 +108,11 @@
             // buttonUsuario
             // 
             this.buttonUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUsuario.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonUsuario.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonUsuario.Location = new System.Drawing.Point(12, 376);
+            this.buttonUsuario.Location = new System.Drawing.Point(9, 340);
             this.buttonUsuario.Name = "buttonUsuario";
-            this.buttonUsuario.Size = new System.Drawing.Size(261, 32);
+            this.buttonUsuario.Size = new System.Drawing.Size(261, 38);
             this.buttonUsuario.TabIndex = 2;
             this.buttonUsuario.Text = "Consultar Usuários";
             this.buttonUsuario.UseVisualStyleBackColor = false;
@@ -120,11 +121,11 @@
             // buttonCliente
             // 
             this.buttonCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonCliente.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonCliente.Location = new System.Drawing.Point(12, 168);
+            this.buttonCliente.Location = new System.Drawing.Point(9, 162);
             this.buttonCliente.Name = "buttonCliente";
-            this.buttonCliente.Size = new System.Drawing.Size(261, 32);
+            this.buttonCliente.Size = new System.Drawing.Size(261, 38);
             this.buttonCliente.TabIndex = 3;
             this.buttonCliente.Text = "Cadastrar Clientes";
             this.buttonCliente.UseVisualStyleBackColor = false;
@@ -152,9 +153,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel2.Controls.Add(this.buttonGrupoUsuario);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(MENU);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.buttonGrupoUsuario);
             this.panel2.Controls.Add(this.buttonCliente);
             this.panel2.Controls.Add(this.buttonUsuario);
             this.panel2.Controls.Add(this.buttonEstatistica);
@@ -169,28 +171,38 @@
             this.panel2.TabIndex = 15;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // buttonGrupoUsuario
-            // 
-            this.buttonGrupoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGrupoUsuario.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonGrupoUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGrupoUsuario.Location = new System.Drawing.Point(12, 325);
-            this.buttonGrupoUsuario.Name = "buttonGrupoUsuario";
-            this.buttonGrupoUsuario.Size = new System.Drawing.Size(261, 32);
-            this.buttonGrupoUsuario.TabIndex = 21;
-            this.buttonGrupoUsuario.Text = "Consultar Grupo de Usuários";
-            this.buttonGrupoUsuario.UseVisualStyleBackColor = false;
-            this.buttonGrupoUsuario.Click += new System.EventHandler(this.buttonGrupoUsuario_Click_1);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(39, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(39, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 47);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel5.Location = new System.Drawing.Point(9, 82);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(261, 10);
+            this.panel5.TabIndex = 17;
+            // 
+            // buttonGrupoUsuario
+            // 
+            this.buttonGrupoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGrupoUsuario.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonGrupoUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonGrupoUsuario.Location = new System.Drawing.Point(9, 296);
+            this.buttonGrupoUsuario.Name = "buttonGrupoUsuario";
+            this.buttonGrupoUsuario.Size = new System.Drawing.Size(261, 38);
+            this.buttonGrupoUsuario.TabIndex = 21;
+            this.buttonGrupoUsuario.Text = "Consultar Grupo de Usuários";
+            this.buttonGrupoUsuario.UseVisualStyleBackColor = false;
+            this.buttonGrupoUsuario.Click += new System.EventHandler(this.buttonGrupoUsuario_Click_1);
             // 
             // buttonEstatistica
             // 
@@ -210,24 +222,24 @@
             // buttonProdutos
             // 
             this.buttonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonProdutos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonProdutos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonProdutos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonProdutos.Location = new System.Drawing.Point(12, 112);
+            this.buttonProdutos.Location = new System.Drawing.Point(9, 118);
             this.buttonProdutos.Name = "buttonProdutos";
-            this.buttonProdutos.Size = new System.Drawing.Size(261, 32);
+            this.buttonProdutos.Size = new System.Drawing.Size(261, 38);
             this.buttonProdutos.TabIndex = 8;
-            this.buttonProdutos.Text = "Cadastrar Produtos";
+            this.buttonProdutos.Text = "Consu Produtos";
             this.buttonProdutos.UseVisualStyleBackColor = false;
             this.buttonProdutos.Click += new System.EventHandler(this.buttonProdutos_Click);
             // 
             // buttonFornecedores
             // 
             this.buttonFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFornecedores.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonFornecedores.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonFornecedores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFornecedores.Location = new System.Drawing.Point(12, 272);
+            this.buttonFornecedores.Location = new System.Drawing.Point(9, 252);
             this.buttonFornecedores.Name = "buttonFornecedores";
-            this.buttonFornecedores.Size = new System.Drawing.Size(261, 32);
+            this.buttonFornecedores.Size = new System.Drawing.Size(261, 38);
             this.buttonFornecedores.TabIndex = 9;
             this.buttonFornecedores.Text = "Consultar Fornecedor";
             this.buttonFornecedores.UseVisualStyleBackColor = false;
@@ -236,11 +248,11 @@
             // buttonFuncionarios
             // 
             this.buttonFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFuncionarios.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonFuncionarios.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFuncionarios.Location = new System.Drawing.Point(12, 220);
+            this.buttonFuncionarios.Location = new System.Drawing.Point(9, 206);
             this.buttonFuncionarios.Name = "buttonFuncionarios";
-            this.buttonFuncionarios.Size = new System.Drawing.Size(261, 32);
+            this.buttonFuncionarios.Size = new System.Drawing.Size(261, 38);
             this.buttonFuncionarios.TabIndex = 10;
             this.buttonFuncionarios.Text = "Consultar Funcionários";
             this.buttonFuncionarios.UseVisualStyleBackColor = false;
@@ -564,6 +576,7 @@
         private Button button9;
         private Button buttonGrupoUsuario;
         private PictureBox pictureBox2;
+        private Panel panel5;
     }
 }
 
