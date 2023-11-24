@@ -180,6 +180,7 @@
             this.buttonGrupoUsuario.TabIndex = 21;
             this.buttonGrupoUsuario.Text = "Consultar Grupo de Usuários";
             this.buttonGrupoUsuario.UseVisualStyleBackColor = false;
+            this.buttonGrupoUsuario.Click += new System.EventHandler(this.buttonGrupoUsuario_Click_1);
             // 
             // pictureBox1
             // 

@@ -50,20 +50,6 @@ namespace UIGestaoMercearia
             }
         }
 
-        private void buttonGrupoUsuario_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                using (FormBuscarGrupoUsuario frm = new FormBuscarGrupoUsuario())
-                {
-                    frm.ShowDialog();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
         private void buttonCliente_Click(object sender, EventArgs e)
         {
@@ -146,6 +132,21 @@ namespace UIGestaoMercearia
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void buttonGrupoUsuario_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                using (FormBuscarGrupoUsuario frm = new FormBuscarGrupoUsuario())
+                {
+                    frm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
