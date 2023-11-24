@@ -42,6 +42,7 @@ CREATE TABLE [dbo].[Estoque](
 	[DataDeSaida] [date] NULL,
 	[EstoqueMinimo] [int] NULL,
 	[EstoqueMaximo] [int] NULL,
+	[QuantidadeEmEstoque] [int] NULL,
 	[IdProduto] [int] NULL,
  CONSTRAINT [PK_Estoque] PRIMARY KEY CLUSTERED 
 (
@@ -126,7 +127,7 @@ CREATE TABLE [dbo].[Produto](
 	[CodigoDeBarra] [varchar](50) NULL,
 	[Marca] [varchar](50) NULL,
 	[Preco] [float] NULL,
-	[QuantidadeEmEstoque] [int] NULL,
+	[Quantidade] [int] NULL,
 	[IdFornecedor] [int] NULL,
  CONSTRAINT [PK_Produto] PRIMARY KEY CLUSTERED 
 (

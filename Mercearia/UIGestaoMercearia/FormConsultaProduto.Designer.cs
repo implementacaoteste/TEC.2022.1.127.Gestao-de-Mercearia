@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonSelecionar = new System.Windows.Forms.Button();
             this.labelGerenProd = new System.Windows.Forms.Label();
             this.dataGridViewProduto = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,12 +58,32 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.buttonCancelar);
+            this.panel1.Controls.Add(this.buttonSelecionar);
             this.panel1.Controls.Add(this.labelGerenProd);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 472);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(982, 81);
             this.panel1.TabIndex = 0;
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Location = new System.Drawing.Point(842, 25);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
+            this.buttonCancelar.TabIndex = 1;
+            this.buttonCancelar.Text = "&Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            // 
+            // buttonSelecionar
+            // 
+            this.buttonSelecionar.Location = new System.Drawing.Point(733, 25);
+            this.buttonSelecionar.Name = "buttonSelecionar";
+            this.buttonSelecionar.Size = new System.Drawing.Size(94, 29);
+            this.buttonSelecionar.TabIndex = 1;
+            this.buttonSelecionar.Text = "&Selecionar";
+            this.buttonSelecionar.UseVisualStyleBackColor = true;
             // 
             // labelGerenProd
             // 
@@ -164,14 +186,14 @@
             "Nome",
             "CodigoDeBarra",
             "Todos"});
-            this.comboBoxProduto.Location = new System.Drawing.Point(12, 12);
+            this.comboBoxProduto.Location = new System.Drawing.Point(12, 16);
             this.comboBoxProduto.Name = "comboBoxProduto";
             this.comboBoxProduto.Size = new System.Drawing.Size(151, 28);
             this.comboBoxProduto.TabIndex = 0;
             // 
             // textBoxProduto
             // 
-            this.textBoxProduto.Location = new System.Drawing.Point(180, 13);
+            this.textBoxProduto.Location = new System.Drawing.Point(181, 16);
             this.textBoxProduto.Name = "textBoxProduto";
             this.textBoxProduto.Size = new System.Drawing.Size(402, 27);
             this.textBoxProduto.TabIndex = 1;
@@ -214,7 +236,6 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "&Excluir";
             this.button4.UseVisualStyleBackColor = true;
-            
             // 
             // panel2
             // 
@@ -235,6 +256,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonCancelar;
             this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridViewProduto);
@@ -245,7 +267,6 @@
             this.Name = "FormConsultaProduto";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Produtos";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduto)).EndInit();
@@ -276,5 +297,7 @@
         private Button buttonInserir;
         private Button button4;
         private Panel panel2;
+        private Button buttonCancelar;
+        private Button buttonSelecionar;
     }
 }
