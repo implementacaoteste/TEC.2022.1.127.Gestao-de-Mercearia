@@ -103,10 +103,7 @@ namespace UIGestaoMercearia
 
         private void buttonFuncionarios_Click(object sender, EventArgs e)
         {
-            using (FormConsultaFuncionario frm = new FormConsultaFuncionario())
-            {
-                frm.ShowDialog();
-            }
+
 
         }
 
@@ -141,6 +138,11 @@ namespace UIGestaoMercearia
         private void FormPrincipal_ResizeEnd(object sender, EventArgs e)
         {
             PosicionarTopo();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
