@@ -127,6 +127,7 @@ CREATE TABLE [dbo].[Produto](
 	[CodigoDeBarra] [varchar](50) NULL,
 	[Marca] [varchar](50) NULL,
 	[Preco] [float] NULL,
+	[Quantidade] [int] NULL,
 	[IdFornecedor] [int] NULL,
  CONSTRAINT [PK_Produto] PRIMARY KEY CLUSTERED 
 (
