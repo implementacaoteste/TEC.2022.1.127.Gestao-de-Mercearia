@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +19,27 @@ namespace UIGestaoMercearia
         {
             InitializeComponent();
             id = _id;
+        }
+
+        private void buttonSalvar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                marcaBindingSource.EndEdit();
+                Marca marca = (Marca)marcaBindingSource.Current;
+
+                if (id == 0)
+                    new MarcaBLL().Inserir(marca);
+                else
+                    new MarcaBLL().Alterar(marca);
+                MessageBox.Show("Registro salvo com sucesso!");
+                this.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

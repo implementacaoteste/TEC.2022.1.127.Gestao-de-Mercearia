@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.marcaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.marcaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.marcaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +56,10 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(728, 27);
             this.textBox1.TabIndex = 53;
+            // 
+            // marcaBindingSource
+            // 
+            this.marcaBindingSource.DataSource = typeof(Models.Marca);
             // 
             // buttonCancelar
             // 
@@ -79,6 +83,7 @@
             this.buttonSalvar.TabIndex = 51;
             this.buttonSalvar.Text = "&Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = false;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // label10
             // 
@@ -92,10 +97,6 @@
             this.label10.TabIndex = 50;
             this.label10.Text = "Cadastro de Marca";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // marcaBindingSource
-            // 
-            this.marcaBindingSource.DataSource = typeof(Models.Marca);
             // 
             // FormCadastroMarca
             // 
