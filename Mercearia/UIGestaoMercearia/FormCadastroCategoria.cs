@@ -12,9 +12,16 @@ namespace UIGestaoMercearia
 {
     public partial class FormCadastroCategoria : Form
     {
-        public FormCadastroCategoria()
+        int id;
+        public FormCadastroCategoria(int _id = 0)
         {
             InitializeComponent();
+            id = _id;
+        }
+
+        private void FormCadastroCategoria_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -32,9 +32,9 @@
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1Nome = new System.Windows.Forms.TextBox();
             this.categoriaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,13 +74,17 @@
             this.label10.Text = "Cadastro de Categoria";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // textBox1Nome
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriaBindingSource, "Nome", true));
-            this.textBox1.Location = new System.Drawing.Point(41, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(728, 27);
-            this.textBox1.TabIndex = 48;
+            this.textBox1Nome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriaBindingSource, "Nome", true));
+            this.textBox1Nome.Location = new System.Drawing.Point(41, 110);
+            this.textBox1Nome.Name = "textBox1Nome";
+            this.textBox1Nome.Size = new System.Drawing.Size(728, 27);
+            this.textBox1Nome.TabIndex = 48;
+            // 
+            // categoriaBindingSource
+            // 
+            this.categoriaBindingSource.DataSource = typeof(Models.Categoria);
             // 
             // label1
             // 
@@ -93,10 +97,6 @@
             this.label1.TabIndex = 49;
             this.label1.Text = "Insira uma categoria:";
             // 
-            // categoriaBindingSource
-            // 
-            this.categoriaBindingSource.DataSource = typeof(Models.Categoria);
-            // 
             // FormCadastroCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -105,7 +105,7 @@
             this.CancelButton = this.buttonCancelar;
             this.ClientSize = new System.Drawing.Size(782, 203);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox1Nome);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.label10);
@@ -115,6 +115,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FormCadastroCategoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -126,7 +127,7 @@
         private Button buttonCancelar;
         private Button buttonSalvar;
         private Label label10;
-        private TextBox textBox1;
+        private TextBox textBox1Nome;
         private Label label1;
         private BindingSource categoriaBindingSource;
     }

@@ -1,4 +1,5 @@
 ﻿using BLL;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +36,68 @@ namespace UIGestaoMercearia
                     default:
                         break;
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonAlterar_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (bindingSourceCategoria.Count == 0)
+                {
+                    MessageBox.Show("Não existe categoria para ser alterado.");
+                    return;
+                }
+
+                int id = ((Categoria)bindingSourceCategoria.Current).Id;
+
+                using (FormCadastroCategoria frm = new FormCadastroCategoria(id))
+                {
+                    frm.ShowDialog();
+                }
+                buttonBuscar_Click(null, null);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonInserir_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                using (FormCadastroCategoria frm = new FormCadastroCategoria())
+                {
+                    frm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (bindingSourceCategoria.Count <= 0)
+                {
+                    MessageBox.Show("Não existe registro para ser excluído");
+                    return;
+                }
+
+                if (MessageBox.Show("Deseja realmente excluir este registro?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
+                    return;
+
+                int id = ((Categoria)bindingSourceCategoria.Current).Id;
+                new CategoriaBLL().Excluir(id);
+                bindingSourceCategoria.RemoveCurrent();
             }
             catch (Exception ex)
             {
