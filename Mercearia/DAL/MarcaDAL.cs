@@ -17,11 +17,11 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Marca(Marca) 
-                                    VALUES(@Marca)";
+                cmd.CommandText = @"INSERT INTO Marca(Nome) 
+                                    VALUES(@Nome)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
-                cmd.Parameters.AddWithValue("@Marca", _marca.Nome);
+                cmd.Parameters.AddWithValue("@Nome", _marca.Nome);
                 cmd.Connection = cn;
                 cn.Open();
 
@@ -43,12 +43,12 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"UPDATE Marca SET Id = @Id, Marca = @Marca WHERE Id = @Id";
+                cmd.CommandText = @"UPDATE Marca SET Id = @Id, Nome = @Nome WHERE Id = @Id";
 
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Id", _marca.Id);
-                cmd.Parameters.AddWithValue("@Marca", _marca.Nome);
+                cmd.Parameters.AddWithValue("@Nome", _marca.Nome);
 
                 cmd.Connection = cn;
                 cn.Open();
@@ -131,7 +131,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Marca FROM Marca WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, Nome FROM Marca";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cn.Open();
                 using (SqlDataReader rd = cmd.ExecuteReader())
@@ -140,7 +140,7 @@ namespace DAL
                     {
                         marca = new Marca();
                         marca.Id = (int)rd["Id"];
-                        marca.Nome = rd["Marca"].ToString();
+                        marca.Nome = rd["Nome"].ToString();
                         marcaList.Add(marca);
                     }
                 }

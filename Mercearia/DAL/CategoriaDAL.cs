@@ -16,11 +16,11 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Categoria(Categoria) 
-                                    VALUES(@Categoria)";
+                cmd.CommandText = @"INSERT INTO Categoria(Nome) 
+                                    VALUES(@Nome)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
-                cmd.Parameters.AddWithValue("@Categoria", _categoria.Nome);
+                cmd.Parameters.AddWithValue("@Nome", _categoria.Nome);
                 cmd.Connection = cn;
                 cn.Open();
 
@@ -45,7 +45,7 @@ namespace DAL
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Id", _Categoria.Id);
-                cmd.Parameters.AddWithValue("@Categoria", _Categoria.Nome);
+                cmd.Parameters.AddWithValue("@Nome", _Categoria.Nome);
 
                 cmd.Connection = cn;
                 cn.Open();
@@ -126,7 +126,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Categoria FROM Categoria WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, Nome FROM Categoria";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cn.Open();
                 using (SqlDataReader rd = cmd.ExecuteReader())
@@ -135,7 +135,7 @@ namespace DAL
                     {
                         categoria = new Categoria();
                         categoria.Id = (int)rd["Id"];
-                        categoria.Nome = rd["Categoria"].ToString();
+                        categoria.Nome = rd["Nome"].ToString();
                         categoriaList.Add(categoria);
                     }
                 }

@@ -130,6 +130,9 @@
             // 
             // dataGridViewMarca
             // 
+            this.dataGridViewMarca.AllowUserToAddRows = false;
+            this.dataGridViewMarca.AllowUserToDeleteRows = false;
+            this.dataGridViewMarca.AllowUserToOrderColumns = true;
             this.dataGridViewMarca.AutoGenerateColumns = false;
             this.dataGridViewMarca.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -139,6 +142,7 @@
             this.dataGridViewMarca.DataSource = this.bindingSourceMarca;
             this.dataGridViewMarca.Location = new System.Drawing.Point(3, 59);
             this.dataGridViewMarca.Name = "dataGridViewMarca";
+            this.dataGridViewMarca.ReadOnly = true;
             this.dataGridViewMarca.RowHeadersWidth = 51;
             this.dataGridViewMarca.RowTemplate.Height = 29;
             this.dataGridViewMarca.Size = new System.Drawing.Size(529, 387);
@@ -150,6 +154,7 @@
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
             this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             this.idDataGridViewTextBoxColumn.Width = 125;
             // 
             // nomeDataGridViewTextBoxColumn
@@ -158,6 +163,7 @@
             this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
             this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
             this.nomeDataGridViewTextBoxColumn.Width = 350;
             // 
             // bindingSourceMarca

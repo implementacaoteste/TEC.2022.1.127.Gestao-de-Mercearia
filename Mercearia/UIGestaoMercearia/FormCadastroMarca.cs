@@ -41,5 +41,13 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void FormCadastroMarca_Load(object sender, EventArgs e)
+        {
+            if (id == 0)
+                marcaBindingSource.AddNew();
+            else
+                marcaBindingSource.DataSource = new MarcaBLL().BuscarPorId(id);
+        }
     }
 }

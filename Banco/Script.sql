@@ -17,7 +17,7 @@ USE GestaoMercearia
 GO
 CREATE TABLE [dbo].[Categoria](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[Categoria] [varchar](50) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
  CONSTRAINT [PK_Categoria] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -119,7 +119,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Marca](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[Marca] [varchar](50) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
  CONSTRAINT [PK_Marca] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
