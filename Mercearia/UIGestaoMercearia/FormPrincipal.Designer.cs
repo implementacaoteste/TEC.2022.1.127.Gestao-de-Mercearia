@@ -110,7 +110,7 @@
             this.buttonUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUsuario.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonUsuario.Location = new System.Drawing.Point(9, 340);
+            this.buttonUsuario.Location = new System.Drawing.Point(17, 470);
             this.buttonUsuario.Name = "buttonUsuario";
             this.buttonUsuario.Size = new System.Drawing.Size(261, 38);
             this.buttonUsuario.TabIndex = 2;
@@ -123,7 +123,7 @@
             this.buttonCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonCliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonCliente.Location = new System.Drawing.Point(9, 162);
+            this.buttonCliente.Location = new System.Drawing.Point(17, 290);
             this.buttonCliente.Name = "buttonCliente";
             this.buttonCliente.Size = new System.Drawing.Size(261, 38);
             this.buttonCliente.TabIndex = 3;
@@ -196,7 +196,7 @@
             this.buttonGrupoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGrupoUsuario.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonGrupoUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGrupoUsuario.Location = new System.Drawing.Point(9, 296);
+            this.buttonGrupoUsuario.Location = new System.Drawing.Point(17, 422);
             this.buttonGrupoUsuario.Name = "buttonGrupoUsuario";
             this.buttonGrupoUsuario.Size = new System.Drawing.Size(261, 38);
             this.buttonGrupoUsuario.TabIndex = 21;
@@ -224,7 +224,7 @@
             this.buttonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonProdutos.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonProdutos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonProdutos.Location = new System.Drawing.Point(9, 118);
+            this.buttonProdutos.Location = new System.Drawing.Point(17, 246);
             this.buttonProdutos.Name = "buttonProdutos";
             this.buttonProdutos.Size = new System.Drawing.Size(261, 38);
             this.buttonProdutos.TabIndex = 8;
@@ -237,7 +237,7 @@
             this.buttonFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFornecedores.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonFornecedores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFornecedores.Location = new System.Drawing.Point(9, 252);
+            this.buttonFornecedores.Location = new System.Drawing.Point(17, 378);
             this.buttonFornecedores.Name = "buttonFornecedores";
             this.buttonFornecedores.Size = new System.Drawing.Size(261, 38);
             this.buttonFornecedores.TabIndex = 9;
@@ -250,7 +250,7 @@
             this.buttonFuncionarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFuncionarios.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonFuncionarios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFuncionarios.Location = new System.Drawing.Point(9, 206);
+            this.buttonFuncionarios.Location = new System.Drawing.Point(17, 334);
             this.buttonFuncionarios.Name = "buttonFuncionarios";
             this.buttonFuncionarios.Size = new System.Drawing.Size(261, 38);
             this.buttonFuncionarios.TabIndex = 10;
