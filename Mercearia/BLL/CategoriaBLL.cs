@@ -22,7 +22,7 @@ namespace BLL
         {
             new CategoriaDAL().Excluir(_id);
         }
-        public List<Categoria> BuscarTodos(Categoria _categoria)
+        public List<Categoria> BuscarTodos()
         {
             return new CategoriaDAL().BuscarTudo();
         }
