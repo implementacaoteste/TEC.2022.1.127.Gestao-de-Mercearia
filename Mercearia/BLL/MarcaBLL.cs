@@ -22,7 +22,7 @@ namespace BLL
         {
             new MarcaDAL().Excluir(_id);
         }
-        public List<Marca> BuscarTodos(Marca _marca)
+        public List<Marca> BuscarTodos()
         {
             return new MarcaDAL().BuscarTudo();
         }

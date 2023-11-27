@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonExcluir = new System.Windows.Forms.Button();
-            this.buttonInserir = new System.Windows.Forms.Button();
-            this.buttonAlterar = new System.Windows.Forms.Button();
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.textBoxBuscarPor = new System.Windows.Forms.TextBox();
             this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
+            this.buttonExcluir = new System.Windows.Forms.Button();
+            this.buttonInserir = new System.Windows.Forms.Button();
+            this.buttonAlterar = new System.Windows.Forms.Button();
             this.dataGridViewCategoria = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourceCategoria = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonSelecionar = new System.Windows.Forms.Button();
             this.labelGerenProd = new System.Windows.Forms.Label();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCategoria)).BeginInit();
@@ -61,39 +61,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(661, 53);
             this.panel2.TabIndex = 8;
-            // 
-            // buttonExcluir
-            // 
-            this.buttonExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExcluir.Location = new System.Drawing.Point(555, 394);
-            this.buttonExcluir.Name = "buttonExcluir";
-            this.buttonExcluir.Size = new System.Drawing.Size(94, 29);
-            this.buttonExcluir.TabIndex = 2;
-            this.buttonExcluir.Text = "&Excluir";
-            this.buttonExcluir.UseVisualStyleBackColor = false;
-            // 
-            // buttonInserir
-            // 
-            this.buttonInserir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonInserir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInserir.Location = new System.Drawing.Point(555, 359);
-            this.buttonInserir.Name = "buttonInserir";
-            this.buttonInserir.Size = new System.Drawing.Size(94, 29);
-            this.buttonInserir.TabIndex = 2;
-            this.buttonInserir.Text = "&Inserir";
-            this.buttonInserir.UseVisualStyleBackColor = false;
-            // 
-            // buttonAlterar
-            // 
-            this.buttonAlterar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAlterar.Location = new System.Drawing.Point(555, 324);
-            this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Size = new System.Drawing.Size(94, 29);
-            this.buttonAlterar.TabIndex = 2;
-            this.buttonAlterar.Text = "&Alterar";
-            this.buttonAlterar.UseVisualStyleBackColor = false;
             // 
             // buttonBuscar
             // 
@@ -125,6 +92,42 @@
             this.comboBoxBuscarPor.Size = new System.Drawing.Size(121, 28);
             this.comboBoxBuscarPor.TabIndex = 0;
             // 
+            // buttonExcluir
+            // 
+            this.buttonExcluir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExcluir.Location = new System.Drawing.Point(555, 394);
+            this.buttonExcluir.Name = "buttonExcluir";
+            this.buttonExcluir.Size = new System.Drawing.Size(94, 29);
+            this.buttonExcluir.TabIndex = 2;
+            this.buttonExcluir.Text = "&Excluir";
+            this.buttonExcluir.UseVisualStyleBackColor = false;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
+            // 
+            // buttonInserir
+            // 
+            this.buttonInserir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonInserir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInserir.Location = new System.Drawing.Point(555, 359);
+            this.buttonInserir.Name = "buttonInserir";
+            this.buttonInserir.Size = new System.Drawing.Size(94, 29);
+            this.buttonInserir.TabIndex = 2;
+            this.buttonInserir.Text = "&Inserir";
+            this.buttonInserir.UseVisualStyleBackColor = false;
+            this.buttonInserir.Click += new System.EventHandler(this.buttonInserir_Click_1);
+            // 
+            // buttonAlterar
+            // 
+            this.buttonAlterar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAlterar.Location = new System.Drawing.Point(555, 324);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.Size = new System.Drawing.Size(94, 29);
+            this.buttonAlterar.TabIndex = 2;
+            this.buttonAlterar.Text = "&Alterar";
+            this.buttonAlterar.UseVisualStyleBackColor = false;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click_1);
+            // 
             // dataGridViewCategoria
             // 
             this.dataGridViewCategoria.AutoGenerateColumns = false;
@@ -140,6 +143,22 @@
             this.dataGridViewCategoria.RowTemplate.Height = 29;
             this.dataGridViewCategoria.Size = new System.Drawing.Size(532, 387);
             this.dataGridViewCategoria.TabIndex = 7;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.Width = 350;
             // 
             // bindingSourceCategoria
             // 
@@ -190,22 +209,6 @@
             this.labelGerenProd.Size = new System.Drawing.Size(281, 28);
             this.labelGerenProd.TabIndex = 0;
             this.labelGerenProd.Text = "Gerenciamento de Categorias";
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.Width = 350;
             // 
             // FormConsultaCategoria
             // 
