@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewFornecedor = new System.Windows.Forms.DataGridView();
+            this.bindingSourceFornecedor = new System.Windows.Forms.BindingSource(this.components);
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
             this.buttonInserir = new System.Windows.Forms.Button();
@@ -39,10 +40,9 @@
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.textBoxBuscarPor = new System.Windows.Forms.TextBox();
             this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
-            this.bindingSourceFornecedor = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.foneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cEPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,22 +65,30 @@
             // 
             // dataGridViewFornecedor
             // 
+            this.dataGridViewFornecedor.AllowUserToAddRows = false;
+            this.dataGridViewFornecedor.AllowUserToDeleteRows = false;
+            this.dataGridViewFornecedor.AllowUserToOrderColumns = true;
             this.dataGridViewFornecedor.AutoGenerateColumns = false;
             this.dataGridViewFornecedor.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFornecedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
             this.nomeDataGridViewTextBoxColumn,
+            this.Endereco,
             this.emailDataGridViewTextBoxColumn,
             this.foneDataGridViewTextBoxColumn,
             this.cEPDataGridViewTextBoxColumn});
             this.dataGridViewFornecedor.DataSource = this.bindingSourceFornecedor;
             this.dataGridViewFornecedor.Location = new System.Drawing.Point(12, 122);
             this.dataGridViewFornecedor.Name = "dataGridViewFornecedor";
+            this.dataGridViewFornecedor.ReadOnly = true;
             this.dataGridViewFornecedor.RowHeadersWidth = 51;
             this.dataGridViewFornecedor.RowTemplate.Height = 29;
             this.dataGridViewFornecedor.Size = new System.Drawing.Size(824, 367);
             this.dataGridViewFornecedor.TabIndex = 1;
+            // 
+            // bindingSourceFornecedor
+            // 
+            this.bindingSourceFornecedor.DataSource = typeof(Models.Fornecedor);
             // 
             // buttonBuscar
             // 
@@ -158,10 +166,6 @@
             this.comboBoxBuscarPor.Size = new System.Drawing.Size(133, 28);
             this.comboBoxBuscarPor.TabIndex = 5;
             // 
-            // bindingSourceFornecedor
-            // 
-            this.bindingSourceFornecedor.DataSource = typeof(Models.Fornecedor);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -173,15 +177,6 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Bucar por";
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 125;
-            // 
             // nomeDataGridViewTextBoxColumn
             // 
             this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
@@ -189,7 +184,16 @@
             this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
             this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDataGridViewTextBoxColumn.Width = 125;
+            this.nomeDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // Endereco
+            // 
+            this.Endereco.DataPropertyName = "Endereco";
+            this.Endereco.HeaderText = "Endereco";
+            this.Endereco.MinimumWidth = 6;
+            this.Endereco.Name = "Endereco";
+            this.Endereco.ReadOnly = true;
+            this.Endereco.Width = 200;
             // 
             // emailDataGridViewTextBoxColumn
             // 
@@ -198,7 +202,7 @@
             this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             this.emailDataGridViewTextBoxColumn.ReadOnly = true;
-            this.emailDataGridViewTextBoxColumn.Width = 125;
+            this.emailDataGridViewTextBoxColumn.Width = 175;
             // 
             // foneDataGridViewTextBoxColumn
             // 
@@ -207,7 +211,7 @@
             this.foneDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.foneDataGridViewTextBoxColumn.Name = "foneDataGridViewTextBoxColumn";
             this.foneDataGridViewTextBoxColumn.ReadOnly = true;
-            this.foneDataGridViewTextBoxColumn.Width = 125;
+            this.foneDataGridViewTextBoxColumn.Width = 150;
             // 
             // cEPDataGridViewTextBoxColumn
             // 
@@ -264,8 +268,8 @@
         private ComboBox comboBoxBuscarPor;
         private BindingSource bindingSourceFornecedor;
         private Label label2;
-        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Endereco;
         private DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn foneDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn cEPDataGridViewTextBoxColumn;

@@ -31,16 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNome = new System.Windows.Forms.TextBox();
             this.fornecedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxFone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxCep = new System.Windows.Forms.TextBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
+            this.textBoxEndereco = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedorBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,13 +69,13 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Nome";
             // 
-            // textBox1
+            // textBoxNome
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "Nome", true));
-            this.textBox1.Location = new System.Drawing.Point(12, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(539, 27);
-            this.textBox1.TabIndex = 15;
+            this.textBoxNome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "Nome", true));
+            this.textBoxNome.Location = new System.Drawing.Point(12, 94);
+            this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.Size = new System.Drawing.Size(539, 27);
+            this.textBoxNome.TabIndex = 15;
             // 
             // fornecedorBindingSource
             // 
@@ -89,50 +91,50 @@
             this.label3.TabIndex = 16;
             this.label3.Text = "Fone";
             // 
-            // textBox2
+            // textBoxEmail
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "Email", true));
-            this.textBox2.Location = new System.Drawing.Point(12, 200);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(420, 27);
-            this.textBox2.TabIndex = 17;
+            this.textBoxEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "Email", true));
+            this.textBoxEmail.Location = new System.Drawing.Point(288, 147);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(263, 27);
+            this.textBoxEmail.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(12, 177);
+            this.label4.Location = new System.Drawing.Point(288, 124);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 20);
             this.label4.TabIndex = 18;
             this.label4.Text = "E-mail";
             // 
-            // textBox3
+            // textBoxFone
             // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "Fone", true));
-            this.textBox3.Location = new System.Drawing.Point(12, 147);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 27);
-            this.textBox3.TabIndex = 19;
+            this.textBoxFone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "Fone", true));
+            this.textBoxFone.Location = new System.Drawing.Point(12, 147);
+            this.textBoxFone.Name = "textBoxFone";
+            this.textBoxFone.Size = new System.Drawing.Size(270, 27);
+            this.textBoxFone.TabIndex = 19;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(288, 124);
+            this.label5.Location = new System.Drawing.Point(12, 186);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 20);
             this.label5.TabIndex = 20;
             this.label5.Text = "CEP";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox4
+            // textBoxCep
             // 
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "CEP", true));
-            this.textBox4.Location = new System.Drawing.Point(288, 147);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(263, 27);
-            this.textBox4.TabIndex = 21;
+            this.textBoxCep.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "CEP", true));
+            this.textBoxCep.Location = new System.Drawing.Point(12, 209);
+            this.textBoxCep.Name = "textBoxCep";
+            this.textBoxCep.Size = new System.Drawing.Size(263, 27);
+            this.textBoxCep.TabIndex = 21;
             // 
             // buttonSalvar
             // 
@@ -157,6 +159,24 @@
             this.buttonCancelar.UseVisualStyleBackColor = false;
             this.buttonCancelar.Click += new System.EventHandler(this.button2_Click);
             // 
+            // textBoxEndereco
+            // 
+            this.textBoxEndereco.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "Endereco", true));
+            this.textBoxEndereco.Location = new System.Drawing.Point(281, 209);
+            this.textBoxEndereco.Name = "textBoxEndereco";
+            this.textBoxEndereco.Size = new System.Drawing.Size(270, 27);
+            this.textBoxEndereco.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(281, 186);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 20);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Endereco";
+            // 
             // FormCadastroFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -164,15 +184,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.CancelButton = this.buttonCancelar;
             this.ClientSize = new System.Drawing.Size(563, 331);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBoxEndereco);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxCep);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxFone);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -192,15 +214,17 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox textBoxNome;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox textBoxEmail;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox textBoxFone;
         private Label label5;
-        private TextBox textBox4;
+        private TextBox textBoxCep;
         private Button buttonSalvar;
         private Button buttonCancelar;
         private BindingSource fornecedorBindingSource;
+        private TextBox textBoxEndereco;
+        private Label label6;
     }
 }
