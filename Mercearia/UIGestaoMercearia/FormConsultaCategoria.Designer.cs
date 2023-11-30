@@ -57,7 +57,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(865, 53);
+            this.panel2.Size = new System.Drawing.Size(661, 53);
             this.panel2.TabIndex = 8;
             // 
             // buttonBuscar
@@ -148,7 +148,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 452);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(865, 81);
+            this.panel1.Size = new System.Drawing.Size(661, 81);
             this.panel1.TabIndex = 6;
             // 
             // buttonCancelar

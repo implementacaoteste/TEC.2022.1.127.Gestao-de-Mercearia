@@ -76,7 +76,10 @@ namespace UIGestaoMercearia
 
         private void buttonProdutos_Click(object sender, EventArgs e)
         {
-           
+            using (FormConsultaProduto frm = new FormConsultaProduto())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -190,7 +193,10 @@ namespace UIGestaoMercearia
 
         private void buttonConsultaVenda(object sender, EventArgs e)
         {
-
+            using (FormConsultaVenda frm = new FormConsultaVenda())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void buttonIniciarVenda_Click(object sender, EventArgs e)

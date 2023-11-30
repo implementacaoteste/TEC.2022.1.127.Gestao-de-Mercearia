@@ -267,7 +267,7 @@ namespace UIGestaoMercearia
             this.buttonEstatistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEstatistica.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonEstatistica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.buttonEstatistica.Location = new System.Drawing.Point(9, 867);
+            this.buttonEstatistica.Location = new System.Drawing.Point(9, 546);
             this.buttonEstatistica.Name = "buttonEstatistica";
             this.buttonEstatistica.Size = new System.Drawing.Size(269, 44);
             this.buttonEstatistica.TabIndex = 12;
