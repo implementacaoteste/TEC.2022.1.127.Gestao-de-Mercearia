@@ -40,7 +40,10 @@ namespace UIGestaoMercearia
 
         private void FormCadastroFornecedor_Load(object sender, EventArgs e)
         {
-
+            if (id == 0)
+                fornecedorBindingSource.AddNew();
+            else
+                fornecedorBindingSource.DataSource = new FornecedorBLL().BuscarPorId(id);
         }
 
         private void buttonSalvar_Click(object sender, EventArgs e)

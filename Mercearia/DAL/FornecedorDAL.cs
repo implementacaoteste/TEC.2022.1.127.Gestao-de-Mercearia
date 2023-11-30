@@ -16,13 +16,14 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Fornecedor(Nome, Email, Fone, Endereco) 
-                                    VALUES(@Nome, @Email, @Fone, @Endereco)";
+                cmd.CommandText = @"INSERT INTO Fornecedor(Nome, Email, Telefone, Endereco, CEP) 
+                                    VALUES(@Nome, @Email, @Telefone, @Endereco, @CEP)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Nome", _fornecedor.Nome);
                 cmd.Parameters.AddWithValue("@Email", _fornecedor.Email);
-                cmd.Parameters.AddWithValue("@Fone", _fornecedor.Fone);
+                cmd.Parameters.AddWithValue("@Telefone", _fornecedor.Fone);
+                cmd.Parameters.AddWithValue("@Endereco", _fornecedor.Endereco);
                 cmd.Parameters.AddWithValue("@CEP", _fornecedor.CEP);
 
                 cmd.Connection = cn;
@@ -50,7 +51,8 @@ namespace DAL
                 cmd.CommandText = @"UPDATE Fornecedor SET 
                                         Nome = @Nome, 
                                         Email = @Email, 
-                                        Fone = @Fone, 
+                                        Telefone = @Telefone,
+                                        Endereco = @Endereco,
                                         CEP = @CEP, 
                                     WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -58,7 +60,8 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@Id", _fornecedor.Id);
                 cmd.Parameters.AddWithValue("@Nome", _fornecedor.Nome);
                 cmd.Parameters.AddWithValue("@Email", _fornecedor.Email);
-                cmd.Parameters.AddWithValue("@Fone", _fornecedor.Fone);
+                cmd.Parameters.AddWithValue("@Telefone", _fornecedor.Fone);
+                cmd.Parameters.AddWithValue("@Endereco", _fornecedor.Endereco);
                 cmd.Parameters.AddWithValue("@CEP", _fornecedor.CEP);
 
                 cmd.Connection = cn;
@@ -110,7 +113,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Id, Nome, Email, Fone, CEP FROM Fornecedor";
+                cmd.CommandText = "SELECT Id, Nome, Email, Telefone, Endereco, CEP FROM Fornecedor";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cn.Open();
@@ -123,7 +126,8 @@ namespace DAL
                         fornecedor.Id = Convert.ToInt32(rd["Id"]);
                         fornecedor.Nome = rd["Nome"].ToString();
                         fornecedor.Email = rd["Email"].ToString();
-                        fornecedor.Fone = rd["Fone"].ToString();
+                        fornecedor.Fone = rd["Telefone"].ToString();
+                        fornecedor.Endereco = rd["Endereco"].ToString();
                         fornecedor.CEP = rd["CEP"].ToString();
                         fornecedores.Add(fornecedor);
 
@@ -152,7 +156,7 @@ namespace DAL
             {
                 SqlCommand cmd = cn.CreateCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Id, Nome, Fone, Ativo, Profissao, Salario FROM Fornecedor WHERE Nome LIKE @Nome";
+                cmd.CommandText = "SELECT Nome, Email, Telefone, Endereco, CEP FROM Fornecedor WHERE Nome LIKE @Nome";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Nome", "%" + _nome + "%");
                 cn.Open();
@@ -164,7 +168,8 @@ namespace DAL
                         fornecedor.Id = Convert.ToInt32(rd["Id"]);
                         fornecedor.Nome = rd["Nome"].ToString();
                         fornecedor.Email = rd["Email"].ToString();
-                        fornecedor.Fone = rd["Fone"].ToString();
+                        fornecedor.Fone = rd["Telefone"].ToString();
+                        fornecedor.Endereco = rd["Endereco"].ToString();
                         fornecedor.CEP = rd["CEP"].ToString();
                         fornecedores.Add(fornecedor);
                     }
@@ -180,6 +185,42 @@ namespace DAL
                 cn.Close();
             }
 
+        }
+        public Fornecedor BuscarPorId(int _id)
+        {
+            Fornecedor fornecedor = new Fornecedor();
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = @"SELECT Id, Nome, Email, Telefone, Endereco, CEP FROM Fornecedor WHERE Id = @Id";
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Parameters.AddWithValue("@Id", _id);
+
+                cn.Open();
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    while (rd.Read())
+                    {
+                        fornecedor.Id = (int)rd["Id"];
+                        fornecedor.Nome = rd["Nome"].ToString();
+                        fornecedor.Email = rd["Email"].ToString();
+                        fornecedor.Fone = rd["Telefone"].ToString();
+                        fornecedor.Endereco = rd["Endereco"].ToString();
+                        fornecedor.CEP = rd["CEP"].ToString();
+                    }
+                }
+                return fornecedor;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar fornecedores por id no banco de dados", ex) { Data = { { "Id", 10039 } } };
+            }
+            finally
+            {
+                cn.Close();
+            }
         }
 
     }

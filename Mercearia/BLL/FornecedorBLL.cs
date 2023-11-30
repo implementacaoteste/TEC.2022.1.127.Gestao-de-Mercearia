@@ -30,5 +30,9 @@ namespace BLL
         {
             new FornecedorDAL().Excluir(_id);
         }
+        public Fornecedor BuscarPorId(int _id)
+        {
+            return new FornecedorDAL().BuscarPorId(_id);
+        }
     }
 }

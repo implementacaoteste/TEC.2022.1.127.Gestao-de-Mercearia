@@ -148,5 +148,36 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void buttonCategorias_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (FormConsultaCategoria frm = new FormConsultaCategoria())
+                {
+                    frm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void buttonMarcas_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (FormConsultaMarca frm = new FormConsultaMarca())
+                {
+                    frm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
