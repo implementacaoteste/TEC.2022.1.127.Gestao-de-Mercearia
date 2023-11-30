@@ -65,6 +65,8 @@ namespace UIGestaoMercearia
             this.buttonIniciarVenda = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             MENU = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -112,7 +114,7 @@ namespace UIGestaoMercearia
             this.buttonUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUsuario.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonUsuario.Location = new System.Drawing.Point(12, 340);
+            this.buttonUsuario.Location = new System.Drawing.Point(12, 381);
             this.buttonUsuario.Name = "buttonUsuario";
             this.buttonUsuario.Size = new System.Drawing.Size(261, 38);
             this.buttonUsuario.TabIndex = 2;
@@ -155,6 +157,8 @@ namespace UIGestaoMercearia
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.panel2.Controls.Add(this.button9);
+            this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.buttonMarcas);
             this.panel2.Controls.Add(this.buttonCategorias);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -179,7 +183,7 @@ namespace UIGestaoMercearia
             // 
             this.buttonMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMarcas.ForeColor = System.Drawing.Color.White;
-            this.buttonMarcas.Location = new System.Drawing.Point(12, 423);
+            this.buttonMarcas.Location = new System.Drawing.Point(12, 464);
             this.buttonMarcas.Name = "buttonMarcas";
             this.buttonMarcas.Size = new System.Drawing.Size(261, 35);
             this.buttonMarcas.TabIndex = 23;
@@ -191,7 +195,7 @@ namespace UIGestaoMercearia
             // 
             this.buttonCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCategorias.ForeColor = System.Drawing.Color.White;
-            this.buttonCategorias.Location = new System.Drawing.Point(12, 384);
+            this.buttonCategorias.Location = new System.Drawing.Point(12, 425);
             this.buttonCategorias.Name = "buttonCategorias";
             this.buttonCategorias.Size = new System.Drawing.Size(261, 35);
             this.buttonCategorias.TabIndex = 22;
@@ -224,7 +228,7 @@ namespace UIGestaoMercearia
             this.buttonGrupoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGrupoUsuario.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonGrupoUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGrupoUsuario.Location = new System.Drawing.Point(12, 296);
+            this.buttonGrupoUsuario.Location = new System.Drawing.Point(12, 337);
             this.buttonGrupoUsuario.Name = "buttonGrupoUsuario";
             this.buttonGrupoUsuario.Size = new System.Drawing.Size(261, 38);
             this.buttonGrupoUsuario.TabIndex = 21;
@@ -265,7 +269,7 @@ namespace UIGestaoMercearia
             this.buttonFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFornecedores.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonFornecedores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonFornecedores.Location = new System.Drawing.Point(12, 252);
+            this.buttonFornecedores.Location = new System.Drawing.Point(12, 293);
             this.buttonFornecedores.Name = "buttonFornecedores";
             this.buttonFornecedores.Size = new System.Drawing.Size(261, 38);
             this.buttonFornecedores.TabIndex = 9;
@@ -532,6 +536,29 @@ namespace UIGestaoMercearia
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
+            // button8
+            // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(12, 252);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(261, 35);
+            this.button8.TabIndex = 24;
+            this.button8.Text = "Estoque";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(12, 505);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(261, 35);
+            this.button9.TabIndex = 25;
+            this.button9.Text = "Permições";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -610,6 +637,8 @@ namespace UIGestaoMercearia
         private Panel panel5;
         private Button buttonMarcas;
         private Button buttonCategorias;
+        private Button button8;
+        private Button button9;
     }
 }
 
