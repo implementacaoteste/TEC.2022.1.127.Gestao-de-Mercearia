@@ -35,6 +35,8 @@ namespace UIGestaoMercearia
             this.buttonCliente = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.buttonMarcas = new System.Windows.Forms.Button();
             this.buttonCategorias = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -65,8 +67,6 @@ namespace UIGestaoMercearia
             this.buttonIniciarVenda = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             MENU = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -178,6 +178,30 @@ namespace UIGestaoMercearia
             this.panel2.Size = new System.Drawing.Size(285, 936);
             this.panel2.TabIndex = 15;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(12, 505);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(261, 35);
+            this.button9.TabIndex = 25;
+            this.button9.Text = "Permições";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(12, 252);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(261, 35);
+            this.button8.TabIndex = 24;
+            this.button8.Text = "Estoque";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // buttonMarcas
             // 
@@ -535,29 +559,6 @@ namespace UIGestaoMercearia
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
-            // 
-            // button8
-            // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(12, 252);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(261, 35);
-            this.button8.TabIndex = 24;
-            this.button8.Text = "Estoque";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(12, 505);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(261, 35);
-            this.button9.TabIndex = 25;
-            this.button9.Text = "Permições";
-            this.button9.UseVisualStyleBackColor = true;
             // 
             // FormPrincipal
             // 
