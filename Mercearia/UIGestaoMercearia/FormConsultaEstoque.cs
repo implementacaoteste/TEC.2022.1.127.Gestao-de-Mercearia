@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,24 @@ namespace UIGestaoMercearia
         public FormConsultaEstoque()
         {
             InitializeComponent();
+        }
+
+        private void buttonSelecionar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (grupoUsuarioBindingSource.Count > 0)
+                {
+                    Id = ((GrupoUsuario)grupoUsuarioBindingSource.Current).Id;
+                    Close();
+                }
+                else
+                    MessageBox.Show("Não existe registro para ser selecionado.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
