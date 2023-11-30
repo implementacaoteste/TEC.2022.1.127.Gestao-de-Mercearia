@@ -267,7 +267,7 @@ namespace UIGestaoMercearia
             this.buttonEstatistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEstatistica.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonEstatistica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.buttonEstatistica.Location = new System.Drawing.Point(9, 664);
+            this.buttonEstatistica.Location = new System.Drawing.Point(9, 867);
             this.buttonEstatistica.Name = "buttonEstatistica";
             this.buttonEstatistica.Size = new System.Drawing.Size(269, 44);
             this.buttonEstatistica.TabIndex = 12;
@@ -555,7 +555,7 @@ namespace UIGestaoMercearia
             this.pictureBox2.InitialImage = null;
             this.pictureBox2.Location = new System.Drawing.Point(0, 226);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(921, 673);
+            this.pictureBox2.Size = new System.Drawing.Size(921, 470);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;

@@ -108,6 +108,7 @@
             // 
             // textBoxBuscar
             // 
+            this.textBoxBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxBuscar.Location = new System.Drawing.Point(12, 96);
             this.textBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxBuscar.Name = "textBoxBuscar";

@@ -13,6 +13,8 @@ namespace UIGestaoMercearia
 {
     public partial class FormConsultaEstoque : Form
     {
+        private int Id;
+
         public FormConsultaEstoque()
         {
             InitializeComponent();
@@ -22,9 +24,9 @@ namespace UIGestaoMercearia
         {
             try
             {
-                if (grupoUsuarioBindingSource.Count > 0)
+                if (bindingSourceEstoque.Count > 0)
                 {
-                    Id = ((GrupoUsuario)grupoUsuarioBindingSource.Current).Id;
+                    Id = ((GrupoUsuario)bindingSourceEstoque.Current).Id;
                     Close();
                 }
                 else

@@ -173,6 +173,7 @@
             // 
             // textBoxProduto
             // 
+            this.textBoxProduto.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxProduto.Location = new System.Drawing.Point(181, 16);
             this.textBoxProduto.Name = "textBoxProduto";
             this.textBoxProduto.Size = new System.Drawing.Size(402, 27);

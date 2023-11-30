@@ -45,6 +45,7 @@ namespace UIGestaoMercearia
             // textBoxUsuario
             // 
             this.textBoxUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.textBoxUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxUsuario.Location = new System.Drawing.Point(20, 476);
             this.textBoxUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxUsuario.Name = "textBoxUsuario";
@@ -55,6 +56,7 @@ namespace UIGestaoMercearia
             // textBoxSenha
             // 
             this.textBoxSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.textBoxSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxSenha.Location = new System.Drawing.Point(20, 542);
             this.textBoxSenha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxSenha.Name = "textBoxSenha";
