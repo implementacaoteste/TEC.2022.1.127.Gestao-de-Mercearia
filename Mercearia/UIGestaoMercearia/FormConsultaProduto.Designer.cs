@@ -37,9 +37,7 @@
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoriaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDeBarraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourceProduto = new System.Windows.Forms.BindingSource(this.components);
             this.comboBoxProduto = new System.Windows.Forms.ComboBox();
@@ -57,7 +55,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel1.Controls.Add(this.buttonCancelar);
             this.panel1.Controls.Add(this.buttonSelecionar);
             this.panel1.Controls.Add(this.labelGerenProd);
@@ -88,7 +86,7 @@
             // labelGerenProd
             // 
             this.labelGerenProd.AutoSize = true;
-            this.labelGerenProd.BackColor = System.Drawing.SystemColors.Highlight;
+            this.labelGerenProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.labelGerenProd.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelGerenProd.ForeColor = System.Drawing.SystemColors.Control;
             this.labelGerenProd.Location = new System.Drawing.Point(12, 26);
@@ -106,9 +104,7 @@
             this.idDataGridViewTextBoxColumn,
             this.nomeDataGridViewTextBoxColumn,
             this.descricaoDataGridViewTextBoxColumn,
-            this.categoriaDataGridViewTextBoxColumn,
             this.codigoDeBarraDataGridViewTextBoxColumn,
-            this.marcaDataGridViewTextBoxColumn,
             this.precoDataGridViewTextBoxColumn});
             this.dataGridViewProduto.DataSource = this.bindingSourceProduto;
             this.dataGridViewProduto.Location = new System.Drawing.Point(0, 59);
@@ -142,14 +138,6 @@
             this.descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
             this.descricaoDataGridViewTextBoxColumn.Width = 125;
             // 
-            // categoriaDataGridViewTextBoxColumn
-            // 
-            this.categoriaDataGridViewTextBoxColumn.DataPropertyName = "Categoria";
-            this.categoriaDataGridViewTextBoxColumn.HeaderText = "Categoria";
-            this.categoriaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.categoriaDataGridViewTextBoxColumn.Name = "categoriaDataGridViewTextBoxColumn";
-            this.categoriaDataGridViewTextBoxColumn.Width = 125;
-            // 
             // codigoDeBarraDataGridViewTextBoxColumn
             // 
             this.codigoDeBarraDataGridViewTextBoxColumn.DataPropertyName = "CodigoDeBarra";
@@ -157,14 +145,6 @@
             this.codigoDeBarraDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.codigoDeBarraDataGridViewTextBoxColumn.Name = "codigoDeBarraDataGridViewTextBoxColumn";
             this.codigoDeBarraDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // marcaDataGridViewTextBoxColumn
-            // 
-            this.marcaDataGridViewTextBoxColumn.DataPropertyName = "Marca";
-            this.marcaDataGridViewTextBoxColumn.HeaderText = "Marca";
-            this.marcaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.marcaDataGridViewTextBoxColumn.Name = "marcaDataGridViewTextBoxColumn";
-            this.marcaDataGridViewTextBoxColumn.Width = 125;
             // 
             // precoDataGridViewTextBoxColumn
             // 
@@ -239,7 +219,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.buttonInserir);
             this.panel2.Controls.Add(this.buttonAlterar);
