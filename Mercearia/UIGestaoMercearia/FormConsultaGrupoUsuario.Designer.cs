@@ -32,6 +32,7 @@
             this.grupoUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grupoUsuarioDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NomeGrupo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonSelecionar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
@@ -40,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.NomeGrupo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grupoUsuarioDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,6 +75,14 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Grupos de usuário";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // NomeGrupo
+            // 
+            this.NomeGrupo.DataPropertyName = "NomeGrupo";
+            this.NomeGrupo.HeaderText = "NomeGrupo";
+            this.NomeGrupo.MinimumWidth = 6;
+            this.NomeGrupo.Name = "NomeGrupo";
+            this.NomeGrupo.Width = 125;
             // 
             // buttonSelecionar
             // 
@@ -162,14 +170,6 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "&Gerenciar grupos";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // NomeGrupo
-            // 
-            this.NomeGrupo.DataPropertyName = "NomeGrupo";
-            this.NomeGrupo.HeaderText = "NomeGrupo";
-            this.NomeGrupo.MinimumWidth = 6;
-            this.NomeGrupo.Name = "NomeGrupo";
-            this.NomeGrupo.Width = 125;
             // 
             // FormConsultaGrupoUsuario
             // 

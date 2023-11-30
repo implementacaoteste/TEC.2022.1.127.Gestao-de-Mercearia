@@ -55,7 +55,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel2.Controls.Add(this.buttonExcluir);
             this.panel2.Controls.Add(this.buttonInserir);
             this.panel2.Controls.Add(this.buttonAlterar);
@@ -187,7 +187,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel1.Controls.Add(this.buttonCancelar);
             this.panel1.Controls.Add(this.buttonSelecionar);
             this.panel1.Controls.Add(this.labelGerenProd);
@@ -218,7 +218,7 @@
             // labelGerenProd
             // 
             this.labelGerenProd.AutoSize = true;
-            this.labelGerenProd.BackColor = System.Drawing.SystemColors.Highlight;
+            this.labelGerenProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.labelGerenProd.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelGerenProd.ForeColor = System.Drawing.SystemColors.Control;
             this.labelGerenProd.Location = new System.Drawing.Point(12, 26);

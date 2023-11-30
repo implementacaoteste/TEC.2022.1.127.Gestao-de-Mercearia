@@ -133,7 +133,7 @@
             this.textBoxCep.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "CEP", true));
             this.textBoxCep.Location = new System.Drawing.Point(12, 209);
             this.textBoxCep.Name = "textBoxCep";
-            this.textBoxCep.Size = new System.Drawing.Size(263, 27);
+            this.textBoxCep.Size = new System.Drawing.Size(131, 27);
             this.textBoxCep.TabIndex = 21;
             // 
             // buttonSalvar
@@ -162,20 +162,20 @@
             // textBoxEndereco
             // 
             this.textBoxEndereco.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.fornecedorBindingSource, "Endereco", true));
-            this.textBoxEndereco.Location = new System.Drawing.Point(281, 209);
+            this.textBoxEndereco.Location = new System.Drawing.Point(149, 209);
             this.textBoxEndereco.Name = "textBoxEndereco";
-            this.textBoxEndereco.Size = new System.Drawing.Size(270, 27);
+            this.textBoxEndereco.Size = new System.Drawing.Size(402, 27);
             this.textBoxEndereco.TabIndex = 25;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(281, 186);
+            this.label6.Location = new System.Drawing.Point(149, 186);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 20);
+            this.label6.Size = new System.Drawing.Size(49, 20);
             this.label6.TabIndex = 26;
-            this.label6.Text = "Endereco";
+            this.label6.Text = "Bairro";
             // 
             // FormCadastroFornecedor
             // 
