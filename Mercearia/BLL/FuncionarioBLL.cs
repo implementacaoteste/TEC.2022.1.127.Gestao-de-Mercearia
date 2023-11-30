@@ -31,7 +31,9 @@ namespace BLL
             new FuncionarioDAL().Excluir(_id);
         }
 
-
-
+        public Funcionario BuscarPorId(int _id)
+        {
+            return new FuncionarioDAL().BuscarPorId(_id);
+        }
     }
 }

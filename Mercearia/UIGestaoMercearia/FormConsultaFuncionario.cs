@@ -13,9 +13,12 @@ namespace UIGestaoMercearia
 {
     public partial class FormConsultaFuncionario : Form
     {
+     
         public FormConsultaFuncionario()
         {
             InitializeComponent();
+          
+           
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
@@ -43,6 +46,14 @@ namespace UIGestaoMercearia
             }
         }
 
+        private void buttonInserir_Click(object sender, EventArgs e)
+        {
+            using (FormCadastroFuncionario frm = new FormCadastroFuncionario())
+            {
+                frm.ShowDialog();
+
+            }
+        }
     }
 }
 

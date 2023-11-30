@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bindingSourceCadastrarFuncionario = new System.Windows.Forms.BindingSource(this.components);
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,8 +40,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.ativoCheckBox = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSalvar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCadastrarFuncionario)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,18 +55,26 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(631, 61);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Cadastro de funcionario";
+            this.label1.Text = "Cadastro de Funcionario";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Nome", true));
             this.textBox1.Location = new System.Drawing.Point(12, 100);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(611, 27);
             this.textBox1.TabIndex = 16;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // bindingSourceCadastrarFuncionario
+            // 
+            this.bindingSourceCadastrarFuncionario.DataSource = typeof(Models.Funcionario);
+            this.bindingSourceCadastrarFuncionario.CurrentChanged += new System.EventHandler(this.bindingSourceCadastrarFuncionario_CurrentChanged);
             // 
             // textBox2
             // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Telefone", true));
             this.textBox2.Location = new System.Drawing.Point(335, 153);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(218, 27);
@@ -102,6 +113,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Profissao", true));
             this.textBox3.Location = new System.Drawing.Point(12, 206);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(360, 27);
@@ -119,6 +131,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Salario", true));
             this.textBox4.Location = new System.Drawing.Point(12, 153);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(317, 27);
@@ -127,6 +140,7 @@
             // ativoCheckBox
             // 
             this.ativoCheckBox.AutoSize = true;
+            this.ativoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.bindingSourceCadastrarFuncionario, "Ativo", true));
             this.ativoCheckBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ativoCheckBox.Location = new System.Drawing.Point(562, 156);
@@ -137,15 +151,16 @@
             this.ativoCheckBox.Text = "Ativo";
             this.ativoCheckBox.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonSalvar
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(429, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonSalvar.BackColor = System.Drawing.Color.White;
+            this.buttonSalvar.Location = new System.Drawing.Point(429, 276);
+            this.buttonSalvar.Name = "buttonSalvar";
+            this.buttonSalvar.Size = new System.Drawing.Size(94, 29);
+            this.buttonSalvar.TabIndex = 27;
+            this.buttonSalvar.Text = "Salvar";
+            this.buttonSalvar.UseVisualStyleBackColor = false;
+            this.buttonSalvar.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -164,7 +179,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(631, 316);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.ativoCheckBox);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
@@ -177,6 +192,8 @@
             this.Controls.Add(this.label1);
             this.Name = "FormCadastroFuncionario";
             this.Text = "FormCadastroFuncionario";
+            this.Load += new System.EventHandler(this.FormCadastroFuncionario_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCadastrarFuncionario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,7 +211,8 @@
         private Label label5;
         private TextBox textBox4;
         private CheckBox ativoCheckBox;
-        private Button button1;
+        private Button buttonSalvar;
         private Button button2;
+        private BindingSource bindingSourceCadastrarFuncionario;
     }
 }
