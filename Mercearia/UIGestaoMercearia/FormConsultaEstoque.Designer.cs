@@ -76,6 +76,7 @@
             this.buttonExcluir.TabIndex = 2;
             this.buttonExcluir.Text = "&Excluir";
             this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
             // 
             // buttonInserir
             // 
@@ -85,6 +86,7 @@
             this.buttonInserir.TabIndex = 2;
             this.buttonInserir.Text = "&Inserir";
             this.buttonInserir.UseVisualStyleBackColor = true;
+            this.buttonInserir.Click += new System.EventHandler(this.buttonInserir_Click);
             // 
             // buttonAlterar
             // 
@@ -94,6 +96,7 @@
             this.buttonAlterar.TabIndex = 2;
             this.buttonAlterar.Text = "&Alterar";
             this.buttonAlterar.UseVisualStyleBackColor = true;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // buttonBuscar
             // 
@@ -103,6 +106,7 @@
             this.buttonBuscar.TabIndex = 2;
             this.buttonBuscar.Text = "&Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // textBoxBuscarPor
             // 
@@ -110,6 +114,7 @@
             this.textBoxBuscarPor.Name = "textBoxBuscarPor";
             this.textBoxBuscarPor.Size = new System.Drawing.Size(402, 27);
             this.textBoxBuscarPor.TabIndex = 1;
+            this.textBoxBuscarPor.TextChanged += new System.EventHandler(this.textBoxBuscarPor_TextChanged);
             // 
             // comboBoxBuscarPor
             // 
@@ -121,6 +126,7 @@
             this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             this.comboBoxBuscarPor.Size = new System.Drawing.Size(151, 28);
             this.comboBoxBuscarPor.TabIndex = 0;
+            this.comboBoxBuscarPor.SelectedIndexChanged += new System.EventHandler(this.comboBoxBuscarPor_SelectedIndexChanged);
             // 
             // dataGridViewEstoque
             // 
@@ -134,12 +140,13 @@
             this.estoqueMaximoDataGridViewTextBoxColumn,
             this.idProdutoDataGridViewTextBoxColumn});
             this.dataGridViewEstoque.DataSource = this.bindingSourceEstoque;
-            this.dataGridViewEstoque.Location = new System.Drawing.Point(-3, 59);
+            this.dataGridViewEstoque.Location = new System.Drawing.Point(181, 50);
             this.dataGridViewEstoque.Name = "dataGridViewEstoque";
             this.dataGridViewEstoque.RowHeadersWidth = 51;
             this.dataGridViewEstoque.RowTemplate.Height = 29;
             this.dataGridViewEstoque.Size = new System.Drawing.Size(982, 407);
             this.dataGridViewEstoque.TabIndex = 4;
+            this.dataGridViewEstoque.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEstoque_CellContentClick);
             // 
             // datadeEntradaDataGridViewTextBoxColumn
             // 
@@ -192,10 +199,11 @@
             this.panel1.Controls.Add(this.buttonSelecionar);
             this.panel1.Controls.Add(this.labelGerenProd);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 472);
+            this.panel1.Location = new System.Drawing.Point(0, 512);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(982, 81);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // buttonCancelar
             // 
@@ -205,6 +213,7 @@
             this.buttonCancelar.TabIndex = 1;
             this.buttonCancelar.Text = "&Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonSelecionar
             // 
@@ -214,6 +223,7 @@
             this.buttonSelecionar.TabIndex = 1;
             this.buttonSelecionar.Text = "&Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = true;
+            this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click_1);
             // 
             // labelGerenProd
             // 
@@ -226,19 +236,21 @@
             this.labelGerenProd.Size = new System.Drawing.Size(259, 28);
             this.labelGerenProd.TabIndex = 0;
             this.labelGerenProd.Text = "Gerenciamento de Estoque";
+            this.labelGerenProd.Click += new System.EventHandler(this.labelGerenProd_Click);
             // 
             // FormConsultaEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancelar;
-            this.ClientSize = new System.Drawing.Size(982, 553);
+            this.ClientSize = new System.Drawing.Size(982, 593);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridViewEstoque);
             this.Controls.Add(this.panel1);
             this.Name = "FormConsultaEstoque";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.Load += new System.EventHandler(this.FormConsultaEstoque_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).EndInit();
