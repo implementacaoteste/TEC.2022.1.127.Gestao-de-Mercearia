@@ -179,5 +179,23 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonConsultaVenda(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonIniciarVenda_Click(object sender, EventArgs e)
+        {
+            using (FormInicializarVenda frm = new FormInicializarVenda())
+            {
+                frm.ShowDialog();
+            }
+        }
     }
 }

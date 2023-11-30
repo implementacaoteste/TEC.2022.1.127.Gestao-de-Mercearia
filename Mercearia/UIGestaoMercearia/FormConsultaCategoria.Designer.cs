@@ -37,8 +37,6 @@
             this.buttonInserir = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
             this.dataGridViewCategoria = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourceCategoria = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonCancelar = new System.Windows.Forms.Button();
@@ -59,7 +57,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(661, 53);
+            this.panel2.Size = new System.Drawing.Size(865, 53);
             this.panel2.TabIndex = 8;
             // 
             // buttonBuscar
@@ -133,9 +131,6 @@
             this.dataGridViewCategoria.AutoGenerateColumns = false;
             this.dataGridViewCategoria.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCategoria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nomeDataGridViewTextBoxColumn});
             this.dataGridViewCategoria.DataSource = this.bindingSourceCategoria;
             this.dataGridViewCategoria.Location = new System.Drawing.Point(3, 59);
             this.dataGridViewCategoria.Name = "dataGridViewCategoria";
@@ -143,26 +138,6 @@
             this.dataGridViewCategoria.RowTemplate.Height = 29;
             this.dataGridViewCategoria.Size = new System.Drawing.Size(532, 387);
             this.dataGridViewCategoria.TabIndex = 7;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.Width = 350;
-            // 
-            // bindingSourceCategoria
-            // 
-            this.bindingSourceCategoria.DataSource = typeof(Models.Categoria);
             // 
             // panel1
             // 
@@ -173,7 +148,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 452);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(661, 81);
+            this.panel1.Size = new System.Drawing.Size(865, 81);
             this.panel1.TabIndex = 6;
             // 
             // buttonCancelar

@@ -61,8 +61,8 @@ namespace UIGestaoMercearia
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.buttonConsultarVenda = new System.Windows.Forms.Button();
+            this.buttonIniciarVenda = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             label1 = new System.Windows.Forms.Label();
@@ -179,7 +179,7 @@ namespace UIGestaoMercearia
             // 
             this.buttonMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMarcas.ForeColor = System.Drawing.Color.White;
-            this.buttonMarcas.Location = new System.Drawing.Point(100, 264);
+            this.buttonMarcas.Location = new System.Drawing.Point(59, 436);
             this.buttonMarcas.Name = "buttonMarcas";
             this.buttonMarcas.Size = new System.Drawing.Size(178, 35);
             this.buttonMarcas.TabIndex = 23;
@@ -191,7 +191,7 @@ namespace UIGestaoMercearia
             // 
             this.buttonCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCategorias.ForeColor = System.Drawing.Color.White;
-            this.buttonCategorias.Location = new System.Drawing.Point(100, 223);
+            this.buttonCategorias.Location = new System.Drawing.Point(59, 395);
             this.buttonCategorias.Name = "buttonCategorias";
             this.buttonCategorias.Size = new System.Drawing.Size(178, 35);
             this.buttonCategorias.TabIndex = 22;
@@ -459,39 +459,41 @@ namespace UIGestaoMercearia
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.Coral;
-            this.panel4.Controls.Add(this.button10);
-            this.panel4.Controls.Add(this.button9);
+            this.panel4.Controls.Add(this.buttonConsultarVenda);
+            this.panel4.Controls.Add(this.buttonIniciarVenda);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Location = new System.Drawing.Point(0, 118);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(921, 82);
             this.panel4.TabIndex = 17;
             // 
-            // button10
+            // buttonConsultarVenda
             // 
-            this.button10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Location = new System.Drawing.Point(512, 19);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(342, 45);
-            this.button10.TabIndex = 20;
-            this.button10.Text = "CONSULTAR VENDA";
-            this.button10.UseVisualStyleBackColor = false;
+            this.buttonConsultarVenda.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.buttonConsultarVenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonConsultarVenda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonConsultarVenda.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonConsultarVenda.Location = new System.Drawing.Point(512, 19);
+            this.buttonConsultarVenda.Name = "buttonConsultarVenda";
+            this.buttonConsultarVenda.Size = new System.Drawing.Size(342, 45);
+            this.buttonConsultarVenda.TabIndex = 20;
+            this.buttonConsultarVenda.Text = "CONSULTAR VENDA";
+            this.buttonConsultarVenda.UseVisualStyleBackColor = false;
+            this.buttonConsultarVenda.Click += new System.EventHandler(this.buttonConsultaVenda);
             // 
-            // button9
+            // buttonIniciarVenda
             // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.Location = new System.Drawing.Point(20, 19);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(465, 45);
-            this.button9.TabIndex = 17;
-            this.button9.Text = "INICIAR VENDA";
-            this.button9.UseVisualStyleBackColor = false;
+            this.buttonIniciarVenda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonIniciarVenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonIniciarVenda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonIniciarVenda.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonIniciarVenda.Location = new System.Drawing.Point(20, 19);
+            this.buttonIniciarVenda.Name = "buttonIniciarVenda";
+            this.buttonIniciarVenda.Size = new System.Drawing.Size(465, 45);
+            this.buttonIniciarVenda.TabIndex = 17;
+            this.buttonIniciarVenda.Text = "INICIAR VENDA";
+            this.buttonIniciarVenda.UseVisualStyleBackColor = false;
+            this.buttonIniciarVenda.Click += new System.EventHandler(this.buttonIniciarVenda_Click);
             // 
             // pictureBox3
             // 
@@ -509,6 +511,7 @@ namespace UIGestaoMercearia
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -600,8 +603,8 @@ namespace UIGestaoMercearia
         private Panel panel4;
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
-        private Button button10;
-        private Button button9;
+        private Button buttonConsultarVenda;
+        private Button buttonIniciarVenda;
         private Button buttonGrupoUsuario;
         private PictureBox pictureBox2;
         private Panel panel5;
