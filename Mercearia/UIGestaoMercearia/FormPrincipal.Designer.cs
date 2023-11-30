@@ -179,9 +179,9 @@ namespace UIGestaoMercearia
             // 
             this.buttonMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMarcas.ForeColor = System.Drawing.Color.White;
-            this.buttonMarcas.Location = new System.Drawing.Point(59, 436);
+            this.buttonMarcas.Location = new System.Drawing.Point(12, 423);
             this.buttonMarcas.Name = "buttonMarcas";
-            this.buttonMarcas.Size = new System.Drawing.Size(178, 35);
+            this.buttonMarcas.Size = new System.Drawing.Size(261, 35);
             this.buttonMarcas.TabIndex = 23;
             this.buttonMarcas.Text = "Marcas";
             this.buttonMarcas.UseVisualStyleBackColor = true;
@@ -191,9 +191,9 @@ namespace UIGestaoMercearia
             // 
             this.buttonCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCategorias.ForeColor = System.Drawing.Color.White;
-            this.buttonCategorias.Location = new System.Drawing.Point(59, 395);
+            this.buttonCategorias.Location = new System.Drawing.Point(12, 384);
             this.buttonCategorias.Name = "buttonCategorias";
-            this.buttonCategorias.Size = new System.Drawing.Size(178, 35);
+            this.buttonCategorias.Size = new System.Drawing.Size(261, 35);
             this.buttonCategorias.TabIndex = 22;
             this.buttonCategorias.Text = "Categorias";
             this.buttonCategorias.UseVisualStyleBackColor = true;
@@ -501,7 +501,7 @@ namespace UIGestaoMercearia
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.ErrorImage = null;
             this.pictureBox3.Image = global::UIGestaoMercearia.Properties.Resources.settings_512px;
             this.pictureBox3.InitialImage = null;
@@ -521,7 +521,7 @@ namespace UIGestaoMercearia
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = null;

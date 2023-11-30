@@ -106,7 +106,10 @@ namespace UIGestaoMercearia
 
         private void buttonEstatistica_Click(object sender, EventArgs e)
         {
-
+            using (FormEstatistica frm = new FormEstatistica())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void buttonEstoque_Click(object sender, EventArgs e)
@@ -182,7 +185,10 @@ namespace UIGestaoMercearia
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            using (FormConfiguracao frm = new FormConfiguracao())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void buttonConsultaVenda(object sender, EventArgs e)
