@@ -16,12 +16,12 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Funcionario(Nome, Fone, Ativo, Profissao, Salario) 
-                                    VALUES(@Nome, @Fone, @Ativo, @Profissao, @Salario)";
+                cmd.CommandText = @"INSERT INTO Funcionario(Nome, Telefone, Ativo, Profissao, Salario) 
+                                    VALUES(@Nome, @Telefone, @Ativo, @Profissao, @Salario)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Nome", _funcionario.Nome);
-                cmd.Parameters.AddWithValue("@Fone", _funcionario.Fone);
+                cmd.Parameters.AddWithValue("@Telefone", _funcionario.Telefone);
                 cmd.Parameters.AddWithValue("@Ativo", _funcionario.Ativo);
                 cmd.Parameters.AddWithValue("@Profissao", _funcionario.Profissao);
                 cmd.Parameters.AddWithValue("@Salario", _funcionario.Salario);
@@ -50,7 +50,7 @@ namespace DAL
                 SqlCommand cmd = cn.CreateCommand();
                 cmd.CommandText = @"UPDATE Funcionario SET 
                                         Nome = @Nome, 
-                                        Fone = @Fone, 
+                                        Telefone = @Telefone, 
                                         Ativo = @Ativo, 
                                         Profissao = @Profissao, 
                                         Salario = @Salario,
@@ -59,7 +59,7 @@ namespace DAL
 
                 cmd.Parameters.AddWithValue("@Id", _funcionario.Id);
                 cmd.Parameters.AddWithValue("@Nome", _funcionario.Nome);
-                cmd.Parameters.AddWithValue("@Fone", _funcionario.Fone);
+                cmd.Parameters.AddWithValue("@Telefone", _funcionario.Telefone);
                 cmd.Parameters.AddWithValue("@Ativo", _funcionario.Ativo);
                 cmd.Parameters.AddWithValue("@Profissao", _funcionario.Profissao);
                 cmd.Parameters.AddWithValue("@Salario", _funcionario.Salario);
@@ -114,7 +114,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Id, Nome, Fone, Ativo, Profissao, Salario FROM Funcionario";
+                cmd.CommandText = "SELECT Id, Nome, Telefone, Ativo, Profissao, Salario FROM Funcionario";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cn.Open();
@@ -126,7 +126,7 @@ namespace DAL
                         funcionario = new Funcionario();
                         funcionario.Id = Convert.ToInt32(rd["Id"]);
                         funcionario.Nome = rd["Nome"].ToString();
-                        funcionario.Fone = rd["Fone"].ToString();
+                        funcionario.Telefone = rd["Telefone"].ToString();
                         funcionario.Ativo = Convert.ToBoolean(rd["Ativo"]);
                         funcionario.Profissao = rd["Profissao"].ToString();
                         funcionario.Salario = (double)rd["Salario"];
@@ -158,7 +158,7 @@ namespace DAL
             {
                 SqlCommand cmd = cn.CreateCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Id, Nome, Fone, Ativo, Profissao, Salario FROM Funcionario WHERE Nome LIKE @Nome";
+                cmd.CommandText = "SELECT Id, Nome, Telefone, Ativo, Profissao, Salario FROM Funcionario WHERE Nome LIKE @Nome";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Nome", "%" + _nome + "%");
                 cn.Open();
@@ -169,7 +169,7 @@ namespace DAL
                         funcionario = new Funcionario();
                         funcionario.Id = Convert.ToInt32(rd["Id"]);
                         funcionario.Nome = rd["Nome"].ToString();
-                        funcionario.Fone = rd["Fone"].ToString();
+                        funcionario.Telefone = rd["Telefone"].ToString();
                         funcionario.Ativo = Convert.ToBoolean(rd["Ativo"]);
                         funcionario.Profissao = rd["Profissao"].ToString();
                         funcionario.Salario = (double)rd["Salario"];
@@ -189,6 +189,9 @@ namespace DAL
 
         }
 
-
+        public Funcionario BuscarPorId(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

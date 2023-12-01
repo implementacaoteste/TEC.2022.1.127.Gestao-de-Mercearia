@@ -92,5 +92,10 @@ namespace UIGestaoMercearia
                     buttonSelecionar_Click(null, null);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

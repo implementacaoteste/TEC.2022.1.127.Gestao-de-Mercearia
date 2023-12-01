@@ -13,8 +13,7 @@ namespace UIGestaoMercearia
 {
     public partial class FormConsultaEstoque : Form
     {
-        private int Id;
-
+        public int Id;
         public FormConsultaEstoque()
         {
             InitializeComponent();

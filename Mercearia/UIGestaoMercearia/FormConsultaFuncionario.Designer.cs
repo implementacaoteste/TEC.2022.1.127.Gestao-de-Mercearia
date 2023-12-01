@@ -40,7 +40,6 @@
             this.funcionarioDataGridView = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.foneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ativoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.profissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -118,6 +117,7 @@
             this.buttonAlterar.TabIndex = 10;
             this.buttonAlterar.Text = "&Alterar";
             this.buttonAlterar.UseVisualStyleBackColor = true;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // buttonInserir
             // 
@@ -128,6 +128,7 @@
             this.buttonInserir.TabIndex = 11;
             this.buttonInserir.Text = "&Inserir";
             this.buttonInserir.UseVisualStyleBackColor = true;
+            this.buttonInserir.Click += new System.EventHandler(this.buttonInserir_Click);
             // 
             // buttonExcluir
             // 
@@ -138,6 +139,7 @@
             this.buttonExcluir.TabIndex = 12;
             this.buttonExcluir.Text = "&Excluir";
             this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
             // 
             // funcionarioDataGridView
             // 
@@ -147,7 +149,6 @@
             this.funcionarioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.nomeDataGridViewTextBoxColumn,
-            this.foneDataGridViewTextBoxColumn,
             this.ativoDataGridViewCheckBoxColumn,
             this.profissaoDataGridViewTextBoxColumn,
             this.salarioDataGridViewTextBoxColumn});
@@ -176,15 +177,6 @@
             this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
             this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
             this.nomeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // foneDataGridViewTextBoxColumn
-            // 
-            this.foneDataGridViewTextBoxColumn.DataPropertyName = "Fone";
-            this.foneDataGridViewTextBoxColumn.HeaderText = "Fone";
-            this.foneDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.foneDataGridViewTextBoxColumn.Name = "foneDataGridViewTextBoxColumn";
-            this.foneDataGridViewTextBoxColumn.ReadOnly = true;
-            this.foneDataGridViewTextBoxColumn.Width = 125;
             // 
             // ativoDataGridViewCheckBoxColumn
             // 
