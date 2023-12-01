@@ -118,7 +118,7 @@ namespace UIGestaoMercearia
         {
             try
             {
-                using (FormConsultaEstoque frm = new FormConsultaEstoque())
+                using (FormCadastroProduto frm = new FormCadastroProduto())
                 {
                     frm.ShowDialog();
                 }

@@ -136,6 +136,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(317, 27);
             this.textBox4.TabIndex = 24;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // ativoCheckBox
             // 

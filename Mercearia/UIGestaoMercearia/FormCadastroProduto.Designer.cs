@@ -7,13 +7,8 @@ namespace UIGestaoMercearia
         public FormCadastroProduto()
         {
             InitializeComponent();
-            CadastroProdutoComboBox();
         }
 
-        private void CadastroProdutoComboBox()
-        {
-            throw new NotImplementedException();
-        }
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -57,6 +52,8 @@ namespace UIGestaoMercearia
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +86,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxNome
             // 
-            this.textBoxNome.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Nome", true));
+            this.textBoxNome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Nome", true));
             this.textBoxNome.Location = new System.Drawing.Point(12, 84);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(409, 27);
@@ -107,7 +104,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxDescricao
             // 
-            this.textBoxDescricao.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Descricao", true));
+            this.textBoxDescricao.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Preco", true));
             this.textBoxDescricao.Location = new System.Drawing.Point(12, 137);
             this.textBoxDescricao.Name = "textBoxDescricao";
             this.textBoxDescricao.Size = new System.Drawing.Size(152, 27);
@@ -125,7 +122,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxCodigoDeBarra
             // 
-            this.textBoxCodigoDeBarra.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "CodigoDeBarra", true));
+            this.textBoxCodigoDeBarra.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "CodigoDeBarra", true));
             this.textBoxCodigoDeBarra.Location = new System.Drawing.Point(427, 84);
             this.textBoxCodigoDeBarra.Name = "textBoxCodigoDeBarra";
             this.textBoxCodigoDeBarra.Size = new System.Drawing.Size(232, 27);
@@ -140,10 +137,11 @@ namespace UIGestaoMercearia
             this.label7.Size = new System.Drawing.Size(46, 20);
             this.label7.TabIndex = 23;
             this.label7.Text = "Preço";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textBoxPreco
             // 
-            this.textBoxPreco.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Preco", true));
+            this.textBoxPreco.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Descricao", true));
             this.textBoxPreco.Location = new System.Drawing.Point(170, 137);
             this.textBoxPreco.Name = "textBoxPreco";
             this.textBoxPreco.Size = new System.Drawing.Size(489, 27);
@@ -163,7 +161,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxQtdEstoque
             // 
-            this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Quantidade", true));
+            this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "QuantidadeEmEstoque", true));
             this.textBoxQtdEstoque.Location = new System.Drawing.Point(170, 199);
             this.textBoxQtdEstoque.Name = "textBoxQtdEstoque";
             this.textBoxQtdEstoque.Size = new System.Drawing.Size(489, 27);
@@ -183,7 +181,7 @@ namespace UIGestaoMercearia
             // 
             // textBox1
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "IdFornecedor", true));
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Id", true));
             this.textBox1.Location = new System.Drawing.Point(12, 199);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(152, 27);
@@ -209,6 +207,24 @@ namespace UIGestaoMercearia
             this.label8.TabIndex = 25;
             this.label8.Text = "Quantidade em estoque";
             // 
+            // textBox2
+            // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "IdMarca", true));
+            this.textBox2.Location = new System.Drawing.Point(12, 248);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(152, 27);
+            this.textBox2.TabIndex = 31;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(12, 225);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 20);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "IdMarca";
+            // 
             // FormCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -216,6 +232,8 @@ namespace UIGestaoMercearia
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.CancelButton = this.buttonCancelar;
             this.ClientSize = new System.Drawing.Size(671, 315);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonCancelar);
@@ -257,6 +275,8 @@ namespace UIGestaoMercearia
         private TextBox textBox1;
         private Label label9;
         private Label label8;
+        private TextBox textBox2;
+        private Label label4;
 
         public int ComboBoxProdutos_SelectedIndexChanged { get; private set; }
     }

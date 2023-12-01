@@ -71,6 +71,19 @@ namespace UIGestaoMercearia
         private void button2_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

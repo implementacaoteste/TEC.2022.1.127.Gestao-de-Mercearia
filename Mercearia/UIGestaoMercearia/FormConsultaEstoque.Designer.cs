@@ -190,9 +190,9 @@
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(575, 96);
+            this.buttonBuscar.Location = new System.Drawing.Point(575, 97);
             this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(94, 38);
+            this.buttonBuscar.Size = new System.Drawing.Size(94, 37);
             this.buttonBuscar.TabIndex = 2;
             this.buttonBuscar.Text = "&Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
