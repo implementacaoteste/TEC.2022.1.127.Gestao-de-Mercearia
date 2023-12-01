@@ -114,6 +114,10 @@ namespace UIGestaoMercearia
 
         private void buttonEstoque_Click(object sender, EventArgs e)
         {
+            using (FormConsultaEstoque frm = new FormConsultaEstoque())
+            {
+                frm.ShowDialog();
+            }
 
         }
 

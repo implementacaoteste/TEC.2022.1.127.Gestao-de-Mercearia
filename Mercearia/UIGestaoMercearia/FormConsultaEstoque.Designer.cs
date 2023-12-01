@@ -210,7 +210,7 @@
             // 
             // buttonInserir
             // 
-            this.buttonInserir.Location = new System.Drawing.Point(775, 96);
+            this.buttonInserir.Location = new System.Drawing.Point(775, 97);
             this.buttonInserir.Name = "buttonInserir";
             this.buttonInserir.Size = new System.Drawing.Size(94, 38);
             this.buttonInserir.TabIndex = 2;

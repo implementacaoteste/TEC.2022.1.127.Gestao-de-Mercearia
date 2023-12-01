@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using BLL;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace UIGestaoMercearia
 {
     public partial class FormConsultaEstoque : Form
     {
+        private BindingSource EstoqueBindingSource = new BindingSource();
         public int Id;
         public FormConsultaEstoque()
         {
@@ -89,11 +91,40 @@ namespace UIGestaoMercearia
 
         private void buttonInserir_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                using (FormConsultaEstoque frm = new FormConsultaEstoque())
+                {
+                    frm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void buttonExcluir_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (EstoqueBindingSource.Count <= 0)
+                {
+                    MessageBox.Show("Não existe registro para ser excluído");
+                    return;
+                }
+
+                if (MessageBox.Show("Deseja realmente excluir este registro?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
+                    return;
+
+                int id = ((Cliente)EstoqueBindingSource.Current).Id;
+                new EstoqueBLL().Excluir(id);
+                EstoqueBindingSource.RemoveCurrent();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }
