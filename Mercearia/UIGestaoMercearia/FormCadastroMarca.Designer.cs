@@ -68,18 +68,19 @@
             this.buttonCancelar.BackColor = System.Drawing.Color.White;
             this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonCancelar.Location = new System.Drawing.Point(676, 162);
+            this.buttonCancelar.Location = new System.Drawing.Point(663, 162);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
             this.buttonCancelar.TabIndex = 52;
             this.buttonCancelar.Text = "&Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = false;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonSalvar
             // 
             this.buttonSalvar.BackColor = System.Drawing.Color.Azure;
             this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvar.Location = new System.Drawing.Point(576, 162);
+            this.buttonSalvar.Location = new System.Drawing.Point(565, 162);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(94, 29);
             this.buttonSalvar.TabIndex = 51;

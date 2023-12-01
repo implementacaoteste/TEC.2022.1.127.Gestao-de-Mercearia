@@ -89,6 +89,17 @@ namespace UIGestaoMercearia
             }
         }
 
-        
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
