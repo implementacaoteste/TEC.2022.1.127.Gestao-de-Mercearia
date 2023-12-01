@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace UIGestaoMercearia
 {
+
     public partial class FormConsultaEstoque : Form
     {
         private BindingSource EstoqueBindingSource = new BindingSource();
@@ -81,13 +82,37 @@ namespace UIGestaoMercearia
 
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                EstoqueBindingSource.DataSource = new GrupoUsuarioBLL().BuscarPorNomeGrupo(buttonBuscar.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
         private void buttonAlterar_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                if (EstoqueBindingSource.Count == 0)
+                    throw new Exception("Não existe grupo listado para ser alterado.");
+
+                using (FormCadastroGrupoUsuario frm = new FormCadastroGrupoUsuario(((GrupoUsuario)EstoqueBindingSource.Current).Id))
+                {
+                    frm.ShowDialog();
+                }
+                buttonBuscar_Click(null, null);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
 
         private void buttonInserir_Click(object sender, EventArgs e)
         {
@@ -129,3 +154,4 @@ namespace UIGestaoMercearia
         }
     }
 }
+
