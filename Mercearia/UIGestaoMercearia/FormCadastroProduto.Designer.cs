@@ -1,7 +1,19 @@
-﻿namespace UIGestaoMercearia
+﻿using System;
+using System.Windows.Forms;
+namespace UIGestaoMercearia
 {
-    partial class FormCadastroProduto
+    public partial class FormCadastroProduto : Form
     {
+        public FormCadastroProduto()
+        {
+            InitializeComponent();
+            CadastroProdutoComboBox();
+        }
+
+        private void CadastroProdutoComboBox()
+        {
+            throw new NotImplementedException();
+        }
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -245,5 +257,7 @@
         private TextBox textBox1;
         private Label label9;
         private Label label8;
+
+        public int ComboBoxProdutos_SelectedIndexChanged { get; private set; }
     }
 }
