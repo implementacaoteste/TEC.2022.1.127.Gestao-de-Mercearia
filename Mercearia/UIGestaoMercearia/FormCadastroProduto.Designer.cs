@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
-            this.produtoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxDescricao = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBoxMarca = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBoxCategoria = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxCodigoDeBarra = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxPreco = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxQtdEstoque = new System.Windows.Forms.TextBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
+            this.textBoxQtdEstoque = new System.Windows.Forms.TextBox();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // produtoBindingSource
+            // 
+            this.produtoBindingSource.DataSource = typeof(Models.Produto);
             // 
             // label1
             // 
@@ -83,10 +83,6 @@
             this.textBoxNome.Size = new System.Drawing.Size(409, 27);
             this.textBoxNome.TabIndex = 14;
             // 
-            // produtoBindingSource
-            // 
-            this.produtoBindingSource.DataSource = typeof(Models.Produto);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -104,42 +100,6 @@
             this.textBoxDescricao.Name = "textBoxDescricao";
             this.textBoxDescricao.Size = new System.Drawing.Size(152, 27);
             this.textBoxDescricao.TabIndex = 16;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(12, 167);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 20);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Marca";
-            // 
-            // textBoxMarca
-            // 
-            this.textBoxMarca.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "IdMarca", true));
-            this.textBoxMarca.Location = new System.Drawing.Point(12, 190);
-            this.textBoxMarca.Name = "textBoxMarca";
-            this.textBoxMarca.Size = new System.Drawing.Size(409, 27);
-            this.textBoxMarca.TabIndex = 18;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(12, 220);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 20);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Categoria";
-            // 
-            // textBoxCategoria
-            // 
-            this.textBoxCategoria.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "IdCategoria", true));
-            this.textBoxCategoria.Location = new System.Drawing.Point(12, 243);
-            this.textBoxCategoria.Name = "textBoxCategoria";
-            this.textBoxCategoria.Size = new System.Drawing.Size(409, 27);
-            this.textBoxCategoria.TabIndex = 20;
             // 
             // label6
             // 
@@ -177,29 +137,11 @@
             this.textBoxPreco.Size = new System.Drawing.Size(489, 27);
             this.textBoxPreco.TabIndex = 24;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(427, 167);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(169, 20);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Quantidade em estoque";
-            // 
-            // textBoxQtdEstoque
-            // 
-            this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Quantidade", true));
-            this.textBoxQtdEstoque.Location = new System.Drawing.Point(427, 190);
-            this.textBoxQtdEstoque.Name = "textBoxQtdEstoque";
-            this.textBoxQtdEstoque.Size = new System.Drawing.Size(232, 27);
-            this.textBoxQtdEstoque.TabIndex = 27;
-            // 
             // buttonSalvar
             // 
             this.buttonSalvar.BackColor = System.Drawing.Color.Azure;
             this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvar.Location = new System.Drawing.Point(451, 337);
+            this.buttonSalvar.Location = new System.Drawing.Point(465, 281);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(94, 29);
             this.buttonSalvar.TabIndex = 28;
@@ -207,29 +149,19 @@
             this.buttonSalvar.UseVisualStyleBackColor = false;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
-            // textBox1
+            // textBoxQtdEstoque
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "IdFornecedor", true));
-            this.textBox1.Location = new System.Drawing.Point(12, 296);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 29;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(12, 273);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 20);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "IdFornecedor";
+            this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "Quantidade", true));
+            this.textBoxQtdEstoque.Location = new System.Drawing.Point(170, 199);
+            this.textBoxQtdEstoque.Name = "textBoxQtdEstoque";
+            this.textBoxQtdEstoque.Size = new System.Drawing.Size(489, 27);
+            this.textBoxQtdEstoque.TabIndex = 27;
             // 
             // buttonCancelar
             // 
             this.buttonCancelar.BackColor = System.Drawing.Color.White;
             this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancelar.Location = new System.Drawing.Point(551, 337);
+            this.buttonCancelar.Location = new System.Drawing.Point(565, 281);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
             this.buttonCancelar.TabIndex = 28;
@@ -237,13 +169,41 @@
             this.buttonCancelar.UseVisualStyleBackColor = false;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.produtoBindingSource, "IdFornecedor", true));
+            this.textBox1.Location = new System.Drawing.Point(12, 199);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(152, 27);
+            this.textBox1.TabIndex = 29;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(12, 176);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 20);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "IdFornecedor";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(170, 176);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(169, 20);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Quantidade em estoque";
+            // 
             // FormCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.CancelButton = this.buttonCancelar;
-            this.ClientSize = new System.Drawing.Size(671, 378);
+            this.ClientSize = new System.Drawing.Size(671, 315);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonCancelar);
@@ -254,10 +214,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBoxCodigoDeBarra);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBoxCategoria);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBoxMarca);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxDescricao);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxNome);
@@ -273,26 +229,21 @@
         }
 
         #endregion
-
+        private BindingSource produtoBindingSource;
         private Label label1;
         private Label label2;
         private TextBox textBoxNome;
         private Label label3;
         private TextBox textBoxDescricao;
-        private Label label4;
-        private TextBox textBoxMarca;
-        private Label label5;
-        private TextBox textBoxCategoria;
         private Label label6;
         private TextBox textBoxCodigoDeBarra;
         private Label label7;
         private TextBox textBoxPreco;
-        private Label label8;
-        private TextBox textBoxQtdEstoque;
-        private BindingSource produtoBindingSource;
         private Button buttonSalvar;
+        private TextBox textBoxQtdEstoque;
+        private Button buttonCancelar;
         private TextBox textBox1;
         private Label label9;
-        private Button buttonCancelar;
+        private Label label8;
     }
 }
