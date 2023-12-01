@@ -67,5 +67,10 @@ namespace UIGestaoMercearia
             else
                 bindingSourceCadastrarFuncionario.DataSource = new FuncionarioBLL().BuscarPorId(Id);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
