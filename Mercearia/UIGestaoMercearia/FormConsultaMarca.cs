@@ -107,7 +107,38 @@ namespace UIGestaoMercearia
 
         private void buttonSelecionar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (bindingSourceMarca.Count == 0)
+                {
+                    MessageBox.Show("Não existe marca para ser selecionado.");
+                    return;
+                }
 
+
+                Marca selectedMarca = (Marca)bindingSourceMarca.Current;
+
+
+                MessageBox.Show($"Marca Selecionado: {selectedMarca.Nome}, Id: {selectedMarca.Id}");
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
