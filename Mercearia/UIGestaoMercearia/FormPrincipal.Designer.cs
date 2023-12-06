@@ -84,6 +84,7 @@ namespace UIGestaoMercearia
             label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             label1.AutoSize = true;
             label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            label1.Cursor = System.Windows.Forms.Cursors.No;
             label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             label1.Font = new System.Drawing.Font("Swis721 Blk BT", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.Color.White;
@@ -99,6 +100,7 @@ namespace UIGestaoMercearia
             // 
             MENU.Anchor = System.Windows.Forms.AnchorStyles.Top;
             MENU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            MENU.Cursor = System.Windows.Forms.Cursors.No;
             MENU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             MENU.Font = new System.Drawing.Font("Swis721 Blk BT", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             MENU.ForeColor = System.Drawing.Color.White;
@@ -262,7 +264,6 @@ namespace UIGestaoMercearia
             // 
             // buttonEstatistica
             // 
-            this.buttonEstatistica.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonEstatistica.BackColor = System.Drawing.Color.White;
             this.buttonEstatistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEstatistica.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -316,8 +317,7 @@ namespace UIGestaoMercearia
             // 
             // monthCalendar2
             // 
-            this.monthCalendar2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.monthCalendar2.Location = new System.Drawing.Point(9, 720);
+            this.monthCalendar2.Location = new System.Drawing.Point(9, 662);
             this.monthCalendar2.Name = "monthCalendar2";
             this.monthCalendar2.TabIndex = 4;
             // 
@@ -420,6 +420,7 @@ namespace UIGestaoMercearia
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelNomeEmpresa.AutoSize = true;
             this.labelNomeEmpresa.BackColor = System.Drawing.Color.Transparent;
+            this.labelNomeEmpresa.Cursor = System.Windows.Forms.Cursors.No;
             this.labelNomeEmpresa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.labelNomeEmpresa.Font = new System.Drawing.Font("Bernard MT Condensed", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.labelNomeEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
@@ -471,7 +472,7 @@ namespace UIGestaoMercearia
             this.pictureBoxLogo.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLogo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.pictureBoxLogo.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBoxLogo.ErrorImage = null;
             this.pictureBoxLogo.Image = global::UIGestaoMercearia.Properties.Resources.shopping_cart_icon_illustration_free_vector2;
             this.pictureBoxLogo.InitialImage = null;
