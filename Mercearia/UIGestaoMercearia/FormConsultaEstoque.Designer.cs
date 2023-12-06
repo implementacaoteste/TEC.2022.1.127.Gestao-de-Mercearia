@@ -50,7 +50,6 @@
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).BeginInit();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,9 +113,8 @@
             this.dataGridViewEstoque.Name = "dataGridViewEstoque";
             this.dataGridViewEstoque.RowHeadersWidth = 51;
             this.dataGridViewEstoque.RowTemplate.Height = 29;
-            this.dataGridViewEstoque.Size = new System.Drawing.Size(982, 417);
+            this.dataGridViewEstoque.Size = new System.Drawing.Size(982, 371);
             this.dataGridViewEstoque.TabIndex = 4;
-            this.dataGridViewEstoque.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEstoque_CellContentClick);
             // 
             // labelGerenProd
             // 
@@ -130,43 +128,37 @@
             this.labelGerenProd.Size = new System.Drawing.Size(493, 44);
             this.labelGerenProd.TabIndex = 0;
             this.labelGerenProd.Text = "Gerenciamento de Estoque";
-            this.labelGerenProd.Click += new System.EventHandler(this.labelGerenProd_Click);
             // 
             // buttonSelecionar
             // 
             this.buttonSelecionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSelecionar.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.buttonSelecionar.Location = new System.Drawing.Point(774, 10);
+            this.buttonSelecionar.Location = new System.Drawing.Point(775, 538);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(94, 38);
             this.buttonSelecionar.TabIndex = 1;
             this.buttonSelecionar.Text = "&Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = true;
-            this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click_1);
             // 
             // buttonCancelar
             // 
             this.buttonCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.buttonCancelar.Location = new System.Drawing.Point(876, 10);
+            this.buttonCancelar.Location = new System.Drawing.Point(876, 535);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 38);
             this.buttonCancelar.TabIndex = 1;
             this.buttonCancelar.Text = "&Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel1.Controls.Add(this.buttonCancelar);
-            this.panel1.Controls.Add(this.buttonSelecionar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 572);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(982, 60);
             this.panel1.TabIndex = 3;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // comboBoxBuscarPor
             // 
@@ -178,7 +170,6 @@
             this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             this.comboBoxBuscarPor.Size = new System.Drawing.Size(151, 28);
             this.comboBoxBuscarPor.TabIndex = 0;
-            this.comboBoxBuscarPor.SelectedIndexChanged += new System.EventHandler(this.comboBoxBuscarPor_SelectedIndexChanged);
             // 
             // textBoxBuscarPor
             // 
@@ -186,7 +177,6 @@
             this.textBoxBuscarPor.Name = "textBoxBuscarPor";
             this.textBoxBuscarPor.Size = new System.Drawing.Size(402, 27);
             this.textBoxBuscarPor.TabIndex = 1;
-            this.textBoxBuscarPor.TextChanged += new System.EventHandler(this.textBoxBuscarPor_TextChanged);
             // 
             // buttonBuscar
             // 
@@ -231,7 +221,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.panel2.Controls.Add(this.buttonCancelar);
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.buttonSelecionar);
             this.panel2.Controls.Add(this.dataGridViewEstoque);
             this.panel2.Controls.Add(this.buttonExcluir);
             this.panel2.Controls.Add(this.labelGerenProd);
@@ -268,10 +260,8 @@
             this.Name = "FormConsultaEstoque";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Load += new System.EventHandler(this.FormConsultaEstoque_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

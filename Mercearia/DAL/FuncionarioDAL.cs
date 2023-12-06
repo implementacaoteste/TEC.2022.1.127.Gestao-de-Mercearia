@@ -191,7 +191,7 @@ namespace DAL
 
         public Funcionario BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
