@@ -203,9 +203,9 @@ namespace UIGestaoMercearia
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label8.Location = new System.Drawing.Point(170, 176);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(169, 20);
+            this.label8.Size = new System.Drawing.Size(87, 20);
             this.label8.TabIndex = 25;
-            this.label8.Text = "Quantidade em estoque";
+            this.label8.Text = "Quantidade";
             // 
             // textBox2
             // 
