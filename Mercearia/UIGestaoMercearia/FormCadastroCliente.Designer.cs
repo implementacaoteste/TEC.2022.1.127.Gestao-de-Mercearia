@@ -123,6 +123,7 @@
             // 
             // nomeTextBox
             // 
+            this.nomeTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Nome", true));
             this.nomeTextBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nomeTextBox.Location = new System.Drawing.Point(12, 98);
@@ -137,6 +138,7 @@
             // 
             // cPFTextBox
             // 
+            this.cPFTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.cPFTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "CPF", true));
             this.cPFTextBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cPFTextBox.Location = new System.Drawing.Point(430, 98);
@@ -147,6 +149,7 @@
             // 
             // foneTextBox
             // 
+            this.foneTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.foneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Fone", true));
             this.foneTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.foneTextBox.Location = new System.Drawing.Point(230, 153);
@@ -157,6 +160,7 @@
             // 
             // emailTextBox
             // 
+            this.emailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Email", true));
             this.emailTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.emailTextBox.Location = new System.Drawing.Point(12, 153);
@@ -205,6 +209,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Email", true));
             this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBox1.Location = new System.Drawing.Point(430, 153);
@@ -215,6 +220,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "Email", true));
             this.textBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBox2.Location = new System.Drawing.Point(10, 208);

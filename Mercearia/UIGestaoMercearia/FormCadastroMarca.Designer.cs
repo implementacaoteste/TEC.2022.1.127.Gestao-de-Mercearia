@@ -53,6 +53,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.marcaBindingSource, "Nome", true));
             this.textBox1.Location = new System.Drawing.Point(29, 121);
             this.textBox1.Name = "textBox1";

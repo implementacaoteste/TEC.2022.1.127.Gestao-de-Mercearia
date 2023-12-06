@@ -133,6 +133,7 @@
             // 
             // nomeTextBox
             // 
+            this.nomeTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "Nome", true));
             this.nomeTextBox.Location = new System.Drawing.Point(6, 121);
             this.nomeTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -143,6 +144,7 @@
             // 
             // cPFTextBox
             // 
+            this.cPFTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.cPFTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "CPF", true));
             this.cPFTextBox.Location = new System.Drawing.Point(225, 180);
             this.cPFTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -153,6 +155,7 @@
             // 
             // emailTextBox
             // 
+            this.emailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "Email", true));
             this.emailTextBox.Location = new System.Drawing.Point(330, 121);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -163,6 +166,7 @@
             // 
             // nomeUsuarioTextBox
             // 
+            this.nomeUsuarioTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nomeUsuarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "NomeUsuario", true));
             this.nomeUsuarioTextBox.Location = new System.Drawing.Point(6, 180);
             this.nomeUsuarioTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -173,6 +177,7 @@
             // 
             // senhaTextBox
             // 
+            this.senhaTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.senhaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "Senha", true));
             this.senhaTextBox.Location = new System.Drawing.Point(6, 236);
             this.senhaTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -198,6 +203,7 @@
             // 
             // textBoxConfirmarSenha
             // 
+            this.textBoxConfirmarSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxConfirmarSenha.Location = new System.Drawing.Point(112, 237);
             this.textBoxConfirmarSenha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxConfirmarSenha.Name = "textBoxConfirmarSenha";

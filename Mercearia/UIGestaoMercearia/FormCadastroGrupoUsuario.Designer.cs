@@ -80,6 +80,7 @@
             // 
             // nomeGrupoTextBox
             // 
+            this.nomeGrupoTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nomeGrupoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.grupoUsuarioBindingSource, "NomeGrupo", true));
             this.nomeGrupoTextBox.Location = new System.Drawing.Point(12, 104);
             this.nomeGrupoTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -119,6 +120,7 @@
             // 
             // textBoxPermissoes
             // 
+            this.textBoxPermissoes.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxPermissoes.Location = new System.Drawing.Point(12, 167);
             this.textBoxPermissoes.Name = "textBoxPermissoes";
             this.textBoxPermissoes.Size = new System.Drawing.Size(536, 27);

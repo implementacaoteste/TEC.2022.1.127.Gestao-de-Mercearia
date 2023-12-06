@@ -86,6 +86,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxNome
             // 
+            this.textBoxNome.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxNome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Nome", true));
             this.textBoxNome.Location = new System.Drawing.Point(12, 84);
             this.textBoxNome.Name = "textBoxNome";
@@ -104,6 +105,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxDescricao
             // 
+            this.textBoxDescricao.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxDescricao.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Preco", true));
             this.textBoxDescricao.Location = new System.Drawing.Point(12, 137);
             this.textBoxDescricao.Name = "textBoxDescricao";
@@ -122,6 +124,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxCodigoDeBarra
             // 
+            this.textBoxCodigoDeBarra.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxCodigoDeBarra.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "CodigoDeBarra", true));
             this.textBoxCodigoDeBarra.Location = new System.Drawing.Point(427, 84);
             this.textBoxCodigoDeBarra.Name = "textBoxCodigoDeBarra";
@@ -141,6 +144,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxPreco
             // 
+            this.textBoxPreco.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxPreco.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Descricao", true));
             this.textBoxPreco.Location = new System.Drawing.Point(170, 137);
             this.textBoxPreco.Name = "textBoxPreco";
@@ -161,6 +165,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxQtdEstoque
             // 
+            this.textBoxQtdEstoque.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "QuantidadeEmEstoque", true));
             this.textBoxQtdEstoque.Location = new System.Drawing.Point(170, 199);
             this.textBoxQtdEstoque.Name = "textBoxQtdEstoque";
@@ -181,6 +186,7 @@ namespace UIGestaoMercearia
             // 
             // textBox1
             // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Id", true));
             this.textBox1.Location = new System.Drawing.Point(12, 199);
             this.textBox1.Name = "textBox1";
@@ -209,6 +215,7 @@ namespace UIGestaoMercearia
             // 
             // textBox2
             // 
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "IdMarca", true));
             this.textBox2.Location = new System.Drawing.Point(12, 248);
             this.textBox2.Name = "textBox2";

@@ -60,6 +60,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Nome", true));
             this.textBox1.Location = new System.Drawing.Point(12, 100);
             this.textBox1.Name = "textBox1";
@@ -74,6 +75,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Telefone", true));
             this.textBox2.Location = new System.Drawing.Point(335, 153);
             this.textBox2.Name = "textBox2";
@@ -113,6 +115,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Profissao", true));
             this.textBox3.Location = new System.Drawing.Point(12, 206);
             this.textBox3.Name = "textBox3";
@@ -131,6 +134,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Salario", true));
             this.textBox4.Location = new System.Drawing.Point(12, 153);
             this.textBox4.Name = "textBox4";

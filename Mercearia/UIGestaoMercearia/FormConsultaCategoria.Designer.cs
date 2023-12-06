@@ -74,6 +74,7 @@
             // 
             // textBoxBuscarPor
             // 
+            this.textBoxBuscarPor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxBuscarPor.Location = new System.Drawing.Point(141, 18);
             this.textBoxBuscarPor.Name = "textBoxBuscarPor";
             this.textBoxBuscarPor.Size = new System.Drawing.Size(382, 27);
