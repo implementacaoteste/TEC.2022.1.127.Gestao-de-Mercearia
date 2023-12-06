@@ -65,7 +65,7 @@
             nomeLabel.Size = new System.Drawing.Size(52, 20);
             nomeLabel.TabIndex = 1;
             nomeLabel.Text = "Nome";
-            nomeLabel.Click += new System.EventHandler(this.nomeLabel_Click);
+            
             // 
             // cPFLabel
             // 
@@ -77,7 +77,7 @@
             cPFLabel.Size = new System.Drawing.Size(35, 20);
             cPFLabel.TabIndex = 3;
             cPFLabel.Text = "CPF";
-            cPFLabel.Click += new System.EventHandler(this.cPFLabel_Click);
+            
             // 
             // emailLabel
             // 
@@ -89,7 +89,7 @@
             emailLabel.Size = new System.Drawing.Size(53, 20);
             emailLabel.TabIndex = 5;
             emailLabel.Text = "E-mail";
-            emailLabel.Click += new System.EventHandler(this.emailLabel_Click);
+            
             // 
             // nomeUsuarioLabel
             // 
@@ -101,7 +101,7 @@
             nomeUsuarioLabel.Size = new System.Drawing.Size(129, 20);
             nomeUsuarioLabel.TabIndex = 7;
             nomeUsuarioLabel.Text = "Nome de usuário";
-            nomeUsuarioLabel.Click += new System.EventHandler(this.nomeUsuarioLabel_Click);
+            
             // 
             // senhaLabel
             // 
@@ -113,7 +113,7 @@
             senhaLabel.Size = new System.Drawing.Size(51, 20);
             senhaLabel.TabIndex = 9;
             senhaLabel.Text = "Senha";
-            senhaLabel.Click += new System.EventHandler(this.senhaLabel_Click);
+            
             // 
             // label1
             // 
@@ -125,7 +125,7 @@
             label1.Size = new System.Drawing.Size(125, 20);
             label1.TabIndex = 11;
             label1.Text = "Confirmar senha";
-            label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // usuarioBindingSource
             // 
@@ -140,7 +140,7 @@
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(318, 27);
             this.nomeTextBox.TabIndex = 2;
-            this.nomeTextBox.TextChanged += new System.EventHandler(this.nomeTextBox_TextChanged);
+            
             // 
             // cPFTextBox
             // 
@@ -151,7 +151,7 @@
             this.cPFTextBox.Name = "cPFTextBox";
             this.cPFTextBox.Size = new System.Drawing.Size(331, 27);
             this.cPFTextBox.TabIndex = 4;
-            this.cPFTextBox.TextChanged += new System.EventHandler(this.cPFTextBox_TextChanged);
+            
             // 
             // emailTextBox
             // 
@@ -162,7 +162,7 @@
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(393, 27);
             this.emailTextBox.TabIndex = 6;
-            this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
+            
             // 
             // nomeUsuarioTextBox
             // 
@@ -173,7 +173,7 @@
             this.nomeUsuarioTextBox.Name = "nomeUsuarioTextBox";
             this.nomeUsuarioTextBox.Size = new System.Drawing.Size(213, 27);
             this.nomeUsuarioTextBox.TabIndex = 8;
-            this.nomeUsuarioTextBox.TextChanged += new System.EventHandler(this.nomeUsuarioTextBox_TextChanged);
+            
             // 
             // senhaTextBox
             // 
@@ -184,7 +184,7 @@
             this.senhaTextBox.Name = "senhaTextBox";
             this.senhaTextBox.Size = new System.Drawing.Size(100, 27);
             this.senhaTextBox.TabIndex = 10;
-            this.senhaTextBox.TextChanged += new System.EventHandler(this.senhaTextBox_TextChanged);
+            
             // 
             // ativoCheckBox
             // 
@@ -199,7 +199,7 @@
             this.ativoCheckBox.TabIndex = 13;
             this.ativoCheckBox.Text = "Ativo";
             this.ativoCheckBox.UseVisualStyleBackColor = true;
-            this.ativoCheckBox.CheckedChanged += new System.EventHandler(this.ativoCheckBox_CheckedChanged);
+            
             // 
             // textBoxConfirmarSenha
             // 
@@ -209,7 +209,7 @@
             this.textBoxConfirmarSenha.Name = "textBoxConfirmarSenha";
             this.textBoxConfirmarSenha.Size = new System.Drawing.Size(148, 27);
             this.textBoxConfirmarSenha.TabIndex = 12;
-            this.textBoxConfirmarSenha.TextChanged += new System.EventHandler(this.textBoxConfirmarSenha_TextChanged);
+            
             // 
             // label2
             // 

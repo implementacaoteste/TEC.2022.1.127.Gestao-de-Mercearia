@@ -75,5 +75,34 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void buttonBuscarFornecedor_Click(object sender, EventArgs e)
+        {
+            using (FormConsultaFornecedor frm = new FormConsultaFornecedor(true))
+            {
+                frm.ShowDialog();
+                if(frm.fornecedor != null)
+                {
+                    ((Produto)produtoBindingSource.Current).Fornecedor = frm.fornecedor;
+                    textBoxNomeFornecedor.Text = frm.fornecedor.Nome;
+                    ((Produto)produtoBindingSource.Current).IdFornecedor = frm.fornecedor.Id;
+                }
+            }
+
+        }
+
+        private void buttonBuscarMarca_Click(object sender, EventArgs e)
+        {
+            using (FormConsultaMarca frm = new FormConsultaMarca(true))
+            {
+                frm.ShowDialog();
+                if (frm.marca != null)
+                {
+                    ((Produto)produtoBindingSource.Current).Marca = frm.marca;
+                    textBoxNomeMarca.Text = frm.marca.Nome;
+                    ((Produto)produtoBindingSource.Current).IdMarca = frm.marca.Id;
+                }
+            }
+        }
     }
 }

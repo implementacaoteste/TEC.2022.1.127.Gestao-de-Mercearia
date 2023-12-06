@@ -37,6 +37,8 @@
             this.buttonInserir = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
             this.dataGridViewCategoria = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSourceCategoria = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonCancelar = new System.Windows.Forms.Button();
@@ -129,16 +131,45 @@
             // 
             // dataGridViewCategoria
             // 
+            this.dataGridViewCategoria.AllowUserToAddRows = false;
+            this.dataGridViewCategoria.AllowUserToDeleteRows = false;
+            this.dataGridViewCategoria.AllowUserToOrderColumns = true;
             this.dataGridViewCategoria.AutoGenerateColumns = false;
             this.dataGridViewCategoria.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCategoria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
             this.dataGridViewCategoria.DataSource = this.bindingSourceCategoria;
             this.dataGridViewCategoria.Location = new System.Drawing.Point(3, 59);
             this.dataGridViewCategoria.Name = "dataGridViewCategoria";
+            this.dataGridViewCategoria.ReadOnly = true;
             this.dataGridViewCategoria.RowHeadersWidth = 51;
             this.dataGridViewCategoria.RowTemplate.Height = 29;
-            this.dataGridViewCategoria.Size = new System.Drawing.Size(532, 387);
+            this.dataGridViewCategoria.Size = new System.Drawing.Size(528, 387);
             this.dataGridViewCategoria.TabIndex = 7;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 350;
+            // 
+            // bindingSourceCategoria
+            // 
+            this.bindingSourceCategoria.DataSource = typeof(Models.Categoria);
             // 
             // panel1
             // 
@@ -174,6 +205,7 @@
             this.buttonSelecionar.TabIndex = 1;
             this.buttonSelecionar.Text = "&Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = false;
+            this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
             // 
             // labelGerenProd
             // 
@@ -231,5 +263,7 @@
         private BindingSource bindingSourceCategoria;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }

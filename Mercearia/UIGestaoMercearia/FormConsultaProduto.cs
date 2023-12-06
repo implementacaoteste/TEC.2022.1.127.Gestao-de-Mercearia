@@ -140,5 +140,28 @@ namespace UIGestaoMercearia
         {
 
         }
+        private void buttonSelecionar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (bindingSourceProduto.Count == 0)
+                {
+                    MessageBox.Show("Não existe produto para ser selecionado.");
+                    return;
+                }
+
+
+                Produto selectedProduto = (Produto)bindingSourceProduto.Current;
+
+
+                MessageBox.Show($"Produto Selecionado: {selectedProduto.Nome}, Id: {selectedProduto.Id}");
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

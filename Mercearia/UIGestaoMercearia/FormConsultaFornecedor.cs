@@ -14,9 +14,14 @@ namespace UIGestaoMercearia
 {
     public partial class FormConsultaFornecedor : Form
     {
-        public FormConsultaFornecedor()
+        public Fornecedor fornecedor;
+        private bool selecionarRegistro;
+
+        public FormConsultaFornecedor(bool _selecionarRegistro = false)
         {
             InitializeComponent();
+            this.selecionarRegistro = _selecionarRegistro;
+            buttonSelecionar.Visible = selecionarRegistro;
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
@@ -109,6 +114,8 @@ namespace UIGestaoMercearia
         {
             try
             {
+                if (!selecionarRegistro)
+                    return;
                 if (bindingSourceFornecedor.Count == 0)
                 {
                     MessageBox.Show("Não existe fornecedor para ser selecionado.");
@@ -116,11 +123,10 @@ namespace UIGestaoMercearia
                 }
 
 
-                Fornecedor selectedFornecedor = (Fornecedor)bindingSourceFornecedor.Current;
+                fornecedor = (Fornecedor)bindingSourceFornecedor.Current;
 
 
-                MessageBox.Show($"Fornecedor Selecionado: {selectedFornecedor.Nome}, Id: {selectedFornecedor.Id}");
-
+                this.Close();
 
             }
             catch (Exception ex)
@@ -139,6 +145,17 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void FormConsultaFornecedor_Load(object sender, EventArgs e)
+        {
+            comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1;
+            buttonBuscar_Click(sender, e);
+        }
+
+        private void dataGridViewFornecedor_DoubleClick(object sender, EventArgs e)
+        {
+            buttonSelecionar_Click(sender, e);
         }
     }
 

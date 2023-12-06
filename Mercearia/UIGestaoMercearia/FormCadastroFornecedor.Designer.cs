@@ -126,7 +126,6 @@
             this.label5.Size = new System.Drawing.Size(34, 20);
             this.label5.TabIndex = 20;
             this.label5.Text = "CEP";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBoxCep
             // 
@@ -144,7 +143,7 @@
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(75, 29);
             this.buttonSalvar.TabIndex = 24;
-            this.buttonSalvar.Text = "Salvar";
+            this.buttonSalvar.Text = "&Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = false;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
@@ -155,7 +154,7 @@
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(82, 29);
             this.buttonCancelar.TabIndex = 23;
-            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.Text = "&Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = false;
             this.buttonCancelar.Click += new System.EventHandler(this.button2_Click);
             // 

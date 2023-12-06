@@ -14,9 +14,13 @@ namespace UIGestaoMercearia
 {
     public partial class FormConsultaMarca : Form
     {
-        public FormConsultaMarca()
+        public Marca marca;
+        private bool selecionarRegistro;
+        public FormConsultaMarca(bool _selecionarRegistro = false)
         {
             InitializeComponent();
+            this.selecionarRegistro = _selecionarRegistro;
+            buttonSelecionar.Visible = selecionarRegistro;
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
@@ -107,7 +111,48 @@ namespace UIGestaoMercearia
 
         private void buttonSelecionar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (!selecionarRegistro)
+                    return;
+                if (bindingSourceMarca.Count == 0)
+                {
+                    MessageBox.Show("Não existe marca para ser selecionado.");
+                    return;
+                }
 
+                marca = (Marca)bindingSourceMarca.Current;
+                this.Close();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void FormConsultaMarca_Load(object sender, EventArgs e)
+        {
+            comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1; //seleciona sempre o ultimo indice da ComboBox
+            buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
+        }
+
+        private void dataGridViewMarca_DoubleClick(object sender, EventArgs e)
+        {
+            buttonSelecionar_Click(sender, e);
         }
     }
 }

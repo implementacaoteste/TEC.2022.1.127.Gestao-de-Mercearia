@@ -20,12 +20,6 @@ namespace UIGestaoMercearia
             InitializeComponent();
             id = _id;
         }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             try

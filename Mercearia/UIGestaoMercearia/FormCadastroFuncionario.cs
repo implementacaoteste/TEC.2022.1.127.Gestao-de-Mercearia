@@ -23,11 +23,6 @@ namespace UIGestaoMercearia
             Id = _id;
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -49,17 +44,6 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bindingSourceCadastrarFuncionario_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormCadastroFuncionario_Load(object sender, EventArgs e)
         {
             if (Id == 0)
@@ -79,11 +63,6 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

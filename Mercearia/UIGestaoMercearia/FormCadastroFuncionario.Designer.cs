@@ -66,12 +66,10 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(611, 27);
             this.textBox1.TabIndex = 16;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // bindingSourceCadastrarFuncionario
             // 
             this.bindingSourceCadastrarFuncionario.DataSource = typeof(Models.Funcionario);
-            this.bindingSourceCadastrarFuncionario.CurrentChanged += new System.EventHandler(this.bindingSourceCadastrarFuncionario_CurrentChanged);
             // 
             // textBox2
             // 
@@ -81,7 +79,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(218, 27);
             this.textBox2.TabIndex = 18;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -140,7 +137,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(317, 27);
             this.textBox4.TabIndex = 24;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // ativoCheckBox
             // 
@@ -163,7 +159,7 @@
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(94, 29);
             this.buttonSalvar.TabIndex = 27;
-            this.buttonSalvar.Text = "Salvar";
+            this.buttonSalvar.Text = "&Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = false;
             this.buttonSalvar.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -174,7 +170,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 29);
             this.button2.TabIndex = 28;
-            this.button2.Text = "Cancelar";
+            this.button2.Text = "&Cancelar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
