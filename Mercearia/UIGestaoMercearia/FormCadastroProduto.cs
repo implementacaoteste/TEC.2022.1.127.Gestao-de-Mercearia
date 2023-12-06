@@ -104,5 +104,19 @@ namespace UIGestaoMercearia
                 }
             }
         }
+
+        private void buttonBuscarCategoria_Click(object sender, EventArgs e)
+        {
+            using (FormConsultaCategoria frm = new FormConsultaCategoria(true))
+            {
+                frm.ShowDialog();
+                if (frm.categoria != null)
+                {
+                    ((Produto)produtoBindingSource.Current).Categoria = frm.categoria;
+                    textBoxNomeCategoria.Text = frm.categoria.Nome;
+                    ((Produto)produtoBindingSource.Current).IdCategoria = frm.categoria.Id;
+                }
+            }
+        }
     }
 }

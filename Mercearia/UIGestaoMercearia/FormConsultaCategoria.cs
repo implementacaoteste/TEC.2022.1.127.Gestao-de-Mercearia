@@ -14,9 +14,13 @@ namespace UIGestaoMercearia
 {
     public partial class FormConsultaCategoria : Form
     {
-        public FormConsultaCategoria()
+        public Categoria categoria;
+        private bool selecionarRegistro;
+        public FormConsultaCategoria(bool _selecionarRegistro = false)
         {
             InitializeComponent();
+            this.selecionarRegistro = _selecionarRegistro;
+            buttonSelecionar.Visible = selecionarRegistro;
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
@@ -122,6 +126,8 @@ namespace UIGestaoMercearia
         {
             try
             {
+                if (!selecionarRegistro)
+                    return;
                 if (bindingSourceCategoria.Count == 0)
                 {
                     MessageBox.Show("Não existe categoria para ser selecionado.");
@@ -129,10 +135,10 @@ namespace UIGestaoMercearia
                 }
 
 
-                Categoria selectedCategoria = (Categoria)bindingSourceCategoria.Current;
+                categoria = (Categoria)bindingSourceCategoria.Current;
+                this.Close();
 
 
-                MessageBox.Show($"Categoria Selecionado: {selectedCategoria.Nome}, Id: {selectedCategoria.Id}");
 
 
             }
@@ -140,6 +146,17 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void FormConsultaCategoria_Load(object sender, EventArgs e)
+        {
+            comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1; //seleciona sempre o ultimo indice da ComboBox
+            buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
+        }
+
+        private void dataGridViewCategoria_DoubleClick(object sender, EventArgs e)
+        {
+            buttonSelecionar_Click(sender, e);
         }
     }
 }

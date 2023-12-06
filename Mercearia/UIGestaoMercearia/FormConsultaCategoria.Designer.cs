@@ -148,6 +148,7 @@
             this.dataGridViewCategoria.RowTemplate.Height = 29;
             this.dataGridViewCategoria.Size = new System.Drawing.Size(528, 387);
             this.dataGridViewCategoria.TabIndex = 7;
+            this.dataGridViewCategoria.DoubleClick += new System.EventHandler(this.dataGridViewCategoria_DoubleClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -236,6 +237,7 @@
             this.Name = "FormConsultaCategoria";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.Load += new System.EventHandler(this.FormConsultaCategoria_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategoria)).EndInit();

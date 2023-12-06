@@ -282,6 +282,7 @@ namespace UIGestaoMercearia
             this.buttonBuscarCategoria.TabIndex = 33;
             this.buttonBuscarCategoria.Text = "...";
             this.buttonBuscarCategoria.UseVisualStyleBackColor = true;
+            this.buttonBuscarCategoria.Click += new System.EventHandler(this.buttonBuscarCategoria_Click);
             // 
             // FormCadastroProduto
             // 
