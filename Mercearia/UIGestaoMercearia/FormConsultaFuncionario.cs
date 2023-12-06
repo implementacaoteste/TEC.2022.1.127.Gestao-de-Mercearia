@@ -56,7 +56,7 @@ namespace UIGestaoMercearia
 
                 int id = ((Funcionario)funcionarioBindingSource.Current).Id;
 
-                using(FormCadastroFuncionario frm = new FormCadastroFuncionario(id))
+                using (FormCadastroFuncionario frm = new FormCadastroFuncionario(id))
                 {
                     frm.ShowDialog();
                 }
@@ -67,11 +67,46 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void buttonInserir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (FormCadastroFuncionario frm = new FormCadastroFuncionario())
+                {
+                    frm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (funcionarioBindingSource.Count <= 0)
+                {
+                    MessageBox.Show("Não existe registro para ser excluído");
+                    return;
+                }
+
+                if (MessageBox.Show("Deseja realmente excluir este registro?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
+                    return;
+
+                int id = ((Funcionario)funcionarioBindingSource.Current).Id;
+                new FuncionarioBLL().Excluir(id);
+                funcionarioBindingSource.RemoveCurrent();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
-
-
-
 
 
 
