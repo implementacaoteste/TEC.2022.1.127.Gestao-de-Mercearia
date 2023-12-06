@@ -64,7 +64,6 @@
             nomeLabel.Size = new System.Drawing.Size(51, 20);
             nomeLabel.TabIndex = 1;
             nomeLabel.Text = "Nome";
-            nomeLabel.Click += new System.EventHandler(this.nomeLabel_Click);
             // 
             // cPFLabel
             // 

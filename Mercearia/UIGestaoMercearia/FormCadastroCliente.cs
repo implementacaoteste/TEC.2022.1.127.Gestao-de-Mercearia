@@ -48,12 +48,6 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void nomeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             try
