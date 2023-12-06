@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -189,9 +190,42 @@ namespace DAL
 
         }
 
-        public Funcionario BuscarPorId(int id)
+        public Funcionario BuscarPorId(int _id)
         {
-            
+            Funcionario funcionario = new Funcionario();
+
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = @"SELECT Id, Nome, Telefone, Ativo, Profissao, Salario FROM Funcionario WHERE Id = @Id";
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@Id", _id);
+
+                cn.Open();
+
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    funcionario = new Funcionario();
+                    funcionario.Id = Convert.ToInt32(rd["Id"]);
+                    funcionario.Nome = rd["Nome"].ToString();
+                    funcionario.Telefone = rd["Telefone"].ToString();
+                    funcionario.Ativo = Convert.ToBoolean(rd["Ativo"]);
+                    funcionario.Profissao = rd["Profissao"].ToString();
+                    funcionario.Salario = Convert.ToDouble(rd["Salario"]);
+                }
+                return funcionario;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar por id no banco de dados", ex);
+            }
+            finally
+            {
+                cn.Close();
+            }
         }
     }
 }
