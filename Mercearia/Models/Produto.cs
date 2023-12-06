@@ -17,6 +17,16 @@ namespace Models
         public int IdFornecedor { get; set; }
         public int IdCategoria { get; set; }
         public int IdMarca { get; set; }
+        public Fornecedor Fornecedor { get; set; }
+        public string NomeFornecedor 
+        {
+            get
+            {
+                if(Fornecedor == null)
+                    return string.Empty;
+                return Fornecedor.Nome;
+            } 
+        }
 
     }
 }

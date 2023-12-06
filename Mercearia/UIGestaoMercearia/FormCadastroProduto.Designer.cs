@@ -49,11 +49,16 @@ namespace UIGestaoMercearia
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.textBoxQtdEstoque = new System.Windows.Forms.TextBox();
             this.buttonCancelar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNomeFornecedor = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.buttonBuscarFornecedor = new System.Windows.Forms.Button();
+            this.buttonBuscarMarca = new System.Windows.Forms.Button();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.buttonBuscarCategoria = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,10 +171,10 @@ namespace UIGestaoMercearia
             // textBoxQtdEstoque
             // 
             this.textBoxQtdEstoque.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "QuantidadeEmEstoque", true));
-            this.textBoxQtdEstoque.Location = new System.Drawing.Point(170, 199);
+            this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Quantidade", true));
+            this.textBoxQtdEstoque.Location = new System.Drawing.Point(344, 199);
             this.textBoxQtdEstoque.Name = "textBoxQtdEstoque";
-            this.textBoxQtdEstoque.Size = new System.Drawing.Size(489, 27);
+            this.textBoxQtdEstoque.Size = new System.Drawing.Size(315, 27);
             this.textBoxQtdEstoque.TabIndex = 27;
             // 
             // buttonCancelar
@@ -184,20 +189,20 @@ namespace UIGestaoMercearia
             this.buttonCancelar.UseVisualStyleBackColor = false;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
-            // textBox1
+            // textBoxNomeFornecedor
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Id", true));
-            this.textBox1.Location = new System.Drawing.Point(12, 199);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 27);
-            this.textBox1.TabIndex = 29;
+            this.textBoxNomeFornecedor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxNomeFornecedor.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "NomeFornecedor", true));
+            this.textBoxNomeFornecedor.Location = new System.Drawing.Point(12, 186);
+            this.textBoxNomeFornecedor.Name = "textBoxNomeFornecedor";
+            this.textBoxNomeFornecedor.Size = new System.Drawing.Size(152, 27);
+            this.textBoxNomeFornecedor.TabIndex = 29;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(12, 176);
+            this.label9.Location = new System.Drawing.Point(12, 163);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 20);
             this.label9.TabIndex = 30;
@@ -207,7 +212,7 @@ namespace UIGestaoMercearia
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(170, 176);
+            this.label8.Location = new System.Drawing.Point(344, 176);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(87, 20);
             this.label8.TabIndex = 25;
@@ -217,7 +222,7 @@ namespace UIGestaoMercearia
             // 
             this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "IdMarca", true));
-            this.textBox2.Location = new System.Drawing.Point(12, 248);
+            this.textBox2.Location = new System.Drawing.Point(12, 235);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(152, 27);
             this.textBox2.TabIndex = 31;
@@ -226,11 +231,57 @@ namespace UIGestaoMercearia
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(12, 225);
+            this.label4.Location = new System.Drawing.Point(12, 212);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 32;
             this.label4.Text = "IdMarca";
+            // 
+            // buttonBuscarFornecedor
+            // 
+            this.buttonBuscarFornecedor.Location = new System.Drawing.Point(170, 186);
+            this.buttonBuscarFornecedor.Name = "buttonBuscarFornecedor";
+            this.buttonBuscarFornecedor.Size = new System.Drawing.Size(29, 29);
+            this.buttonBuscarFornecedor.TabIndex = 33;
+            this.buttonBuscarFornecedor.Text = "...";
+            this.buttonBuscarFornecedor.UseVisualStyleBackColor = true;
+            this.buttonBuscarFornecedor.Click += new System.EventHandler(this.buttonBuscarFornecedor_Click);
+            // 
+            // buttonBuscarMarca
+            // 
+            this.buttonBuscarMarca.Location = new System.Drawing.Point(170, 235);
+            this.buttonBuscarMarca.Name = "buttonBuscarMarca";
+            this.buttonBuscarMarca.Size = new System.Drawing.Size(29, 29);
+            this.buttonBuscarMarca.TabIndex = 33;
+            this.buttonBuscarMarca.Text = "...";
+            this.buttonBuscarMarca.UseVisualStyleBackColor = true;
+            this.buttonBuscarMarca.Click += new System.EventHandler(this.buttonBuscarMarca_Click);
+            // 
+            // textBox
+            // 
+            this.textBox.Location = new System.Drawing.Point(12, 283);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(152, 27);
+            this.textBox.TabIndex = 34;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(12, 260);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 20);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "IdCategoria";
+            // 
+            // buttonBuscarCategoria
+            // 
+            this.buttonBuscarCategoria.Location = new System.Drawing.Point(170, 283);
+            this.buttonBuscarCategoria.Name = "buttonBuscarCategoria";
+            this.buttonBuscarCategoria.Size = new System.Drawing.Size(29, 29);
+            this.buttonBuscarCategoria.TabIndex = 33;
+            this.buttonBuscarCategoria.Text = "...";
+            this.buttonBuscarCategoria.UseVisualStyleBackColor = true;
             // 
             // FormCadastroProduto
             // 
@@ -239,10 +290,15 @@ namespace UIGestaoMercearia
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.CancelButton = this.buttonCancelar;
             this.ClientSize = new System.Drawing.Size(671, 315);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox);
+            this.Controls.Add(this.buttonBuscarCategoria);
+            this.Controls.Add(this.buttonBuscarMarca);
+            this.Controls.Add(this.buttonBuscarFornecedor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxNomeFornecedor);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.textBoxQtdEstoque);
@@ -257,7 +313,6 @@ namespace UIGestaoMercearia
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormCadastroProduto";
-            this.Text = "FormCadastroProduto";
             this.Load += new System.EventHandler(this.FormCadastroProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -279,11 +334,16 @@ namespace UIGestaoMercearia
         private Button buttonSalvar;
         private TextBox textBoxQtdEstoque;
         private Button buttonCancelar;
-        private TextBox textBox1;
+        private TextBox textBoxNomeFornecedor;
         private Label label9;
         private Label label8;
         private TextBox textBox2;
         private Label label4;
+        private Button buttonBuscarFornecedor;
+        private Button buttonBuscarMarca;
+        private TextBox textBox;
+        private Label label5;
+        private Button buttonBuscarCategoria;
 
         public int ComboBoxProdutos_SelectedIndexChanged { get; private set; }
     }

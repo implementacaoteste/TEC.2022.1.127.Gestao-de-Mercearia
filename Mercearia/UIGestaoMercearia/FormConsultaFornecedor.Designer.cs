@@ -85,6 +85,7 @@
             this.dataGridViewFornecedor.RowTemplate.Height = 29;
             this.dataGridViewFornecedor.Size = new System.Drawing.Size(824, 367);
             this.dataGridViewFornecedor.TabIndex = 1;
+            this.dataGridViewFornecedor.DoubleClick += new System.EventHandler(this.dataGridViewFornecedor_DoubleClick);
             // 
             // nomeDataGridViewTextBoxColumn
             // 
@@ -249,6 +250,7 @@
             this.Name = "FormConsultaFornecedor";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.Load += new System.EventHandler(this.FormConsultaFornecedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFornecedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceFornecedor)).EndInit();
             this.ResumeLayout(false);
