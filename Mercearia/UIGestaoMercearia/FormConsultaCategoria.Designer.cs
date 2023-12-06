@@ -42,6 +42,8 @@
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonSelecionar = new System.Windows.Forms.Button();
             this.labelGerenProd = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategoria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCategoria)).BeginInit();
@@ -129,16 +131,27 @@
             // 
             // dataGridViewCategoria
             // 
+            this.dataGridViewCategoria.AllowUserToAddRows = false;
+            this.dataGridViewCategoria.AllowUserToDeleteRows = false;
+            this.dataGridViewCategoria.AllowUserToOrderColumns = true;
             this.dataGridViewCategoria.AutoGenerateColumns = false;
             this.dataGridViewCategoria.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCategoria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
             this.dataGridViewCategoria.DataSource = this.bindingSourceCategoria;
             this.dataGridViewCategoria.Location = new System.Drawing.Point(3, 59);
             this.dataGridViewCategoria.Name = "dataGridViewCategoria";
+            this.dataGridViewCategoria.ReadOnly = true;
             this.dataGridViewCategoria.RowHeadersWidth = 51;
             this.dataGridViewCategoria.RowTemplate.Height = 29;
-            this.dataGridViewCategoria.Size = new System.Drawing.Size(532, 387);
+            this.dataGridViewCategoria.Size = new System.Drawing.Size(528, 387);
             this.dataGridViewCategoria.TabIndex = 7;
+            // 
+            // bindingSourceCategoria
+            // 
+            this.bindingSourceCategoria.DataSource = typeof(Models.Categoria);
             // 
             // panel1
             // 
@@ -187,6 +200,24 @@
             this.labelGerenProd.TabIndex = 0;
             this.labelGerenProd.Text = "Gerenciamento de Categorias";
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 350;
+            // 
             // FormConsultaCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -231,5 +262,7 @@
         private BindingSource bindingSourceCategoria;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }
