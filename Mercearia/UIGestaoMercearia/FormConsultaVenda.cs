@@ -26,11 +26,6 @@ namespace UIGestaoMercearia
             this.id = id;
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -98,26 +93,6 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void buttonExcluir_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonSelecionar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonCancelar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBoxVenda_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

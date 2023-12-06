@@ -89,7 +89,6 @@
             this.label3.Size = new System.Drawing.Size(201, 18);
             this.label3.TabIndex = 8;
             this.label3.Text = "INSIRA A INFORMAÇÃO:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -111,7 +110,6 @@
             this.buttonExcluir.TabIndex = 6;
             this.buttonExcluir.Text = "Excluir";
             this.buttonExcluir.UseVisualStyleBackColor = true;
-            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
             // 
             // buttonInserir
             // 
@@ -166,7 +164,6 @@
             this.comboBoxVenda.Name = "comboBoxVenda";
             this.comboBoxVenda.Size = new System.Drawing.Size(283, 28);
             this.comboBoxVenda.TabIndex = 1;
-            this.comboBoxVenda.SelectedIndexChanged += new System.EventHandler(this.comboBoxVenda_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -246,7 +243,6 @@
             this.buttonSelecionar.TabIndex = 10;
             this.buttonSelecionar.Text = "Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = true;
-            this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
             // 
             // buttonCancelar
             // 
@@ -257,7 +253,6 @@
             this.buttonCancelar.TabIndex = 11;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // bindingSourceVenda
             // 
