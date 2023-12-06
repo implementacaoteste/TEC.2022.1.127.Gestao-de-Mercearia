@@ -183,6 +183,7 @@
             this.buttonSelecionar.TabIndex = 3;
             this.buttonSelecionar.Text = "&Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = true;
+            this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
             // 
             // buttonCancelar
             // 
@@ -192,6 +193,7 @@
             this.buttonCancelar.TabIndex = 3;
             this.buttonCancelar.Text = "&Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // textBoxBuscarPor
             // 

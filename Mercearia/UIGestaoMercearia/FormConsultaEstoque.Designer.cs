@@ -133,7 +133,7 @@
             // 
             this.buttonSelecionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSelecionar.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.buttonSelecionar.Location = new System.Drawing.Point(775, 538);
+            this.buttonSelecionar.Location = new System.Drawing.Point(775, 526);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(94, 38);
             this.buttonSelecionar.TabIndex = 1;
@@ -144,18 +144,19 @@
             // 
             this.buttonCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.buttonCancelar.Location = new System.Drawing.Point(876, 535);
+            this.buttonCancelar.Location = new System.Drawing.Point(876, 526);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 38);
             this.buttonCancelar.TabIndex = 1;
             this.buttonCancelar.Text = "&Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 572);
+            this.panel1.Location = new System.Drawing.Point(0, 506);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(982, 60);
             this.panel1.TabIndex = 3;
@@ -255,7 +256,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancelar;
-            this.ClientSize = new System.Drawing.Size(982, 632);
+            this.ClientSize = new System.Drawing.Size(982, 566);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormConsultaEstoque";
