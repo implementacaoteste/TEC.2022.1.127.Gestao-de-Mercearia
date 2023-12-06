@@ -52,11 +52,11 @@ namespace UIGestaoMercearia
             this.textBoxNomeFornecedor = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxNomeMarca = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonBuscarFornecedor = new System.Windows.Forms.Button();
             this.buttonBuscarMarca = new System.Windows.Forms.Button();
-            this.textBox = new System.Windows.Forms.TextBox();
+            this.textBoxNomeCategoria = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.buttonBuscarCategoria = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
@@ -218,14 +218,14 @@ namespace UIGestaoMercearia
             this.label8.TabIndex = 25;
             this.label8.Text = "Quantidade";
             // 
-            // textBox2
+            // textBoxNomeMarca
             // 
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "IdMarca", true));
-            this.textBox2.Location = new System.Drawing.Point(12, 235);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 27);
-            this.textBox2.TabIndex = 31;
+            this.textBoxNomeMarca.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxNomeMarca.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "NomeMarca", true));
+            this.textBoxNomeMarca.Location = new System.Drawing.Point(12, 235);
+            this.textBoxNomeMarca.Name = "textBoxNomeMarca";
+            this.textBoxNomeMarca.Size = new System.Drawing.Size(152, 27);
+            this.textBoxNomeMarca.TabIndex = 31;
             // 
             // label4
             // 
@@ -257,18 +257,18 @@ namespace UIGestaoMercearia
             this.buttonBuscarMarca.UseVisualStyleBackColor = true;
             this.buttonBuscarMarca.Click += new System.EventHandler(this.buttonBuscarMarca_Click);
             // 
-            // textBox
+            // textBoxNomeCategoria
             // 
-            this.textBox.Location = new System.Drawing.Point(12, 283);
-            this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(152, 27);
-            this.textBox.TabIndex = 34;
+            this.textBoxNomeCategoria.Location = new System.Drawing.Point(12, 285);
+            this.textBoxNomeCategoria.Name = "textBoxNomeCategoria";
+            this.textBoxNomeCategoria.Size = new System.Drawing.Size(152, 27);
+            this.textBoxNomeCategoria.TabIndex = 34;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(12, 260);
+            this.label5.Location = new System.Drawing.Point(12, 265);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 20);
             this.label5.TabIndex = 35;
@@ -289,14 +289,14 @@ namespace UIGestaoMercearia
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.CancelButton = this.buttonCancelar;
-            this.ClientSize = new System.Drawing.Size(671, 315);
+            this.ClientSize = new System.Drawing.Size(671, 321);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox);
+            this.Controls.Add(this.textBoxNomeCategoria);
             this.Controls.Add(this.buttonBuscarCategoria);
             this.Controls.Add(this.buttonBuscarMarca);
             this.Controls.Add(this.buttonBuscarFornecedor);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxNomeMarca);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBoxNomeFornecedor);
             this.Controls.Add(this.buttonCancelar);
@@ -337,11 +337,11 @@ namespace UIGestaoMercearia
         private TextBox textBoxNomeFornecedor;
         private Label label9;
         private Label label8;
-        private TextBox textBox2;
+        private TextBox textBoxNomeMarca;
         private Label label4;
         private Button buttonBuscarFornecedor;
         private Button buttonBuscarMarca;
-        private TextBox textBox;
+        private TextBox textBoxNomeCategoria;
         private Label label5;
         private Button buttonBuscarCategoria;
 

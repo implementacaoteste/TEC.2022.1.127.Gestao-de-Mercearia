@@ -93,16 +93,16 @@ namespace UIGestaoMercearia
 
         private void buttonBuscarMarca_Click(object sender, EventArgs e)
         {
-            /*using (FormConsultaMarca frm = new FormConsultaMarca(true))
+            using (FormConsultaMarca frm = new FormConsultaMarca(true))
             {
                 frm.ShowDialog();
-                if (frm.fornecedor != null)
+                if (frm.marca != null)
                 {
-                    ((Produto)produtoBindingSource.Current).Fornecedor = frm.fornecedor;
-                    textBoxNomeFornecedor.Text = frm.fornecedor.Nome;
-                    ((Produto)produtoBindingSource.Current).IdFornecedor = frm.fornecedor.Id;
+                    ((Produto)produtoBindingSource.Current).Marca = frm.marca;
+                    textBoxNomeMarca.Text = frm.marca.Nome;
+                    ((Produto)produtoBindingSource.Current).IdMarca = frm.marca.Id;
                 }
-            }*/
+            }
         }
     }
 }

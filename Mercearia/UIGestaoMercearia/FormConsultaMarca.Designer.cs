@@ -205,6 +205,7 @@
             this.buttonSelecionar.TabIndex = 1;
             this.buttonSelecionar.Text = "&Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = false;
+            this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
             // 
             // labelGerenProd
             // 
@@ -236,6 +237,8 @@
             this.Name = "FormConsultaMarca";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.Load += new System.EventHandler(this.FormConsultaMarca_Load);
+           // this.DoubleClick += new System.EventHandler(this.FormConsultaMarca_DoubleClick);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarca)).EndInit();
