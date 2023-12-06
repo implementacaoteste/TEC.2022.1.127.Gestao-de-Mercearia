@@ -104,5 +104,42 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void buttonSelecionar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (bindingSourceFornecedor.Count == 0)
+                {
+                    MessageBox.Show("Não existe fornecedor para ser selecionado.");
+                    return;
+                }
+
+
+                Fornecedor selectedFornecedor = (Fornecedor)bindingSourceFornecedor.Current;
+
+
+                MessageBox.Show($"Fornecedor Selecionado: {selectedFornecedor.Nome}, Id: {selectedFornecedor.Id}");
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
+
 }
