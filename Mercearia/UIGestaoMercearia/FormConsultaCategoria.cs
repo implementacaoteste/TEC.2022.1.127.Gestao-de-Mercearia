@@ -117,5 +117,29 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void buttonSelecionar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (bindingSourceCategoria.Count == 0)
+                {
+                    MessageBox.Show("Não existe categoria para ser selecionado.");
+                    return;
+                }
+
+
+                Categoria selectedCategoria = (Categoria)bindingSourceCategoria.Current;
+
+
+                MessageBox.Show($"Categoria Selecionado: {selectedCategoria.Nome}, Id: {selectedCategoria.Id}");
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
