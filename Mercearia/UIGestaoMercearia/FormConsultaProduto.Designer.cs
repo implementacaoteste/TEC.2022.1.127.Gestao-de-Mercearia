@@ -171,6 +171,7 @@
             this.comboBoxProduto.Name = "comboBoxProduto";
             this.comboBoxProduto.Size = new System.Drawing.Size(151, 28);
             this.comboBoxProduto.TabIndex = 0;
+            this.comboBoxProduto.SelectedIndexChanged += new System.EventHandler(this.comboBoxProduto_SelectedIndexChanged);
             // 
             // textBoxProduto
             // 
@@ -179,6 +180,7 @@
             this.textBoxProduto.Name = "textBoxProduto";
             this.textBoxProduto.Size = new System.Drawing.Size(402, 27);
             this.textBoxProduto.TabIndex = 1;
+            this.textBoxProduto.TextChanged += new System.EventHandler(this.textBoxProduto_TextChanged);
             // 
             // buttonBuscar
             // 
@@ -218,6 +220,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "&Excluir";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 
