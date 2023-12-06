@@ -83,6 +83,7 @@
             this.buttonSelecionar.TabIndex = 1;
             this.buttonSelecionar.Text = "&Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = true;
+            this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
             // 
             // labelGerenProd
             // 
