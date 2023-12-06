@@ -112,14 +112,27 @@ namespace UIGestaoMercearia
 
         private void buttonSelecionar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (clienteBindingSource.Count == 0)
+                {
+                    MessageBox.Show("Não existe cliente para ser selecionado.");
+                    return;
+                }
 
+
+                Cliente selectedCliente = (Cliente)clienteBindingSource.Current;
+
+
+                MessageBox.Show($"Cliente Selecionado: {selectedCliente.Nome}, Id: {selectedCliente.Id}");
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
-
-        private void comboBoxBuscarPor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
 
