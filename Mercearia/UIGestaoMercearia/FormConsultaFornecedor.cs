@@ -104,10 +104,5 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void FormConsultaFornecedor_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

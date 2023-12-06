@@ -105,6 +105,42 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void buttonSelecionar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (funcionarioBindingSource.Count == 0)
+                {
+                    MessageBox.Show("Não existe funcionario para ser selecionado.");
+                    return;
+                }
+
+                
+                Funcionario selectedFuncionario = (Funcionario)funcionarioBindingSource.Current;
+
+                
+                MessageBox.Show($"Funcionario Selecionado: {selectedFuncionario.Nome}, Id: {selectedFuncionario.Id}");
+               
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
 
