@@ -16,8 +16,8 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Produto(Nome, Descricao, CodigoDeBarra, IdMarca, Preco, Quantidade, IdFornecedor) 
-                                    VALUES(@Nome, @Descricao, @CodigoDeBarra, @IdMarca, @Preco, @Quantidade, @IdFornecedor)";
+                cmd.CommandText = @"INSERT INTO Produto(Nome, Descricao, CodigoDeBarra, IdMarca, Preco, Quantidade, IdFornecedor, IdCategoria) 
+                                    VALUES(@Nome, @Descricao, @CodigoDeBarra, @IdMarca, @Preco, @Quantidade, @IdFornecedor, @IdCategoria)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Nome", _produto.Nome);
@@ -28,6 +28,8 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@Preco", _produto.Preco);
                 cmd.Parameters.AddWithValue("@Quantidade", _produto.Quantidade);
                 cmd.Parameters.AddWithValue("@IdFornecedor", _produto.IdFornecedor);
+                cmd.Parameters.AddWithValue("@IdFornecedor", _produto.IdCategoria);
+
 
                 cmd.Connection = cn;
                 cn.Open();

@@ -74,7 +74,7 @@ namespace UIGestaoMercearia
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(671, 61);
+            this.label1.Size = new System.Drawing.Size(672, 61);
             this.label1.TabIndex = 12;
             this.label1.Text = "Cadastro de produto";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -145,7 +145,7 @@ namespace UIGestaoMercearia
             this.label7.Size = new System.Drawing.Size(46, 20);
             this.label7.TabIndex = 23;
             this.label7.Text = "Preço";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            
             // 
             // textBoxPreco
             // 
@@ -180,8 +180,9 @@ namespace UIGestaoMercearia
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.BackColor = System.Drawing.Color.White;
+            this.buttonCancelar.BackColor = System.Drawing.Color.Azure;
             this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancelar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonCancelar.Location = new System.Drawing.Point(565, 281);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
@@ -292,7 +293,7 @@ namespace UIGestaoMercearia
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.CancelButton = this.buttonCancelar;
-            this.ClientSize = new System.Drawing.Size(671, 321);
+            this.ClientSize = new System.Drawing.Size(672, 323);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxNomeCategoria);
             this.Controls.Add(this.buttonBuscarCategoria);
@@ -315,7 +316,13 @@ namespace UIGestaoMercearia
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormCadastroProduto";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormCadastroProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             this.ResumeLayout(false);
