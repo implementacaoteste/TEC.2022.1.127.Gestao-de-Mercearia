@@ -121,13 +121,14 @@
             this.labelGerenProd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelGerenProd.AutoSize = true;
             this.labelGerenProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.labelGerenProd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelGerenProd.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelGerenProd.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelGerenProd.Location = new System.Drawing.Point(234, 9);
+            this.labelGerenProd.Location = new System.Drawing.Point(0, 0);
             this.labelGerenProd.Name = "labelGerenProd";
-            this.labelGerenProd.Size = new System.Drawing.Size(493, 44);
+            this.labelGerenProd.Size = new System.Drawing.Size(980, 46);
             this.labelGerenProd.TabIndex = 0;
-            this.labelGerenProd.Text = "Gerenciamento de Estoque";
+            this.labelGerenProd.Text = "                   GERENCIAMENTO DE ESTOQUE                 ";
             // 
             // buttonSelecionar
             // 
