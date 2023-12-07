@@ -148,6 +148,7 @@
             this.dataGridViewMarca.RowTemplate.Height = 29;
             this.dataGridViewMarca.Size = new System.Drawing.Size(529, 387);
             this.dataGridViewMarca.TabIndex = 10;
+            this.dataGridViewMarca.DoubleClick += new System.EventHandler(this.dataGridViewMarca_DoubleClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -238,7 +239,6 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Load += new System.EventHandler(this.FormConsultaMarca_Load);
-           // this.DoubleClick += new System.EventHandler(this.FormConsultaMarca_DoubleClick);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarca)).EndInit();

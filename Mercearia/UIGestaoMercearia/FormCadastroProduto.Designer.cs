@@ -102,7 +102,7 @@ namespace UIGestaoMercearia
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(170, 114);
+            this.label3.Location = new System.Drawing.Point(236, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 15;
@@ -121,7 +121,7 @@ namespace UIGestaoMercearia
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(427, 61);
+            this.label6.Location = new System.Drawing.Point(236, 110);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 20);
             this.label6.TabIndex = 21;
@@ -131,9 +131,9 @@ namespace UIGestaoMercearia
             // 
             this.textBoxCodigoDeBarra.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxCodigoDeBarra.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "CodigoDeBarra", true));
-            this.textBoxCodigoDeBarra.Location = new System.Drawing.Point(427, 84);
+            this.textBoxCodigoDeBarra.Location = new System.Drawing.Point(236, 133);
             this.textBoxCodigoDeBarra.Name = "textBoxCodigoDeBarra";
-            this.textBoxCodigoDeBarra.Size = new System.Drawing.Size(232, 27);
+            this.textBoxCodigoDeBarra.Size = new System.Drawing.Size(423, 27);
             this.textBoxCodigoDeBarra.TabIndex = 22;
             // 
             // label7
@@ -151,9 +151,10 @@ namespace UIGestaoMercearia
             // 
             this.textBoxPreco.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxPreco.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Descricao", true));
-            this.textBoxPreco.Location = new System.Drawing.Point(170, 137);
+            this.textBoxPreco.Location = new System.Drawing.Point(236, 186);
+            this.textBoxPreco.Multiline = true;
             this.textBoxPreco.Name = "textBoxPreco";
-            this.textBoxPreco.Size = new System.Drawing.Size(489, 27);
+            this.textBoxPreco.Size = new System.Drawing.Size(423, 78);
             this.textBoxPreco.TabIndex = 24;
             // 
             // buttonSalvar
@@ -172,9 +173,9 @@ namespace UIGestaoMercearia
             // 
             this.textBoxQtdEstoque.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxQtdEstoque.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Quantidade", true));
-            this.textBoxQtdEstoque.Location = new System.Drawing.Point(344, 199);
+            this.textBoxQtdEstoque.Location = new System.Drawing.Point(427, 84);
             this.textBoxQtdEstoque.Name = "textBoxQtdEstoque";
-            this.textBoxQtdEstoque.Size = new System.Drawing.Size(315, 27);
+            this.textBoxQtdEstoque.Size = new System.Drawing.Size(232, 27);
             this.textBoxQtdEstoque.TabIndex = 27;
             // 
             // buttonCancelar
@@ -204,15 +205,15 @@ namespace UIGestaoMercearia
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(12, 163);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 20);
+            this.label9.Size = new System.Drawing.Size(84, 20);
             this.label9.TabIndex = 30;
-            this.label9.Text = "IdFornecedor";
+            this.label9.Text = "Fornecedor";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(344, 176);
+            this.label8.Location = new System.Drawing.Point(427, 61);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(87, 20);
             this.label8.TabIndex = 25;
@@ -233,9 +234,9 @@ namespace UIGestaoMercearia
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(12, 212);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 20);
+            this.label4.Size = new System.Drawing.Size(50, 20);
             this.label4.TabIndex = 32;
-            this.label4.Text = "IdMarca";
+            this.label4.Text = "Marca";
             // 
             // buttonBuscarFornecedor
             // 
@@ -259,6 +260,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxNomeCategoria
             // 
+            this.textBoxNomeCategoria.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "NomeCategoria", true));
             this.textBoxNomeCategoria.Location = new System.Drawing.Point(12, 285);
             this.textBoxNomeCategoria.Name = "textBoxNomeCategoria";
             this.textBoxNomeCategoria.Size = new System.Drawing.Size(152, 27);
@@ -270,9 +272,9 @@ namespace UIGestaoMercearia
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Location = new System.Drawing.Point(12, 265);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 20);
+            this.label5.Size = new System.Drawing.Size(74, 20);
             this.label5.TabIndex = 35;
-            this.label5.Text = "IdCategoria";
+            this.label5.Text = "Categoria";
             // 
             // buttonBuscarCategoria
             // 
