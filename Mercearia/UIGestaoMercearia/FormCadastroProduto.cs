@@ -71,10 +71,7 @@ namespace UIGestaoMercearia
             }
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void buttonBuscarFornecedor_Click(object sender, EventArgs e)
         {

@@ -145,7 +145,7 @@ namespace UIGestaoMercearia
             this.label7.Size = new System.Drawing.Size(46, 20);
             this.label7.TabIndex = 23;
             this.label7.Text = "Preço";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            
             // 
             // textBoxPreco
             // 
