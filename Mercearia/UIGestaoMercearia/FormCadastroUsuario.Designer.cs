@@ -58,74 +58,68 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            nomeLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             nomeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeLabel.Location = new System.Drawing.Point(3, 97);
             nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(52, 20);
+            nomeLabel.Size = new System.Drawing.Size(55, 18);
             nomeLabel.TabIndex = 1;
             nomeLabel.Text = "Nome";
-            
             // 
             // cPFLabel
             // 
             cPFLabel.AutoSize = true;
-            cPFLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            cPFLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cPFLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             cPFLabel.Location = new System.Drawing.Point(225, 156);
             cPFLabel.Name = "cPFLabel";
-            cPFLabel.Size = new System.Drawing.Size(35, 20);
+            cPFLabel.Size = new System.Drawing.Size(40, 18);
             cPFLabel.TabIndex = 3;
             cPFLabel.Text = "CPF";
-            
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            emailLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             emailLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             emailLabel.Location = new System.Drawing.Point(330, 97);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(53, 20);
+            emailLabel.Size = new System.Drawing.Size(58, 18);
             emailLabel.TabIndex = 5;
             emailLabel.Text = "E-mail";
-            
             // 
             // nomeUsuarioLabel
             // 
             nomeUsuarioLabel.AutoSize = true;
-            nomeUsuarioLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            nomeUsuarioLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             nomeUsuarioLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeUsuarioLabel.Location = new System.Drawing.Point(3, 156);
             nomeUsuarioLabel.Name = "nomeUsuarioLabel";
-            nomeUsuarioLabel.Size = new System.Drawing.Size(129, 20);
+            nomeUsuarioLabel.Size = new System.Drawing.Size(146, 18);
             nomeUsuarioLabel.TabIndex = 7;
             nomeUsuarioLabel.Text = "Nome de usuário";
-            
             // 
             // senhaLabel
             // 
             senhaLabel.AutoSize = true;
-            senhaLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            senhaLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             senhaLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             senhaLabel.Location = new System.Drawing.Point(6, 213);
             senhaLabel.Name = "senhaLabel";
-            senhaLabel.Size = new System.Drawing.Size(51, 20);
+            senhaLabel.Size = new System.Drawing.Size(59, 18);
             senhaLabel.TabIndex = 9;
             senhaLabel.Text = "Senha";
-            
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             label1.Location = new System.Drawing.Point(112, 213);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(125, 20);
+            label1.Size = new System.Drawing.Size(144, 18);
             label1.TabIndex = 11;
             label1.Text = "Confirmar senha";
-            
             // 
             // usuarioBindingSource
             // 
@@ -140,7 +134,6 @@
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(318, 27);
             this.nomeTextBox.TabIndex = 2;
-            
             // 
             // cPFTextBox
             // 
@@ -151,7 +144,6 @@
             this.cPFTextBox.Name = "cPFTextBox";
             this.cPFTextBox.Size = new System.Drawing.Size(331, 27);
             this.cPFTextBox.TabIndex = 4;
-            
             // 
             // emailTextBox
             // 
@@ -162,7 +154,6 @@
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(393, 27);
             this.emailTextBox.TabIndex = 6;
-            
             // 
             // nomeUsuarioTextBox
             // 
@@ -173,7 +164,6 @@
             this.nomeUsuarioTextBox.Name = "nomeUsuarioTextBox";
             this.nomeUsuarioTextBox.Size = new System.Drawing.Size(213, 27);
             this.nomeUsuarioTextBox.TabIndex = 8;
-            
             // 
             // senhaTextBox
             // 
@@ -184,7 +174,6 @@
             this.senhaTextBox.Name = "senhaTextBox";
             this.senhaTextBox.Size = new System.Drawing.Size(100, 27);
             this.senhaTextBox.TabIndex = 10;
-            
             // 
             // ativoCheckBox
             // 
@@ -192,14 +181,13 @@
             this.ativoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.usuarioBindingSource, "Ativo", true));
             this.ativoCheckBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ativoCheckBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ativoCheckBox.Location = new System.Drawing.Point(266, 240);
+            this.ativoCheckBox.Location = new System.Drawing.Point(283, 239);
             this.ativoCheckBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ativoCheckBox.Name = "ativoCheckBox";
             this.ativoCheckBox.Size = new System.Drawing.Size(69, 24);
             this.ativoCheckBox.TabIndex = 13;
             this.ativoCheckBox.Text = "Ativo";
             this.ativoCheckBox.UseVisualStyleBackColor = true;
-            
             // 
             // textBoxConfirmarSenha
             // 
@@ -207,9 +195,8 @@
             this.textBoxConfirmarSenha.Location = new System.Drawing.Point(112, 237);
             this.textBoxConfirmarSenha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxConfirmarSenha.Name = "textBoxConfirmarSenha";
-            this.textBoxConfirmarSenha.Size = new System.Drawing.Size(148, 27);
+            this.textBoxConfirmarSenha.Size = new System.Drawing.Size(165, 27);
             this.textBoxConfirmarSenha.TabIndex = 12;
-            
             // 
             // label2
             // 
@@ -219,7 +206,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(731, 72);
+            this.label2.Size = new System.Drawing.Size(731, 74);
             this.label2.TabIndex = 0;
             this.label2.Text = "Cadastro de usuários";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

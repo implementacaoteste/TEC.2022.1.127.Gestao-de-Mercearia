@@ -70,5 +70,10 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void nomeGrupoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

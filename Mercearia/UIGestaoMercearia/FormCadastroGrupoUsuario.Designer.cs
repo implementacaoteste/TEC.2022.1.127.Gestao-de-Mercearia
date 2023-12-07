@@ -46,13 +46,14 @@
             // nomeGrupoLabel
             // 
             nomeGrupoLabel.AutoSize = true;
-            nomeGrupoLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            nomeGrupoLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             nomeGrupoLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeGrupoLabel.Location = new System.Drawing.Point(12, 80);
             nomeGrupoLabel.Name = "nomeGrupoLabel";
-            nomeGrupoLabel.Size = new System.Drawing.Size(120, 20);
+            nomeGrupoLabel.Size = new System.Drawing.Size(132, 18);
             nomeGrupoLabel.TabIndex = 1;
             nomeGrupoLabel.Text = "Nome do grupo";
+            nomeGrupoLabel.Click += new System.EventHandler(this.nomeGrupoLabel_Click);
             // 
             // label1
             // 
@@ -70,11 +71,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             label2.Location = new System.Drawing.Point(12, 144);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(88, 20);
+            label2.Size = new System.Drawing.Size(103, 18);
             label2.TabIndex = 5;
             label2.Text = "Permissões";
             // 
