@@ -88,22 +88,24 @@ namespace DAL
         }
         public Categoria BuscarPorId(int _id)
         {
-            Categoria categoria = new Categoria();
+            // Categoria categoria = new Categoria();
+            Categoria categoria;
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             try
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Categoria FROM Categoria WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, Nome FROM Categoria WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
                 cn.Open();
                 using (SqlDataReader rd = cmd.ExecuteReader())
                 {
+                    categoria = new Categoria();
                     while (rd.Read())
                     {
                         categoria.Id = Convert.ToInt32(rd["Id"]);
-                        categoria.Nome = rd["Categoria"].ToString();
+                        categoria.Nome = rd["Nome"].ToString();
                     }
                 }
                 return categoria;
