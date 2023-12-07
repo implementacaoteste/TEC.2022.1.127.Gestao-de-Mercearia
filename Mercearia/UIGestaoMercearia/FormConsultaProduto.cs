@@ -42,7 +42,7 @@ namespace UIGestaoMercearia
             }
         }
 
-        private void buttonEcluir_Click(object sender, EventArgs e)
+        private void buttonExcluir_Click(object sender, EventArgs e)
         { 
             try
             {
@@ -145,5 +145,6 @@ namespace UIGestaoMercearia
             comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1; //seleciona sempre o ultimo indice da ComboBox
             buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
         }
+
     }
 }
