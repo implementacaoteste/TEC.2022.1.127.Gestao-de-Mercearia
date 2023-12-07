@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewFornecedor = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +47,7 @@
             this.textBoxBuscarPor = new System.Windows.Forms.TextBox();
             this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFornecedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceFornecedor)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +61,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(848, 60);
+            this.label1.Size = new System.Drawing.Size(982, 60);
             this.label1.TabIndex = 0;
             this.label1.Text = "Consulta Fornecedor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,6 +75,7 @@
             this.dataGridViewFornecedor.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFornecedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.nomeDataGridViewTextBoxColumn,
             this.Endereco,
             this.emailDataGridViewTextBoxColumn,
@@ -84,9 +87,18 @@
             this.dataGridViewFornecedor.ReadOnly = true;
             this.dataGridViewFornecedor.RowHeadersWidth = 51;
             this.dataGridViewFornecedor.RowTemplate.Height = 29;
-            this.dataGridViewFornecedor.Size = new System.Drawing.Size(824, 367);
+            this.dataGridViewFornecedor.Size = new System.Drawing.Size(958, 367);
             this.dataGridViewFornecedor.TabIndex = 1;
             this.dataGridViewFornecedor.DoubleClick += new System.EventHandler(this.dataGridViewFornecedor_DoubleClick);
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 50;
             // 
             // nomeDataGridViewTextBoxColumn
             // 
@@ -131,7 +143,7 @@
             this.cEPDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.cEPDataGridViewTextBoxColumn.Name = "cEPDataGridViewTextBoxColumn";
             this.cEPDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cEPDataGridViewTextBoxColumn.Width = 125;
+            this.cEPDataGridViewTextBoxColumn.Width = 175;
             // 
             // bindingSourceFornecedor
             // 
@@ -139,7 +151,7 @@
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(440, 87);
+            this.buttonBuscar.Location = new System.Drawing.Point(576, 87);
             this.buttonBuscar.Name = "buttonBuscar";
             this.buttonBuscar.Size = new System.Drawing.Size(94, 29);
             this.buttonBuscar.TabIndex = 2;
@@ -149,7 +161,7 @@
             // 
             // buttonAlterar
             // 
-            this.buttonAlterar.Location = new System.Drawing.Point(540, 87);
+            this.buttonAlterar.Location = new System.Drawing.Point(676, 87);
             this.buttonAlterar.Name = "buttonAlterar";
             this.buttonAlterar.Size = new System.Drawing.Size(94, 29);
             this.buttonAlterar.TabIndex = 2;
@@ -159,7 +171,7 @@
             // 
             // buttonInserir
             // 
-            this.buttonInserir.Location = new System.Drawing.Point(636, 87);
+            this.buttonInserir.Location = new System.Drawing.Point(776, 87);
             this.buttonInserir.Name = "buttonInserir";
             this.buttonInserir.Size = new System.Drawing.Size(94, 29);
             this.buttonInserir.TabIndex = 2;
@@ -169,7 +181,7 @@
             // 
             // buttonExcluir
             // 
-            this.buttonExcluir.Location = new System.Drawing.Point(736, 87);
+            this.buttonExcluir.Location = new System.Drawing.Point(876, 87);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(94, 29);
             this.buttonExcluir.TabIndex = 2;
@@ -179,7 +191,7 @@
             // 
             // buttonSelecionar
             // 
-            this.buttonSelecionar.Location = new System.Drawing.Point(636, 494);
+            this.buttonSelecionar.Location = new System.Drawing.Point(776, 512);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(94, 29);
             this.buttonSelecionar.TabIndex = 3;
@@ -189,7 +201,7 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(736, 495);
+            this.buttonCancelar.Location = new System.Drawing.Point(876, 512);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
             this.buttonCancelar.TabIndex = 3;
@@ -202,7 +214,7 @@
             this.textBoxBuscarPor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxBuscarPor.Location = new System.Drawing.Point(151, 89);
             this.textBoxBuscarPor.Name = "textBoxBuscarPor";
-            this.textBoxBuscarPor.Size = new System.Drawing.Size(283, 27);
+            this.textBoxBuscarPor.Size = new System.Drawing.Size(419, 27);
             this.textBoxBuscarPor.TabIndex = 4;
             // 
             // comboBoxBuscarPor
@@ -210,6 +222,7 @@
             this.comboBoxBuscarPor.FormattingEnabled = true;
             this.comboBoxBuscarPor.Items.AddRange(new object[] {
             "Nome",
+            "Id",
             "Todos"});
             this.comboBoxBuscarPor.Location = new System.Drawing.Point(12, 89);
             this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
@@ -223,9 +236,20 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(12, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 18);
+            this.label2.Size = new System.Drawing.Size(97, 18);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Bucar por";
+            this.label2.Text = "Buscar por";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(151, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(222, 18);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "INSIRA AS INFORMAÇÕES:";
             // 
             // FormConsultaFornecedor
             // 
@@ -233,7 +257,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.CancelButton = this.buttonCancelar;
-            this.ClientSize = new System.Drawing.Size(848, 524);
+            this.ClientSize = new System.Drawing.Size(982, 553);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBoxBuscarPor);
             this.Controls.Add(this.textBoxBuscarPor);
@@ -251,6 +276,7 @@
             this.Name = "FormConsultaFornecedor";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormConsultaFornecedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFornecedor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceFornecedor)).EndInit();
@@ -273,6 +299,8 @@
         private ComboBox comboBoxBuscarPor;
         private BindingSource bindingSourceFornecedor;
         private Label label2;
+        private Label label3;
+        private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn Endereco;
         private DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
