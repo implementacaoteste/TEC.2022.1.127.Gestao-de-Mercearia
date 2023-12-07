@@ -52,7 +52,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel2.Controls.Add(this.buttonBuscar);
             this.panel2.Controls.Add(this.textBoxBuscarPor);
             this.panel2.Controls.Add(this.comboBoxBuscarPor);
@@ -146,7 +146,7 @@
             this.dataGridViewMarca.ReadOnly = true;
             this.dataGridViewMarca.RowHeadersWidth = 51;
             this.dataGridViewMarca.RowTemplate.Height = 29;
-            this.dataGridViewMarca.Size = new System.Drawing.Size(529, 387);
+            this.dataGridViewMarca.Size = new System.Drawing.Size(528, 387);
             this.dataGridViewMarca.TabIndex = 10;
             this.dataGridViewMarca.DoubleClick += new System.EventHandler(this.dataGridViewMarca_DoubleClick);
             // 

@@ -325,6 +325,9 @@
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormConsultaVenda";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

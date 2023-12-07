@@ -15,7 +15,7 @@ namespace UIGestaoMercearia
         {
             try
             {
-                switch (comboBoxProduto.SelectedIndex)
+                switch (comboBoxBuscarPor.SelectedIndex)
                 {
                     case 0:
                         if (String.IsNullOrEmpty(textBoxProduto.Text))
@@ -138,6 +138,12 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void FormConsultaProduto_Load(object sender, EventArgs e)
+        {
+            comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1; //seleciona sempre o ultimo indice da ComboBox
+            buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
         }
     }
 }
