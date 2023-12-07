@@ -204,7 +204,8 @@ namespace DAL
         }
         public Produto BuscarPorId(int _id)
         {
-            Produto produto = new Produto();
+            //Produto produto = new Produto();
+            Produto produto;
 
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             try
@@ -218,18 +219,24 @@ namespace DAL
 
                 cn.Open();
 
+                //produto = new Produto();
                 using (SqlDataReader rd = cmd.ExecuteReader())
                 {
                     produto = new Produto();
-                    produto.Id = Convert.ToInt32(rd["Id"]);
-                    produto.Nome = rd["Nome"].ToString();
-                    produto.Descricao = rd["Descricao"].ToString();
-                    produto.IdCategoria = Convert.ToInt32(rd["IdCategoria"]);
-                    produto.CodigoDeBarra = rd["CodigoDeBarra"].ToString();
-                    produto.IdMarca = Convert.ToInt32(rd["IdMarca"]);
-                    produto.Preco = Convert.ToDouble(rd["Preco"]);
-                    produto.Quantidade = Convert.ToInt32(rd["Quantidade"]);
-                    produto.IdFornecedor = Convert.ToInt32(rd["IdFornecedor"]);
+
+                    if (rd.Read())
+                    {
+                        produto = new Produto();
+                        produto.Id = (int)rd["Id"];
+                        produto.Nome = rd["Nome"].ToString();
+                        produto.Descricao = rd["Descricao"].ToString();
+                        produto.IdCategoria = (int)rd["IdCategoria"];
+                        produto.CodigoDeBarra = rd["CodigoDeBarra"].ToString();
+                        produto.IdMarca = (int)rd["IdMarca"];
+                        produto.Preco = Convert.ToDouble(rd["Preco"]);
+                        produto.Quantidade = (int)rd["Quantidade"];
+                        produto.IdFornecedor = (int)rd["IdFornecedor"];
+                    }
                     
                 }
                 return produto;

@@ -35,7 +35,7 @@
             this.labelGerenProd = new System.Windows.Forms.Label();
             this.dataGridViewProduto = new System.Windows.Forms.DataGridView();
             this.bindingSourceProduto = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBoxProduto = new System.Windows.Forms.ComboBox();
+            this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
             this.textBoxProduto = new System.Windows.Forms.TextBox();
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
@@ -43,11 +43,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDeBarraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceProduto)).BeginInit();
@@ -108,11 +108,11 @@
             this.dataGridViewProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProduto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
-            this.Quantidade,
             this.nomeDataGridViewTextBoxColumn,
+            this.Quantidade,
+            this.precoDataGridViewTextBoxColumn,
             this.descricaoDataGridViewTextBoxColumn,
-            this.codigoDeBarraDataGridViewTextBoxColumn,
-            this.precoDataGridViewTextBoxColumn});
+            this.codigoDeBarraDataGridViewTextBoxColumn});
             this.dataGridViewProduto.DataSource = this.bindingSourceProduto;
             this.dataGridViewProduto.Location = new System.Drawing.Point(0, 59);
             this.dataGridViewProduto.Name = "dataGridViewProduto";
@@ -126,18 +126,18 @@
             // 
             this.bindingSourceProduto.DataSource = typeof(Models.Produto);
             // 
-            // comboBoxProduto
+            // comboBoxBuscarPor
             // 
-            this.comboBoxProduto.FormattingEnabled = true;
-            this.comboBoxProduto.Items.AddRange(new object[] {
+            this.comboBoxBuscarPor.FormattingEnabled = true;
+            this.comboBoxBuscarPor.Items.AddRange(new object[] {
             "Id",
             "Nome",
             "CodigoDeBarra",
             "Todos"});
-            this.comboBoxProduto.Location = new System.Drawing.Point(12, 16);
-            this.comboBoxProduto.Name = "comboBoxProduto";
-            this.comboBoxProduto.Size = new System.Drawing.Size(151, 28);
-            this.comboBoxProduto.TabIndex = 0;
+            this.comboBoxBuscarPor.Location = new System.Drawing.Point(12, 16);
+            this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
+            this.comboBoxBuscarPor.Size = new System.Drawing.Size(151, 28);
+            this.comboBoxBuscarPor.TabIndex = 0;
             // 
             // textBoxProduto
             // 
@@ -194,7 +194,7 @@
             this.panel2.Controls.Add(this.buttonAlterar);
             this.panel2.Controls.Add(this.buttonBuscar);
             this.panel2.Controls.Add(this.textBoxProduto);
-            this.panel2.Controls.Add(this.comboBoxProduto);
+            this.panel2.Controls.Add(this.comboBoxBuscarPor);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -210,6 +210,15 @@
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
             this.idDataGridViewTextBoxColumn.Width = 125;
             // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nomeDataGridViewTextBoxColumn.Width = 275;
+            // 
             // Quantidade
             // 
             this.Quantidade.DataPropertyName = "Quantidade";
@@ -219,14 +228,14 @@
             this.Quantidade.ReadOnly = true;
             this.Quantidade.Width = 125;
             // 
-            // nomeDataGridViewTextBoxColumn
+            // precoDataGridViewTextBoxColumn
             // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDataGridViewTextBoxColumn.Width = 175;
+            this.precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
+            this.precoDataGridViewTextBoxColumn.HeaderText = "Preco";
+            this.precoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
+            this.precoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.precoDataGridViewTextBoxColumn.Width = 125;
             // 
             // descricaoDataGridViewTextBoxColumn
             // 
@@ -244,16 +253,7 @@
             this.codigoDeBarraDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.codigoDeBarraDataGridViewTextBoxColumn.Name = "codigoDeBarraDataGridViewTextBoxColumn";
             this.codigoDeBarraDataGridViewTextBoxColumn.ReadOnly = true;
-            this.codigoDeBarraDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // precoDataGridViewTextBoxColumn
-            // 
-            this.precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
-            this.precoDataGridViewTextBoxColumn.HeaderText = "Preco";
-            this.precoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
-            this.precoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.precoDataGridViewTextBoxColumn.Width = 125;
+            this.codigoDeBarraDataGridViewTextBoxColumn.Width = 150;
             // 
             // FormConsultaProduto
             // 
@@ -270,6 +270,8 @@
             this.Name = "FormConsultaProduto";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FormConsultaProduto_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduto)).EndInit();
@@ -288,7 +290,7 @@
         private BindingSource bindingSourceProduto;
         private DataGridViewTextBoxColumn categoriaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn marcaDataGridViewTextBoxColumn;
-        private ComboBox comboBoxProduto;
+        private ComboBox comboBoxBuscarPor;
         private TextBox textBoxProduto;
         private Button buttonBuscar;
         private Button buttonAlterar;
@@ -298,10 +300,10 @@
         private Button buttonCancelar;
         private Button buttonSelecionar;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn Quantidade;
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Quantidade;
+        private DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn codigoDeBarraDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
     }
 }
