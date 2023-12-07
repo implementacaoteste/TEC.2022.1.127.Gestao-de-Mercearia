@@ -190,7 +190,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1160, 76);
+            this.panel2.Size = new System.Drawing.Size(1116, 76);
             this.panel2.TabIndex = 9;
             // 
             // pictureBox1
