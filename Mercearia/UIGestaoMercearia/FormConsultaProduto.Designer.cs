@@ -234,7 +234,7 @@
             // buttonEcluir
             // 
             this.buttonEcluir.Location = new System.Drawing.Point(885, 15);
-            this.buttonEcluir.Name = "buttonExcluir";
+            this.buttonEcluir.Name = "buttonEcluir";
             this.buttonEcluir.Size = new System.Drawing.Size(94, 29);
             this.buttonEcluir.TabIndex = 2;
             this.buttonEcluir.Text = "&Excluir";
