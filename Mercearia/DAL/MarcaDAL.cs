@@ -91,23 +91,25 @@ namespace DAL
         }
         public Marca BuscarPorId(int _id)
         {
-            Marca marca = new Marca();
+            //Marca marca = new Marca();
+            Marca marca;
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             try
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Marca FROM Marca WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, Nome FROM Marca WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
 
                 cn.Open();
                 using (SqlDataReader rd = cmd.ExecuteReader())
                 {
-                    while (rd.Read())
+                    marca = new Marca();
+                    if (rd.Read())
                     {
-                        marca.Id = Convert.ToInt32(rd["Id"]);
-                        marca.Nome = rd["Marca"].ToString();
+                        marca.Id = (int)rd["Id"];
+                        marca.Nome = rd["Nome"].ToString();
                     }
                 }
                 return marca;
