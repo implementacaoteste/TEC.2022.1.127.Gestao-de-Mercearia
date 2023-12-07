@@ -94,6 +94,5 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-        
     }
 }
