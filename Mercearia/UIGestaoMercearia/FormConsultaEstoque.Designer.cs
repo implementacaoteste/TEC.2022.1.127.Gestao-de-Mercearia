@@ -133,7 +133,7 @@
             // 
             this.buttonSelecionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSelecionar.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.buttonSelecionar.Location = new System.Drawing.Point(775, 526);
+            this.buttonSelecionar.Location = new System.Drawing.Point(775, 525);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(94, 38);
             this.buttonSelecionar.TabIndex = 1;
@@ -144,7 +144,7 @@
             // 
             this.buttonCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.buttonCancelar.Location = new System.Drawing.Point(876, 526);
+            this.buttonCancelar.Location = new System.Drawing.Point(876, 525);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 38);
             this.buttonCancelar.TabIndex = 1;
