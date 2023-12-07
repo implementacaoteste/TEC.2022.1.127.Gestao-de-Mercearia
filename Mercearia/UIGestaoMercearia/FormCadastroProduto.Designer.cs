@@ -82,10 +82,11 @@ namespace UIGestaoMercearia
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(12, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.Size = new System.Drawing.Size(55, 18);
             this.label2.TabIndex = 13;
             this.label2.Text = "Nome";
             // 
@@ -101,10 +102,11 @@ namespace UIGestaoMercearia
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(236, 163);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 20);
+            this.label3.Size = new System.Drawing.Size(91, 18);
             this.label3.TabIndex = 15;
             this.label3.Text = "Descrição";
             // 
@@ -120,10 +122,11 @@ namespace UIGestaoMercearia
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(236, 110);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 20);
+            this.label6.Size = new System.Drawing.Size(139, 18);
             this.label6.TabIndex = 21;
             this.label6.Text = "Codigo de barra";
             // 
@@ -139,10 +142,11 @@ namespace UIGestaoMercearia
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(12, 114);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 20);
+            this.label7.Size = new System.Drawing.Size(56, 18);
             this.label7.TabIndex = 23;
             this.label7.Text = "Preço";
             
@@ -151,7 +155,7 @@ namespace UIGestaoMercearia
             // 
             this.textBoxPreco.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxPreco.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produtoBindingSource, "Descricao", true));
-            this.textBoxPreco.Location = new System.Drawing.Point(236, 186);
+            this.textBoxPreco.Location = new System.Drawing.Point(236, 187);
             this.textBoxPreco.Multiline = true;
             this.textBoxPreco.Name = "textBoxPreco";
             this.textBoxPreco.Size = new System.Drawing.Size(423, 78);
@@ -203,20 +207,22 @@ namespace UIGestaoMercearia
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(12, 163);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 20);
+            this.label9.Size = new System.Drawing.Size(101, 18);
             this.label9.TabIndex = 30;
             this.label9.Text = "Fornecedor";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label8.Location = new System.Drawing.Point(427, 61);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 20);
+            this.label8.Size = new System.Drawing.Size(101, 18);
             this.label8.TabIndex = 25;
             this.label8.Text = "Quantidade";
             // 
@@ -232,10 +238,11 @@ namespace UIGestaoMercearia
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(12, 212);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.Size = new System.Drawing.Size(59, 18);
             this.label4.TabIndex = 32;
             this.label4.Text = "Marca";
             // 
@@ -270,10 +277,11 @@ namespace UIGestaoMercearia
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Location = new System.Drawing.Point(12, 265);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 20);
+            this.label5.Size = new System.Drawing.Size(88, 18);
             this.label5.TabIndex = 35;
             this.label5.Text = "Categoria";
             // 

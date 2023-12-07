@@ -83,30 +83,33 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(12, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.Size = new System.Drawing.Size(55, 18);
             this.label2.TabIndex = 19;
             this.label2.Text = "Nome";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(335, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 20);
+            this.label3.Size = new System.Drawing.Size(47, 18);
             this.label3.TabIndex = 20;
             this.label3.Text = "Fone";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(12, 183);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 20);
+            this.label4.Size = new System.Drawing.Size(85, 18);
             this.label4.TabIndex = 21;
             this.label4.Text = "Profissão";
             // 
@@ -122,12 +125,14 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(12, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 20);
+            this.label5.Size = new System.Drawing.Size(66, 18);
             this.label5.TabIndex = 23;
             this.label5.Text = "Salario";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox4
             // 

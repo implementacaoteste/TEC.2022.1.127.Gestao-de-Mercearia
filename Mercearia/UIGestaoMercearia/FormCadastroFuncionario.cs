@@ -64,5 +64,10 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

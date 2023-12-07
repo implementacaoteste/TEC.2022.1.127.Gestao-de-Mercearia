@@ -57,66 +57,66 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            nomeLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             nomeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             nomeLabel.Location = new System.Drawing.Point(12, 74);
             nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(51, 20);
+            nomeLabel.Size = new System.Drawing.Size(55, 18);
             nomeLabel.TabIndex = 1;
             nomeLabel.Text = "Nome";
             // 
             // cPFLabel
             // 
             cPFLabel.AutoSize = true;
-            cPFLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            cPFLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             cPFLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             cPFLabel.Location = new System.Drawing.Point(430, 74);
             cPFLabel.Name = "cPFLabel";
-            cPFLabel.Size = new System.Drawing.Size(35, 20);
+            cPFLabel.Size = new System.Drawing.Size(40, 18);
             cPFLabel.TabIndex = 3;
             cPFLabel.Text = "CPF";
             // 
             // foneLabel
             // 
             foneLabel.AutoSize = true;
-            foneLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            foneLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             foneLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             foneLabel.Location = new System.Drawing.Point(230, 129);
             foneLabel.Name = "foneLabel";
-            foneLabel.Size = new System.Drawing.Size(43, 20);
+            foneLabel.Size = new System.Drawing.Size(47, 18);
             foneLabel.TabIndex = 7;
             foneLabel.Text = "Fone";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            emailLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             emailLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             emailLabel.Location = new System.Drawing.Point(12, 129);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(52, 20);
+            emailLabel.Size = new System.Drawing.Size(58, 18);
             emailLabel.TabIndex = 9;
             emailLabel.Text = "E-mail";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             label2.Location = new System.Drawing.Point(430, 129);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(35, 20);
+            label2.Size = new System.Drawing.Size(41, 18);
             label2.TabIndex = 14;
             label2.Text = "CEP";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             label3.Location = new System.Drawing.Point(10, 184);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(51, 20);
+            label3.Size = new System.Drawing.Size(58, 18);
             label3.TabIndex = 16;
             label3.Text = "Bairro";
             // 

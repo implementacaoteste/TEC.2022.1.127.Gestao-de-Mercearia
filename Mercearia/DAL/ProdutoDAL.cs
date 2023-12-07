@@ -28,7 +28,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@Preco", _produto.Preco);
                 cmd.Parameters.AddWithValue("@Quantidade", _produto.Quantidade);
                 cmd.Parameters.AddWithValue("@IdFornecedor", _produto.IdFornecedor);
-                cmd.Parameters.AddWithValue("@IdFornecedor", _produto.IdCategoria);
+                cmd.Parameters.AddWithValue("@IdCategoria", _produto.IdCategoria);
 
 
                 cmd.Connection = cn;

@@ -80,7 +80,7 @@
             // 
             this.textBox1Nome.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1Nome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoriaBindingSource, "Nome", true));
-            this.textBox1Nome.Location = new System.Drawing.Point(41, 110);
+            this.textBox1Nome.Location = new System.Drawing.Point(26, 110);
             this.textBox1Nome.Name = "textBox1Nome";
             this.textBox1Nome.Size = new System.Drawing.Size(728, 27);
             this.textBox1Nome.TabIndex = 48;
@@ -92,11 +92,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(41, 72);
+            this.label1.Location = new System.Drawing.Point(26, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 35);
+            this.label1.Size = new System.Drawing.Size(183, 18);
             this.label1.TabIndex = 49;
             this.label1.Text = "Insira uma categoria:";
             // 
@@ -104,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.CancelButton = this.buttonCancelar;
             this.ClientSize = new System.Drawing.Size(782, 203);
             this.Controls.Add(this.label1);
