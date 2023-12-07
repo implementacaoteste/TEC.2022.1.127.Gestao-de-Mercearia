@@ -57,7 +57,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(563, 61);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Cadastro de fornecedor";
+            this.label1.Text = "CADASTRO DE FORNECEDOR";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2

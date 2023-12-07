@@ -55,7 +55,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(631, 61);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Cadastro de Funcionario";
+            this.label1.Text = "CADASTRO DE FUNCIONÁRIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1

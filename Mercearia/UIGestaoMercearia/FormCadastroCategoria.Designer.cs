@@ -74,7 +74,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(782, 61);
             this.label10.TabIndex = 31;
-            this.label10.Text = "Cadastro de Categoria";
+            this.label10.Text = "CADASTRO DE CATEGORIA";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1Nome

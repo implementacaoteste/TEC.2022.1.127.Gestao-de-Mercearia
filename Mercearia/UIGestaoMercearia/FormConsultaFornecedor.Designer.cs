@@ -61,7 +61,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(848, 60);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Consulta Fornecedor";
+            this.label1.Text = "CONSULTA FORNECEDOR";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridViewFornecedor

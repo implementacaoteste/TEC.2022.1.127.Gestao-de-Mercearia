@@ -77,7 +77,7 @@ namespace UIGestaoMercearia
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(672, 49);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Cadastro de produto";
+            this.label1.Text = "CADASTRO DE PRODUTO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2

@@ -280,7 +280,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(1343, 58);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Gestão de usuários";
+            this.label2.Text = "GESTÃO DE USUÁRIO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1

@@ -125,7 +125,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(848, 55);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Consulta Cliente";
+            this.label1.Text = "CONSULTA CLIENTE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2

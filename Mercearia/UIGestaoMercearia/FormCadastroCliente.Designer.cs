@@ -179,7 +179,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(670, 61);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Cadastro de cliente";
+            this.label1.Text = "CADASTRO DE CLIENTE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonSalvar

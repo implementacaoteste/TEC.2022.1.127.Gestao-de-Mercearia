@@ -100,7 +100,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(782, 61);
             this.label10.TabIndex = 50;
-            this.label10.Text = "Cadastro de Marca";
+            this.label10.Text = "CADRASTO DE MARCA";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // marcaBindingSource1
