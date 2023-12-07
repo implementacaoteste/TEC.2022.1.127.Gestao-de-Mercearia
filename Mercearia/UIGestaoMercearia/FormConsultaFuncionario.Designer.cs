@@ -249,6 +249,9 @@
             this.Controls.Add(this.comboBoxBuscarPor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormConsultaFuncionario";
             this.Text = "FormConsultaFuncionario";
             ((System.ComponentModel.ISupportInitialize)(this.funcionarioDataGridView)).EndInit();
