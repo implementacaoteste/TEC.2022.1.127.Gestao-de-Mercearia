@@ -266,19 +266,20 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 18);
+            this.label1.Size = new System.Drawing.Size(205, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "O que deseja buscar?";
+            this.label1.Text = "OQUE DESEJA BUSCAR?";
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1343, 58);
+            this.label2.Size = new System.Drawing.Size(1343, 78);
             this.label2.TabIndex = 10;
             this.label2.Text = "GESTÃO DE USUÁRIO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,7 +290,7 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(411, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(405, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(75, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

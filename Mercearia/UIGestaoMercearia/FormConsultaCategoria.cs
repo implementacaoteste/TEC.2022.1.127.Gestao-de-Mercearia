@@ -158,5 +158,10 @@ namespace UIGestaoMercearia
         {
             buttonSelecionar_Click(sender, e);
         }
+
+        private void dataGridViewCategoria_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

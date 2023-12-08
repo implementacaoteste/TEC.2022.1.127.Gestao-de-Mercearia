@@ -154,5 +154,10 @@ namespace UIGestaoMercearia
         {
             buttonSelecionar_Click(sender, e);
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
