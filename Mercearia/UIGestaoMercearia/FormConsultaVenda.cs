@@ -94,5 +94,45 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void buttonSelecionar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (bindingSourceVenda.Count == 0)
+                {
+                    MessageBox.Show("Não existe Venda para ser selecionado.");
+                    return;
+                }
+
+
+                Venda selectedVenda = (Venda)bindingSourceVenda.Current;
+
+
+                MessageBox.Show($"Venda Selecionado:, Id: {selectedVenda.Id}");
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
+
+
+
+

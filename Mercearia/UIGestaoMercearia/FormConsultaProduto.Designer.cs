@@ -34,20 +34,23 @@
             this.buttonSelecionar = new System.Windows.Forms.Button();
             this.labelGerenProd = new System.Windows.Forms.Label();
             this.dataGridViewProduto = new System.Windows.Forms.DataGridView();
-            this.bindingSourceProduto = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
-            this.textBoxProduto = new System.Windows.Forms.TextBox();
-            this.buttonBuscar = new System.Windows.Forms.Button();
-            this.buttonAlterar = new System.Windows.Forms.Button();
-            this.buttonInserir = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDeBarraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSourceProduto = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
+            this.textBoxProduto = new System.Windows.Forms.TextBox();
+            this.buttonBuscar = new System.Windows.Forms.Button();
+            this.buttonAlterar = new System.Windows.Forms.Button();
+            this.buttonInserir = new System.Windows.Forms.Button();
+            this.buttonEcluir = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceProduto)).BeginInit();
@@ -114,92 +117,13 @@
             this.descricaoDataGridViewTextBoxColumn,
             this.codigoDeBarraDataGridViewTextBoxColumn});
             this.dataGridViewProduto.DataSource = this.bindingSourceProduto;
-            this.dataGridViewProduto.Location = new System.Drawing.Point(0, 59);
+            this.dataGridViewProduto.Location = new System.Drawing.Point(3, 132);
             this.dataGridViewProduto.Name = "dataGridViewProduto";
             this.dataGridViewProduto.ReadOnly = true;
             this.dataGridViewProduto.RowHeadersWidth = 51;
             this.dataGridViewProduto.RowTemplate.Height = 29;
-            this.dataGridViewProduto.Size = new System.Drawing.Size(982, 407);
+            this.dataGridViewProduto.Size = new System.Drawing.Size(976, 334);
             this.dataGridViewProduto.TabIndex = 1;
-            // 
-            // bindingSourceProduto
-            // 
-            this.bindingSourceProduto.DataSource = typeof(Models.Produto);
-            // 
-            // comboBoxBuscarPor
-            // 
-            this.comboBoxBuscarPor.FormattingEnabled = true;
-            this.comboBoxBuscarPor.Items.AddRange(new object[] {
-            "Id",
-            "Nome",
-            "CodigoDeBarra",
-            "Todos"});
-            this.comboBoxBuscarPor.Location = new System.Drawing.Point(12, 16);
-            this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
-            this.comboBoxBuscarPor.Size = new System.Drawing.Size(151, 28);
-            this.comboBoxBuscarPor.TabIndex = 0;
-            // 
-            // textBoxProduto
-            // 
-            this.textBoxProduto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxProduto.Location = new System.Drawing.Point(181, 16);
-            this.textBoxProduto.Name = "textBoxProduto";
-            this.textBoxProduto.Size = new System.Drawing.Size(402, 27);
-            this.textBoxProduto.TabIndex = 1;
-            // 
-            // buttonBuscar
-            // 
-            this.buttonBuscar.Location = new System.Drawing.Point(589, 15);
-            this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(94, 29);
-            this.buttonBuscar.TabIndex = 2;
-            this.buttonBuscar.Text = "&Buscar";
-            this.buttonBuscar.UseVisualStyleBackColor = true;
-            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
-            // 
-            // buttonAlterar
-            // 
-            this.buttonAlterar.Location = new System.Drawing.Point(689, 15);
-            this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Size = new System.Drawing.Size(94, 29);
-            this.buttonAlterar.TabIndex = 2;
-            this.buttonAlterar.Text = "&Alterar";
-            this.buttonAlterar.UseVisualStyleBackColor = true;
-            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
-            // 
-            // buttonInserir
-            // 
-            this.buttonInserir.Location = new System.Drawing.Point(789, 15);
-            this.buttonInserir.Name = "buttonInserir";
-            this.buttonInserir.Size = new System.Drawing.Size(94, 29);
-            this.buttonInserir.TabIndex = 2;
-            this.buttonInserir.Text = "&Inserir";
-            this.buttonInserir.UseVisualStyleBackColor = true;
-            this.buttonInserir.Click += new System.EventHandler(this.buttonInserir_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(885, 15);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 29);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "&Excluir";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.buttonInserir);
-            this.panel2.Controls.Add(this.buttonAlterar);
-            this.panel2.Controls.Add(this.buttonBuscar);
-            this.panel2.Controls.Add(this.textBoxProduto);
-            this.panel2.Controls.Add(this.comboBoxBuscarPor);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(982, 53);
-            this.panel2.TabIndex = 2;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -255,6 +179,127 @@
             this.codigoDeBarraDataGridViewTextBoxColumn.ReadOnly = true;
             this.codigoDeBarraDataGridViewTextBoxColumn.Width = 150;
             // 
+            // bindingSourceProduto
+            // 
+            this.bindingSourceProduto.DataSource = typeof(Models.Produto);
+            // 
+            // comboBoxBuscarPor
+            // 
+            this.comboBoxBuscarPor.FormattingEnabled = true;
+            this.comboBoxBuscarPor.Items.AddRange(new object[] {
+            "Id",
+            "Nome",
+            "CodigoDeBarra",
+            "Todos"});
+            this.comboBoxBuscarPor.Location = new System.Drawing.Point(3, 108);
+            this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
+            this.comboBoxBuscarPor.Size = new System.Drawing.Size(155, 28);
+            this.comboBoxBuscarPor.TabIndex = 0;
+            // 
+            // textBoxProduto
+            // 
+            this.textBoxProduto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxProduto.Location = new System.Drawing.Point(164, 108);
+            this.textBoxProduto.Name = "textBoxProduto";
+            this.textBoxProduto.Size = new System.Drawing.Size(402, 27);
+            this.textBoxProduto.TabIndex = 1;
+            // 
+            // buttonBuscar
+            // 
+            this.buttonBuscar.Location = new System.Drawing.Point(572, 106);
+            this.buttonBuscar.Name = "buttonBuscar";
+            this.buttonBuscar.Size = new System.Drawing.Size(94, 29);
+            this.buttonBuscar.TabIndex = 2;
+            this.buttonBuscar.Text = "&Buscar";
+            this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
+            // 
+            // buttonAlterar
+            // 
+            this.buttonAlterar.Location = new System.Drawing.Point(672, 106);
+            this.buttonAlterar.Name = "buttonAlterar";
+            this.buttonAlterar.Size = new System.Drawing.Size(94, 29);
+            this.buttonAlterar.TabIndex = 2;
+            this.buttonAlterar.Text = "&Alterar";
+            this.buttonAlterar.UseVisualStyleBackColor = true;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
+            // 
+            // buttonInserir
+            // 
+            this.buttonInserir.Location = new System.Drawing.Point(772, 106);
+            this.buttonInserir.Name = "buttonInserir";
+            this.buttonInserir.Size = new System.Drawing.Size(94, 29);
+            this.buttonInserir.TabIndex = 2;
+            this.buttonInserir.Text = "&Inserir";
+            this.buttonInserir.UseVisualStyleBackColor = true;
+            this.buttonInserir.Click += new System.EventHandler(this.buttonInserir_Click);
+            // 
+            // buttonEcluir
+            // 
+            this.buttonEcluir.Location = new System.Drawing.Point(868, 106);
+            this.buttonEcluir.Name = "buttonEcluir";
+            this.buttonEcluir.Size = new System.Drawing.Size(94, 29);
+            this.buttonEcluir.TabIndex = 2;
+            this.buttonEcluir.Text = "&Excluir";
+            this.buttonEcluir.UseVisualStyleBackColor = true;
+            this.buttonEcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.buttonEcluir);
+            this.panel2.Controls.Add(this.textBoxProduto);
+            this.panel2.Controls.Add(this.comboBoxBuscarPor);
+            this.panel2.Controls.Add(this.buttonInserir);
+            this.panel2.Controls.Add(this.buttonBuscar);
+            this.panel2.Controls.Add(this.buttonAlterar);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(982, 138);
+            this.panel2.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(987, 46);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "                     CONSULTA DE PRODUTO                        ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(3, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 18);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "BUSCAR POR:";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(164, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(201, 18);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "INSIRA A INFORMAÇÃO:";
+            // 
             // FormConsultaProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -295,7 +340,7 @@
         private Button buttonBuscar;
         private Button buttonAlterar;
         private Button buttonInserir;
-        private Button button4;
+        private Button buttonEcluir;
         private Panel panel2;
         private Button buttonCancelar;
         private Button buttonSelecionar;
@@ -305,5 +350,8 @@
         private DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn codigoDeBarraDataGridViewTextBoxColumn;
+        private Label label1;
+        private Label label2;
+        private Label label3;
     }
 }

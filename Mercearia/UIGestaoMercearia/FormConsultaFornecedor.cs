@@ -32,10 +32,15 @@ namespace UIGestaoMercearia
                 {
                     case 0:
                         if (String.IsNullOrEmpty(textBoxBuscarPor.Text))
-                            throw new Exception("Informe um Id para fazer a busca.") { Data = { { "Id", 10031 } } };
-                            bindingSourceFornecedor.DataSource = new FornecedorBLL().BuscarPorNome(textBoxBuscarPor.Text);
+                            throw new Exception("Informe um nome para fazer a busca.") { Data = { { "Id", 10031 } } };
+                        bindingSourceFornecedor.DataSource = new FornecedorBLL().BuscarPorNome(textBoxBuscarPor.Text);
                         break;
                     case 1:
+                        if(String.IsNullOrEmpty(textBoxBuscarPor.Text))
+                            throw new Exception("Informe um Id para fazer a busca.") { Data = { { "Id", 10031 } } };
+                        bindingSourceFornecedor.DataSource = new FornecedorBLL().BuscarPorId(Convert.ToInt32(textBoxBuscarPor.Text));
+                        break;
+                    case 2:
                         bindingSourceFornecedor.DataSource = new FornecedorBLL().BuscarTodos();
                         break;
                     default:

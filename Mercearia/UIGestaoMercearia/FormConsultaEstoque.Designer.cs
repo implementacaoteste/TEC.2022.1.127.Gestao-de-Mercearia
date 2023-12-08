@@ -126,13 +126,15 @@
             this.labelGerenProd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelGerenProd.AutoSize = true;
             this.labelGerenProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.labelGerenProd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelGerenProd.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelGerenProd.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labelGerenProd.Location = new System.Drawing.Point(234, -58);
+            this.labelGerenProd.Location = new System.Drawing.Point(0, 0);
             this.labelGerenProd.Name = "labelGerenProd";
-            this.labelGerenProd.Size = new System.Drawing.Size(493, 44);
+            this.labelGerenProd.Size = new System.Drawing.Size(980, 46);
             this.labelGerenProd.TabIndex = 0;
-            this.labelGerenProd.Text = "Gerenciamento de Estoque";
+            this.labelGerenProd.Text = "                   GERENCIAMENTO DE ESTOQUE                 ";
             // 
             // buttonSelecionar
             // 
@@ -140,6 +142,7 @@
             this.buttonSelecionar.Cursor = System.Windows.Forms.Cursors.Cross;
             this.buttonSelecionar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonSelecionar.Location = new System.Drawing.Point(775, 10);
+            this.buttonSelecionar.Location = new System.Drawing.Point(775, 525);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(94, 38);
             this.buttonSelecionar.TabIndex = 1;
@@ -152,6 +155,7 @@
             this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Cross;
             this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonCancelar.Location = new System.Drawing.Point(876, 10);
+            this.buttonCancelar.Location = new System.Drawing.Point(876, 525);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 38);
             this.buttonCancelar.TabIndex = 1;

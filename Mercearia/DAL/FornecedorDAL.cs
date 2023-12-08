@@ -150,13 +150,14 @@ namespace DAL
         public List<Fornecedor> BuscarPorNome(string _nome)
         {
             List<Fornecedor> fornecedores = new List<Fornecedor>();
-            Fornecedor fornecedor = new Fornecedor();
+            //Fornecedor fornecedor = new Fornecedor();
+            Fornecedor fornecedor;
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Nome, Email, Telefone, Endereco, CEP FROM Fornecedor WHERE Nome LIKE @Nome";
+                cmd.CommandText = "SELECT Id, Nome, Email, Telefone, Endereco, CEP FROM Fornecedor WHERE Nome LIKE @Nome";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Nome", "%" + _nome + "%");
                 cn.Open();

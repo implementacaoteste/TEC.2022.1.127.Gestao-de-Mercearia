@@ -201,6 +201,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -209,7 +210,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(731, 73);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Cadastro de usuários";
+            this.label2.Text = "CADASTRO DE USUÁRIO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonSalvar
@@ -266,7 +267,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de usuários";
+            this.Text = "CADASTRO DE USUÁRIO";
             this.Load += new System.EventHandler(this.FormCadastroUsuario_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormCadastroUsuario_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();

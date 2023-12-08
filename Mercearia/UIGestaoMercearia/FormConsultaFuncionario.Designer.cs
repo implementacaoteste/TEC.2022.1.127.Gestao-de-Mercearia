@@ -69,7 +69,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(12, 61);
+            this.label2.Location = new System.Drawing.Point(12, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 18);
             this.label2.TabIndex = 4;
@@ -238,7 +238,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(839, 439);
+            this.ClientSize = new System.Drawing.Size(839, 449);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSelecionar);
             this.Controls.Add(this.funcionarioDataGridView);

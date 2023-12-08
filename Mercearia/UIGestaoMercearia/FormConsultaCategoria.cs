@@ -32,7 +32,7 @@ namespace UIGestaoMercearia
                     case 0:
                         if (String.IsNullOrEmpty(comboBoxBuscarPor.Text))
                             throw new Exception("Informe um Id para fazer a busca.") { Data = { { "Id", 10030 } } };
-                        bindingSourceCategoria.DataSource = new CategoriaBLL().BuscarPorId(Convert.ToInt32(comboBoxBuscarPor.Text));
+                        bindingSourceCategoria.DataSource = new CategoriaBLL().BuscarPorId(Convert.ToInt32(textBoxBuscarPor.Text));
                         break;
                     case 1:
                         bindingSourceCategoria.DataSource = new CategoriaBLL().BuscarTodos();
