@@ -49,12 +49,12 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"UPDATE Funcionario SET 
+                cmd.CommandText = @"UPDATE Funcionario SET
                                         Nome = @Nome, 
                                         Telefone = @Telefone, 
                                         Ativo = @Ativo, 
                                         Profissao = @Profissao, 
-                                        Salario = @Salario,
+                                        Salario = @Salario
                                     WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
 
