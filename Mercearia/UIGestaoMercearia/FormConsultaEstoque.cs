@@ -26,13 +26,19 @@ namespace UIGestaoMercearia
         {
             try
             {
-                if (bindingSourceEstoque.Count > 0)
+                if (bindingSourceEstoque.Count == 0)
                 {
-                    Id = ((GrupoUsuario)bindingSourceEstoque.Current).Id;
-                    Close();
+                    MessageBox.Show("Não existe estoque para ser selecionado.");
+                    return;
                 }
-                else
-                    MessageBox.Show("Não existe registro para ser selecionado.");
+
+
+                Estoque selectedEstoque = (Estoque)bindingSourceEstoque.Current;
+
+
+                MessageBox.Show($"Produto Selecionado: {selectedEstoque.NomeProduto}, Id: {selectedEstoque.Id}");
+
+
             }
             catch (Exception ex)
             {
@@ -58,7 +64,12 @@ namespace UIGestaoMercearia
             try
             {
                 if (EstoqueBindingSource.Count == 0)
-                    throw new Exception("Não existe grupo listado para ser alterado.");
+                {
+                    MessageBox.Show("Não existe grupo listado para ser alterado.");
+                    return;
+                }
+
+                int id = ((Estoque)EstoqueBindingSource.Current).Id;
 
                 using (FormCadastroGrupoUsuario frm = new FormCadastroGrupoUsuario(((GrupoUsuario)EstoqueBindingSource.Current).Id))
                 {
@@ -77,7 +88,7 @@ namespace UIGestaoMercearia
         {
             try
             {
-                using (FormCadastroProduto frm = new FormCadastroProduto())
+                using (FormeCadastroEstoque frm = new FormeCadastroEstoque())
                 {
                     frm.ShowDialog();
                 }

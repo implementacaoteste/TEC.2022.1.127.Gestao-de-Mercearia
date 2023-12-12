@@ -28,29 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNomeProduto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxQtdEstoque = new System.Windows.Forms.TextBox();
+            this.textBoxEstoqueMaximo = new System.Windows.Forms.TextBox();
+            this.textBoxDataEntrada = new System.Windows.Forms.TextBox();
+            this.textBoxEstoqueMinimo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.buttonBuscarProduto = new System.Windows.Forms.Button();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonSalvar = new System.Windows.Forms.Button();
+            this.bindingSourceEstoque = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -76,12 +74,12 @@
             this.panel1.Size = new System.Drawing.Size(657, 75);
             this.panel1.TabIndex = 1;
             // 
-            // textBox1
+            // textBoxNomeProduto
             // 
-            this.textBox1.Location = new System.Drawing.Point(41, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 27);
-            this.textBox1.TabIndex = 4;
+            this.textBoxNomeProduto.Location = new System.Drawing.Point(41, 121);
+            this.textBoxNomeProduto.Name = "textBoxNomeProduto";
+            this.textBoxNomeProduto.Size = new System.Drawing.Size(215, 27);
+            this.textBoxNomeProduto.TabIndex = 4;
             // 
             // label2
             // 
@@ -90,7 +88,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(354, 270);
+            this.label2.Location = new System.Drawing.Point(354, 183);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 18);
             this.label2.TabIndex = 5;
@@ -111,39 +109,43 @@
             // 
             // textBox2
             // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "DatadeSaida", true));
             this.textBox2.Location = new System.Drawing.Point(354, 121);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(216, 27);
             this.textBox2.TabIndex = 7;
             // 
-            // textBox3
+            // textBoxQtdEstoque
             // 
-            this.textBox3.Location = new System.Drawing.Point(41, 291);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(215, 27);
-            this.textBox3.TabIndex = 8;
+            this.textBoxQtdEstoque.Location = new System.Drawing.Point(41, 206);
+            this.textBoxQtdEstoque.Name = "textBoxQtdEstoque";
+            this.textBoxQtdEstoque.Size = new System.Drawing.Size(215, 27);
+            this.textBoxQtdEstoque.TabIndex = 8;
             // 
-            // textBox4
+            // textBoxEstoqueMaximo
             // 
-            this.textBox4.Location = new System.Drawing.Point(354, 206);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(216, 27);
-            this.textBox4.TabIndex = 9;
+            this.textBoxEstoqueMaximo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "EstoqueMaximo", true));
+            this.textBoxEstoqueMaximo.Location = new System.Drawing.Point(41, 293);
+            this.textBoxEstoqueMaximo.Name = "textBoxEstoqueMaximo";
+            this.textBoxEstoqueMaximo.Size = new System.Drawing.Size(216, 27);
+            this.textBoxEstoqueMaximo.TabIndex = 9;
             // 
-            // textBox5
+            // textBoxDataEntrada
             // 
-            this.textBox5.Location = new System.Drawing.Point(354, 293);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(216, 27);
-            this.textBox5.TabIndex = 10;
+            this.textBoxDataEntrada.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "DatadeEntrada", true));
+            this.textBoxDataEntrada.Location = new System.Drawing.Point(354, 206);
+            this.textBoxDataEntrada.Name = "textBoxDataEntrada";
+            this.textBoxDataEntrada.Size = new System.Drawing.Size(216, 27);
+            this.textBoxDataEntrada.TabIndex = 10;
             // 
-            // textBox6
+            // textBoxEstoqueMinimo
             // 
-            this.textBox6.Location = new System.Drawing.Point(41, 204);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(215, 27);
-            this.textBox6.TabIndex = 11;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBoxEstoqueMinimo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "EstoqueMinimo", true));
+            this.textBoxEstoqueMinimo.Location = new System.Drawing.Point(354, 293);
+            this.textBoxEstoqueMinimo.Name = "textBoxEstoqueMinimo";
+            this.textBoxEstoqueMinimo.Size = new System.Drawing.Size(215, 27);
+            this.textBoxEstoqueMinimo.TabIndex = 11;
+            this.textBoxEstoqueMinimo.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label4
             // 
@@ -152,7 +154,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(354, 185);
+            this.label4.Location = new System.Drawing.Point(41, 272);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 18);
             this.label4.TabIndex = 12;
@@ -165,7 +167,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(41, 183);
+            this.label5.Location = new System.Drawing.Point(354, 272);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(137, 18);
             this.label5.TabIndex = 13;
@@ -191,115 +193,79 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(41, 270);
+            this.label7.Location = new System.Drawing.Point(41, 185);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(201, 18);
             this.label7.TabIndex = 15;
             this.label7.Text = "Quantidade em Estoque";
             // 
-            // button2
+            // buttonBuscarProduto
             // 
-            this.button2.Location = new System.Drawing.Point(262, 119);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(36, 29);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "...";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonBuscarProduto.Location = new System.Drawing.Point(262, 119);
+            this.buttonBuscarProduto.Name = "buttonBuscarProduto";
+            this.buttonBuscarProduto.Size = new System.Drawing.Size(36, 29);
+            this.buttonBuscarProduto.TabIndex = 17;
+            this.buttonBuscarProduto.Text = "...";
+            this.buttonBuscarProduto.UseVisualStyleBackColor = true;
+            this.buttonBuscarProduto.Click += new System.EventHandler(this.buttonBuscarProduto_Click);
             // 
-            // button1
+            // buttonCancelar
             // 
-            this.button1.Location = new System.Drawing.Point(262, 202);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 29);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Location = new System.Drawing.Point(418, 350);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
+            this.buttonCancelar.TabIndex = 23;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonSalvar
             // 
-            this.button3.Location = new System.Drawing.Point(262, 289);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(36, 29);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "...";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Location = new System.Drawing.Point(518, 350);
+            this.buttonSalvar.Name = "buttonSalvar";
+            this.buttonSalvar.Size = new System.Drawing.Size(94, 29);
+            this.buttonSalvar.TabIndex = 24;
+            this.buttonSalvar.Text = "Salvar";
+            this.buttonSalvar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // bindingSourceEstoque
             // 
-            this.button4.Location = new System.Drawing.Point(576, 119);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(36, 29);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "...";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(576, 206);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(36, 29);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "...";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(576, 293);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(36, 29);
-            this.button6.TabIndex = 22;
-            this.button6.Text = "...";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(418, 350);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(94, 29);
-            this.button7.TabIndex = 23;
-            this.button7.Text = "Cancelar";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(518, 350);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(94, 29);
-            this.button8.TabIndex = 24;
-            this.button8.Text = "Salvar";
-            this.button8.UseVisualStyleBackColor = true;
+            this.bindingSourceEstoque.DataSource = typeof(Models.Estoque);
             // 
             // FormeCadastroEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(155)))), ((int)(((byte)(205)))));
+            this.CancelButton = this.buttonCancelar;
             this.ClientSize = new System.Drawing.Size(653, 411);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonSalvar);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.buttonBuscarProduto);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxEstoqueMinimo);
+            this.Controls.Add(this.textBoxDataEntrada);
+            this.Controls.Add(this.textBoxEstoqueMaximo);
+            this.Controls.Add(this.textBoxQtdEstoque);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxNomeProduto);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormeCadastroEstoque";
             this.ShowIcon = false;
+<<<<<<< Updated upstream
+=======
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+>>>>>>> Stashed changes
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,25 +275,21 @@
 
         private Label label1;
         private Panel panel1;
-        private TextBox textBox1;
+        private TextBox textBoxNomeProduto;
         private Label label2;
         private Label label3;
         private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox textBoxQtdEstoque;
+        private TextBox textBoxEstoqueMaximo;
+        private TextBox textBoxDataEntrada;
+        private TextBox textBoxEstoqueMinimo;
         private Label label4;
         private Label label5;
         private Label label6;
         private Label label7;
-        private Button button2;
-        private Button button1;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
+        private Button buttonBuscarProduto;
+        private Button buttonCancelar;
+        private Button buttonSalvar;
+        private BindingSource bindingSourceEstoque;
     }
 }

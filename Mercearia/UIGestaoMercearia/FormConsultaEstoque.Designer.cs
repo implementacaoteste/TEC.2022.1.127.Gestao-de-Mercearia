@@ -31,11 +31,15 @@
             this.components = new System.ComponentModel.Container();
             this.bindingSourceEstoque = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewEstoque = new System.Windows.Forms.DataGridView();
+            this.datadeEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datadeSaidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estoqueMinimoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estoqueMaximoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelGerenProd = new System.Windows.Forms.Label();
             this.buttonSelecionar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
             this.textBoxBuscarPor = new System.Windows.Forms.TextBox();
             this.buttonBuscar = new System.Windows.Forms.Button();
@@ -46,11 +50,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.datadeEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datadeSaidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estoqueMinimoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estoqueMaximoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).BeginInit();
             this.panel1.SuspendLayout();
@@ -83,6 +82,42 @@
             this.dataGridViewEstoque.RowTemplate.Height = 29;
             this.dataGridViewEstoque.Size = new System.Drawing.Size(826, 234);
             this.dataGridViewEstoque.TabIndex = 4;
+            // 
+            // datadeEntradaDataGridViewTextBoxColumn
+            // 
+            this.datadeEntradaDataGridViewTextBoxColumn.DataPropertyName = "DatadeEntrada";
+            this.datadeEntradaDataGridViewTextBoxColumn.HeaderText = "DatadeEntrada";
+            this.datadeEntradaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.datadeEntradaDataGridViewTextBoxColumn.Name = "datadeEntradaDataGridViewTextBoxColumn";
+            this.datadeEntradaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.datadeEntradaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // datadeSaidaDataGridViewTextBoxColumn
+            // 
+            this.datadeSaidaDataGridViewTextBoxColumn.DataPropertyName = "DatadeSaida";
+            this.datadeSaidaDataGridViewTextBoxColumn.HeaderText = "DatadeSaida";
+            this.datadeSaidaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.datadeSaidaDataGridViewTextBoxColumn.Name = "datadeSaidaDataGridViewTextBoxColumn";
+            this.datadeSaidaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.datadeSaidaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // estoqueMinimoDataGridViewTextBoxColumn
+            // 
+            this.estoqueMinimoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMinimo";
+            this.estoqueMinimoDataGridViewTextBoxColumn.HeaderText = "EstoqueMinimo";
+            this.estoqueMinimoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.estoqueMinimoDataGridViewTextBoxColumn.Name = "estoqueMinimoDataGridViewTextBoxColumn";
+            this.estoqueMinimoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.estoqueMinimoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // estoqueMaximoDataGridViewTextBoxColumn
+            // 
+            this.estoqueMaximoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMaximo";
+            this.estoqueMaximoDataGridViewTextBoxColumn.HeaderText = "EstoqueMaximo";
+            this.estoqueMaximoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.estoqueMaximoDataGridViewTextBoxColumn.Name = "estoqueMaximoDataGridViewTextBoxColumn";
+            this.estoqueMaximoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.estoqueMaximoDataGridViewTextBoxColumn.Width = 125;
             // 
             // labelGerenProd
             // 
@@ -127,7 +162,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.buttonCancelar);
             this.panel1.Controls.Add(this.buttonSelecionar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -137,16 +171,16 @@
             this.panel1.Size = new System.Drawing.Size(848, 60);
             this.panel1.TabIndex = 3;
             // 
-            // button1
+            // button2
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.button1.Location = new System.Drawing.Point(12, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "CADASTRO DE ESTOQUE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(742, 19);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 29);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "&Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // comboBoxBuscarPor
             // 
@@ -232,7 +266,7 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(982, 81);
+            this.panel3.Size = new System.Drawing.Size(845, 81);
             this.panel3.TabIndex = 6;
             // 
             // label2
@@ -256,53 +290,6 @@
             this.label1.Size = new System.Drawing.Size(103, 18);
             this.label1.TabIndex = 5;
             this.label1.Text = "Buscar Por:";
-            // 
-            // datadeEntradaDataGridViewTextBoxColumn
-            // 
-            this.datadeEntradaDataGridViewTextBoxColumn.DataPropertyName = "DatadeEntrada";
-            this.datadeEntradaDataGridViewTextBoxColumn.HeaderText = "DatadeEntrada";
-            this.datadeEntradaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.datadeEntradaDataGridViewTextBoxColumn.Name = "datadeEntradaDataGridViewTextBoxColumn";
-            this.datadeEntradaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.datadeEntradaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // datadeSaidaDataGridViewTextBoxColumn
-            // 
-            this.datadeSaidaDataGridViewTextBoxColumn.DataPropertyName = "DatadeSaida";
-            this.datadeSaidaDataGridViewTextBoxColumn.HeaderText = "DatadeSaida";
-            this.datadeSaidaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.datadeSaidaDataGridViewTextBoxColumn.Name = "datadeSaidaDataGridViewTextBoxColumn";
-            this.datadeSaidaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.datadeSaidaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // estoqueMinimoDataGridViewTextBoxColumn
-            // 
-            this.estoqueMinimoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMinimo";
-            this.estoqueMinimoDataGridViewTextBoxColumn.HeaderText = "EstoqueMinimo";
-            this.estoqueMinimoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.estoqueMinimoDataGridViewTextBoxColumn.Name = "estoqueMinimoDataGridViewTextBoxColumn";
-            this.estoqueMinimoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.estoqueMinimoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // estoqueMaximoDataGridViewTextBoxColumn
-            // 
-            this.estoqueMaximoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMaximo";
-            this.estoqueMaximoDataGridViewTextBoxColumn.HeaderText = "EstoqueMaximo";
-            this.estoqueMaximoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.estoqueMaximoDataGridViewTextBoxColumn.Name = "estoqueMaximoDataGridViewTextBoxColumn";
-            this.estoqueMaximoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.estoqueMaximoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(742, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "&Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // FormConsultaEstoque
             // 
@@ -347,7 +334,6 @@
         private Label label1;
         private Panel panel3;
         private Label label2;
-        private Button button1;
         private DataGridViewTextBoxColumn datadeEntradaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn datadeSaidaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn estoqueMinimoDataGridViewTextBoxColumn;
