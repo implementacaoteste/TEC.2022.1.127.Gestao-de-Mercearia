@@ -30,16 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.bindingSourceEstoque = new System.Windows.Forms.BindingSource(this.components);
-            this.idProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estoqueMaximoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estoqueMinimoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datadeSaidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datadeEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewEstoque = new System.Windows.Forms.DataGridView();
             this.labelGerenProd = new System.Windows.Forms.Label();
             this.buttonSelecionar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
             this.textBoxBuscarPor = new System.Windows.Forms.TextBox();
             this.buttonBuscar = new System.Windows.Forms.Button();
@@ -50,7 +46,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.datadeEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datadeSaidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estoqueMinimoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estoqueMaximoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).BeginInit();
             this.panel1.SuspendLayout();
@@ -62,48 +62,11 @@
             // 
             this.bindingSourceEstoque.DataSource = typeof(Models.Estoque);
             // 
-            // idProdutoDataGridViewTextBoxColumn
-            // 
-            this.idProdutoDataGridViewTextBoxColumn.DataPropertyName = "IdProduto";
-            this.idProdutoDataGridViewTextBoxColumn.HeaderText = "IdProduto";
-            this.idProdutoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
-            this.idProdutoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // estoqueMaximoDataGridViewTextBoxColumn
-            // 
-            this.estoqueMaximoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMaximo";
-            this.estoqueMaximoDataGridViewTextBoxColumn.HeaderText = "EstoqueMaximo";
-            this.estoqueMaximoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.estoqueMaximoDataGridViewTextBoxColumn.Name = "estoqueMaximoDataGridViewTextBoxColumn";
-            this.estoqueMaximoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // estoqueMinimoDataGridViewTextBoxColumn
-            // 
-            this.estoqueMinimoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMinimo";
-            this.estoqueMinimoDataGridViewTextBoxColumn.HeaderText = "EstoqueMinimo";
-            this.estoqueMinimoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.estoqueMinimoDataGridViewTextBoxColumn.Name = "estoqueMinimoDataGridViewTextBoxColumn";
-            this.estoqueMinimoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // datadeSaidaDataGridViewTextBoxColumn
-            // 
-            this.datadeSaidaDataGridViewTextBoxColumn.DataPropertyName = "DatadeSaida";
-            this.datadeSaidaDataGridViewTextBoxColumn.HeaderText = "DatadeSaida";
-            this.datadeSaidaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.datadeSaidaDataGridViewTextBoxColumn.Name = "datadeSaidaDataGridViewTextBoxColumn";
-            this.datadeSaidaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // datadeEntradaDataGridViewTextBoxColumn
-            // 
-            this.datadeEntradaDataGridViewTextBoxColumn.DataPropertyName = "DatadeEntrada";
-            this.datadeEntradaDataGridViewTextBoxColumn.HeaderText = "DatadeEntrada";
-            this.datadeEntradaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.datadeEntradaDataGridViewTextBoxColumn.Name = "datadeEntradaDataGridViewTextBoxColumn";
-            this.datadeEntradaDataGridViewTextBoxColumn.Width = 125;
-            // 
             // dataGridViewEstoque
             // 
+            this.dataGridViewEstoque.AllowUserToAddRows = false;
+            this.dataGridViewEstoque.AllowUserToDeleteRows = false;
+            this.dataGridViewEstoque.AllowUserToOrderColumns = true;
             this.dataGridViewEstoque.AutoGenerateColumns = false;
             this.dataGridViewEstoque.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -111,14 +74,14 @@
             this.datadeEntradaDataGridViewTextBoxColumn,
             this.datadeSaidaDataGridViewTextBoxColumn,
             this.estoqueMinimoDataGridViewTextBoxColumn,
-            this.estoqueMaximoDataGridViewTextBoxColumn,
-            this.idProdutoDataGridViewTextBoxColumn});
+            this.estoqueMaximoDataGridViewTextBoxColumn});
             this.dataGridViewEstoque.DataSource = this.bindingSourceEstoque;
-            this.dataGridViewEstoque.Location = new System.Drawing.Point(0, 156);
+            this.dataGridViewEstoque.Location = new System.Drawing.Point(10, 156);
             this.dataGridViewEstoque.Name = "dataGridViewEstoque";
+            this.dataGridViewEstoque.ReadOnly = true;
             this.dataGridViewEstoque.RowHeadersWidth = 51;
             this.dataGridViewEstoque.RowTemplate.Height = 29;
-            this.dataGridViewEstoque.Size = new System.Drawing.Size(982, 371);
+            this.dataGridViewEstoque.Size = new System.Drawing.Size(826, 234);
             this.dataGridViewEstoque.TabIndex = 4;
             // 
             // labelGerenProd
@@ -129,7 +92,6 @@
             this.labelGerenProd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelGerenProd.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelGerenProd.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelGerenProd.Location = new System.Drawing.Point(234, -58);
             this.labelGerenProd.Location = new System.Drawing.Point(0, 0);
             this.labelGerenProd.Name = "labelGerenProd";
             this.labelGerenProd.Size = new System.Drawing.Size(980, 46);
@@ -141,8 +103,7 @@
             this.buttonSelecionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSelecionar.Cursor = System.Windows.Forms.Cursors.Cross;
             this.buttonSelecionar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonSelecionar.Location = new System.Drawing.Point(775, 10);
-            this.buttonSelecionar.Location = new System.Drawing.Point(775, 525);
+            this.buttonSelecionar.Location = new System.Drawing.Point(641, 525);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(94, 38);
             this.buttonSelecionar.TabIndex = 1;
@@ -154,8 +115,7 @@
             this.buttonCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Cross;
             this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonCancelar.Location = new System.Drawing.Point(876, 10);
-            this.buttonCancelar.Location = new System.Drawing.Point(876, 525);
+            this.buttonCancelar.Location = new System.Drawing.Point(742, 525);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 38);
             this.buttonCancelar.TabIndex = 1;
@@ -166,15 +126,27 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.buttonCancelar);
             this.panel1.Controls.Add(this.buttonSelecionar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.panel1.Location = new System.Drawing.Point(0, 533);
+            this.panel1.Location = new System.Drawing.Point(0, 396);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(982, 60);
+            this.panel1.Size = new System.Drawing.Size(848, 60);
             this.panel1.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.button1.Location = new System.Drawing.Point(12, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(195, 38);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "CADASTRO DE ESTOQUE";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBoxBuscarPor
             // 
@@ -184,22 +156,22 @@
             "Todos"});
             this.comboBoxBuscarPor.Location = new System.Drawing.Point(10, 123);
             this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
-            this.comboBoxBuscarPor.Size = new System.Drawing.Size(151, 28);
+            this.comboBoxBuscarPor.Size = new System.Drawing.Size(105, 28);
             this.comboBoxBuscarPor.TabIndex = 0;
             // 
             // textBoxBuscarPor
             // 
             this.textBoxBuscarPor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxBuscarPor.Location = new System.Drawing.Point(167, 123);
+            this.textBoxBuscarPor.Location = new System.Drawing.Point(121, 122);
             this.textBoxBuscarPor.Name = "textBoxBuscarPor";
-            this.textBoxBuscarPor.Size = new System.Drawing.Size(402, 27);
+            this.textBoxBuscarPor.Size = new System.Drawing.Size(387, 27);
             this.textBoxBuscarPor.TabIndex = 1;
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(575, 113);
+            this.buttonBuscar.Location = new System.Drawing.Point(514, 121);
             this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(94, 37);
+            this.buttonBuscar.Size = new System.Drawing.Size(78, 27);
             this.buttonBuscar.TabIndex = 2;
             this.buttonBuscar.Text = "&Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = true;
@@ -207,9 +179,9 @@
             // 
             // buttonAlterar
             // 
-            this.buttonAlterar.Location = new System.Drawing.Point(675, 112);
+            this.buttonAlterar.Location = new System.Drawing.Point(598, 121);
             this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Size = new System.Drawing.Size(94, 38);
+            this.buttonAlterar.Size = new System.Drawing.Size(79, 27);
             this.buttonAlterar.TabIndex = 2;
             this.buttonAlterar.Text = "&Alterar";
             this.buttonAlterar.UseVisualStyleBackColor = true;
@@ -217,9 +189,9 @@
             // 
             // buttonInserir
             // 
-            this.buttonInserir.Location = new System.Drawing.Point(775, 113);
+            this.buttonInserir.Location = new System.Drawing.Point(683, 120);
             this.buttonInserir.Name = "buttonInserir";
-            this.buttonInserir.Size = new System.Drawing.Size(94, 38);
+            this.buttonInserir.Size = new System.Drawing.Size(73, 28);
             this.buttonInserir.TabIndex = 2;
             this.buttonInserir.Text = "&Inserir";
             this.buttonInserir.UseVisualStyleBackColor = true;
@@ -227,9 +199,9 @@
             // 
             // buttonExcluir
             // 
-            this.buttonExcluir.Location = new System.Drawing.Point(871, 112);
+            this.buttonExcluir.Location = new System.Drawing.Point(762, 120);
             this.buttonExcluir.Name = "buttonExcluir";
-            this.buttonExcluir.Size = new System.Drawing.Size(94, 38);
+            this.buttonExcluir.Size = new System.Drawing.Size(70, 27);
             this.buttonExcluir.TabIndex = 2;
             this.buttonExcluir.Text = "&Excluir";
             this.buttonExcluir.UseVisualStyleBackColor = true;
@@ -251,7 +223,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(982, 509);
+            this.panel2.Size = new System.Drawing.Size(848, 509);
             this.panel2.TabIndex = 5;
             // 
             // panel3
@@ -285,23 +257,59 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Buscar Por:";
             // 
-            // button1
+            // datadeEntradaDataGridViewTextBoxColumn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.button1.Location = new System.Drawing.Point(21, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "CADASTRO DE ESTOQUE";
-            this.button1.UseVisualStyleBackColor = true;
+            this.datadeEntradaDataGridViewTextBoxColumn.DataPropertyName = "DatadeEntrada";
+            this.datadeEntradaDataGridViewTextBoxColumn.HeaderText = "DatadeEntrada";
+            this.datadeEntradaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.datadeEntradaDataGridViewTextBoxColumn.Name = "datadeEntradaDataGridViewTextBoxColumn";
+            this.datadeEntradaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.datadeEntradaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // datadeSaidaDataGridViewTextBoxColumn
+            // 
+            this.datadeSaidaDataGridViewTextBoxColumn.DataPropertyName = "DatadeSaida";
+            this.datadeSaidaDataGridViewTextBoxColumn.HeaderText = "DatadeSaida";
+            this.datadeSaidaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.datadeSaidaDataGridViewTextBoxColumn.Name = "datadeSaidaDataGridViewTextBoxColumn";
+            this.datadeSaidaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.datadeSaidaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // estoqueMinimoDataGridViewTextBoxColumn
+            // 
+            this.estoqueMinimoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMinimo";
+            this.estoqueMinimoDataGridViewTextBoxColumn.HeaderText = "EstoqueMinimo";
+            this.estoqueMinimoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.estoqueMinimoDataGridViewTextBoxColumn.Name = "estoqueMinimoDataGridViewTextBoxColumn";
+            this.estoqueMinimoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.estoqueMinimoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // estoqueMaximoDataGridViewTextBoxColumn
+            // 
+            this.estoqueMaximoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMaximo";
+            this.estoqueMaximoDataGridViewTextBoxColumn.HeaderText = "EstoqueMaximo";
+            this.estoqueMaximoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.estoqueMaximoDataGridViewTextBoxColumn.Name = "estoqueMaximoDataGridViewTextBoxColumn";
+            this.estoqueMaximoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.estoqueMaximoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(742, 19);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 29);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "&Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // FormConsultaEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancelar;
-            this.ClientSize = new System.Drawing.Size(982, 593);
+            this.ClientSize = new System.Drawing.Size(848, 456);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -310,6 +318,7 @@
             this.Name = "FormConsultaEstoque";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -323,11 +332,6 @@
 
         #endregion
         private BindingSource bindingSourceEstoque;
-        private DataGridViewTextBoxColumn idProdutoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn estoqueMaximoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn estoqueMinimoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn datadeSaidaDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn datadeEntradaDataGridViewTextBoxColumn;
         private DataGridView dataGridViewEstoque;
         private Label labelGerenProd;
         private Button buttonSelecionar;
@@ -344,5 +348,10 @@
         private Panel panel3;
         private Label label2;
         private Button button1;
+        private DataGridViewTextBoxColumn datadeEntradaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn datadeSaidaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn estoqueMinimoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn estoqueMaximoDataGridViewTextBoxColumn;
+        private Button button2;
     }
 }
