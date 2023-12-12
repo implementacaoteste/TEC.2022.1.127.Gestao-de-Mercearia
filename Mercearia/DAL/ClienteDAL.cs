@@ -16,14 +16,14 @@ namespace DAL
             {
                 SqlCommand cmd = cn.CreateCommand();
 
-                cmd.CommandText = @"INSERT INTO Cliente(Nome, CPF, Bairro, CEP Fone, Email) 
-                                    VALUES(@Nome, @CPF, @Bairro, @Fone, @CEP, @Email)";
+                cmd.CommandText = @"INSERT INTO Cliente(Nome, CPF, Endereco, CEP Fone, Email) 
+                                    VALUES(@Nome, @CPF, @Endereco, @Fone, @CEP, @Email)";
 
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Nome", _cliente.Nome);
                 cmd.Parameters.AddWithValue("@CPF", _cliente.CPF);
-                cmd.Parameters.AddWithValue("Bairro", _cliente.Bairro);
+                cmd.Parameters.AddWithValue("Endereco", _cliente.Endereco);
                 cmd.Parameters.AddWithValue("@Email", _cliente.Email);
                 cmd.Parameters.AddWithValue("@Fone", _cliente.Fone);
                 cmd.Parameters.AddWithValue("@CEP", _cliente.CEP);
@@ -53,7 +53,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
 
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, CEP, Bairro, Fone FROM Cliente";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, CEP, Endereco, Fone FROM Cliente";
 
                 cmd.CommandType = System.Data.CommandType.Text;
 
@@ -67,7 +67,7 @@ namespace DAL
                         cliente.Nome = rd["Nome"].ToString();
                         cliente.CPF = rd["CPF"].ToString();
                         cliente.Email = rd["Email"].ToString();
-                        cliente.Bairro = rd["Bairro"].ToString();
+                        cliente.Endereco = rd["Endereco"].ToString();
                         cliente.Fone = rd["Fone"].ToString();
                         cliente.CEP = rd["CEP"].ToString();
 
@@ -78,7 +78,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("Ocorreu um erro ao tentar buscar clientes no banco de dados", ex) { Data = { { "Id", 16 } } };
+                throw new Exception("Ocorreu um erro ao tentar buscar clientes no banco de dados", ex) { Data = { { "Id", 10053 } } };
             }
             finally
             {
@@ -95,7 +95,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
 
-                cmd.CommandText = @"SELECT Id, Nome, CPF, CEP, Bairro, Email, Fone FROM Cliente WHERE Nome LIKE @Nome";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, CEP, Endereco, Email, Fone FROM Cliente WHERE Nome LIKE @Nome";
 
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Nome", "%" + _nome + "%");
@@ -109,7 +109,7 @@ namespace DAL
                         cliente.Id = (int)rd["Id"];
                         cliente.Nome = rd["Nome"].ToString();
                         cliente.CPF = rd["CPF"].ToString();
-                        cliente.Bairro = rd["Bairro"].ToString();
+                        cliente.Endereco = rd["Endereco"].ToString();
                         cliente.CEP = rd["CEP"].ToString();
                         cliente.Email = rd["Email"].ToString();
                         cliente.Fone = rd["Fone"].ToString();
@@ -121,7 +121,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("Ocorreu um erro ao tentar buscar clientes por nome no banco de dados", ex) { Data = { { "Id", 17 } } };
+                throw new Exception("Ocorreu um erro ao tentar buscar clientes por nome no banco de dados", ex) { Data = { { "Id", 10054 } } };
             }
             finally
             {
@@ -136,7 +136,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Bairro, CEP, Fone FROM Cliente WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, CEP, Fone FROM Cliente WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
 
@@ -149,7 +149,7 @@ namespace DAL
                         cliente.Nome = rd["Nome"].ToString();
                         cliente.CPF = rd["CPF"].ToString();
                         cliente.Email = rd["Email"].ToString();
-                        cliente.Bairro = rd["Bairro"].ToString();
+                        cliente.Endereco = rd["Endereco"].ToString();
                         cliente.CEP = rd["CEP"].ToString();
                         cliente.Fone = rd["Fone"].ToString();
                     }
@@ -158,7 +158,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("Ocorreu um erro ao tentar buscar clientes por id no banco de dados", ex) { Data = { { "Id", 18 } } };
+                throw new Exception("Ocorreu um erro ao tentar buscar clientes por id no banco de dados", ex) { Data = { { "Id", 10055  } } };
             }
             finally
             {
@@ -173,7 +173,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Bairro, CEP Fone FROM Cliente WHERE CPF = @CPF";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, CEP Fone FROM Cliente WHERE CPF = @CPF";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@CPF", _CPF);
 
@@ -186,7 +186,7 @@ namespace DAL
                         cliente.Nome = rd["Nome"].ToString();
                         cliente.CPF = rd["CPF"].ToString();
                         cliente.Email = rd["Email"].ToString();
-                        cliente.Bairro = rd["Bairro"].ToString();
+                        cliente.Endereco = rd["Endereco"].ToString();
                         cliente.CEP = rd["CEP"].ToString();
                         cliente.Fone = rd["Fone"].ToString();
                     }
@@ -195,7 +195,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("Ocorreu um erro ao tentar buscar clientes por CPF no banco de dados", ex) { Data = { { "Id", 19 } } };
+                throw new Exception("Ocorreu um erro ao tentar buscar clientes por CPF no banco de dados", ex) { Data = { { "Id", 10056 } } };
             }
             finally
             {
@@ -212,7 +212,7 @@ namespace DAL
                 cmd.CommandText = @"UPDATE Cliente SET 
                                         Nome = @Nome, 
                                         CPF = @CPF, 
-                                       Bairro = @Bairro
+                                       Endereco = @Endereco
                                        Email = @Email
                                         Fone = @Fone 
                                         CEP = @CEP
@@ -223,7 +223,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@Nome", _cliente.Nome);
                 cmd.Parameters.AddWithValue("@CPF", _cliente.CPF);
                 cmd.Parameters.AddWithValue("@Email", _cliente.Email);
-                cmd.Parameters.AddWithValue("@Bairro", _cliente.Bairro);
+                cmd.Parameters.AddWithValue("@Endereco", _cliente.Endereco);
                 cmd.Parameters.AddWithValue("@CEP", _cliente.CEP);
                 cmd.Parameters.AddWithValue("@Fone", _cliente.Fone);
 
@@ -234,7 +234,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro ao tentar alterar cliente no banco de dados", ex) { Data = { { "Id", 20 } } };
+                throw new Exception("Erro ao tentar alterar cliente no banco de dados", ex) { Data = { { "Id", 10050 } } };
             }
             finally
             {
@@ -260,7 +260,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("Ocorreu um erro ao tentar excluir cliente no banco de dados.", ex) { Data = { { "Id", 21 } } };
+                throw new Exception("Ocorreu um erro ao tentar excluir cliente no banco de dados.", ex) { Data = { { "Id", 10045 } } };
             }
             finally
             {

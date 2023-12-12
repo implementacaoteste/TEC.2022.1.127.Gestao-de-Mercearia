@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.clienteDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,12 +41,21 @@
             this.buttonInserir = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
             this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CEP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // clienteDataGridView
             // 
+            this.clienteDataGridView.AllowUserToAddRows = false;
+            this.clienteDataGridView.AllowUserToDeleteRows = false;
+            this.clienteDataGridView.AllowUserToOrderColumns = true;
             this.clienteDataGridView.AutoGenerateColumns = false;
             this.clienteDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.clienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -60,55 +64,17 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
+            this.dataGridViewTextBoxColumn6,
+            this.CEP});
             this.clienteDataGridView.DataSource = this.clienteBindingSource;
             this.clienteDataGridView.Location = new System.Drawing.Point(13, 125);
             this.clienteDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.clienteDataGridView.Name = "clienteDataGridView";
+            this.clienteDataGridView.ReadOnly = true;
             this.clienteDataGridView.RowHeadersWidth = 51;
             this.clienteDataGridView.RowTemplate.Height = 24;
             this.clienteDataGridView.Size = new System.Drawing.Size(835, 291);
             this.clienteDataGridView.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "CPF";
-            this.dataGridViewTextBoxColumn3.HeaderText = "CPF";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Fone";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Fone";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 125;
             // 
             // clienteBindingSource
             // 
@@ -142,7 +108,7 @@
             // textBoxBuscar
             // 
             this.textBoxBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxBuscar.Location = new System.Drawing.Point(163, 90);
+            this.textBoxBuscar.Location = new System.Drawing.Point(163, 89);
             this.textBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(349, 27);
@@ -229,11 +195,65 @@
             this.comboBoxBuscarPor.Size = new System.Drawing.Size(144, 28);
             this.comboBoxBuscarPor.TabIndex = 6;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 225;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "CPF";
+            this.dataGridViewTextBoxColumn3.HeaderText = "CPF";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Email";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Fone";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Fone";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // CEP
+            // 
+            this.CEP.DataPropertyName = "CEP";
+            this.CEP.HeaderText = "CEP";
+            this.CEP.MinimumWidth = 6;
+            this.CEP.Name = "CEP";
+            this.CEP.ReadOnly = true;
+            this.CEP.Width = 130;
+            // 
             // FormConsultaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.CancelButton = this.buttonCancelar;
             this.ClientSize = new System.Drawing.Size(848, 456);
             this.Controls.Add(this.comboBoxBuscarPor);
             this.Controls.Add(this.buttonCancelar);
@@ -251,7 +271,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormConsultaCliente";
-            this.Text = "FormConsultaCliente";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormConsultaCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
@@ -264,12 +286,7 @@
 
         private System.Windows.Forms.BindingSource clienteBindingSource;
         private System.Windows.Forms.DataGridView clienteDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxBuscar;
@@ -280,5 +297,11 @@
         private System.Windows.Forms.Button buttonInserir;
         private System.Windows.Forms.Button buttonExcluir;
         private System.Windows.Forms.ComboBox comboBoxBuscarPor;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private DataGridViewTextBoxColumn CEP;
     }
 }
