@@ -59,7 +59,6 @@ namespace UIGestaoMercearia
             this.textBoxNomeCategoria = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.buttonBuscarCategoria = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -255,7 +254,7 @@ namespace UIGestaoMercearia
             this.buttonBuscarFornecedor.TabIndex = 33;
             this.buttonBuscarFornecedor.Text = "...";
             this.buttonBuscarFornecedor.UseVisualStyleBackColor = true;
-            this.buttonBuscarFornecedor.Click += new System.EventHandler(this.z);
+            this.buttonBuscarFornecedor.Click += new System.EventHandler(this.buttonBuscarFornecedor_Click);
             // 
             // buttonBuscarMarca
             // 
@@ -296,15 +295,6 @@ namespace UIGestaoMercearia
             this.buttonBuscarCategoria.UseVisualStyleBackColor = true;
             this.buttonBuscarCategoria.Click += new System.EventHandler(this.buttonBuscarCategoria_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(170, 135);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 29);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // FormCadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -312,7 +302,6 @@ namespace UIGestaoMercearia
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.CancelButton = this.buttonCancelar;
             this.ClientSize = new System.Drawing.Size(672, 323);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxNomeCategoria);
             this.Controls.Add(this.buttonBuscarCategoria);
@@ -373,7 +362,6 @@ namespace UIGestaoMercearia
         private TextBox textBoxNomeCategoria;
         private Label label5;
         private Button buttonBuscarCategoria;
-        private Button button1;
 
         public int ComboBoxProdutos_SelectedIndexChanged { get; private set; }
     }
