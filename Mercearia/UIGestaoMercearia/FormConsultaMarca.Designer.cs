@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.textBoxBuscarPor = new System.Windows.Forms.TextBox();
             this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
@@ -44,8 +46,6 @@
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonSelecionar = new System.Windows.Forms.Button();
             this.labelGerenProd = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceMarca)).BeginInit();
@@ -65,6 +65,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(568, 75);
             this.panel2.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(149, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(201, 18);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "INSIRA A INFORMAÇÃO:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(13, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 18);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "BUSCAR POR";
             // 
             // buttonBuscar
             // 
@@ -224,28 +246,6 @@
             this.labelGerenProd.TabIndex = 0;
             this.labelGerenProd.Text = "Gerenciamento de Marcas";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(13, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 18);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "BUSCAR POR";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(149, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "INSIRA A INFORMAÇÃO:";
-            // 
             // FormConsultaMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -265,6 +265,7 @@
             this.Name = "FormConsultaMarca";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormConsultaMarca_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
