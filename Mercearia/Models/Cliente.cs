@@ -11,7 +11,7 @@ namespace Models
         public int Id { get; set; }
         public string Nome { get; set; }
         public string CPF { get; set; }
-        public string Bairro { get; set; }
+        public string Endereco { get; set; }
         public string CEP { get; set; }
         public string Fone { get; set; }
         public string? Email { get; set; }
