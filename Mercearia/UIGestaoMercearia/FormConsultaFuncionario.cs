@@ -27,10 +27,15 @@ namespace UIGestaoMercearia
                 {
                     case 0:
                         if (String.IsNullOrEmpty(textBoxBuscar.Text))
-                            throw new Exception("Informe um Id para fazer a busca.") { Data = { { "Id", 10130 } } };
-                        funcionarioBindingSource.DataSource = new FuncionarioBLL().BuscarPorNome(textBoxBuscar.Text);
+                            throw new Exception("Informe um Id para fazer a busca.") { Data = { { "Id", 10131 } } };
+                        funcionarioBindingSource.DataSource = new FuncionarioBLL().BuscarPorId(Convert.ToInt32(textBoxBuscar.Text));
                         break;
                     case 1:
+                        if (String.IsNullOrEmpty(textBoxBuscar.Text))
+                            throw new Exception("Informe um Nome para fazer a busca.") { Data = { { "Id", 10132 } } };
+                        funcionarioBindingSource.DataSource = new FuncionarioBLL().BuscarPorNome(textBoxBuscar.Text);
+                        break;
+                    case 2:
                         funcionarioBindingSource.DataSource = new FuncionarioBLL().BuscarTodos();
                         break;
                     default:
@@ -140,6 +145,12 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void FormConsultaFuncionario_Load(object sender, EventArgs e)
+        {
+            comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1; //seleciona sempre o ultimo indice da ComboBox
+            buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
         }
     }
 }

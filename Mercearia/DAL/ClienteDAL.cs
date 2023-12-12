@@ -173,7 +173,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, CEP Telefone FROM Cliente WHERE CPF = @CPF";
+                cmd.CommandText = @"SELECT Id, Nome, Cpf, Email, Endereco, CEP, Telefone FROM Cliente WHERE CPF = @CPF";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@CPF", _CPF);
 

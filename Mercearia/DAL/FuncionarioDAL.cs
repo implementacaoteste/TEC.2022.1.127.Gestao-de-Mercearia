@@ -192,7 +192,8 @@ namespace DAL
 
         public Funcionario BuscarPorId(int _id)
         {
-            Funcionario funcionario = new Funcionario();
+            //Funcionario funcionario = new Funcionario();
+            Funcionario funcionario;
 
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             try
@@ -209,12 +210,15 @@ namespace DAL
                 using (SqlDataReader rd = cmd.ExecuteReader())
                 {
                     funcionario = new Funcionario();
-                    funcionario.Id = Convert.ToInt32(rd["Id"]);
-                    funcionario.Nome = rd["Nome"].ToString();
-                    funcionario.Telefone = rd["Telefone"].ToString();
-                    funcionario.Ativo = Convert.ToBoolean(rd["Ativo"]);
-                    funcionario.Profissao = rd["Profissao"].ToString();
-                    funcionario.Salario = Convert.ToDouble(rd["Salario"]);
+                    if (rd.Read()) 
+                    { 
+                        funcionario.Id = Convert.ToInt32(rd["Id"]);
+                        funcionario.Nome = rd["Nome"].ToString();
+                        funcionario.Telefone = rd["Telefone"].ToString();
+                        funcionario.Ativo = Convert.ToBoolean(rd["Ativo"]);
+                        funcionario.Profissao = rd["Profissao"].ToString();
+                        funcionario.Salario = Convert.ToDouble(rd["Salario"]);
+                    }
                 }
                 return funcionario;
             }

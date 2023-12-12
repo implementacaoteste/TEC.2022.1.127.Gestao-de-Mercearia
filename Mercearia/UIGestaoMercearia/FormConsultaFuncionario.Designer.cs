@@ -40,12 +40,14 @@
             this.funcionarioDataGridView = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ativoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.profissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ativoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.funcionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonSelecionar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.funcionarioDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.funcionarioBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +61,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(839, 61);
+            this.label1.Size = new System.Drawing.Size(848, 48);
             this.label1.TabIndex = 3;
             this.label1.Text = "Consulta funcionario";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,9 +73,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(12, 63);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 18);
+            this.label2.Size = new System.Drawing.Size(120, 18);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Bucar por";
+            this.label2.Text = "BUSCAR POR:";
             // 
             // comboBoxBuscarPor
             // 
@@ -81,7 +83,6 @@
             this.comboBoxBuscarPor.Items.AddRange(new object[] {
             "Id",
             "Nome",
-            "CPF",
             "Todos"});
             this.comboBoxBuscarPor.Location = new System.Drawing.Point(12, 85);
             this.comboBoxBuscarPor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -144,18 +145,23 @@
             // 
             // funcionarioDataGridView
             // 
+            this.funcionarioDataGridView.AllowUserToAddRows = false;
+            this.funcionarioDataGridView.AllowUserToDeleteRows = false;
+            this.funcionarioDataGridView.AllowUserToOrderColumns = true;
             this.funcionarioDataGridView.AutoGenerateColumns = false;
             this.funcionarioDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.funcionarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.funcionarioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.nomeDataGridViewTextBoxColumn,
-            this.ativoDataGridViewCheckBoxColumn,
             this.profissaoDataGridViewTextBoxColumn,
-            this.salarioDataGridViewTextBoxColumn});
+            this.Telefone,
+            this.salarioDataGridViewTextBoxColumn,
+            this.ativoDataGridViewCheckBoxColumn});
             this.funcionarioDataGridView.DataSource = this.funcionarioBindingSource;
             this.funcionarioDataGridView.Location = new System.Drawing.Point(12, 120);
             this.funcionarioDataGridView.Name = "funcionarioDataGridView";
+            this.funcionarioDataGridView.ReadOnly = true;
             this.funcionarioDataGridView.RowHeadersWidth = 51;
             this.funcionarioDataGridView.RowTemplate.Height = 29;
             this.funcionarioDataGridView.Size = new System.Drawing.Size(823, 286);
@@ -168,7 +174,7 @@
             this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 125;
+            this.idDataGridViewTextBoxColumn.Width = 50;
             // 
             // nomeDataGridViewTextBoxColumn
             // 
@@ -177,16 +183,7 @@
             this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
             this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ativoDataGridViewCheckBoxColumn
-            // 
-            this.ativoDataGridViewCheckBoxColumn.DataPropertyName = "Ativo";
-            this.ativoDataGridViewCheckBoxColumn.HeaderText = "Ativo";
-            this.ativoDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            this.ativoDataGridViewCheckBoxColumn.Name = "ativoDataGridViewCheckBoxColumn";
-            this.ativoDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.ativoDataGridViewCheckBoxColumn.Width = 125;
+            this.nomeDataGridViewTextBoxColumn.Width = 225;
             // 
             // profissaoDataGridViewTextBoxColumn
             // 
@@ -195,7 +192,16 @@
             this.profissaoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.profissaoDataGridViewTextBoxColumn.Name = "profissaoDataGridViewTextBoxColumn";
             this.profissaoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.profissaoDataGridViewTextBoxColumn.Width = 125;
+            this.profissaoDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // Telefone
+            // 
+            this.Telefone.DataPropertyName = "Telefone";
+            this.Telefone.HeaderText = "Telefone";
+            this.Telefone.MinimumWidth = 6;
+            this.Telefone.Name = "Telefone";
+            this.Telefone.ReadOnly = true;
+            this.Telefone.Width = 165;
             // 
             // salarioDataGridViewTextBoxColumn
             // 
@@ -205,6 +211,15 @@
             this.salarioDataGridViewTextBoxColumn.Name = "salarioDataGridViewTextBoxColumn";
             this.salarioDataGridViewTextBoxColumn.ReadOnly = true;
             this.salarioDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ativoDataGridViewCheckBoxColumn
+            // 
+            this.ativoDataGridViewCheckBoxColumn.DataPropertyName = "Ativo";
+            this.ativoDataGridViewCheckBoxColumn.HeaderText = "Ativo";
+            this.ativoDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            this.ativoDataGridViewCheckBoxColumn.Name = "ativoDataGridViewCheckBoxColumn";
+            this.ativoDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.ativoDataGridViewCheckBoxColumn.Width = 50;
             // 
             // funcionarioBindingSource
             // 
@@ -233,12 +248,24 @@
             this.buttonCancelar.UseVisualStyleBackColor = true;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(162, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(222, 18);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "INSIRA AS INFORMAÇÕES:";
+            // 
             // FormConsultaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(839, 449);
+            this.ClientSize = new System.Drawing.Size(848, 456);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSelecionar);
             this.Controls.Add(this.funcionarioDataGridView);
@@ -254,7 +281,10 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormConsultaFuncionario";
-            this.Text = "FormConsultaFuncionario";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FormConsultaFuncionario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.funcionarioDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.funcionarioBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -273,14 +303,16 @@
         private Button buttonInserir;
         private Button buttonExcluir;
         private DataGridView funcionarioDataGridView;
-        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn foneDataGridViewTextBoxColumn;
-        private DataGridViewCheckBoxColumn ativoDataGridViewCheckBoxColumn;
-        private DataGridViewTextBoxColumn profissaoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn salarioDataGridViewTextBoxColumn;
         private BindingSource funcionarioBindingSource;
         private Button buttonSelecionar;
         private Button buttonCancelar;
+        private Label label3;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn profissaoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Telefone;
+        private DataGridViewTextBoxColumn salarioDataGridViewTextBoxColumn;
+        private DataGridViewCheckBoxColumn ativoDataGridViewCheckBoxColumn;
     }
 }

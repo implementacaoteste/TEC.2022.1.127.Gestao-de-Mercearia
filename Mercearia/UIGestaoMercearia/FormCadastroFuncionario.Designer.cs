@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNome = new System.Windows.Forms.TextBox();
             this.bindingSourceCadastrarFuncionario = new System.Windows.Forms.BindingSource(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxFone = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxProfissao = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxSalario = new System.Windows.Forms.TextBox();
             this.ativoCheckBox = new System.Windows.Forms.CheckBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -58,27 +58,27 @@
             this.label1.Text = "CADASTRO DE FUNCIONÁRIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // textBoxNome
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Nome", true));
-            this.textBox1.Location = new System.Drawing.Point(12, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(611, 27);
-            this.textBox1.TabIndex = 16;
+            this.textBoxNome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxNome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Nome", true));
+            this.textBoxNome.Location = new System.Drawing.Point(12, 100);
+            this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.Size = new System.Drawing.Size(611, 27);
+            this.textBoxNome.TabIndex = 16;
             // 
             // bindingSourceCadastrarFuncionario
             // 
             this.bindingSourceCadastrarFuncionario.DataSource = typeof(Models.Funcionario);
             // 
-            // textBox2
+            // textBoxFone
             // 
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Telefone", true));
-            this.textBox2.Location = new System.Drawing.Point(335, 153);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(218, 27);
-            this.textBox2.TabIndex = 18;
+            this.textBoxFone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxFone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Telefone", true));
+            this.textBoxFone.Location = new System.Drawing.Point(335, 153);
+            this.textBoxFone.Name = "textBoxFone";
+            this.textBoxFone.Size = new System.Drawing.Size(218, 27);
+            this.textBoxFone.TabIndex = 18;
             // 
             // label2
             // 
@@ -113,14 +113,14 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "Profissão";
             // 
-            // textBox3
+            // textBoxProfissao
             // 
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Profissao", true));
-            this.textBox3.Location = new System.Drawing.Point(12, 206);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(360, 27);
-            this.textBox3.TabIndex = 22;
+            this.textBoxProfissao.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxProfissao.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Profissao", true));
+            this.textBoxProfissao.Location = new System.Drawing.Point(12, 206);
+            this.textBoxProfissao.Name = "textBoxProfissao";
+            this.textBoxProfissao.Size = new System.Drawing.Size(360, 27);
+            this.textBoxProfissao.TabIndex = 22;
             // 
             // label5
             // 
@@ -134,14 +134,14 @@
             this.label5.Text = "Salario";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox4
+            // textBoxSalario
             // 
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Salario", true));
-            this.textBox4.Location = new System.Drawing.Point(12, 153);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(317, 27);
-            this.textBox4.TabIndex = 24;
+            this.textBoxSalario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxSalario.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceCadastrarFuncionario, "Salario", true));
+            this.textBoxSalario.Location = new System.Drawing.Point(12, 153);
+            this.textBoxSalario.Name = "textBoxSalario";
+            this.textBoxSalario.Size = new System.Drawing.Size(317, 27);
+            this.textBoxSalario.TabIndex = 24;
             // 
             // ativoCheckBox
             // 
@@ -188,20 +188,22 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.ativoCheckBox);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxSalario);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxProfissao);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxFone);
+            this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCadastroFuncionario";
-            this.Text = "FormCadastroFuncionario";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormCadastroFuncionario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCadastrarFuncionario)).EndInit();
             this.ResumeLayout(false);
@@ -212,14 +214,14 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox textBoxNome;
+        private TextBox textBoxFone;
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox textBoxProfissao;
         private Label label5;
-        private TextBox textBox4;
+        private TextBox textBoxSalario;
         private CheckBox ativoCheckBox;
         private Button buttonSalvar;
         private Button button2;
