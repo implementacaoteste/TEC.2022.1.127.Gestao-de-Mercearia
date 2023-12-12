@@ -16,8 +16,8 @@ namespace DAL
             {
                 SqlCommand cmd = cn.CreateCommand();
 
-                cmd.CommandText = @"INSERT INTO Cliente(Nome, CPF, Endereco, CEP Fone, Email) 
-                                    VALUES(@Nome, @CPF, @Endereco, @Fone, @CEP, @Email)";
+                cmd.CommandText = @"INSERT INTO Cliente(Nome, Cpf, Endereco, CEP, Telefone, Email) 
+                                    VALUES(@Nome, @CPF, @Endereco, @Telefone, @CEP, @Email)";
 
                 cmd.CommandType = System.Data.CommandType.Text;
 
@@ -25,7 +25,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@CPF", _cliente.CPF);
                 cmd.Parameters.AddWithValue("Endereco", _cliente.Endereco);
                 cmd.Parameters.AddWithValue("@Email", _cliente.Email);
-                cmd.Parameters.AddWithValue("@Fone", _cliente.Fone);
+                cmd.Parameters.AddWithValue("@Telefone", _cliente.Fone);
                 cmd.Parameters.AddWithValue("@CEP", _cliente.CEP);
 
 
@@ -36,7 +36,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("Ocorreu um erro ao tentar inserir um cliente no banco de dados.", ex) { Data = { { "Id", 15 } } };
+                throw new Exception("Ocorreu um erro ao tentar inserir um cliente no banco de dados.", ex) { Data = { { "Id", 10065 } } };
             }
             finally
             {
@@ -53,7 +53,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
 
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, CEP, Endereco, Fone FROM Cliente";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, CEP, Endereco, Telefone FROM Cliente";
 
                 cmd.CommandType = System.Data.CommandType.Text;
 
@@ -68,7 +68,7 @@ namespace DAL
                         cliente.CPF = rd["CPF"].ToString();
                         cliente.Email = rd["Email"].ToString();
                         cliente.Endereco = rd["Endereco"].ToString();
-                        cliente.Fone = rd["Fone"].ToString();
+                        cliente.Fone = rd["Telefone"].ToString();
                         cliente.CEP = rd["CEP"].ToString();
 
                         clienteList.Add(cliente);
@@ -95,7 +95,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
 
-                cmd.CommandText = @"SELECT Id, Nome, CPF, CEP, Endereco, Email, Fone FROM Cliente WHERE Nome LIKE @Nome";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, CEP, Endereco, Email, Telefone FROM Cliente WHERE Nome LIKE @Nome";
 
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Nome", "%" + _nome + "%");
@@ -112,7 +112,7 @@ namespace DAL
                         cliente.Endereco = rd["Endereco"].ToString();
                         cliente.CEP = rd["CEP"].ToString();
                         cliente.Email = rd["Email"].ToString();
-                        cliente.Fone = rd["Fone"].ToString();
+                        cliente.Fone = rd["Telefone"].ToString();
 
                         clienteList.Add(cliente);
                     }
@@ -136,7 +136,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, CEP, Fone FROM Cliente WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, CEP, Telefone FROM Cliente WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
 
@@ -151,7 +151,7 @@ namespace DAL
                         cliente.Email = rd["Email"].ToString();
                         cliente.Endereco = rd["Endereco"].ToString();
                         cliente.CEP = rd["CEP"].ToString();
-                        cliente.Fone = rd["Fone"].ToString();
+                        cliente.Fone = rd["Telefone"].ToString();
                     }
                 }
                 return cliente;
@@ -173,7 +173,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, CEP Fone FROM Cliente WHERE CPF = @CPF";
+                cmd.CommandText = @"SELECT Id, Nome, CPF, Email, Endereco, CEP Telefone FROM Cliente WHERE CPF = @CPF";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@CPF", _CPF);
 
@@ -188,7 +188,7 @@ namespace DAL
                         cliente.Email = rd["Email"].ToString();
                         cliente.Endereco = rd["Endereco"].ToString();
                         cliente.CEP = rd["CEP"].ToString();
-                        cliente.Fone = rd["Fone"].ToString();
+                        cliente.Fone = rd["Telefone"].ToString();
                     }
                 }
                 return cliente;
@@ -211,10 +211,10 @@ namespace DAL
                 SqlCommand cmd = cn.CreateCommand();
                 cmd.CommandText = @"UPDATE Cliente SET 
                                         Nome = @Nome, 
-                                        CPF = @CPF, 
-                                       Endereco = @Endereco
-                                       Email = @Email
-                                        Fone = @Fone 
+                                        Cpf = @CPF, 
+                                        Endereco = @Endereco,
+                                        Email = @Email,
+                                        Telefone = @Telefone,
                                         CEP = @CEP
                                     WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -225,7 +225,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@Email", _cliente.Email);
                 cmd.Parameters.AddWithValue("@Endereco", _cliente.Endereco);
                 cmd.Parameters.AddWithValue("@CEP", _cliente.CEP);
-                cmd.Parameters.AddWithValue("@Fone", _cliente.Fone);
+                cmd.Parameters.AddWithValue("@Telefone", _cliente.Fone);
 
                 cmd.Connection = cn;
                 cn.Open();
