@@ -258,11 +258,11 @@
             this.MinimizeBox = false;
             this.Name = "FormeCadastroEstoque";
             this.ShowIcon = false;
-<<<<<<< Updated upstream
-=======
+//<<<<<<< Updated upstream
+//=======
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).EndInit();
