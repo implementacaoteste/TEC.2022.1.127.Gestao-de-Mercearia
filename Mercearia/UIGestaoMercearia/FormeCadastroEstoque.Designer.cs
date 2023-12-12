@@ -297,6 +297,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
             this.Name = "FormeCadastroEstoque";
+            this.ShowIcon = false;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

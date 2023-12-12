@@ -285,7 +285,6 @@
             // bindingSourceVenda
             // 
             this.bindingSourceVenda.DataSource = typeof(Models.Venda);
-            this.bindingSourceVenda.CurrentChanged += new System.EventHandler(this.bindingSourceVenda_CurrentChanged);
             // 
             // FormInicializarVenda
             // 
@@ -307,6 +306,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Name = "FormInicializarVenda";
+            this.ShowIcon = false;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormInicializarVenda_Load);
             this.panel1.ResumeLayout(false);

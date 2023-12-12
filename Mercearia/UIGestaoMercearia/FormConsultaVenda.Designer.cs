@@ -331,6 +331,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormConsultaVenda";
+            this.ShowIcon = false;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
