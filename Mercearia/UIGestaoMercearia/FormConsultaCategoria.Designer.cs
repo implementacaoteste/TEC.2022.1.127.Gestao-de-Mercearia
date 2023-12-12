@@ -287,6 +287,7 @@
             this.Name = "FormConsultaCategoria";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormConsultaCategoria_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

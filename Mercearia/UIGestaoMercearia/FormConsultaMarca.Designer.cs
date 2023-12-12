@@ -1,4 +1,4 @@
-﻿namespace UIGestaoMercearia
+﻿,namespace UIGestaoMercearia
 {
     partial class FormConsultaMarca
     {
@@ -45,6 +45,7 @@
             this.bindingSourceMarca = new System.Windows.Forms.BindingSource(this.components);
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonSelecionar = new System.Windows.Forms.Button();
+            this.labelGerenProd = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceMarca)).BeginInit();
@@ -84,6 +85,8 @@
             this.label2.Size = new System.Drawing.Size(174, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "Insira a Informação:";
+            // label2
+            //
             // 
             // label1
             // 
@@ -241,6 +244,19 @@
             this.buttonSelecionar.Text = "Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = true;
             this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
+            //
+=======
+            // labelGerenProd
+            // 
+            this.labelGerenProd.AutoSize = true;
+            this.labelGerenProd.BackColor = System.Drawing.SystemColors.Highlight;
+            this.labelGerenProd.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelGerenProd.ForeColor = System.Drawing.SystemColors.Control;
+            this.labelGerenProd.Location = new System.Drawing.Point(12, 26);
+            this.labelGerenProd.Name = "labelGerenProd";
+            this.labelGerenProd.Size = new System.Drawing.Size(249, 28);
+            this.labelGerenProd.TabIndex = 0;
+            this.labelGerenProd.Text = "Gerenciamento de Marcas";
             // 
             // FormConsultaMarca
             // 
@@ -267,6 +283,7 @@
             this.Name = "FormConsultaMarca";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormConsultaMarca_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
