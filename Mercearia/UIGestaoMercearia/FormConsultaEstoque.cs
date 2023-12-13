@@ -131,7 +131,7 @@ namespace UIGestaoMercearia
                 if (MessageBox.Show("Deseja realmente excluir este registro?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
                     return;
 
-                int id = ((Cliente)bindingSourceEstoque.Current).Id;
+                int id = ((Estoque)bindingSourceEstoque.Current).Id;
                 new EstoqueBLL().Excluir(id);
                 bindingSourceEstoque.RemoveCurrent();
             }
