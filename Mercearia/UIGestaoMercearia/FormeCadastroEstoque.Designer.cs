@@ -88,7 +88,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(354, 183);
+            this.label2.Location = new System.Drawing.Point(343, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 18);
             this.label2.TabIndex = 5;
@@ -101,7 +101,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(354, 100);
+            this.label3.Location = new System.Drawing.Point(343, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 18);
             this.label3.TabIndex = 6;
@@ -110,7 +110,7 @@
             // textBox2
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "DatadeSaida", true));
-            this.textBox2.Location = new System.Drawing.Point(354, 121);
+            this.textBox2.Location = new System.Drawing.Point(343, 206);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(216, 27);
             this.textBox2.TabIndex = 7;
@@ -137,7 +137,7 @@
             // textBoxDataEntrada
             // 
             this.textBoxDataEntrada.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "DatadeEntrada", true));
-            this.textBoxDataEntrada.Location = new System.Drawing.Point(354, 206);
+            this.textBoxDataEntrada.Location = new System.Drawing.Point(343, 121);
             this.textBoxDataEntrada.Name = "textBoxDataEntrada";
             this.textBoxDataEntrada.Size = new System.Drawing.Size(216, 27);
             this.textBoxDataEntrada.TabIndex = 10;
@@ -145,7 +145,7 @@
             // textBoxEstoqueMinimo
             // 
             this.textBoxEstoqueMinimo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "EstoqueMinimo", true));
-            this.textBoxEstoqueMinimo.Location = new System.Drawing.Point(354, 293);
+            this.textBoxEstoqueMinimo.Location = new System.Drawing.Point(343, 293);
             this.textBoxEstoqueMinimo.Name = "textBoxEstoqueMinimo";
             this.textBoxEstoqueMinimo.Size = new System.Drawing.Size(215, 27);
             this.textBoxEstoqueMinimo.TabIndex = 11;
@@ -171,7 +171,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(354, 272);
+            this.label5.Location = new System.Drawing.Point(343, 272);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(137, 18);
             this.label5.TabIndex = 13;
@@ -186,9 +186,9 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(41, 100);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 18);
+            this.label6.Size = new System.Drawing.Size(72, 18);
             this.label6.TabIndex = 14;
-            this.label6.Text = "Id do Produto";
+            this.label6.Text = "Produto";
             // 
             // label7
             // 
@@ -215,7 +215,7 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(475, 350);
+            this.buttonCancelar.Location = new System.Drawing.Point(465, 350);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
             this.buttonCancelar.TabIndex = 23;
@@ -225,7 +225,7 @@
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(375, 350);
+            this.buttonSalvar.Location = new System.Drawing.Point(365, 350);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(94, 29);
             this.buttonSalvar.TabIndex = 24;

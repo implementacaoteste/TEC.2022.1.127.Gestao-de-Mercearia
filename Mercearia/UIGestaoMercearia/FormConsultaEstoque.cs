@@ -56,7 +56,19 @@ namespace UIGestaoMercearia
         {
             try
             {
-                bindingSourceEstoque.DataSource = new GrupoUsuarioBLL().BuscarPorNomeGrupo(buttonBuscar.Text);
+                switch (comboBoxBuscarPor.SelectedIndex)
+                {
+                    case 0:
+                        if (String.IsNullOrEmpty(textBoxBuscarPor.Text))
+                            throw new Exception("Informe um Id para fazer a busca.") { Data = { { "Id", 10030 } } };
+                        bindingSourceEstoque.DataSource = new EstoqueBLL().BuscarPorId(Convert.ToInt32(textBoxBuscarPor.Text));
+                        break;
+                    case 1:
+                        bindingSourceEstoque.DataSource = new EstoqueBLL().BuscarTudo();
+                        break;
+                    default:
+                        break;
+                }
             }
             catch (Exception ex)
             {
@@ -78,7 +90,7 @@ namespace UIGestaoMercearia
 
                 int id = ((Estoque)bindingSourceEstoque.Current).Id;
 
-                using (FormCadastroGrupoUsuario frm = new FormCadastroGrupoUsuario(((GrupoUsuario)bindingSourceEstoque.Current).Id))
+                using (FormeCadastroEstoque frm = new FormeCadastroEstoque(((Estoque)bindingSourceEstoque.Current).Id))
                 {
                     frm.ShowDialog();
                 }
@@ -119,7 +131,7 @@ namespace UIGestaoMercearia
                 if (MessageBox.Show("Deseja realmente excluir este registro?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
                     return;
 
-                int id = ((Cliente)bindingSourceEstoque.Current).Id;
+                int id = ((Estoque)bindingSourceEstoque.Current).Id;
                 new EstoqueBLL().Excluir(id);
                 bindingSourceEstoque.RemoveCurrent();
             }
