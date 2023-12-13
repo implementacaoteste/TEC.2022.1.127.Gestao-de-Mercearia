@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.buttonBuscarCodigodeBarra = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,9 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.labelPrecoUnitario = new System.Windows.Forms.Label();
-            this.labelValorTotal = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +56,8 @@
             this.bindingSourceVenda = new System.Windows.Forms.BindingSource(this.components);
             this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -119,6 +120,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.buttonBuscarCodigodeBarra);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label4);
@@ -128,11 +130,22 @@
             this.panel3.Size = new System.Drawing.Size(1062, 126);
             this.panel3.TabIndex = 2;
             // 
+            // buttonBuscarCodigodeBarra
+            // 
+            this.buttonBuscarCodigodeBarra.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonBuscarCodigodeBarra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
+            this.buttonBuscarCodigodeBarra.Location = new System.Drawing.Point(244, 22);
+            this.buttonBuscarCodigodeBarra.Name = "buttonBuscarCodigodeBarra";
+            this.buttonBuscarCodigodeBarra.Size = new System.Drawing.Size(32, 29);
+            this.buttonBuscarCodigodeBarra.TabIndex = 14;
+            this.buttonBuscarCodigodeBarra.Text = "...";
+            this.buttonBuscarCodigodeBarra.UseVisualStyleBackColor = true;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(48, 45);
+            this.label12.Location = new System.Drawing.Point(48, 50);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(211, 50);
             this.label12.TabIndex = 13;
@@ -142,7 +155,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(48, 17);
+            this.label11.Location = new System.Drawing.Point(53, 22);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(194, 28);
             this.label11.TabIndex = 13;
@@ -185,7 +198,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(490, 146);
+            this.label6.Location = new System.Drawing.Point(490, 143);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(163, 31);
             this.label6.TabIndex = 5;
@@ -198,9 +211,9 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(1230, 146);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 31);
+            this.label7.Size = new System.Drawing.Size(155, 31);
             this.label7.TabIndex = 6;
-            this.label7.Text = "VALOR TOTAL";
+            this.label7.Text = "VALOR PAGO";
             // 
             // buttonSalvar
             // 
@@ -232,16 +245,6 @@
             this.buttonCancelar.UseVisualStyleBackColor = false;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(474, 177);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(140, 81);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "100";
-            // 
             // labelPrecoUnitario
             // 
             this.labelPrecoUnitario.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -252,17 +255,6 @@
             this.labelPrecoUnitario.Size = new System.Drawing.Size(191, 81);
             this.labelPrecoUnitario.TabIndex = 11;
             this.labelPrecoUnitario.Text = "100,0";
-            // 
-            // labelValorTotal
-            // 
-            this.labelValorTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelValorTotal.AutoSize = true;
-            this.labelValorTotal.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelValorTotal.Location = new System.Drawing.Point(1212, 177);
-            this.labelValorTotal.Name = "labelValorTotal";
-            this.labelValorTotal.Size = new System.Drawing.Size(191, 81);
-            this.labelValorTotal.TabIndex = 12;
-            this.labelValorTotal.Text = "100,0";
             // 
             // pictureBox1
             // 
@@ -347,9 +339,10 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(457, 743);
+            this.label9.Location = new System.Drawing.Point(454, 724);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(191, 81);
             this.label9.TabIndex = 14;
@@ -358,14 +351,31 @@
             // 
             // label13
             // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(474, 712);
+            this.label13.Location = new System.Drawing.Point(474, 693);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(96, 31);
             this.label13.TabIndex = 13;
             this.label13.Text = "TROCO:";
             this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(454, 177);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(241, 87);
+            this.textBox1.TabIndex = 15;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.Location = new System.Drawing.Point(1186, 177);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(241, 87);
+            this.textBox2.TabIndex = 16;
             // 
             // FormInicializarVenda
             // 
@@ -373,11 +383,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1466, 954);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.labelValorTotal);
             this.Controls.Add(this.labelPrecoUnitario);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.dataGridView1);
@@ -420,7 +430,6 @@
         private Label label7;
         private Button buttonSalvar;
         private Button buttonCancelar;
-        private Label label8;
         private Label labelPrecoUnitario;
         private Label label10;
         private Label label12;
@@ -435,8 +444,10 @@
         private DataGridViewTextBoxColumn precoVendaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn idFormaPagamentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dataVendaDataGridViewTextBoxColumn;
-        private Label labelValorTotal;
         private Label label9;
         private Label label13;
+        private Button buttonBuscarCodigodeBarra;
+        private TextBox textBox1;
+        private TextBox textBox2;
     }
 }

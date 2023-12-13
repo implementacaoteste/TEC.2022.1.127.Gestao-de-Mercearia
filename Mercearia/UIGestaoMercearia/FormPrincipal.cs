@@ -1,6 +1,7 @@
 ﻿using Models;
 using System;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace UIGestaoMercearia
 {
@@ -225,6 +226,11 @@ namespace UIGestaoMercearia
             {
                 frm.ShowDialog();
             }
+        }
+
+        private void monthCalendar2_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
         }
     }
 }

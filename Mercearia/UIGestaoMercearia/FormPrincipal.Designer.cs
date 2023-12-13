@@ -28,6 +28,7 @@ namespace UIGestaoMercearia
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label label1;
             System.Windows.Forms.Label MENU;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
@@ -46,7 +47,6 @@ namespace UIGestaoMercearia
             this.buttonProdutos = new System.Windows.Forms.Button();
             this.buttonFornecedores = new System.Windows.Forms.Button();
             this.buttonFuncionarios = new System.Windows.Forms.Button();
-            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -67,6 +67,7 @@ namespace UIGestaoMercearia
             this.buttonIniciarVenda = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             label1 = new System.Windows.Forms.Label();
             MENU = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -173,7 +174,6 @@ namespace UIGestaoMercearia
             this.panel2.Controls.Add(this.buttonProdutos);
             this.panel2.Controls.Add(this.buttonFornecedores);
             this.panel2.Controls.Add(this.buttonFuncionarios);
-            this.panel2.Controls.Add(this.monthCalendar2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -314,12 +314,6 @@ namespace UIGestaoMercearia
             this.buttonFuncionarios.Text = "Funcionários";
             this.buttonFuncionarios.UseVisualStyleBackColor = false;
             this.buttonFuncionarios.Click += new System.EventHandler(this.buttonFuncionarios_Click);
-            // 
-            // monthCalendar2
-            // 
-            this.monthCalendar2.Location = new System.Drawing.Point(9, 662);
-            this.monthCalendar2.Name = "monthCalendar2";
-            this.monthCalendar2.TabIndex = 4;
             // 
             // button6
             // 
@@ -552,7 +546,6 @@ namespace UIGestaoMercearia
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox2.ErrorImage = null;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = null;
             this.pictureBox2.Location = new System.Drawing.Point(0, 226);
             this.pictureBox2.Name = "pictureBox2";
@@ -625,7 +618,6 @@ namespace UIGestaoMercearia
         private Button buttonProdutos;
         private Button buttonFornecedores;
         private Button buttonFuncionarios;
-        private MonthCalendar monthCalendar2;
         private Panel panel3;
         private Label label4;
         private PictureBox pictureBoxLogo;
@@ -641,6 +633,7 @@ namespace UIGestaoMercearia
         private Button buttonCategorias;
         private Button button8;
         private Button button9;
+        private ToolTip toolTip1;
     }
 }
 
