@@ -5,10 +5,13 @@ namespace UIGestaoMercearia
 {
     public partial class FormConsultaProduto : Form
     {
-
-        public FormConsultaProduto()
+        public Produto produto;
+        private bool selecionarRegistro;
+        public FormConsultaProduto(bool _selecionarRegistro = false)
         {
             InitializeComponent();
+            this.selecionarRegistro = _selecionarRegistro;
+            buttonSelecionar.Visible = selecionarRegistro;
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
@@ -120,6 +123,8 @@ namespace UIGestaoMercearia
         {
             try
             {
+                if (!selecionarRegistro)
+                    return;
                 if (bindingSourceProduto.Count == 0)
                 {
                     MessageBox.Show("Não existe produto para ser selecionado.");
@@ -127,10 +132,10 @@ namespace UIGestaoMercearia
                 }
 
 
-                Produto selectedProduto = (Produto)bindingSourceProduto.Current;
+                produto = (Produto)bindingSourceProduto.Current;
 
 
-                MessageBox.Show($"Produto Selecionado: {selectedProduto.Nome}, Id: {selectedProduto.Id}");
+                this.Close();
 
 
             }
@@ -146,5 +151,9 @@ namespace UIGestaoMercearia
             buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
         }
 
+        private void dataGridViewProduto_DoubleClick(object sender, EventArgs e)
+        {
+            buttonSelecionar_Click(sender, e);
+        }
     }
 }

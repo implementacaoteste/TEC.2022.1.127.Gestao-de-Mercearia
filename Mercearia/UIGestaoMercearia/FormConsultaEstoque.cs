@@ -15,24 +15,37 @@ namespace UIGestaoMercearia
 
     public partial class FormConsultaEstoque : Form
     {
-        private BindingSource EstoqueBindingSource = new BindingSource();
-        public int Id;
-        public FormConsultaEstoque()
+        //private BindingSource EstoqueBindingSource = new BindingSource();
+        //public int Id;
+        public Estoque estoque;
+        private bool selecionarRegistro;
+
+        public FormConsultaEstoque(bool _selecionarRegistro = false)
         {
             InitializeComponent();
+            this.selecionarRegistro = _selecionarRegistro;
+            buttonSelecionar.Visible = selecionarRegistro;
         }
 
         private void buttonSelecionar_Click(object sender, EventArgs e)
         {
             try
             {
-                if (bindingSourceEstoque.Count > 0)
+                if (!selecionarRegistro)
+                    return;
+                if (bindingSourceEstoque.Count == 0)
                 {
-                    Id = ((GrupoUsuario)bindingSourceEstoque.Current).Id;
-                    Close();
+                    MessageBox.Show("Não existe estoque para ser selecionado.");
+                    return;
                 }
-                else
-                    MessageBox.Show("Não existe registro para ser selecionado.");
+
+
+                estoque = (Estoque)bindingSourceEstoque.Current;
+
+
+                this.Close();
+
+
             }
             catch (Exception ex)
             {
@@ -43,7 +56,7 @@ namespace UIGestaoMercearia
         {
             try
             {
-                EstoqueBindingSource.DataSource = new GrupoUsuarioBLL().BuscarPorNomeGrupo(buttonBuscar.Text);
+                bindingSourceEstoque.DataSource = new GrupoUsuarioBLL().BuscarPorNomeGrupo(buttonBuscar.Text);
             }
             catch (Exception ex)
             {
@@ -57,10 +70,15 @@ namespace UIGestaoMercearia
 
             try
             {
-                if (EstoqueBindingSource.Count == 0)
-                    throw new Exception("Não existe grupo listado para ser alterado.");
+                if (bindingSourceEstoque.Count == 0)
+                {
+                    MessageBox.Show("Não existe grupo listado para ser alterado.");
+                    return;
+                }
 
-                using (FormCadastroGrupoUsuario frm = new FormCadastroGrupoUsuario(((GrupoUsuario)EstoqueBindingSource.Current).Id))
+                int id = ((Estoque)bindingSourceEstoque.Current).Id;
+
+                using (FormCadastroGrupoUsuario frm = new FormCadastroGrupoUsuario(((GrupoUsuario)bindingSourceEstoque.Current).Id))
                 {
                     frm.ShowDialog();
                 }
@@ -77,7 +95,7 @@ namespace UIGestaoMercearia
         {
             try
             {
-                using (FormCadastroProduto frm = new FormCadastroProduto())
+                using (FormeCadastroEstoque frm = new FormeCadastroEstoque())
                 {
                     frm.ShowDialog();
                 }
@@ -92,7 +110,7 @@ namespace UIGestaoMercearia
         {
             try
             {
-                if (EstoqueBindingSource.Count <= 0)
+                if (bindingSourceEstoque.Count <= 0)
                 {
                     MessageBox.Show("Não existe registro para ser excluído");
                     return;
@@ -101,9 +119,9 @@ namespace UIGestaoMercearia
                 if (MessageBox.Show("Deseja realmente excluir este registro?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
                     return;
 
-                int id = ((Cliente)EstoqueBindingSource.Current).Id;
+                int id = ((Cliente)bindingSourceEstoque.Current).Id;
                 new EstoqueBLL().Excluir(id);
-                EstoqueBindingSource.RemoveCurrent();
+                bindingSourceEstoque.RemoveCurrent();
             }
             catch (Exception ex)
             {
@@ -122,6 +140,17 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void FormConsultaEstoque_Load(object sender, EventArgs e)
+        {
+            comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1; //seleciona sempre o ultimo indice da ComboBox
+            buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
+        }
+
+        private void dataGridViewEstoque_DoubleClick(object sender, EventArgs e)
+        {
+            buttonSelecionar_Click(sender, e);
         }
     }
 }

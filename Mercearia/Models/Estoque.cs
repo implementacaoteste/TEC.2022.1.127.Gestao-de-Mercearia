@@ -13,6 +13,17 @@ namespace Models
         public DateTime DatadeSaida { get; set; }
         public int EstoqueMinimo { get; set; }
         public int EstoqueMaximo { get; set; }
+        public int QtdEstoque { get; set; }
         public int IdProduto { get; set; }
+        public Produto Produto { get; set; }
+        public string NomeProduto
+        {
+            get
+            {
+                if (Produto == null)
+                    return string.Empty;
+                return Produto.Nome;
+            }
+        }
     }
 }

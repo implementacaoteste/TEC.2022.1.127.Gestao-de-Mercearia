@@ -41,7 +41,7 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"UPDATE Categoria SET Id = @Id, Categoria = @Categoria WHERE Id = @Id";
+                cmd.CommandText = @"UPDATE Categoria SET Nome = @Nome WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Id", _Categoria.Id);

@@ -48,9 +48,9 @@
             this.buttonInserir = new System.Windows.Forms.Button();
             this.buttonEcluir = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceProduto)).BeginInit();
@@ -124,6 +124,7 @@
             this.dataGridViewProduto.RowTemplate.Height = 29;
             this.dataGridViewProduto.Size = new System.Drawing.Size(976, 334);
             this.dataGridViewProduto.TabIndex = 1;
+            this.dataGridViewProduto.DoubleClick += new System.EventHandler(this.dataGridViewProduto_DoubleClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -262,6 +263,29 @@
             this.panel2.Size = new System.Drawing.Size(982, 138);
             this.panel2.TabIndex = 2;
             // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(164, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(201, 18);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "INSIRA A INFORMAÇÃO:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(3, 87);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 18);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "BUSCAR POR:";
+            // 
             // label1
             // 
             this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -276,29 +300,6 @@
             this.label1.Size = new System.Drawing.Size(987, 46);
             this.label1.TabIndex = 3;
             this.label1.Text = "                     CONSULTA DE PRODUTO                        ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(3, 87);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 18);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "BUSCAR POR:";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(164, 87);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(201, 18);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "INSIRA A INFORMAÇÃO:";
             // 
             // FormConsultaProduto
             // 
