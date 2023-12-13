@@ -15,47 +15,14 @@ namespace UIGestaoMercearia
     public partial class FormInicializarVenda : Form
     {
         int id;
+
+        public Produto produtoAtual { get; private set; }
+
         public FormInicializarVenda(int _id = 0)
         {
             InitializeComponent();
             id = _id;
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormInicializarVenda_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -93,6 +60,16 @@ namespace UIGestaoMercearia
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
