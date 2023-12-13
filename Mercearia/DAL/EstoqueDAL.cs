@@ -17,15 +17,15 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Estoque(Id, DatadeEntrada, DatadeSaida, EstoqueMinimo, EstoqueMaximo, IdProduto) 
-                                    VALUES(@Id, @DatadeEntrada, @DatadeSaida, @EstoqueMinimo, @EstoqueMaximo, @IdProduto)";
+                cmd.CommandText = @"INSERT INTO Estoque(DataDeEntrada, DataDeSaida, EstoqueMinimo, EstoqueMaximo, QuantidadeEmEstoque,IdProduto) 
+                                    VALUES(@DataDeEntrada, @DataDeSaida, @EstoqueMinimo, @EstoqueMaximo, @QuantidadeEmEstoque, @IdProduto)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
-                cmd.Parameters.AddWithValue("@Id", _estoque.Id);
-                cmd.Parameters.AddWithValue("@DatadeEntrada", _estoque.DatadeEntrada);
-                cmd.Parameters.AddWithValue("@DatadeSaida", _estoque.DatadeSaida);
+                cmd.Parameters.AddWithValue("@DataDeEntrada", _estoque.DatadeEntrada);
+                cmd.Parameters.AddWithValue("@DataDeSaida", _estoque.DatadeSaida);
                 cmd.Parameters.AddWithValue("@EstoqueMinimo", _estoque.EstoqueMinimo);
                 cmd.Parameters.AddWithValue("@EstoqueMaximo", _estoque.EstoqueMaximo);
+                cmd.Parameters.AddWithValue("@QuantidadeEmEstoque", _estoque.QtdEstoque);
                 cmd.Parameters.AddWithValue("@IdProduto", _estoque.IdProduto);
 
                 cmd.Connection = cn;
@@ -49,15 +49,16 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"UPDATE Estoque SET Id = @Id , DatadeEntrada = @DatadeEntrada, DatadeSaida = @DatadeSaida, EstoqueMinimo = @EstoqueMinimo, EstoqueMaximo = @EstoqueMaximo, IdProduto = @IdProduto WHERE Id = @Id"; 
+                cmd.CommandText = @"UPDATE Estoque SET DataDeEntrada = @DataDeEntrada, DataDeSaida = @DataDeSaida, EstoqueMinimo = @EstoqueMinimo, EstoqueMaximo = @EstoqueMaximo, @QuantidadeEmEstoque, IdProduto = @IdProduto WHERE Id = @Id"; 
                                     
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Id", _estoque.Id);
-                cmd.Parameters.AddWithValue("@DatadeEntrada", _estoque.DatadeEntrada);
-                cmd.Parameters.AddWithValue("@DatadeSaida", _estoque.DatadeSaida);
+                cmd.Parameters.AddWithValue("@DataDeEntrada", _estoque.DatadeEntrada);
+                cmd.Parameters.AddWithValue("@DataDeSaida", _estoque.DatadeSaida);
                 cmd.Parameters.AddWithValue("@EstoqueMinimo", _estoque.EstoqueMinimo);
                 cmd.Parameters.AddWithValue("@EstoqueMaximo", _estoque.EstoqueMaximo);
+                cmd.Parameters.AddWithValue("@QuantidadeEmEstoque", _estoque.QtdEstoque);
                 cmd.Parameters.AddWithValue("@IdProduto", _estoque.IdProduto);
 
                 cmd.Connection = cn;
@@ -81,7 +82,7 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"DELETE FROM Estoque WHERE id = @id";
+                cmd.CommandText = @"DELETE FROM Estoque WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Id", _id);
@@ -102,26 +103,29 @@ namespace DAL
         }
         public Estoque BuscarPorId(int _id)
         {
-            Estoque estoque = new Estoque();
+            //Estoque estoque = new Estoque();
+            Estoque estoque;
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             try
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, DatadeEntrada, DatadeSaida, EstoqueMinimo, EstoqueMaximo, IdProduto FROM Estoque WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, DataDeEntrada, DataDeSaida, EstoqueMinimo, EstoqueMaximo, IdProduto FROM Estoque WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
 
                 cn.Open();
                 using (SqlDataReader rd = cmd.ExecuteReader())
                 {
-                    while (rd.Read())
+                    estoque = new Estoque();
+                    if (rd.Read())
                     {
                         estoque.Id = Convert.ToInt32(rd["Id"]);
-                        estoque.DatadeEntrada = Convert.ToDateTime(rd["DatadeEntrada"]); 
-                        estoque.DatadeSaida = Convert.ToDateTime(rd["DatadeSaida"]);
-                        estoque.EstoqueMinimo = Convert.ToInt32(rd["EstoqueMinimo"]); ;
+                        estoque.DatadeEntrada = Convert.ToDateTime(rd["DataDeEntrada"]); 
+                        estoque.DatadeSaida = Convert.ToDateTime(rd["DataDeSaida"]);
+                        estoque.EstoqueMinimo = Convert.ToInt32(rd["EstoqueMinimo"]); 
                         estoque.EstoqueMaximo = Convert.ToInt32(rd["EstoqueMaximo"]);
+                        estoque.QtdEstoque = Convert.ToInt32(rd["QuantidadeEmEstoque"]);
                         estoque.IdProduto = Convert.ToInt32(rd["IdProduto"]);
                     }
                 }
@@ -147,7 +151,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
 
-                cmd.CommandText = @"SELECT Id, DatadeEntrada, DatadeSaida, EstoqueMinimo, EstoqueMaximo, IdProduto FROM Estoque WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, DataDeEntrada, DataDeSaida, EstoqueMinimo, EstoqueMaximo, QuantidadeEmEstoque, IdProduto FROM Estoque";
 
                 cmd.CommandType = System.Data.CommandType.Text;
 
@@ -158,10 +162,11 @@ namespace DAL
                     {
                         estoque = new Estoque();
                         estoque.Id = (int)rd["Id"];
-                        estoque.DatadeEntrada = Convert.ToDateTime(rd["DatadeEntrada"]);
-                        estoque.DatadeSaida = Convert.ToDateTime(rd["DatadeSaida"]);
-                        estoque.EstoqueMinimo = Convert.ToInt32(rd["EstoqueMinimo"]); ;
+                        estoque.DatadeEntrada = Convert.ToDateTime(rd["DataDeEntrada"]);
+                        estoque.DatadeSaida = Convert.ToDateTime(rd["DataDeSaida"]);
+                        estoque.EstoqueMinimo = Convert.ToInt32(rd["EstoqueMinimo"]); 
                         estoque.EstoqueMaximo = Convert.ToInt32(rd["EstoqueMaximo"]);
+                        estoque.QtdEstoque = Convert.ToInt32(rd["QuantidadeEmEstoque"]);
                         estoque.IdProduto = Convert.ToInt32(rd["IdProduto"]);
                         estoqueList.Add(estoque);
                     }
