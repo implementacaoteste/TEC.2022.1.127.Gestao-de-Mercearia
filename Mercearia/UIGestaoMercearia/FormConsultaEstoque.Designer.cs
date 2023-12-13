@@ -46,7 +46,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.NomeProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datadeEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datadeSaidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estoqueMinimoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,18 +71,18 @@
             this.dataGridViewEstoque.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEstoque.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NomeProduto,
+            this.IdProduto,
             this.datadeEntradaDataGridViewTextBoxColumn,
             this.datadeSaidaDataGridViewTextBoxColumn,
             this.estoqueMinimoDataGridViewTextBoxColumn,
             this.estoqueMaximoDataGridViewTextBoxColumn});
             this.dataGridViewEstoque.DataSource = this.bindingSourceEstoque;
-            this.dataGridViewEstoque.Location = new System.Drawing.Point(10, 156);
+            this.dataGridViewEstoque.Location = new System.Drawing.Point(12, 154);
             this.dataGridViewEstoque.Name = "dataGridViewEstoque";
             this.dataGridViewEstoque.ReadOnly = true;
             this.dataGridViewEstoque.RowHeadersWidth = 51;
             this.dataGridViewEstoque.RowTemplate.Height = 29;
-            this.dataGridViewEstoque.Size = new System.Drawing.Size(826, 234);
+            this.dataGridViewEstoque.Size = new System.Drawing.Size(820, 234);
             this.dataGridViewEstoque.TabIndex = 4;
             this.dataGridViewEstoque.DoubleClick += new System.EventHandler(this.dataGridViewEstoque_DoubleClick);
             // 
@@ -258,50 +258,50 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Buscar Por:";
             // 
-            // NomeProduto
+            // IdProduto
             // 
-            this.NomeProduto.DataPropertyName = "NomeProduto";
-            this.NomeProduto.HeaderText = "Nome do Produto";
-            this.NomeProduto.MinimumWidth = 6;
-            this.NomeProduto.Name = "NomeProduto";
-            this.NomeProduto.ReadOnly = true;
-            this.NomeProduto.Width = 225;
+            this.IdProduto.DataPropertyName = "IdProduto";
+            this.IdProduto.HeaderText = "Código do Produto";
+            this.IdProduto.MinimumWidth = 6;
+            this.IdProduto.Name = "IdProduto";
+            this.IdProduto.ReadOnly = true;
+            this.IdProduto.Width = 125;
             // 
             // datadeEntradaDataGridViewTextBoxColumn
             // 
             this.datadeEntradaDataGridViewTextBoxColumn.DataPropertyName = "DatadeEntrada";
-            this.datadeEntradaDataGridViewTextBoxColumn.HeaderText = "DatadeEntrada";
+            this.datadeEntradaDataGridViewTextBoxColumn.HeaderText = "Data de Entrada";
             this.datadeEntradaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.datadeEntradaDataGridViewTextBoxColumn.Name = "datadeEntradaDataGridViewTextBoxColumn";
             this.datadeEntradaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.datadeEntradaDataGridViewTextBoxColumn.Width = 150;
+            this.datadeEntradaDataGridViewTextBoxColumn.Width = 175;
             // 
             // datadeSaidaDataGridViewTextBoxColumn
             // 
             this.datadeSaidaDataGridViewTextBoxColumn.DataPropertyName = "DatadeSaida";
-            this.datadeSaidaDataGridViewTextBoxColumn.HeaderText = "DatadeSaida";
+            this.datadeSaidaDataGridViewTextBoxColumn.HeaderText = "Data de Saida";
             this.datadeSaidaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.datadeSaidaDataGridViewTextBoxColumn.Name = "datadeSaidaDataGridViewTextBoxColumn";
             this.datadeSaidaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.datadeSaidaDataGridViewTextBoxColumn.Width = 150;
+            this.datadeSaidaDataGridViewTextBoxColumn.Width = 175;
             // 
             // estoqueMinimoDataGridViewTextBoxColumn
             // 
             this.estoqueMinimoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMinimo";
-            this.estoqueMinimoDataGridViewTextBoxColumn.HeaderText = "EstoqueMinimo";
+            this.estoqueMinimoDataGridViewTextBoxColumn.HeaderText = "Estoque Minimo";
             this.estoqueMinimoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.estoqueMinimoDataGridViewTextBoxColumn.Name = "estoqueMinimoDataGridViewTextBoxColumn";
             this.estoqueMinimoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.estoqueMinimoDataGridViewTextBoxColumn.Width = 125;
+            this.estoqueMinimoDataGridViewTextBoxColumn.Width = 150;
             // 
             // estoqueMaximoDataGridViewTextBoxColumn
             // 
             this.estoqueMaximoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMaximo";
-            this.estoqueMaximoDataGridViewTextBoxColumn.HeaderText = "EstoqueMaximo";
+            this.estoqueMaximoDataGridViewTextBoxColumn.HeaderText = "Estoque Maximo";
             this.estoqueMaximoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.estoqueMaximoDataGridViewTextBoxColumn.Name = "estoqueMaximoDataGridViewTextBoxColumn";
             this.estoqueMaximoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.estoqueMaximoDataGridViewTextBoxColumn.Width = 125;
+            this.estoqueMaximoDataGridViewTextBoxColumn.Width = 150;
             // 
             // FormConsultaEstoque
             // 
@@ -348,7 +348,7 @@
         private Panel panel3;
         private Label label2;
         private Button button2;
-        private DataGridViewTextBoxColumn NomeProduto;
+        private DataGridViewTextBoxColumn IdProduto;
         private DataGridViewTextBoxColumn datadeEntradaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn datadeSaidaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn estoqueMinimoDataGridViewTextBoxColumn;

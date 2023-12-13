@@ -110,7 +110,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, DataDeEntrada, DataDeSaida, EstoqueMinimo, EstoqueMaximo, IdProduto FROM Estoque WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, DataDeEntrada, DataDeSaida, EstoqueMinimo, EstoqueMaximo, QuantidadeEmEstoque, IdProduto FROM Estoque WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
 
