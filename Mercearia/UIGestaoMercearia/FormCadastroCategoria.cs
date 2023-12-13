@@ -26,7 +26,7 @@ namespace UIGestaoMercearia
             if (id == 0)
                 categoriaBindingSource.AddNew();
             else
-                categoriaBindingSource.DataSource = new MarcaBLL().BuscarPorId(id);
+                categoriaBindingSource.DataSource = new CategoriaBLL().BuscarPorId(id);
         }
 
         private void buttonSalvar_Click(object sender, EventArgs e)
