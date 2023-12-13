@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using BLL;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,6 +47,55 @@ namespace UIGestaoMercearia
                     textBoxNomeProduto.Text = frm.produto.Nome;
                     ((Estoque)bindingSourceEstoque.Current).IdProduto = frm.produto.Id;
                 }
+            }
+        }
+
+        private void FormeCadastroEstoque_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                if (id == 0)
+                    bindingSourceEstoque.AddNew();
+                else
+                    bindingSourceEstoque.DataSource = new EstoqueBLL().BuscarPorId(id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonSalvar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Estoque estoque = (Estoque)bindingSourceEstoque.Current;
+
+                bindingSourceEstoque.EndEdit();
+
+                if (id == 0)
+                    new EstoqueBLL().Inserir(estoque);
+                else
+                    new EstoqueBLL().Alterar(estoque);
+
+                MessageBox.Show("Registro salvo com sucesso!");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -123,6 +123,8 @@ namespace UIGestaoMercearia
         {
             try
             {
+                if (!selecionarRegistro)
+                    return;
                 if (bindingSourceProduto.Count == 0)
                 {
                     MessageBox.Show("Não existe produto para ser selecionado.");
@@ -130,10 +132,10 @@ namespace UIGestaoMercearia
                 }
 
 
-                Produto selectedProduto = (Produto)bindingSourceProduto.Current;
+                produto = (Produto)bindingSourceProduto.Current;
 
 
-                MessageBox.Show($"Produto Selecionado: {selectedProduto.Nome}, Id: {selectedProduto.Id}");
+                this.Close();
 
 
             }

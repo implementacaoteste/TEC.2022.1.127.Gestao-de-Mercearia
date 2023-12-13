@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.bindingSourceEstoque = new System.Windows.Forms.BindingSource(this.components);
             this.textBoxQtdEstoque = new System.Windows.Forms.TextBox();
             this.textBoxEstoqueMaximo = new System.Windows.Forms.TextBox();
             this.textBoxDataEntrada = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@
             this.buttonBuscarProduto = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonSalvar = new System.Windows.Forms.Button();
-            this.bindingSourceEstoque = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).BeginInit();
             this.SuspendLayout();
@@ -114,6 +114,10 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(216, 27);
             this.textBox2.TabIndex = 7;
+            // 
+            // bindingSourceEstoque
+            // 
+            this.bindingSourceEstoque.DataSource = typeof(Models.Estoque);
             // 
             // textBoxQtdEstoque
             // 
@@ -211,25 +215,23 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(418, 350);
+            this.buttonCancelar.Location = new System.Drawing.Point(475, 350);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
             this.buttonCancelar.TabIndex = 23;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(518, 350);
+            this.buttonSalvar.Location = new System.Drawing.Point(375, 350);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(94, 29);
             this.buttonSalvar.TabIndex = 24;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
-            // 
-            // bindingSourceEstoque
-            // 
-            this.bindingSourceEstoque.DataSource = typeof(Models.Estoque);
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // FormeCadastroEstoque
             // 
@@ -258,11 +260,9 @@
             this.MinimizeBox = false;
             this.Name = "FormeCadastroEstoque";
             this.ShowIcon = false;
-//<<<<<<< Updated upstream
-//=======
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-//>>>>>>> Stashed changes
+            this.Load += new System.EventHandler(this.FormeCadastroEstoque_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).EndInit();
