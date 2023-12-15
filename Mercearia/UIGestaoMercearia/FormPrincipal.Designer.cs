@@ -36,7 +36,7 @@ namespace UIGestaoMercearia
             this.buttonCliente = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.buttonPermissao = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.buttonMarcas = new System.Windows.Forms.Button();
             this.buttonCategorias = new System.Windows.Forms.Button();
@@ -160,7 +160,7 @@ namespace UIGestaoMercearia
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel2.Controls.Add(this.button9);
+            this.panel2.Controls.Add(this.buttonPermissao);
             this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.buttonMarcas);
             this.panel2.Controls.Add(this.buttonCategorias);
@@ -181,17 +181,17 @@ namespace UIGestaoMercearia
             this.panel2.TabIndex = 15;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button9
+            // buttonPermissao
             // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(12, 505);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(261, 35);
-            this.button9.TabIndex = 25;
-            this.button9.Text = "Permições";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.buttonPermissao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPermissao.ForeColor = System.Drawing.Color.White;
+            this.buttonPermissao.Location = new System.Drawing.Point(12, 505);
+            this.buttonPermissao.Name = "buttonPermissao";
+            this.buttonPermissao.Size = new System.Drawing.Size(261, 35);
+            this.buttonPermissao.TabIndex = 25;
+            this.buttonPermissao.Text = "Permissões";
+            this.buttonPermissao.UseVisualStyleBackColor = true;
+            this.buttonPermissao.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -636,7 +636,7 @@ namespace UIGestaoMercearia
         private Button buttonMarcas;
         private Button buttonCategorias;
         private Button button8;
-        private Button button9;
+        private Button buttonPermissao;
         private ToolTip toolTip1;
     }
 }

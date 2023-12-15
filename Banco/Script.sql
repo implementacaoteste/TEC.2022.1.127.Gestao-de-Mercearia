@@ -265,7 +265,7 @@ GO
 CREATE TABLE [dbo].[Venda](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[IdFuncionario] [int] NOT NULL,
-	[IdCliente] [int] NOT NULL,
+	[IdCliente] [int] NULL,
 	[IdFormaPagamento] [int] NOT NULL,
 	[DataVenda] [datetime] NULL,
 	[Total] [float] NULL,
