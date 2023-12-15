@@ -154,5 +154,10 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void FormBuscarGrupoUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -163,7 +163,7 @@
             this.Name = "FormConsultaPermissao";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Consultar permissão";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormConsultaPermissao_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.permissaoDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.permissaoBindingSource)).EndInit();
