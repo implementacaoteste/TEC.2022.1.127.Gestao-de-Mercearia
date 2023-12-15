@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonSelecionar = new System.Windows.Forms.Button();
-            this.labelGerenProd = new System.Windows.Forms.Label();
             this.dataGridViewProduto = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,7 +61,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
             this.panel1.Controls.Add(this.buttonCancelar);
             this.panel1.Controls.Add(this.buttonSelecionar);
-            this.panel1.Controls.Add(this.labelGerenProd);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 472);
             this.panel1.Name = "panel1";
@@ -88,18 +86,6 @@
             this.buttonSelecionar.Text = "&Selecionar";
             this.buttonSelecionar.UseVisualStyleBackColor = true;
             this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
-            // 
-            // labelGerenProd
-            // 
-            this.labelGerenProd.AutoSize = true;
-            this.labelGerenProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.labelGerenProd.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelGerenProd.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelGerenProd.Location = new System.Drawing.Point(12, 26);
-            this.labelGerenProd.Name = "labelGerenProd";
-            this.labelGerenProd.Size = new System.Drawing.Size(269, 28);
-            this.labelGerenProd.TabIndex = 0;
-            this.labelGerenProd.Text = "Gerenciamento de produtos";
             // 
             // dataGridViewProduto
             // 
@@ -320,7 +306,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormConsultaProduto_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceProduto)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -332,7 +317,6 @@
         #endregion
 
         private Panel panel1;
-        private Label labelGerenProd;
         private DataGridView dataGridViewProduto;
         private BindingSource bindingSourceProduto;
         private DataGridViewTextBoxColumn categoriaDataGridViewTextBoxColumn;
