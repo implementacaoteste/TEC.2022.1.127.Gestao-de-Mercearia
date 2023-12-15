@@ -16,50 +16,21 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Venda(Id, IdFuncionario, IdCliente, IdProduto, PrecoVenda, IdFormaPagamento, DataVenda)VALUES(@Id, @IdFuncionario, @IdCliente, @IdProduto, @PrecoVenda, @IdFormaPagamento, @DataVenda)";
+                cmd.CommandText = @"INSERT INTO Venda(IdFuncionario, IdCliente, IdFormaPagamento, DataVenda, Total) VALUES (@IdFuncionario, @IdCliente, @IdFormaPagamento, @DataVenda, @Total)";
                 cmd.CommandType = System.Data.CommandType.Text;
-                cmd.Parameters.AddWithValue("@Id", _venda.Id);
+
                 cmd.Parameters.AddWithValue("@IdFuncionario", _venda.IdFuncionario);
                 cmd.Parameters.AddWithValue("@IdCliente", _venda.IdCliente);
-                cmd.Parameters.AddWithValue("@IdProduto", _venda.IdProduto);
-                cmd.Parameters.AddWithValue("@PrecoVenda", _venda.PrecoVenda);
                 cmd.Parameters.AddWithValue("@IdFormaPagamento", _venda.IdFormaPagamento);
                 cmd.Parameters.AddWithValue("@DataVenda", _venda.DataVenda);
+                cmd.Parameters.AddWithValue("@Total", _venda.Total);
                 cmd.Connection = cn;
                 cn.Open();
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-                throw new Exception("Ocorre um erro ao inserir uma venda no banco de dados.", ex);
-            }
-            finally
-            {
-                cn.Close();
-            }
-        }
-        public void Alterar(Venda _venda)
-        {
-            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
-            try
-            {
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"UPDATE Venda SET IdFuncionario = @IdFuncionario, IdCliente = @IdCliente, IdProduto = @IdProduto, PrecoVenda = @PrecoVenda, IdFormaPagamento = @IdFormaPagamento, DataVenda = @DataVenda WHERE Id = @Id";
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.Parameters.AddWithValue("@Id", _venda.Id);
-                cmd.Parameters.AddWithValue("@IdFuncionario", _venda.IdFuncionario);
-                cmd.Parameters.AddWithValue("@IdCliente", _venda.IdCliente);
-                cmd.Parameters.AddWithValue("@IdProduto", _venda.IdProduto);
-                cmd.Parameters.AddWithValue("@PrecoVenda", _venda.PrecoVenda);
-                cmd.Parameters.AddWithValue("@IdFormaPagamento", _venda.IdFormaPagamento);
-                cmd.Parameters.AddWithValue("@DataVenda", _venda.DataVenda);
-                cmd.Connection = cn;
-                cn.Open();
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Ocorreu um erro ao tentar alterar uma venda no banco de dados.", ex);
+                throw new Exception("Ocorre um erro ao abrir uma venda no banco de dados.", ex);
             }
             finally
             {
@@ -91,7 +62,7 @@ namespace DAL
         public List<Venda> BuscarTodos()
         {
             List<Venda> vendas = new List<Venda>();
-            Venda venda = new Venda();
+            Venda venda;
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             try
             {
@@ -108,10 +79,9 @@ namespace DAL
                         venda.Id = Convert.ToInt32(rd["Id"]);
                         venda.IdFuncionario = Convert.ToInt32(rd["IdFuncionario"]);
                         venda.IdCliente = Convert.ToInt32(rd["IdCliente"]);
-                        venda.IdProduto = Convert.ToInt32(rd["IdProduto"]);
-                        venda.PrecoVenda = Convert.ToDouble(rd["PrecoVenda"]);
                         venda.IdFormaPagamento = Convert.ToInt32(rd["IdFormaPagamento"]);
                         venda.DataVenda = Convert.ToDateTime(rd["DataVenda"]);
+                        venda.Total = Convert.ToDouble(rd["Total"]);
                         vendas.Add(venda);
                     }
                     return vendas;
@@ -141,15 +111,15 @@ namespace DAL
                 cn.Open();
                 using (SqlDataReader rd = cmd.ExecuteReader())
                 {
-                    while (rd.Read())
+                    venda = new Venda();
+                    if (rd.Read())
                     {
                         venda.Id = Convert.ToInt32(rd["Id"]);
                         venda.IdFuncionario = Convert.ToInt32(rd["IdFuncionario"]);
                         venda.IdCliente = Convert.ToInt32(rd["IdCliente"]);
-                        venda.IdProduto = Convert.ToInt32(rd["IdProduto"]);
-                        venda.PrecoVenda = Convert.ToDouble(rd["PrecoVenda"]);
                         venda.IdFormaPagamento = Convert.ToInt32(rd["IdFormaPagamento"]);
                         venda.DataVenda = Convert.ToDateTime(rd["DataVenda"]);
+                        venda.Total = Convert.ToDouble(rd["Total"]);
                     }
                 }
                 return venda;

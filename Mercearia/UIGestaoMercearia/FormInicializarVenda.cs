@@ -49,8 +49,7 @@ namespace UIGestaoMercearia
 
                     if (id == 0)
                         new VendaBLL().Inserir(venda);
-                    else
-                        new VendaBLL().Alterar(venda);
+                    
                     MessageBox.Show("Registro salvo com sucesso!");
                     this.Close();
 

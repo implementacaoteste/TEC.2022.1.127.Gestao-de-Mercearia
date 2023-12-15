@@ -23,10 +23,6 @@ namespace BLL
         {
             return new VendaDAL().BuscarPorId(_id);
         }
-        public void Alterar(Venda _venda)
-        {
-            new VendaDAL().Alterar(_venda);
-        }
         public void Excluir(int _id)
         {
             new VendaDAL().Excluir(_id);
