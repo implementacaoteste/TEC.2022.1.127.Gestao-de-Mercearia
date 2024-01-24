@@ -28,398 +28,369 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.buttonBuscarCodigodeBarra = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.buttonSalvar = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.labelPrecoUnitario = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precoVendaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idFormaPagamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataVendaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSourceVenda = new System.Windows.Forms.BindingSource(this.components);
-            this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vendaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceVenda)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            panel1 = new Panel();
+            label1 = new Label();
+            label2 = new Label();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            buttonBuscarCodigodeBarra = new Button();
+            label12 = new Label();
+            label11 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            buttonSalvar = new Button();
+            buttonCancelar = new Button();
+            labelPrecoUnitario = new Label();
+            pictureBox1 = new PictureBox();
+            dataGridView1 = new DataGridView();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            idFormaPagamentoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            dataVendaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            vendaBindingSource = new BindingSource(components);
+            bindingSourceVenda = new BindingSource(components);
+            label9 = new Label();
+            label13 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1466, 64);
-            this.panel1.TabIndex = 0;
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BackColor = Color.FromArgb(50, 153, 204);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1466, 64);
+            panel1.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.label1.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(588, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 44);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "INICIAR VENDA";
+            label1.Anchor = AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(50, 153, 204);
+            label1.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(588, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(276, 44);
+            label1.TabIndex = 0;
+            label1.Text = "INICIAR VENDA";
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(352, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(377, 47);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nome do Produto";
+            label2.Anchor = AnchorStyles.Top;
+            label2.AutoSize = true;
+            label2.Font = new Font("Stencil", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(352, 10);
+            label2.Name = "label2";
+            label2.Size = new Size(377, 47);
+            label2.TabIndex = 1;
+            label2.Text = "Nome do Produto";
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(407, 64);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1059, 73);
-            this.panel2.TabIndex = 1;
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel2.BackColor = Color.White;
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(label2);
+            panel2.Location = new Point(407, 64);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1059, 73);
+            panel2.TabIndex = 1;
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.buttonBuscarCodigodeBarra);
-            this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(404, 827);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1062, 126);
-            this.panel3.TabIndex = 2;
+            panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel3.BackColor = Color.White;
+            panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Controls.Add(buttonBuscarCodigodeBarra);
+            panel3.Controls.Add(label12);
+            panel3.Controls.Add(label11);
+            panel3.Controls.Add(label4);
+            panel3.Controls.Add(label3);
+            panel3.Location = new Point(404, 827);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1062, 126);
+            panel3.TabIndex = 2;
             // 
             // buttonBuscarCodigodeBarra
             // 
-            this.buttonBuscarCodigodeBarra.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonBuscarCodigodeBarra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.buttonBuscarCodigodeBarra.Location = new System.Drawing.Point(244, 22);
-            this.buttonBuscarCodigodeBarra.Name = "buttonBuscarCodigodeBarra";
-            this.buttonBuscarCodigodeBarra.Size = new System.Drawing.Size(32, 29);
-            this.buttonBuscarCodigodeBarra.TabIndex = 14;
-            this.buttonBuscarCodigodeBarra.Text = "...";
-            this.buttonBuscarCodigodeBarra.UseVisualStyleBackColor = true;
+            buttonBuscarCodigodeBarra.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonBuscarCodigodeBarra.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonBuscarCodigodeBarra.Location = new Point(244, 22);
+            buttonBuscarCodigodeBarra.Name = "buttonBuscarCodigodeBarra";
+            buttonBuscarCodigodeBarra.Size = new Size(32, 29);
+            buttonBuscarCodigodeBarra.TabIndex = 14;
+            buttonBuscarCodigodeBarra.Text = "...";
+            buttonBuscarCodigodeBarra.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(48, 50);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(211, 50);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "123456789";
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.Location = new Point(48, 50);
+            label12.Name = "label12";
+            label12.Size = new Size(211, 50);
+            label12.TabIndex = 13;
+            label12.Text = "123456789";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(53, 22);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(194, 28);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "CÓDIGO DE BARRA";
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Location = new Point(53, 22);
+            label11.Name = "label11";
+            label11.Size = new Size(194, 28);
+            label11.TabIndex = 13;
+            label11.Text = "CÓDIGO DE BARRA";
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(929, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 28);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Subtotal";
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(929, 17);
+            label4.Name = "label4";
+            label4.Size = new Size(92, 28);
+            label4.TabIndex = 3;
+            label4.Text = "Subtotal";
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Stencil", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(806, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(232, 59);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "1.000,00";
+            label3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(806, 45);
+            label3.Name = "label3";
+            label3.Size = new Size(232, 59);
+            label3.TabIndex = 2;
+            label3.Text = "1.000,00";
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(856, 146);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(200, 31);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "PREÇO UNITÁRIO";
+            label5.Anchor = AnchorStyles.Top;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(856, 146);
+            label5.Name = "label5";
+            label5.Size = new Size(200, 31);
+            label5.TabIndex = 4;
+            label5.Text = "PREÇO UNITÁRIO";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(490, 143);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(163, 31);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "QUANTIDADE";
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(490, 143);
+            label6.Name = "label6";
+            label6.Size = new Size(163, 31);
+            label6.TabIndex = 5;
+            label6.Text = "QUANTIDADE";
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(1230, 146);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 31);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "VALOR PAGO";
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(1230, 146);
+            label7.Name = "label7";
+            label7.Size = new Size(155, 31);
+            label7.TabIndex = 6;
+            label7.Text = "VALOR PAGO";
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSalvar.BackColor = System.Drawing.Color.LimeGreen;
-            this.buttonSalvar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonSalvar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonSalvar.Location = new System.Drawing.Point(1280, 763);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(147, 42);
-            this.buttonSalvar.TabIndex = 8;
-            this.buttonSalvar.Text = "Salvar";
-            this.buttonSalvar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonSalvar.UseVisualStyleBackColor = false;
-            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
+            buttonSalvar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonSalvar.BackColor = Color.LimeGreen;
+            buttonSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSalvar.ForeColor = SystemColors.ButtonHighlight;
+            buttonSalvar.Location = new Point(1280, 763);
+            buttonSalvar.Name = "buttonSalvar";
+            buttonSalvar.Size = new Size(147, 42);
+            buttonSalvar.TabIndex = 8;
+            buttonSalvar.Text = "Salvar";
+            buttonSalvar.TextAlign = ContentAlignment.TopCenter;
+            buttonSalvar.UseVisualStyleBackColor = false;
+            buttonSalvar.Click += buttonSalvar_Click;
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCancelar.BackColor = System.Drawing.Color.Red;
-            this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonCancelar.Location = new System.Drawing.Point(1127, 763);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(147, 42);
-            this.buttonCancelar.TabIndex = 9;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonCancelar.UseVisualStyleBackColor = false;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            buttonCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonCancelar.BackColor = Color.Red;
+            buttonCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCancelar.ForeColor = SystemColors.ButtonHighlight;
+            buttonCancelar.Location = new Point(1127, 763);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(147, 42);
+            buttonCancelar.TabIndex = 9;
+            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.TextAlign = ContentAlignment.TopCenter;
+            buttonCancelar.UseVisualStyleBackColor = false;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // labelPrecoUnitario
             // 
-            this.labelPrecoUnitario.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelPrecoUnitario.AutoSize = true;
-            this.labelPrecoUnitario.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPrecoUnitario.Location = new System.Drawing.Point(856, 177);
-            this.labelPrecoUnitario.Name = "labelPrecoUnitario";
-            this.labelPrecoUnitario.Size = new System.Drawing.Size(191, 81);
-            this.labelPrecoUnitario.TabIndex = 11;
-            this.labelPrecoUnitario.Text = "100,0";
+            labelPrecoUnitario.Anchor = AnchorStyles.Top;
+            labelPrecoUnitario.AutoSize = true;
+            labelPrecoUnitario.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            labelPrecoUnitario.Location = new Point(856, 177);
+            labelPrecoUnitario.Name = "labelPrecoUnitario";
+            labelPrecoUnitario.Size = new Size(191, 81);
+            labelPrecoUnitario.TabIndex = 11;
+            labelPrecoUnitario.Text = "100,0";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(407, 889);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            pictureBox1.BackColor = Color.FromArgb(224, 224, 224);
+            pictureBox1.Location = new Point(3, 64);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(407, 889);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.idProdutoDataGridViewTextBoxColumn,
-            this.precoVendaDataGridViewTextBoxColumn,
-            this.idFormaPagamentoDataGridViewTextBoxColumn,
-            this.dataVendaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.vendaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(454, 280);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(973, 408);
-            this.dataGridView1.TabIndex = 7;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, idFormaPagamentoDataGridViewTextBoxColumn, dataVendaDataGridViewTextBoxColumn });
+            dataGridView1.DataSource = vendaBindingSource;
+            dataGridView1.Location = new Point(454, 280);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(973, 408);
+            dataGridView1.TabIndex = 7;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // idDataGridViewTextBoxColumn
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // idProdutoDataGridViewTextBoxColumn
-            // 
-            this.idProdutoDataGridViewTextBoxColumn.DataPropertyName = "IdProduto";
-            this.idProdutoDataGridViewTextBoxColumn.HeaderText = "IdProduto";
-            this.idProdutoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
-            this.idProdutoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // precoVendaDataGridViewTextBoxColumn
-            // 
-            this.precoVendaDataGridViewTextBoxColumn.DataPropertyName = "PrecoVenda";
-            this.precoVendaDataGridViewTextBoxColumn.HeaderText = "PrecoVenda";
-            this.precoVendaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.precoVendaDataGridViewTextBoxColumn.Name = "precoVendaDataGridViewTextBoxColumn";
-            this.precoVendaDataGridViewTextBoxColumn.Width = 125;
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.Width = 125;
             // 
             // idFormaPagamentoDataGridViewTextBoxColumn
             // 
-            this.idFormaPagamentoDataGridViewTextBoxColumn.DataPropertyName = "IdFormaPagamento";
-            this.idFormaPagamentoDataGridViewTextBoxColumn.HeaderText = "IdFormaPagamento";
-            this.idFormaPagamentoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idFormaPagamentoDataGridViewTextBoxColumn.Name = "idFormaPagamentoDataGridViewTextBoxColumn";
-            this.idFormaPagamentoDataGridViewTextBoxColumn.Width = 125;
+            idFormaPagamentoDataGridViewTextBoxColumn.DataPropertyName = "IdFormaPagamento";
+            idFormaPagamentoDataGridViewTextBoxColumn.HeaderText = "IdFormaPagamento";
+            idFormaPagamentoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idFormaPagamentoDataGridViewTextBoxColumn.Name = "idFormaPagamentoDataGridViewTextBoxColumn";
+            idFormaPagamentoDataGridViewTextBoxColumn.Width = 125;
             // 
             // dataVendaDataGridViewTextBoxColumn
             // 
-            this.dataVendaDataGridViewTextBoxColumn.DataPropertyName = "DataVenda";
-            this.dataVendaDataGridViewTextBoxColumn.HeaderText = "DataVenda";
-            this.dataVendaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dataVendaDataGridViewTextBoxColumn.Name = "dataVendaDataGridViewTextBoxColumn";
-            this.dataVendaDataGridViewTextBoxColumn.Width = 125;
+            dataVendaDataGridViewTextBoxColumn.DataPropertyName = "DataVenda";
+            dataVendaDataGridViewTextBoxColumn.HeaderText = "DataVenda";
+            dataVendaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            dataVendaDataGridViewTextBoxColumn.Name = "dataVendaDataGridViewTextBoxColumn";
+            dataVendaDataGridViewTextBoxColumn.Width = 125;
             // 
             // vendaBindingSource
             // 
-            this.vendaBindingSource.DataSource = typeof(Models.Venda);
+            vendaBindingSource.DataSource = typeof(Models.Venda);
             // 
             // bindingSourceVenda
             // 
-            this.bindingSourceVenda.DataSource = typeof(Models.Venda);
+            bindingSourceVenda.DataSource = typeof(Models.Venda);
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(454, 724);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(191, 81);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "100,0";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            label9.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(454, 724);
+            label9.Name = "label9";
+            label9.Size = new Size(191, 81);
+            label9.TabIndex = 14;
+            label9.Text = "100,0";
+            label9.Click += label9_Click;
             // 
             // label13
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(474, 693);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(96, 31);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "TROCO:";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            label13.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.Location = new Point(474, 693);
+            label13.Name = "label13";
+            label13.Size = new Size(96, 31);
+            label13.TabIndex = 13;
+            label13.Text = "TROCO:";
+            label13.Click += label13_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(454, 177);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 87);
-            this.textBox1.TabIndex = 15;
+            textBox1.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox1.Location = new Point(454, 177);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(241, 87);
+            textBox1.TabIndex = 15;
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(1186, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 87);
-            this.textBox2.TabIndex = 16;
+            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            textBox2.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox2.Location = new Point(1186, 177);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(241, 87);
+            textBox2.TabIndex = 16;
             // 
             // FormInicializarVenda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1466, 954);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.labelPrecoUnitario);
-            this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.KeyPreview = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormInicializarVenda";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vendaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceVenda)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(1466, 954);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(label9);
+            Controls.Add(label13);
+            Controls.Add(labelPrecoUnitario);
+            Controls.Add(buttonCancelar);
+            Controls.Add(buttonSalvar);
+            Controls.Add(dataGridView1);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(pictureBox1);
+            Controls.Add(panel1);
+            Controls.Add(panel2);
+            Controls.Add(panel3);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormInicializarVenda";
+            ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            WindowState = FormWindowState.Maximized;
+            Load += FormInicializarVenda_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -1,9 +1,11 @@
 ﻿using BLL;
+using DAL;
 using Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -49,7 +51,7 @@ namespace UIGestaoMercearia
 
                     if (id == 0)
                         new VendaBLL().Inserir(venda);
-                    
+
                     MessageBox.Show("Registro salvo com sucesso!");
                     this.Close();
 
@@ -68,6 +70,42 @@ namespace UIGestaoMercearia
 
         private void label9_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void FormInicializarVenda_Load(object sender, EventArgs e)
+        {
+            /*
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandText = @"INSERT INTO Venda(IdFuncionario, IdCliente, IdFormaPagamento, DataVenda, Total) VALUES (@IdFuncionario, @IdCliente, @IdFormaPagamento, @DataVenda, @Total)";
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@IdFuncionario", Constantes.IdUsuarioLogado);
+                cmd.Parameters.AddWithValue("@IdCliente", null);
+                cmd.Parameters.AddWithValue("@IdFormaPagamento", null);
+                cmd.Parameters.AddWithValue("@DataVenda", DateTime.Now.ToString("yyyy-MM-dd"));
+                cmd.Parameters.AddWithValue("@Total", 0);
+                cmd.Connection = cn;
+                cn.Open();
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorre um erro ao abrir uma venda no banco de dados.", ex);
+            }
+            finally
+            {
+                cn.Close();
+            }*/
+
+
+
+
+
+
 
         }
     }
