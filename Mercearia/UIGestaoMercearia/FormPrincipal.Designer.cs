@@ -114,12 +114,13 @@ namespace UIGestaoMercearia
             // 
             // buttonUsuario
             // 
+            buttonUsuario.BackColor = Color.White;
             buttonUsuario.FlatStyle = FlatStyle.Flat;
-            buttonUsuario.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonUsuario.ForeColor = SystemColors.ButtonHighlight;
-            buttonUsuario.Location = new Point(12, 381);
+            buttonUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonUsuario.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonUsuario.Location = new Point(9, 381);
             buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(261, 38);
+            buttonUsuario.Size = new Size(269, 38);
             buttonUsuario.TabIndex = 2;
             buttonUsuario.Text = "Usuários";
             buttonUsuario.UseVisualStyleBackColor = false;
@@ -127,12 +128,13 @@ namespace UIGestaoMercearia
             // 
             // buttonCliente
             // 
+            buttonCliente.BackColor = Color.White;
             buttonCliente.FlatStyle = FlatStyle.Flat;
-            buttonCliente.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCliente.ForeColor = SystemColors.ButtonHighlight;
-            buttonCliente.Location = new Point(12, 162);
+            buttonCliente.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonCliente.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonCliente.Location = new Point(9, 162);
             buttonCliente.Name = "buttonCliente";
-            buttonCliente.Size = new Size(261, 38);
+            buttonCliente.Size = new Size(269, 38);
             buttonCliente.TabIndex = 3;
             buttonCliente.Text = "Clientes";
             buttonCliente.UseVisualStyleBackColor = false;
@@ -183,50 +185,58 @@ namespace UIGestaoMercearia
             // 
             // buttonPermissao
             // 
+            buttonPermissao.BackColor = Color.White;
             buttonPermissao.FlatStyle = FlatStyle.Flat;
-            buttonPermissao.ForeColor = Color.White;
-            buttonPermissao.Location = new Point(12, 505);
+            buttonPermissao.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonPermissao.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonPermissao.Location = new Point(9, 505);
             buttonPermissao.Name = "buttonPermissao";
-            buttonPermissao.Size = new Size(261, 35);
+            buttonPermissao.Size = new Size(269, 35);
             buttonPermissao.TabIndex = 25;
             buttonPermissao.Text = "Permissões";
-            buttonPermissao.UseVisualStyleBackColor = true;
+            buttonPermissao.UseVisualStyleBackColor = false;
             buttonPermissao.Click += button9_Click;
             // 
             // button8
             // 
+            button8.BackColor = Color.White;
             button8.FlatStyle = FlatStyle.Flat;
-            button8.ForeColor = Color.White;
-            button8.Location = new Point(12, 252);
+            button8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button8.ForeColor = Color.FromArgb(50, 153, 204);
+            button8.Location = new Point(9, 252);
             button8.Name = "button8";
-            button8.Size = new Size(261, 35);
+            button8.Size = new Size(269, 35);
             button8.TabIndex = 24;
             button8.Text = "Estoque";
-            button8.UseVisualStyleBackColor = true;
+            button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
             // 
             // buttonMarcas
             // 
+            buttonMarcas.BackColor = Color.White;
             buttonMarcas.FlatStyle = FlatStyle.Flat;
-            buttonMarcas.ForeColor = Color.White;
-            buttonMarcas.Location = new Point(12, 464);
+            buttonMarcas.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonMarcas.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonMarcas.Location = new Point(9, 464);
             buttonMarcas.Name = "buttonMarcas";
-            buttonMarcas.Size = new Size(261, 35);
+            buttonMarcas.Size = new Size(269, 35);
             buttonMarcas.TabIndex = 23;
             buttonMarcas.Text = "Marcas";
-            buttonMarcas.UseVisualStyleBackColor = true;
+            buttonMarcas.UseVisualStyleBackColor = false;
             buttonMarcas.Click += buttonMarcas_Click;
             // 
             // buttonCategorias
             // 
+            buttonCategorias.BackColor = Color.White;
             buttonCategorias.FlatStyle = FlatStyle.Flat;
-            buttonCategorias.ForeColor = Color.White;
-            buttonCategorias.Location = new Point(12, 425);
+            buttonCategorias.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonCategorias.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonCategorias.Location = new Point(9, 425);
             buttonCategorias.Name = "buttonCategorias";
-            buttonCategorias.Size = new Size(261, 35);
+            buttonCategorias.Size = new Size(269, 35);
             buttonCategorias.TabIndex = 22;
             buttonCategorias.Text = "Categorias";
-            buttonCategorias.UseVisualStyleBackColor = true;
+            buttonCategorias.UseVisualStyleBackColor = false;
             buttonCategorias.Click += buttonCategorias_Click;
             // 
             // pictureBox1
@@ -250,12 +260,13 @@ namespace UIGestaoMercearia
             // 
             // buttonGrupoUsuario
             // 
+            buttonGrupoUsuario.BackColor = Color.White;
             buttonGrupoUsuario.FlatStyle = FlatStyle.Flat;
-            buttonGrupoUsuario.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonGrupoUsuario.ForeColor = SystemColors.ButtonHighlight;
-            buttonGrupoUsuario.Location = new Point(12, 337);
+            buttonGrupoUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonGrupoUsuario.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonGrupoUsuario.Location = new Point(9, 337);
             buttonGrupoUsuario.Name = "buttonGrupoUsuario";
-            buttonGrupoUsuario.Size = new Size(261, 38);
+            buttonGrupoUsuario.Size = new Size(269, 38);
             buttonGrupoUsuario.TabIndex = 21;
             buttonGrupoUsuario.Text = "Grupo de Usuários";
             buttonGrupoUsuario.UseVisualStyleBackColor = false;
@@ -277,12 +288,13 @@ namespace UIGestaoMercearia
             // 
             // buttonProdutos
             // 
+            buttonProdutos.BackColor = Color.White;
             buttonProdutos.FlatStyle = FlatStyle.Flat;
-            buttonProdutos.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonProdutos.ForeColor = SystemColors.ButtonHighlight;
-            buttonProdutos.Location = new Point(12, 118);
+            buttonProdutos.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonProdutos.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonProdutos.Location = new Point(9, 118);
             buttonProdutos.Name = "buttonProdutos";
-            buttonProdutos.Size = new Size(261, 38);
+            buttonProdutos.Size = new Size(269, 38);
             buttonProdutos.TabIndex = 8;
             buttonProdutos.Text = "Produtos";
             buttonProdutos.UseVisualStyleBackColor = false;
@@ -290,12 +302,13 @@ namespace UIGestaoMercearia
             // 
             // buttonFornecedores
             // 
+            buttonFornecedores.BackColor = Color.White;
             buttonFornecedores.FlatStyle = FlatStyle.Flat;
-            buttonFornecedores.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonFornecedores.ForeColor = SystemColors.ButtonHighlight;
-            buttonFornecedores.Location = new Point(12, 293);
+            buttonFornecedores.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonFornecedores.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonFornecedores.Location = new Point(9, 293);
             buttonFornecedores.Name = "buttonFornecedores";
-            buttonFornecedores.Size = new Size(261, 38);
+            buttonFornecedores.Size = new Size(269, 38);
             buttonFornecedores.TabIndex = 9;
             buttonFornecedores.Text = "Fornecedores";
             buttonFornecedores.UseVisualStyleBackColor = false;
@@ -303,12 +316,13 @@ namespace UIGestaoMercearia
             // 
             // buttonFuncionarios
             // 
+            buttonFuncionarios.BackColor = Color.White;
             buttonFuncionarios.FlatStyle = FlatStyle.Flat;
-            buttonFuncionarios.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonFuncionarios.ForeColor = SystemColors.ButtonHighlight;
-            buttonFuncionarios.Location = new Point(12, 206);
+            buttonFuncionarios.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonFuncionarios.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonFuncionarios.Location = new Point(9, 206);
             buttonFuncionarios.Name = "buttonFuncionarios";
-            buttonFuncionarios.Size = new Size(261, 38);
+            buttonFuncionarios.Size = new Size(269, 38);
             buttonFuncionarios.TabIndex = 10;
             buttonFuncionarios.Text = "Funcionários";
             buttonFuncionarios.UseVisualStyleBackColor = false;
