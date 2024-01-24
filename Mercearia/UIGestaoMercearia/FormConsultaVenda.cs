@@ -84,7 +84,7 @@ namespace UIGestaoMercearia
         {
             try
             {
-                using (FormConsultaVenda frm = new FormConsultaVenda())
+                using (FormInicializarVenda frm = new FormInicializarVenda())
                 {
                     frm.ShowDialog();
                 }
@@ -129,6 +129,16 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void comboBoxVenda_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxVenda_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -90,7 +90,7 @@ namespace UIGestaoMercearia
 
         private void buttonFuncionarios_Click(object sender, EventArgs e)
         {
-            using(FormConsultaFuncionario frm = new FormConsultaFuncionario())
+            using (FormConsultaFuncionario frm = new FormConsultaFuncionario())
             {
                 frm.ShowDialog();
             }
@@ -101,7 +101,7 @@ namespace UIGestaoMercearia
         {
             using (FormConsultaFornecedor frm = new FormConsultaFornecedor())
             {
-                frm.ShowDialog();            
+                frm.ShowDialog();
             }
         }
 
@@ -229,6 +229,11 @@ namespace UIGestaoMercearia
         }
 
         private void monthCalendar2_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
