@@ -28,321 +28,310 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConsultaVenda));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.buttonExcluir = new System.Windows.Forms.Button();
-            this.buttonInserir = new System.Windows.Forms.Button();
-            this.buttonAlterar = new System.Windows.Forms.Button();
-            this.buttonBuscar = new System.Windows.Forms.Button();
-            this.textBoxVenda = new System.Windows.Forms.TextBox();
-            this.comboBoxVenda = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonSelecionar = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.bindingSourceVenda = new System.Windows.Forms.BindingSource(this.components);
-            this.vendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceVenda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vendaBindingSource)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            label3 = new Label();
+            label2 = new Label();
+            buttonExcluir = new Button();
+            buttonInserir = new Button();
+            buttonAlterar = new Button();
+            buttonBuscar = new Button();
+            textBoxVenda = new TextBox();
+            comboBoxVenda = new ComboBox();
+            label1 = new Label();
+            panel2 = new Panel();
+            pictureBox1 = new PictureBox();
+            dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            Column6 = new DataGridViewTextBoxColumn();
+            Column7 = new DataGridViewTextBoxColumn();
+            buttonSelecionar = new Button();
+            buttonCancelar = new Button();
+            bindingSourceVenda = new BindingSource(components);
+            vendaBindingSource = new BindingSource(components);
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.buttonExcluir);
-            this.panel1.Controls.Add(this.buttonInserir);
-            this.panel1.Controls.Add(this.buttonAlterar);
-            this.panel1.Controls.Add(this.buttonBuscar);
-            this.panel1.Controls.Add(this.textBoxVenda);
-            this.panel1.Controls.Add(this.comboBoxVenda);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1105, 165);
-            this.panel1.TabIndex = 0;
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BackColor = Color.FromArgb(50, 153, 204);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(buttonExcluir);
+            panel1.Controls.Add(buttonInserir);
+            panel1.Controls.Add(buttonAlterar);
+            panel1.Controls.Add(buttonBuscar);
+            panel1.Controls.Add(textBoxVenda);
+            panel1.Controls.Add(comboBoxVenda);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1105, 165);
+            panel1.TabIndex = 0;
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(302, 100);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(201, 18);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "INSIRA A INFORMAÇÃO:";
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(302, 100);
+            label3.Name = "label3";
+            label3.Size = new Size(201, 18);
+            label3.TabIndex = 8;
+            label3.Text = "INSIRA A INFORMAÇÃO:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(12, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 18);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "BUSCAR POR:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(12, 100);
+            label2.Name = "label2";
+            label2.Size = new Size(120, 18);
+            label2.TabIndex = 7;
+            label2.Text = "BUSCAR POR:";
             // 
             // buttonExcluir
             // 
-            this.buttonExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonExcluir.Location = new System.Drawing.Point(1008, 121);
-            this.buttonExcluir.Name = "buttonExcluir";
-            this.buttonExcluir.Size = new System.Drawing.Size(94, 29);
-            this.buttonExcluir.TabIndex = 6;
-            this.buttonExcluir.Text = "Excluir";
-            this.buttonExcluir.UseVisualStyleBackColor = true;
+            buttonExcluir.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonExcluir.Location = new Point(1008, 121);
+            buttonExcluir.Name = "buttonExcluir";
+            buttonExcluir.Size = new Size(94, 29);
+            buttonExcluir.TabIndex = 6;
+            buttonExcluir.Text = "Excluir";
+            buttonExcluir.UseVisualStyleBackColor = true;
             // 
             // buttonInserir
             // 
-            this.buttonInserir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonInserir.Location = new System.Drawing.Point(907, 121);
-            this.buttonInserir.Name = "buttonInserir";
-            this.buttonInserir.Size = new System.Drawing.Size(94, 29);
-            this.buttonInserir.TabIndex = 5;
-            this.buttonInserir.Text = "Inserir";
-            this.buttonInserir.UseVisualStyleBackColor = true;
-            this.buttonInserir.Click += new System.EventHandler(this.buttonInserir_Click);
+            buttonInserir.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonInserir.Location = new Point(908, 121);
+            buttonInserir.Name = "buttonInserir";
+            buttonInserir.Size = new Size(94, 29);
+            buttonInserir.TabIndex = 5;
+            buttonInserir.Text = "Inserir";
+            buttonInserir.UseVisualStyleBackColor = true;
+            buttonInserir.Click += buttonInserir_Click;
             // 
             // buttonAlterar
             // 
-            this.buttonAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAlterar.Location = new System.Drawing.Point(807, 121);
-            this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Size = new System.Drawing.Size(94, 29);
-            this.buttonAlterar.TabIndex = 4;
-            this.buttonAlterar.Text = "Alterar";
-            this.buttonAlterar.UseVisualStyleBackColor = true;
-            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
+            buttonAlterar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonAlterar.Location = new Point(807, 121);
+            buttonAlterar.Name = "buttonAlterar";
+            buttonAlterar.Size = new Size(94, 29);
+            buttonAlterar.TabIndex = 4;
+            buttonAlterar.Text = "Alterar";
+            buttonAlterar.UseVisualStyleBackColor = true;
+            buttonAlterar.Click += buttonAlterar_Click;
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBuscar.Location = new System.Drawing.Point(707, 121);
-            this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(94, 29);
-            this.buttonBuscar.TabIndex = 3;
-            this.buttonBuscar.Text = "Buscar";
-            this.buttonBuscar.UseVisualStyleBackColor = true;
-            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
+            buttonBuscar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonBuscar.Location = new Point(707, 121);
+            buttonBuscar.Name = "buttonBuscar";
+            buttonBuscar.Size = new Size(94, 29);
+            buttonBuscar.TabIndex = 3;
+            buttonBuscar.Text = "Buscar";
+            buttonBuscar.UseVisualStyleBackColor = true;
+            buttonBuscar.Click += buttonBuscar_Click;
             // 
             // textBoxVenda
             // 
-            this.textBoxVenda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxVenda.Location = new System.Drawing.Point(301, 123);
-            this.textBoxVenda.Name = "textBoxVenda";
-            this.textBoxVenda.Size = new System.Drawing.Size(394, 27);
-            this.textBoxVenda.TabIndex = 2;
+            textBoxVenda.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            textBoxVenda.Location = new Point(301, 123);
+            textBoxVenda.Name = "textBoxVenda";
+            textBoxVenda.Size = new Size(394, 27);
+            textBoxVenda.TabIndex = 2;
+            textBoxVenda.TextChanged += textBoxVenda_TextChanged;
             // 
             // comboBoxVenda
             // 
-            this.comboBoxVenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxVenda.FormattingEnabled = true;
-            this.comboBoxVenda.Items.AddRange(new object[] {
-            "Id",
-            "Todos"});
-            this.comboBoxVenda.Location = new System.Drawing.Point(12, 123);
-            this.comboBoxVenda.Name = "comboBoxVenda";
-            this.comboBoxVenda.Size = new System.Drawing.Size(283, 28);
-            this.comboBoxVenda.TabIndex = 1;
+            comboBoxVenda.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            comboBoxVenda.FormattingEnabled = true;
+            comboBoxVenda.Items.AddRange(new object[] { "Id", "Todos" });
+            comboBoxVenda.Location = new Point(12, 123);
+            comboBoxVenda.Name = "comboBoxVenda";
+            comboBoxVenda.Size = new Size(283, 28);
+            comboBoxVenda.TabIndex = 1;
+            comboBoxVenda.SelectedIndexChanged += comboBoxVenda_SelectedIndexChanged;
             // 
             // label1
             // 
-            this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.label1.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(362, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(409, 44);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CONSULTA DE VENDAS";
+            label1.AccessibleRole = AccessibleRole.None;
+            label1.Anchor = AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(50, 153, 204);
+            label1.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(362, 22);
+            label1.Name = "label1";
+            label1.Size = new Size(409, 44);
+            label1.TabIndex = 0;
+            label1.Text = "CONSULTA DE VENDAS";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1116, 76);
-            this.panel2.TabIndex = 9;
+            panel2.BackColor = Color.FromArgb(50, 153, 204);
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(pictureBox1);
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1116, 76);
+            panel2.TabIndex = 9;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(290, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.ErrorImage = null;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.InitialImage = null;
+            pictureBox1.Location = new Point(290, 10);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(75, 54);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 157);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1105, 338);
-            this.dataGridView1.TabIndex = 1;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
+            dataGridView1.Location = new Point(0, 157);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(1105, 338);
+            dataGridView1.TabIndex = 1;
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "Id";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 125;
+            Column1.HeaderText = "Id";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            Column1.Width = 125;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Nome";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 200;
+            Column2.HeaderText = "Nome";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            Column2.Width = 200;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "IdFuncionario";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 140;
+            Column3.HeaderText = "IdFuncionario";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            Column3.Width = 140;
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "IdCliente";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 140;
+            Column4.HeaderText = "IdCliente";
+            Column4.MinimumWidth = 6;
+            Column4.Name = "Column4";
+            Column4.ReadOnly = true;
+            Column4.Width = 140;
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "IdProduto";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 140;
+            Column5.HeaderText = "IdProduto";
+            Column5.MinimumWidth = 6;
+            Column5.Name = "Column5";
+            Column5.ReadOnly = true;
+            Column5.Width = 140;
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "Forma de Pagamento";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 200;
+            Column6.HeaderText = "Forma de Pagamento";
+            Column6.MinimumWidth = 6;
+            Column6.Name = "Column6";
+            Column6.ReadOnly = true;
+            Column6.Width = 200;
             // 
             // Column7
             // 
-            this.Column7.HeaderText = "DataVenda";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 140;
+            Column7.HeaderText = "DataVenda";
+            Column7.MinimumWidth = 6;
+            Column7.Name = "Column7";
+            Column7.ReadOnly = true;
+            Column7.Width = 140;
             // 
             // buttonSelecionar
             // 
-            this.buttonSelecionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSelecionar.Location = new System.Drawing.Point(890, 501);
-            this.buttonSelecionar.Name = "buttonSelecionar";
-            this.buttonSelecionar.Size = new System.Drawing.Size(103, 29);
-            this.buttonSelecionar.TabIndex = 10;
-            this.buttonSelecionar.Text = "Selecionar";
-            this.buttonSelecionar.UseVisualStyleBackColor = true;
-            this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
+            buttonSelecionar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonSelecionar.Location = new Point(890, 501);
+            buttonSelecionar.Name = "buttonSelecionar";
+            buttonSelecionar.Size = new Size(103, 29);
+            buttonSelecionar.TabIndex = 10;
+            buttonSelecionar.Text = "Selecionar";
+            buttonSelecionar.UseVisualStyleBackColor = true;
+            buttonSelecionar.Click += buttonSelecionar_Click;
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCancelar.Location = new System.Drawing.Point(999, 501);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
-            this.buttonCancelar.TabIndex = 11;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            buttonCancelar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonCancelar.Location = new Point(999, 501);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(94, 29);
+            buttonCancelar.TabIndex = 11;
+            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // bindingSourceVenda
             // 
-            this.bindingSourceVenda.DataSource = typeof(Models.Venda);
+            bindingSourceVenda.DataSource = typeof(Models.Venda);
             // 
             // vendaBindingSource
             // 
-            this.vendaBindingSource.DataSource = typeof(Models.Venda);
+            vendaBindingSource.DataSource = typeof(Models.Venda);
             // 
             // FormConsultaVenda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(1105, 536);
-            this.Controls.Add(this.buttonSelecionar);
-            this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.KeyPreview = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormConsultaVenda";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceVenda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vendaBindingSource)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(50, 153, 204);
+            ClientSize = new Size(1105, 536);
+            Controls.Add(buttonSelecionar);
+            Controls.Add(buttonCancelar);
+            Controls.Add(dataGridView1);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormConsultaVenda";
+            ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).EndInit();
+            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
