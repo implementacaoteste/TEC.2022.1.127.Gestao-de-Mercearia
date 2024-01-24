@@ -552,6 +552,7 @@ namespace UIGestaoMercearia
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox2.Cursor = Cursors.No;
             pictureBox2.ErrorImage = null;
+            pictureBox2.Image = Properties.Resources.carrinho_de_supermercado_canes_svg_med;
             pictureBox2.InitialImage = null;
             pictureBox2.Location = new Point(0, 226);
             pictureBox2.Name = "pictureBox2";
