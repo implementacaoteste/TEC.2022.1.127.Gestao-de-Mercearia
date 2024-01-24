@@ -431,9 +431,9 @@ namespace UIGestaoMercearia
             labelNomeEmpresa.ForeColor = Color.FromArgb(50, 153, 204);
             labelNomeEmpresa.Location = new Point(335, 0);
             labelNomeEmpresa.Name = "labelNomeEmpresa";
-            labelNomeEmpresa.Size = new Size(361, 55);
+            labelNomeEmpresa.Size = new Size(225, 55);
             labelNomeEmpresa.TabIndex = 5;
-            labelNomeEmpresa.Text = "Nome da Empresa";
+            labelNomeEmpresa.Text = "SUPER TOP";
             labelNomeEmpresa.TextAlign = ContentAlignment.MiddleCenter;
             labelNomeEmpresa.Click += label2_Click;
             // 
