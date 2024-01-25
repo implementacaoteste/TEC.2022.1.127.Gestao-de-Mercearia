@@ -63,6 +63,16 @@ namespace UIGestaoMercearia.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _28533577_personagens_com_carrinhos_estao_compras_dentro_a_supermercado_vetor {
+            get {
+                object obj = ResourceManager.GetObject("28533577-personagens-com-carrinhos-estao-compras-dentro-a-supermercado-vetor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap carrinho_de_supermercado_canes_svg_med {
             get {
                 object obj = ResourceManager.GetObject("carrinho-de-supermercado-canes.svg.med", resourceCulture);
