@@ -1,4 +1,5 @@
-﻿using DAL;
+﻿using BLL;
+using DAL;
 using Models;
 using System;
 using System.Collections.Generic;
@@ -15,14 +16,16 @@ namespace UIGestaoMercearia
 {
     public partial class FormPDV : Form
     {
-        public FormPDV()
+        int id;
+        public FormPDV(int _id = 0)
         {
             InitializeComponent();
+            id = _id;
         }
 
         private void FormPDV_Load(object sender, EventArgs e)
         {
-            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            /*SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
@@ -45,6 +48,18 @@ namespace UIGestaoMercearia
             finally
             {
                 cn.Close();
+            }*/
+
+            try
+            {
+                if (id == 0)
+                    bindingSourcePDV.AddNew();
+                else
+                    bindingSourcePDV.DataSource = new EstoqueBLL().BuscarPorId(id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -67,6 +82,11 @@ namespace UIGestaoMercearia
                     ((ItemVenda)bindingSourcePDV.Current).Id = frm.produto.Id;
                 }
             }
+        }
+
+        private void buttonAtualizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

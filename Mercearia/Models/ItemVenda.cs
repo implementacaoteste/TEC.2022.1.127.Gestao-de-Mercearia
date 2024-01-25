@@ -15,5 +15,14 @@ namespace Models
         public double ValorUnitario { get; set; }
         public double SubTotal { get; set; }
         public Produto Produto { get; set; }
+        public string NomeProduto
+        {
+            get
+            {
+                if (Produto == null)
+                    return string.Empty;
+                return Produto.Nome;
+            }
+        }
     }
 }
