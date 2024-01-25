@@ -9,7 +9,15 @@ namespace Models
     public class ItemVenda
     {
         public int Id { get; set; }
-        public int IdProduto { get; set; }
+        public int IdProduto
+        {
+            get
+            {
+                if (Produto == null)
+                    return 0;
+                return Produto.Id;
+            }
+        }
         public int IdVenda { get; set; }
         public int Quantidade { get; set; }
         public double ValorUnitario { get; set; }

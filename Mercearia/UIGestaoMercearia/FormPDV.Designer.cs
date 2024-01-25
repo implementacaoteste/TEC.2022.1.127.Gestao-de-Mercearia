@@ -29,49 +29,49 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            textBoxNomeProduto = new TextBox();
+            textBoxCodigoDeBarras = new TextBox();
             textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            textBoxQuantidade = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            buttonAtualizar = new Button();
-            buttonClear = new Button();
             dataGridView1 = new DataGridView();
-            buttonAdd = new Button();
             bindingSourcePDV = new BindingSource(components);
+            buttonAdd = new Button();
             label4 = new Label();
             labelSubTT = new Label();
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            idProdutoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            idVendaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            NomeProduto = new DataGridViewTextBoxColumn();
             quantidadeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             valorUnitarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             subTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            buttonConcluir = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourcePDV).BeginInit();
             SuspendLayout();
             // 
-            // textBoxNomeProduto
+            // textBoxCodigoDeBarras
             // 
-            textBoxNomeProduto.Location = new Point(34, 78);
-            textBoxNomeProduto.Name = "textBoxNomeProduto";
-            textBoxNomeProduto.Size = new Size(186, 27);
-            textBoxNomeProduto.TabIndex = 0;
+            textBoxCodigoDeBarras.Location = new Point(34, 78);
+            textBoxCodigoDeBarras.Name = "textBoxCodigoDeBarras";
+            textBoxCodigoDeBarras.Size = new Size(186, 27);
+            textBoxCodigoDeBarras.TabIndex = 1;
+            textBoxCodigoDeBarras.KeyDown += textBoxCodigoDeBarras_KeyDown;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(34, 157);
+            textBox2.Location = new Point(33, 222);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(186, 27);
-            textBox2.TabIndex = 0;
+            textBox2.TabIndex = 6;
             // 
-            // textBox3
+            // textBoxQuantidade
             // 
-            textBox3.Location = new Point(33, 222);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(187, 27);
-            textBox3.TabIndex = 0;
+            textBoxQuantidade.Location = new Point(33, 152);
+            textBoxQuantidade.Name = "textBoxQuantidade";
+            textBoxQuantidade.Size = new Size(187, 27);
+            textBoxQuantidade.TabIndex = 4;
+            textBoxQuantidade.Text = "1";
+            textBoxQuantidade.KeyDown += textBoxQuantidade_KeyDown;
             // 
             // label1
             // 
@@ -79,48 +79,26 @@
             label1.Location = new Point(34, 55);
             label1.Name = "label1";
             label1.Size = new Size(129, 20);
-            label1.TabIndex = 1;
+            label1.TabIndex = 0;
             label1.Text = "Nome do Produto";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(34, 134);
+            label2.Location = new Point(33, 199);
             label2.Name = "label2";
             label2.Size = new Size(100, 20);
-            label2.TabIndex = 2;
+            label2.TabIndex = 5;
             label2.Text = "Valor Unitário";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(33, 199);
+            label3.Location = new Point(33, 129);
             label3.Name = "label3";
             label3.Size = new Size(87, 20);
             label3.TabIndex = 3;
             label3.Text = "Quantidade";
-            // 
-            // buttonAtualizar
-            // 
-            buttonAtualizar.FlatStyle = FlatStyle.Flat;
-            buttonAtualizar.Location = new Point(26, 283);
-            buttonAtualizar.Name = "buttonAtualizar";
-            buttonAtualizar.Size = new Size(94, 29);
-            buttonAtualizar.TabIndex = 4;
-            buttonAtualizar.Text = "Atualizar";
-            buttonAtualizar.UseVisualStyleBackColor = true;
-            buttonAtualizar.Click += buttonAtualizar_Click;
-            // 
-            // buttonClear
-            // 
-            buttonClear.FlatStyle = FlatStyle.Flat;
-            buttonClear.ForeColor = SystemColors.ActiveCaptionText;
-            buttonClear.Location = new Point(126, 283);
-            buttonClear.Name = "buttonClear";
-            buttonClear.Size = new Size(94, 29);
-            buttonClear.TabIndex = 4;
-            buttonClear.Text = "Resetar";
-            buttonClear.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -130,7 +108,7 @@
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, idProdutoDataGridViewTextBoxColumn, idVendaDataGridViewTextBoxColumn, quantidadeDataGridViewTextBoxColumn, valorUnitarioDataGridViewTextBoxColumn, subTotalDataGridViewTextBoxColumn });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { NomeProduto, quantidadeDataGridViewTextBoxColumn, valorUnitarioDataGridViewTextBoxColumn, subTotalDataGridViewTextBoxColumn });
             dataGridView1.DataSource = bindingSourcePDV;
             dataGridView1.Location = new Point(272, 39);
             dataGridView1.Name = "dataGridView1";
@@ -138,21 +116,21 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(680, 375);
-            dataGridView1.TabIndex = 5;
+            dataGridView1.TabIndex = 9;
+            // 
+            // bindingSourcePDV
+            // 
+            bindingSourcePDV.DataSource = typeof(Models.ItemVenda);
             // 
             // buttonAdd
             // 
             buttonAdd.Location = new Point(226, 78);
             buttonAdd.Name = "buttonAdd";
             buttonAdd.Size = new Size(29, 27);
-            buttonAdd.TabIndex = 6;
+            buttonAdd.TabIndex = 2;
             buttonAdd.Text = "...";
             buttonAdd.UseVisualStyleBackColor = true;
             buttonAdd.Click += buttonAdd_Click;
-            // 
-            // bindingSourcePDV
-            // 
-            bindingSourcePDV.DataSource = typeof(Models.ItemVenda);
             // 
             // label4
             // 
@@ -161,7 +139,7 @@
             label4.Location = new Point(447, 459);
             label4.Name = "label4";
             label4.Size = new Size(112, 44);
-            label4.TabIndex = 7;
+            label4.TabIndex = 10;
             label4.Text = "Total:";
             // 
             // labelSubTT
@@ -171,33 +149,17 @@
             labelSubTT.Location = new Point(554, 464);
             labelSubTT.Name = "labelSubTT";
             labelSubTT.Size = new Size(34, 37);
-            labelSubTT.TabIndex = 8;
+            labelSubTT.TabIndex = 11;
             labelSubTT.Text = "0";
             // 
-            // idDataGridViewTextBoxColumn
+            // NomeProduto
             // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.ReadOnly = true;
-            idDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // idProdutoDataGridViewTextBoxColumn
-            // 
-            idProdutoDataGridViewTextBoxColumn.DataPropertyName = "IdProduto";
-            idProdutoDataGridViewTextBoxColumn.HeaderText = "IdProduto";
-            idProdutoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
-            idProdutoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // idVendaDataGridViewTextBoxColumn
-            // 
-            idVendaDataGridViewTextBoxColumn.DataPropertyName = "IdVenda";
-            idVendaDataGridViewTextBoxColumn.HeaderText = "IdVenda";
-            idVendaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idVendaDataGridViewTextBoxColumn.Name = "idVendaDataGridViewTextBoxColumn";
-            idVendaDataGridViewTextBoxColumn.ReadOnly = true;
+            NomeProduto.DataPropertyName = "NomeProduto";
+            NomeProduto.HeaderText = "Produto";
+            NomeProduto.MinimumWidth = 6;
+            NomeProduto.Name = "NomeProduto";
+            NomeProduto.ReadOnly = true;
+            NomeProduto.Width = 200;
             // 
             // quantidadeDataGridViewTextBoxColumn
             // 
@@ -224,26 +186,35 @@
             subTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
             subTotalDataGridViewTextBoxColumn.Name = "subTotalDataGridViewTextBoxColumn";
             subTotalDataGridViewTextBoxColumn.ReadOnly = true;
-            subTotalDataGridViewTextBoxColumn.Width = 125;
+            subTotalDataGridViewTextBoxColumn.Width = 175;
+            // 
+            // buttonConcluir
+            // 
+            buttonConcluir.FlatStyle = FlatStyle.Flat;
+            buttonConcluir.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonConcluir.Location = new Point(829, 488);
+            buttonConcluir.Name = "buttonConcluir";
+            buttonConcluir.Size = new Size(123, 31);
+            buttonConcluir.TabIndex = 12;
+            buttonConcluir.Text = "Concluir";
+            buttonConcluir.UseVisualStyleBackColor = true;
             // 
             // FormPDV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            CancelButton = buttonClear;
             ClientSize = new Size(964, 531);
+            Controls.Add(buttonConcluir);
             Controls.Add(labelSubTT);
             Controls.Add(label4);
             Controls.Add(buttonAdd);
             Controls.Add(dataGridView1);
-            Controls.Add(buttonClear);
-            Controls.Add(buttonAtualizar);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox3);
+            Controls.Add(textBoxQuantidade);
             Controls.Add(textBox2);
-            Controls.Add(textBoxNomeProduto);
+            Controls.Add(textBoxCodigoDeBarras);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormPDV";
@@ -258,24 +229,21 @@
 
         #endregion
 
-        private TextBox textBoxNomeProduto;
+        private TextBox textBoxCodigoDeBarras;
         private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox textBoxQuantidade;
         private Label label1;
         private Label label2;
         private Label label3;
-        private Button buttonAtualizar;
-        private Button buttonClear;
         private DataGridView dataGridView1;
         private Button buttonAdd;
         private BindingSource bindingSourcePDV;
         private Label label4;
         private Label labelSubTT;
-        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn idProdutoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn idVendaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn NomeProduto;
         private DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn valorUnitarioDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn subTotalDataGridViewTextBoxColumn;
+        private Button buttonConcluir;
     }
 }

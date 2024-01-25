@@ -36,6 +36,7 @@ namespace UIGestaoMercearia
             buttonCliente = new Button();
             panel1 = new Panel();
             panel2 = new Panel();
+            PDV = new Button();
             buttonPermissao = new Button();
             button8 = new Button();
             buttonMarcas = new Button();
@@ -162,6 +163,7 @@ namespace UIGestaoMercearia
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(50, 153, 204);
+            panel2.Controls.Add(PDV);
             panel2.Controls.Add(buttonPermissao);
             panel2.Controls.Add(button8);
             panel2.Controls.Add(buttonMarcas);
@@ -182,6 +184,20 @@ namespace UIGestaoMercearia
             panel2.Size = new Size(285, 936);
             panel2.TabIndex = 15;
             panel2.Paint += panel2_Paint;
+            // 
+            // PDV
+            // 
+            PDV.BackColor = Color.Transparent;
+            PDV.BackgroundImageLayout = ImageLayout.Center;
+            PDV.FlatStyle = FlatStyle.Popup;
+            PDV.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            PDV.Location = new Point(9, 596);
+            PDV.Name = "PDV";
+            PDV.Size = new Size(269, 37);
+            PDV.TabIndex = 26;
+            PDV.Text = "PDV";
+            PDV.UseVisualStyleBackColor = false;
+            PDV.Click += PDV_Click;
             // 
             // buttonPermissao
             // 
@@ -644,6 +660,7 @@ namespace UIGestaoMercearia
         private Button button8;
         private Button buttonPermissao;
         private ToolTip toolTip1;
+        private Button PDV;
     }
 }
 

@@ -50,17 +50,6 @@ namespace UIGestaoMercearia
                 cn.Close();
             }*/
 
-            try
-            {
-                if (id == 0)
-                    bindingSourcePDV.AddNew();
-                else
-                    bindingSourcePDV.DataSource = new EstoqueBLL().BuscarPorId(id);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
 
@@ -78,7 +67,7 @@ namespace UIGestaoMercearia
                 if (frm.produto != null)
                 {
                     ((ItemVenda)bindingSourcePDV.Current).Produto = frm.produto;
-                    textBoxNomeProduto.Text = frm.produto.Nome;
+                    textBoxCodigoDeBarras.Text = frm.produto.Nome;
                     ((ItemVenda)bindingSourcePDV.Current).Id = frm.produto.Id;
                 }
             }
@@ -87,6 +76,44 @@ namespace UIGestaoMercearia
         private void buttonAtualizar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBoxCodigoDeBarras_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (string.IsNullOrEmpty(textBoxCodigoDeBarras.Text))
+                    textBoxQuantidade.Focus();
+                else
+                {
+                    Produto produto = new ProdutoBLL().BuscarPorCodigoDeBarra(textBoxCodigoDeBarras.Text);
+                    if (produto.Id == 0)
+                    {
+                        MessageBox.Show("Produto não encontrado.");
+                        textBoxCodigoDeBarras.SelectAll();
+                        return;
+                    }
+
+                    bindingSourcePDV.AddNew();
+                    ((ItemVenda)bindingSourcePDV.Current).Produto = produto;
+                    ((ItemVenda)bindingSourcePDV.Current).Quantidade = Convert.ToInt32(textBoxQuantidade.Text);
+                    ((ItemVenda)bindingSourcePDV.Current).SubTotal = Convert.ToInt32(textBoxQuantidade.Text) * ((ItemVenda)bindingSourcePDV.Current).Produto.Preco;
+                    ((ItemVenda)bindingSourcePDV.Current).ValorUnitario = produto.Preco;
+                    labelSubTT.Text = (Convert.ToDouble(labelSubTT.Text) + ((ItemVenda)bindingSourcePDV.Current).SubTotal).ToString();
+                    bindingSourcePDV.EndEdit();
+                    textBoxQuantidade.Text = "1";
+                    textBoxCodigoDeBarras.Text = "";
+                    textBoxCodigoDeBarras.Focus();
+                }
+            }
+        }
+
+        private void textBoxQuantidade_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                textBoxCodigoDeBarras.Focus();
+            }
         }
     }
 }
