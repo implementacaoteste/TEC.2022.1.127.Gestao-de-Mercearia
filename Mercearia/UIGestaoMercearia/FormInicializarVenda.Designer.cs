@@ -31,7 +31,7 @@
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
             label1 = new Label();
-            label2 = new Label();
+            labelNomeProduto = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
             label10 = new Label();
@@ -84,24 +84,24 @@
             label1.TabIndex = 0;
             label1.Text = "INICIAR VENDA";
             // 
-            // label2
+            // labelNomeProduto
             // 
-            label2.Anchor = AnchorStyles.Top;
-            label2.AutoSize = true;
-            label2.Font = new Font("Stencil", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(352, 10);
-            label2.Name = "label2";
-            label2.Size = new Size(377, 47);
-            label2.TabIndex = 1;
-            label2.Text = "Nome do Produto";
-            label2.Click += label2_Click;
+            labelNomeProduto.Anchor = AnchorStyles.Top;
+            labelNomeProduto.AutoSize = true;
+            labelNomeProduto.Font = new Font("Stencil", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            labelNomeProduto.Location = new Point(352, 10);
+            labelNomeProduto.Name = "labelNomeProduto";
+            labelNomeProduto.Size = new Size(377, 47);
+            labelNomeProduto.TabIndex = 1;
+            labelNomeProduto.Text = "Nome do Produto";
+            labelNomeProduto.Click += label2_Click;
             // 
             // panel2
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel2.BackColor = Color.White;
             panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(label2);
+            panel2.Controls.Add(labelNomeProduto);
             panel2.Location = new Point(407, 64);
             panel2.Name = "panel2";
             panel2.Size = new Size(1059, 73);
@@ -309,15 +309,17 @@
             // 
             // textBoxCodigodeBarras
             // 
+            textBoxCodigodeBarras.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxCodigodeBarras.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxCodigodeBarras.Location = new Point(761, 177);
             textBoxCodigodeBarras.Name = "textBoxCodigodeBarras";
             textBoxCodigodeBarras.Size = new Size(303, 65);
             textBoxCodigodeBarras.TabIndex = 19;
+            textBoxCodigodeBarras.TextChanged += textBoxCodigodeBarras_TextChanged;
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button1.BackColor = Color.White;
             button1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ActiveCaptionText;
@@ -327,6 +329,7 @@
             button1.TabIndex = 20;
             button1.Text = "...";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             button1.KeyDown += button1_KeyDown;
             // 
             // FormInicializarVenda
@@ -378,7 +381,7 @@
 
         private Panel panel1;
         private Label label1;
-        private Label label2;
+        private Label labelNomeProduto;
         private Panel panel2;
         private Panel panel3;
         private Label label4;
