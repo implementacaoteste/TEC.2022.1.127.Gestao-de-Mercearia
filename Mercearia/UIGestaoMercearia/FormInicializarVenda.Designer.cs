@@ -46,20 +46,18 @@
             buttonCancelar = new Button();
             pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
-            vendaBindingSource = new BindingSource(components);
             bindingSourceVenda = new BindingSource(components);
             label9 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             label12 = new Label();
-            textBox3 = new TextBox();
+            textBoxCodigodeBarras = new TextBox();
             button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).BeginInit();
             SuspendLayout();
             // 
@@ -255,9 +253,7 @@
             // dataGridView1
             // 
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.DataSource = vendaBindingSource;
             dataGridView1.Location = new Point(454, 280);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -265,10 +261,6 @@
             dataGridView1.Size = new Size(973, 408);
             dataGridView1.TabIndex = 7;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // vendaBindingSource
-            // 
-            vendaBindingSource.CurrentChanged += vendaBindingSource_CurrentChanged;
             // 
             // bindingSourceVenda
             // 
@@ -315,13 +307,13 @@
             label12.Text = "CÓDIGO DE BARRA";
             label12.Click += label12_Click;
             // 
-            // textBox3
+            // textBoxCodigodeBarras
             // 
-            textBox3.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox3.Location = new Point(761, 177);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(303, 65);
-            textBox3.TabIndex = 19;
+            textBoxCodigodeBarras.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxCodigodeBarras.Location = new Point(761, 177);
+            textBoxCodigodeBarras.Name = "textBoxCodigodeBarras";
+            textBoxCodigodeBarras.Size = new Size(303, 65);
+            textBoxCodigodeBarras.TabIndex = 19;
             // 
             // button1
             // 
@@ -331,10 +323,11 @@
             button1.ForeColor = SystemColors.ActiveCaptionText;
             button1.Location = new Point(1070, 179);
             button1.Name = "button1";
-            button1.Size = new Size(68, 68);
+            button1.Size = new Size(68, 63);
             button1.TabIndex = 20;
             button1.Text = "...";
             button1.UseVisualStyleBackColor = true;
+            button1.KeyDown += button1_KeyDown;
             // 
             // FormInicializarVenda
             // 
@@ -343,7 +336,7 @@
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1466, 954);
             Controls.Add(button1);
-            Controls.Add(textBox3);
+            Controls.Add(textBoxCodigodeBarras);
             Controls.Add(label12);
             Controls.Add(textBox2);
             Controls.Add(label5);
@@ -376,7 +369,6 @@
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -401,7 +393,6 @@
         private DataGridView dataGridView1;
         private BindingSource bindingSourceVenda;
         private EventHandler bindingSourceVenda_CurrentChanged;
-        private BindingSource vendaBindingSource;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn idProdutoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn precoVendaDataGridViewTextBoxColumn;
@@ -413,7 +404,7 @@
         private Label label10;
         private Label label8;
         private Label label12;
-        private TextBox textBox3;
+        private TextBox textBoxCodigodeBarras;
         private Button button1;
     }
 }

@@ -143,5 +143,19 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void button1_KeyDown(object sender, KeyEventArgs e)
+        {
+            using (FormConsultaProduto frm = new FormConsultaProduto(true))
+            {
+                frm.ShowDialog();
+                if (frm.produto != null)
+                {
+                    ((ItemVenda)bindingSourceVenda.Current).Produto = frm.produto;
+                    textBoxCodigodeBarras.Text = frm.produto.CodigoDeBarra;
+                    ((ItemVenda)bindingSourceVenda.Current).Id = frm.produto.Id;
+                }
+            }
+        }
     }
 }

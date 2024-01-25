@@ -36,14 +36,14 @@
             label2 = new Label();
             label3 = new Label();
             dataGridView1 = new DataGridView();
-            bindingSourcePDV = new BindingSource(components);
-            buttonAdd = new Button();
-            label4 = new Label();
-            labelSubTT = new Label();
             NomeProduto = new DataGridViewTextBoxColumn();
             quantidadeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             valorUnitarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             subTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            bindingSourcePDV = new BindingSource(components);
+            buttonAdd = new Button();
+            label4 = new Label();
+            labelSubTT = new Label();
             buttonConcluir = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourcePDV).BeginInit();
@@ -118,40 +118,6 @@
             dataGridView1.Size = new Size(680, 375);
             dataGridView1.TabIndex = 9;
             // 
-            // bindingSourcePDV
-            // 
-            bindingSourcePDV.DataSource = typeof(Models.ItemVenda);
-            // 
-            // buttonAdd
-            // 
-            buttonAdd.Location = new Point(226, 78);
-            buttonAdd.Name = "buttonAdd";
-            buttonAdd.Size = new Size(29, 27);
-            buttonAdd.TabIndex = 2;
-            buttonAdd.Text = "...";
-            buttonAdd.UseVisualStyleBackColor = true;
-            buttonAdd.Click += buttonAdd_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(447, 459);
-            label4.Name = "label4";
-            label4.Size = new Size(112, 44);
-            label4.TabIndex = 10;
-            label4.Text = "Total:";
-            // 
-            // labelSubTT
-            // 
-            labelSubTT.AutoSize = true;
-            labelSubTT.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSubTT.Location = new Point(554, 464);
-            labelSubTT.Name = "labelSubTT";
-            labelSubTT.Size = new Size(34, 37);
-            labelSubTT.TabIndex = 11;
-            labelSubTT.Text = "0";
-            // 
             // NomeProduto
             // 
             NomeProduto.DataPropertyName = "NomeProduto";
@@ -187,6 +153,40 @@
             subTotalDataGridViewTextBoxColumn.Name = "subTotalDataGridViewTextBoxColumn";
             subTotalDataGridViewTextBoxColumn.ReadOnly = true;
             subTotalDataGridViewTextBoxColumn.Width = 175;
+            // 
+            // bindingSourcePDV
+            // 
+            bindingSourcePDV.DataSource = typeof(Models.ItemVenda);
+            // 
+            // buttonAdd
+            // 
+            buttonAdd.Location = new Point(226, 78);
+            buttonAdd.Name = "buttonAdd";
+            buttonAdd.Size = new Size(29, 27);
+            buttonAdd.TabIndex = 2;
+            buttonAdd.Text = "...";
+            buttonAdd.UseVisualStyleBackColor = true;
+            buttonAdd.Click += buttonAdd_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(447, 459);
+            label4.Name = "label4";
+            label4.Size = new Size(112, 44);
+            label4.TabIndex = 10;
+            label4.Text = "Total:";
+            // 
+            // labelSubTT
+            // 
+            labelSubTT.AutoSize = true;
+            labelSubTT.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            labelSubTT.Location = new Point(554, 464);
+            labelSubTT.Name = "labelSubTT";
+            labelSubTT.Size = new Size(34, 37);
+            labelSubTT.TabIndex = 11;
+            labelSubTT.Text = "0";
             // 
             // buttonConcluir
             // 
