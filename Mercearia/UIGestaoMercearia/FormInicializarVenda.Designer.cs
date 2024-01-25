@@ -34,9 +34,11 @@
             label2 = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
-            label11 = new Label();
+            label10 = new Label();
+            label8 = new Label();
             label4 = new Label();
             label3 = new Label();
+            label11 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
@@ -44,22 +46,18 @@
             buttonCancelar = new Button();
             pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
-            vendaBindingSource = new BindingSource(components);
             bindingSourceVenda = new BindingSource(components);
             label9 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            label8 = new Label();
-            label10 = new Label();
             label12 = new Label();
-            textBox3 = new TextBox();
+            textBoxCodigodeBarras = new TextBox();
             button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).BeginInit();
             SuspendLayout();
             // 
@@ -124,15 +122,28 @@
             panel3.Size = new Size(1062, 126);
             panel3.TabIndex = 2;
             // 
-            // label11
+            // label10
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(736, 724);
-            label11.Name = "label11";
-            label11.Size = new Size(194, 28);
-            label11.TabIndex = 13;
-            label11.Text = "CÓDIGO DE BARRA";
+            label10.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Location = new Point(48, 17);
+            label10.Name = "label10";
+            label10.Size = new Size(69, 28);
+            label10.TabIndex = 5;
+            label10.Text = "Troco:";
+            // 
+            // label8
+            // 
+            label8.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label8.AutoSize = true;
+            label8.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(48, 45);
+            label8.Name = "label8";
+            label8.Size = new Size(232, 59);
+            label8.TabIndex = 4;
+            label8.Text = "1.000,00";
+            label8.Click += label8_Click;
             // 
             // label4
             // 
@@ -155,6 +166,16 @@
             label3.Size = new Size(232, 59);
             label3.TabIndex = 2;
             label3.Text = "1.000,00";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Location = new Point(736, 724);
+            label11.Name = "label11";
+            label11.Size = new Size(194, 28);
+            label11.TabIndex = 13;
+            label11.Text = "CÓDIGO DE BARRA";
             // 
             // label5
             // 
@@ -232,9 +253,7 @@
             // dataGridView1
             // 
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.DataSource = vendaBindingSource;
             dataGridView1.Location = new Point(454, 280);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -242,10 +261,6 @@
             dataGridView1.Size = new Size(973, 408);
             dataGridView1.TabIndex = 7;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // vendaBindingSource
-            // 
-            vendaBindingSource.CurrentChanged += vendaBindingSource_CurrentChanged;
             // 
             // bindingSourceVenda
             // 
@@ -280,29 +295,6 @@
             textBox2.Size = new Size(241, 87);
             textBox2.TabIndex = 16;
             // 
-            // label8
-            // 
-            label8.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label8.AutoSize = true;
-            label8.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(48, 45);
-            label8.Name = "label8";
-            label8.Size = new Size(232, 59);
-            label8.TabIndex = 4;
-            label8.Text = "1.000,00";
-            label8.Click += label8_Click;
-            // 
-            // label10
-            // 
-            label10.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(48, 17);
-            label10.Name = "label10";
-            label10.Size = new Size(69, 28);
-            label10.TabIndex = 5;
-            label10.Text = "Troco:";
-            // 
             // label12
             // 
             label12.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -315,13 +307,13 @@
             label12.Text = "CÓDIGO DE BARRA";
             label12.Click += label12_Click;
             // 
-            // textBox3
+            // textBoxCodigodeBarras
             // 
-            textBox3.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox3.Location = new Point(761, 177);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(303, 65);
-            textBox3.TabIndex = 19;
+            textBoxCodigodeBarras.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            textBoxCodigodeBarras.Location = new Point(761, 177);
+            textBoxCodigodeBarras.Name = "textBoxCodigodeBarras";
+            textBoxCodigodeBarras.Size = new Size(303, 65);
+            textBoxCodigodeBarras.TabIndex = 19;
             // 
             // button1
             // 
@@ -331,10 +323,11 @@
             button1.ForeColor = SystemColors.ActiveCaptionText;
             button1.Location = new Point(1070, 179);
             button1.Name = "button1";
-            button1.Size = new Size(68, 68);
+            button1.Size = new Size(68, 63);
             button1.TabIndex = 20;
             button1.Text = "...";
             button1.UseVisualStyleBackColor = true;
+            button1.KeyDown += button1_KeyDown;
             // 
             // FormInicializarVenda
             // 
@@ -343,7 +336,7 @@
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1466, 954);
             Controls.Add(button1);
-            Controls.Add(textBox3);
+            Controls.Add(textBoxCodigodeBarras);
             Controls.Add(label12);
             Controls.Add(textBox2);
             Controls.Add(label5);
@@ -376,7 +369,6 @@
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -401,7 +393,6 @@
         private DataGridView dataGridView1;
         private BindingSource bindingSourceVenda;
         private EventHandler bindingSourceVenda_CurrentChanged;
-        private BindingSource vendaBindingSource;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn idProdutoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn precoVendaDataGridViewTextBoxColumn;
@@ -413,7 +404,7 @@
         private Label label10;
         private Label label8;
         private Label label12;
-        private TextBox textBox3;
+        private TextBox textBoxCodigodeBarras;
         private Button button1;
     }
 }
