@@ -264,9 +264,9 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Venda](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[IdFuncionario] [int] NOT NULL,
+	[IdFuncionario] [int] NULL,
 	[IdCliente] [int] NULL,
-	[IdFormaPagamento] [int] NOT NULL,
+	[IdFormaPagamento] [int] NULL,
 	[DataVenda] [datetime] NULL,
 	[Total] [float] NULL,
  CONSTRAINT [PK_Venda] PRIMARY KEY CLUSTERED 
