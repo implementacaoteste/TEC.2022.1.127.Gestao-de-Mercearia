@@ -115,5 +115,15 @@ namespace UIGestaoMercearia
                 textBoxCodigoDeBarras.Focus();
             }
         }
+
+        private void textBoxCodigoDeBarras_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxQuantidade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

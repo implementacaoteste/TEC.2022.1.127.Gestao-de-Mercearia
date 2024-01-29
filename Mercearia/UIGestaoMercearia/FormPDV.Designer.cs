@@ -55,6 +55,7 @@
             textBoxCodigoDeBarras.Name = "textBoxCodigoDeBarras";
             textBoxCodigoDeBarras.Size = new Size(186, 27);
             textBoxCodigoDeBarras.TabIndex = 1;
+            textBoxCodigoDeBarras.TextChanged += textBoxCodigoDeBarras_TextChanged;
             textBoxCodigoDeBarras.KeyDown += textBoxCodigoDeBarras_KeyDown;
             // 
             // textBox2
@@ -71,6 +72,7 @@
             textBoxQuantidade.Size = new Size(187, 27);
             textBoxQuantidade.TabIndex = 4;
             textBoxQuantidade.Text = "1";
+            textBoxQuantidade.TextChanged += textBoxQuantidade_TextChanged;
             textBoxQuantidade.KeyDown += textBoxQuantidade_KeyDown;
             // 
             // label1

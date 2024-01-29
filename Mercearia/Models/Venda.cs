@@ -14,5 +14,6 @@ namespace Models
         public int IdFormaPagamento { get; set; }
         public DateTime DataVenda  { get; set; }
         public double Total { get; set; }
+        public List<ItemVenda> ItemVendaList { get; set; }   
     }
 }

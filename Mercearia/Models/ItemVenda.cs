@@ -18,8 +18,9 @@ namespace Models
                 return Produto.Id;
             }
         }
+        public int ValorPago { get; set; }
         public int IdVenda { get; set; }
-        public int Quantidade { get; set; }
+        public double Quantidade { get; set; }
         public double ValorUnitario { get; set; }
         public double SubTotal { get; set; }
         public Produto Produto { get; set; }

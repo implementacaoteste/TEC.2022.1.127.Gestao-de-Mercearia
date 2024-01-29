@@ -25,10 +25,7 @@ namespace UIGestaoMercearia
             InitializeComponent();
             id = _id;
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             try
@@ -63,15 +60,6 @@ namespace UIGestaoMercearia
             }
         }
 
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void FormInicializarVenda_Load(object sender, EventArgs e)
         {
@@ -109,41 +97,6 @@ namespace UIGestaoMercearia
 
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bindingSourceVenda_CurrentChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void vendaBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_KeyDown(object sender, KeyEventArgs e)
         {
             using (FormConsultaProduto frm = new FormConsultaProduto(true))
@@ -168,13 +121,28 @@ namespace UIGestaoMercearia
 
                     textBoxCodigodeBarras.Text = frm.produto.CodigoDeBarra;
                     labelNomeProduto.Text = frm.produto.Nome;
+                    labelpreco.Text = $" {frm.produto.Preco:C}";
                 }
             }
         }
-
-        private void textBoxCodigodeBarras_TextChanged(object sender, EventArgs e)
+        private void textBoxCodigodeBarras_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter)
+                AdicionarProduto();
+        }
+        private void AdicionarProduto()
+        {
+            Produto produto = new ProdutoBLL().BuscarPorCodigoDeBarra(textBoxCodigodeBarras.Text);
+            labelNomeProduto.Text = produto.Nome;
+            labelpreco.Text = $" {produto.Preco:C}";
 
+            ItemVenda itemVenda = new ItemVenda();
+            itemVenda.Produto = produto;
+            itemVenda.ValorUnitario = produto.Preco;
+            itemVenda.Quantidade = Convert.ToDouble(textBoxQuantidade.Text);
+            itemVenda.Quantidade = Convert.ToDouble(textBoxQuantidade.Text);
+
+            ((Venda)bindingSourceVenda.Current).ItemVendaList.Add(itemVenda);
         }
     }
 }

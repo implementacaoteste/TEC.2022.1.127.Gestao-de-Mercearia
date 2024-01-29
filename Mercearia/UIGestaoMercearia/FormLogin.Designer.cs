@@ -29,146 +29,145 @@ namespace UIGestaoMercearia
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
-            this.textBoxUsuario = new System.Windows.Forms.TextBox();
-            this.textBoxSenha = new System.Windows.Forms.TextBox();
-            this.buttonEntrar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            textBoxUsuario = new TextBox();
+            textBoxSenha = new TextBox();
+            buttonEntrar = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // textBoxUsuario
             // 
-            this.textBoxUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBoxUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxUsuario.Location = new System.Drawing.Point(20, 476);
-            this.textBoxUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxUsuario.Name = "textBoxUsuario";
-            this.textBoxUsuario.Size = new System.Drawing.Size(366, 27);
-            this.textBoxUsuario.TabIndex = 2;
-            this.textBoxUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxUsuario_KeyDown);
+            textBoxUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            textBoxUsuario.Cursor = Cursors.IBeam;
+            textBoxUsuario.Location = new Point(20, 476);
+            textBoxUsuario.Margin = new Padding(3, 4, 3, 4);
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(366, 27);
+            textBoxUsuario.TabIndex = 2;
+            textBoxUsuario.KeyDown += textBoxUsuario_KeyDown;
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.textBoxSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxSenha.Location = new System.Drawing.Point(20, 542);
-            this.textBoxSenha.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxSenha.Name = "textBoxSenha";
-            this.textBoxSenha.PasswordChar = '*';
-            this.textBoxSenha.Size = new System.Drawing.Size(366, 27);
-            this.textBoxSenha.TabIndex = 4;
-            this.textBoxSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxSenha_KeyDown);
+            textBoxSenha.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            textBoxSenha.Cursor = Cursors.IBeam;
+            textBoxSenha.Location = new Point(20, 542);
+            textBoxSenha.Margin = new Padding(3, 4, 3, 4);
+            textBoxSenha.Name = "textBoxSenha";
+            textBoxSenha.PasswordChar = '*';
+            textBoxSenha.Size = new Size(366, 27);
+            textBoxSenha.TabIndex = 4;
+            textBoxSenha.KeyDown += textBoxSenha_KeyDown;
             // 
             // buttonEntrar
             // 
-            this.buttonEntrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(205)))), ((int)(((byte)(153)))));
-            this.buttonEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEntrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonEntrar.ForeColor = System.Drawing.Color.White;
-            this.buttonEntrar.Location = new System.Drawing.Point(20, 595);
-            this.buttonEntrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonEntrar.Name = "buttonEntrar";
-            this.buttonEntrar.Size = new System.Drawing.Size(366, 39);
-            this.buttonEntrar.TabIndex = 5;
-            this.buttonEntrar.Text = "Login";
-            this.buttonEntrar.UseVisualStyleBackColor = false;
-            this.buttonEntrar.Click += new System.EventHandler(this.buttonEntrar_Click);
+            buttonEntrar.Anchor = AnchorStyles.Top;
+            buttonEntrar.BackColor = Color.FromArgb(50, 205, 153);
+            buttonEntrar.FlatStyle = FlatStyle.Flat;
+            buttonEntrar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonEntrar.ForeColor = Color.White;
+            buttonEntrar.Location = new Point(20, 595);
+            buttonEntrar.Margin = new Padding(3, 4, 3, 4);
+            buttonEntrar.Name = "buttonEntrar";
+            buttonEntrar.Size = new Size(366, 39);
+            buttonEntrar.TabIndex = 5;
+            buttonEntrar.Text = "Login";
+            buttonEntrar.UseVisualStyleBackColor = false;
+            buttonEntrar.Click += buttonEntrar_Click;
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(20, 518);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Senha";
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(50, 153, 204);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(20, 518);
+            label1.Name = "label1";
+            label1.Size = new Size(49, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Senha";
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(20, 452);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Usuário";
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(50, 153, 204);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(20, 452);
+            label2.Name = "label2";
+            label2.Size = new Size(59, 20);
+            label2.TabIndex = 1;
+            label2.Text = "Usuário";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-7, -20);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(2000, 1125);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-7, -20);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(2000, 1125);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox2.TabIndex = 7;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(111, 372);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            pictureBox1.Anchor = AnchorStyles.Top;
+            pictureBox1.BackColor = Color.FromArgb(50, 153, 204);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(111, 372);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(188, 71);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBoxUsuario);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBoxSenha);
-            this.panel1.Controls.Add(this.buttonEntrar);
-            this.panel1.Location = new System.Drawing.Point(416, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(406, 782);
-            this.panel1.TabIndex = 8;
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            panel1.BackColor = Color.FromArgb(50, 153, 204);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(textBoxUsuario);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(textBoxSenha);
+            panel1.Controls.Add(buttonEntrar);
+            panel1.Location = new Point(416, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(406, 782);
+            panel1.TabIndex = 8;
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(1231, 751);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormLogin";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormLogin_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Red;
+            ClientSize = new Size(1231, 751);
+            Controls.Add(panel1);
+            Controls.Add(pictureBox2);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormLogin";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            WindowState = FormWindowState.Maximized;
+            KeyDown += FormLogin_KeyDown;
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
