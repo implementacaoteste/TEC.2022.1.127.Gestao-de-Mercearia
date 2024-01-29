@@ -246,7 +246,7 @@
             pictureBox1.BackColor = Color.FromArgb(224, 224, 224);
             pictureBox1.Location = new Point(3, 64);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(407, 889);
+            pictureBox1.Size = new Size(407, 877);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
