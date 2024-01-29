@@ -17,6 +17,7 @@ namespace UIGestaoMercearia
     public partial class FormPDV : Form
     {
         int id;
+        Venda venda;
         public FormPDV(int _id = 0)
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace UIGestaoMercearia
         {
             DateTime dataAgora = DateTime.Now;
 
-            Venda venda = new Venda()
+            venda = new Venda()
             {
                 IdCliente = null,
                 IdFormaPagamento = null,
