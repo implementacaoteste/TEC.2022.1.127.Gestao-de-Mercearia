@@ -19,9 +19,9 @@ namespace DAL
                 cmd.CommandText = @"INSERT INTO Venda(IdFuncionario, IdCliente, IdFormaPagamento, DataVenda, Total) VALUES (@IdFuncionario, @IdCliente, @IdFormaPagamento, @DataVenda, @Total)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
-                cmd.Parameters.AddWithValue("@IdFuncionario", _venda.IdFuncionario);
-                cmd.Parameters.AddWithValue("@IdCliente", _venda.IdCliente);
-                cmd.Parameters.AddWithValue("@IdFormaPagamento", _venda.IdFormaPagamento);
+                cmd.Parameters.AddWithValue("@IdFuncionario", _venda.IdFuncionario ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@IdCliente", _venda.IdCliente ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@IdFormaPagamento", _venda.IdFormaPagamento ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@DataVenda", _venda.DataVenda);
                 cmd.Parameters.AddWithValue("@Total", _venda.Total);
                 cmd.Connection = cn;

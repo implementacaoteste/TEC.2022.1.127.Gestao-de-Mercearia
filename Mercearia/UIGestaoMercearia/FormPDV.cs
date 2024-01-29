@@ -36,7 +36,7 @@ namespace UIGestaoMercearia
                 DataVenda = dataAgora,
 
             };
-
+            new VendaBLL().Inserir(venda);
 
 
             /*SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
