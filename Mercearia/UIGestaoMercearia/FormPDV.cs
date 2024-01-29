@@ -129,5 +129,10 @@ namespace UIGestaoMercearia
                 textBoxCodigoDeBarras.Focus();
             }
         }
+
+        private void buttonConcluir_Click(object sender, EventArgs e)
+        {
+           //Finalizar os dados da venda
+        }
     }
 }
