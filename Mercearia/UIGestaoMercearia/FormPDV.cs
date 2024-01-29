@@ -25,6 +25,20 @@ namespace UIGestaoMercearia
 
         private void FormPDV_Load(object sender, EventArgs e)
         {
+            DateTime dataAgora = DateTime.Now;
+
+            Venda venda = new Venda()
+            {
+                IdCliente = null,
+                IdFormaPagamento = null,
+                IdFuncionario = null,
+                Total = 0,
+                DataVenda = dataAgora,
+
+            };
+
+
+
             /*SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             try
             {
