@@ -534,7 +534,7 @@ namespace UIGestaoMercearia
             buttonIniciarVenda.FlatStyle = FlatStyle.Flat;
             buttonIniciarVenda.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             buttonIniciarVenda.ForeColor = SystemColors.ButtonHighlight;
-            buttonIniciarVenda.Location = new Point(20, 19);
+            buttonIniciarVenda.Location = new Point(22, 21);
             buttonIniciarVenda.Name = "buttonIniciarVenda";
             buttonIniciarVenda.Size = new Size(465, 45);
             buttonIniciarVenda.TabIndex = 17;
