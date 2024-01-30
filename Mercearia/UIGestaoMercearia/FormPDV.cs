@@ -66,9 +66,10 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
                 if (frm.produto != null)
                 {
-                    ((ItemVenda)bindingSourcePDV.Current).Produto = frm.produto;
+                    ItemVenda current = ((ItemVenda)bindingSourcePDV.Current);
+                    current.Produto = frm.produto;
                     textBoxCodigoDeBarras.Text = frm.produto.Nome;
-                    ((ItemVenda)bindingSourcePDV.Current).Id = frm.produto.Id;
+                    current.Id = frm.produto.Id;
                 }
             }
         }
@@ -116,12 +117,12 @@ namespace UIGestaoMercearia
             }
         }
 
-        private void textBoxCodigoDeBarras_TextChanged(object sender, EventArgs e)
+        private void labelSubTT_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBoxQuantidade_TextChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

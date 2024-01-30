@@ -61,6 +61,7 @@
             buttonBuscarProduto = new Button();
             labelpreco = new Label();
             labelTroco = new Label();
+            buttonCalcular = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -152,6 +153,7 @@
             labelSubtotal.Size = new Size(187, 59);
             labelSubtotal.TabIndex = 2;
             labelSubtotal.Text = "000,00";
+            labelSubtotal.Click += labelSubtotal_Click;
             // 
             // label6
             // 
@@ -174,6 +176,7 @@
             textBoxQuantidade.Size = new Size(179, 87);
             textBoxQuantidade.TabIndex = 15;
             textBoxQuantidade.Text = "1";
+            textBoxQuantidade.TextChanged += textBoxQuantidade_TextChanged;
             // 
             // label7
             // 
@@ -195,6 +198,7 @@
             textBoxValorPago.Name = "textBoxValorPago";
             textBoxValorPago.Size = new Size(233, 87);
             textBoxValorPago.TabIndex = 16;
+            textBoxValorPago.TextChanged += textBoxValorPago_TextChanged;
             // 
             // textBoxCodigodeBarras
             // 
@@ -232,7 +236,7 @@
             buttonSalvar.BackColor = Color.LimeGreen;
             buttonSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             buttonSalvar.ForeColor = SystemColors.ButtonHighlight;
-            buttonSalvar.Location = new Point(1306, 617);
+            buttonSalvar.Location = new Point(1310, 654);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(121, 42);
             buttonSalvar.TabIndex = 8;
@@ -247,7 +251,7 @@
             buttonCancelar.BackColor = Color.Red;
             buttonCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonHighlight;
-            buttonCancelar.Location = new Point(1179, 617);
+            buttonCancelar.Location = new Point(1183, 654);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(121, 41);
             buttonCancelar.TabIndex = 9;
@@ -275,12 +279,12 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, idVendaDataGridViewTextBoxColumn, quantidadeDataGridViewTextBoxColumn, valorUnitarioDataGridViewTextBoxColumn, subTotalDataGridViewTextBoxColumn, produtoDataGridViewTextBoxColumn, nomeProdutoDataGridViewTextBoxColumn });
             dataGridView1.DataSource = itemVendaListBindingSource;
-            dataGridView1.Location = new Point(454, 280);
+            dataGridView1.Location = new Point(459, 280);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(973, 331);
+            dataGridView1.Size = new Size(973, 368);
             dataGridView1.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn1
@@ -290,7 +294,7 @@
             dataGridViewTextBoxColumn1.MinimumWidth = 6;
             dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             dataGridViewTextBoxColumn1.ReadOnly = true;
-            dataGridViewTextBoxColumn1.Width = 125;
+            dataGridViewTextBoxColumn1.Width = 50;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -366,14 +370,16 @@
             // 
             // label12
             // 
-            label12.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label12.Anchor = AnchorStyles.Top;
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ImageAlign = ContentAlignment.TopCenter;
             label12.Location = new Point(846, 149);
             label12.Name = "label12";
             label12.Size = new Size(200, 31);
             label12.TabIndex = 18;
             label12.Text = "PREÇO UNITÁRIO";
+            label12.TextAlign = ContentAlignment.TopCenter;
             // 
             // buttonBuscarProduto
             // 
@@ -381,7 +387,7 @@
             buttonBuscarProduto.BackColor = Color.FromArgb(50, 153, 204);
             buttonBuscarProduto.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonBuscarProduto.ForeColor = SystemColors.Window;
-            buttonBuscarProduto.Location = new Point(454, 617);
+            buttonBuscarProduto.Location = new Point(459, 654);
             buttonBuscarProduto.Name = "buttonBuscarProduto";
             buttonBuscarProduto.Size = new Size(241, 53);
             buttonBuscarProduto.TabIndex = 20;
@@ -392,14 +398,17 @@
             // 
             // labelpreco
             // 
-            labelpreco.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            labelpreco.Anchor = AnchorStyles.Top;
             labelpreco.AutoSize = true;
             labelpreco.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            labelpreco.Location = new Point(846, 201);
+            labelpreco.ImageAlign = ContentAlignment.TopCenter;
+            labelpreco.Location = new Point(908, 195);
             labelpreco.Name = "labelpreco";
             labelpreco.Size = new Size(73, 59);
             labelpreco.TabIndex = 20;
             labelpreco.Text = "...";
+            labelpreco.TextAlign = ContentAlignment.TopCenter;
+            labelpreco.Click += labelpreco_Click;
             // 
             // labelTroco
             // 
@@ -414,12 +423,27 @@
             labelTroco.Text = "...";
             labelTroco.TextAlign = ContentAlignment.MiddleRight;
             // 
+            // buttonCalcular
+            // 
+            buttonCalcular.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonCalcular.BackColor = Color.FromArgb(50, 153, 204);
+            buttonCalcular.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCalcular.ForeColor = SystemColors.Window;
+            buttonCalcular.Location = new Point(831, 654);
+            buttonCalcular.Name = "buttonCalcular";
+            buttonCalcular.Size = new Size(241, 53);
+            buttonCalcular.TabIndex = 22;
+            buttonCalcular.Text = "Calcular";
+            buttonCalcular.UseVisualStyleBackColor = false;
+            buttonCalcular.Click += button1_Click_1;
+            // 
             // FormInicializarVenda
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1466, 954);
+            Controls.Add(buttonCalcular);
             Controls.Add(textBoxCodigodeBarras);
             Controls.Add(labelpreco);
             Controls.Add(buttonBuscarProduto);
@@ -443,6 +467,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             WindowState = FormWindowState.Maximized;
             Load += FormInicializarVenda_Load;
+            KeyDown += textBoxCodigodeBarras_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
@@ -488,6 +513,7 @@
         private Button buttonBuscarProduto;
         private Label labelpreco;
         private Label labelTroco;
+        private BindingSource itemVendaListBindingSource;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn idVendaDataGridViewTextBoxColumn;
@@ -496,6 +522,9 @@
         private DataGridViewTextBoxColumn subTotalDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn produtoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeProdutoDataGridViewTextBoxColumn;
-        private BindingSource itemVendaListBindingSource;
+        private TextBox textBox1;
+        private TextBox textBoxPrecoProduto;
+        private Button button1;
+        private Button buttonCalcular;
     }
 }

@@ -18,6 +18,7 @@ namespace Models
                 return Produto.Id;
             }
         }
+        public double Troco { get; set; }
         public int ValorPago { get; set; }
         public int IdVenda { get; set; }
         public double Quantidade { get; set; }

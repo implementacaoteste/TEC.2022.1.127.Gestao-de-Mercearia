@@ -1,22 +1,11 @@
 ﻿using BLL;
-using DAL;
 using Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
 namespace UIGestaoMercearia
 {
     public partial class FormInicializarVenda : Form
     {
         int id;
+        private object itemVenda;
 
         public Produto produtoAtual { get; private set; }
 
@@ -25,7 +14,7 @@ namespace UIGestaoMercearia
             InitializeComponent();
             id = _id;
         }
-        
+
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             try
@@ -88,15 +77,7 @@ namespace UIGestaoMercearia
             {
                 cn.Close();
             }*/
-
-
-
-
-
-
-
         }
-
         private void button1_KeyDown(object sender, KeyEventArgs e)
         {
             using (FormConsultaProduto frm = new FormConsultaProduto(true))
@@ -110,7 +91,6 @@ namespace UIGestaoMercearia
                 }
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             using (FormConsultaProduto frm = new FormConsultaProduto(true))
@@ -121,14 +101,18 @@ namespace UIGestaoMercearia
 
                     textBoxCodigodeBarras.Text = frm.produto.CodigoDeBarra;
                     labelNomeProduto.Text = frm.produto.Nome;
-                    labelpreco.Text = $" {frm.produto.Preco:C}";
+                    textBoxPrecoProduto.Text = $" {frm.produto.Preco:C}";
+
+
                 }
             }
         }
         private void textBoxCodigodeBarras_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
+            {
                 AdicionarProduto();
+            }
         }
         private void AdicionarProduto()
         {
@@ -139,10 +123,46 @@ namespace UIGestaoMercearia
             ItemVenda itemVenda = new ItemVenda();
             itemVenda.Produto = produto;
             itemVenda.ValorUnitario = produto.Preco;
-            itemVenda.Quantidade = Convert.ToDouble(textBoxQuantidade.Text);
-            itemVenda.Quantidade = Convert.ToDouble(textBoxQuantidade.Text);
+            itemVenda.Quantidade = produto.Quantidade;
 
-            ((Venda)bindingSourceVenda.Current).ItemVendaList.Add(itemVenda);
+
+        }
+
+        private void textBoxQuantidade_TextChanged(object sender, EventArgs e)
+        {
+            ItemVenda itemVenda = new ItemVenda();
+            itemVenda.Quantidade = Convert.ToDouble(textBoxQuantidade.Text);
+        }
+
+        private void textBoxValorPago_TextChanged(object sender, EventArgs e)
+        {
+            ItemVenda itemVenda = new ItemVenda();
+            itemVenda.ValorPago = (int)Convert.ToDouble(textBoxValorPago.Text);
+        }
+
+        private void labelSubtotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelpreco_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            using (FormInicializarVenda frm = new FormInicializarVenda(true))
+            {
+                frm.ShowDialog();
+                if (frm.itemVenda != null)
+                {
+                    ItemVenda current = ((ItemVenda)bindingSourceVenda.Current);
+                    current.SubTotal = frm.;
+                    labelSubtotal.Text = frm.textBoxQuantidade.Text * frm.textBoxPrecoProduto.Text;
+                    current.Id = frm..Id;
+                }
+            }
         }
     }
 }

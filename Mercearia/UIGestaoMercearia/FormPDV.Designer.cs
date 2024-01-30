@@ -1,4 +1,5 @@
-﻿namespace UIGestaoMercearia
+﻿
+namespace UIGestaoMercearia
 {
     partial class FormPDV
     {
@@ -64,6 +65,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(186, 27);
             textBox2.TabIndex = 6;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBoxQuantidade
             // 
@@ -189,6 +191,7 @@
             labelSubTT.Size = new Size(34, 37);
             labelSubTT.TabIndex = 11;
             labelSubTT.Text = "0";
+            labelSubTT.Click += labelSubTT_Click;
             // 
             // buttonConcluir
             // 
@@ -227,6 +230,16 @@
             ((System.ComponentModel.ISupportInitialize)bindingSourcePDV).EndInit();
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void textBoxQuantidade_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void textBoxCodigoDeBarras_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
