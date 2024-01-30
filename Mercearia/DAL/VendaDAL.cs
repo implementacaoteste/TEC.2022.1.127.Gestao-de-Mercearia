@@ -19,9 +19,9 @@ namespace DAL
                 cmd.CommandText = @"INSERT INTO Venda(IdFuncionario, IdCliente, IdFormaPagamento, DataVenda, Total) VALUES (@IdFuncionario, @IdCliente, @IdFormaPagamento, @DataVenda, @Total)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
-                cmd.Parameters.AddWithValue("@IdFuncionario", _venda.IdFuncionario);
-                cmd.Parameters.AddWithValue("@IdCliente", _venda.IdCliente);
-                cmd.Parameters.AddWithValue("@IdFormaPagamento", _venda.IdFormaPagamento);
+                cmd.Parameters.AddWithValue("@IdFuncionario", _venda.IdFuncionario ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@IdCliente", _venda.IdCliente ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@IdFormaPagamento", _venda.IdFormaPagamento ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@DataVenda", _venda.DataVenda);
                 cmd.Parameters.AddWithValue("@Total", _venda.Total);
                 cmd.Connection = cn;
@@ -37,6 +37,43 @@ namespace DAL
                 cn.Close();
             }
         }
+
+        public void Alterar(Venda _venda)
+        {
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandText = @"UPDATE Venda SET IdFuncionario = @IdFuncionario, 
+                                                     IdCliente = @IdCliente,
+                                                     IdFormaPagamento = @IdFormaPagamento,
+                                                     Total = @Total
+                                                     WHERE Id = @Id";
+
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Parameters.AddWithValue("@Id", _venda.Id);
+                cmd.Parameters.AddWithValue("@IdFuncionario", _venda.IdFuncionario ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@IdCliente", _venda.IdCliente ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@IdFormaPagamento", _venda.IdFormaPagamento ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@Total", _venda.Total);
+
+
+                cmd.Connection = cn;
+                cn.Open();
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao tentar alterar Venda no banco de dados", ex) { Data = { { "Id", 10064 } } };
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+
         public void Excluir(int _id)
         {
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);

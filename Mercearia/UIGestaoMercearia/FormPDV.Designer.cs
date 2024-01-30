@@ -46,13 +46,15 @@ namespace UIGestaoMercearia
             label4 = new Label();
             labelSubTT = new Label();
             buttonConcluir = new Button();
+            bindingSourceVenda = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourcePDV).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).BeginInit();
             SuspendLayout();
             // 
             // textBoxCodigoDeBarras
             // 
-            textBoxCodigoDeBarras.Location = new Point(34, 78);
+            textBoxCodigoDeBarras.Location = new Point(34, 77);
             textBoxCodigoDeBarras.Name = "textBoxCodigoDeBarras";
             textBoxCodigoDeBarras.Size = new Size(186, 27);
             textBoxCodigoDeBarras.TabIndex = 1;
@@ -61,7 +63,7 @@ namespace UIGestaoMercearia
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(33, 222);
+            textBox2.Location = new Point(33, 221);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(186, 27);
             textBox2.TabIndex = 6;
@@ -164,7 +166,7 @@ namespace UIGestaoMercearia
             // 
             // buttonAdd
             // 
-            buttonAdd.Location = new Point(226, 78);
+            buttonAdd.Location = new Point(226, 77);
             buttonAdd.Name = "buttonAdd";
             buttonAdd.Size = new Size(29, 27);
             buttonAdd.TabIndex = 2;
@@ -197,18 +199,23 @@ namespace UIGestaoMercearia
             // 
             buttonConcluir.FlatStyle = FlatStyle.Flat;
             buttonConcluir.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonConcluir.Location = new Point(829, 488);
+            buttonConcluir.Location = new Point(829, 473);
             buttonConcluir.Name = "buttonConcluir";
-            buttonConcluir.Size = new Size(123, 31);
+            buttonConcluir.Size = new Size(123, 43);
             buttonConcluir.TabIndex = 12;
             buttonConcluir.Text = "Concluir";
             buttonConcluir.UseVisualStyleBackColor = true;
+            buttonConcluir.Click += buttonConcluir_Click;
+            // 
+            // bindingSourceVenda
+            // 
+            bindingSourceVenda.DataSource = typeof(Models.Venda);
             // 
             // FormPDV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(964, 531);
+            ClientSize = new Size(965, 531);
             Controls.Add(buttonConcluir);
             Controls.Add(labelSubTT);
             Controls.Add(label4);
@@ -228,6 +235,7 @@ namespace UIGestaoMercearia
             Load += FormPDV_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourcePDV).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -260,5 +268,6 @@ namespace UIGestaoMercearia
         private DataGridViewTextBoxColumn valorUnitarioDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn subTotalDataGridViewTextBoxColumn;
         private Button buttonConcluir;
+        private BindingSource bindingSourceVenda;
     }
 }

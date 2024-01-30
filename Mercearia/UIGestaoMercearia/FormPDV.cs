@@ -17,6 +17,7 @@ namespace UIGestaoMercearia
     public partial class FormPDV : Form
     {
         int id;
+        Venda venda;
         public FormPDV(int _id = 0)
         {
             InitializeComponent();
@@ -25,37 +26,19 @@ namespace UIGestaoMercearia
 
         private void FormPDV_Load(object sender, EventArgs e)
         {
-            /*SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
-            try
+            DateTime dataAgora = DateTime.Now;
+
+            venda = new Venda()
             {
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO ItemVenda() 
-                                    VALUES()";
-                cmd.CommandType = System.Data.CommandType.Text;
+                IdCliente = null,
+                IdFormaPagamento = null,
+                IdFuncionario = null,
+                Total = 0,
+                DataVenda = dataAgora,
 
-                //cmd.Parameters.AddWithValue("@SubTotal", );
+            };
+            new VendaBLL().Inserir(venda);
 
-
-                cmd.Connection = cn;
-                cn.Open();
-
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Ocorreu erro ao tentar inserir um produto no banco de dados.", ex);
-            }
-            finally
-            {
-                cn.Close();
-            }*/
-
-        }
-
-
-        private void Exibir()
-        {
-            string query = "select * from Produto";
 
         }
 
@@ -100,6 +83,7 @@ namespace UIGestaoMercearia
                     ((ItemVenda)bindingSourcePDV.Current).Quantidade = Convert.ToInt32(textBoxQuantidade.Text);
                     ((ItemVenda)bindingSourcePDV.Current).SubTotal = Convert.ToInt32(textBoxQuantidade.Text) * ((ItemVenda)bindingSourcePDV.Current).Produto.Preco;
                     ((ItemVenda)bindingSourcePDV.Current).ValorUnitario = produto.Preco;
+                    venda.Total += ((ItemVenda)bindingSourcePDV.Current).SubTotal;
                     labelSubTT.Text = (Convert.ToDouble(labelSubTT.Text) + ((ItemVenda)bindingSourcePDV.Current).SubTotal).ToString();
                     bindingSourcePDV.EndEdit();
                     textBoxQuantidade.Text = "1";
@@ -117,6 +101,7 @@ namespace UIGestaoMercearia
             }
         }
 
+
         private void labelSubTT_Click(object sender, EventArgs e)
         {
 
@@ -125,6 +110,11 @@ namespace UIGestaoMercearia
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        private void buttonConcluir_Click(object sender, EventArgs e)
+        {
+            //Finalizar os dados da venda
+            new VendaBLL().Alterar(venda);
         }
     }
 }
