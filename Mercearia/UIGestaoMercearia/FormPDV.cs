@@ -40,38 +40,6 @@ namespace UIGestaoMercearia
             new VendaBLL().Inserir(venda);
 
 
-            /*SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
-            try
-            {
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO ItemVenda() 
-                                    VALUES()";
-                cmd.CommandType = System.Data.CommandType.Text;
-
-                //cmd.Parameters.AddWithValue("@SubTotal", );
-
-
-                cmd.Connection = cn;
-                cn.Open();
-
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Ocorreu erro ao tentar inserir um produto no banco de dados.", ex);
-            }
-            finally
-            {
-                cn.Close();
-            }*/
-
-        }
-
-
-        private void Exibir()
-        {
-            //string query = "select * from Produto";
-
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -135,6 +103,7 @@ namespace UIGestaoMercearia
         private void buttonConcluir_Click(object sender, EventArgs e)
         {
             //Finalizar os dados da venda
+            new VendaBLL().Alterar(venda);
             
         }
     }
