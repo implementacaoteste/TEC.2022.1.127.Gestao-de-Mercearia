@@ -12,7 +12,12 @@ namespace Models
         public int? IdFuncionario { get; set; }
         public int? IdCliente { get; set; }
         public int? IdFormaPagamento { get; set; }
-        public DateTime DataVenda  { get; set; }
+        public DateTime DataVenda { get; set; }
         public double Total { get; set; }
+        public List<ItemVenda> itemVendaList { get; set; }
+        public Venda()
+        {
+            itemVendaList = new List<ItemVenda>();
+        }
     }
 }
