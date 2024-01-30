@@ -15,6 +15,10 @@ namespace BLL
         {
             new VendaDAL().Inserir(_venda);
         }
+        public void Alterar(Venda _venda)
+        {
+            new VendaDAL().Alterar(_venda);
+        }
         public List<Venda> BuscarTodos()
         {
             return new VendaDAL().BuscarTodos();

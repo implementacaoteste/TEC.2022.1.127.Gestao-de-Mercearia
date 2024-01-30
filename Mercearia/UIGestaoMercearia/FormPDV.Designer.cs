@@ -45,33 +45,32 @@
             label4 = new Label();
             labelSubTT = new Label();
             buttonConcluir = new Button();
+            bindingSourceVenda = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourcePDV).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).BeginInit();
             SuspendLayout();
             // 
             // textBoxCodigoDeBarras
             // 
-            textBoxCodigoDeBarras.Location = new Point(30, 58);
-            textBoxCodigoDeBarras.Margin = new Padding(3, 2, 3, 2);
+            textBoxCodigoDeBarras.Location = new Point(34, 77);
             textBoxCodigoDeBarras.Name = "textBoxCodigoDeBarras";
-            textBoxCodigoDeBarras.Size = new Size(163, 23);
+            textBoxCodigoDeBarras.Size = new Size(186, 27);
             textBoxCodigoDeBarras.TabIndex = 1;
             textBoxCodigoDeBarras.KeyDown += textBoxCodigoDeBarras_KeyDown;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(29, 166);
-            textBox2.Margin = new Padding(3, 2, 3, 2);
+            textBox2.Location = new Point(33, 221);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(163, 23);
+            textBox2.Size = new Size(186, 27);
             textBox2.TabIndex = 6;
             // 
             // textBoxQuantidade
             // 
-            textBoxQuantidade.Location = new Point(29, 114);
-            textBoxQuantidade.Margin = new Padding(3, 2, 3, 2);
+            textBoxQuantidade.Location = new Point(33, 152);
             textBoxQuantidade.Name = "textBoxQuantidade";
-            textBoxQuantidade.Size = new Size(164, 23);
+            textBoxQuantidade.Size = new Size(187, 27);
             textBoxQuantidade.TabIndex = 4;
             textBoxQuantidade.Text = "1";
             textBoxQuantidade.KeyDown += textBoxQuantidade_KeyDown;
@@ -79,27 +78,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(30, 41);
+            label1.Location = new Point(34, 55);
             label1.Name = "label1";
-            label1.Size = new Size(103, 15);
+            label1.Size = new Size(129, 20);
             label1.TabIndex = 0;
             label1.Text = "Nome do Produto";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(29, 149);
+            label2.Location = new Point(33, 199);
             label2.Name = "label2";
-            label2.Size = new Size(78, 15);
+            label2.Size = new Size(100, 20);
             label2.TabIndex = 5;
             label2.Text = "Valor Unitário";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(29, 97);
+            label3.Location = new Point(33, 129);
             label3.Name = "label3";
-            label3.Size = new Size(69, 15);
+            label3.Size = new Size(87, 20);
             label3.TabIndex = 3;
             label3.Text = "Quantidade";
             // 
@@ -113,13 +112,12 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { NomeProduto, quantidadeDataGridViewTextBoxColumn, valorUnitarioDataGridViewTextBoxColumn, subTotalDataGridViewTextBoxColumn });
             dataGridView1.DataSource = bindingSourcePDV;
-            dataGridView1.Location = new Point(238, 29);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
+            dataGridView1.Location = new Point(272, 39);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(595, 281);
+            dataGridView1.Size = new Size(680, 375);
             dataGridView1.TabIndex = 9;
             // 
             // NomeProduto
@@ -164,10 +162,9 @@
             // 
             // buttonAdd
             // 
-            buttonAdd.Location = new Point(198, 58);
-            buttonAdd.Margin = new Padding(3, 2, 3, 2);
+            buttonAdd.Location = new Point(226, 77);
             buttonAdd.Name = "buttonAdd";
-            buttonAdd.Size = new Size(25, 20);
+            buttonAdd.Size = new Size(29, 27);
             buttonAdd.TabIndex = 2;
             buttonAdd.Text = "...";
             buttonAdd.UseVisualStyleBackColor = true;
@@ -177,9 +174,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(391, 344);
+            label4.Location = new Point(447, 459);
             label4.Name = "label4";
-            label4.Size = new Size(94, 37);
+            label4.Size = new Size(112, 44);
             label4.TabIndex = 10;
             label4.Text = "Total:";
             // 
@@ -187,9 +184,9 @@
             // 
             labelSubTT.AutoSize = true;
             labelSubTT.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSubTT.Location = new Point(485, 348);
+            labelSubTT.Location = new Point(554, 464);
             labelSubTT.Name = "labelSubTT";
-            labelSubTT.Size = new Size(26, 30);
+            labelSubTT.Size = new Size(34, 37);
             labelSubTT.TabIndex = 11;
             labelSubTT.Text = "0";
             // 
@@ -197,20 +194,23 @@
             // 
             buttonConcluir.FlatStyle = FlatStyle.Flat;
             buttonConcluir.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonConcluir.Location = new Point(725, 355);
-            buttonConcluir.Margin = new Padding(3, 2, 3, 2);
+            buttonConcluir.Location = new Point(829, 473);
             buttonConcluir.Name = "buttonConcluir";
-            buttonConcluir.Size = new Size(108, 32);
+            buttonConcluir.Size = new Size(123, 43);
             buttonConcluir.TabIndex = 12;
             buttonConcluir.Text = "Concluir";
             buttonConcluir.UseVisualStyleBackColor = true;
             buttonConcluir.Click += buttonConcluir_Click;
             // 
+            // bindingSourceVenda
+            // 
+            bindingSourceVenda.DataSource = typeof(Models.Venda);
+            // 
             // FormPDV
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(844, 398);
+            ClientSize = new Size(965, 531);
             Controls.Add(buttonConcluir);
             Controls.Add(labelSubTT);
             Controls.Add(label4);
@@ -222,7 +222,6 @@
             Controls.Add(textBoxQuantidade);
             Controls.Add(textBox2);
             Controls.Add(textBoxCodigoDeBarras);
-            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormPDV";
@@ -231,6 +230,7 @@
             Load += FormPDV_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourcePDV).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -253,5 +253,6 @@
         private DataGridViewTextBoxColumn valorUnitarioDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn subTotalDataGridViewTextBoxColumn;
         private Button buttonConcluir;
+        private BindingSource bindingSourceVenda;
     }
 }
