@@ -56,7 +56,6 @@
             button2.TabIndex = 20;
             button2.Text = "ALTERAR SENHA DE USUARIO";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -70,7 +69,6 @@
             button1.TabIndex = 19;
             button1.Text = "ALTERAR SENHA";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // FormConfiguracao
             // 

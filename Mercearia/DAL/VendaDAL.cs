@@ -62,9 +62,7 @@ namespace DAL
                 cn.Open();
 
                 cmd.ExecuteNonQuery();
-                foreach (var item in _venda.itemVendaList)
                 {
-                    new ItemVendaDAL().Inserir(item);
                 }
             }
             catch (Exception ex)

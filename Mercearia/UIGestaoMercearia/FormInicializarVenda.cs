@@ -127,42 +127,15 @@ namespace UIGestaoMercearia
 
 
         }
-
         private void textBoxQuantidade_TextChanged(object sender, EventArgs e)
         {
             ItemVenda itemVenda = new ItemVenda();
             itemVenda.Quantidade = Convert.ToDouble(textBoxQuantidade.Text);
         }
-
         private void textBoxValorPago_TextChanged(object sender, EventArgs e)
         {
             ItemVenda itemVenda = new ItemVenda();
             itemVenda.ValorPago = (int)Convert.ToDouble(textBoxValorPago.Text);
-        }
-
-        private void labelSubtotal_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelpreco_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            using (FormInicializarVenda frm = new FormInicializarVenda(true))
-            {
-                frm.ShowDialog();
-                if (frm.itemVenda != null)
-                {
-                    ItemVenda current = ((ItemVenda)bindingSourceVenda.Current);
-                    current.SubTotal = frm.;
-                    labelSubtotal.Text = frm.textBoxQuantidade.Text * frm.textBoxPrecoProduto.Text;
-                    current.Id = frm..Id;
-                }
-            }
         }
     }
 }
