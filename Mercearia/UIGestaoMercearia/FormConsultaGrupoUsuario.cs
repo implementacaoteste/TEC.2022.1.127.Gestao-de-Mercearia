@@ -99,5 +99,10 @@ namespace UIGestaoMercearia
 
             formCadastro.Show();
         }
+
+        private void FormConsultaGrupoUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
