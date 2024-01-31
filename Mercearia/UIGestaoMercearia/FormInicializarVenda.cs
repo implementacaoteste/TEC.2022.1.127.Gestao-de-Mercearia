@@ -1,4 +1,4 @@
-﻿using BLL;
+using BLL;
 using Models;
 namespace UIGestaoMercearia
 {
@@ -137,5 +137,8 @@ namespace UIGestaoMercearia
             ItemVenda itemVenda = new ItemVenda();
             itemVenda.ValorPago = (int)Convert.ToDouble(textBoxValorPago.Text);
         }
+
+
     }
 }
+
