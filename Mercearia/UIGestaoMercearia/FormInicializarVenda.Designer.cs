@@ -45,7 +45,6 @@
             label5 = new Label();
             buttonSalvar = new Button();
             buttonCancelar = new Button();
-            pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
@@ -61,13 +60,14 @@
             buttonBuscarProduto = new Button();
             labelpreco = new Label();
             labelTroco = new Label();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)itemVendaListBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -98,7 +98,7 @@
             labelNomeProduto.Anchor = AnchorStyles.Top;
             labelNomeProduto.AutoSize = true;
             labelNomeProduto.Font = new Font("Stencil", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            labelNomeProduto.Location = new Point(352, 10);
+            labelNomeProduto.Location = new Point(356, 10);
             labelNomeProduto.Name = "labelNomeProduto";
             labelNomeProduto.Size = new Size(377, 47);
             labelNomeProduto.TabIndex = 1;
@@ -110,9 +110,9 @@
             panel2.BackColor = Color.White;
             panel2.BorderStyle = BorderStyle.Fixed3D;
             panel2.Controls.Add(labelNomeProduto);
-            panel2.Location = new Point(407, 64);
+            panel2.Location = new Point(399, 64);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1059, 73);
+            panel2.Size = new Size(1067, 73);
             panel2.TabIndex = 1;
             // 
             // panel3
@@ -126,9 +126,9 @@
             panel3.Controls.Add(textBoxQuantidade);
             panel3.Controls.Add(label7);
             panel3.Controls.Add(textBoxValorPago);
-            panel3.Location = new Point(404, 803);
+            panel3.Location = new Point(399, 803);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1062, 150);
+            panel3.Size = new Size(1067, 150);
             panel3.TabIndex = 2;
             // 
             // label4
@@ -136,7 +136,7 @@
             label4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(929, 17);
+            label4.Location = new Point(934, 17);
             label4.Name = "label4";
             label4.Size = new Size(97, 28);
             label4.TabIndex = 3;
@@ -147,7 +147,7 @@
             labelSubtotal.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             labelSubtotal.AutoSize = true;
             labelSubtotal.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSubtotal.Location = new Point(834, 45);
+            labelSubtotal.Location = new Point(839, 45);
             labelSubtotal.Name = "labelSubtotal";
             labelSubtotal.Size = new Size(187, 59);
             labelSubtotal.TabIndex = 2;
@@ -258,16 +258,6 @@
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            pictureBox1.BackColor = Color.FromArgb(224, 224, 224);
-            pictureBox1.Location = new Point(3, 64);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(407, 889);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
             // dataGridView1
             // 
             dataGridView1.AllowUserToAddRows = false;
@@ -292,7 +282,7 @@
             dataGridViewTextBoxColumn1.MinimumWidth = 6;
             dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             dataGridViewTextBoxColumn1.ReadOnly = true;
-            dataGridViewTextBoxColumn1.Width = 50;
+            dataGridViewTextBoxColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -420,6 +410,16 @@
             labelTroco.Text = "...";
             labelTroco.TextAlign = ContentAlignment.MiddleRight;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Captura_de_tela_2024_01_31_0909582;
+            pictureBox1.Location = new Point(-516, 64);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(949, 1002);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 21;
+            pictureBox1.TabStop = false;
+            // 
             // FormInicializarVenda
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -436,10 +436,10 @@
             Controls.Add(buttonCancelar);
             Controls.Add(buttonSalvar);
             Controls.Add(dataGridView1);
-            Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Controls.Add(panel3);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
             MaximizeBox = false;
@@ -456,10 +456,10 @@
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)itemVendaListBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -479,7 +479,6 @@
         private Button buttonSalvar;
         private Button buttonCancelar;
         private Label label11;
-        private PictureBox pictureBox1;
         private DataGridView dataGridView1;
         private BindingSource bindingSourceVenda;
         private EventHandler bindingSourceVenda_CurrentChanged;
@@ -496,6 +495,9 @@
         private Label labelpreco;
         private Label labelTroco;
         private BindingSource itemVendaListBindingSource;
+        private TextBox textBox1;
+        private TextBox textBoxPrecoProduto;
+        private Button button1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn idVendaDataGridViewTextBoxColumn;
@@ -504,8 +506,6 @@
         private DataGridViewTextBoxColumn subTotalDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn produtoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeProdutoDataGridViewTextBoxColumn;
-        private TextBox textBox1;
-        private TextBox textBoxPrecoProduto;
-        private Button button1;
+        private PictureBox pictureBox1;
     }
 }
