@@ -197,6 +197,7 @@ namespace UIGestaoMercearia
             PDV.TabIndex = 26;
             PDV.Text = "PDV";
             PDV.UseVisualStyleBackColor = false;
+            PDV.Visible = false;
             PDV.Click += PDV_Click;
             // 
             // buttonPermissao
