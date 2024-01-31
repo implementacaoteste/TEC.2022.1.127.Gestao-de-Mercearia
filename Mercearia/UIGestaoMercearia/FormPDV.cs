@@ -32,14 +32,13 @@ namespace UIGestaoMercearia
             {
                 IdCliente = null,
                 IdFormaPagamento = null,
+                //IdFuncionario = Constantes.IdUsuarioLogado,
                 IdFuncionario = null,
                 Total = 0,
                 DataVenda = dataAgora,
 
             };
             new VendaBLL().Inserir(venda);
-
-
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -49,11 +48,33 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
                 if (frm.produto != null)
                 {
-                    ((ItemVenda)bindingSourcePDV.Current).Produto = frm.produto;
+                    ItemVenda current = ((ItemVenda)bindingSourcePDV.Current);
+                    current.Produto = frm.produto;
                     textBoxCodigoDeBarras.Text = frm.produto.Nome;
-                    ((ItemVenda)bindingSourcePDV.Current).Id = frm.produto.Id;
+                    current.Id = frm.produto.Id;
+
+                    AdicionarProduto(frm.produto);
                 }
             }
+        }
+
+        private void AdicionarProduto(Produto _produto)
+        {
+            bindingSourcePDV.AddNew();
+            ((ItemVenda)bindingSourcePDV.Current).Produto = _produto;
+            textBoxCodigoDeBarras.Text = _produto.CodigoDeBarra;
+            ((ItemVenda)bindingSourcePDV.Current).Id = _produto.Id;
+            ((ItemVenda)bindingSourcePDV.Current).Quantidade = Convert.ToInt32(textBoxQuantidade.Text);
+            ((ItemVenda)bindingSourcePDV.Current).SubTotal = Convert.ToInt32(textBoxQuantidade.Text) * ((ItemVenda)bindingSourcePDV.Current).Produto.Preco;
+            ((ItemVenda)bindingSourcePDV.Current).ValorUnitario = _produto.Preco;
+            bindingSourcePDV.EndEdit();
+
+            venda.Total += ((ItemVenda)bindingSourcePDV.Current).SubTotal;
+            labelSubTT.Text = (Convert.ToDouble(labelSubTT.Text) + ((ItemVenda)bindingSourcePDV.Current).SubTotal).ToString();
+            bindingSourcePDV.EndEdit();
+            textBoxQuantidade.Text = "1";
+            textBoxCodigoDeBarras.Text = "";
+            textBoxCodigoDeBarras.Focus();
         }
 
         private void buttonAtualizar_Click(object sender, EventArgs e)
@@ -77,17 +98,7 @@ namespace UIGestaoMercearia
                         return;
                     }
 
-                    bindingSourcePDV.AddNew();
-                    ((ItemVenda)bindingSourcePDV.Current).Produto = produto;
-                    ((ItemVenda)bindingSourcePDV.Current).Quantidade = Convert.ToInt32(textBoxQuantidade.Text);
-                    ((ItemVenda)bindingSourcePDV.Current).SubTotal = Convert.ToInt32(textBoxQuantidade.Text) * ((ItemVenda)bindingSourcePDV.Current).Produto.Preco;
-                    ((ItemVenda)bindingSourcePDV.Current).ValorUnitario = produto.Preco;
-                    venda.Total += ((ItemVenda)bindingSourcePDV.Current).SubTotal;
-                    labelSubTT.Text = (Convert.ToDouble(labelSubTT.Text) + ((ItemVenda)bindingSourcePDV.Current).SubTotal).ToString();
-                    bindingSourcePDV.EndEdit();
-                    textBoxQuantidade.Text = "1";
-                    textBoxCodigoDeBarras.Text = "";
-                    textBoxCodigoDeBarras.Focus();
+                    AdicionarProduto(produto);
                 }
             }
         }
@@ -100,11 +111,21 @@ namespace UIGestaoMercearia
             }
         }
 
+
+        private void labelSubTT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
         private void buttonConcluir_Click(object sender, EventArgs e)
         {
             //Finalizar os dados da venda
-            new VendaBLL().Alterar(venda);
-            
+            bindingSourcePDV.EndEdit();
+            new VendaBLL().Alterar((Venda)bindingSourcePDV.Current);
         }
     }
 }
