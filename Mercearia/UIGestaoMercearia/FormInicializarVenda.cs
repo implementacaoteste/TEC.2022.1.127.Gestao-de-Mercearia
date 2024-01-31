@@ -152,17 +152,17 @@ namespace UIGestaoMercearia
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            using (FormInicializarVenda frm = new FormInicializarVenda(true))
+            /*using (FormInicializarVenda frm = new FormInicializarVenda(true))
             {
-                frm.ShowDialog();
+                 frm.ShowDialog();
                 if (frm.itemVenda != null)
                 {
                     ItemVenda current = ((ItemVenda)bindingSourceVenda.Current);
                     current.SubTotal = frm.;
                     labelSubtotal.Text = frm.textBoxQuantidade.Text * frm.textBoxPrecoProduto.Text;
                     current.Id = frm..Id;
-                }
-            }
+            }*/
         }
     }
 }
+
