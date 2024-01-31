@@ -61,7 +61,6 @@
             buttonBuscarProduto = new Button();
             labelpreco = new Label();
             labelTroco = new Label();
-            buttonCalcular = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -153,7 +152,6 @@
             labelSubtotal.Size = new Size(187, 59);
             labelSubtotal.TabIndex = 2;
             labelSubtotal.Text = "000,00";
-            labelSubtotal.Click += labelSubtotal_Click;
             // 
             // label6
             // 
@@ -408,7 +406,6 @@
             labelpreco.TabIndex = 20;
             labelpreco.Text = "...";
             labelpreco.TextAlign = ContentAlignment.TopCenter;
-            labelpreco.Click += labelpreco_Click;
             // 
             // labelTroco
             // 
@@ -423,27 +420,12 @@
             labelTroco.Text = "...";
             labelTroco.TextAlign = ContentAlignment.MiddleRight;
             // 
-            // buttonCalcular
-            // 
-            buttonCalcular.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            buttonCalcular.BackColor = Color.FromArgb(50, 153, 204);
-            buttonCalcular.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCalcular.ForeColor = SystemColors.Window;
-            buttonCalcular.Location = new Point(831, 654);
-            buttonCalcular.Name = "buttonCalcular";
-            buttonCalcular.Size = new Size(241, 53);
-            buttonCalcular.TabIndex = 22;
-            buttonCalcular.Text = "Calcular";
-            buttonCalcular.UseVisualStyleBackColor = false;
-            buttonCalcular.Click += button1_Click_1;
-            // 
             // FormInicializarVenda
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1466, 954);
-            Controls.Add(buttonCalcular);
             Controls.Add(textBoxCodigodeBarras);
             Controls.Add(labelpreco);
             Controls.Add(buttonBuscarProduto);
@@ -525,6 +507,5 @@
         private TextBox textBox1;
         private TextBox textBoxPrecoProduto;
         private Button button1;
-        private Button buttonCalcular;
     }
 }

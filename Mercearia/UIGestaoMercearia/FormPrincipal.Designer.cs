@@ -301,6 +301,7 @@ namespace UIGestaoMercearia
             buttonEstatistica.TabIndex = 12;
             buttonEstatistica.Text = "Estatística";
             buttonEstatistica.UseVisualStyleBackColor = false;
+            buttonEstatistica.Visible = false;
             buttonEstatistica.Click += buttonEstatistica_Click;
             // 
             // buttonProdutos
@@ -559,6 +560,7 @@ namespace UIGestaoMercearia
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 19;
             pictureBox3.TabStop = false;
+            pictureBox3.Visible = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox2
