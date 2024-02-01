@@ -68,13 +68,79 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro ao tentar alterar Item no banco de dados", ex) { Data = { { "Id", 10032 } } };
+                throw new Exception("Erro ao tentar alterar Item no banco de dados", ex) { Data = { { "Id", 10065 } } };
             }
             finally
             {
                 cn.Close();
             }
         }
+
+        public void Excluir(int _id)
+        {
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandText = @"DELETE FROM ItemVenda WHERE Id = @Id";
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@Id", _id);
+
+                cmd.Connection = cn;
+                cn.Open();
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar excluir um item no banco de dados.", ex) { Data = { { "Id", 10066 } } };
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public ItemVenda BuscarPorIdVenda(int _IdVenda)
+        {
+            ItemVenda item;
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = @"SELECT IdProduto, IdVenda, Quantidade, ValorUnitario, SubTotal FROM ItemVenda WHERE IdVenda = @IdVenda";
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Parameters.AddWithValue("@IdVenda", _IdVenda);
+
+                cn.Open();
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    item = new ItemVenda();
+                    if (rd.Read())
+                    {
+                        item.Id = (int)rd["Id"];
+                        item.IdProduto = (int)rd["IdProduto"];
+                        item.IdVenda = (int)rd["IdVenda"];
+                        item.Quantidade = (int)rd["Quantidade"];
+                        item.ValorUnitario = Convert.ToDouble(rd["ValorUnitario"]);
+                        item.SubTotal = Convert.ToDouble(rd["SubTotal"]);
+
+                    }
+                }
+                return item;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar um Item por Id de Venda no banco de dados", ex) { Data = { { "Id", 10068 } } };
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+
     }
     
 }
