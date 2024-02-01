@@ -55,6 +55,7 @@ namespace DAL
 
                 cmd.CommandType = System.Data.CommandType.Text;
 
+                cmd.Parameters.AddWithValue("@Id", _item.Id);
                 cmd.Parameters.AddWithValue("@IdProduto", _item.IdProduto);
                 cmd.Parameters.AddWithValue("@IdVenda", _item.IdVenda);
                 cmd.Parameters.AddWithValue("@Quantidade", _item.Quantidade);
