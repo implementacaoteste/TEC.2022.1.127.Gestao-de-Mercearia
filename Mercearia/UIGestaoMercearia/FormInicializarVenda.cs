@@ -1,5 +1,6 @@
 using BLL;
 using Models;
+using System.Security.Cryptography;
 namespace UIGestaoMercearia
 {
     public partial class FormInicializarVenda : Form
@@ -52,6 +53,8 @@ namespace UIGestaoMercearia
 
         private void FormInicializarVenda_Load(object sender, EventArgs e)
         {
+            bindingSourceVenda.AddNew();
+            textBoxCodigodeBarras.Focus();
             /*
             SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
             try
@@ -109,36 +112,74 @@ namespace UIGestaoMercearia
         }
         private void textBoxCodigodeBarras_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                AdicionarProduto();
-            }
+
         }
         private void AdicionarProduto()
         {
             Produto produto = new ProdutoBLL().BuscarPorCodigoDeBarra(textBoxCodigodeBarras.Text);
             labelNomeProduto.Text = produto.Nome;
             labelpreco.Text = $" {produto.Preco:C}";
-
-            ItemVenda itemVenda = new ItemVenda();
-            itemVenda.Produto = produto;
-            itemVenda.ValorUnitario = produto.Preco;
-            itemVenda.Quantidade = produto.Quantidade;
-
-
+            itemVendaListBindingSource.AddNew();
+            ((ItemVenda)itemVendaListBindingSource.Current).Produto = produto;
+            ((ItemVenda)itemVendaListBindingSource.Current).ValorUnitario = produto.Preco;
+            ((ItemVenda)itemVendaListBindingSource.Current).Quantidade = Convert.ToDouble(textBoxQuantidade.Text);
+            ((ItemVenda)itemVendaListBindingSource.Current).SubTotal = ((ItemVenda)itemVendaListBindingSource.Current).Quantidade * ((ItemVenda)itemVendaListBindingSource.Current).ValorUnitario;
+            ((Venda)bindingSourceVenda.Current).Total += ((ItemVenda)itemVendaListBindingSource.Current).SubTotal;
+            labelSubtotal.Text = $"subtotal: {((Venda)bindingSourceVenda.Current).Total:F2}";
+            textBoxCodigodeBarras.Text = "";
+            textBoxCodigodeBarras.Focus();
         }
-        private void textBoxQuantidade_TextChanged(object sender, EventArgs e)
+        private void textBoxQuantidade_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ItemVenda itemVenda = new ItemVenda();
-            itemVenda.Quantidade = Convert.ToDouble(textBoxQuantidade.Text);
+            //if (e.KeyChar == (char)Keys.Enter)
+            //{
+            //    double.TryParse(labelpreco.Text, out double preco);
+            //    double.TryParse(textBoxQuantidade.Text, out double quantidade);
+            //    double subtotal = quantidade * preco;
+            //    labelSubtotal.Text = $"subtotal: {Convert.ToDouble(labelSubtotal.Text) + subtotal:F2}";
+            //    //e.Handled = true;
+            //    textBoxCodigodeBarras.Focus();
+            //}
         }
-        private void textBoxValorPago_TextChanged(object sender, EventArgs e)
+
+        private void textBoxCodigodeBarras_KeyPress(object sender, KeyPressEventArgs e)
         {
-            ItemVenda itemVenda = new ItemVenda();
-            itemVenda.ValorPago = (int)Convert.ToDouble(textBoxValorPago.Text);
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if (!string.IsNullOrEmpty(textBoxCodigodeBarras.Text))
+                {
+                    e.Handled = true;
+                    AdicionarProduto();
+                }
+                else
+                    textBoxQuantidade.Focus();
+            }
+            //if (e.KeyChar == (char)Keys.Enter)
+            //{
+            //    e.Handled = true;
+            //    textBoxQuantidade.Focus();
+            //}
         }
 
+        private void textBoxQuantidade_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && !string.IsNullOrEmpty(textBoxQuantidade.Text))
+                textBoxCodigodeBarras.Focus();
+        }
 
+        private void finaliz(object sender, EventArgs e)
+        {
+            try
+            {
+                using (FormFinalizarVenda frm = new FormFinalizarVenda())
+                {
+                    frm.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
-

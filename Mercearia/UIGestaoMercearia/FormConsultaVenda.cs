@@ -130,19 +130,5 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void comboBoxVenda_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxVenda_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
-
-
-
-

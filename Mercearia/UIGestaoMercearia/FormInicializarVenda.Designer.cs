@@ -36,14 +36,11 @@
             panel3 = new Panel();
             label4 = new Label();
             labelSubtotal = new Label();
+            buttonTroco = new Button();
             label6 = new Label();
             textBoxQuantidade = new TextBox();
-            label7 = new Label();
-            textBoxValorPago = new TextBox();
             textBoxCodigodeBarras = new TextBox();
             label11 = new Label();
-            label5 = new Label();
-            buttonSalvar = new Button();
             buttonCancelar = new Button();
             dataGridView1 = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
@@ -57,9 +54,7 @@
             itemVendaListBindingSource = new BindingSource(components);
             bindingSourceVenda = new BindingSource(components);
             label12 = new Label();
-            buttonBuscarProduto = new Button();
             labelpreco = new Label();
-            labelTroco = new Label();
             pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -122,13 +117,9 @@
             panel3.BorderStyle = BorderStyle.Fixed3D;
             panel3.Controls.Add(label4);
             panel3.Controls.Add(labelSubtotal);
-            panel3.Controls.Add(label6);
-            panel3.Controls.Add(textBoxQuantidade);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(textBoxValorPago);
-            panel3.Location = new Point(399, 803);
+            panel3.Location = new Point(399, 771);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1067, 150);
+            panel3.Size = new Size(1067, 182);
             panel3.TabIndex = 2;
             // 
             // label4
@@ -136,7 +127,7 @@
             label4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(934, 17);
+            label4.Location = new Point(934, 49);
             label4.Name = "label4";
             label4.Size = new Size(97, 28);
             label4.TabIndex = 3;
@@ -147,18 +138,32 @@
             labelSubtotal.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             labelSubtotal.AutoSize = true;
             labelSubtotal.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSubtotal.Location = new Point(839, 45);
+            labelSubtotal.Location = new Point(839, 77);
             labelSubtotal.Name = "labelSubtotal";
             labelSubtotal.Size = new Size(187, 59);
             labelSubtotal.TabIndex = 2;
             labelSubtotal.Text = "000,00";
             // 
+            // buttonTroco
+            // 
+            buttonTroco.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonTroco.BackColor = Color.FromArgb(50, 153, 204);
+            buttonTroco.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonTroco.ForeColor = SystemColors.Window;
+            buttonTroco.Location = new Point(1224, 654);
+            buttonTroco.Name = "buttonTroco";
+            buttonTroco.Size = new Size(208, 53);
+            buttonTroco.TabIndex = 22;
+            buttonTroco.Text = "Finalizar Venda";
+            buttonTroco.UseVisualStyleBackColor = false;
+            buttonTroco.Click += finaliz;
+            // 
             // label6
             // 
-            label6.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(34, 14);
+            label6.Location = new Point(1240, 149);
             label6.Name = "label6";
             label6.Size = new Size(163, 31);
             label6.TabIndex = 5;
@@ -166,46 +171,29 @@
             // 
             // textBoxQuantidade
             // 
-            textBoxQuantidade.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            textBoxQuantidade.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            textBoxQuantidade.BackColor = Color.WhiteSmoke;
+            textBoxQuantidade.BorderStyle = BorderStyle.None;
             textBoxQuantidade.Cursor = Cursors.IBeam;
             textBoxQuantidade.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            textBoxQuantidade.Location = new Point(38, 50);
+            textBoxQuantidade.Location = new Point(1224, 183);
             textBoxQuantidade.Name = "textBoxQuantidade";
-            textBoxQuantidade.Size = new Size(179, 87);
+            textBoxQuantidade.Size = new Size(179, 80);
             textBoxQuantidade.TabIndex = 15;
             textBoxQuantidade.Text = "1";
-            textBoxQuantidade.TextChanged += textBoxQuantidade_TextChanged;
-            // 
-            // label7
-            // 
-            label7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(277, 14);
-            label7.Name = "label7";
-            label7.Size = new Size(155, 31);
-            label7.TabIndex = 6;
-            label7.Text = "VALOR PAGO";
-            // 
-            // textBoxValorPago
-            // 
-            textBoxValorPago.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            textBoxValorPago.Cursor = Cursors.IBeam;
-            textBoxValorPago.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            textBoxValorPago.Location = new Point(277, 50);
-            textBoxValorPago.Name = "textBoxValorPago";
-            textBoxValorPago.Size = new Size(233, 87);
-            textBoxValorPago.TabIndex = 16;
-            textBoxValorPago.TextChanged += textBoxValorPago_TextChanged;
+            textBoxQuantidade.KeyDown += textBoxQuantidade_KeyDown;
+            textBoxQuantidade.KeyPress += textBoxQuantidade_KeyPress;
             // 
             // textBoxCodigodeBarras
             // 
+            textBoxCodigodeBarras.BackColor = Color.WhiteSmoke;
             textBoxCodigodeBarras.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxCodigodeBarras.Location = new Point(454, 195);
             textBoxCodigodeBarras.Name = "textBoxCodigodeBarras";
             textBoxCodigodeBarras.Size = new Size(298, 65);
             textBoxCodigodeBarras.TabIndex = 19;
             textBoxCodigodeBarras.KeyDown += textBoxCodigodeBarras_KeyDown;
+            textBoxCodigodeBarras.KeyPress += textBoxCodigodeBarras_KeyPress;
             // 
             // label11
             // 
@@ -217,44 +205,17 @@
             label11.TabIndex = 13;
             label11.Text = "CÓDIGO DE BARRA";
             // 
-            // label5
-            // 
-            label5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(1336, 149);
-            label5.Name = "label5";
-            label5.Size = new Size(96, 31);
-            label5.TabIndex = 4;
-            label5.Text = "TROCO:";
-            // 
-            // buttonSalvar
-            // 
-            buttonSalvar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            buttonSalvar.BackColor = Color.LimeGreen;
-            buttonSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonSalvar.ForeColor = SystemColors.ButtonHighlight;
-            buttonSalvar.Location = new Point(1310, 654);
-            buttonSalvar.Name = "buttonSalvar";
-            buttonSalvar.Size = new Size(121, 42);
-            buttonSalvar.TabIndex = 8;
-            buttonSalvar.Text = "Salvar";
-            buttonSalvar.TextAlign = ContentAlignment.TopCenter;
-            buttonSalvar.UseVisualStyleBackColor = false;
-            buttonSalvar.Click += buttonSalvar_Click;
-            // 
             // buttonCancelar
             // 
             buttonCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonCancelar.BackColor = Color.Red;
-            buttonCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCancelar.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonHighlight;
-            buttonCancelar.Location = new Point(1183, 654);
+            buttonCancelar.Location = new Point(1013, 654);
             buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(121, 41);
+            buttonCancelar.Size = new Size(205, 53);
             buttonCancelar.TabIndex = 9;
             buttonCancelar.Text = "Cancelar";
-            buttonCancelar.TextAlign = ContentAlignment.TopCenter;
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
             // 
@@ -264,6 +225,7 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.BackgroundColor = Color.FromArgb(50, 153, 204);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, idVendaDataGridViewTextBoxColumn, quantidadeDataGridViewTextBoxColumn, valorUnitarioDataGridViewTextBoxColumn, subTotalDataGridViewTextBoxColumn, produtoDataGridViewTextBoxColumn, nomeProdutoDataGridViewTextBoxColumn });
             dataGridView1.DataSource = itemVendaListBindingSource;
@@ -369,21 +331,6 @@
             label12.Text = "PREÇO UNITÁRIO";
             label12.TextAlign = ContentAlignment.TopCenter;
             // 
-            // buttonBuscarProduto
-            // 
-            buttonBuscarProduto.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            buttonBuscarProduto.BackColor = Color.FromArgb(50, 153, 204);
-            buttonBuscarProduto.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonBuscarProduto.ForeColor = SystemColors.Window;
-            buttonBuscarProduto.Location = new Point(459, 654);
-            buttonBuscarProduto.Name = "buttonBuscarProduto";
-            buttonBuscarProduto.Size = new Size(241, 53);
-            buttonBuscarProduto.TabIndex = 20;
-            buttonBuscarProduto.Text = "Buscar Produto";
-            buttonBuscarProduto.UseVisualStyleBackColor = false;
-            buttonBuscarProduto.Click += button1_Click;
-            buttonBuscarProduto.KeyDown += button1_KeyDown;
-            // 
             // labelpreco
             // 
             labelpreco.Anchor = AnchorStyles.Top;
@@ -396,19 +343,6 @@
             labelpreco.TabIndex = 20;
             labelpreco.Text = "...";
             labelpreco.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labelTroco
-            // 
-            labelTroco.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            labelTroco.AutoSize = true;
-            labelTroco.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            labelTroco.ImageAlign = ContentAlignment.MiddleRight;
-            labelTroco.Location = new Point(1354, 195);
-            labelTroco.Name = "labelTroco";
-            labelTroco.Size = new Size(73, 59);
-            labelTroco.TabIndex = 14;
-            labelTroco.Text = "...";
-            labelTroco.TextAlign = ContentAlignment.MiddleRight;
             // 
             // pictureBox1
             // 
@@ -426,15 +360,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1466, 954);
+            Controls.Add(buttonTroco);
             Controls.Add(textBoxCodigodeBarras);
             Controls.Add(labelpreco);
-            Controls.Add(buttonBuscarProduto);
+            Controls.Add(textBoxQuantidade);
+            Controls.Add(label6);
             Controls.Add(label12);
             Controls.Add(label11);
-            Controls.Add(label5);
-            Controls.Add(labelTroco);
             Controls.Add(buttonCancelar);
-            Controls.Add(buttonSalvar);
             Controls.Add(dataGridView1);
             Controls.Add(panel1);
             Controls.Add(panel2);
@@ -473,10 +406,7 @@
         private Panel panel3;
         private Label label4;
         private Label labelSubtotal;
-        private Label label5;
         private Label label6;
-        private Label label7;
-        private Button buttonSalvar;
         private Button buttonCancelar;
         private Label label11;
         private DataGridView dataGridView1;
@@ -488,12 +418,9 @@
         private DataGridViewTextBoxColumn idFormaPagamentoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dataVendaDataGridViewTextBoxColumn;
         private TextBox textBoxQuantidade;
-        private TextBox textBoxValorPago;
         private Label label12;
         private TextBox textBoxCodigodeBarras;
-        private Button buttonBuscarProduto;
         private Label labelpreco;
-        private Label labelTroco;
         private BindingSource itemVendaListBindingSource;
         private TextBox textBox1;
         private TextBox textBoxPrecoProduto;
@@ -507,5 +434,6 @@
         private DataGridViewTextBoxColumn produtoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeProdutoDataGridViewTextBoxColumn;
         private PictureBox pictureBox1;
+        private Button buttonTroco;
     }
 }

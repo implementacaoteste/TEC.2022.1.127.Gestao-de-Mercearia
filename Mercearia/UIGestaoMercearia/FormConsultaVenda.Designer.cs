@@ -154,7 +154,6 @@
             textBoxVenda.Name = "textBoxVenda";
             textBoxVenda.Size = new Size(394, 27);
             textBoxVenda.TabIndex = 2;
-            textBoxVenda.TextChanged += textBoxVenda_TextChanged;
             // 
             // comboBoxVenda
             // 
@@ -165,7 +164,6 @@
             comboBoxVenda.Name = "comboBoxVenda";
             comboBoxVenda.Size = new Size(283, 28);
             comboBoxVenda.TabIndex = 1;
-            comboBoxVenda.SelectedIndexChanged += comboBoxVenda_SelectedIndexChanged;
             // 
             // label1
             // 

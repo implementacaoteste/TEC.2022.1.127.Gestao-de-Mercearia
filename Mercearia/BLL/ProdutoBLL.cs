@@ -38,9 +38,5 @@ namespace BLL
         {
             new ProdutoDAL().Excluir(_id);
         }
-    
-        
-
-    
     }
 }
