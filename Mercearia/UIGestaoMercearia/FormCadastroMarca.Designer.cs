@@ -28,110 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.marcaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.buttonSalvar = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.marcaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.marcaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.marcaBindingSource1)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            label1 = new Label();
+            textBox1 = new TextBox();
+            marcaBindingSource = new BindingSource(components);
+            buttonCancelar = new Button();
+            buttonSalvar = new Button();
+            label10 = new Label();
+            marcaBindingSource1 = new BindingSource(components);
+            ((System.ComponentModel.ISupportInitialize)marcaBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)marcaBindingSource1).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(29, 100);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 18);
-            this.label1.TabIndex = 54;
-            this.label1.Text = "Insira uma Marca:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(29, 100);
+            label1.Name = "label1";
+            label1.Size = new Size(156, 18);
+            label1.TabIndex = 54;
+            label1.Text = "Insira uma Marca:";
             // 
             // textBox1
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.marcaBindingSource, "Nome", true));
-            this.textBox1.Location = new System.Drawing.Point(29, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(728, 27);
-            this.textBox1.TabIndex = 53;
+            textBox1.Cursor = Cursors.IBeam;
+            textBox1.DataBindings.Add(new Binding("Text", marcaBindingSource, "Nome", true));
+            textBox1.Location = new Point(29, 121);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(728, 27);
+            textBox1.TabIndex = 53;
             // 
             // marcaBindingSource
             // 
-            this.marcaBindingSource.DataSource = typeof(Models.Marca);
+            marcaBindingSource.DataSource = typeof(Models.Marca);
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.BackColor = System.Drawing.Color.White;
-            this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonCancelar.Location = new System.Drawing.Point(663, 162);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
-            this.buttonCancelar.TabIndex = 52;
-            this.buttonCancelar.Text = "&Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = false;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            buttonCancelar.BackColor = Color.White;
+            buttonCancelar.FlatStyle = FlatStyle.Flat;
+            buttonCancelar.ForeColor = SystemColors.ActiveCaptionText;
+            buttonCancelar.Location = new Point(663, 162);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(94, 29);
+            buttonCancelar.TabIndex = 52;
+            buttonCancelar.Text = "&Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = false;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.BackColor = System.Drawing.Color.Azure;
-            this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvar.Location = new System.Drawing.Point(565, 162);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(94, 29);
-            this.buttonSalvar.TabIndex = 51;
-            this.buttonSalvar.Text = "&Salvar";
-            this.buttonSalvar.UseVisualStyleBackColor = false;
-            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
+            buttonSalvar.BackColor = Color.Azure;
+            buttonSalvar.FlatStyle = FlatStyle.Flat;
+            buttonSalvar.Location = new Point(565, 162);
+            buttonSalvar.Name = "buttonSalvar";
+            buttonSalvar.Size = new Size(94, 29);
+            buttonSalvar.TabIndex = 51;
+            buttonSalvar.Text = "&Salvar";
+            buttonSalvar.UseVisualStyleBackColor = false;
+            buttonSalvar.Click += buttonSalvar_Click;
             // 
             // label10
             // 
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label10.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(782, 61);
-            this.label10.TabIndex = 50;
-            this.label10.Text = "CADRASTO DE MARCA";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label10.BackColor = Color.FromArgb(50, 153, 204);
+            label10.BorderStyle = BorderStyle.Fixed3D;
+            label10.Dock = DockStyle.Top;
+            label10.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.ForeColor = SystemColors.ButtonFace;
+            label10.Location = new Point(0, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(782, 61);
+            label10.TabIndex = 50;
+            label10.Text = "CADASTO DE MARCA";
+            label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // marcaBindingSource1
             // 
-            this.marcaBindingSource1.DataSource = typeof(Models.Marca);
+            marcaBindingSource1.DataSource = typeof(Models.Marca);
             // 
             // FormCadastroMarca
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(782, 203);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(this.label10);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.KeyPreview = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormCadastroMarca";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.FormCadastroMarca_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.marcaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.marcaBindingSource1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(50, 153, 204);
+            ClientSize = new Size(782, 203);
+            Controls.Add(label1);
+            Controls.Add(textBox1);
+            Controls.Add(buttonCancelar);
+            Controls.Add(buttonSalvar);
+            Controls.Add(label10);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormCadastroMarca";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Load += FormCadastroMarca_Load;
+            ((System.ComponentModel.ISupportInitialize)marcaBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)marcaBindingSource1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
