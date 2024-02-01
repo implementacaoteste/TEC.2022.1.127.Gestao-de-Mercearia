@@ -39,5 +39,42 @@ namespace DAL
                 cn.Close();
             }
         }
+        public void Alterar(ItemVenda _item)
+        {
+
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandText = @"UPDATE ItemVenda SET IdProduto = @IdProduto,
+                                                     IdVenda = @IdVenda,
+                                                     Quantidade = Quantidade,
+                                                     ValorUnitario = @ValorUnitario,
+                                                     SubTotal = @SubTotal
+                                                     WHERE Id = @Id";
+
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@IdProduto", _item.IdProduto);
+                cmd.Parameters.AddWithValue("@IdVenda", _item.IdVenda);
+                cmd.Parameters.AddWithValue("@Quantidade", _item.Quantidade);
+                cmd.Parameters.AddWithValue("@ValorUnitario", _item.ValorUnitario);
+                cmd.Parameters.AddWithValue("@SubTotal", _item.SubTotal);
+
+                cmd.Connection = cn;
+                cn.Open();
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao tentar alterar Item no banco de dados", ex) { Data = { { "Id", 10032 } } };
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
+    
 }
