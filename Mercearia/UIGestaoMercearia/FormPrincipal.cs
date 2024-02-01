@@ -245,5 +245,10 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
+
+        private void buttonPagamento_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
