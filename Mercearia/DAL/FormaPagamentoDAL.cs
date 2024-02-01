@@ -97,6 +97,76 @@ namespace DAL
                 cn.Close();
             }
         }
+        public List<FormaPagamento> BuscarTudo()
+        {
+            List<FormaPagamento> pagamentoList = new List<FormaPagamento>();
+            FormaPagamento pagamento;
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = @"SELECT Id, Tipo, Descricao, Troco FROM FormaPagamento";
+                cmd.CommandType = System.Data.CommandType.Text;
+                cn.Open();
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    while (rd.Read())
+                    {
+                        pagamento = new FormaPagamento();
+                        pagamento.Id = (int)rd["Id"];
+                        pagamento.Tipo = rd["Tipo"].ToString();
+                        pagamento.Descricao = rd["Descricao"].ToString();
+                        pagamento.Troco = Convert.ToBoolean(rd["Troco"]);
+                        pagamentoList.Add(pagamento);
+                    }
+                }
+                return pagamentoList;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar forma de pagamento no banco de dados", ex) { Data = { { "Id", 10035 } } };
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public FormaPagamento BuscarPorId(int _id)
+        {
+            FormaPagamento pagamento;
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = @"SELECT Id, Tipo, Descricao, Troco FROM FormaPagamento WHERE Id = @Id";
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Parameters.AddWithValue("@Id", _id);
+
+                cn.Open();
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    pagamento = new FormaPagamento();
+                    if (rd.Read())
+                    {
+                        pagamento.Id = (int)rd["Id"];
+                        pagamento.Tipo = rd["Tipo"].ToString();
+                        pagamento.Descricao = rd["Descricao"].ToString();
+                        pagamento.Troco = Convert.ToBoolean(rd["Troco"]);
+                    }
+                }
+                return pagamento;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar formas de pagamento por id no banco de dados", ex) { Data = { { "Id", 10034 } } };
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
 
 
     }

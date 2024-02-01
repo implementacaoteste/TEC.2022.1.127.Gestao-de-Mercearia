@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             textBox1 = new TextBox();
+            formaPagamentoBindingSource = new BindingSource(components);
             buttonCancelar = new Button();
             buttonSalvar = new Button();
             label10 = new Label();
             textBox2 = new TextBox();
             label2 = new Label();
             checkBox1 = new CheckBox();
+            ((System.ComponentModel.ISupportInitialize)formaPagamentoBindingSource).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -43,7 +46,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(29, 92);
+            label1.Location = new Point(108, 77);
             label1.Name = "label1";
             label1.Size = new Size(64, 24);
             label1.TabIndex = 59;
@@ -52,33 +55,40 @@
             // textBox1
             // 
             textBox1.Cursor = Cursors.IBeam;
-            textBox1.Location = new Point(29, 119);
+            textBox1.DataBindings.Add(new Binding("Text", formaPagamentoBindingSource, "Tipo", true));
+            textBox1.Location = new Point(108, 104);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(401, 27);
             textBox1.TabIndex = 58;
+            // 
+            // formaPagamentoBindingSource
+            // 
+            formaPagamentoBindingSource.DataSource = typeof(Models.FormaPagamento);
             // 
             // buttonCancelar
             // 
             buttonCancelar.BackColor = Color.White;
             buttonCancelar.FlatStyle = FlatStyle.Flat;
             buttonCancelar.ForeColor = SystemColors.ActiveCaptionText;
-            buttonCancelar.Location = new Point(504, 280);
+            buttonCancelar.Location = new Point(313, 334);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
             buttonCancelar.TabIndex = 57;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonSalvar
             // 
             buttonSalvar.BackColor = Color.Azure;
             buttonSalvar.FlatStyle = FlatStyle.Flat;
-            buttonSalvar.Location = new Point(404, 280);
+            buttonSalvar.Location = new Point(213, 334);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
             buttonSalvar.TabIndex = 56;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = false;
+            buttonSalvar.Click += buttonSalvar_Click;
             // 
             // label10
             // 
@@ -96,10 +106,11 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(29, 194);
+            textBox2.DataBindings.Add(new Binding("Text", formaPagamentoBindingSource, "Descricao", true));
+            textBox2.Location = new Point(108, 166);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(358, 112);
+            textBox2.Size = new Size(408, 112);
             textBox2.TabIndex = 60;
             // 
             // label2
@@ -107,7 +118,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(29, 167);
+            label2.Location = new Point(108, 139);
             label2.Name = "label2";
             label2.Size = new Size(120, 24);
             label2.TabIndex = 59;
@@ -116,10 +127,11 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
+            checkBox1.DataBindings.Add(new Binding("CheckState", formaPagamentoBindingSource, "Troco", true));
             checkBox1.FlatStyle = FlatStyle.Flat;
             checkBox1.Font = new Font("Swis721 Blk BT", 10.2F, FontStyle.Italic, GraphicsUnit.Point);
             checkBox1.ForeColor = Color.White;
-            checkBox1.Location = new Point(459, 122);
+            checkBox1.Location = new Point(231, 294);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(139, 24);
             checkBox1.TabIndex = 61;
@@ -132,7 +144,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
             CancelButton = buttonCancelar;
-            ClientSize = new Size(610, 321);
+            ClientSize = new Size(610, 375);
             Controls.Add(checkBox1);
             Controls.Add(label2);
             Controls.Add(textBox2);
@@ -147,6 +159,8 @@
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
+            Load += FormCadastroPagamento_Load;
+            ((System.ComponentModel.ISupportInitialize)formaPagamentoBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -161,5 +175,6 @@
         private TextBox textBox2;
         private Label label2;
         private CheckBox checkBox1;
+        private BindingSource formaPagamentoBindingSource;
     }
 }

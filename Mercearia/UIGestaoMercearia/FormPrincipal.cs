@@ -248,7 +248,10 @@ namespace UIGestaoMercearia
 
         private void buttonPagamento_Click(object sender, EventArgs e)
         {
-            
+            using (FormPagamento frm = new FormPagamento())
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }
