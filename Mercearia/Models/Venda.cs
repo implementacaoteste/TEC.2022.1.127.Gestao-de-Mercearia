@@ -9,7 +9,7 @@ namespace Models
     public class Venda
     {
         public int Id { get; set; }
-        public int? IdFuncionario { get; set; }
+        public int? IdUsuario { get; set; }
         public int? IdCliente { get; set; }
         public int? IdFormaPagamento { get; set; }
         public DateTime DataVenda { get; set; }

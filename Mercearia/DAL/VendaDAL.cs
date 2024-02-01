@@ -16,10 +16,10 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Venda(IdFuncionario, IdCliente, IdFormaPagamento, DataVenda, Total) VALUES (@IdFuncionario, @IdCliente, @IdFormaPagamento, @DataVenda, @Total)";
+                cmd.CommandText = @"INSERT INTO Venda(IdUsuario, IdCliente, IdFormaPagamento, DataVenda, Total) VALUES (@IdUsuario, @IdCliente, @IdFormaPagamento, @DataVenda, @Total)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
-                cmd.Parameters.AddWithValue("@IdFuncionario", _venda.IdFuncionario ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@IdUsuario", _venda.IdUsuario ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@IdCliente", _venda.IdCliente ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@IdFormaPagamento", _venda.IdFormaPagamento ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@DataVenda", _venda.DataVenda);
@@ -44,7 +44,7 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"UPDATE Venda SET IdFuncionario = @IdFuncionario, 
+                cmd.CommandText = @"UPDATE Venda SET IdUsuario = @IdUsuario, 
                                                      IdCliente = @IdCliente,
                                                      IdFormaPagamento = @IdFormaPagamento,
                                                      Total = @Total
@@ -52,7 +52,7 @@ namespace DAL
 
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _venda.Id);
-                cmd.Parameters.AddWithValue("@IdFuncionario", _venda.IdFuncionario ?? (object)DBNull.Value);
+                cmd.Parameters.AddWithValue("@IdUsuario", _venda.IdUsuario ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@IdCliente", _venda.IdCliente ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@IdFormaPagamento", _venda.IdFormaPagamento ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@Total", _venda.Total);
@@ -109,7 +109,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Id, IdFuncionario, IdCliente, IdProduto, PrecoVenda, IdFormaPagamento, DataVenda FROM Venda";
+                cmd.CommandText = "SELECT Id, IdUsuario, IdCliente, IdProduto, PrecoVenda, IdFormaPagamento, DataVenda FROM Venda";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cn.Open();
                 using (SqlDataReader rd = cmd.ExecuteReader())
@@ -118,7 +118,7 @@ namespace DAL
                     {
                         venda = new Venda();
                         venda.Id = Convert.ToInt32(rd["Id"]);
-                        venda.IdFuncionario = Convert.ToInt32(rd["IdFuncionario"]);
+                        venda.IdUsuario = Convert.ToInt32(rd["IdUsuario"]);
                         venda.IdCliente = Convert.ToInt32(rd["IdCliente"]);
                         venda.IdFormaPagamento = Convert.ToInt32(rd["IdFormaPagamento"]);
                         venda.DataVenda = Convert.ToDateTime(rd["DataVenda"]);
@@ -146,7 +146,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, IdFuncionario, IdCliente, IdProduto, PrecoVenda, IdFormaPagamento, DataVenda FROM Venda WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, IdUsuario, IdCliente, IdProduto, PrecoVenda, IdFormaPagamento, DataVenda FROM Venda WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
                 cn.Open();
@@ -156,7 +156,7 @@ namespace DAL
                     if (rd.Read())
                     {
                         venda.Id = Convert.ToInt32(rd["Id"]);
-                        venda.IdFuncionario = Convert.ToInt32(rd["IdFuncionario"]);
+                        venda.IdUsuario = Convert.ToInt32(rd["IdUsuario"]);
                         venda.IdCliente = Convert.ToInt32(rd["IdCliente"]);
                         venda.IdFormaPagamento = Convert.ToInt32(rd["IdFormaPagamento"]);
                         venda.DataVenda = Convert.ToDateTime(rd["DataVenda"]);
