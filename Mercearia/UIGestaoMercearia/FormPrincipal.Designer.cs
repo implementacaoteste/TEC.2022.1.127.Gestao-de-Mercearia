@@ -69,6 +69,7 @@ namespace UIGestaoMercearia
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             toolTip1 = new ToolTip(components);
+            buttonPagamento = new Button();
             label1 = new Label();
             MENU = new Label();
             panel1.SuspendLayout();
@@ -163,6 +164,7 @@ namespace UIGestaoMercearia
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(50, 153, 204);
+            panel2.Controls.Add(buttonPagamento);
             panel2.Controls.Add(PDV);
             panel2.Controls.Add(buttonPermissao);
             panel2.Controls.Add(button8);
@@ -197,7 +199,6 @@ namespace UIGestaoMercearia
             PDV.TabIndex = 26;
             PDV.Text = "PDV";
             PDV.UseVisualStyleBackColor = false;
-            PDV.Visible = false;
             PDV.Click += PDV_Click;
             // 
             // buttonPermissao
@@ -580,6 +581,20 @@ namespace UIGestaoMercearia
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
             // 
+            // buttonPagamento
+            // 
+            buttonPagamento.BackColor = Color.White;
+            buttonPagamento.FlatStyle = FlatStyle.Flat;
+            buttonPagamento.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonPagamento.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonPagamento.Location = new Point(9, 649);
+            buttonPagamento.Name = "buttonPagamento";
+            buttonPagamento.Size = new Size(269, 41);
+            buttonPagamento.TabIndex = 27;
+            buttonPagamento.Text = "Formas de Pagamento";
+            buttonPagamento.UseVisualStyleBackColor = false;
+            buttonPagamento.Click += buttonPagamento_Click;
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -664,6 +679,7 @@ namespace UIGestaoMercearia
         private Button buttonPermissao;
         private ToolTip toolTip1;
         private Button PDV;
+        private Button buttonPagamento;
     }
 }
 

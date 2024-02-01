@@ -32,8 +32,7 @@ namespace UIGestaoMercearia
             {
                 IdCliente = null,
                 IdFormaPagamento = null,
-                //IdFuncionario = Constantes.IdUsuarioLogado,
-                IdFuncionario = null,
+                IdUsuario = Constantes.IdUsuarioLogado,
                 Total = 0,
                 DataVenda = dataAgora,
 
