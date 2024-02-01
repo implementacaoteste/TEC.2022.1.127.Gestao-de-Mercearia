@@ -53,9 +53,9 @@ namespace DAL
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@Id", _pagamento.Id);
-                cmd.Parameters.AddWithValue("@Nome", _pagamento.Tipo);
-                cmd.Parameters.AddWithValue("@Nome", _pagamento.Descricao);
-                cmd.Parameters.AddWithValue("@Nome", _pagamento.Troco);
+                cmd.Parameters.AddWithValue("@Tipo", _pagamento.Tipo);
+                cmd.Parameters.AddWithValue("@Descricao", _pagamento.Descricao);
+                cmd.Parameters.AddWithValue("@Troco", _pagamento.Troco);
 
 
                 cmd.Connection = cn;
