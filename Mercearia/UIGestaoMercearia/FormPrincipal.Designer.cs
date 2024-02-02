@@ -35,6 +35,7 @@ namespace UIGestaoMercearia
             buttonUsuario = new Button();
             buttonCliente = new Button();
             panel2 = new Panel();
+            pictureBox4 = new PictureBox();
             buttonPagamento = new Button();
             pictureBox1 = new PictureBox();
             panel5 = new Panel();
@@ -44,7 +45,6 @@ namespace UIGestaoMercearia
             button8 = new Button();
             buttonGrupoUsuario = new Button();
             buttonMarcas = new Button();
-            buttonEstatistica = new Button();
             buttonFornecedores = new Button();
             buttonCategorias = new Button();
             labelNomeEmpresa = new Label();
@@ -61,6 +61,7 @@ namespace UIGestaoMercearia
             label1 = new Label();
             MENU = new Label();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
@@ -135,6 +136,7 @@ namespace UIGestaoMercearia
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             panel2.BackColor = Color.FromArgb(50, 153, 204);
+            panel2.Controls.Add(pictureBox4);
             panel2.Controls.Add(buttonPagamento);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(MENU);
@@ -147,7 +149,6 @@ namespace UIGestaoMercearia
             panel2.Controls.Add(buttonGrupoUsuario);
             panel2.Controls.Add(buttonUsuario);
             panel2.Controls.Add(buttonMarcas);
-            panel2.Controls.Add(buttonEstatistica);
             panel2.Controls.Add(buttonFornecedores);
             panel2.Controls.Add(buttonCategorias);
             panel2.Location = new Point(1125, 0);
@@ -156,6 +157,23 @@ namespace UIGestaoMercearia
             panel2.TabIndex = 15;
             panel2.Paint += panel2_Paint;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.AccessibleRole = AccessibleRole.MenuBar;
+            pictureBox4.Anchor = AnchorStyles.Right;
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox4.Cursor = Cursors.Hand;
+            pictureBox4.ErrorImage = null;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.InitialImage = null;
+            pictureBox4.Location = new Point(15, 896);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(406, 147);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 21;
+            pictureBox4.TabStop = false;
+            // 
             // buttonPagamento
             // 
             buttonPagamento.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -163,9 +181,9 @@ namespace UIGestaoMercearia
             buttonPagamento.FlatStyle = FlatStyle.Flat;
             buttonPagamento.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonPagamento.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonPagamento.Location = new Point(15, 901);
+            buttonPagamento.Location = new Point(15, 832);
             buttonPagamento.Name = "buttonPagamento";
-            buttonPagamento.Size = new Size(406, 69);
+            buttonPagamento.Size = new Size(406, 58);
             buttonPagamento.TabIndex = 27;
             buttonPagamento.Text = "Formas de Pagamento";
             buttonPagamento.UseVisualStyleBackColor = false;
@@ -197,7 +215,7 @@ namespace UIGestaoMercearia
             buttonPermissao.FlatStyle = FlatStyle.Flat;
             buttonPermissao.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonPermissao.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonPermissao.Location = new Point(15, 832);
+            buttonPermissao.Location = new Point(15, 763);
             buttonPermissao.Name = "buttonPermissao";
             buttonPermissao.Size = new Size(406, 63);
             buttonPermissao.TabIndex = 25;
@@ -279,21 +297,6 @@ namespace UIGestaoMercearia
             buttonMarcas.Text = "Marcas";
             buttonMarcas.UseVisualStyleBackColor = false;
             buttonMarcas.Click += buttonMarcas_Click;
-            // 
-            // buttonEstatistica
-            // 
-            buttonEstatistica.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            buttonEstatistica.BackColor = Color.White;
-            buttonEstatistica.FlatStyle = FlatStyle.Flat;
-            buttonEstatistica.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonEstatistica.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonEstatistica.Location = new Point(15, 763);
-            buttonEstatistica.Name = "buttonEstatistica";
-            buttonEstatistica.Size = new Size(406, 63);
-            buttonEstatistica.TabIndex = 12;
-            buttonEstatistica.Text = "Estatística";
-            buttonEstatistica.UseVisualStyleBackColor = false;
-            buttonEstatistica.Click += buttonEstatistica_Click;
             // 
             // buttonFornecedores
             // 
@@ -484,6 +487,7 @@ namespace UIGestaoMercearia
             KeyDown += FormPrincipal_KeyDown;
             Resize += FormPrincipal_Resize;
             panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
@@ -503,7 +507,6 @@ namespace UIGestaoMercearia
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Splitter splitter1;
         private Panel panel2;
-        private Button buttonEstatistica;
         private Button buttonProdutos;
         private Button buttonFornecedores;
         private Button buttonFuncionarios;
@@ -523,6 +526,7 @@ namespace UIGestaoMercearia
         private Button buttonPermissao;
         private ToolTip toolTip1;
         private Button buttonPagamento;
+        private PictureBox pictureBox4;
     }
 }
 
