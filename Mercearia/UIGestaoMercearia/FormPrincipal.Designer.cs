@@ -34,34 +34,23 @@ namespace UIGestaoMercearia
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             buttonUsuario = new Button();
             buttonCliente = new Button();
-            panel1 = new Panel();
             panel2 = new Panel();
-            PDV = new Button();
-            buttonPermissao = new Button();
-            button8 = new Button();
-            buttonMarcas = new Button();
-            buttonCategorias = new Button();
+            buttonPagamento = new Button();
             pictureBox1 = new PictureBox();
             panel5 = new Panel();
-            buttonGrupoUsuario = new Button();
-            buttonEstatistica = new Button();
+            buttonPermissao = new Button();
             buttonProdutos = new Button();
-            buttonFornecedores = new Button();
             buttonFuncionarios = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            label3 = new Label();
-            monthCalendar1 = new MonthCalendar();
+            button8 = new Button();
+            buttonGrupoUsuario = new Button();
+            buttonMarcas = new Button();
+            buttonEstatistica = new Button();
+            buttonFornecedores = new Button();
+            buttonCategorias = new Button();
             labelNomeEmpresa = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             splitter1 = new Splitter();
             panel3 = new Panel();
-            label4 = new Label();
             pictureBoxLogo = new PictureBox();
             panel4 = new Panel();
             buttonConsultarVenda = new Button();
@@ -69,10 +58,8 @@ namespace UIGestaoMercearia
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             toolTip1 = new ToolTip(components);
-            buttonPagamento = new Button();
             label1 = new Label();
             MENU = new Label();
-            panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
@@ -91,7 +78,7 @@ namespace UIGestaoMercearia
             label1.FlatStyle = FlatStyle.Popup;
             label1.Font = new Font("Swis721 Blk BT", 19.8F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(319, 10);
+            label1.Location = new Point(400, 17);
             label1.Name = "label1";
             label1.Size = new Size(285, 40);
             label1.TabIndex = 1;
@@ -105,9 +92,9 @@ namespace UIGestaoMercearia
             MENU.BackColor = Color.FromArgb(50, 153, 204);
             MENU.Cursor = Cursors.No;
             MENU.FlatStyle = FlatStyle.Popup;
-            MENU.Font = new Font("Swis721 Blk BT", 19.8F, FontStyle.Regular, GraphicsUnit.Point);
+            MENU.Font = new Font("Swis721 Blk BT", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
             MENU.ForeColor = Color.White;
-            MENU.Location = new Point(17, 14);
+            MENU.Location = new Point(91, 14);
             MENU.Name = "MENU";
             MENU.Size = new Size(282, 50);
             MENU.TabIndex = 2;
@@ -116,13 +103,14 @@ namespace UIGestaoMercearia
             // 
             // buttonUsuario
             // 
+            buttonUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             buttonUsuario.BackColor = Color.White;
             buttonUsuario.FlatStyle = FlatStyle.Flat;
-            buttonUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonUsuario.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonUsuario.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonUsuario.Location = new Point(9, 381);
+            buttonUsuario.Location = new Point(15, 553);
             buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(269, 38);
+            buttonUsuario.Size = new Size(406, 66);
             buttonUsuario.TabIndex = 2;
             buttonUsuario.Text = "Usuários";
             buttonUsuario.UseVisualStyleBackColor = false;
@@ -130,137 +118,63 @@ namespace UIGestaoMercearia
             // 
             // buttonCliente
             // 
+            buttonCliente.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             buttonCliente.BackColor = Color.White;
             buttonCliente.FlatStyle = FlatStyle.Flat;
-            buttonCliente.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonCliente.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonCliente.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonCliente.Location = new Point(9, 162);
+            buttonCliente.Location = new Point(15, 194);
             buttonCliente.Name = "buttonCliente";
-            buttonCliente.Size = new Size(269, 38);
+            buttonCliente.Size = new Size(406, 68);
             buttonCliente.TabIndex = 3;
             buttonCliente.Text = "Clientes";
             buttonCliente.UseVisualStyleBackColor = false;
             buttonCliente.Click += buttonCliente_Click;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(50, 153, 204);
-            panel1.Controls.Add(panel2);
-            panel1.Controls.Add(button6);
-            panel1.Controls.Add(button7);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button5);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(monthCalendar1);
-            panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(924, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(285, 936);
-            panel1.TabIndex = 4;
-            // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             panel2.BackColor = Color.FromArgb(50, 153, 204);
             panel2.Controls.Add(buttonPagamento);
-            panel2.Controls.Add(PDV);
-            panel2.Controls.Add(buttonPermissao);
-            panel2.Controls.Add(button8);
-            panel2.Controls.Add(buttonMarcas);
-            panel2.Controls.Add(buttonCategorias);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(MENU);
             panel2.Controls.Add(panel5);
-            panel2.Controls.Add(buttonGrupoUsuario);
             panel2.Controls.Add(buttonCliente);
-            panel2.Controls.Add(buttonUsuario);
-            panel2.Controls.Add(buttonEstatistica);
+            panel2.Controls.Add(buttonPermissao);
             panel2.Controls.Add(buttonProdutos);
-            panel2.Controls.Add(buttonFornecedores);
             panel2.Controls.Add(buttonFuncionarios);
-            panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(0, 0);
+            panel2.Controls.Add(button8);
+            panel2.Controls.Add(buttonGrupoUsuario);
+            panel2.Controls.Add(buttonUsuario);
+            panel2.Controls.Add(buttonMarcas);
+            panel2.Controls.Add(buttonEstatistica);
+            panel2.Controls.Add(buttonFornecedores);
+            panel2.Controls.Add(buttonCategorias);
+            panel2.Location = new Point(1125, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(285, 936);
+            panel2.Size = new Size(433, 1055);
             panel2.TabIndex = 15;
             panel2.Paint += panel2_Paint;
             // 
-            // PDV
+            // buttonPagamento
             // 
-            PDV.BackColor = Color.Transparent;
-            PDV.BackgroundImageLayout = ImageLayout.Center;
-            PDV.FlatStyle = FlatStyle.Popup;
-            PDV.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            PDV.Location = new Point(9, 596);
-            PDV.Name = "PDV";
-            PDV.Size = new Size(269, 37);
-            PDV.TabIndex = 26;
-            PDV.Text = "PDV";
-            PDV.UseVisualStyleBackColor = false;
-            PDV.Click += PDV_Click;
-            // 
-            // buttonPermissao
-            // 
-            buttonPermissao.BackColor = Color.White;
-            buttonPermissao.FlatStyle = FlatStyle.Flat;
-            buttonPermissao.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonPermissao.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonPermissao.Location = new Point(9, 505);
-            buttonPermissao.Name = "buttonPermissao";
-            buttonPermissao.Size = new Size(269, 35);
-            buttonPermissao.TabIndex = 25;
-            buttonPermissao.Text = "Permissões";
-            buttonPermissao.UseVisualStyleBackColor = false;
-            buttonPermissao.Click += button9_Click;
-            // 
-            // button8
-            // 
-            button8.BackColor = Color.White;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button8.ForeColor = Color.FromArgb(50, 153, 204);
-            button8.Location = new Point(9, 252);
-            button8.Name = "button8";
-            button8.Size = new Size(269, 35);
-            button8.TabIndex = 24;
-            button8.Text = "Estoque";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
-            // 
-            // buttonMarcas
-            // 
-            buttonMarcas.BackColor = Color.White;
-            buttonMarcas.FlatStyle = FlatStyle.Flat;
-            buttonMarcas.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonMarcas.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonMarcas.Location = new Point(9, 464);
-            buttonMarcas.Name = "buttonMarcas";
-            buttonMarcas.Size = new Size(269, 35);
-            buttonMarcas.TabIndex = 23;
-            buttonMarcas.Text = "Marcas";
-            buttonMarcas.UseVisualStyleBackColor = false;
-            buttonMarcas.Click += buttonMarcas_Click;
-            // 
-            // buttonCategorias
-            // 
-            buttonCategorias.BackColor = Color.White;
-            buttonCategorias.FlatStyle = FlatStyle.Flat;
-            buttonCategorias.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonCategorias.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonCategorias.Location = new Point(9, 425);
-            buttonCategorias.Name = "buttonCategorias";
-            buttonCategorias.Size = new Size(269, 35);
-            buttonCategorias.TabIndex = 22;
-            buttonCategorias.Text = "Categorias";
-            buttonCategorias.UseVisualStyleBackColor = false;
-            buttonCategorias.Click += buttonCategorias_Click;
+            buttonPagamento.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            buttonPagamento.BackColor = Color.White;
+            buttonPagamento.FlatStyle = FlatStyle.Flat;
+            buttonPagamento.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonPagamento.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonPagamento.Location = new Point(15, 901);
+            buttonPagamento.Name = "buttonPagamento";
+            buttonPagamento.Size = new Size(406, 69);
+            buttonPagamento.TabIndex = 27;
+            buttonPagamento.Text = "Formas de Pagamento";
+            buttonPagamento.UseVisualStyleBackColor = false;
+            buttonPagamento.Click += buttonPagamento_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(39, 20);
+            pictureBox1.Location = new Point(79, 17);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(59, 47);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -273,171 +187,143 @@ namespace UIGestaoMercearia
             panel5.BackColor = Color.White;
             panel5.Location = new Point(12, 82);
             panel5.Name = "panel5";
-            panel5.Size = new Size(261, 10);
+            panel5.Size = new Size(409, 10);
             panel5.TabIndex = 17;
             // 
-            // buttonGrupoUsuario
+            // buttonPermissao
             // 
-            buttonGrupoUsuario.BackColor = Color.White;
-            buttonGrupoUsuario.FlatStyle = FlatStyle.Flat;
-            buttonGrupoUsuario.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonGrupoUsuario.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonGrupoUsuario.Location = new Point(9, 337);
-            buttonGrupoUsuario.Name = "buttonGrupoUsuario";
-            buttonGrupoUsuario.Size = new Size(269, 38);
-            buttonGrupoUsuario.TabIndex = 21;
-            buttonGrupoUsuario.Text = "Grupo de Usuários";
-            buttonGrupoUsuario.UseVisualStyleBackColor = false;
-            buttonGrupoUsuario.Click += buttonGrupoUsuario_Click_1;
-            // 
-            // buttonEstatistica
-            // 
-            buttonEstatistica.BackColor = Color.White;
-            buttonEstatistica.FlatStyle = FlatStyle.Flat;
-            buttonEstatistica.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonEstatistica.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonEstatistica.Location = new Point(9, 546);
-            buttonEstatistica.Name = "buttonEstatistica";
-            buttonEstatistica.Size = new Size(269, 44);
-            buttonEstatistica.TabIndex = 12;
-            buttonEstatistica.Text = "Estatística";
-            buttonEstatistica.UseVisualStyleBackColor = false;
-            buttonEstatistica.Visible = false;
-            buttonEstatistica.Click += buttonEstatistica_Click;
+            buttonPermissao.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            buttonPermissao.BackColor = Color.White;
+            buttonPermissao.FlatStyle = FlatStyle.Flat;
+            buttonPermissao.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonPermissao.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonPermissao.Location = new Point(15, 832);
+            buttonPermissao.Name = "buttonPermissao";
+            buttonPermissao.Size = new Size(406, 63);
+            buttonPermissao.TabIndex = 25;
+            buttonPermissao.Text = "Permissões";
+            buttonPermissao.UseVisualStyleBackColor = false;
+            buttonPermissao.Click += button9_Click;
             // 
             // buttonProdutos
             // 
+            buttonProdutos.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             buttonProdutos.BackColor = Color.White;
             buttonProdutos.FlatStyle = FlatStyle.Flat;
-            buttonProdutos.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonProdutos.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonProdutos.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonProdutos.Location = new Point(9, 118);
+            buttonProdutos.Location = new Point(15, 119);
             buttonProdutos.Name = "buttonProdutos";
-            buttonProdutos.Size = new Size(269, 38);
+            buttonProdutos.Size = new Size(406, 69);
             buttonProdutos.TabIndex = 8;
             buttonProdutos.Text = "Produtos";
             buttonProdutos.UseVisualStyleBackColor = false;
             buttonProdutos.Click += buttonProdutos_Click;
             // 
-            // buttonFornecedores
-            // 
-            buttonFornecedores.BackColor = Color.White;
-            buttonFornecedores.FlatStyle = FlatStyle.Flat;
-            buttonFornecedores.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonFornecedores.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonFornecedores.Location = new Point(9, 293);
-            buttonFornecedores.Name = "buttonFornecedores";
-            buttonFornecedores.Size = new Size(269, 38);
-            buttonFornecedores.TabIndex = 9;
-            buttonFornecedores.Text = "Fornecedores";
-            buttonFornecedores.UseVisualStyleBackColor = false;
-            buttonFornecedores.Click += buttonFornecedores_Click;
-            // 
             // buttonFuncionarios
             // 
+            buttonFuncionarios.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             buttonFuncionarios.BackColor = Color.White;
             buttonFuncionarios.FlatStyle = FlatStyle.Flat;
-            buttonFuncionarios.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonFuncionarios.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonFuncionarios.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonFuncionarios.Location = new Point(9, 206);
+            buttonFuncionarios.Location = new Point(15, 268);
             buttonFuncionarios.Name = "buttonFuncionarios";
-            buttonFuncionarios.Size = new Size(269, 38);
+            buttonFuncionarios.Size = new Size(406, 66);
             buttonFuncionarios.TabIndex = 10;
             buttonFuncionarios.Text = "Funcionários";
             buttonFuncionarios.UseVisualStyleBackColor = false;
             buttonFuncionarios.Click += buttonFuncionarios_Click;
             // 
-            // button6
+            // button8
             // 
-            button6.ForeColor = SystemColors.ButtonHighlight;
-            button6.Location = new Point(17, 360);
-            button6.Name = "button6";
-            button6.Size = new Size(261, 29);
-            button6.TabIndex = 13;
-            button6.Text = "Clientes";
-            button6.UseVisualStyleBackColor = false;
+            button8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            button8.BackColor = Color.White;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button8.ForeColor = Color.FromArgb(50, 153, 204);
+            button8.Location = new Point(15, 340);
+            button8.Name = "button8";
+            button8.Size = new Size(406, 63);
+            button8.TabIndex = 24;
+            button8.Text = "Estoque";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
-            // button7
+            // buttonGrupoUsuario
             // 
-            button7.ForeColor = SystemColors.ButtonHighlight;
-            button7.Location = new Point(17, 325);
-            button7.Name = "button7";
-            button7.Size = new Size(261, 29);
-            button7.TabIndex = 14;
-            button7.Text = "Grupos de usuários";
-            button7.UseVisualStyleBackColor = false;
+            buttonGrupoUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            buttonGrupoUsuario.BackColor = Color.White;
+            buttonGrupoUsuario.FlatStyle = FlatStyle.Flat;
+            buttonGrupoUsuario.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonGrupoUsuario.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonGrupoUsuario.Location = new Point(15, 481);
+            buttonGrupoUsuario.Name = "buttonGrupoUsuario";
+            buttonGrupoUsuario.Size = new Size(406, 66);
+            buttonGrupoUsuario.TabIndex = 21;
+            buttonGrupoUsuario.Text = "Grupo de Usuários";
+            buttonGrupoUsuario.UseVisualStyleBackColor = false;
+            buttonGrupoUsuario.Click += buttonGrupoUsuario_Click_1;
             // 
-            // button4
+            // buttonMarcas
             // 
-            button4.ForeColor = SystemColors.ButtonHighlight;
-            button4.Location = new Point(17, 290);
-            button4.Name = "button4";
-            button4.Size = new Size(261, 29);
-            button4.TabIndex = 11;
-            button4.Text = "Clientes";
-            button4.UseVisualStyleBackColor = false;
+            buttonMarcas.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            buttonMarcas.BackColor = Color.White;
+            buttonMarcas.FlatStyle = FlatStyle.Flat;
+            buttonMarcas.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonMarcas.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonMarcas.Location = new Point(15, 694);
+            buttonMarcas.Name = "buttonMarcas";
+            buttonMarcas.Size = new Size(406, 63);
+            buttonMarcas.TabIndex = 23;
+            buttonMarcas.Text = "Marcas";
+            buttonMarcas.UseVisualStyleBackColor = false;
+            buttonMarcas.Click += buttonMarcas_Click;
             // 
-            // button5
+            // buttonEstatistica
             // 
-            button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(17, 255);
-            button5.Name = "button5";
-            button5.Size = new Size(261, 29);
-            button5.TabIndex = 12;
-            button5.Text = "Grupos de usuários";
-            button5.UseVisualStyleBackColor = false;
+            buttonEstatistica.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            buttonEstatistica.BackColor = Color.White;
+            buttonEstatistica.FlatStyle = FlatStyle.Flat;
+            buttonEstatistica.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonEstatistica.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonEstatistica.Location = new Point(15, 763);
+            buttonEstatistica.Name = "buttonEstatistica";
+            buttonEstatistica.Size = new Size(406, 63);
+            buttonEstatistica.TabIndex = 12;
+            buttonEstatistica.Text = "Estatística";
+            buttonEstatistica.UseVisualStyleBackColor = false;
+            buttonEstatistica.Click += buttonEstatistica_Click;
             // 
-            // button1
+            // buttonFornecedores
             // 
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(17, 150);
-            button1.Name = "button1";
-            button1.Size = new Size(261, 29);
-            button1.TabIndex = 8;
-            button1.Text = "Usuários";
-            button1.UseVisualStyleBackColor = false;
+            buttonFornecedores.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            buttonFornecedores.BackColor = Color.White;
+            buttonFornecedores.FlatStyle = FlatStyle.Flat;
+            buttonFornecedores.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonFornecedores.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonFornecedores.Location = new Point(15, 409);
+            buttonFornecedores.Name = "buttonFornecedores";
+            buttonFornecedores.Size = new Size(406, 66);
+            buttonFornecedores.TabIndex = 9;
+            buttonFornecedores.Text = "Fornecedores";
+            buttonFornecedores.UseVisualStyleBackColor = false;
+            buttonFornecedores.Click += buttonFornecedores_Click;
             // 
-            // button2
+            // buttonCategorias
             // 
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(17, 220);
-            button2.Name = "button2";
-            button2.Size = new Size(261, 29);
-            button2.TabIndex = 9;
-            button2.Text = "Clientes";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(17, 185);
-            button3.Name = "button3";
-            button3.Size = new Size(261, 29);
-            button3.TabIndex = 10;
-            button3.Text = "Grupos de usuários";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label3.AutoSize = true;
-            label3.FlatStyle = FlatStyle.System;
-            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.ImageAlign = ContentAlignment.TopCenter;
-            label3.Location = new Point(61, 0);
-            label3.Name = "label3";
-            label3.Padding = new Padding(20, 4, 100, 4);
-            label3.Size = new Size(176, 26);
-            label3.TabIndex = 7;
-            label3.Text = "MENU";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // monthCalendar1
-            // 
-            monthCalendar1.Location = new Point(9, 470);
-            monthCalendar1.Name = "monthCalendar1";
-            monthCalendar1.TabIndex = 4;
+            buttonCategorias.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            buttonCategorias.BackColor = Color.White;
+            buttonCategorias.FlatStyle = FlatStyle.Flat;
+            buttonCategorias.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonCategorias.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonCategorias.Location = new Point(15, 625);
+            buttonCategorias.Name = "buttonCategorias";
+            buttonCategorias.Size = new Size(406, 63);
+            buttonCategorias.TabIndex = 22;
+            buttonCategorias.Text = "Categorias";
+            buttonCategorias.UseVisualStyleBackColor = false;
+            buttonCategorias.Click += buttonCategorias_Click;
             // 
             // labelNomeEmpresa
             // 
@@ -448,7 +334,7 @@ namespace UIGestaoMercearia
             labelNomeEmpresa.FlatStyle = FlatStyle.Popup;
             labelNomeEmpresa.Font = new Font("Bernard MT Condensed", 28.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             labelNomeEmpresa.ForeColor = Color.FromArgb(50, 153, 204);
-            labelNomeEmpresa.Location = new Point(335, 0);
+            labelNomeEmpresa.Location = new Point(428, 0);
             labelNomeEmpresa.Name = "labelNomeEmpresa";
             labelNomeEmpresa.Size = new Size(229, 55);
             labelNomeEmpresa.TabIndex = 5;
@@ -460,7 +346,7 @@ namespace UIGestaoMercearia
             // 
             splitter1.Location = new Point(0, 0);
             splitter1.Name = "splitter1";
-            splitter1.Size = new Size(4, 936);
+            splitter1.Size = new Size(4, 1055);
             splitter1.TabIndex = 7;
             splitter1.TabStop = false;
             // 
@@ -471,23 +357,8 @@ namespace UIGestaoMercearia
             panel3.Controls.Add(label1);
             panel3.Location = new Point(0, 58);
             panel3.Name = "panel3";
-            panel3.Size = new Size(921, 61);
+            panel3.Size = new Size(1128, 68);
             panel3.TabIndex = 16;
-            // 
-            // label4
-            // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label4.BackColor = Color.Transparent;
-            label4.FlatStyle = FlatStyle.Popup;
-            label4.Font = new Font("Script MT Bold", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(50, 153, 204);
-            label4.Location = new Point(264, 540);
-            label4.Name = "label4";
-            label4.Size = new Size(521, 55);
-            label4.TabIndex = 17;
-            label4.Text = "Nome da Empresa";
-            label4.TextAlign = ContentAlignment.TopCenter;
-            label4.Click += label4_Click;
             // 
             // pictureBoxLogo
             // 
@@ -498,7 +369,7 @@ namespace UIGestaoMercearia
             pictureBoxLogo.ErrorImage = null;
             pictureBoxLogo.Image = Properties.Resources.shopping_cart_icon_illustration_free_vector2;
             pictureBoxLogo.InitialImage = null;
-            pictureBoxLogo.Location = new Point(225, 3);
+            pictureBoxLogo.Location = new Point(337, 3);
             pictureBoxLogo.Name = "pictureBoxLogo";
             pictureBoxLogo.Size = new Size(67, 52);
             pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
@@ -512,20 +383,22 @@ namespace UIGestaoMercearia
             panel4.Controls.Add(buttonConsultarVenda);
             panel4.Controls.Add(buttonIniciarVenda);
             panel4.Controls.Add(pictureBox3);
-            panel4.Location = new Point(0, 118);
+            panel4.Location = new Point(0, 125);
             panel4.Name = "panel4";
-            panel4.Size = new Size(921, 82);
+            panel4.Size = new Size(1128, 133);
             panel4.TabIndex = 17;
             // 
             // buttonConsultarVenda
             // 
             buttonConsultarVenda.Anchor = AnchorStyles.Right;
             buttonConsultarVenda.FlatStyle = FlatStyle.Flat;
-            buttonConsultarVenda.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonConsultarVenda.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonConsultarVenda.ForeColor = SystemColors.ButtonHighlight;
-            buttonConsultarVenda.Location = new Point(512, 19);
+            buttonConsultarVenda.ImageAlign = ContentAlignment.MiddleLeft;
+            buttonConsultarVenda.Location = new Point(541, 30);
+            buttonConsultarVenda.Margin = new Padding(10);
             buttonConsultarVenda.Name = "buttonConsultarVenda";
-            buttonConsultarVenda.Size = new Size(342, 45);
+            buttonConsultarVenda.Size = new Size(439, 81);
             buttonConsultarVenda.TabIndex = 20;
             buttonConsultarVenda.Text = "CONSULTAR VENDA";
             buttonConsultarVenda.UseVisualStyleBackColor = false;
@@ -535,11 +408,11 @@ namespace UIGestaoMercearia
             // 
             buttonIniciarVenda.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             buttonIniciarVenda.FlatStyle = FlatStyle.Flat;
-            buttonIniciarVenda.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonIniciarVenda.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonIniciarVenda.ForeColor = SystemColors.ButtonHighlight;
-            buttonIniciarVenda.Location = new Point(22, 21);
+            buttonIniciarVenda.Location = new Point(22, 30);
             buttonIniciarVenda.Name = "buttonIniciarVenda";
-            buttonIniciarVenda.Size = new Size(465, 45);
+            buttonIniciarVenda.Size = new Size(506, 81);
             buttonIniciarVenda.TabIndex = 17;
             buttonIniciarVenda.Text = "INICIAR VENDA";
             buttonIniciarVenda.UseVisualStyleBackColor = false;
@@ -555,13 +428,12 @@ namespace UIGestaoMercearia
             pictureBox3.ErrorImage = null;
             pictureBox3.Image = Properties.Resources.settings_512px;
             pictureBox3.InitialImage = null;
-            pictureBox3.Location = new Point(860, 19);
+            pictureBox3.Location = new Point(1010, 20);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(59, 42);
+            pictureBox3.Size = new Size(109, 91);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 19;
             pictureBox3.TabStop = false;
-            pictureBox3.Visible = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox2
@@ -574,26 +446,12 @@ namespace UIGestaoMercearia
             pictureBox2.ErrorImage = null;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.InitialImage = null;
-            pictureBox2.Location = new Point(0, 194);
+            pictureBox2.Location = new Point(0, 255);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(921, 742);
+            pictureBox2.Size = new Size(1125, 800);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
-            // 
-            // buttonPagamento
-            // 
-            buttonPagamento.BackColor = Color.White;
-            buttonPagamento.FlatStyle = FlatStyle.Flat;
-            buttonPagamento.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonPagamento.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonPagamento.Location = new Point(9, 649);
-            buttonPagamento.Name = "buttonPagamento";
-            buttonPagamento.Size = new Size(269, 41);
-            buttonPagamento.TabIndex = 27;
-            buttonPagamento.Text = "Formas de Pagamento";
-            buttonPagamento.UseVisualStyleBackColor = false;
-            buttonPagamento.Click += buttonPagamento_Click;
             // 
             // FormPrincipal
             // 
@@ -601,15 +459,14 @@ namespace UIGestaoMercearia
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1209, 936);
-            Controls.Add(pictureBox2);
+            ClientSize = new Size(1558, 1055);
+            Controls.Add(panel2);
             Controls.Add(panel4);
             Controls.Add(pictureBoxLogo);
-            Controls.Add(label4);
             Controls.Add(panel3);
             Controls.Add(splitter1);
             Controls.Add(labelNomeEmpresa);
-            Controls.Add(panel1);
+            Controls.Add(pictureBox2);
             ForeColor = Color.Transparent;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
@@ -626,8 +483,6 @@ namespace UIGestaoMercearia
             ResizeEnd += FormPrincipal_ResizeEnd;
             KeyDown += FormPrincipal_KeyDown;
             Resize += FormPrincipal_Resize;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
@@ -644,26 +499,15 @@ namespace UIGestaoMercearia
         private Label label1;
         private Button buttonUsuario;
         private Button buttonCliente;
-        private Panel panel1;
         private Label labelNomeEmpresa;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private MonthCalendar monthCalendar1;
-        private Label label3;
         private Splitter splitter1;
-        private Button button6;
-        private Button button7;
-        private Button button4;
-        private Button button5;
-        private Button button1;
-        private Button button2;
-        private Button button3;
         private Panel panel2;
         private Button buttonEstatistica;
         private Button buttonProdutos;
         private Button buttonFornecedores;
         private Button buttonFuncionarios;
         private Panel panel3;
-        private Label label4;
         private PictureBox pictureBoxLogo;
         private Panel panel4;
         private PictureBox pictureBox1;
@@ -678,7 +522,6 @@ namespace UIGestaoMercearia
         private Button button8;
         private Button buttonPermissao;
         private ToolTip toolTip1;
-        private Button PDV;
         private Button buttonPagamento;
     }
 }
