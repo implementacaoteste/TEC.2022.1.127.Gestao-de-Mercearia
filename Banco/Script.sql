@@ -1057,4 +1057,8 @@ GO
 Insert into Produto(Nome, Descricao, CodigoDeBarra, Preco, Quantidade, IdMarca, IdCategoria, IdFornecedor) Values ('Barra de Cereal', '50g', 'ABCDEF', 6.50, 50, 1, 1, 1)
 Insert into Produto(Nome, Descricao, CodigoDeBarra, Preco, Quantidade, IdMarca, IdCategoria, IdFornecedor) Values ('Refrigerante de Cola', '600ML', 'XXXZZZ', 9.50, 75, 2, 2, 2)
 Insert into Produto(Nome, Descricao, CodigoDeBarra, Preco, Quantidade, IdMarca, IdCategoria, IdFornecedor) Values ('Sorvete', 'Sabor Chocolate', 'AAAEEE', 12.25, 20, 3, 3, 3)
+GO
+Insert Into FormaPagamento(Tipo, Descricao, Troco) VALUES ('Dinheiro', 'Uma forma de pagamento física, com cédulas e moedas', 1)
+Insert Into FormaPagamento(Tipo, Descricao, Troco) VALUES ('Cartão de Débito', 'Uma forma de pagamento que usa moeda virtual de conta bancária, de débito instantâneo', 0)
+Insert Into FormaPagamento(Tipo, Descricao, Troco) VALUES ('Pix', 'Uma forma de pagamento eletrônico que permite transferência monetária instantânea', 0)
 
