@@ -11,6 +11,7 @@ namespace Models
         public string Email { get; set; }
         public string CPF { get; set; }
         public bool Ativo { get; set; }
+        public DateTime DataCadastro  { get; set; }
         public List<GrupoUsuario> GrupoUsuarios { get; set; }
     }
 }
