@@ -62,10 +62,15 @@ namespace BLL
             if (_usuario.Nome.Length <= 2)
                 throw new Exception("A nome deve ter mais de 2 caracteres.");
         }
-        public void ValidarPermissao(int _idPermissao)
+        public bool ValidarPermissao(int _idPermissao, bool _retornarExcecao = true)
         {
             if (!new UsuarioDAL().ValidarPermissao(Constantes.IdUsuarioLogado, _idPermissao))
-                throw new Exception("Você não tem permissão de realizar essa operação. Procure o administrador do sistema.");
+                if (_retornarExcecao)
+                    throw new Exception("Você não tem permissão de realizar essa operação. Procure o administrador do sistema.");
+                else
+                    return false;
+
+            return true;
         }
         public void AdicionarGrupoUsuario(int _idUsuario, int _idGrupoUsuario)
         {
