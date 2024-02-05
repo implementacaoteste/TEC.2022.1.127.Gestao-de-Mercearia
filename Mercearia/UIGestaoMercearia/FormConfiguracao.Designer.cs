@@ -105,7 +105,7 @@
             label7.Name = "label7";
             label7.Size = new Size(722, 61);
             label7.TabIndex = 36;
-            label7.Text = "ALTERAR SUA SENHA";
+            label7.Text = "ALTERAR SENHA";
             label7.TextAlign = ContentAlignment.MiddleCenter;
             label7.Click += label7_Click;
             // 
