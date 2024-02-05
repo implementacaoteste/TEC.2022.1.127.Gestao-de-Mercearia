@@ -55,31 +55,7 @@ namespace UIGestaoMercearia
         {
             bindingSourceVenda.AddNew();
             textBoxCodigodeBarras.Focus();
-            /*
-            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
-            try
-            {
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Venda(IdFuncionario, IdCliente, IdFormaPagamento, DataVenda, Total) VALUES (@IdFuncionario, @IdCliente, @IdFormaPagamento, @DataVenda, @Total)";
-                cmd.CommandType = System.Data.CommandType.Text;
-
-                cmd.Parameters.AddWithValue("@IdFuncionario", Constantes.IdUsuarioLogado);
-                cmd.Parameters.AddWithValue("@IdCliente", null);
-                cmd.Parameters.AddWithValue("@IdFormaPagamento", null);
-                cmd.Parameters.AddWithValue("@DataVenda", DateTime.Now.ToString("yyyy-MM-dd"));
-                cmd.Parameters.AddWithValue("@Total", 0);
-                cmd.Connection = cn;
-                cn.Open();
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Ocorre um erro ao abrir uma venda no banco de dados.", ex);
-            }
-            finally
-            {
-                cn.Close();
-            }*/
+           
         }
         private void button1_KeyDown(object sender, KeyEventArgs e)
         {

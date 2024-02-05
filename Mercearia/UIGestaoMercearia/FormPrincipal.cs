@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using BLL;
+using Models;
 using System;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -24,11 +25,17 @@ namespace UIGestaoMercearia
                     if (!frm.Logou)
                         Application.Exit();
                 }
+                HabilitarComponentes();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void HabilitarComponentes()
+        {
+            buttonGrupoUsuario.Enabled = new UsuarioBLL().ValidarPermissao(9, false);
         }
 
         private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
@@ -44,6 +51,7 @@ namespace UIGestaoMercearia
                 {
                     frm.ShowDialog();
                 }
+                HabilitarComponentes();
             }
             catch (Exception ex)
             {
@@ -150,6 +158,7 @@ namespace UIGestaoMercearia
                 {
                     frm.ShowDialog();
                 }
+                HabilitarComponentes();
             }
             catch (Exception ex)
             {
@@ -190,7 +199,7 @@ namespace UIGestaoMercearia
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            using (FormConfiguracao frm = new FormConfiguracao())
+            using (FormConfiguracao frm = new FormConfiguracao(Constantes.IdUsuarioLogado))
             {
                 frm.ShowDialog();
             }
