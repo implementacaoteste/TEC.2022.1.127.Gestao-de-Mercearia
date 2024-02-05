@@ -145,16 +145,19 @@ namespace UIGestaoMercearia
 
         private void finaliz(object sender, EventArgs e)
         {
+            textBoxCodigodeBarras.Text = "";
+            labelpreco.Text = "";
+            textBoxQuantidade.Text = "1";
             try
             {
                 FormaPagamento formaPagamento = new FormaPagamento();
-                using (FormPagamento frm = new FormPagamento())
+                using (FormPagamento frm = new FormPagamento(true))
                 {
                     frm.ShowDialog();
                     if (frm.DialogResult == DialogResult.OK)
                     {
                         formaPagamento = frm.pagamento;
-                        if (formaPagamento.Descricao == "Dinheiro" || formaPagamento.Descricao == "PIX")
+                        if (formaPagamento.Tipo.ToUpper() == "DINHEIRO" || formaPagamento.Tipo.ToUpper() == "PIX")
                         {
                             using (FormFinalizarVenda formFinalizarVenda = new FormFinalizarVenda(formaPagamento))
                             {
@@ -165,6 +168,7 @@ namespace UIGestaoMercearia
                 }
                 ((Venda)bindingSourceVenda.Current).IdFormaPagamento = formaPagamento.Id;
                 new VendaBLL().Inserir((Venda)bindingSourceVenda.Current);
+                bindingSourceVenda.AddNew();
             }
             catch (Exception ex)
             {

@@ -16,13 +16,14 @@ namespace UIGestaoMercearia
         public FormFinalizarVenda(FormaPagamento _formaPagamento)
         {
             InitializeComponent();
-            if (_formaPagamento.Descricao == "Dinheiro")
+            if (_formaPagamento.Tipo.ToUpper() == "DINHEIRO")
             {
                 textBoxDinheiro.Visible = true;
                 textBoxTroco.Visible = true;
                 label2.Visible = true;
+                textBoxFormaPagamento.Text = _formaPagamento.Tipo;
             }
-            else if (_formaPagamento.Descricao == "PIX")
+            else if (_formaPagamento.Tipo == "PIX")
             {
                 pictureBox1.Visible = true;
             }

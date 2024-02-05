@@ -13,6 +13,7 @@ namespace BLL
     {
         public void Inserir(Venda _venda)
         {
+            _venda.IdUsuario = Constantes.IdUsuarioLogado;
             new VendaDAL().Inserir(_venda);
         }
         public void Alterar(Venda _venda)

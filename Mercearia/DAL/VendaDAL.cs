@@ -16,17 +16,22 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO Venda(IdUsuario, IdCliente, IdFormaPagamento, DataVenda, Total) VALUES (@IdUsuario, @IdCliente, @IdFormaPagamento, @DataVenda, @Total)";
+                cmd.CommandText = @"INSERT INTO Venda(IdUsuario, IdCliente, IdFormaPagamento, DataVenda, Total) VALUES (@IdUsuario, @IdCliente, @IdFormaPagamento, GETDATE(), @Total) SELECT @@IDENTITY";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@IdUsuario", _venda.IdUsuario ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@IdCliente", _venda.IdCliente ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@IdFormaPagamento", _venda.IdFormaPagamento ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@DataVenda", _venda.DataVenda);
                 cmd.Parameters.AddWithValue("@Total", _venda.Total);
                 cmd.Connection = cn;
                 cn.Open();
-                cmd.ExecuteNonQuery();
+                _venda.Id = Convert.ToInt32(cmd.ExecuteScalar());
+
+                foreach (var item in _venda.ItemVendaList)
+                {
+                    item.IdVenda = _venda.Id;
+                    new ItemVendaDAL().Inserir(item);
+                }
             }
             catch (Exception ex)
             {
