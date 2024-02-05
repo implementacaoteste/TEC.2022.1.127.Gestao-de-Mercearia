@@ -64,7 +64,7 @@
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 472);
             panel1.Name = "panel1";
-            panel1.Size = new Size(982, 81);
+            panel1.Size = new Size(1016, 81);
             panel1.TabIndex = 0;
             // 
             // buttonCancelar
@@ -236,7 +236,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(982, 138);
+            panel2.Size = new Size(1016, 138);
             panel2.TabIndex = 2;
             // 
             // label3

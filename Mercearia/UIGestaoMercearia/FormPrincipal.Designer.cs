@@ -167,13 +167,12 @@ namespace UIGestaoMercearia
             pictureBox4.ErrorImage = null;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.InitialImage = null;
-            pictureBox4.Location = new Point(12, 896);
+            pictureBox4.Location = new Point(24, 905);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(406, 147);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 21;
             pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
             // 
             // buttonPagamento
             // 
