@@ -85,7 +85,7 @@
             label7.TabIndex = 36;
             label7.Text = "ALTERAR SENHA";
             label7.TextAlign = ContentAlignment.MiddleCenter;
-            label7.Click += label7_Click;
+            
             // 
             // buttonAlterarNomeUsuario
             // 

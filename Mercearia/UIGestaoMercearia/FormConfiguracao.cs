@@ -12,20 +12,26 @@ namespace UIGestaoMercearia
 
             usuario = new UsuarioBLL().BuscarPorId(_id);
 
-            textBoxNomeUsuario.Text = usuario.NomeUsuario;
-
-            textBoxSenha.PasswordChar = '*';
-            textBoxSenha.Text = usuario.Senha;
         }
 
 
 
         private void buttonAlterarSenha_Click(object sender, EventArgs e)
         {
-            {
+            
                 try
                 {
-                    usuario.Senha = textBoxNovaSenha.Text;
+                string senhaAtual = textBoxSenha.Text; 
+
+                
+                if (senhaAtual != usuario.Senha)
+                {
+                    MessageBox.Show("Senha incorreta!");
+                    return; 
+                }
+
+
+                usuario.Senha = textBoxNovaSenha.Text;
                     new UsuarioBLL().AlterarSenha(usuario, textBoxConfirmacaoSenha.Text);
 
                     MessageBox.Show("Senha alterada com sucesso!");
@@ -35,7 +41,7 @@ namespace UIGestaoMercearia
                 {
                     MessageBox.Show($"Erro ao alterar senha: {ex.Message}");
                 }
-            }
+            
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
@@ -45,10 +51,21 @@ namespace UIGestaoMercearia
 
         private void buttonAlterarNomeUsuario_Click(object sender, EventArgs e)
         {
-            {
+            
                 try
                 {
-                    usuario.NomeUsuario = textBoxNomeUsuario.Text;
+                string nomeUsuarioAtual = textBoxNomeUsuario.Text;
+
+                
+                if (nomeUsuarioAtual != usuario.NomeUsuario)
+                {
+                    MessageBox.Show("Nome de usuário incorreto");
+                    return; 
+                }
+
+
+
+                usuario.NomeUsuario = textBoxNomeUsuario.Text;
                     new UsuarioBLL().AlterarNomeUsuario(usuario);
 
                     MessageBox.Show("Nome de usuário alterado com sucesso!");
@@ -58,14 +75,10 @@ namespace UIGestaoMercearia
                 {
                     MessageBox.Show($"Erro ao alterar nome de usuário: {ex.Message}");
                 }
-            }
+            
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
 
