@@ -111,7 +111,7 @@
             // 
             // buttonAlterarNomeUsuario
             // 
-            buttonAlterarNomeUsuario.Location = new Point(167, 403);
+            buttonAlterarNomeUsuario.Location = new Point(184, 403);
             buttonAlterarNomeUsuario.Name = "buttonAlterarNomeUsuario";
             buttonAlterarNomeUsuario.Size = new Size(192, 29);
             buttonAlterarNomeUsuario.TabIndex = 35;
@@ -121,7 +121,7 @@
             // 
             // buttonAlterarSenha
             // 
-            buttonAlterarSenha.Location = new Point(167, 234);
+            buttonAlterarSenha.Location = new Point(184, 229);
             buttonAlterarSenha.Name = "buttonAlterarSenha";
             buttonAlterarSenha.Size = new Size(175, 29);
             buttonAlterarSenha.TabIndex = 34;
@@ -142,7 +142,7 @@
             // 
             // textBoxNomeUsuario
             // 
-            textBoxNomeUsuario.Location = new Point(343, 322);
+            textBoxNomeUsuario.Location = new Point(343, 316);
             textBoxNomeUsuario.Name = "textBoxNomeUsuario";
             textBoxNomeUsuario.Size = new Size(249, 27);
             textBoxNomeUsuario.TabIndex = 32;
@@ -152,7 +152,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ButtonHighlight;
-            label5.Location = new Point(10, 287);
+            label5.Location = new Point(10, 282);
             label5.Name = "label5";
             label5.Size = new Size(316, 18);
             label5.TabIndex = 31;
@@ -219,7 +219,7 @@
             // 
             // textBoxNovoNomeUsuario
             // 
-            textBoxNovoNomeUsuario.Location = new Point(343, 282);
+            textBoxNovoNomeUsuario.Location = new Point(343, 277);
             textBoxNovoNomeUsuario.Name = "textBoxNovoNomeUsuario";
             textBoxNovoNomeUsuario.Size = new Size(247, 27);
             textBoxNovoNomeUsuario.TabIndex = 25;
