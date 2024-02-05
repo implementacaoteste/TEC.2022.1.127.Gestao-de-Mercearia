@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            textBox1 = new TextBox();
+            label8 = new Label();
             label7 = new Label();
             buttonAlterarNomeUsuario = new Button();
             buttonAlterarSenha = new Button();
@@ -44,8 +46,6 @@
             textBoxNovoNomeUsuario = new TextBox();
             textBoxConfirmacaoSenha = new TextBox();
             textBoxNovaSenha = new TextBox();
-            label8 = new Label();
-            textBox1 = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,8 +72,26 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(722, 432);
+            panel1.Size = new Size(722, 444);
             panel1.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(343, 355);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(249, 27);
+            textBox1.TabIndex = 38;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = SystemColors.ButtonHighlight;
+            label8.Location = new Point(12, 360);
+            label8.Name = "label8";
+            label8.Size = new Size(325, 18);
+            label8.TabIndex = 37;
+            label8.Text = "Insira novamente seu nome de usúario";
             // 
             // label7
             // 
@@ -93,7 +111,7 @@
             // 
             // buttonAlterarNomeUsuario
             // 
-            buttonAlterarNomeUsuario.Location = new Point(167, 391);
+            buttonAlterarNomeUsuario.Location = new Point(167, 403);
             buttonAlterarNomeUsuario.Name = "buttonAlterarNomeUsuario";
             buttonAlterarNomeUsuario.Size = new Size(192, 29);
             buttonAlterarNomeUsuario.TabIndex = 35;
@@ -114,7 +132,7 @@
             // buttonCancelar
             // 
             buttonCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            buttonCancelar.Location = new Point(641, 391);
+            buttonCancelar.Location = new Point(641, 403);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(69, 29);
             buttonCancelar.TabIndex = 33;
@@ -220,29 +238,11 @@
             textBoxNovaSenha.Size = new Size(236, 27);
             textBoxNovaSenha.TabIndex = 24;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = SystemColors.ButtonHighlight;
-            label8.Location = new Point(12, 360);
-            label8.Name = "label8";
-            label8.Size = new Size(325, 18);
-            label8.TabIndex = 37;
-            label8.Text = "Insira novamente seu nome de usúario";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(343, 355);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(249, 27);
-            textBox1.TabIndex = 38;
-            // 
             // FormConfiguracao
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(722, 432);
+            ClientSize = new Size(722, 444);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
