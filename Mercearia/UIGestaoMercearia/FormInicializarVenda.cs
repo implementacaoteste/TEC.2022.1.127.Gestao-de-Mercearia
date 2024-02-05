@@ -143,19 +143,6 @@ namespace UIGestaoMercearia
                 textBoxCodigodeBarras.Focus();
         }
 
-        private void finaliz(object sender, EventArgs e)
-        {
-            try
-            {
-                using (FormFinalizarVenda frm = new FormFinalizarVenda())
-                {
-                    frm.ShowDialog();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+       
     }
 }

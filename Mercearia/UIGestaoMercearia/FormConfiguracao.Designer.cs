@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            textBox1 = new TextBox();
-            label8 = new Label();
             label7 = new Label();
             buttonAlterarNomeUsuario = new Button();
             buttonAlterarSenha = new Button();
@@ -52,8 +50,6 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(50, 153, 204);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(label8);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(buttonAlterarNomeUsuario);
             panel1.Controls.Add(buttonAlterarSenha);
@@ -75,24 +71,6 @@
             panel1.Size = new Size(722, 444);
             panel1.TabIndex = 0;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(343, 355);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(249, 27);
-            textBox1.TabIndex = 38;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = SystemColors.ButtonHighlight;
-            label8.Location = new Point(12, 360);
-            label8.Name = "label8";
-            label8.Size = new Size(325, 18);
-            label8.TabIndex = 37;
-            label8.Text = "Insira novamente seu nome de usúario";
-            // 
             // label7
             // 
             label7.BackColor = Color.FromArgb(50, 153, 204);
@@ -111,7 +89,7 @@
             // 
             // buttonAlterarNomeUsuario
             // 
-            buttonAlterarNomeUsuario.Location = new Point(167, 403);
+            buttonAlterarNomeUsuario.Location = new Point(167, 388);
             buttonAlterarNomeUsuario.Name = "buttonAlterarNomeUsuario";
             buttonAlterarNomeUsuario.Size = new Size(192, 29);
             buttonAlterarNomeUsuario.TabIndex = 35;
@@ -276,7 +254,5 @@
         private Label label6;
         private TextBox textBoxConfirmacaoSenha;
         private Label label7;
-        private TextBox textBox1;
-        private Label label8;
     }
 }

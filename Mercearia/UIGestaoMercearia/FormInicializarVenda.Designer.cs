@@ -156,7 +156,7 @@
             buttonTroco.TabIndex = 22;
             buttonTroco.Text = "Finalizar Venda";
             buttonTroco.UseVisualStyleBackColor = false;
-            buttonTroco.Click += finaliz;
+            
             // 
             // label6
             // 

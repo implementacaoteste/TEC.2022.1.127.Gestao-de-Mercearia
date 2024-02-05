@@ -14,6 +14,7 @@ namespace UIGestaoMercearia
 
             textBoxNomeUsuario.Text = usuario.NomeUsuario;
 
+            textBoxSenha.PasswordChar = '*';
             textBoxSenha.Text = usuario.Senha;
         }
 
