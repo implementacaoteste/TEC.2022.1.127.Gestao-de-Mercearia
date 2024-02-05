@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            textBox1 = new TextBox();
-            label8 = new Label();
             label7 = new Label();
             buttonAlterarNomeUsuario = new Button();
             buttonAlterarSenha = new Button();
@@ -52,8 +50,6 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(50, 153, 204);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(label8);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(buttonAlterarNomeUsuario);
             panel1.Controls.Add(buttonAlterarSenha);
@@ -75,24 +71,6 @@
             panel1.Size = new Size(722, 444);
             panel1.TabIndex = 0;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(343, 355);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(249, 27);
-            textBox1.TabIndex = 38;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = SystemColors.ButtonHighlight;
-            label8.Location = new Point(12, 360);
-            label8.Name = "label8";
-            label8.Size = new Size(325, 18);
-            label8.TabIndex = 37;
-            label8.Text = "Insira novamente seu nome de usúario";
-            // 
             // label7
             // 
             label7.BackColor = Color.FromArgb(50, 153, 204);
@@ -104,17 +82,16 @@
             label7.Location = new Point(0, 0);
             label7.Name = "label7";
             label7.Size = new Size(722, 61);
-            label7.TabIndex = 36;
-            label7.Text = "ALTERAR SENHA";
+            label7.TabIndex = 1;
+            label7.Text = "CONFIGURAÇÃO";
             label7.TextAlign = ContentAlignment.MiddleCenter;
-            label7.Click += label7_Click;
             // 
             // buttonAlterarNomeUsuario
             // 
-            buttonAlterarNomeUsuario.Location = new Point(167, 403);
+            buttonAlterarNomeUsuario.Location = new Point(167, 388);
             buttonAlterarNomeUsuario.Name = "buttonAlterarNomeUsuario";
             buttonAlterarNomeUsuario.Size = new Size(192, 29);
-            buttonAlterarNomeUsuario.TabIndex = 35;
+            buttonAlterarNomeUsuario.TabIndex = 13;
             buttonAlterarNomeUsuario.Text = "Alterar Nome de Usuario";
             buttonAlterarNomeUsuario.UseVisualStyleBackColor = true;
             buttonAlterarNomeUsuario.Click += buttonAlterarNomeUsuario_Click;
@@ -124,7 +101,7 @@
             buttonAlterarSenha.Location = new Point(167, 234);
             buttonAlterarSenha.Name = "buttonAlterarSenha";
             buttonAlterarSenha.Size = new Size(175, 29);
-            buttonAlterarSenha.TabIndex = 34;
+            buttonAlterarSenha.TabIndex = 8;
             buttonAlterarSenha.Text = "Alterar Senha";
             buttonAlterarSenha.UseVisualStyleBackColor = true;
             buttonAlterarSenha.Click += buttonAlterarSenha_Click;
@@ -132,10 +109,10 @@
             // buttonCancelar
             // 
             buttonCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            buttonCancelar.Location = new Point(641, 403);
+            buttonCancelar.Location = new Point(606, 403);
             buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(69, 29);
-            buttonCancelar.TabIndex = 33;
+            buttonCancelar.Size = new Size(104, 29);
+            buttonCancelar.TabIndex = 14;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -145,7 +122,7 @@
             textBoxNomeUsuario.Location = new Point(343, 322);
             textBoxNomeUsuario.Name = "textBoxNomeUsuario";
             textBoxNomeUsuario.Size = new Size(249, 27);
-            textBoxNomeUsuario.TabIndex = 32;
+            textBoxNomeUsuario.TabIndex = 12;
             // 
             // label5
             // 
@@ -155,7 +132,7 @@
             label5.Location = new Point(10, 287);
             label5.Name = "label5";
             label5.Size = new Size(316, 18);
-            label5.TabIndex = 31;
+            label5.TabIndex = 9;
             label5.Text = "Insira aqui seu nome de usuario atual";
             // 
             // textBoxSenha
@@ -163,7 +140,7 @@
             textBoxSenha.Location = new Point(262, 87);
             textBoxSenha.Name = "textBoxSenha";
             textBoxSenha.Size = new Size(236, 27);
-            textBoxSenha.TabIndex = 30;
+            textBoxSenha.TabIndex = 3;
             // 
             // label4
             // 
@@ -173,7 +150,7 @@
             label4.Location = new Point(12, 92);
             label4.Name = "label4";
             label4.Size = new Size(229, 18);
-            label4.TabIndex = 29;
+            label4.TabIndex = 2;
             label4.Text = "Insira aqui sua senha atual";
             // 
             // label3
@@ -184,7 +161,7 @@
             label3.Location = new Point(12, 325);
             label3.Name = "label3";
             label3.Size = new Size(314, 18);
-            label3.TabIndex = 28;
+            label3.TabIndex = 11;
             label3.Text = "Insira aqui seu novo nome de usuario";
             // 
             // label6
@@ -195,7 +172,7 @@
             label6.Location = new Point(12, 180);
             label6.Name = "label6";
             label6.Size = new Size(282, 18);
-            label6.TabIndex = 27;
+            label6.TabIndex = 6;
             label6.Text = "Insira sua nova senha novamente";
             // 
             // label2
@@ -206,7 +183,7 @@
             label2.Location = new Point(12, 139);
             label2.Name = "label2";
             label2.Size = new Size(227, 18);
-            label2.TabIndex = 27;
+            label2.TabIndex = 4;
             label2.Text = "Insira aqui sua nova senha";
             // 
             // label1
@@ -222,21 +199,21 @@
             textBoxNovoNomeUsuario.Location = new Point(343, 282);
             textBoxNovoNomeUsuario.Name = "textBoxNovoNomeUsuario";
             textBoxNovoNomeUsuario.Size = new Size(247, 27);
-            textBoxNovoNomeUsuario.TabIndex = 25;
+            textBoxNovoNomeUsuario.TabIndex = 10;
             // 
             // textBoxConfirmacaoSenha
             // 
             textBoxConfirmacaoSenha.Location = new Point(300, 175);
             textBoxConfirmacaoSenha.Name = "textBoxConfirmacaoSenha";
             textBoxConfirmacaoSenha.Size = new Size(198, 27);
-            textBoxConfirmacaoSenha.TabIndex = 24;
+            textBoxConfirmacaoSenha.TabIndex = 7;
             // 
             // textBoxNovaSenha
             // 
             textBoxNovaSenha.Location = new Point(262, 134);
             textBoxNovaSenha.Name = "textBoxNovaSenha";
             textBoxNovaSenha.Size = new Size(236, 27);
-            textBoxNovaSenha.TabIndex = 24;
+            textBoxNovaSenha.TabIndex = 5;
             // 
             // FormConfiguracao
             // 
@@ -276,7 +253,5 @@
         private Label label6;
         private TextBox textBoxConfirmacaoSenha;
         private Label label7;
-        private TextBox textBox1;
-        private Label label8;
     }
 }
