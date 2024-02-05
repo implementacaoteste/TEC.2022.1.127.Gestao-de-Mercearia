@@ -83,9 +83,8 @@
             label7.Name = "label7";
             label7.Size = new Size(722, 61);
             label7.TabIndex = 36;
-            label7.Text = "ALTERAR SENHA";
+            label7.Text = "CONFIGURAÇÃO";
             label7.TextAlign = ContentAlignment.MiddleCenter;
-            
             // 
             // buttonAlterarNomeUsuario
             // 
@@ -110,9 +109,9 @@
             // buttonCancelar
             // 
             buttonCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            buttonCancelar.Location = new Point(641, 403);
+            buttonCancelar.Location = new Point(606, 403);
             buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(69, 29);
+            buttonCancelar.Size = new Size(104, 29);
             buttonCancelar.TabIndex = 33;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
