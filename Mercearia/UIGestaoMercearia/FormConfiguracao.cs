@@ -24,7 +24,7 @@ namespace UIGestaoMercearia
             {
                 try
                 {
-                    usuario.Senha = textBoxNovaSenha.Text; 
+                    usuario.Senha = textBoxNovaSenha.Text;
                     new UsuarioBLL().AlterarSenha(usuario, textBoxConfirmacaoSenha.Text);
 
                     MessageBox.Show("Senha alterada com sucesso!");
@@ -48,7 +48,7 @@ namespace UIGestaoMercearia
                 try
                 {
                     usuario.NomeUsuario = textBoxNomeUsuario.Text;
-                    new UsuarioBLL().AlterarNomeUsuario(usuario);  
+                    new UsuarioBLL().AlterarNomeUsuario(usuario);
 
                     MessageBox.Show("Nome de usuário alterado com sucesso!");
                     this.Close();
@@ -58,6 +58,11 @@ namespace UIGestaoMercearia
                     MessageBox.Show($"Erro ao alterar nome de usuário: {ex.Message}");
                 }
             }
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
 
         }
     }
