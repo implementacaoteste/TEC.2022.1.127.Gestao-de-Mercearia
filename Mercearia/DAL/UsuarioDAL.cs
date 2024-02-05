@@ -466,5 +466,58 @@ namespace DAL
                 cn.Close();
             }
         }
+        public void AlterarNomeUsuario(int id, string novoNomeUsuario)
+        {
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandText = "UPDATE Usuario SET NomeUsuario = @NomeUsuario WHERE Id = @Id";
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@NomeUsuario", novoNomeUsuario);
+                cmd.Parameters.AddWithValue("@Id", id);
+
+                cmd.Connection = cn;
+                cn.Open();
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu erro ao tentar alterar o nome de usuário no banco de dados.", ex);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public void AlterarSenha(int id, string novaSenha)
+        {
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandText = "UPDATE Usuario SET Senha = @Senha WHERE Id = @Id";
+                cmd.CommandType = System.Data.CommandType.Text;
+
+                cmd.Parameters.AddWithValue("@Senha", novaSenha);
+                cmd.Parameters.AddWithValue("@Id", id);
+
+                cmd.Connection = cn;
+                cn.Open();
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu erro ao tentar alterar a senha no banco de dados.", ex);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
     }
 }

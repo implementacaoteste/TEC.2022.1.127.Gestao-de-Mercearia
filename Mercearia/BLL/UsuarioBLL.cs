@@ -89,5 +89,19 @@ namespace BLL
             else
                 throw new Exception("Usuario ou senha inválido.");
         }
+        public void AlterarNomeUsuario(Usuario _usuario)
+        {
+            ValidarDados(_usuario, _usuario.Senha);
+            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            usuarioDAL.Alterar(_usuario);
+            ///new UsuarioDAL().AlterarNomeUsuario(idUsuario, novoNomeUsuario);
+        }
+        public void AlterarSenha(Usuario _usuario, string _confirmacaoDeSenha)
+        {
+            ValidarDados(_usuario, _confirmacaoDeSenha);
+            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            usuarioDAL.Alterar(_usuario);
+            //new UsuarioDAL().AlterarSenha(idUsuario, novaSenha);
+        }
     }
 }

@@ -199,7 +199,7 @@ namespace UIGestaoMercearia
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            using (FormConfiguracao frm = new FormConfiguracao())
+            using (FormConfiguracao frm = new FormConfiguracao(Constantes.IdUsuarioLogado))
             {
                 frm.ShowDialog();
             }
