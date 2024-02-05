@@ -124,8 +124,7 @@ namespace UIGestaoMercearia
                 }
 
                 pagamento = (FormaPagamento)bindingSourcePagamento.Current;
-                this.Close();
-
+                this.DialogResult = DialogResult.OK;
 
             }
             catch (Exception ex)

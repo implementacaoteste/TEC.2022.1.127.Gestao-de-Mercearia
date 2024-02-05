@@ -55,7 +55,7 @@ namespace UIGestaoMercearia
         {
             bindingSourceVenda.AddNew();
             textBoxCodigodeBarras.Focus();
-           
+
         }
         private void button1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -147,10 +147,24 @@ namespace UIGestaoMercearia
         {
             try
             {
-                using (FormFinalizarVenda frm = new FormFinalizarVenda())
+                FormaPagamento formaPagamento = new FormaPagamento();
+                using (FormPagamento frm = new FormPagamento())
                 {
                     frm.ShowDialog();
+                    if (frm.DialogResult == DialogResult.OK)
+                    {
+                        formaPagamento = frm.pagamento;
+                        if (formaPagamento.Descricao == "Dinheiro" || formaPagamento.Descricao == "PIX")
+                        {
+                            using (FormFinalizarVenda formFinalizarVenda = new FormFinalizarVenda(formaPagamento))
+                            {
+                                formFinalizarVenda.ShowDialog();
+                            }
+                        }
+                    }
                 }
+                ((Venda)bindingSourceVenda.Current).IdFormaPagamento = formaPagamento.Id;
+                new VendaBLL().Inserir((Venda)bindingSourceVenda.Current);
             }
             catch (Exception ex)
             {
