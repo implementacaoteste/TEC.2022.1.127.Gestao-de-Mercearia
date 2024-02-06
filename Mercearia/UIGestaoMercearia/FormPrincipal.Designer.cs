@@ -35,7 +35,7 @@ namespace UIGestaoMercearia
             buttonUsuario = new Button();
             buttonCliente = new Button();
             panel2 = new Panel();
-            pictureBox4 = new PictureBox();
+            pictureBoxEstatistica = new PictureBox();
             buttonPagamento = new Button();
             pictureBox1 = new PictureBox();
             panel5 = new Panel();
@@ -61,7 +61,7 @@ namespace UIGestaoMercearia
             label1 = new Label();
             MENU = new Label();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxEstatistica).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
@@ -136,7 +136,7 @@ namespace UIGestaoMercearia
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             panel2.BackColor = Color.FromArgb(50, 153, 204);
-            panel2.Controls.Add(pictureBox4);
+            panel2.Controls.Add(pictureBoxEstatistica);
             panel2.Controls.Add(buttonPagamento);
             panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(MENU);
@@ -157,22 +157,23 @@ namespace UIGestaoMercearia
             panel2.TabIndex = 15;
             panel2.Paint += panel2_Paint;
             // 
-            // pictureBox4
+            // pictureBoxEstatistica
             // 
-            pictureBox4.AccessibleRole = AccessibleRole.MenuBar;
-            pictureBox4.Anchor = AnchorStyles.Right;
-            pictureBox4.BackColor = Color.Transparent;
-            pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox4.Cursor = Cursors.Hand;
-            pictureBox4.ErrorImage = null;
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.InitialImage = null;
-            pictureBox4.Location = new Point(24, 905);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(406, 147);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 21;
-            pictureBox4.TabStop = false;
+            pictureBoxEstatistica.AccessibleRole = AccessibleRole.MenuBar;
+            pictureBoxEstatistica.Anchor = AnchorStyles.Right;
+            pictureBoxEstatistica.BackColor = Color.Transparent;
+            pictureBoxEstatistica.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBoxEstatistica.Cursor = Cursors.Hand;
+            pictureBoxEstatistica.ErrorImage = null;
+            pictureBoxEstatistica.Image = (Image)resources.GetObject("pictureBoxEstatistica.Image");
+            pictureBoxEstatistica.InitialImage = null;
+            pictureBoxEstatistica.Location = new Point(24, 905);
+            pictureBoxEstatistica.Name = "pictureBoxEstatistica";
+            pictureBoxEstatistica.Size = new Size(406, 147);
+            pictureBoxEstatistica.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxEstatistica.TabIndex = 21;
+            pictureBoxEstatistica.TabStop = false;
+            pictureBoxEstatistica.Click += pictureBoxEstatistica_Click;
             // 
             // buttonPagamento
             // 
@@ -487,7 +488,7 @@ namespace UIGestaoMercearia
             KeyDown += FormPrincipal_KeyDown;
             Resize += FormPrincipal_Resize;
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxEstatistica).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
@@ -526,7 +527,7 @@ namespace UIGestaoMercearia
         private Button buttonPermissao;
         private ToolTip toolTip1;
         private Button buttonPagamento;
-        private PictureBox pictureBox4;
+        private PictureBox pictureBoxEstatistica;
     }
 }
 

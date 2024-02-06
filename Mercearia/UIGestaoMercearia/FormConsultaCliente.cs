@@ -108,6 +108,14 @@ namespace UIGestaoMercearia
         private void FormConsultaCliente_Load(object sender, EventArgs e)
         {
             comboBoxBuscarPor.SelectedIndex = 3;
+            HabilitarComponentes();
+        }
+
+        private void HabilitarComponentes()
+        {
+            buttonInserir.Enabled = new UsuarioBLL().ValidarPermissao(40, false);
+            buttonAlterar.Enabled = new UsuarioBLL().ValidarPermissao(41, false);
+            buttonExcluir.Enabled = new UsuarioBLL().ValidarPermissao(42, false);
         }
 
         private void buttonSelecionar_Click(object sender, EventArgs e)

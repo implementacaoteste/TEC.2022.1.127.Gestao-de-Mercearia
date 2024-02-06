@@ -130,5 +130,17 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void FormConsultaVenda_Load(object sender, EventArgs e)
+        {
+            HabilitarComponentes();
+        }
+
+        private void HabilitarComponentes()
+        {
+            buttonInserir.Enabled = new UsuarioBLL().ValidarPermissao(44, false);
+            buttonAlterar.Enabled = new UsuarioBLL().ValidarPermissao(45, false);
+            buttonExcluir.Enabled = new UsuarioBLL().ValidarPermissao(46, false);
+        }
     }
 }
