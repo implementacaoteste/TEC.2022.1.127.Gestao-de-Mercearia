@@ -47,7 +47,7 @@ namespace UIGestaoMercearia
             //buttonCliente.Enabled = new UsuarioBLL().ValidarPermissao(39, false);
             //buttonConsultarVenda.Enabled = new UsuarioBLL().ValidarPermissao(43, false);
             buttonPermissao.Enabled = new UsuarioBLL().ValidarPermissao(47, false);
-            //pictureBoxEstatistica.Enabled = new UsuarioBLL().ValidarPermissao(40, false);
+            pictureBoxEstatistica.Enabled = new UsuarioBLL().ValidarPermissao(48, false);
         }
 
         private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
