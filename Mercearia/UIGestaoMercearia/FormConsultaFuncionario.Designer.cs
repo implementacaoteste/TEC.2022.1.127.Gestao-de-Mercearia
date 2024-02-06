@@ -28,269 +28,259 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
-            this.textBoxBuscar = new System.Windows.Forms.TextBox();
-            this.buttonBuscar = new System.Windows.Forms.Button();
-            this.buttonAlterar = new System.Windows.Forms.Button();
-            this.buttonInserir = new System.Windows.Forms.Button();
-            this.buttonExcluir = new System.Windows.Forms.Button();
-            this.funcionarioDataGridView = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.profissaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ativoDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.funcionarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonSelecionar = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.funcionarioDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.funcionarioBindingSource)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            label1 = new Label();
+            label2 = new Label();
+            comboBoxBuscarPor = new ComboBox();
+            textBoxBuscar = new TextBox();
+            buttonBuscar = new Button();
+            buttonAlterar = new Button();
+            buttonInserir = new Button();
+            buttonExcluir = new Button();
+            funcionarioDataGridView = new DataGridView();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            profissaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            Telefone = new DataGridViewTextBoxColumn();
+            salarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ativoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
+            funcionarioBindingSource = new BindingSource(components);
+            buttonSelecionar = new Button();
+            buttonCancelar = new Button();
+            label3 = new Label();
+            ((System.ComponentModel.ISupportInitialize)funcionarioDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)funcionarioBindingSource).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(848, 48);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Consulta funcionario";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label1.BackColor = Color.FromArgb(50, 153, 204);
+            label1.BorderStyle = BorderStyle.Fixed3D;
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(848, 48);
+            label1.TabIndex = 3;
+            label1.Text = "CONSULTA FUNCIONÁRIO";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(12, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 18);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "BUSCAR POR:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(12, 63);
+            label2.Name = "label2";
+            label2.Size = new Size(120, 18);
+            label2.TabIndex = 4;
+            label2.Text = "BUSCAR POR:";
             // 
             // comboBoxBuscarPor
             // 
-            this.comboBoxBuscarPor.FormattingEnabled = true;
-            this.comboBoxBuscarPor.Items.AddRange(new object[] {
-            "Id",
-            "Nome",
-            "Todos"});
-            this.comboBoxBuscarPor.Location = new System.Drawing.Point(12, 85);
-            this.comboBoxBuscarPor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
-            this.comboBoxBuscarPor.Size = new System.Drawing.Size(144, 28);
-            this.comboBoxBuscarPor.TabIndex = 7;
+            comboBoxBuscarPor.FormattingEnabled = true;
+            comboBoxBuscarPor.Items.AddRange(new object[] { "Id", "Nome", "Todos" });
+            comboBoxBuscarPor.Location = new Point(12, 85);
+            comboBoxBuscarPor.Margin = new Padding(3, 4, 3, 4);
+            comboBoxBuscarPor.Name = "comboBoxBuscarPor";
+            comboBoxBuscarPor.Size = new Size(144, 28);
+            comboBoxBuscarPor.TabIndex = 7;
             // 
             // textBoxBuscar
             // 
-            this.textBoxBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxBuscar.Location = new System.Drawing.Point(162, 86);
-            this.textBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxBuscar.Name = "textBoxBuscar";
-            this.textBoxBuscar.Size = new System.Drawing.Size(349, 27);
-            this.textBoxBuscar.TabIndex = 8;
+            textBoxBuscar.Cursor = Cursors.IBeam;
+            textBoxBuscar.Location = new Point(162, 86);
+            textBoxBuscar.Margin = new Padding(3, 4, 3, 4);
+            textBoxBuscar.Name = "textBoxBuscar";
+            textBoxBuscar.Size = new Size(349, 27);
+            textBoxBuscar.TabIndex = 8;
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(517, 86);
-            this.buttonBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(75, 29);
-            this.buttonBuscar.TabIndex = 9;
-            this.buttonBuscar.Text = "&Buscar";
-            this.buttonBuscar.UseVisualStyleBackColor = true;
-            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
+            buttonBuscar.Location = new Point(517, 86);
+            buttonBuscar.Margin = new Padding(3, 4, 3, 4);
+            buttonBuscar.Name = "buttonBuscar";
+            buttonBuscar.Size = new Size(75, 29);
+            buttonBuscar.TabIndex = 9;
+            buttonBuscar.Text = "&Buscar";
+            buttonBuscar.UseVisualStyleBackColor = true;
+            buttonBuscar.Click += buttonBuscar_Click;
             // 
             // buttonAlterar
             // 
-            this.buttonAlterar.Location = new System.Drawing.Point(598, 86);
-            this.buttonAlterar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Size = new System.Drawing.Size(75, 29);
-            this.buttonAlterar.TabIndex = 10;
-            this.buttonAlterar.Text = "&Alterar";
-            this.buttonAlterar.UseVisualStyleBackColor = true;
-            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
+            buttonAlterar.Location = new Point(598, 86);
+            buttonAlterar.Margin = new Padding(3, 4, 3, 4);
+            buttonAlterar.Name = "buttonAlterar";
+            buttonAlterar.Size = new Size(75, 29);
+            buttonAlterar.TabIndex = 10;
+            buttonAlterar.Text = "&Alterar";
+            buttonAlterar.UseVisualStyleBackColor = true;
+            buttonAlterar.Click += buttonAlterar_Click;
             // 
             // buttonInserir
             // 
-            this.buttonInserir.Location = new System.Drawing.Point(679, 86);
-            this.buttonInserir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonInserir.Name = "buttonInserir";
-            this.buttonInserir.Size = new System.Drawing.Size(75, 29);
-            this.buttonInserir.TabIndex = 11;
-            this.buttonInserir.Text = "&Inserir";
-            this.buttonInserir.UseVisualStyleBackColor = true;
-            this.buttonInserir.Click += new System.EventHandler(this.buttonInserir_Click);
+            buttonInserir.Location = new Point(679, 86);
+            buttonInserir.Margin = new Padding(3, 4, 3, 4);
+            buttonInserir.Name = "buttonInserir";
+            buttonInserir.Size = new Size(75, 29);
+            buttonInserir.TabIndex = 11;
+            buttonInserir.Text = "&Inserir";
+            buttonInserir.UseVisualStyleBackColor = true;
+            buttonInserir.Click += buttonInserir_Click;
             // 
             // buttonExcluir
             // 
-            this.buttonExcluir.Location = new System.Drawing.Point(760, 86);
-            this.buttonExcluir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonExcluir.Name = "buttonExcluir";
-            this.buttonExcluir.Size = new System.Drawing.Size(75, 29);
-            this.buttonExcluir.TabIndex = 12;
-            this.buttonExcluir.Text = "&Excluir";
-            this.buttonExcluir.UseVisualStyleBackColor = true;
-            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
+            buttonExcluir.Location = new Point(760, 86);
+            buttonExcluir.Margin = new Padding(3, 4, 3, 4);
+            buttonExcluir.Name = "buttonExcluir";
+            buttonExcluir.Size = new Size(75, 29);
+            buttonExcluir.TabIndex = 12;
+            buttonExcluir.Text = "&Excluir";
+            buttonExcluir.UseVisualStyleBackColor = true;
+            buttonExcluir.Click += buttonExcluir_Click;
             // 
             // funcionarioDataGridView
             // 
-            this.funcionarioDataGridView.AllowUserToAddRows = false;
-            this.funcionarioDataGridView.AllowUserToDeleteRows = false;
-            this.funcionarioDataGridView.AllowUserToOrderColumns = true;
-            this.funcionarioDataGridView.AutoGenerateColumns = false;
-            this.funcionarioDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.funcionarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.funcionarioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nomeDataGridViewTextBoxColumn,
-            this.profissaoDataGridViewTextBoxColumn,
-            this.Telefone,
-            this.salarioDataGridViewTextBoxColumn,
-            this.ativoDataGridViewCheckBoxColumn});
-            this.funcionarioDataGridView.DataSource = this.funcionarioBindingSource;
-            this.funcionarioDataGridView.Location = new System.Drawing.Point(12, 120);
-            this.funcionarioDataGridView.Name = "funcionarioDataGridView";
-            this.funcionarioDataGridView.ReadOnly = true;
-            this.funcionarioDataGridView.RowHeadersWidth = 51;
-            this.funcionarioDataGridView.RowTemplate.Height = 29;
-            this.funcionarioDataGridView.Size = new System.Drawing.Size(823, 286);
-            this.funcionarioDataGridView.TabIndex = 13;
+            funcionarioDataGridView.AllowUserToAddRows = false;
+            funcionarioDataGridView.AllowUserToDeleteRows = false;
+            funcionarioDataGridView.AllowUserToOrderColumns = true;
+            funcionarioDataGridView.AutoGenerateColumns = false;
+            funcionarioDataGridView.BackgroundColor = Color.White;
+            funcionarioDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            funcionarioDataGridView.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, nomeDataGridViewTextBoxColumn, profissaoDataGridViewTextBoxColumn, Telefone, salarioDataGridViewTextBoxColumn, ativoDataGridViewCheckBoxColumn });
+            funcionarioDataGridView.DataSource = funcionarioBindingSource;
+            funcionarioDataGridView.Location = new Point(12, 120);
+            funcionarioDataGridView.Name = "funcionarioDataGridView";
+            funcionarioDataGridView.ReadOnly = true;
+            funcionarioDataGridView.RowHeadersWidth = 51;
+            funcionarioDataGridView.RowTemplate.Height = 29;
+            funcionarioDataGridView.Size = new Size(823, 286);
+            funcionarioDataGridView.TabIndex = 13;
             // 
             // idDataGridViewTextBoxColumn
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 50;
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.ReadOnly = true;
+            idDataGridViewTextBoxColumn.Width = 50;
             // 
             // nomeDataGridViewTextBoxColumn
             // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nomeDataGridViewTextBoxColumn.Width = 225;
+            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            nomeDataGridViewTextBoxColumn.Width = 225;
             // 
             // profissaoDataGridViewTextBoxColumn
             // 
-            this.profissaoDataGridViewTextBoxColumn.DataPropertyName = "Profissao";
-            this.profissaoDataGridViewTextBoxColumn.HeaderText = "Profissao";
-            this.profissaoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.profissaoDataGridViewTextBoxColumn.Name = "profissaoDataGridViewTextBoxColumn";
-            this.profissaoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.profissaoDataGridViewTextBoxColumn.Width = 150;
+            profissaoDataGridViewTextBoxColumn.DataPropertyName = "Profissao";
+            profissaoDataGridViewTextBoxColumn.HeaderText = "Profissao";
+            profissaoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            profissaoDataGridViewTextBoxColumn.Name = "profissaoDataGridViewTextBoxColumn";
+            profissaoDataGridViewTextBoxColumn.ReadOnly = true;
+            profissaoDataGridViewTextBoxColumn.Width = 150;
             // 
             // Telefone
             // 
-            this.Telefone.DataPropertyName = "Telefone";
-            this.Telefone.HeaderText = "Telefone";
-            this.Telefone.MinimumWidth = 6;
-            this.Telefone.Name = "Telefone";
-            this.Telefone.ReadOnly = true;
-            this.Telefone.Width = 165;
+            Telefone.DataPropertyName = "Telefone";
+            Telefone.HeaderText = "Telefone";
+            Telefone.MinimumWidth = 6;
+            Telefone.Name = "Telefone";
+            Telefone.ReadOnly = true;
+            Telefone.Width = 165;
             // 
             // salarioDataGridViewTextBoxColumn
             // 
-            this.salarioDataGridViewTextBoxColumn.DataPropertyName = "Salario";
-            this.salarioDataGridViewTextBoxColumn.HeaderText = "Salario";
-            this.salarioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.salarioDataGridViewTextBoxColumn.Name = "salarioDataGridViewTextBoxColumn";
-            this.salarioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.salarioDataGridViewTextBoxColumn.Width = 125;
+            salarioDataGridViewTextBoxColumn.DataPropertyName = "Salario";
+            salarioDataGridViewTextBoxColumn.HeaderText = "Salario";
+            salarioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            salarioDataGridViewTextBoxColumn.Name = "salarioDataGridViewTextBoxColumn";
+            salarioDataGridViewTextBoxColumn.ReadOnly = true;
+            salarioDataGridViewTextBoxColumn.Width = 125;
             // 
             // ativoDataGridViewCheckBoxColumn
             // 
-            this.ativoDataGridViewCheckBoxColumn.DataPropertyName = "Ativo";
-            this.ativoDataGridViewCheckBoxColumn.HeaderText = "Ativo";
-            this.ativoDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            this.ativoDataGridViewCheckBoxColumn.Name = "ativoDataGridViewCheckBoxColumn";
-            this.ativoDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.ativoDataGridViewCheckBoxColumn.Width = 50;
+            ativoDataGridViewCheckBoxColumn.DataPropertyName = "Ativo";
+            ativoDataGridViewCheckBoxColumn.HeaderText = "Ativo";
+            ativoDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            ativoDataGridViewCheckBoxColumn.Name = "ativoDataGridViewCheckBoxColumn";
+            ativoDataGridViewCheckBoxColumn.ReadOnly = true;
+            ativoDataGridViewCheckBoxColumn.Width = 50;
             // 
             // funcionarioBindingSource
             // 
-            this.funcionarioBindingSource.DataSource = typeof(Models.Funcionario);
+            funcionarioBindingSource.DataSource = typeof(Models.Funcionario);
             // 
             // buttonSelecionar
             // 
-            this.buttonSelecionar.Location = new System.Drawing.Point(663, 413);
-            this.buttonSelecionar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonSelecionar.Name = "buttonSelecionar";
-            this.buttonSelecionar.Size = new System.Drawing.Size(91, 29);
-            this.buttonSelecionar.TabIndex = 14;
-            this.buttonSelecionar.Text = "&Selecionar";
-            this.buttonSelecionar.UseVisualStyleBackColor = true;
-            this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
+            buttonSelecionar.Location = new Point(663, 413);
+            buttonSelecionar.Margin = new Padding(3, 4, 3, 4);
+            buttonSelecionar.Name = "buttonSelecionar";
+            buttonSelecionar.Size = new Size(91, 29);
+            buttonSelecionar.TabIndex = 14;
+            buttonSelecionar.Text = "&Selecionar";
+            buttonSelecionar.UseVisualStyleBackColor = true;
+            buttonSelecionar.Click += buttonSelecionar_Click;
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancelar.Location = new System.Drawing.Point(760, 413);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(75, 29);
-            this.buttonCancelar.TabIndex = 15;
-            this.buttonCancelar.Text = "&Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            buttonCancelar.DialogResult = DialogResult.Cancel;
+            buttonCancelar.Location = new Point(760, 413);
+            buttonCancelar.Margin = new Padding(3, 4, 3, 4);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(75, 29);
+            buttonCancelar.TabIndex = 15;
+            buttonCancelar.Text = "&Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(162, 63);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(222, 18);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "INSIRA AS INFORMAÇÕES:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(162, 63);
+            label3.Name = "label3";
+            label3.Size = new Size(222, 18);
+            label3.TabIndex = 16;
+            label3.Text = "INSIRA AS INFORMAÇÕES:";
             // 
             // FormConsultaFuncionario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(848, 456);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.buttonSelecionar);
-            this.Controls.Add(this.funcionarioDataGridView);
-            this.Controls.Add(this.buttonExcluir);
-            this.Controls.Add(this.buttonInserir);
-            this.Controls.Add(this.buttonAlterar);
-            this.Controls.Add(this.buttonBuscar);
-            this.Controls.Add(this.textBoxBuscar);
-            this.Controls.Add(this.comboBoxBuscarPor);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.KeyPreview = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormConsultaFuncionario";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.FormConsultaFuncionario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.funcionarioDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.funcionarioBindingSource)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(50, 153, 204);
+            ClientSize = new Size(848, 456);
+            Controls.Add(label3);
+            Controls.Add(buttonCancelar);
+            Controls.Add(buttonSelecionar);
+            Controls.Add(funcionarioDataGridView);
+            Controls.Add(buttonExcluir);
+            Controls.Add(buttonInserir);
+            Controls.Add(buttonAlterar);
+            Controls.Add(buttonBuscar);
+            Controls.Add(textBoxBuscar);
+            Controls.Add(comboBoxBuscarPor);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormConsultaFuncionario";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Load += FormConsultaFuncionario_Load;
+            ((System.ComponentModel.ISupportInitialize)funcionarioDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)funcionarioBindingSource).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

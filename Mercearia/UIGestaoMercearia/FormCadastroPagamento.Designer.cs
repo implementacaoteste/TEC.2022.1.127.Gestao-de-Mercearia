@@ -99,7 +99,7 @@
             label10.ForeColor = SystemColors.ButtonFace;
             label10.Location = new Point(0, 0);
             label10.Name = "label10";
-            label10.Size = new Size(610, 61);
+            label10.Size = new Size(694, 61);
             label10.TabIndex = 55;
             label10.Text = "CADASTO DE FORMA DE PAGAMENTO";
             label10.TextAlign = ContentAlignment.MiddleCenter;
@@ -144,7 +144,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
             CancelButton = buttonCancelar;
-            ClientSize = new Size(610, 375);
+            ClientSize = new Size(694, 375);
             Controls.Add(checkBox1);
             Controls.Add(label2);
             Controls.Add(textBox2);

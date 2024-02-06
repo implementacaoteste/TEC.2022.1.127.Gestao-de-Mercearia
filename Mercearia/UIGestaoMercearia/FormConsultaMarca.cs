@@ -159,5 +159,10 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void labelGerenProd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

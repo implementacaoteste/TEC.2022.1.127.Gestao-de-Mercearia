@@ -149,6 +149,14 @@ namespace UIGestaoMercearia
         {
             comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1; //seleciona sempre o ultimo indice da ComboBox
             buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
+            HabilitarComponentes();
+        }
+
+        private void HabilitarComponentes()
+        {
+            buttonInserir.Enabled = new UsuarioBLL().ValidarPermissao(12, false);
+            buttonAlterar.Enabled = new UsuarioBLL().ValidarPermissao(13, false);
+            buttonEcluir.Enabled = new UsuarioBLL().ValidarPermissao(14, false);
         }
 
         private void dataGridViewProduto_DoubleClick(object sender, EventArgs e)

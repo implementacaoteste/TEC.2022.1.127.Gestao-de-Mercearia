@@ -36,6 +36,18 @@ namespace UIGestaoMercearia
         private void HabilitarComponentes()
         {
             buttonGrupoUsuario.Enabled = new UsuarioBLL().ValidarPermissao(9, false);
+            buttonUsuario.Enabled = new UsuarioBLL().ValidarPermissao(1, false);
+            buttonFornecedores.Enabled = new UsuarioBLL().ValidarPermissao(23, false);
+            //buttonProdutos.Enabled = new UsuarioBLL().ValidarPermissao(11, false);
+            buttonFuncionarios.Enabled = new UsuarioBLL().ValidarPermissao(15, false);
+            button8.Enabled = new UsuarioBLL().ValidarPermissao(19, false);
+            buttonCategorias.Enabled = new UsuarioBLL().ValidarPermissao(27, false);
+            buttonMarcas.Enabled = new UsuarioBLL().ValidarPermissao(31, false);
+            //buttonPagamento.Enabled = new UsuarioBLL().ValidarPermissao(35, false);
+            //buttonCliente.Enabled = new UsuarioBLL().ValidarPermissao(39, false);
+            //buttonConsultarVenda.Enabled = new UsuarioBLL().ValidarPermissao(43, false);
+            buttonPermissao.Enabled = new UsuarioBLL().ValidarPermissao(47, false);
+            //pictureBoxEstatistica.Enabled = new UsuarioBLL().ValidarPermissao(40, false);
         }
 
         private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
@@ -258,6 +270,14 @@ namespace UIGestaoMercearia
         private void buttonPagamento_Click(object sender, EventArgs e)
         {
             using (FormPagamento frm = new FormPagamento())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void pictureBoxEstatistica_Click(object sender, EventArgs e)
+        {
+            using (FormEstatistica frm = new FormEstatistica())
             {
                 frm.ShowDialog();
             }

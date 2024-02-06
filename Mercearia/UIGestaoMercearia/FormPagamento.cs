@@ -92,6 +92,14 @@ namespace UIGestaoMercearia
         {
             comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1; //seleciona sempre o ultimo indice da ComboBox
             buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
+            HabilitarComponentes();
+        }
+
+        private void HabilitarComponentes()
+        {
+            buttonInserir.Enabled = new UsuarioBLL().ValidarPermissao(36, false);
+            buttonAlterar.Enabled = new UsuarioBLL().ValidarPermissao(37, false);
+            buttonExcluir.Enabled = new UsuarioBLL().ValidarPermissao(38, false);
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)

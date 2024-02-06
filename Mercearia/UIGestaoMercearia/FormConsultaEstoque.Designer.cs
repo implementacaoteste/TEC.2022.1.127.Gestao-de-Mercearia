@@ -28,307 +28,299 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.bindingSourceEstoque = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewEstoque = new System.Windows.Forms.DataGridView();
-            this.IdProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datadeEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datadeSaidaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estoqueMinimoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estoqueMaximoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.labelGerenProd = new System.Windows.Forms.Label();
-            this.buttonSelecionar = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
-            this.textBoxBuscarPor = new System.Windows.Forms.TextBox();
-            this.buttonBuscar = new System.Windows.Forms.Button();
-            this.buttonAlterar = new System.Windows.Forms.Button();
-            this.buttonInserir = new System.Windows.Forms.Button();
-            this.buttonExcluir = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            bindingSourceEstoque = new BindingSource(components);
+            dataGridViewEstoque = new DataGridView();
+            IdProduto = new DataGridViewTextBoxColumn();
+            datadeEntradaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            datadeSaidaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            estoqueMinimoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            estoqueMaximoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            labelGerenProd = new Label();
+            buttonSelecionar = new Button();
+            buttonCancelar = new Button();
+            panel1 = new Panel();
+            button2 = new Button();
+            comboBoxBuscarPor = new ComboBox();
+            textBoxBuscarPor = new TextBox();
+            buttonBuscar = new Button();
+            buttonAlterar = new Button();
+            buttonInserir = new Button();
+            buttonExcluir = new Button();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            label2 = new Label();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceEstoque).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewEstoque).BeginInit();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            SuspendLayout();
             // 
             // bindingSourceEstoque
             // 
-            this.bindingSourceEstoque.DataSource = typeof(Models.Estoque);
+            bindingSourceEstoque.DataSource = typeof(Models.Estoque);
             // 
             // dataGridViewEstoque
             // 
-            this.dataGridViewEstoque.AllowUserToAddRows = false;
-            this.dataGridViewEstoque.AllowUserToDeleteRows = false;
-            this.dataGridViewEstoque.AllowUserToOrderColumns = true;
-            this.dataGridViewEstoque.AutoGenerateColumns = false;
-            this.dataGridViewEstoque.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridViewEstoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEstoque.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdProduto,
-            this.datadeEntradaDataGridViewTextBoxColumn,
-            this.datadeSaidaDataGridViewTextBoxColumn,
-            this.estoqueMinimoDataGridViewTextBoxColumn,
-            this.estoqueMaximoDataGridViewTextBoxColumn});
-            this.dataGridViewEstoque.DataSource = this.bindingSourceEstoque;
-            this.dataGridViewEstoque.Location = new System.Drawing.Point(12, 154);
-            this.dataGridViewEstoque.Name = "dataGridViewEstoque";
-            this.dataGridViewEstoque.ReadOnly = true;
-            this.dataGridViewEstoque.RowHeadersWidth = 51;
-            this.dataGridViewEstoque.RowTemplate.Height = 29;
-            this.dataGridViewEstoque.Size = new System.Drawing.Size(820, 234);
-            this.dataGridViewEstoque.TabIndex = 4;
-            this.dataGridViewEstoque.DoubleClick += new System.EventHandler(this.dataGridViewEstoque_DoubleClick);
+            dataGridViewEstoque.AllowUserToAddRows = false;
+            dataGridViewEstoque.AllowUserToDeleteRows = false;
+            dataGridViewEstoque.AllowUserToOrderColumns = true;
+            dataGridViewEstoque.AutoGenerateColumns = false;
+            dataGridViewEstoque.BackgroundColor = SystemColors.ButtonFace;
+            dataGridViewEstoque.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewEstoque.Columns.AddRange(new DataGridViewColumn[] { IdProduto, datadeEntradaDataGridViewTextBoxColumn, datadeSaidaDataGridViewTextBoxColumn, estoqueMinimoDataGridViewTextBoxColumn, estoqueMaximoDataGridViewTextBoxColumn });
+            dataGridViewEstoque.DataSource = bindingSourceEstoque;
+            dataGridViewEstoque.Location = new Point(12, 154);
+            dataGridViewEstoque.Name = "dataGridViewEstoque";
+            dataGridViewEstoque.ReadOnly = true;
+            dataGridViewEstoque.RowHeadersWidth = 51;
+            dataGridViewEstoque.RowTemplate.Height = 29;
+            dataGridViewEstoque.Size = new Size(820, 234);
+            dataGridViewEstoque.TabIndex = 4;
+            dataGridViewEstoque.DoubleClick += dataGridViewEstoque_DoubleClick;
             // 
             // IdProduto
             // 
-            this.IdProduto.DataPropertyName = "IdProduto";
-            this.IdProduto.HeaderText = "Código do Produto";
-            this.IdProduto.MinimumWidth = 6;
-            this.IdProduto.Name = "IdProduto";
-            this.IdProduto.ReadOnly = true;
-            this.IdProduto.Width = 125;
+            IdProduto.DataPropertyName = "IdProduto";
+            IdProduto.HeaderText = "Código do Produto";
+            IdProduto.MinimumWidth = 6;
+            IdProduto.Name = "IdProduto";
+            IdProduto.ReadOnly = true;
+            IdProduto.Width = 125;
             // 
             // datadeEntradaDataGridViewTextBoxColumn
             // 
-            this.datadeEntradaDataGridViewTextBoxColumn.DataPropertyName = "DatadeEntrada";
-            this.datadeEntradaDataGridViewTextBoxColumn.HeaderText = "Data de Entrada";
-            this.datadeEntradaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.datadeEntradaDataGridViewTextBoxColumn.Name = "datadeEntradaDataGridViewTextBoxColumn";
-            this.datadeEntradaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.datadeEntradaDataGridViewTextBoxColumn.Width = 175;
+            datadeEntradaDataGridViewTextBoxColumn.DataPropertyName = "DatadeEntrada";
+            datadeEntradaDataGridViewTextBoxColumn.HeaderText = "Data de Entrada";
+            datadeEntradaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            datadeEntradaDataGridViewTextBoxColumn.Name = "datadeEntradaDataGridViewTextBoxColumn";
+            datadeEntradaDataGridViewTextBoxColumn.ReadOnly = true;
+            datadeEntradaDataGridViewTextBoxColumn.Width = 175;
             // 
             // datadeSaidaDataGridViewTextBoxColumn
             // 
-            this.datadeSaidaDataGridViewTextBoxColumn.DataPropertyName = "DatadeSaida";
-            this.datadeSaidaDataGridViewTextBoxColumn.HeaderText = "Data de Saida";
-            this.datadeSaidaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.datadeSaidaDataGridViewTextBoxColumn.Name = "datadeSaidaDataGridViewTextBoxColumn";
-            this.datadeSaidaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.datadeSaidaDataGridViewTextBoxColumn.Width = 175;
+            datadeSaidaDataGridViewTextBoxColumn.DataPropertyName = "DatadeSaida";
+            datadeSaidaDataGridViewTextBoxColumn.HeaderText = "Data de Saida";
+            datadeSaidaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            datadeSaidaDataGridViewTextBoxColumn.Name = "datadeSaidaDataGridViewTextBoxColumn";
+            datadeSaidaDataGridViewTextBoxColumn.ReadOnly = true;
+            datadeSaidaDataGridViewTextBoxColumn.Width = 175;
             // 
             // estoqueMinimoDataGridViewTextBoxColumn
             // 
-            this.estoqueMinimoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMinimo";
-            this.estoqueMinimoDataGridViewTextBoxColumn.HeaderText = "Estoque Minimo";
-            this.estoqueMinimoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.estoqueMinimoDataGridViewTextBoxColumn.Name = "estoqueMinimoDataGridViewTextBoxColumn";
-            this.estoqueMinimoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.estoqueMinimoDataGridViewTextBoxColumn.Width = 150;
+            estoqueMinimoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMinimo";
+            estoqueMinimoDataGridViewTextBoxColumn.HeaderText = "Estoque Minimo";
+            estoqueMinimoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            estoqueMinimoDataGridViewTextBoxColumn.Name = "estoqueMinimoDataGridViewTextBoxColumn";
+            estoqueMinimoDataGridViewTextBoxColumn.ReadOnly = true;
+            estoqueMinimoDataGridViewTextBoxColumn.Width = 150;
             // 
             // estoqueMaximoDataGridViewTextBoxColumn
             // 
-            this.estoqueMaximoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMaximo";
-            this.estoqueMaximoDataGridViewTextBoxColumn.HeaderText = "Estoque Maximo";
-            this.estoqueMaximoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.estoqueMaximoDataGridViewTextBoxColumn.Name = "estoqueMaximoDataGridViewTextBoxColumn";
-            this.estoqueMaximoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.estoqueMaximoDataGridViewTextBoxColumn.Width = 150;
+            estoqueMaximoDataGridViewTextBoxColumn.DataPropertyName = "EstoqueMaximo";
+            estoqueMaximoDataGridViewTextBoxColumn.HeaderText = "Estoque Maximo";
+            estoqueMaximoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            estoqueMaximoDataGridViewTextBoxColumn.Name = "estoqueMaximoDataGridViewTextBoxColumn";
+            estoqueMaximoDataGridViewTextBoxColumn.ReadOnly = true;
+            estoqueMaximoDataGridViewTextBoxColumn.Width = 150;
             // 
             // labelGerenProd
             // 
-            this.labelGerenProd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelGerenProd.AutoSize = true;
-            this.labelGerenProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.labelGerenProd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelGerenProd.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelGerenProd.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelGerenProd.Location = new System.Drawing.Point(0, 0);
-            this.labelGerenProd.Name = "labelGerenProd";
-            this.labelGerenProd.Size = new System.Drawing.Size(980, 46);
-            this.labelGerenProd.TabIndex = 0;
-            this.labelGerenProd.Text = "                   GERENCIAMENTO DE ESTOQUE                 ";
+            labelGerenProd.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            labelGerenProd.AutoSize = true;
+            labelGerenProd.BackColor = Color.FromArgb(50, 153, 204);
+            labelGerenProd.BorderStyle = BorderStyle.Fixed3D;
+            labelGerenProd.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            labelGerenProd.ForeColor = SystemColors.ButtonFace;
+            labelGerenProd.Location = new Point(0, 0);
+            labelGerenProd.Name = "labelGerenProd";
+            labelGerenProd.Size = new Size(980, 46);
+            labelGerenProd.TabIndex = 0;
+            labelGerenProd.Text = "                   GERENCIAMENTO DE ESTOQUE                 ";
             // 
             // buttonSelecionar
             // 
-            this.buttonSelecionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSelecionar.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.buttonSelecionar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonSelecionar.Location = new System.Drawing.Point(641, 525);
-            this.buttonSelecionar.Name = "buttonSelecionar";
-            this.buttonSelecionar.Size = new System.Drawing.Size(94, 38);
-            this.buttonSelecionar.TabIndex = 1;
-            this.buttonSelecionar.Text = "Selecionar";
-            this.buttonSelecionar.UseVisualStyleBackColor = true;
+            buttonSelecionar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonSelecionar.Cursor = Cursors.Cross;
+            buttonSelecionar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSelecionar.Location = new Point(641, 525);
+            buttonSelecionar.Name = "buttonSelecionar";
+            buttonSelecionar.Size = new Size(94, 38);
+            buttonSelecionar.TabIndex = 1;
+            buttonSelecionar.Text = "Selecionar";
+            buttonSelecionar.UseVisualStyleBackColor = true;
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonCancelar.Location = new System.Drawing.Point(742, 525);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(94, 38);
-            this.buttonCancelar.TabIndex = 1;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            buttonCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonCancelar.Cursor = Cursors.Cross;
+            buttonCancelar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonCancelar.Location = new Point(742, 525);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(94, 38);
+            buttonCancelar.TabIndex = 1;
+            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.buttonCancelar);
-            this.panel1.Controls.Add(this.buttonSelecionar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.panel1.Location = new System.Drawing.Point(0, 396);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(848, 60);
-            this.panel1.TabIndex = 3;
+            panel1.BackColor = Color.FromArgb(50, 153, 204);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(buttonCancelar);
+            panel1.Controls.Add(buttonSelecionar);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            panel1.Location = new Point(0, 396);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(848, 60);
+            panel1.TabIndex = 3;
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(742, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "&Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.ActiveCaptionText;
+            button2.Location = new Point(742, 19);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 3;
+            button2.Text = "&Cancelar";
+            button2.UseVisualStyleBackColor = true;
             // 
             // comboBoxBuscarPor
             // 
-            this.comboBoxBuscarPor.FormattingEnabled = true;
-            this.comboBoxBuscarPor.Items.AddRange(new object[] {
-            "Id",
-            "Todos"});
-            this.comboBoxBuscarPor.Location = new System.Drawing.Point(10, 123);
-            this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
-            this.comboBoxBuscarPor.Size = new System.Drawing.Size(105, 28);
-            this.comboBoxBuscarPor.TabIndex = 0;
+            comboBoxBuscarPor.FormattingEnabled = true;
+            comboBoxBuscarPor.Items.AddRange(new object[] { "Id", "Todos" });
+            comboBoxBuscarPor.Location = new Point(10, 123);
+            comboBoxBuscarPor.Name = "comboBoxBuscarPor";
+            comboBoxBuscarPor.Size = new Size(105, 28);
+            comboBoxBuscarPor.TabIndex = 0;
             // 
             // textBoxBuscarPor
             // 
-            this.textBoxBuscarPor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxBuscarPor.Location = new System.Drawing.Point(121, 122);
-            this.textBoxBuscarPor.Name = "textBoxBuscarPor";
-            this.textBoxBuscarPor.Size = new System.Drawing.Size(387, 27);
-            this.textBoxBuscarPor.TabIndex = 1;
+            textBoxBuscarPor.Cursor = Cursors.IBeam;
+            textBoxBuscarPor.Location = new Point(121, 122);
+            textBoxBuscarPor.Name = "textBoxBuscarPor";
+            textBoxBuscarPor.Size = new Size(387, 27);
+            textBoxBuscarPor.TabIndex = 1;
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(514, 121);
-            this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(78, 27);
-            this.buttonBuscar.TabIndex = 2;
-            this.buttonBuscar.Text = "&Buscar";
-            this.buttonBuscar.UseVisualStyleBackColor = true;
-            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
+            buttonBuscar.Location = new Point(514, 121);
+            buttonBuscar.Name = "buttonBuscar";
+            buttonBuscar.Size = new Size(78, 27);
+            buttonBuscar.TabIndex = 2;
+            buttonBuscar.Text = "&Buscar";
+            buttonBuscar.UseVisualStyleBackColor = true;
+            buttonBuscar.Click += buttonBuscar_Click;
             // 
             // buttonAlterar
             // 
-            this.buttonAlterar.Location = new System.Drawing.Point(598, 121);
-            this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Size = new System.Drawing.Size(79, 27);
-            this.buttonAlterar.TabIndex = 2;
-            this.buttonAlterar.Text = "&Alterar";
-            this.buttonAlterar.UseVisualStyleBackColor = true;
-            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
+            buttonAlterar.Location = new Point(598, 121);
+            buttonAlterar.Name = "buttonAlterar";
+            buttonAlterar.Size = new Size(79, 27);
+            buttonAlterar.TabIndex = 2;
+            buttonAlterar.Text = "&Alterar";
+            buttonAlterar.UseVisualStyleBackColor = true;
+            buttonAlterar.Click += buttonAlterar_Click;
             // 
             // buttonInserir
             // 
-            this.buttonInserir.Location = new System.Drawing.Point(683, 120);
-            this.buttonInserir.Name = "buttonInserir";
-            this.buttonInserir.Size = new System.Drawing.Size(73, 28);
-            this.buttonInserir.TabIndex = 2;
-            this.buttonInserir.Text = "&Inserir";
-            this.buttonInserir.UseVisualStyleBackColor = true;
-            this.buttonInserir.Click += new System.EventHandler(this.buttonInserir_Click);
+            buttonInserir.Location = new Point(683, 120);
+            buttonInserir.Name = "buttonInserir";
+            buttonInserir.Size = new Size(73, 28);
+            buttonInserir.TabIndex = 2;
+            buttonInserir.Text = "&Inserir";
+            buttonInserir.UseVisualStyleBackColor = true;
+            buttonInserir.Click += buttonInserir_Click;
             // 
             // buttonExcluir
             // 
-            this.buttonExcluir.Location = new System.Drawing.Point(762, 120);
-            this.buttonExcluir.Name = "buttonExcluir";
-            this.buttonExcluir.Size = new System.Drawing.Size(70, 27);
-            this.buttonExcluir.TabIndex = 2;
-            this.buttonExcluir.Text = "&Excluir";
-            this.buttonExcluir.UseVisualStyleBackColor = true;
-            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
+            buttonExcluir.Location = new Point(762, 120);
+            buttonExcluir.Name = "buttonExcluir";
+            buttonExcluir.Size = new Size(70, 27);
+            buttonExcluir.TabIndex = 2;
+            buttonExcluir.Text = "&Excluir";
+            buttonExcluir.UseVisualStyleBackColor = true;
+            buttonExcluir.Click += buttonExcluir_Click;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.dataGridViewEstoque);
-            this.panel2.Controls.Add(this.buttonExcluir);
-            this.panel2.Controls.Add(this.labelGerenProd);
-            this.panel2.Controls.Add(this.buttonInserir);
-            this.panel2.Controls.Add(this.buttonAlterar);
-            this.panel2.Controls.Add(this.buttonBuscar);
-            this.panel2.Controls.Add(this.textBoxBuscarPor);
-            this.panel2.Controls.Add(this.comboBoxBuscarPor);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(848, 509);
-            this.panel2.TabIndex = 5;
+            panel2.BackColor = Color.FromArgb(50, 153, 204);
+            panel2.Controls.Add(panel3);
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(dataGridViewEstoque);
+            panel2.Controls.Add(buttonExcluir);
+            panel2.Controls.Add(labelGerenProd);
+            panel2.Controls.Add(buttonInserir);
+            panel2.Controls.Add(buttonAlterar);
+            panel2.Controls.Add(buttonBuscar);
+            panel2.Controls.Add(textBoxBuscarPor);
+            panel2.Controls.Add(comboBoxBuscarPor);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(848, 509);
+            panel2.TabIndex = 5;
             // 
             // panel3
             // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(845, 81);
-            this.panel3.TabIndex = 6;
+            panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Controls.Add(label2);
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(848, 66);
+            panel3.TabIndex = 6;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(282, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(375, 44);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "CONSULTA ESTOQUE";
+            label2.AutoSize = true;
+            label2.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(215, 16);
+            label2.Name = "label2";
+            label2.Size = new Size(375, 44);
+            label2.TabIndex = 0;
+            label2.Text = "CONSULTA ESTOQUE";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(12, 100);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 18);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Buscar Por:";
+            label1.AutoSize = true;
+            label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(12, 100);
+            label1.Name = "label1";
+            label1.Size = new Size(103, 18);
+            label1.TabIndex = 5;
+            label1.Text = "Buscar Por:";
             // 
             // FormConsultaEstoque
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.buttonCancelar;
-            this.ClientSize = new System.Drawing.Size(848, 456);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.KeyPreview = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormConsultaEstoque";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.FormConsultaEstoque_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstoque)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = buttonCancelar;
+            ClientSize = new Size(848, 456);
+            Controls.Add(panel1);
+            Controls.Add(panel2);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormConsultaEstoque";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Load += FormConsultaEstoque_Load;
+            ((System.ComponentModel.ISupportInitialize)bindingSourceEstoque).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewEstoque).EndInit();
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

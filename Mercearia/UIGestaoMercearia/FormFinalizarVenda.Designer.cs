@@ -55,7 +55,9 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+
             label9.ForeColor = Color.White;
+
             label9.Location = new Point(12, 79);
             label9.Name = "label9";
             label9.Size = new Size(200, 18);
@@ -84,6 +86,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
+
             label1.Location = new Point(336, 81);
             label1.Name = "label1";
             label1.Size = new Size(114, 18);
@@ -127,7 +130,7 @@
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
             buttonCancelar.TabIndex = 38;
-            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
             // 
             // buttonOk
@@ -136,7 +139,7 @@
             buttonOk.Name = "buttonOk";
             buttonOk.Size = new Size(94, 29);
             buttonOk.TabIndex = 38;
-            buttonOk.Text = "Ok";
+            buttonOk.Text = "&Ok";
             buttonOk.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -170,8 +173,13 @@
             Controls.Add(textBoxTroco);
             Controls.Add(textBoxDinheiro);
             Controls.Add(textBoxFormaPagamento);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FormFinalizarVenda";
             ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
             Load += FormFinalizarVenda_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
