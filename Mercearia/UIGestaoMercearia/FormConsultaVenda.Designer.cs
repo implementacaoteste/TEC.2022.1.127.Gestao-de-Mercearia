@@ -111,7 +111,7 @@
             buttonExcluir.Name = "buttonExcluir";
             buttonExcluir.Size = new Size(94, 29);
             buttonExcluir.TabIndex = 6;
-            buttonExcluir.Text = "Excluir";
+            buttonExcluir.Text = "&Excluir";
             buttonExcluir.UseVisualStyleBackColor = true;
             // 
             // buttonInserir
@@ -121,7 +121,7 @@
             buttonInserir.Name = "buttonInserir";
             buttonInserir.Size = new Size(94, 29);
             buttonInserir.TabIndex = 5;
-            buttonInserir.Text = "Inserir";
+            buttonInserir.Text = "&Inserir";
             buttonInserir.UseVisualStyleBackColor = true;
             buttonInserir.Click += buttonInserir_Click;
             // 
@@ -132,7 +132,7 @@
             buttonAlterar.Name = "buttonAlterar";
             buttonAlterar.Size = new Size(94, 29);
             buttonAlterar.TabIndex = 4;
-            buttonAlterar.Text = "Alterar";
+            buttonAlterar.Text = "&Alterar";
             buttonAlterar.UseVisualStyleBackColor = true;
             buttonAlterar.Click += buttonAlterar_Click;
             // 
@@ -143,7 +143,7 @@
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(94, 29);
             buttonBuscar.TabIndex = 3;
-            buttonBuscar.Text = "Buscar";
+            buttonBuscar.Text = "&Buscar";
             buttonBuscar.UseVisualStyleBackColor = true;
             buttonBuscar.Click += buttonBuscar_Click;
             // 
@@ -282,7 +282,7 @@
             buttonSelecionar.Name = "buttonSelecionar";
             buttonSelecionar.Size = new Size(103, 29);
             buttonSelecionar.TabIndex = 10;
-            buttonSelecionar.Text = "Selecionar";
+            buttonSelecionar.Text = "&Selecionar";
             buttonSelecionar.UseVisualStyleBackColor = true;
             buttonSelecionar.Click += buttonSelecionar_Click;
             // 
@@ -293,7 +293,7 @@
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
             buttonCancelar.TabIndex = 11;
-            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
             // 

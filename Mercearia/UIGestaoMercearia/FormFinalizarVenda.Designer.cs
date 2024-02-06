@@ -127,7 +127,7 @@
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
             buttonCancelar.TabIndex = 38;
-            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
             // 
             // buttonOk
@@ -136,7 +136,7 @@
             buttonOk.Name = "buttonOk";
             buttonOk.Size = new Size(94, 29);
             buttonOk.TabIndex = 38;
-            buttonOk.Text = "Ok";
+            buttonOk.Text = "&Ok";
             buttonOk.UseVisualStyleBackColor = true;
             // 
             // label3
