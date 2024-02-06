@@ -46,7 +46,7 @@ namespace UIGestaoMercearia
             // 
             textBoxUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             textBoxUsuario.Cursor = Cursors.IBeam;
-            textBoxUsuario.Location = new Point(20, 476);
+            textBoxUsuario.Location = new Point(48, 476);
             textBoxUsuario.Margin = new Padding(3, 4, 3, 4);
             textBoxUsuario.Name = "textBoxUsuario";
             textBoxUsuario.Size = new Size(366, 27);
@@ -57,7 +57,7 @@ namespace UIGestaoMercearia
             // 
             textBoxSenha.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             textBoxSenha.Cursor = Cursors.IBeam;
-            textBoxSenha.Location = new Point(20, 542);
+            textBoxSenha.Location = new Point(48, 542);
             textBoxSenha.Margin = new Padding(3, 4, 3, 4);
             textBoxSenha.Name = "textBoxSenha";
             textBoxSenha.PasswordChar = '*';
@@ -72,7 +72,7 @@ namespace UIGestaoMercearia
             buttonEntrar.FlatStyle = FlatStyle.Flat;
             buttonEntrar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             buttonEntrar.ForeColor = Color.White;
-            buttonEntrar.Location = new Point(20, 595);
+            buttonEntrar.Location = new Point(48, 595);
             buttonEntrar.Margin = new Padding(3, 4, 3, 4);
             buttonEntrar.Name = "buttonEntrar";
             buttonEntrar.Size = new Size(366, 39);
@@ -87,7 +87,7 @@ namespace UIGestaoMercearia
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(50, 153, 204);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(20, 518);
+            label1.Location = new Point(48, 518);
             label1.Name = "label1";
             label1.Size = new Size(49, 20);
             label1.TabIndex = 3;
@@ -99,7 +99,7 @@ namespace UIGestaoMercearia
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(50, 153, 204);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(20, 452);
+            label2.Location = new Point(48, 452);
             label2.Name = "label2";
             label2.Size = new Size(59, 20);
             label2.TabIndex = 1;
@@ -121,7 +121,7 @@ namespace UIGestaoMercearia
             pictureBox1.Anchor = AnchorStyles.Top;
             pictureBox1.BackColor = Color.FromArgb(50, 153, 204);
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(111, 372);
+            pictureBox1.Location = new Point(139, 372);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(188, 71);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -141,7 +141,7 @@ namespace UIGestaoMercearia
             panel1.Controls.Add(buttonEntrar);
             panel1.Location = new Point(416, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(406, 782);
+            panel1.Size = new Size(462, 782);
             panel1.TabIndex = 8;
             // 
             // FormLogin

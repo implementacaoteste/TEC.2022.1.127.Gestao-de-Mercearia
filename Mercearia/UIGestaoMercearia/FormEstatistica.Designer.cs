@@ -30,8 +30,8 @@
         {
             label1 = new Label();
             panel1 = new Panel();
-            label2 = new Label();
             label3 = new Label();
+            label2 = new Label();
             panel2 = new Panel();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             panel1.SuspendLayout();
@@ -42,11 +42,11 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 21F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(293, 9);
+            label1.Location = new Point(227, 9);
             label1.Name = "label1";
-            label1.Size = new Size(209, 42);
+            label1.Size = new Size(367, 42);
             label1.TabIndex = 0;
-            label1.Text = "Dashboard";
+            label1.Text = "Estatísca de Ganhos";
             // 
             // panel1
             // 
@@ -59,17 +59,6 @@
             panel1.Size = new Size(258, 130);
             panel1.TabIndex = 1;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(3, 13);
-            label2.Name = "label2";
-            label2.Size = new Size(91, 23);
-            label2.TabIndex = 0;
-            label2.Text = "Ganhos:";
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -80,6 +69,17 @@
             label3.Size = new Size(104, 34);
             label3.TabIndex = 1;
             label3.Text = "R$ 123";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(3, 13);
+            label2.Name = "label2";
+            label2.Size = new Size(91, 23);
+            label2.TabIndex = 0;
+            label2.Text = "Ganhos:";
             // 
             // panel2
             // 

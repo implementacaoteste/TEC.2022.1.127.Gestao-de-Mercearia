@@ -55,7 +55,9 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = SystemColors.ButtonHighlight;
+
+            label9.ForeColor = Color.White;
+
             label9.Location = new Point(12, 79);
             label9.Name = "label9";
             label9.Size = new Size(200, 18);
@@ -83,12 +85,13 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.ForeColor = Color.White;
+
             label1.Location = new Point(336, 81);
             label1.Name = "label1";
-            label1.Size = new Size(163, 18);
+            label1.Size = new Size(114, 18);
             label1.TabIndex = 35;
-            label1.Text = "Dinheiro do cliente";
+            label1.Text = "VALOR PAGO";
             label1.Visible = false;
             // 
             // textBoxTroco
@@ -104,12 +107,12 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(505, 81);
             label2.Name = "label2";
-            label2.Size = new Size(55, 18);
+            label2.Size = new Size(65, 18);
             label2.TabIndex = 35;
-            label2.Text = "Troco";
+            label2.Text = "TROCO";
             label2.Visible = false;
             // 
             // pictureBox1

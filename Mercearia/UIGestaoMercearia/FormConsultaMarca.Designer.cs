@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            panel2 = new Panel();
             label2 = new Label();
             label1 = new Label();
             buttonBuscar = new Button();
@@ -42,23 +41,12 @@
             idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             bindingSourceMarca = new BindingSource(components);
-            labelGerenProd = new Label();
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
-            panel2.SuspendLayout();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMarca).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceMarca).BeginInit();
             SuspendLayout();
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.White;
-            panel2.Controls.Add(labelGerenProd);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(568, 75);
-            panel2.TabIndex = 11;
             // 
             // label2
             // 
@@ -86,7 +74,7 @@
             // 
             buttonBuscar.BackColor = SystemColors.ButtonHighlight;
             buttonBuscar.FlatStyle = FlatStyle.Flat;
-            buttonBuscar.Location = new Point(449, 109);
+            buttonBuscar.Location = new Point(502, 111);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(107, 29);
             buttonBuscar.TabIndex = 2;
@@ -99,7 +87,7 @@
             textBoxBuscarPor.Cursor = Cursors.IBeam;
             textBoxBuscarPor.Location = new Point(150, 111);
             textBoxBuscarPor.Name = "textBoxBuscarPor";
-            textBoxBuscarPor.Size = new Size(293, 27);
+            textBoxBuscarPor.Size = new Size(346, 27);
             textBoxBuscarPor.TabIndex = 1;
             // 
             // comboBoxBuscarPor
@@ -115,7 +103,7 @@
             // 
             buttonExcluir.BackColor = SystemColors.ButtonHighlight;
             buttonExcluir.FlatStyle = FlatStyle.Flat;
-            buttonExcluir.Location = new Point(235, 530);
+            buttonExcluir.Location = new Point(314, 530);
             buttonExcluir.Name = "buttonExcluir";
             buttonExcluir.Size = new Size(94, 29);
             buttonExcluir.TabIndex = 2;
@@ -127,7 +115,7 @@
             // 
             buttonInserir.BackColor = SystemColors.ButtonHighlight;
             buttonInserir.FlatStyle = FlatStyle.Flat;
-            buttonInserir.Location = new Point(124, 530);
+            buttonInserir.Location = new Point(114, 530);
             buttonInserir.Name = "buttonInserir";
             buttonInserir.Size = new Size(94, 29);
             buttonInserir.TabIndex = 2;
@@ -162,7 +150,7 @@
             dataGridViewMarca.ReadOnly = true;
             dataGridViewMarca.RowHeadersWidth = 51;
             dataGridViewMarca.RowTemplate.Height = 29;
-            dataGridViewMarca.Size = new Size(543, 380);
+            dataGridViewMarca.Size = new Size(596, 380);
             dataGridViewMarca.TabIndex = 10;
             dataGridViewMarca.DoubleClick += dataGridViewMarca_DoubleClick;
             // 
@@ -188,23 +176,11 @@
             // 
             bindingSourceMarca.DataSource = typeof(Models.Marca);
             // 
-            // labelGerenProd
-            // 
-            labelGerenProd.AutoSize = true;
-            labelGerenProd.BackColor = Color.Transparent;
-            labelGerenProd.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            labelGerenProd.ForeColor = Color.FromArgb(50, 153, 204);
-            labelGerenProd.Location = new Point(46, 18);
-            labelGerenProd.Name = "labelGerenProd";
-            labelGerenProd.Size = new Size(480, 44);
-            labelGerenProd.TabIndex = 0;
-            labelGerenProd.Text = "Gerenciamento de Marcas";
-            // 
             // buttonSelecionar
             // 
             buttonSelecionar.BackColor = SystemColors.ButtonHighlight;
             buttonSelecionar.FlatStyle = FlatStyle.Flat;
-            buttonSelecionar.Location = new Point(348, 530);
+            buttonSelecionar.Location = new Point(214, 530);
             buttonSelecionar.Name = "buttonSelecionar";
             buttonSelecionar.Size = new Size(94, 29);
             buttonSelecionar.TabIndex = 1;
@@ -216,7 +192,7 @@
             // 
             buttonCancelar.BackColor = SystemColors.ButtonHighlight;
             buttonCancelar.FlatStyle = FlatStyle.Flat;
-            buttonCancelar.Location = new Point(462, 530);
+            buttonCancelar.Location = new Point(515, 530);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
             buttonCancelar.TabIndex = 1;
@@ -224,13 +200,28 @@
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
             // 
+            // label3
+            // 
+            label3.BackColor = Color.FromArgb(50, 153, 204);
+            label3.BorderStyle = BorderStyle.Fixed3D;
+            label3.Dock = DockStyle.Top;
+            label3.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonFace;
+            label3.Location = new Point(0, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(621, 67);
+            label3.TabIndex = 11;
+            label3.Text = "GERENCIAMENTO DE MARCAS";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // FormConsultaMarca
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
             CancelButton = buttonCancelar;
-            ClientSize = new Size(568, 574);
+            ClientSize = new Size(621, 574);
+            Controls.Add(label3);
             Controls.Add(buttonCancelar);
             Controls.Add(label2);
             Controls.Add(buttonSelecionar);
@@ -241,7 +232,6 @@
             Controls.Add(textBoxBuscarPor);
             Controls.Add(buttonExcluir);
             Controls.Add(comboBoxBuscarPor);
-            Controls.Add(panel2);
             Controls.Add(dataGridViewMarca);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
@@ -252,8 +242,6 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormConsultaMarca_Load;
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMarca).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceMarca).EndInit();
             ResumeLayout(false);
@@ -261,8 +249,6 @@
         }
 
         #endregion
-
-        private Panel panel2;
         private Button buttonExcluir;
         private Button buttonInserir;
         private Button buttonAlterar;
@@ -271,12 +257,12 @@
         private ComboBox comboBoxBuscarPor;
         private DataGridView dataGridViewMarca;
         private BindingSource bindingSourceMarca;
-        private Label labelGerenProd;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private Label label2;
         private Label label1;
         private Button buttonSelecionar;
         private Button buttonCancelar;
+        private Label label3;
     }
 }

@@ -43,7 +43,7 @@
             buttonCancelar.BackColor = Color.White;
             buttonCancelar.FlatStyle = FlatStyle.Flat;
             buttonCancelar.ForeColor = Color.Black;
-            buttonCancelar.Location = new Point(683, 159);
+            buttonCancelar.Location = new Point(664, 159);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
             buttonCancelar.TabIndex = 47;
@@ -55,7 +55,7 @@
             // 
             buttonSalvar.BackColor = Color.Azure;
             buttonSalvar.FlatStyle = FlatStyle.Flat;
-            buttonSalvar.Location = new Point(583, 159);
+            buttonSalvar.Location = new Point(564, 159);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
             buttonSalvar.TabIndex = 46;
