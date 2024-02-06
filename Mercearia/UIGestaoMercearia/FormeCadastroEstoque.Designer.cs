@@ -28,249 +28,242 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBoxNomeProduto = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.bindingSourceEstoque = new System.Windows.Forms.BindingSource(this.components);
-            this.textBoxQtdEstoque = new System.Windows.Forms.TextBox();
-            this.textBoxEstoqueMaximo = new System.Windows.Forms.TextBox();
-            this.textBoxDataEntrada = new System.Windows.Forms.TextBox();
-            this.textBoxEstoqueMinimo = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.buttonBuscarProduto = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.buttonSalvar = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            label1 = new Label();
+            panel1 = new Panel();
+            textBoxNomeProduto = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            textBox2 = new TextBox();
+            bindingSourceEstoque = new BindingSource(components);
+            textBoxQtdEstoque = new TextBox();
+            textBoxEstoqueMaximo = new TextBox();
+            textBoxDataEntrada = new TextBox();
+            textBoxEstoqueMinimo = new TextBox();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            buttonBuscarProduto = new Button();
+            buttonCancelar = new Button();
+            buttonSalvar = new Button();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceEstoque).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.label1.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(150, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(380, 44);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CADASTRO ESTOQUE";
+            label1.Anchor = AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(50, 153, 204);
+            label1.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(150, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(380, 44);
+            label1.TabIndex = 0;
+            label1.Text = "CADASTRO ESTOQUE";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(657, 75);
-            this.panel1.TabIndex = 1;
+            panel1.BackColor = Color.FromArgb(50, 153, 204);
+            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(657, 75);
+            panel1.TabIndex = 1;
             // 
             // textBoxNomeProduto
             // 
-            this.textBoxNomeProduto.Location = new System.Drawing.Point(41, 121);
-            this.textBoxNomeProduto.Name = "textBoxNomeProduto";
-            this.textBoxNomeProduto.Size = new System.Drawing.Size(215, 27);
-            this.textBoxNomeProduto.TabIndex = 4;
+            textBoxNomeProduto.Location = new Point(41, 121);
+            textBoxNomeProduto.Name = "textBoxNomeProduto";
+            textBoxNomeProduto.Size = new Size(215, 27);
+            textBoxNomeProduto.TabIndex = 4;
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(343, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 18);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Data de Entrada:";
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(343, 100);
+            label2.Name = "label2";
+            label2.Size = new Size(144, 18);
+            label2.TabIndex = 5;
+            label2.Text = "Data de Entrada:";
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(343, 185);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 18);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Data de Saída:";
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(343, 185);
+            label3.Name = "label3";
+            label3.Size = new Size(127, 18);
+            label3.TabIndex = 6;
+            label3.Text = "Data de Saída:";
             // 
             // textBox2
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "DatadeSaida", true));
-            this.textBox2.Location = new System.Drawing.Point(343, 206);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 27);
-            this.textBox2.TabIndex = 7;
+            textBox2.DataBindings.Add(new Binding("Text", bindingSourceEstoque, "DatadeSaida", true));
+            textBox2.Location = new Point(343, 206);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(216, 27);
+            textBox2.TabIndex = 7;
             // 
             // bindingSourceEstoque
             // 
-            this.bindingSourceEstoque.DataSource = typeof(Models.Estoque);
+            bindingSourceEstoque.DataSource = typeof(Models.Estoque);
             // 
             // textBoxQtdEstoque
             // 
-            this.textBoxQtdEstoque.Location = new System.Drawing.Point(41, 206);
-            this.textBoxQtdEstoque.Name = "textBoxQtdEstoque";
-            this.textBoxQtdEstoque.Size = new System.Drawing.Size(215, 27);
-            this.textBoxQtdEstoque.TabIndex = 8;
+            textBoxQtdEstoque.Location = new Point(41, 206);
+            textBoxQtdEstoque.Name = "textBoxQtdEstoque";
+            textBoxQtdEstoque.Size = new Size(215, 27);
+            textBoxQtdEstoque.TabIndex = 8;
             // 
             // textBoxEstoqueMaximo
             // 
-            this.textBoxEstoqueMaximo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "EstoqueMaximo", true));
-            this.textBoxEstoqueMaximo.Location = new System.Drawing.Point(41, 293);
-            this.textBoxEstoqueMaximo.Name = "textBoxEstoqueMaximo";
-            this.textBoxEstoqueMaximo.Size = new System.Drawing.Size(216, 27);
-            this.textBoxEstoqueMaximo.TabIndex = 9;
+            textBoxEstoqueMaximo.DataBindings.Add(new Binding("Text", bindingSourceEstoque, "EstoqueMaximo", true));
+            textBoxEstoqueMaximo.Location = new Point(41, 293);
+            textBoxEstoqueMaximo.Name = "textBoxEstoqueMaximo";
+            textBoxEstoqueMaximo.Size = new Size(216, 27);
+            textBoxEstoqueMaximo.TabIndex = 9;
             // 
             // textBoxDataEntrada
             // 
-            this.textBoxDataEntrada.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "DatadeEntrada", true));
-            this.textBoxDataEntrada.Location = new System.Drawing.Point(343, 121);
-            this.textBoxDataEntrada.Name = "textBoxDataEntrada";
-            this.textBoxDataEntrada.Size = new System.Drawing.Size(216, 27);
-            this.textBoxDataEntrada.TabIndex = 10;
+            textBoxDataEntrada.DataBindings.Add(new Binding("Text", bindingSourceEstoque, "DatadeEntrada", true));
+            textBoxDataEntrada.Location = new Point(343, 121);
+            textBoxDataEntrada.Name = "textBoxDataEntrada";
+            textBoxDataEntrada.Size = new Size(216, 27);
+            textBoxDataEntrada.TabIndex = 10;
             // 
             // textBoxEstoqueMinimo
             // 
-            this.textBoxEstoqueMinimo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSourceEstoque, "EstoqueMinimo", true));
-            this.textBoxEstoqueMinimo.Location = new System.Drawing.Point(343, 293);
-            this.textBoxEstoqueMinimo.Name = "textBoxEstoqueMinimo";
-            this.textBoxEstoqueMinimo.Size = new System.Drawing.Size(215, 27);
-            this.textBoxEstoqueMinimo.TabIndex = 11;
-            this.textBoxEstoqueMinimo.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            textBoxEstoqueMinimo.DataBindings.Add(new Binding("Text", bindingSourceEstoque, "EstoqueMinimo", true));
+            textBoxEstoqueMinimo.Location = new Point(343, 293);
+            textBoxEstoqueMinimo.Name = "textBoxEstoqueMinimo";
+            textBoxEstoqueMinimo.Size = new Size(215, 27);
+            textBoxEstoqueMinimo.TabIndex = 11;
+            textBoxEstoqueMinimo.TextChanged += textBox6_TextChanged;
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(41, 272);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 18);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Estoque Máximo";
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.ButtonHighlight;
+            label4.Location = new Point(41, 272);
+            label4.Name = "label4";
+            label4.Size = new Size(141, 18);
+            label4.TabIndex = 12;
+            label4.Text = "Estoque Máximo";
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(343, 272);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 18);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Estoque Mínimo";
+            label5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label5.AutoSize = true;
+            label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = SystemColors.ButtonHighlight;
+            label5.Location = new Point(343, 272);
+            label5.Name = "label5";
+            label5.Size = new Size(137, 18);
+            label5.TabIndex = 13;
+            label5.Text = "Estoque Mínimo";
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(41, 100);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 18);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Produto";
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label6.AutoSize = true;
+            label6.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = SystemColors.ButtonHighlight;
+            label6.Location = new Point(41, 100);
+            label6.Name = "label6";
+            label6.Size = new Size(72, 18);
+            label6.TabIndex = 14;
+            label6.Text = "Produto";
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(41, 185);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(201, 18);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Quantidade em Estoque";
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label7.AutoSize = true;
+            label7.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = SystemColors.ButtonHighlight;
+            label7.Location = new Point(41, 185);
+            label7.Name = "label7";
+            label7.Size = new Size(201, 18);
+            label7.TabIndex = 15;
+            label7.Text = "Quantidade em Estoque";
             // 
             // buttonBuscarProduto
             // 
-            this.buttonBuscarProduto.Location = new System.Drawing.Point(262, 119);
-            this.buttonBuscarProduto.Name = "buttonBuscarProduto";
-            this.buttonBuscarProduto.Size = new System.Drawing.Size(36, 29);
-            this.buttonBuscarProduto.TabIndex = 17;
-            this.buttonBuscarProduto.Text = "...";
-            this.buttonBuscarProduto.UseVisualStyleBackColor = true;
-            this.buttonBuscarProduto.Click += new System.EventHandler(this.buttonBuscarProduto_Click);
+            buttonBuscarProduto.Location = new Point(262, 119);
+            buttonBuscarProduto.Name = "buttonBuscarProduto";
+            buttonBuscarProduto.Size = new Size(36, 29);
+            buttonBuscarProduto.TabIndex = 17;
+            buttonBuscarProduto.Text = "...";
+            buttonBuscarProduto.UseVisualStyleBackColor = true;
+            buttonBuscarProduto.Click += buttonBuscarProduto_Click;
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(465, 350);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(94, 29);
-            this.buttonCancelar.TabIndex = 23;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            buttonCancelar.Location = new Point(465, 350);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(94, 29);
+            buttonCancelar.TabIndex = 23;
+            buttonCancelar.Text = "&Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(365, 350);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(94, 29);
-            this.buttonSalvar.TabIndex = 24;
-            this.buttonSalvar.Text = "Salvar";
-            this.buttonSalvar.UseVisualStyleBackColor = true;
-            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
+            buttonSalvar.Location = new Point(365, 350);
+            buttonSalvar.Name = "buttonSalvar";
+            buttonSalvar.Size = new Size(94, 29);
+            buttonSalvar.TabIndex = 24;
+            buttonSalvar.Text = "&Salvar";
+            buttonSalvar.UseVisualStyleBackColor = true;
+            buttonSalvar.Click += buttonSalvar_Click;
             // 
             // FormeCadastroEstoque
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(155)))), ((int)(((byte)(205)))));
-            this.CancelButton = this.buttonCancelar;
-            this.ClientSize = new System.Drawing.Size(653, 411);
-            this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.buttonBuscarProduto);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBoxEstoqueMinimo);
-            this.Controls.Add(this.textBoxDataEntrada);
-            this.Controls.Add(this.textBoxEstoqueMaximo);
-            this.Controls.Add(this.textBoxQtdEstoque);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBoxNomeProduto);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.KeyPreview = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormeCadastroEstoque";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.FormeCadastroEstoque_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceEstoque)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(60, 155, 205);
+            CancelButton = buttonCancelar;
+            ClientSize = new Size(653, 411);
+            Controls.Add(buttonSalvar);
+            Controls.Add(buttonCancelar);
+            Controls.Add(buttonBuscarProduto);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(textBoxEstoqueMinimo);
+            Controls.Add(textBoxDataEntrada);
+            Controls.Add(textBoxEstoqueMaximo);
+            Controls.Add(textBoxQtdEstoque);
+            Controls.Add(textBox2);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(textBoxNomeProduto);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormeCadastroEstoque";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Load += FormeCadastroEstoque_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceEstoque).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
