@@ -107,7 +107,7 @@ namespace UIGestaoMercearia
             if (ativo)
             {
                 button.BackColor = Color.White;
-                button.ForeColor = Color.FromArgb(50, 153, 204);
+                button.ForeColor = SystemColors.ControlText;
             }
             else
             {
