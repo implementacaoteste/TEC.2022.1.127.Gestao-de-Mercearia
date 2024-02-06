@@ -51,8 +51,6 @@
             label1 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)usuarioBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)usuarioDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)grupoUsuariosBindingSource).BeginInit();
@@ -288,35 +286,12 @@
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            button1.BackColor = SystemColors.Control;
-            button1.Enabled = false;
-            button1.Font = new Font("Segoe UI", 26F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(438, 192);
-            button1.Name = "button1";
-            button1.Size = new Size(257, 79);
-            button1.TabIndex = 12;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(479, 307);
-            button2.Name = "button2";
-            button2.Size = new Size(142, 62);
-            button2.TabIndex = 13;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // FormBuscarUsuario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
             ClientSize = new Size(1343, 785);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -372,7 +347,5 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.Label label2;
         private PictureBox pictureBox1;
-        private Button button1;
-        private Button button2;
     }
 }
