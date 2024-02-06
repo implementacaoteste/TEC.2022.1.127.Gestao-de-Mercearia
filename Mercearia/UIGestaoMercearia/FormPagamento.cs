@@ -97,9 +97,24 @@ namespace UIGestaoMercearia
 
         private void HabilitarComponentes()
         {
-            buttonInserir.Enabled = new UsuarioBLL().ValidarPermissao(36, false);
-            buttonAlterar.Enabled = new UsuarioBLL().ValidarPermissao(37, false);
-            buttonExcluir.Enabled = new UsuarioBLL().ValidarPermissao(38, false);
+            HabilitarBotao(buttonInserir, new UsuarioBLL().ValidarPermissao(36, false));
+            HabilitarBotao(buttonAlterar, new UsuarioBLL().ValidarPermissao(37, false));
+            HabilitarBotao(buttonExcluir, new UsuarioBLL().ValidarPermissao(38, false));
+
+        }
+        private void HabilitarBotao(System.Windows.Forms.Button button, bool ativo)
+        {
+            if (ativo)
+            {
+                button.BackColor = Color.White;
+                button.ForeColor = Color.FromArgb(50, 153, 204);
+            }
+            else
+            {
+                button.BackColor = SystemColors.Control;
+                button.ForeColor = SystemColors.ControlText;
+            }
+            button.Enabled = ativo;
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
