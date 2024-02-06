@@ -28,134 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label nomeGrupoLabel;
-            System.Windows.Forms.Label label1;
-            System.Windows.Forms.Label label2;
-            this.nomeGrupoTextBox = new System.Windows.Forms.TextBox();
-            this.grupoUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonSalvar = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.textBoxPermissoes = new System.Windows.Forms.TextBox();
-            nomeGrupoLabel = new System.Windows.Forms.Label();
-            label1 = new System.Windows.Forms.Label();
-            label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.grupoUsuarioBindingSource)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            Label nomeGrupoLabel;
+            Label label1;
+            Label label2;
+            nomeGrupoTextBox = new TextBox();
+            grupoUsuarioBindingSource = new BindingSource(components);
+            buttonSalvar = new Button();
+            buttonCancelar = new Button();
+            textBoxPermissoes = new TextBox();
+            nomeGrupoLabel = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            ((System.ComponentModel.ISupportInitialize)grupoUsuarioBindingSource).BeginInit();
+            SuspendLayout();
             // 
             // nomeGrupoLabel
             // 
             nomeGrupoLabel.AutoSize = true;
-            nomeGrupoLabel.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            nomeGrupoLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            nomeGrupoLabel.Location = new System.Drawing.Point(12, 80);
+            nomeGrupoLabel.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            nomeGrupoLabel.ForeColor = SystemColors.ButtonHighlight;
+            nomeGrupoLabel.Location = new Point(12, 80);
             nomeGrupoLabel.Name = "nomeGrupoLabel";
-            nomeGrupoLabel.Size = new System.Drawing.Size(132, 18);
+            nomeGrupoLabel.Size = new Size(132, 18);
             nomeGrupoLabel.TabIndex = 1;
             nomeGrupoLabel.Text = "Nome do grupo";
-            nomeGrupoLabel.Click += new System.EventHandler(this.nomeGrupoLabel_Click);
+            nomeGrupoLabel.Click += nomeGrupoLabel_Click;
             // 
             // label1
             // 
-            label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            label1.Dock = System.Windows.Forms.DockStyle.Top;
-            label1.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            label1.Location = new System.Drawing.Point(0, 0);
+            label1.BackColor = Color.FromArgb(50, 153, 204);
+            label1.BorderStyle = BorderStyle.Fixed3D;
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(577, 58);
+            label1.Size = new Size(621, 58);
             label1.TabIndex = 0;
             label1.Text = "Cadastro de grupo de usuário";
-            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            label2.Location = new System.Drawing.Point(12, 144);
+            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(12, 144);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(103, 18);
+            label2.Size = new Size(103, 18);
             label2.TabIndex = 5;
             label2.Text = "Permissões";
             // 
             // nomeGrupoTextBox
             // 
-            this.nomeGrupoTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nomeGrupoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.grupoUsuarioBindingSource, "NomeGrupo", true));
-            this.nomeGrupoTextBox.Location = new System.Drawing.Point(12, 104);
-            this.nomeGrupoTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.nomeGrupoTextBox.Name = "nomeGrupoTextBox";
-            this.nomeGrupoTextBox.Size = new System.Drawing.Size(536, 27);
-            this.nomeGrupoTextBox.TabIndex = 2;
+            nomeGrupoTextBox.Cursor = Cursors.IBeam;
+            nomeGrupoTextBox.DataBindings.Add(new Binding("Text", grupoUsuarioBindingSource, "NomeGrupo", true));
+            nomeGrupoTextBox.Location = new Point(12, 104);
+            nomeGrupoTextBox.Margin = new Padding(3, 4, 3, 4);
+            nomeGrupoTextBox.Name = "nomeGrupoTextBox";
+            nomeGrupoTextBox.Size = new Size(536, 27);
+            nomeGrupoTextBox.TabIndex = 2;
             // 
             // grupoUsuarioBindingSource
             // 
-            this.grupoUsuarioBindingSource.DataSource = typeof(Models.GrupoUsuario);
+            grupoUsuarioBindingSource.DataSource = typeof(Models.GrupoUsuario);
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.BackColor = System.Drawing.Color.Azure;
-            this.buttonSalvar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonSalvar.Location = new System.Drawing.Point(392, 259);
-            this.buttonSalvar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(75, 29);
-            this.buttonSalvar.TabIndex = 3;
-            this.buttonSalvar.Text = "&Salvar";
-            this.buttonSalvar.UseVisualStyleBackColor = false;
-            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
+            buttonSalvar.BackColor = Color.Azure;
+            buttonSalvar.ForeColor = SystemColors.ControlText;
+            buttonSalvar.Location = new Point(438, 259);
+            buttonSalvar.Margin = new Padding(3, 4, 3, 4);
+            buttonSalvar.Name = "buttonSalvar";
+            buttonSalvar.Size = new Size(75, 29);
+            buttonSalvar.TabIndex = 3;
+            buttonSalvar.Text = "&Salvar";
+            buttonSalvar.UseVisualStyleBackColor = false;
+            buttonSalvar.Click += buttonSalvar_Click;
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.BackColor = System.Drawing.Color.AliceBlue;
-            this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancelar.Location = new System.Drawing.Point(473, 259);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(75, 29);
-            this.buttonCancelar.TabIndex = 4;
-            this.buttonCancelar.Text = "&Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = false;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            buttonCancelar.BackColor = Color.AliceBlue;
+            buttonCancelar.DialogResult = DialogResult.Cancel;
+            buttonCancelar.Location = new Point(519, 259);
+            buttonCancelar.Margin = new Padding(3, 4, 3, 4);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(75, 29);
+            buttonCancelar.TabIndex = 4;
+            buttonCancelar.Text = "&Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = false;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // textBoxPermissoes
             // 
-            this.textBoxPermissoes.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxPermissoes.Location = new System.Drawing.Point(12, 167);
-            this.textBoxPermissoes.Name = "textBoxPermissoes";
-            this.textBoxPermissoes.Size = new System.Drawing.Size(536, 27);
-            this.textBoxPermissoes.TabIndex = 6;
+            textBoxPermissoes.Cursor = Cursors.IBeam;
+            textBoxPermissoes.Location = new Point(12, 167);
+            textBoxPermissoes.Name = "textBoxPermissoes";
+            textBoxPermissoes.Size = new Size(536, 27);
+            textBoxPermissoes.TabIndex = 6;
             // 
             // FormCadastroGrupoUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(577, 301);
-            this.Controls.Add(this.textBoxPermissoes);
-            this.Controls.Add(label2);
-            this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(label1);
-            this.Controls.Add(nomeGrupoLabel);
-            this.Controls.Add(this.nomeGrupoTextBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormCadastroGrupoUsuario";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.FormCadastroGrupoUsuario_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormCadastroGrupoUsuario_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.grupoUsuarioBindingSource)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(50, 153, 204);
+            ClientSize = new Size(621, 301);
+            Controls.Add(textBoxPermissoes);
+            Controls.Add(label2);
+            Controls.Add(buttonCancelar);
+            Controls.Add(buttonSalvar);
+            Controls.Add(label1);
+            Controls.Add(nomeGrupoLabel);
+            Controls.Add(nomeGrupoTextBox);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormCadastroGrupoUsuario";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Load += FormCadastroGrupoUsuario_Load;
+            KeyDown += FormCadastroGrupoUsuario_KeyDown;
+            ((System.ComponentModel.ISupportInitialize)grupoUsuarioBindingSource).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -148,7 +148,7 @@
             label2.Name = "label2";
             label2.Size = new Size(1035, 66);
             label2.TabIndex = 0;
-            label2.Text = "Consultar grupo de usuário";
+            label2.Text = "CONSULTAR GRUPO DE USUÁRIO";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button1
@@ -168,7 +168,7 @@
             pictureBox2.ErrorImage = null;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.InitialImage = null;
-            pictureBox2.Location = new Point(207, 12);
+            pictureBox2.Location = new Point(170, 12);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(56, 42);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;

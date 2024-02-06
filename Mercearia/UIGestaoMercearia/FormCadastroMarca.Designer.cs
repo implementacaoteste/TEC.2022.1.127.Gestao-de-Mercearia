@@ -69,7 +69,7 @@
             buttonCancelar.BackColor = Color.White;
             buttonCancelar.FlatStyle = FlatStyle.Flat;
             buttonCancelar.ForeColor = SystemColors.ActiveCaptionText;
-            buttonCancelar.Location = new Point(663, 162);
+            buttonCancelar.Location = new Point(663, 172);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
             buttonCancelar.TabIndex = 52;
@@ -81,7 +81,7 @@
             // 
             buttonSalvar.BackColor = Color.Azure;
             buttonSalvar.FlatStyle = FlatStyle.Flat;
-            buttonSalvar.Location = new Point(565, 162);
+            buttonSalvar.Location = new Point(563, 172);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
             buttonSalvar.TabIndex = 51;
@@ -112,7 +112,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
-            ClientSize = new Size(782, 203);
+            ClientSize = new Size(782, 213);
             Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(buttonCancelar);
