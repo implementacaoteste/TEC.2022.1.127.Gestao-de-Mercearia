@@ -395,6 +395,7 @@ namespace UIGestaoMercearia
             // buttonConsultarVenda
             // 
             buttonConsultarVenda.Anchor = AnchorStyles.Right;
+            buttonConsultarVenda.BackColor = Color.Coral;
             buttonConsultarVenda.FlatStyle = FlatStyle.Flat;
             buttonConsultarVenda.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonConsultarVenda.ForeColor = SystemColors.ButtonHighlight;
