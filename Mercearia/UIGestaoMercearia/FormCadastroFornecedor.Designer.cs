@@ -144,7 +144,7 @@
             // 
             buttonSalvar.BackColor = Color.White;
             buttonSalvar.ForeColor = SystemColors.ControlText;
-            buttonSalvar.Location = new Point(435, 290);
+            buttonSalvar.Location = new Point(448, 290);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(75, 29);
             buttonSalvar.TabIndex = 24;

@@ -28,273 +28,262 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.clienteDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CEP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxBuscar = new System.Windows.Forms.TextBox();
-            this.buttonBuscar = new System.Windows.Forms.Button();
-            this.buttonSelecionar = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.buttonAlterar = new System.Windows.Forms.Button();
-            this.buttonInserir = new System.Windows.Forms.Button();
-            this.buttonExcluir = new System.Windows.Forms.Button();
-            this.comboBoxBuscarPor = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            clienteDataGridView = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn5 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn6 = new DataGridViewTextBoxColumn();
+            CEP = new DataGridViewTextBoxColumn();
+            clienteBindingSource = new BindingSource(components);
+            label1 = new Label();
+            label2 = new Label();
+            textBoxBuscar = new TextBox();
+            buttonBuscar = new Button();
+            buttonSelecionar = new Button();
+            buttonCancelar = new Button();
+            buttonAlterar = new Button();
+            buttonInserir = new Button();
+            buttonExcluir = new Button();
+            comboBoxBuscarPor = new ComboBox();
+            label3 = new Label();
+            ((System.ComponentModel.ISupportInitialize)clienteDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)clienteBindingSource).BeginInit();
+            SuspendLayout();
             // 
             // clienteDataGridView
             // 
-            this.clienteDataGridView.AllowUserToAddRows = false;
-            this.clienteDataGridView.AllowUserToDeleteRows = false;
-            this.clienteDataGridView.AllowUserToOrderColumns = true;
-            this.clienteDataGridView.AutoGenerateColumns = false;
-            this.clienteDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.clienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.clienteDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.CEP});
-            this.clienteDataGridView.DataSource = this.clienteBindingSource;
-            this.clienteDataGridView.Location = new System.Drawing.Point(13, 125);
-            this.clienteDataGridView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.clienteDataGridView.Name = "clienteDataGridView";
-            this.clienteDataGridView.ReadOnly = true;
-            this.clienteDataGridView.RowHeadersWidth = 51;
-            this.clienteDataGridView.RowTemplate.Height = 24;
-            this.clienteDataGridView.Size = new System.Drawing.Size(835, 291);
-            this.clienteDataGridView.TabIndex = 1;
+            clienteDataGridView.AllowUserToAddRows = false;
+            clienteDataGridView.AllowUserToDeleteRows = false;
+            clienteDataGridView.AllowUserToOrderColumns = true;
+            clienteDataGridView.AutoGenerateColumns = false;
+            clienteDataGridView.BackgroundColor = Color.White;
+            clienteDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            clienteDataGridView.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6, CEP });
+            clienteDataGridView.DataSource = clienteBindingSource;
+            clienteDataGridView.Location = new Point(13, 125);
+            clienteDataGridView.Margin = new Padding(3, 4, 3, 4);
+            clienteDataGridView.Name = "clienteDataGridView";
+            clienteDataGridView.ReadOnly = true;
+            clienteDataGridView.RowHeadersWidth = 51;
+            clienteDataGridView.RowTemplate.Height = 24;
+            clienteDataGridView.Size = new Size(835, 291);
+            clienteDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 50;
+            dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            dataGridViewTextBoxColumn1.HeaderText = "Id";
+            dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            dataGridViewTextBoxColumn1.Width = 50;
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 225;
+            dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
+            dataGridViewTextBoxColumn2.HeaderText = "Nome";
+            dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
+            dataGridViewTextBoxColumn2.Width = 225;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "CPF";
-            this.dataGridViewTextBoxColumn3.HeaderText = "CPF";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 125;
+            dataGridViewTextBoxColumn3.DataPropertyName = "CPF";
+            dataGridViewTextBoxColumn3.HeaderText = "CPF";
+            dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.ReadOnly = true;
+            dataGridViewTextBoxColumn3.Width = 125;
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Email";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 150;
+            dataGridViewTextBoxColumn5.DataPropertyName = "Email";
+            dataGridViewTextBoxColumn5.HeaderText = "Email";
+            dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            dataGridViewTextBoxColumn5.ReadOnly = true;
+            dataGridViewTextBoxColumn5.Width = 150;
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Fone";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Fone";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 125;
+            dataGridViewTextBoxColumn6.DataPropertyName = "Fone";
+            dataGridViewTextBoxColumn6.HeaderText = "Fone";
+            dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            dataGridViewTextBoxColumn6.ReadOnly = true;
+            dataGridViewTextBoxColumn6.Width = 125;
             // 
             // CEP
             // 
-            this.CEP.DataPropertyName = "CEP";
-            this.CEP.HeaderText = "CEP";
-            this.CEP.MinimumWidth = 6;
-            this.CEP.Name = "CEP";
-            this.CEP.ReadOnly = true;
-            this.CEP.Width = 130;
+            CEP.DataPropertyName = "CEP";
+            CEP.HeaderText = "CEP";
+            CEP.MinimumWidth = 6;
+            CEP.Name = "CEP";
+            CEP.ReadOnly = true;
+            CEP.Width = 130;
             // 
             // clienteBindingSource
             // 
-            this.clienteBindingSource.DataSource = typeof(Models.Cliente);
+            clienteBindingSource.DataSource = typeof(Models.Cliente);
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Britannic Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(848, 55);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "CONSULTA CLIENTE";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label1.BackColor = Color.FromArgb(50, 153, 204);
+            label1.BorderStyle = BorderStyle.Fixed3D;
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(848, 55);
+            label1.TabIndex = 2;
+            label1.Text = "CONSULTA CLIENTE";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(12, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "BUSCAR POR:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(12, 67);
+            label2.Name = "label2";
+            label2.Size = new Size(120, 18);
+            label2.TabIndex = 3;
+            label2.Text = "BUSCAR POR:";
             // 
             // textBoxBuscar
             // 
-            this.textBoxBuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxBuscar.Location = new System.Drawing.Point(163, 89);
-            this.textBoxBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxBuscar.Name = "textBoxBuscar";
-            this.textBoxBuscar.Size = new System.Drawing.Size(349, 27);
-            this.textBoxBuscar.TabIndex = 4;
+            textBoxBuscar.Cursor = Cursors.IBeam;
+            textBoxBuscar.Location = new Point(163, 89);
+            textBoxBuscar.Margin = new Padding(3, 4, 3, 4);
+            textBoxBuscar.Name = "textBoxBuscar";
+            textBoxBuscar.Size = new Size(349, 27);
+            textBoxBuscar.TabIndex = 4;
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Location = new System.Drawing.Point(518, 89);
-            this.buttonBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(75, 29);
-            this.buttonBuscar.TabIndex = 5;
-            this.buttonBuscar.Text = "&Buscar";
-            this.buttonBuscar.UseVisualStyleBackColor = true;
-            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
+            buttonBuscar.Location = new Point(518, 89);
+            buttonBuscar.Margin = new Padding(3, 4, 3, 4);
+            buttonBuscar.Name = "buttonBuscar";
+            buttonBuscar.Size = new Size(75, 29);
+            buttonBuscar.TabIndex = 5;
+            buttonBuscar.Text = "&Buscar";
+            buttonBuscar.UseVisualStyleBackColor = true;
+            buttonBuscar.Click += buttonBuscar_Click;
             // 
             // buttonSelecionar
             // 
-            this.buttonSelecionar.Location = new System.Drawing.Point(664, 424);
-            this.buttonSelecionar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonSelecionar.Name = "buttonSelecionar";
-            this.buttonSelecionar.Size = new System.Drawing.Size(91, 29);
-            this.buttonSelecionar.TabIndex = 5;
-            this.buttonSelecionar.Text = "&Selecionar";
-            this.buttonSelecionar.UseVisualStyleBackColor = true;
-            this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
+            buttonSelecionar.Location = new Point(664, 424);
+            buttonSelecionar.Margin = new Padding(3, 4, 3, 4);
+            buttonSelecionar.Name = "buttonSelecionar";
+            buttonSelecionar.Size = new Size(91, 29);
+            buttonSelecionar.TabIndex = 5;
+            buttonSelecionar.Text = "&Selecionar";
+            buttonSelecionar.UseVisualStyleBackColor = true;
+            buttonSelecionar.Click += buttonSelecionar_Click;
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancelar.Location = new System.Drawing.Point(761, 424);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(75, 29);
-            this.buttonCancelar.TabIndex = 5;
-            this.buttonCancelar.Text = "&Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            buttonCancelar.DialogResult = DialogResult.Cancel;
+            buttonCancelar.Location = new Point(761, 424);
+            buttonCancelar.Margin = new Padding(3, 4, 3, 4);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(75, 29);
+            buttonCancelar.TabIndex = 5;
+            buttonCancelar.Text = "&Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonAlterar
             // 
-            this.buttonAlterar.Location = new System.Drawing.Point(599, 89);
-            this.buttonAlterar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Size = new System.Drawing.Size(75, 29);
-            this.buttonAlterar.TabIndex = 5;
-            this.buttonAlterar.Text = "&Alterar";
-            this.buttonAlterar.UseVisualStyleBackColor = true;
-            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
+            buttonAlterar.Location = new Point(599, 89);
+            buttonAlterar.Margin = new Padding(3, 4, 3, 4);
+            buttonAlterar.Name = "buttonAlterar";
+            buttonAlterar.Size = new Size(75, 29);
+            buttonAlterar.TabIndex = 5;
+            buttonAlterar.Text = "&Alterar";
+            buttonAlterar.UseVisualStyleBackColor = true;
+            buttonAlterar.Click += buttonAlterar_Click;
             // 
             // buttonInserir
             // 
-            this.buttonInserir.Location = new System.Drawing.Point(680, 89);
-            this.buttonInserir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonInserir.Name = "buttonInserir";
-            this.buttonInserir.Size = new System.Drawing.Size(75, 29);
-            this.buttonInserir.TabIndex = 5;
-            this.buttonInserir.Text = "&Inserir";
-            this.buttonInserir.UseVisualStyleBackColor = true;
-            this.buttonInserir.Click += new System.EventHandler(this.buttonInserir_Click);
+            buttonInserir.Location = new Point(680, 89);
+            buttonInserir.Margin = new Padding(3, 4, 3, 4);
+            buttonInserir.Name = "buttonInserir";
+            buttonInserir.Size = new Size(75, 29);
+            buttonInserir.TabIndex = 5;
+            buttonInserir.Text = "&Inserir";
+            buttonInserir.UseVisualStyleBackColor = true;
+            buttonInserir.Click += buttonInserir_Click;
             // 
             // buttonExcluir
             // 
-            this.buttonExcluir.Location = new System.Drawing.Point(761, 89);
-            this.buttonExcluir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonExcluir.Name = "buttonExcluir";
-            this.buttonExcluir.Size = new System.Drawing.Size(75, 29);
-            this.buttonExcluir.TabIndex = 5;
-            this.buttonExcluir.Text = "&Excluir";
-            this.buttonExcluir.UseVisualStyleBackColor = true;
-            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
+            buttonExcluir.Location = new Point(761, 89);
+            buttonExcluir.Margin = new Padding(3, 4, 3, 4);
+            buttonExcluir.Name = "buttonExcluir";
+            buttonExcluir.Size = new Size(75, 29);
+            buttonExcluir.TabIndex = 5;
+            buttonExcluir.Text = "&Excluir";
+            buttonExcluir.UseVisualStyleBackColor = true;
+            buttonExcluir.Click += buttonExcluir_Click;
             // 
             // comboBoxBuscarPor
             // 
-            this.comboBoxBuscarPor.FormattingEnabled = true;
-            this.comboBoxBuscarPor.Items.AddRange(new object[] {
-            "Id",
-            "Nome",
-            "CPF",
-            "Todos"});
-            this.comboBoxBuscarPor.Location = new System.Drawing.Point(13, 89);
-            this.comboBoxBuscarPor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboBoxBuscarPor.Name = "comboBoxBuscarPor";
-            this.comboBoxBuscarPor.Size = new System.Drawing.Size(144, 28);
-            this.comboBoxBuscarPor.TabIndex = 6;
+            comboBoxBuscarPor.FormattingEnabled = true;
+            comboBoxBuscarPor.Items.AddRange(new object[] { "Id", "Nome", "CPF", "Todos" });
+            comboBoxBuscarPor.Location = new Point(13, 89);
+            comboBoxBuscarPor.Margin = new Padding(3, 4, 3, 4);
+            comboBoxBuscarPor.Name = "comboBoxBuscarPor";
+            comboBoxBuscarPor.Size = new Size(144, 28);
+            comboBoxBuscarPor.TabIndex = 6;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Swis721 Blk BT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(163, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(222, 18);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "INSIRA AS INFORMAÇÕES:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(163, 67);
+            label3.Name = "label3";
+            label3.Size = new Size(222, 18);
+            label3.TabIndex = 7;
+            label3.Text = "INSIRA AS INFORMAÇÕES:";
             // 
             // FormConsultaCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(153)))), ((int)(((byte)(204)))));
-            this.CancelButton = this.buttonCancelar;
-            this.ClientSize = new System.Drawing.Size(848, 456);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBoxBuscarPor);
-            this.Controls.Add(this.buttonCancelar);
-            this.Controls.Add(this.buttonSelecionar);
-            this.Controls.Add(this.buttonExcluir);
-            this.Controls.Add(this.buttonInserir);
-            this.Controls.Add(this.buttonAlterar);
-            this.Controls.Add(this.buttonBuscar);
-            this.Controls.Add(this.textBoxBuscar);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.clienteDataGridView);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormConsultaCliente";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.FormConsultaCliente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(50, 153, 204);
+            CancelButton = buttonCancelar;
+            ClientSize = new Size(848, 464);
+            Controls.Add(label3);
+            Controls.Add(comboBoxBuscarPor);
+            Controls.Add(buttonCancelar);
+            Controls.Add(buttonSelecionar);
+            Controls.Add(buttonExcluir);
+            Controls.Add(buttonInserir);
+            Controls.Add(buttonAlterar);
+            Controls.Add(buttonBuscar);
+            Controls.Add(textBoxBuscar);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(clienteDataGridView);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormConsultaCliente";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Load += FormConsultaCliente_Load;
+            ((System.ComponentModel.ISupportInitialize)clienteDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)clienteBindingSource).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
