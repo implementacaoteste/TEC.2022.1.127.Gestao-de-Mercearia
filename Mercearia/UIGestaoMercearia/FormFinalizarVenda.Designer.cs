@@ -58,9 +58,9 @@
             label9.ForeColor = SystemColors.ActiveCaptionText;
             label9.Location = new Point(12, 79);
             label9.Name = "label9";
-            label9.Size = new Size(180, 18);
+            label9.Size = new Size(200, 18);
             label9.TabIndex = 35;
-            label9.Text = "Forma de pagamento";
+            label9.Text = "FORMA DE PAGAMENTO";
             // 
             // textBoxFormaPagamento
             // 
@@ -157,6 +157,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(50, 153, 204);
             ClientSize = new Size(680, 518);
             Controls.Add(label3);
             Controls.Add(buttonOk);
