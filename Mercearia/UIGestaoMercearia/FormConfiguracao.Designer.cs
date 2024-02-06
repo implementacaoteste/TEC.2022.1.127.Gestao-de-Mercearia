@@ -129,7 +129,7 @@
             textBoxSenha.Anchor = AnchorStyles.Right;
             textBoxSenha.Location = new Point(157, 207);
             textBoxSenha.Name = "textBoxSenha";
-            textBoxSenha.Size = new Size(569, 27);
+            textBoxSenha.Size = new Size(223, 27);
             textBoxSenha.TabIndex = 3;
             // 
             // label4
@@ -178,7 +178,7 @@
             textBoxConfirmacaoSenha.Anchor = AnchorStyles.Right;
             textBoxConfirmacaoSenha.Location = new Point(252, 295);
             textBoxConfirmacaoSenha.Name = "textBoxConfirmacaoSenha";
-            textBoxConfirmacaoSenha.Size = new Size(474, 27);
+            textBoxConfirmacaoSenha.Size = new Size(128, 27);
             textBoxConfirmacaoSenha.TabIndex = 7;
             // 
             // textBoxNovaSenha
@@ -186,7 +186,7 @@
             textBoxNovaSenha.Anchor = AnchorStyles.Right;
             textBoxNovaSenha.Location = new Point(149, 254);
             textBoxNovaSenha.Name = "textBoxNovaSenha";
-            textBoxNovaSenha.Size = new Size(577, 27);
+            textBoxNovaSenha.Size = new Size(231, 27);
             textBoxNovaSenha.TabIndex = 5;
             // 
             // pictureBoxLogo
@@ -236,7 +236,7 @@
             textBoxNovoNomeUsuario.Anchor = AnchorStyles.Right;
             textBoxNovoNomeUsuario.Location = new Point(257, 89);
             textBoxNovoNomeUsuario.Name = "textBoxNovoNomeUsuario";
-            textBoxNovoNomeUsuario.Size = new Size(474, 27);
+            textBoxNovoNomeUsuario.Size = new Size(198, 27);
             textBoxNovoNomeUsuario.TabIndex = 10;
             // 
             // label3
@@ -277,7 +277,7 @@
             textBoxNomeUsuario.Anchor = AnchorStyles.Right;
             textBoxNomeUsuario.Location = new Point(257, 133);
             textBoxNomeUsuario.Name = "textBoxNomeUsuario";
-            textBoxNomeUsuario.Size = new Size(473, 27);
+            textBoxNomeUsuario.Size = new Size(198, 27);
             textBoxNomeUsuario.TabIndex = 12;
             // 
             // buttonAlterarNomeUsuario
