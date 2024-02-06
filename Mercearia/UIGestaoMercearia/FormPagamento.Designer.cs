@@ -137,9 +137,9 @@
             label4.ForeColor = Color.White;
             label4.Location = new Point(67, 18);
             label4.Name = "label4";
-            label4.Size = new Size(415, 44);
+            label4.Size = new Size(426, 44);
             label4.TabIndex = 9;
-            label4.Text = "Formas de Pagamento";
+            label4.Text = "FORMA DE PAGAMENTO";
             // 
             // label3
             // 
