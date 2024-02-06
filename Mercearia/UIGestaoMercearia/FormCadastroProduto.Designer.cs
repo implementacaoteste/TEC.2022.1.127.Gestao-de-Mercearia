@@ -165,7 +165,7 @@ namespace UIGestaoMercearia
             // 
             buttonSalvar.BackColor = Color.Azure;
             buttonSalvar.FlatStyle = FlatStyle.Flat;
-            buttonSalvar.Location = new Point(465, 281);
+            buttonSalvar.Location = new Point(485, 316);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
             buttonSalvar.TabIndex = 28;
@@ -187,7 +187,7 @@ namespace UIGestaoMercearia
             buttonCancelar.BackColor = Color.Azure;
             buttonCancelar.FlatStyle = FlatStyle.Flat;
             buttonCancelar.ForeColor = SystemColors.ControlText;
-            buttonCancelar.Location = new Point(565, 281);
+            buttonCancelar.Location = new Point(585, 316);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
             buttonCancelar.TabIndex = 28;
@@ -301,7 +301,7 @@ namespace UIGestaoMercearia
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
             CancelButton = buttonCancelar;
-            ClientSize = new Size(705, 323);
+            ClientSize = new Size(705, 359);
             Controls.Add(label5);
             Controls.Add(textBoxNomeCategoria);
             Controls.Add(buttonBuscarCategoria);

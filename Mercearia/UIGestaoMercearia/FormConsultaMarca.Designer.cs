@@ -103,7 +103,7 @@
             // 
             buttonExcluir.BackColor = SystemColors.ButtonHighlight;
             buttonExcluir.FlatStyle = FlatStyle.Flat;
-            buttonExcluir.Location = new Point(235, 530);
+            buttonExcluir.Location = new Point(314, 530);
             buttonExcluir.Name = "buttonExcluir";
             buttonExcluir.Size = new Size(94, 29);
             buttonExcluir.TabIndex = 2;
@@ -115,7 +115,7 @@
             // 
             buttonInserir.BackColor = SystemColors.ButtonHighlight;
             buttonInserir.FlatStyle = FlatStyle.Flat;
-            buttonInserir.Location = new Point(124, 530);
+            buttonInserir.Location = new Point(114, 530);
             buttonInserir.Name = "buttonInserir";
             buttonInserir.Size = new Size(94, 29);
             buttonInserir.TabIndex = 2;
@@ -180,7 +180,7 @@
             // 
             buttonSelecionar.BackColor = SystemColors.ButtonHighlight;
             buttonSelecionar.FlatStyle = FlatStyle.Flat;
-            buttonSelecionar.Location = new Point(348, 530);
+            buttonSelecionar.Location = new Point(214, 530);
             buttonSelecionar.Name = "buttonSelecionar";
             buttonSelecionar.Size = new Size(94, 29);
             buttonSelecionar.TabIndex = 1;
@@ -192,7 +192,7 @@
             // 
             buttonCancelar.BackColor = SystemColors.ButtonHighlight;
             buttonCancelar.FlatStyle = FlatStyle.Flat;
-            buttonCancelar.Location = new Point(462, 530);
+            buttonCancelar.Location = new Point(515, 530);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
             buttonCancelar.TabIndex = 1;
