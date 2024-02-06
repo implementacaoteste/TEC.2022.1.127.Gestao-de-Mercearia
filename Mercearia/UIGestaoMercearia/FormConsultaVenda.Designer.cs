@@ -322,6 +322,7 @@
             Name = "FormConsultaVenda";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
+            Load += FormConsultaVenda_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

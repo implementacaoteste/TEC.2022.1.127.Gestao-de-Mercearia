@@ -45,8 +45,9 @@ namespace UIGestaoMercearia
             buttonMarcas.Enabled = new UsuarioBLL().ValidarPermissao(31, false);
             //buttonPagamento.Enabled = new UsuarioBLL().ValidarPermissao(35, false);
             //buttonCliente.Enabled = new UsuarioBLL().ValidarPermissao(39, false);
-            buttonConsultarVenda.Enabled = new UsuarioBLL().ValidarPermissao(43, false);
+            //buttonConsultarVenda.Enabled = new UsuarioBLL().ValidarPermissao(43, false);
             buttonPermissao.Enabled = new UsuarioBLL().ValidarPermissao(47, false);
+            //pictureBoxEstatistica.Enabled = new UsuarioBLL().ValidarPermissao(40, false);
         }
 
         private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
@@ -269,6 +270,14 @@ namespace UIGestaoMercearia
         private void buttonPagamento_Click(object sender, EventArgs e)
         {
             using (FormPagamento frm = new FormPagamento())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void pictureBoxEstatistica_Click(object sender, EventArgs e)
+        {
+            using (FormEstatistica frm = new FormEstatistica())
             {
                 frm.ShowDialog();
             }
