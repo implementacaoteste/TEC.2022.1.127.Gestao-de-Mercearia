@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             panel2 = new Panel();
             panel1 = new Panel();
+            label7 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
@@ -48,7 +49,6 @@
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
             panel3 = new Panel();
-            label7 = new Label();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCategoria).BeginInit();
@@ -77,6 +77,21 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(579, 83);
             panel1.TabIndex = 10;
+            // 
+            // label7
+            // 
+            label7.BackColor = Color.FromArgb(50, 153, 204);
+            label7.BorderStyle = BorderStyle.Fixed3D;
+            label7.Dock = DockStyle.Top;
+            label7.Enabled = false;
+            label7.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = SystemColors.ButtonFace;
+            label7.Location = new Point(0, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(579, 61);
+            label7.TabIndex = 10;
+            label7.Text = "INSIRA A INFORMAÇÃO";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -160,7 +175,7 @@
             buttonExcluir.Name = "buttonExcluir";
             buttonExcluir.Size = new Size(96, 29);
             buttonExcluir.TabIndex = 2;
-            buttonExcluir.Text = "Excluir";
+            buttonExcluir.Text = "&Excluir";
             buttonExcluir.UseVisualStyleBackColor = false;
             buttonExcluir.Click += buttonExcluir_Click;
             // 
@@ -172,7 +187,7 @@
             buttonInserir.Name = "buttonInserir";
             buttonInserir.Size = new Size(96, 29);
             buttonInserir.TabIndex = 2;
-            buttonInserir.Text = "Inserir";
+            buttonInserir.Text = "&Inserir";
             buttonInserir.UseVisualStyleBackColor = false;
             buttonInserir.Click += buttonInserir_Click_1;
             // 
@@ -184,7 +199,7 @@
             buttonAlterar.Name = "buttonAlterar";
             buttonAlterar.Size = new Size(96, 29);
             buttonAlterar.TabIndex = 2;
-            buttonAlterar.Text = "Alterar";
+            buttonAlterar.Text = "&Alterar";
             buttonAlterar.UseVisualStyleBackColor = false;
             buttonAlterar.Click += buttonAlterar_Click_1;
             // 
@@ -236,7 +251,7 @@
             buttonSelecionar.Name = "buttonSelecionar";
             buttonSelecionar.Size = new Size(96, 29);
             buttonSelecionar.TabIndex = 1;
-            buttonSelecionar.Text = "Selecionar";
+            buttonSelecionar.Text = "&Selecionar";
             buttonSelecionar.UseVisualStyleBackColor = false;
             buttonSelecionar.Click += buttonSelecionar_Click;
             // 
@@ -248,7 +263,7 @@
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(96, 29);
             buttonCancelar.TabIndex = 1;
-            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
             // 
@@ -264,21 +279,6 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(579, 50);
             panel3.TabIndex = 9;
-            // 
-            // label7
-            // 
-            label7.BackColor = Color.FromArgb(50, 153, 204);
-            label7.BorderStyle = BorderStyle.Fixed3D;
-            label7.Dock = DockStyle.Top;
-            label7.Enabled = false;
-            label7.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = SystemColors.ButtonFace;
-            label7.Location = new Point(0, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(579, 61);
-            label7.TabIndex = 10;
-            label7.Text = "INSIRA A INFORMAÇÃO";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FormConsultaCategoria
             // 
