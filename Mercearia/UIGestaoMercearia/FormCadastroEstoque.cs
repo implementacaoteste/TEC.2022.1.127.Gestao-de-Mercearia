@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace UIGestaoMercearia
 {
-    public partial class FormeCadastroEstoque : Form
+    public partial class FormCadastroEstoque : Form
     {
         int id;
-        public FormeCadastroEstoque(int _id = 0)
+        public FormCadastroEstoque(int _id = 0)
         {
             InitializeComponent();
             id = _id;
