@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             buttonBuscarFornecedor = new Button();
             label9 = new Label();
             textBoxFormaPagamento = new TextBox();
-            textBoxDinheiro = new TextBox();
+            textBoxValorPago = new TextBox();
             label1 = new Label();
             textBoxTroco = new TextBox();
             label2 = new Label();
@@ -39,7 +40,9 @@
             buttonCancelar = new Button();
             buttonOk = new Button();
             label3 = new Label();
+            bindingSourceFinalizarVenda = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).BeginInit();
             SuspendLayout();
             // 
             // buttonBuscarFornecedor
@@ -55,9 +58,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-
             label9.ForeColor = Color.White;
-
             label9.Location = new Point(12, 79);
             label9.Name = "label9";
             label9.Size = new Size(200, 18);
@@ -72,21 +73,21 @@
             textBoxFormaPagamento.Size = new Size(283, 27);
             textBoxFormaPagamento.TabIndex = 34;
             // 
-            // textBoxDinheiro
+            // textBoxValorPago
             // 
-            textBoxDinheiro.Cursor = Cursors.IBeam;
-            textBoxDinheiro.Location = new Point(336, 104);
-            textBoxDinheiro.Name = "textBoxDinheiro";
-            textBoxDinheiro.Size = new Size(163, 27);
-            textBoxDinheiro.TabIndex = 34;
-            textBoxDinheiro.Visible = false;
+            textBoxValorPago.Cursor = Cursors.IBeam;
+            textBoxValorPago.Location = new Point(336, 104);
+            textBoxValorPago.Name = "textBoxValorPago";
+            textBoxValorPago.Size = new Size(163, 27);
+            textBoxValorPago.TabIndex = 34;
+            textBoxValorPago.Visible = false;
+            textBoxValorPago.KeyPress += textBoxValorPago_KeyPress;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-
             label1.Location = new Point(336, 81);
             label1.Name = "label1";
             label1.Size = new Size(114, 18);
@@ -102,6 +103,7 @@
             textBoxTroco.Size = new Size(163, 27);
             textBoxTroco.TabIndex = 34;
             textBoxTroco.Visible = false;
+            textBoxTroco.KeyDown += textBoxTroco_KeyDown;
             // 
             // label2
             // 
@@ -171,7 +173,7 @@
             Controls.Add(label1);
             Controls.Add(label9);
             Controls.Add(textBoxTroco);
-            Controls.Add(textBoxDinheiro);
+            Controls.Add(textBoxValorPago);
             Controls.Add(textBoxFormaPagamento);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
@@ -180,8 +182,8 @@
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Load += FormFinalizarVenda_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -191,7 +193,7 @@
         private Button buttonBuscarFornecedor;
         private Label label9;
         private TextBox textBoxFormaPagamento;
-        private TextBox textBoxDinheiro;
+        private TextBox textBoxValorPago;
         private Label label1;
         private TextBox textBoxTroco;
         private Label label2;
@@ -199,5 +201,6 @@
         private Button buttonCancelar;
         private Button buttonOk;
         private Label label3;
+        private BindingSource bindingSourceFinalizarVenda;
     }
 }
