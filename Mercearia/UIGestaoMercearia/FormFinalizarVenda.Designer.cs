@@ -83,7 +83,7 @@
             textBoxValorPago.Location = new Point(412, 113);
             textBoxValorPago.Name = "textBoxValorPago";
             textBoxValorPago.Size = new Size(131, 27);
-            textBoxValorPago.TabIndex = 34;
+            textBoxValorPago.TabIndex = 2;
             textBoxValorPago.Visible = false;
             textBoxValorPago.KeyPress += textBoxValorPago_KeyPress;
             // 
@@ -95,7 +95,7 @@
             labelValorPago.Location = new Point(412, 92);
             labelValorPago.Name = "labelValorPago";
             labelValorPago.Size = new Size(114, 18);
-            labelValorPago.TabIndex = 35;
+            labelValorPago.TabIndex = 1;
             labelValorPago.Text = "VALOR PAGO";
             labelValorPago.Visible = false;
             // 
@@ -158,7 +158,7 @@
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
             label3.Size = new Size(680, 61);
-            label3.TabIndex = 39;
+            label3.TabIndex = 0;
             label3.Text = "FINALIZAR VENDA";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
