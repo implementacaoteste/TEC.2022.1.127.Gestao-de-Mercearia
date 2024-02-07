@@ -22,53 +22,38 @@ namespace UIGestaoMercearia
                 textBoxValorPago.Visible = true;
                 textBoxTroco.Visible = true;
                 label2.Visible = true;
+                labelValorPago.Visible = true;
                 textBoxFormaPagamento.Text = _formaPagamento.Tipo;
+                textBoxValorPago.Focus();
             }
             else if (_formaPagamento.Tipo == "PIX")
             {
                 pictureBox1.Visible = true;
             }
-
         }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-            textBoxValorPago.Text = "";
+            textBoxValorPago.Text = null;
             textBoxValorPago.Focus();
-
             if (e.KeyChar == (char)Keys.Enter)
             {
-                if (!string.IsNullOrEmpty(textBoxValorPago.Text))
+                if (string.IsNullOrEmpty(textBoxValorPago.Text))
+                {
+                    textBoxValorPago.Focus();
+                }
+                else
                 {
                     e.Handled = true;
-                    AdicionarTroco();
+                    
                 }
-                textBoxValorPago.Focus();
-
             }
-            
+                
         }
         private void AdicionarTroco()
         {
-            if (Convert.ToDouble(textBoxValorPago.Text) == 0)
-            {
-                textBoxValorPago.Focus();
-            }
-            else if (Convert.ToDouble(textBoxValorPago.Text) != 0)
-            {
-                
-                ((ItemVenda)bindingSourceFinalizarVenda.Current).Troco = ((ItemVenda)bindingSourceFinalizarVenda.Current).ValorPago - ((ItemVenda)bindingSourceFinalizarVenda.Current).SubTotal;
-                textBoxTroco.Text = $"{((Venda)bindingSourceFinalizarVenda.Current).Total:F2}";
-            }
-        }        
-        private void textBoxTroco_KeyDown(object sender, KeyEventArgs e)
-        {
-            textBoxValorPago.Focus();
-            if (e.KeyCode == Keys.Enter && !string.IsNullOrEmpty(textBoxTroco.Text))
-            {
-                AdicionarTroco();
-            }
-                
+            ((ItemVenda)bindingSourceFinalizarVenda.Current).Troco = ((ItemVenda)bindingSourceFinalizarVenda.Current).ValorPago - ((ItemVenda)bindingSourceFinalizarVenda.Current).SubTotal;
+            textBoxTroco.Text = $"{((Venda)bindingSourceFinalizarVenda.Current).Total:F2}";
+
         }
     }
 }
