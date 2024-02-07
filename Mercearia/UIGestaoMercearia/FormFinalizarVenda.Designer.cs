@@ -33,7 +33,7 @@
             label9 = new Label();
             textBoxFormaPagamento = new TextBox();
             textBoxValorPago = new TextBox();
-            label1 = new Label();
+            labelValorPago = new Label();
             textBoxTroco = new TextBox();
             label2 = new Label();
             pictureBox1 = new PictureBox();
@@ -87,8 +87,9 @@
             textBoxValorPago.Visible = false;
             textBoxValorPago.KeyPress += textBoxValorPago_KeyPress;
             // 
-            // label1
+            // labelValorPago
             // 
+<<<<<<< HEAD
             label1.AutoSize = true;
             label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
@@ -98,6 +99,17 @@
             label1.TabIndex = 35;
             label1.Text = "VALOR PAGO";
             label1.Visible = false;
+=======
+            labelValorPago.AutoSize = true;
+            labelValorPago.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelValorPago.ForeColor = Color.White;
+            labelValorPago.Location = new Point(336, 81);
+            labelValorPago.Name = "labelValorPago";
+            labelValorPago.Size = new Size(114, 18);
+            labelValorPago.TabIndex = 35;
+            labelValorPago.Text = "VALOR PAGO";
+            labelValorPago.Visible = false;
+>>>>>>> b563ca7039b30abd8bcf52cf716e6b74114fbcd2
             // 
             // textBoxTroco
             // 
@@ -107,7 +119,6 @@
             textBoxTroco.Size = new Size(163, 27);
             textBoxTroco.TabIndex = 34;
             textBoxTroco.Visible = false;
-            textBoxTroco.KeyDown += textBoxTroco_KeyDown;
             // 
             // label2
             // 
@@ -208,8 +219,12 @@
             Controls.Add(pictureBox1);
             Controls.Add(buttonBuscarFormaPagamento);
             Controls.Add(label2);
+<<<<<<< HEAD
             Controls.Add(label4);
             Controls.Add(label1);
+=======
+            Controls.Add(labelValorPago);
+>>>>>>> b563ca7039b30abd8bcf52cf716e6b74114fbcd2
             Controls.Add(label9);
             Controls.Add(textBoxTroco);
             Controls.Add(textBoxValorPago);
@@ -233,7 +248,7 @@
         private Label label9;
         private TextBox textBoxFormaPagamento;
         private TextBox textBoxValorPago;
-        private Label label1;
+        private Label labelValorPago;
         private TextBox textBoxTroco;
         private Label label2;
         private PictureBox pictureBox1;

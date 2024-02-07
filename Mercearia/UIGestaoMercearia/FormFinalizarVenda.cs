@@ -27,30 +27,44 @@ namespace UIGestaoMercearia
                 textBoxValorPago.Visible = true;
                 textBoxTroco.Visible = true;
                 label2.Visible = true;
+                labelValorPago.Visible = true;
                 textBoxFormaPagamento.Text = _formaPagamento.Tipo;
+                textBoxValorPago.Focus();
             }
             else if (_formaPagamento.Tipo == "PIX")
             {
                 pictureBox1.Visible = true;
             }
-
         }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
+<<<<<<< HEAD
 
             if (e.KeyChar == (char)Keys.Enter)
             {
 
                 if (!string.IsNullOrEmpty(textBoxValorPago.Text))
+=======
+            textBoxValorPago.Text = null;
+            textBoxValorPago.Focus();
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                if (string.IsNullOrEmpty(textBoxValorPago.Text))
+                {
+                    textBoxValorPago.Focus();
+                }
+                else
+>>>>>>> b563ca7039b30abd8bcf52cf716e6b74114fbcd2
                 {
                     e.Handled = true;
-                    AdicionarTroco();
+                    
                 }
             }
-            textBoxValorPago.Focus();
+                
         }
         private void AdicionarTroco()
         {
+<<<<<<< HEAD
             double troco;
             if (Convert.ToDouble(textBoxValorPago.Text) != 0)
             {
@@ -77,6 +91,10 @@ namespace UIGestaoMercearia
 
         private void buttonBuscarFormaPagamento_Click(object sender, EventArgs e)
         {
+=======
+            ((ItemVenda)bindingSourceFinalizarVenda.Current).Troco = ((ItemVenda)bindingSourceFinalizarVenda.Current).ValorPago - ((ItemVenda)bindingSourceFinalizarVenda.Current).SubTotal;
+            textBoxTroco.Text = $"{((Venda)bindingSourceFinalizarVenda.Current).Total:F2}";
+>>>>>>> b563ca7039b30abd8bcf52cf716e6b74114fbcd2
 
         }
     }
