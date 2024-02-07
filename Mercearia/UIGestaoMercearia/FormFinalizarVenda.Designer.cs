@@ -57,7 +57,6 @@
             buttonBuscarFormaPagamento.TabIndex = 36;
             buttonBuscarFormaPagamento.Text = "...";
             buttonBuscarFormaPagamento.UseVisualStyleBackColor = true;
-            buttonBuscarFormaPagamento.Click += buttonBuscarFormaPagamento_Click;
             // 
             // label9
             // 
@@ -103,15 +102,15 @@
             label1.Visible = false;
 
 
-            labelValorPago.AutoSize = true;
-            labelValorPago.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            labelValorPago.ForeColor = Color.White;
-            labelValorPago.Location = new Point(336, 81);
-            labelValorPago.Name = "labelValorPago";
-            labelValorPago.Size = new Size(114, 18);
-            labelValorPago.TabIndex = 35;
-            labelValorPago.Text = "VALOR PAGO";
-            labelValorPago.Visible = false;
+            //labelValorPago.AutoSize = true;
+            //labelValorPago.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            //labelValorPago.ForeColor = Color.White;
+            //labelValorPago.Location = new Point(336, 81);
+            //labelValorPago.Name = "labelValorPago";
+            //labelValorPago.Size = new Size(114, 18);
+            //labelValorPago.TabIndex = 35;
+            //labelValorPago.Text = "VALOR PAGO";
+            //labelValorPago.Visible = false;
 
             // 
             // textBoxTroco
@@ -122,7 +121,6 @@
             textBoxTroco.Size = new Size(163, 27);
             textBoxTroco.TabIndex = 34;
             textBoxTroco.Visible = false;
-            textBoxTroco.KeyDown += textBoxTroco_KeyDown;
             // 
             // label2
             // 
@@ -162,7 +160,6 @@
             buttonOk.TabIndex = 38;
             buttonOk.Text = "&Ok";
             buttonOk.UseVisualStyleBackColor = true;
-            buttonOk.Click += buttonOk_Click;
             // 
             // label3
             // 
@@ -239,7 +236,6 @@
             Controls.Add(label4);
             Controls.Add(label1);
 
-            Controls.Add(labelValorPago);
 
 
             Controls.Add(label4);

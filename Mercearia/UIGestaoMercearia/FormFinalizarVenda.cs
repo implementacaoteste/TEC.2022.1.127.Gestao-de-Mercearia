@@ -45,23 +45,24 @@ namespace UIGestaoMercearia
                 if (!string.IsNullOrEmpty(textBoxValorPago.Text))
 
 
-            textBoxValorPago.Text = null;
-            textBoxValorPago.Focus();
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                if (string.IsNullOrEmpty(textBoxValorPago.Text))
+                    textBoxValorPago.Text = null;
+                textBoxValorPago.Focus();
+                if (e.KeyChar == (char)Keys.Enter)
                 {
-                    textBoxValorPago.Focus();
-                }
-                else
+                    if (string.IsNullOrEmpty(textBoxValorPago.Text))
+                    {
+                        textBoxValorPago.Focus();
+                    }
+                    else
 
 
-                {
-                    e.Handled = true;
-                    AdicionarTroco();
+                    {
+                        e.Handled = true;
+                        AdicionarTroco();
+                    }
                 }
+                textBoxValorPago.Focus();
             }
-            textBoxValorPago.Focus();
         }
         private void AdicionarTroco()
         {
