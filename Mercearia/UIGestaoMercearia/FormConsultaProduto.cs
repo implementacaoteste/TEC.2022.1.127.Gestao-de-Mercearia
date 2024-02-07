@@ -154,9 +154,24 @@ namespace UIGestaoMercearia
 
         private void HabilitarComponentes()
         {
-            buttonInserir.Enabled = new UsuarioBLL().ValidarPermissao(12, false);
-            buttonAlterar.Enabled = new UsuarioBLL().ValidarPermissao(13, false);
-            buttonEcluir.Enabled = new UsuarioBLL().ValidarPermissao(14, false);
+            HabilitarBotao(buttonInserir, new UsuarioBLL().ValidarPermissao(12, false));
+            HabilitarBotao(buttonAlterar, new UsuarioBLL().ValidarPermissao(13, false));
+            HabilitarBotao(buttonEcluir, new UsuarioBLL().ValidarPermissao(14, false));
+
+        }
+        private void HabilitarBotao(System.Windows.Forms.Button button, bool ativo)
+        {
+            if (ativo)
+            {
+                button.BackColor = Color.White;
+                button.ForeColor = SystemColors.ControlText;
+            }
+            else
+            {
+                button.BackColor = SystemColors.Control;
+                button.ForeColor = SystemColors.ControlText;
+            }
+            button.Enabled = ativo;
         }
 
         private void dataGridViewProduto_DoubleClick(object sender, EventArgs e)

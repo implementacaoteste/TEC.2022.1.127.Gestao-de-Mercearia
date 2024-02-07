@@ -49,6 +49,14 @@
             label3 = new Label();
             label10 = new Label();
             label5 = new Label();
+            panel2 = new Panel();
+            label10 = new Label();
+            textBoxNovoNomeUsuario = new TextBox();
+            label3 = new Label();
+            label5 = new Label();
+            buttonCancelar = new Button();
+            textBoxNomeUsuario = new TextBox();
+            buttonAlterarNomeUsuario = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
@@ -124,7 +132,7 @@
             buttonAlterarSenha.Name = "buttonAlterarSenha";
             buttonAlterarSenha.Size = new Size(108, 29);
             buttonAlterarSenha.TabIndex = 8;
-            buttonAlterarSenha.Text = "Salvar";
+            buttonAlterarSenha.Text = "&Salvar";
             buttonAlterarSenha.UseVisualStyleBackColor = true;
             buttonAlterarSenha.Click += buttonAlterarSenha_Click;
             // 
@@ -133,7 +141,7 @@
             textBoxSenha.Anchor = AnchorStyles.Right;
             textBoxSenha.Location = new Point(157, 207);
             textBoxSenha.Name = "textBoxSenha";
-            textBoxSenha.Size = new Size(569, 27);
+            textBoxSenha.Size = new Size(223, 27);
             textBoxSenha.TabIndex = 3;
             // 
             // label4
@@ -182,7 +190,7 @@
             textBoxConfirmacaoSenha.Anchor = AnchorStyles.Right;
             textBoxConfirmacaoSenha.Location = new Point(252, 295);
             textBoxConfirmacaoSenha.Name = "textBoxConfirmacaoSenha";
-            textBoxConfirmacaoSenha.Size = new Size(474, 27);
+            textBoxConfirmacaoSenha.Size = new Size(128, 27);
             textBoxConfirmacaoSenha.TabIndex = 7;
             // 
             // textBoxNovaSenha
@@ -190,7 +198,7 @@
             textBoxNovaSenha.Anchor = AnchorStyles.Right;
             textBoxNovaSenha.Location = new Point(149, 254);
             textBoxNovaSenha.Name = "textBoxNovaSenha";
-            textBoxNovaSenha.Size = new Size(577, 27);
+            textBoxNovaSenha.Size = new Size(231, 27);
             textBoxNovaSenha.TabIndex = 5;
             // 
             // pictureBoxLogo
@@ -269,6 +277,7 @@
             label10.Text = "ALTERAR NOME DE USUÁRIO";
             // 
             // label5
+            // panel2
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -278,6 +287,76 @@
             label5.Size = new Size(222, 18);
             label5.TabIndex = 9;
             label5.Text = "NOME DE USUÁRIO ATUAL";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Swis721 BlkCn BT", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.ForeColor = SystemColors.ButtonHighlight;
+            label10.Location = new Point(32, 39);
+            label10.Name = "label10";
+            label10.Size = new Size(286, 27);
+            label10.TabIndex = 30;
+            label10.Text = "ALTERAR NOME DE USUÁRIO";
+            // 
+            // textBoxNovoNomeUsuario
+            // 
+            textBoxNovoNomeUsuario.Anchor = AnchorStyles.Right;
+            textBoxNovoNomeUsuario.Location = new Point(257, 89);
+            textBoxNovoNomeUsuario.Name = "textBoxNovoNomeUsuario";
+            textBoxNovoNomeUsuario.Size = new Size(198, 27);
+            textBoxNovoNomeUsuario.TabIndex = 10;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(33, 142);
+            label3.Name = "label3";
+            label3.Size = new Size(215, 18);
+            label3.TabIndex = 11;
+            label3.Text = "NOVO NOME DE USUÁRIO";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = SystemColors.ButtonHighlight;
+            label5.Location = new Point(30, 98);
+            label5.Name = "label5";
+            label5.Size = new Size(222, 18);
+            label5.TabIndex = 9;
+            label5.Text = "NOME DE USUÁRIO ATUAL";
+            // 
+            // buttonCancelar
+            // 
+            buttonCancelar.Anchor = AnchorStyles.Right;
+            buttonCancelar.Location = new Point(626, 277);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(104, 29);
+            buttonCancelar.TabIndex = 14;
+            buttonCancelar.Text = "&Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
+            // 
+            // textBoxNomeUsuario
+            // 
+            textBoxNomeUsuario.Anchor = AnchorStyles.Right;
+            textBoxNomeUsuario.Location = new Point(257, 133);
+            textBoxNomeUsuario.Name = "textBoxNomeUsuario";
+            textBoxNomeUsuario.Size = new Size(198, 27);
+            textBoxNomeUsuario.TabIndex = 12;
+            // 
+            // buttonAlterarNomeUsuario
+            // 
+            buttonAlterarNomeUsuario.Location = new Point(32, 183);
+            buttonAlterarNomeUsuario.Name = "buttonAlterarNomeUsuario";
+            buttonAlterarNomeUsuario.Size = new Size(109, 29);
+            buttonAlterarNomeUsuario.TabIndex = 13;
+            buttonAlterarNomeUsuario.Text = "&Salvar";
+            buttonAlterarNomeUsuario.UseVisualStyleBackColor = true;
+            buttonAlterarNomeUsuario.Click += buttonAlterarNomeUsuario_Click;
             // 
             // FormConfiguracao
             // 
@@ -321,6 +400,7 @@
         private Label label3;
         private TextBox textBoxNomeUsuario;
         private Label label5;
+        private Panel panel2;
         private Button buttonCancelar;
         private Button buttonAlterarNomeUsuario;
     }

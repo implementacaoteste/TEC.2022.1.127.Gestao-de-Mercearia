@@ -33,21 +33,55 @@ namespace UIGestaoMercearia
             }
         }
 
+
         private void HabilitarComponentes()
         {
-            buttonGrupoUsuario.Enabled = new UsuarioBLL().ValidarPermissao(9, false);
-            buttonUsuario.Enabled = new UsuarioBLL().ValidarPermissao(1, false);
-            buttonFornecedores.Enabled = new UsuarioBLL().ValidarPermissao(23, false);
-            //buttonProdutos.Enabled = new UsuarioBLL().ValidarPermissao(11, false);
-            buttonFuncionarios.Enabled = new UsuarioBLL().ValidarPermissao(15, false);
-            button8.Enabled = new UsuarioBLL().ValidarPermissao(19, false);
-            buttonCategorias.Enabled = new UsuarioBLL().ValidarPermissao(27, false);
-            buttonMarcas.Enabled = new UsuarioBLL().ValidarPermissao(31, false);
-            //buttonPagamento.Enabled = new UsuarioBLL().ValidarPermissao(35, false);
-            //buttonCliente.Enabled = new UsuarioBLL().ValidarPermissao(39, false);
-            //buttonConsultarVenda.Enabled = new UsuarioBLL().ValidarPermissao(43, false);
-            buttonPermissao.Enabled = new UsuarioBLL().ValidarPermissao(47, false);
+            HabilitarBotao(buttonFornecedores, new UsuarioBLL().ValidarPermissao(23, false));
+            HabilitarBotao(buttonCategorias, new UsuarioBLL().ValidarPermissao(27, false));
+            HabilitarBotao(buttonGrupoUsuario, new UsuarioBLL().ValidarPermissao(9, false));
+            HabilitarBotao(buttonUsuario, new UsuarioBLL().ValidarPermissao(1, false));
+            HabilitarBotao(buttonProdutos, new UsuarioBLL().ValidarPermissao(11, false));
+            HabilitarBotao(buttonFuncionarios, new UsuarioBLL().ValidarPermissao(15, false));
+            HabilitarBotao(button8, new UsuarioBLL().ValidarPermissao(19, false));
+            HabilitarBotao(buttonMarcas, new UsuarioBLL().ValidarPermissao(31, false));
+            HabilitarBotao(buttonPagamento, new UsuarioBLL().ValidarPermissao(35, false));
+            HabilitarBotao(buttonCliente, new UsuarioBLL().ValidarPermissao(39, false));
+            HabilitarBotao(buttonPermissao, new UsuarioBLL().ValidarPermissao(47, false));
             pictureBoxEstatistica.Enabled = new UsuarioBLL().ValidarPermissao(48, false);
+
+
+            //buttonGrupoUsuario.Enabled = new UsuarioBLL().ValidarPermissao(9, false);
+            //buttonUsuario.Enabled = new UsuarioBLL().ValidarPermissao(1, false);
+            //buttonFornecedores.Enabled = new UsuarioBLL().ValidarPermissao(23, false);
+
+            //buttonFornecedores.BackColor = buttonFornecedores.Enabled ? SystemColors.Control : Color.White;
+            //buttonFornecedores.ForeColor = buttonFornecedores.Enabled ? SystemColors.Control : Color.White;
+
+            ////buttonProdutos.Enabled = new UsuarioBLL().ValidarPermissao(11, false);
+            //buttonFuncionarios.Enabled = new UsuarioBLL().ValidarPermissao(15, false);
+            //button8.Enabled = new UsuarioBLL().ValidarPermissao(19, false);
+            //buttonCategorias.Enabled = new UsuarioBLL().ValidarPermissao(27, false);
+            //buttonMarcas.Enabled = new UsuarioBLL().ValidarPermissao(31, false);
+            ////buttonPagamento.Enabled = new UsuarioBLL().ValidarPermissao(35, false);
+            ////buttonCliente.Enabled = new UsuarioBLL().ValidarPermissao(39, false);
+            ////buttonConsultarVenda.Enabled = new UsuarioBLL().ValidarPermissao(43, false);
+            //buttonPermissao.Enabled = new UsuarioBLL().ValidarPermissao(47, false);
+            //pictureBoxEstatistica.Enabled = new UsuarioBLL().ValidarPermissao(48, false);
+        }
+
+        private void HabilitarBotao(System.Windows.Forms.Button button, bool ativo)
+        {
+            if (ativo)
+            {
+                button.BackColor = Color.White;
+                button.ForeColor = Color.FromArgb(50, 153, 204);
+            }
+            else
+            {
+                button.BackColor = SystemColors.Control;
+                button.ForeColor = SystemColors.ControlText;
+            }
+            button.Enabled = ativo;
         }
 
         private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
