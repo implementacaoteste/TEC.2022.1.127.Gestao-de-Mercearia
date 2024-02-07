@@ -18,30 +18,30 @@ namespace UIGestaoMercearia
 
         private void buttonAlterarSenha_Click(object sender, EventArgs e)
         {
-            
-                try
-                {
-                string senhaAtual = textBoxSenha.Text; 
 
-                
+            try
+            {
+                string senhaAtual = textBoxSenha.Text;
+
+
                 if (senhaAtual != usuario.Senha)
                 {
                     MessageBox.Show("Senha incorreta!");
-                    return; 
+                    return;
                 }
 
 
                 usuario.Senha = textBoxNovaSenha.Text;
-                    new UsuarioBLL().AlterarSenha(usuario, textBoxConfirmacaoSenha.Text);
+                new UsuarioBLL().AlterarSenha(usuario, textBoxConfirmacaoSenha.Text);
 
-                    MessageBox.Show("Senha alterada com sucesso!");
-                    this.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao alterar senha: {ex.Message}");
-                }
-            
+                MessageBox.Show("Senha alterada com sucesso!");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao alterar senha: {ex.Message}");
+            }
+
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
@@ -51,32 +51,36 @@ namespace UIGestaoMercearia
 
         private void buttonAlterarNomeUsuario_Click(object sender, EventArgs e)
         {
-            
-                try
-                {
+
+            try
+            {
                 string nomeUsuarioAtual = textBoxNomeUsuario.Text;
 
-                
+
                 if (nomeUsuarioAtual != usuario.NomeUsuario)
                 {
                     MessageBox.Show("Nome de usuário incorreto");
-                    return; 
+                    return;
                 }
 
 
 
                 usuario.NomeUsuario = textBoxNomeUsuario.Text;
-                    new UsuarioBLL().AlterarNomeUsuario(usuario);
+                new UsuarioBLL().AlterarNomeUsuario(usuario);
 
-                    MessageBox.Show("Nome de usuário alterado com sucesso!");
-                    this.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao alterar nome de usuário: {ex.Message}");
-                }
-            
+                MessageBox.Show("Nome de usuário alterado com sucesso!");
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao alterar nome de usuário: {ex.Message}");
+            }
+        }
 
+        private void FormConfiguracao_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                this.Close();
         }
 
     }

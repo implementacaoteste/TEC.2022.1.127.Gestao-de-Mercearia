@@ -27,9 +27,7 @@ namespace UIGestaoMercearia
                 textBoxValorPago.Visible = true;
                 textBoxTroco.Visible = true;
                 label2.Visible = true;
-                labelValorPago.Visible = true;
                 textBoxFormaPagamento.Text = _formaPagamento.Tipo;
-                textBoxValorPago.Focus();
             }
             else if (_formaPagamento.Tipo == "PIX")
             {
@@ -40,10 +38,12 @@ namespace UIGestaoMercearia
         {
 
 
+
             if (e.KeyChar == (char)Keys.Enter)
             {
 
                 if (!string.IsNullOrEmpty(textBoxValorPago.Text))
+
 
             textBoxValorPago.Text = null;
             textBoxValorPago.Focus();
@@ -55,15 +55,18 @@ namespace UIGestaoMercearia
                 }
                 else
 
+
                 {
                     e.Handled = true;
-                    
+                    AdicionarTroco();
                 }
             }
-                
+            textBoxValorPago.Focus();
         }
         private void AdicionarTroco()
         {
+
+
 
             double troco;
             if (Convert.ToDouble(textBoxValorPago.Text) != 0)
@@ -92,8 +95,10 @@ namespace UIGestaoMercearia
         private void buttonBuscarFormaPagamento_Click(object sender, EventArgs e)
         {
 
+
             ((ItemVenda)bindingSourceFinalizarVenda.Current).Troco = ((ItemVenda)bindingSourceFinalizarVenda.Current).ValorPago - ((ItemVenda)bindingSourceFinalizarVenda.Current).SubTotal;
             textBoxTroco.Text = $"{((Venda)bindingSourceFinalizarVenda.Current).Total:F2}";
+
 
 
         }
