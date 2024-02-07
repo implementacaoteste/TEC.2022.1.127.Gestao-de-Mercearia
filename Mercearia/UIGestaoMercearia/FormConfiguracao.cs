@@ -6,12 +6,15 @@ namespace UIGestaoMercearia
     public partial class FormConfiguracao : Form
     {
         private Usuario usuario;
+        private string senha;
+        private string nomeUsuario;
         public FormConfiguracao(int _id)
         {
             InitializeComponent();
 
             usuario = new UsuarioBLL().BuscarPorId(_id);
-
+            senha = usuario.Senha;
+            nomeUsuario = usuario.NomeUsuario;
         }
 
 
@@ -23,15 +26,11 @@ namespace UIGestaoMercearia
             {
                 string senhaAtual = textBoxSenha.Text;
 
-
-                if (senhaAtual != usuario.Senha)
-                {
-                    MessageBox.Show("Senha incorreta!");
-                    return;
-                }
-
+                if (senhaAtual != senha)
+                    throw new Exception("Senha incorreta!");
 
                 usuario.Senha = textBoxNovaSenha.Text;
+
                 new UsuarioBLL().AlterarSenha(usuario, textBoxConfirmacaoSenha.Text);
 
                 MessageBox.Show("Senha alterada com sucesso!");
@@ -41,7 +40,6 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show($"Erro ao alterar senha: {ex.Message}");
             }
-
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
@@ -54,18 +52,11 @@ namespace UIGestaoMercearia
 
             try
             {
-                string nomeUsuarioAtual = textBoxNomeUsuario.Text;
+                if (textBoxNomeUsuario.Text.ToUpper() != nomeUsuario.ToUpper())
+                    throw new Exception("Nome de usuário incorreto");
 
+                usuario.NomeUsuario = textBoxNovoNomeUsuario.Text;
 
-                if (nomeUsuarioAtual != usuario.NomeUsuario)
-                {
-                    MessageBox.Show("Nome de usuário incorreto");
-                    return;
-                }
-
-
-
-                usuario.NomeUsuario = textBoxNomeUsuario.Text;
                 new UsuarioBLL().AlterarNomeUsuario(usuario);
 
                 MessageBox.Show("Nome de usuário alterado com sucesso!");
