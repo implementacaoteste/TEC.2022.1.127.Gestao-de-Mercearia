@@ -14,14 +14,9 @@ namespace UIGestaoMercearia
 {
     public partial class FormFinalizarVenda : Form
     {
-        private double totalVenda;
-        public FormaPagamento FormaPagamento;
-        public FormFinalizarVenda(FormaPagamento _formaPagamento, double _totalVenda)
+        public FormFinalizarVenda(FormaPagamento _formaPagamento)
         {
             InitializeComponent();
-            totalVenda = _totalVenda;
-            FormaPagamento = _formaPagamento;
-
             if (_formaPagamento.Tipo.ToUpper() == "DINHEIRO")
             {
                 textBoxValorPago.Visible = true;
@@ -37,10 +32,10 @@ namespace UIGestaoMercearia
         }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            
             if (e.KeyChar == (char)Keys.Enter)
             {
-
+        
                 if (!string.IsNullOrEmpty(textBoxValorPago.Text))
                 {
                     e.Handled = true;
@@ -51,15 +46,14 @@ namespace UIGestaoMercearia
         }
         private void AdicionarTroco()
         {
-            double troco;
-            if (Convert.ToDouble(textBoxValorPago.Text) != 0)
+            
+            if (Convert.ToDouble(textBoxValorPago.Text) !=  0)
             {
-
-                troco = Convert.ToDouble(textBoxValorPago.Text) - totalVenda;
-                textBoxTroco.Text = troco.ToString();
-                labelTroco.Text = troco.ToString();
+                
+                ((ItemVenda)bindingSourceFinalizarVenda.Current).Troco = ((ItemVenda)bindingSourceFinalizarVenda.Current).ValorPago - ((ItemVenda)bindingSourceFinalizarVenda.Current).SubTotal;
+                textBoxTroco.Text = $"{((Venda)bindingSourceFinalizarVenda.Current).Total:F2}";
             }
-        }
+        }        
         private void textBoxTroco_KeyDown(object sender, KeyEventArgs e)
         {
             textBoxValorPago.Focus();
@@ -67,17 +61,7 @@ namespace UIGestaoMercearia
             {
                 AdicionarTroco();
             }
-
-        }
-
-        private void buttonOk_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void buttonBuscarFormaPagamento_Click(object sender, EventArgs e)
-        {
-
+                
         }
     }
 }

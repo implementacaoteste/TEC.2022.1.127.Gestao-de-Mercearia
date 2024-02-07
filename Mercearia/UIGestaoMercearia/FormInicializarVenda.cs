@@ -159,7 +159,7 @@ namespace UIGestaoMercearia
                         formaPagamento = frm.pagamento;
                         if (formaPagamento.Tipo.ToUpper() == "DINHEIRO" || formaPagamento.Tipo.ToUpper() == "PIX")
                         {
-                            using (FormFinalizarVenda formFinalizarVenda = new FormFinalizarVenda(formaPagamento, ((Venda)bindingSourceVenda.Current).Total))
+                            using (FormFinalizarVenda formFinalizarVenda = new FormFinalizarVenda(formaPagamento))
                             {
                                 formFinalizarVenda.ShowDialog();
                             }
