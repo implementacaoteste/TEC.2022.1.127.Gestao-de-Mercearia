@@ -155,7 +155,7 @@
             label3.Name = "label3";
             label3.Size = new Size(680, 61);
             label3.TabIndex = 39;
-            label3.Text = "FORMA DE PAGAMENTO";
+            label3.Text = "FINALIZAR VENDA";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FormFinalizarVenda
