@@ -30,75 +30,141 @@
         {
             label1 = new Label();
             panel1 = new Panel();
-            label3 = new Label();
             label2 = new Label();
-            panel2 = new Panel();
+            label3 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            panel2 = new Panel();
+            panel4 = new Panel();
+            panel5 = new Panel();
+            panel3 = new Panel();
+            label4 = new Label();
+            label5 = new Label();
             panel1.SuspendLayout();
+            panel5.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 21F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.BackColor = Color.FromArgb(50, 153, 204);
+            label1.Font = new Font("Britannic Bold", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(227, 9);
+            label1.Location = new Point(60, 9);
             label1.Name = "label1";
-            label1.Size = new Size(367, 42);
+            label1.Size = new Size(439, 52);
             label1.TabIndex = 0;
             label1.Text = "Estatísca de Ganhos";
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(24, 30, 54);
-            panel1.Controls.Add(label3);
+            panel1.BackColor = Color.FromArgb(50, 153, 204);
             panel1.Controls.Add(label2);
+            panel1.Controls.Add(label3);
             panel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            panel1.Location = new Point(34, 104);
+            panel1.Location = new Point(11, 92);
             panel1.Name = "panel1";
-            panel1.Size = new Size(258, 130);
+            panel1.Size = new Size(268, 130);
             panel1.TabIndex = 1;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.Highlight;
-            label3.Location = new Point(31, 58);
-            label3.Name = "label3";
-            label3.Size = new Size(104, 34);
-            label3.TabIndex = 1;
-            label3.Text = "R$ 123";
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(3, 13);
+            label2.Location = new Point(14, 9);
             label2.Name = "label2";
-            label2.Size = new Size(91, 23);
+            label2.Size = new Size(92, 23);
             label2.TabIndex = 0;
             label2.Text = "Ganhos:";
             // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Top;
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(14, 58);
+            label3.Name = "label3";
+            label3.Size = new Size(160, 51);
+            label3.TabIndex = 1;
+            label3.Text = "R$ 123";
+            // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(24, 30, 54);
+            panel2.BackColor = Color.FromArgb(50, 153, 204);
             panel2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            panel2.Location = new Point(330, 104);
+            panel2.Location = new Point(11, 240);
             panel2.Name = "panel2";
-            panel2.Size = new Size(404, 308);
-            panel2.TabIndex = 1;
+            panel2.Size = new Size(268, 388);
+            panel2.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(50, 153, 204);
+            panel4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            panel4.Location = new Point(285, 240);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(268, 388);
+            panel4.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(50, 153, 204);
+            panel5.Controls.Add(label1);
+            panel5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            panel5.Location = new Point(-2, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(615, 81);
+            panel5.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(50, 153, 204);
+            panel3.Controls.Add(label4);
+            panel3.Controls.Add(label5);
+            panel3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            panel3.Location = new Point(285, 92);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(268, 130);
+            panel3.TabIndex = 2;
+            // 
+            // label4
+            // 
+            label4.Anchor = AnchorStyles.Top;
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(13, 9);
+            label4.Name = "label4";
+            label4.Size = new Size(83, 23);
+            label4.TabIndex = 0;
+            label4.Text = "Gastos:";
+            // 
+            // label5
+            // 
+            label5.Anchor = AnchorStyles.Top;
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(13, 58);
+            label5.Name = "label5";
+            label5.Size = new Size(160, 51);
+            label5.TabIndex = 1;
+            label5.Text = "R$ 123";
             // 
             // FormEstatistica
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(28, 34, 58);
-            ClientSize = new Size(800, 450);
+            BackColor = Color.White;
+            ClientSize = new Size(566, 638);
+            Controls.Add(panel3);
+            Controls.Add(panel4);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(label1);
+            Controls.Add(panel5);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
             MaximizeBox = false;
@@ -107,11 +173,13 @@
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Load += FormEstatistica_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -120,7 +188,12 @@
         private Panel panel1;
         private Label label3;
         private Label label2;
-        private Panel panel2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Panel panel2;
+        private Panel panel4;
+        private Panel panel5;
+        private Panel panel3;
+        private Label label4;
+        private Label label5;
     }
 }
