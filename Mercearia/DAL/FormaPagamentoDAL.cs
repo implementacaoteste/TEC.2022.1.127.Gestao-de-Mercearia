@@ -117,7 +117,7 @@ namespace DAL
                         pagamento.Id = (int)rd["Id"];
                         pagamento.Tipo = rd["Tipo"].ToString();
                         pagamento.Descricao = rd["Descricao"].ToString();
-                        pagamento.Troco = Convert.ToBoolean(rd["Troco"]);
+                        pagamento.Troco = Convert.ToDouble(rd["Troco"]);
                         pagamentoList.Add(pagamento);
                     }
                 }
@@ -153,7 +153,7 @@ namespace DAL
                         pagamento.Id = (int)rd["Id"];
                         pagamento.Tipo = rd["Tipo"].ToString();
                         pagamento.Descricao = rd["Descricao"].ToString();
-                        pagamento.Troco = Convert.ToBoolean(rd["Troco"]);
+                        pagamento.Troco = Convert.ToDouble(rd["Troco"]);
                     }
                 }
                 return pagamento;

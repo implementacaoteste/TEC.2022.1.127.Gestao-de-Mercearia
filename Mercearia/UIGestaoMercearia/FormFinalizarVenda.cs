@@ -32,22 +32,29 @@ namespace UIGestaoMercearia
         }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+
+            textBoxValorPago.Text = "";
+            textBoxValorPago.Focus();
+
             if (e.KeyChar == (char)Keys.Enter)
             {
-        
                 if (!string.IsNullOrEmpty(textBoxValorPago.Text))
                 {
                     e.Handled = true;
                     AdicionarTroco();
                 }
+                textBoxValorPago.Focus();
+
             }
-            textBoxValorPago.Focus();
+            
         }
         private void AdicionarTroco()
         {
-            
-            if (Convert.ToDouble(textBoxValorPago.Text) !=  0)
+            if (Convert.ToDouble(textBoxValorPago.Text) == 0)
+            {
+                textBoxValorPago.Focus();
+            }
+            else if (Convert.ToDouble(textBoxValorPago.Text) != 0)
             {
                 
                 ((ItemVenda)bindingSourceFinalizarVenda.Current).Troco = ((ItemVenda)bindingSourceFinalizarVenda.Current).ValorPago - ((ItemVenda)bindingSourceFinalizarVenda.Current).SubTotal;
