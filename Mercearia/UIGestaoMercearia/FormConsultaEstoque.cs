@@ -90,7 +90,7 @@ namespace UIGestaoMercearia
 
                 int id = ((Estoque)bindingSourceEstoque.Current).Id;
 
-                using (FormCadastroEstoque frm = new FormCadastroEstoque(((Estoque)bindingSourceEstoque.Current).Id))
+                using (FormeCadastroEstoque frm = new FormeCadastroEstoque(((Estoque)bindingSourceEstoque.Current).Id))
                 {
                     frm.ShowDialog();
                 }
@@ -107,7 +107,7 @@ namespace UIGestaoMercearia
         {
             try
             {
-                using (FormCadastroEstoque frm = new FormCadastroEstoque())
+                using (FormeCadastroEstoque frm = new FormeCadastroEstoque())
                 {
                     frm.ShowDialog();
                 }
