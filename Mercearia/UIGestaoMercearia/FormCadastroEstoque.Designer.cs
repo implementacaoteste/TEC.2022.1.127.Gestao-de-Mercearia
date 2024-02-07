@@ -1,6 +1,6 @@
 ﻿namespace UIGestaoMercearia
 {
-    partial class FormeCadastroEstoque
+    partial class FormCadastroEstoque
     {
         /// <summary>
         /// Required designer variable.
