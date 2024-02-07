@@ -42,7 +42,7 @@
             label3 = new Label();
             bindingSourceFinalizarVenda = new BindingSource(components);
             labelTroco = new Label();
-            textBox1 = new TextBox();
+            textBoxTotal = new TextBox();
             label4 = new Label();
             labelExTroco = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -189,12 +189,12 @@
             labelTroco.TabIndex = 40;
             labelTroco.Text = "R$ 0";
             // 
-            // textBox1
+            // textBoxTotal
             // 
-            textBox1.Location = new Point(12, 175);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(135, 27);
-            textBox1.TabIndex = 41;
+            textBoxTotal.Location = new Point(12, 175);
+            textBoxTotal.Name = "textBoxTotal";
+            textBoxTotal.Size = new Size(135, 27);
+            textBoxTotal.TabIndex = 41;
             // 
             // label4
             // 
@@ -225,7 +225,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
             ClientSize = new Size(680, 518);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxTotal);
             Controls.Add(labelExTroco);
             Controls.Add(labelTroco);
             Controls.Add(label3);
@@ -277,7 +277,7 @@
         private Label label3;
         private BindingSource bindingSourceFinalizarVenda;
         private Label labelTroco;
-        private TextBox textBox1;
+        private TextBox textBoxTotal;
         private Label label4;
         private Label labelExTroco;
     }
