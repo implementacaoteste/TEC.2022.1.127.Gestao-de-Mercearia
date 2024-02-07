@@ -38,13 +38,13 @@ namespace UIGestaoMercearia
         }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
-<<<<<<< HEAD
+
 
             if (e.KeyChar == (char)Keys.Enter)
             {
 
                 if (!string.IsNullOrEmpty(textBoxValorPago.Text))
-=======
+
             textBoxValorPago.Text = null;
             textBoxValorPago.Focus();
             if (e.KeyChar == (char)Keys.Enter)
@@ -54,7 +54,7 @@ namespace UIGestaoMercearia
                     textBoxValorPago.Focus();
                 }
                 else
->>>>>>> b563ca7039b30abd8bcf52cf716e6b74114fbcd2
+
                 {
                     e.Handled = true;
                     
@@ -64,7 +64,7 @@ namespace UIGestaoMercearia
         }
         private void AdicionarTroco()
         {
-<<<<<<< HEAD
+
             double troco;
             if (Convert.ToDouble(textBoxValorPago.Text) != 0)
             {
@@ -91,10 +91,10 @@ namespace UIGestaoMercearia
 
         private void buttonBuscarFormaPagamento_Click(object sender, EventArgs e)
         {
-=======
+
             ((ItemVenda)bindingSourceFinalizarVenda.Current).Troco = ((ItemVenda)bindingSourceFinalizarVenda.Current).ValorPago - ((ItemVenda)bindingSourceFinalizarVenda.Current).SubTotal;
             textBoxTroco.Text = $"{((Venda)bindingSourceFinalizarVenda.Current).Total:F2}";
->>>>>>> b563ca7039b30abd8bcf52cf716e6b74114fbcd2
+
 
         }
     }

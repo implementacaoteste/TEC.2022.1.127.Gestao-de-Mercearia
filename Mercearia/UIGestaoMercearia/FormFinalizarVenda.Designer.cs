@@ -89,7 +89,7 @@
             // 
             // labelValorPago
             // 
-<<<<<<< HEAD
+
             label1.AutoSize = true;
             label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
@@ -99,7 +99,7 @@
             label1.TabIndex = 35;
             label1.Text = "VALOR PAGO";
             label1.Visible = false;
-=======
+
             labelValorPago.AutoSize = true;
             labelValorPago.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             labelValorPago.ForeColor = Color.White;
@@ -109,7 +109,7 @@
             labelValorPago.TabIndex = 35;
             labelValorPago.Text = "VALOR PAGO";
             labelValorPago.Visible = false;
->>>>>>> b563ca7039b30abd8bcf52cf716e6b74114fbcd2
+
             // 
             // textBoxTroco
             // 
@@ -219,12 +219,12 @@
             Controls.Add(pictureBox1);
             Controls.Add(buttonBuscarFormaPagamento);
             Controls.Add(label2);
-<<<<<<< HEAD
+
             Controls.Add(label4);
             Controls.Add(label1);
-=======
+
             Controls.Add(labelValorPago);
->>>>>>> b563ca7039b30abd8bcf52cf716e6b74114fbcd2
+
             Controls.Add(label9);
             Controls.Add(textBoxTroco);
             Controls.Add(textBoxValorPago);
