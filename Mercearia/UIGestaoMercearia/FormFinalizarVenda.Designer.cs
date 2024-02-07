@@ -146,6 +146,7 @@
             buttonOk.TabIndex = 38;
             buttonOk.Text = "&Ok";
             buttonOk.UseVisualStyleBackColor = true;
+            buttonOk.Click += buttonOk_Click;
             // 
             // label3
             // 
@@ -207,6 +208,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
+            CancelButton = buttonCancelar;
             ClientSize = new Size(680, 534);
             Controls.Add(textBoxTotal);
             Controls.Add(labelExTroco);

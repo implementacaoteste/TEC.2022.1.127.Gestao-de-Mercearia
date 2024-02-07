@@ -46,7 +46,7 @@ namespace UIGestaoMercearia
             {
 
                 if (!string.IsNullOrEmpty(textBoxValorPago.Text))
-                    //textBoxValorPago.Text = null;
+                    textBoxValorPago.Text = null;
                 textBoxValorPago.Focus();
                 if (e.KeyChar == (char)Keys.Enter)
                 {
@@ -55,8 +55,6 @@ namespace UIGestaoMercearia
                         textBoxValorPago.Focus();
                     }
                     else
-
-
                     {
                         e.Handled = true;
                         AdicionarTroco();
@@ -85,12 +83,6 @@ namespace UIGestaoMercearia
             }
 
         }
-
-        private void buttonOk_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void buttonBuscarFormaPagamento_Click(object sender, EventArgs e)
         {
 
@@ -101,6 +93,11 @@ namespace UIGestaoMercearia
         private void FormFinalizarVenda_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
