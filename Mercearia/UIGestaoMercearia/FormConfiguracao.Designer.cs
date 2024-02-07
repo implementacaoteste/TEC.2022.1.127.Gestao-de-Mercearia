@@ -204,6 +204,7 @@
             textBoxSenha.Anchor = AnchorStyles.Right;
             textBoxSenha.Location = new Point(147, 182);
             textBoxSenha.Name = "textBoxSenha";
+            textBoxSenha.PasswordChar = '*';
             textBoxSenha.Size = new Size(223, 27);
             textBoxSenha.TabIndex = 3;
             // 
@@ -253,6 +254,7 @@
             textBoxConfirmacaoSenha.Anchor = AnchorStyles.Right;
             textBoxConfirmacaoSenha.Location = new Point(242, 273);
             textBoxConfirmacaoSenha.Name = "textBoxConfirmacaoSenha";
+            textBoxConfirmacaoSenha.PasswordChar = '*';
             textBoxConfirmacaoSenha.Size = new Size(128, 27);
             textBoxConfirmacaoSenha.TabIndex = 7;
             // 
@@ -261,6 +263,7 @@
             textBoxNovaSenha.Anchor = AnchorStyles.Right;
             textBoxNovaSenha.Location = new Point(147, 225);
             textBoxNovaSenha.Name = "textBoxNovaSenha";
+            textBoxNovaSenha.PasswordChar = '*';
             textBoxNovaSenha.Size = new Size(223, 27);
             textBoxNovaSenha.TabIndex = 5;
             // 
