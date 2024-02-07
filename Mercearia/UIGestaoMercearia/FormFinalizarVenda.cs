@@ -27,6 +27,9 @@ namespace UIGestaoMercearia
                 textBoxValorPago.Visible = true;
                 textBoxTroco.Visible = true;
                 label2.Visible = true;
+                label1.Visible = true;
+                label4.Visible = true;
+                label9.Visible = true;
                 textBoxFormaPagamento.Text = _formaPagamento.Tipo;
             }
             else if (_formaPagamento.Tipo == "PIX")
