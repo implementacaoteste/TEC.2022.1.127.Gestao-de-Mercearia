@@ -230,6 +230,7 @@
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
+            Load += FormFinalizarVenda_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).EndInit();
             ResumeLayout(false);

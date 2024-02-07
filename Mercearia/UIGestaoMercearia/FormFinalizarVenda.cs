@@ -103,5 +103,10 @@ namespace UIGestaoMercearia
 
 
         }
+
+        private void FormFinalizarVenda_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
