@@ -30,10 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConfiguracao));
             panel1 = new Panel();
+            label10 = new Label();
+            textBoxNovoNomeUsuario = new TextBox();
+            label3 = new Label();
             label9 = new Label();
+            textBoxNomeUsuario = new TextBox();
             label8 = new Label();
+            label5 = new Label();
             label7 = new Label();
+            buttonCancelar = new Button();
             buttonAlterarSenha = new Button();
+            buttonAlterarNomeUsuario = new Button();
             textBoxSenha = new TextBox();
             label4 = new Label();
             label6 = new Label();
@@ -42,21 +49,7 @@
             textBoxConfirmacaoSenha = new TextBox();
             textBoxNovaSenha = new TextBox();
             pictureBoxLogo = new PictureBox();
-            buttonCancelar = new Button();
-            textBoxNovoNomeUsuario = new TextBox();
-            textBoxNomeUsuario = new TextBox();
-            buttonAlterarNomeUsuario = new Button();
-            label3 = new Label();
-            label10 = new Label();
-            label5 = new Label();
             panel2 = new Panel();
-            label10 = new Label();
-            textBoxNovoNomeUsuario = new TextBox();
-            label3 = new Label();
-            label5 = new Label();
-            buttonCancelar = new Button();
-            textBoxNomeUsuario = new TextBox();
-            buttonAlterarNomeUsuario = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
@@ -86,30 +79,79 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(748, 653);
+            panel1.Size = new Size(795, 566);
             panel1.TabIndex = 0;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Swis721 BlkCn BT", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.ForeColor = SystemColors.ButtonHighlight;
+            label10.Location = new Point(18, 386);
+            label10.Name = "label10";
+            label10.Size = new Size(286, 27);
+            label10.TabIndex = 30;
+            label10.Text = "ALTERAR NOME DE USUÁRIO";
+            // 
+            // textBoxNovoNomeUsuario
+            // 
+            textBoxNovoNomeUsuario.Anchor = AnchorStyles.Right;
+            textBoxNovoNomeUsuario.Location = new Point(246, 473);
+            textBoxNovoNomeUsuario.Name = "textBoxNovoNomeUsuario";
+            textBoxNovoNomeUsuario.Size = new Size(198, 27);
+            textBoxNovoNomeUsuario.TabIndex = 10;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(18, 478);
+            label3.Name = "label3";
+            label3.Size = new Size(215, 18);
+            label3.TabIndex = 11;
+            label3.Text = "NOVO NOME DE USUÁRIO";
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Swis721 BlkCn BT", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = SystemColors.ButtonHighlight;
-            label9.Location = new Point(27, 157);
+            label9.Location = new Point(12, 144);
             label9.Name = "label9";
             label9.Size = new Size(169, 27);
             label9.TabIndex = 29;
             label9.Text = "ALTERAR SENHA";
+            // 
+            // textBoxNomeUsuario
+            // 
+            textBoxNomeUsuario.Anchor = AnchorStyles.Right;
+            textBoxNomeUsuario.Location = new Point(246, 430);
+            textBoxNomeUsuario.Name = "textBoxNomeUsuario";
+            textBoxNomeUsuario.Size = new Size(198, 27);
+            textBoxNomeUsuario.TabIndex = 12;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Swis721 BlkCn BT", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = SystemColors.ButtonHighlight;
-            label8.Location = new Point(71, 99);
+            label8.Location = new Point(69, 73);
             label8.Name = "label8";
             label8.Size = new Size(329, 36);
             label8.TabIndex = 27;
             label8.Text = "Privacidade e Segurança";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = SystemColors.ButtonHighlight;
+            label5.Location = new Point(18, 435);
+            label5.Name = "label5";
+            label5.Size = new Size(222, 18);
+            label5.TabIndex = 9;
+            label5.Text = "NOME DE USUÁRIO ATUAL";
             // 
             // label7
             // 
@@ -121,14 +163,25 @@
             label7.ForeColor = SystemColors.ButtonFace;
             label7.Location = new Point(0, 0);
             label7.Name = "label7";
-            label7.Size = new Size(748, 61);
+            label7.Size = new Size(795, 61);
             label7.TabIndex = 1;
             label7.Text = "CONFIGURAÇÃO";
             label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // buttonCancelar
+            // 
+            buttonCancelar.Anchor = AnchorStyles.Right;
+            buttonCancelar.Location = new Point(617, 525);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(133, 29);
+            buttonCancelar.TabIndex = 14;
+            buttonCancelar.Text = "&Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
+            // 
             // buttonAlterarSenha
             // 
-            buttonAlterarSenha.Location = new Point(28, 338);
+            buttonAlterarSenha.Location = new Point(18, 309);
             buttonAlterarSenha.Name = "buttonAlterarSenha";
             buttonAlterarSenha.Size = new Size(108, 29);
             buttonAlterarSenha.TabIndex = 8;
@@ -136,10 +189,20 @@
             buttonAlterarSenha.UseVisualStyleBackColor = true;
             buttonAlterarSenha.Click += buttonAlterarSenha_Click;
             // 
+            // buttonAlterarNomeUsuario
+            // 
+            buttonAlterarNomeUsuario.Location = new Point(17, 515);
+            buttonAlterarNomeUsuario.Name = "buttonAlterarNomeUsuario";
+            buttonAlterarNomeUsuario.Size = new Size(109, 29);
+            buttonAlterarNomeUsuario.TabIndex = 13;
+            buttonAlterarNomeUsuario.Text = "&Salvar";
+            buttonAlterarNomeUsuario.UseVisualStyleBackColor = true;
+            buttonAlterarNomeUsuario.Click += buttonAlterarNomeUsuario_Click;
+            // 
             // textBoxSenha
             // 
             textBoxSenha.Anchor = AnchorStyles.Right;
-            textBoxSenha.Location = new Point(157, 207);
+            textBoxSenha.Location = new Point(147, 182);
             textBoxSenha.Name = "textBoxSenha";
             textBoxSenha.Size = new Size(223, 27);
             textBoxSenha.TabIndex = 3;
@@ -149,7 +212,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(28, 212);
+            label4.Location = new Point(18, 187);
             label4.Name = "label4";
             label4.Size = new Size(123, 18);
             label4.TabIndex = 2;
@@ -160,7 +223,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.ButtonHighlight;
-            label6.Location = new Point(28, 300);
+            label6.Location = new Point(18, 273);
             label6.Name = "label6";
             label6.Size = new Size(218, 18);
             label6.TabIndex = 6;
@@ -171,7 +234,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(28, 259);
+            label2.Location = new Point(18, 230);
             label2.Name = "label2";
             label2.Size = new Size(115, 18);
             label2.TabIndex = 4;
@@ -188,7 +251,7 @@
             // textBoxConfirmacaoSenha
             // 
             textBoxConfirmacaoSenha.Anchor = AnchorStyles.Right;
-            textBoxConfirmacaoSenha.Location = new Point(252, 295);
+            textBoxConfirmacaoSenha.Location = new Point(242, 273);
             textBoxConfirmacaoSenha.Name = "textBoxConfirmacaoSenha";
             textBoxConfirmacaoSenha.Size = new Size(128, 27);
             textBoxConfirmacaoSenha.TabIndex = 7;
@@ -196,9 +259,9 @@
             // textBoxNovaSenha
             // 
             textBoxNovaSenha.Anchor = AnchorStyles.Right;
-            textBoxNovaSenha.Location = new Point(149, 254);
+            textBoxNovaSenha.Location = new Point(147, 225);
             textBoxNovaSenha.Name = "textBoxNovaSenha";
-            textBoxNovaSenha.Size = new Size(231, 27);
+            textBoxNovaSenha.Size = new Size(223, 27);
             textBoxNovaSenha.TabIndex = 5;
             // 
             // pictureBoxLogo
@@ -210,159 +273,25 @@
             pictureBoxLogo.ErrorImage = null;
             pictureBoxLogo.Image = (Image)resources.GetObject("pictureBoxLogo.Image");
             pictureBoxLogo.InitialImage = null;
-            pictureBoxLogo.Location = new Point(23, 90);
+            pictureBoxLogo.Location = new Point(12, 64);
             pictureBoxLogo.Name = "pictureBoxLogo";
             pictureBoxLogo.Size = new Size(51, 45);
             pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxLogo.TabIndex = 28;
             pictureBoxLogo.TabStop = false;
             // 
-            // buttonCancelar
-            // 
-            buttonCancelar.Anchor = AnchorStyles.Right;
-            buttonCancelar.Location = new Point(631, 600);
-            buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(104, 29);
-            buttonCancelar.TabIndex = 14;
-            buttonCancelar.Text = "&Cancelar";
-            buttonCancelar.UseVisualStyleBackColor = true;
-            buttonCancelar.Click += buttonCancelar_Click;
-            // 
-            // textBoxNovoNomeUsuario
-            // 
-            textBoxNovoNomeUsuario.Anchor = AnchorStyles.Right;
-            textBoxNovoNomeUsuario.Location = new Point(251, 460);
-            textBoxNovoNomeUsuario.Name = "textBoxNovoNomeUsuario";
-            textBoxNovoNomeUsuario.Size = new Size(474, 27);
-            textBoxNovoNomeUsuario.TabIndex = 10;
-            // 
-            // textBoxNomeUsuario
-            // 
-            textBoxNomeUsuario.Anchor = AnchorStyles.Right;
-            textBoxNomeUsuario.Location = new Point(251, 500);
-            textBoxNomeUsuario.Name = "textBoxNomeUsuario";
-            textBoxNomeUsuario.Size = new Size(474, 27);
-            textBoxNomeUsuario.TabIndex = 12;
-            // 
-            // buttonAlterarNomeUsuario
-            // 
-            buttonAlterarNomeUsuario.Location = new Point(23, 550);
-            buttonAlterarNomeUsuario.Name = "buttonAlterarNomeUsuario";
-            buttonAlterarNomeUsuario.Size = new Size(109, 29);
-            buttonAlterarNomeUsuario.TabIndex = 13;
-            buttonAlterarNomeUsuario.Text = "Salvar";
-            buttonAlterarNomeUsuario.UseVisualStyleBackColor = true;
-            buttonAlterarNomeUsuario.Click += buttonAlterarNomeUsuario_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(24, 509);
-            label3.Name = "label3";
-            label3.Size = new Size(215, 18);
-            label3.TabIndex = 11;
-            label3.Text = "NOVO NOME DE USUÁRIO";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Swis721 BlkCn BT", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = SystemColors.ButtonHighlight;
-            label10.Location = new Point(23, 406);
-            label10.Name = "label10";
-            label10.Size = new Size(286, 27);
-            label10.TabIndex = 30;
-            label10.Text = "ALTERAR NOME DE USUÁRIO";
-            // 
-            // label5
             // panel2
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.ButtonHighlight;
-            label5.Location = new Point(21, 465);
-            label5.Name = "label5";
-            label5.Size = new Size(222, 18);
-            label5.TabIndex = 9;
-            label5.Text = "NOME DE USUÁRIO ATUAL";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Swis721 BlkCn BT", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.ForeColor = SystemColors.ButtonHighlight;
-            label10.Location = new Point(32, 39);
-            label10.Name = "label10";
-            label10.Size = new Size(286, 27);
-            label10.TabIndex = 30;
-            label10.Text = "ALTERAR NOME DE USUÁRIO";
-            // 
-            // textBoxNovoNomeUsuario
-            // 
-            textBoxNovoNomeUsuario.Anchor = AnchorStyles.Right;
-            textBoxNovoNomeUsuario.Location = new Point(257, 89);
-            textBoxNovoNomeUsuario.Name = "textBoxNovoNomeUsuario";
-            textBoxNovoNomeUsuario.Size = new Size(198, 27);
-            textBoxNovoNomeUsuario.TabIndex = 10;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(33, 142);
-            label3.Name = "label3";
-            label3.Size = new Size(215, 18);
-            label3.TabIndex = 11;
-            label3.Text = "NOVO NOME DE USUÁRIO";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.ButtonHighlight;
-            label5.Location = new Point(30, 98);
-            label5.Name = "label5";
-            label5.Size = new Size(222, 18);
-            label5.TabIndex = 9;
-            label5.Text = "NOME DE USUÁRIO ATUAL";
-            // 
-            // buttonCancelar
-            // 
-            buttonCancelar.Anchor = AnchorStyles.Right;
-            buttonCancelar.Location = new Point(626, 277);
-            buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(104, 29);
-            buttonCancelar.TabIndex = 14;
-            buttonCancelar.Text = "&Cancelar";
-            buttonCancelar.UseVisualStyleBackColor = true;
-            buttonCancelar.Click += buttonCancelar_Click;
-            // 
-            // textBoxNomeUsuario
-            // 
-            textBoxNomeUsuario.Anchor = AnchorStyles.Right;
-            textBoxNomeUsuario.Location = new Point(257, 133);
-            textBoxNomeUsuario.Name = "textBoxNomeUsuario";
-            textBoxNomeUsuario.Size = new Size(198, 27);
-            textBoxNomeUsuario.TabIndex = 12;
-            // 
-            // buttonAlterarNomeUsuario
-            // 
-            buttonAlterarNomeUsuario.Location = new Point(32, 183);
-            buttonAlterarNomeUsuario.Name = "buttonAlterarNomeUsuario";
-            buttonAlterarNomeUsuario.Size = new Size(109, 29);
-            buttonAlterarNomeUsuario.TabIndex = 13;
-            buttonAlterarNomeUsuario.Text = "&Salvar";
-            buttonAlterarNomeUsuario.UseVisualStyleBackColor = true;
-            buttonAlterarNomeUsuario.Click += buttonAlterarNomeUsuario_Click;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(200, 100);
+            panel2.TabIndex = 0;
             // 
             // FormConfiguracao
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(748, 653);
+            ClientSize = new Size(795, 566);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
@@ -372,7 +301,7 @@
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
-            WindowState = FormWindowState.Minimized;
+            KeyDown += FormConfiguracao_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
