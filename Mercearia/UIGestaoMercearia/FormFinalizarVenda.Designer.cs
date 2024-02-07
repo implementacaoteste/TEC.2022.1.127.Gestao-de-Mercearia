@@ -33,7 +33,7 @@
             label9 = new Label();
             textBoxFormaPagamento = new TextBox();
             textBoxValorPago = new TextBox();
-            labelValorPago = new Label();
+            label1 = new Label();
             textBoxTroco = new TextBox();
             label2 = new Label();
             pictureBox1 = new PictureBox();
@@ -41,9 +41,10 @@
             buttonOk = new Button();
             label3 = new Label();
             bindingSourceFinalizarVenda = new BindingSource(components);
+            labelTroco = new Label();
             textBox1 = new TextBox();
             label4 = new Label();
-            labelTroco = new Label();
+            labelExTroco = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).BeginInit();
             SuspendLayout();
@@ -80,52 +81,41 @@
             // textBoxValorPago
             // 
             textBoxValorPago.Cursor = Cursors.IBeam;
-            textBoxValorPago.Location = new Point(12, 256);
+            textBoxValorPago.Location = new Point(12, 249);
             textBoxValorPago.Name = "textBoxValorPago";
             textBoxValorPago.Size = new Size(163, 27);
             textBoxValorPago.TabIndex = 34;
             textBoxValorPago.Visible = false;
             textBoxValorPago.KeyPress += textBoxValorPago_KeyPress;
             // 
-            // labelValorPago
+            // label1
             // 
-<<<<<<< HEAD
             label1.AutoSize = true;
             label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 235);
+            label1.Location = new Point(12, 228);
             label1.Name = "label1";
             label1.Size = new Size(114, 18);
             label1.TabIndex = 35;
             label1.Text = "VALOR PAGO";
             label1.Visible = false;
-=======
-            labelValorPago.AutoSize = true;
-            labelValorPago.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            labelValorPago.ForeColor = Color.White;
-            labelValorPago.Location = new Point(336, 81);
-            labelValorPago.Name = "labelValorPago";
-            labelValorPago.Size = new Size(114, 18);
-            labelValorPago.TabIndex = 35;
-            labelValorPago.Text = "VALOR PAGO";
-            labelValorPago.Visible = false;
->>>>>>> b563ca7039b30abd8bcf52cf716e6b74114fbcd2
             // 
             // textBoxTroco
             // 
             textBoxTroco.Cursor = Cursors.IBeam;
-            textBoxTroco.Location = new Point(12, 343);
+            textBoxTroco.Location = new Point(12, 325);
             textBoxTroco.Name = "textBoxTroco";
             textBoxTroco.Size = new Size(163, 27);
             textBoxTroco.TabIndex = 34;
             textBoxTroco.Visible = false;
+            textBoxTroco.KeyDown += textBoxTroco_KeyDown;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(12, 322);
+            label2.Location = new Point(12, 304);
             label2.Name = "label2";
             label2.Size = new Size(65, 18);
             label2.TabIndex = 35;
@@ -134,7 +124,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(234, 149);
+            pictureBox1.Location = new Point(190, 137);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(390, 303);
             pictureBox1.TabIndex = 37;
@@ -174,57 +164,64 @@
             label3.Text = "FINALIZAR VENDA";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // labelTroco
+            // 
+            labelTroco.AutoSize = true;
+            labelTroco.Font = new Font("Swis721 Blk BT", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTroco.ForeColor = SystemColors.ButtonHighlight;
+            labelTroco.Location = new Point(472, 249);
+            labelTroco.Name = "labelTroco";
+            labelTroco.Size = new Size(108, 45);
+            labelTroco.TabIndex = 40;
+            labelTroco.Text = "R$ 0";
+            // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 182);
+            textBox1.Location = new Point(12, 175);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 40;
+            textBox1.Size = new Size(135, 27);
+            textBox1.TabIndex = 41;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(12, 161);
+            label4.Location = new Point(12, 154);
             label4.Name = "label4";
             label4.Size = new Size(61, 18);
             label4.TabIndex = 35;
             label4.Text = "TOTAL";
             label4.Visible = false;
             // 
-            // labelTroco
+            // labelExTroco
             // 
-            labelTroco.AutoSize = true;
-            labelTroco.Font = new Font("Swis721 Blk BT", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            labelTroco.ForeColor = SystemColors.ButtonHighlight;
-            labelTroco.Location = new Point(278, 256);
-            labelTroco.Name = "labelTroco";
-            labelTroco.Size = new Size(214, 36);
-            labelTroco.TabIndex = 41;
-            labelTroco.Text = "TROCO R$ 0";
+            labelExTroco.AutoSize = true;
+            labelExTroco.Font = new Font("Swis721 Blk BT", 22.2F, FontStyle.Regular, GraphicsUnit.Point);
+            labelExTroco.ForeColor = SystemColors.ButtonHighlight;
+            labelExTroco.Location = new Point(301, 249);
+            labelExTroco.Name = "labelExTroco";
+            labelExTroco.Size = new Size(175, 45);
+            labelExTroco.TabIndex = 40;
+            labelExTroco.Text = "TROCO:";
             // 
             // FormFinalizarVenda
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
-            CancelButton = buttonCancelar;
             ClientSize = new Size(680, 518);
-            Controls.Add(labelTroco);
             Controls.Add(textBox1);
+            Controls.Add(labelExTroco);
+            Controls.Add(labelTroco);
             Controls.Add(label3);
             Controls.Add(buttonOk);
             Controls.Add(buttonCancelar);
             Controls.Add(pictureBox1);
             Controls.Add(buttonBuscarFormaPagamento);
             Controls.Add(label2);
-<<<<<<< HEAD
             Controls.Add(label4);
             Controls.Add(label1);
-=======
-            Controls.Add(labelValorPago);
->>>>>>> b563ca7039b30abd8bcf52cf716e6b74114fbcd2
             Controls.Add(label9);
             Controls.Add(textBoxTroco);
             Controls.Add(textBoxValorPago);
@@ -248,7 +245,7 @@
         private Label label9;
         private TextBox textBoxFormaPagamento;
         private TextBox textBoxValorPago;
-        private Label labelValorPago;
+        private Label label1;
         private TextBox textBoxTroco;
         private Label label2;
         private PictureBox pictureBox1;
@@ -256,8 +253,9 @@
         private Button buttonOk;
         private Label label3;
         private BindingSource bindingSourceFinalizarVenda;
+        private Label labelTroco;
         private TextBox textBox1;
         private Label label4;
-        private Label labelTroco;
+        private Label labelExTroco;
     }
 }

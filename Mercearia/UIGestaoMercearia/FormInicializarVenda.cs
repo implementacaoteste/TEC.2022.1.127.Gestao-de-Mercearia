@@ -3,10 +3,12 @@ using Models;
 using System.Security.Cryptography;
 namespace UIGestaoMercearia
 {
+    
     public partial class FormInicializarVenda : Form
     {
         int id;
         private object itemVenda;
+        double total;
 
         public Produto produtoAtual { get; private set; }
 
@@ -101,6 +103,7 @@ namespace UIGestaoMercearia
             ((ItemVenda)itemVendaListBindingSource.Current).Quantidade = Convert.ToDouble(textBoxQuantidade.Text);
             ((ItemVenda)itemVendaListBindingSource.Current).SubTotal = ((ItemVenda)itemVendaListBindingSource.Current).Quantidade * ((ItemVenda)itemVendaListBindingSource.Current).ValorUnitario;
             ((Venda)bindingSourceVenda.Current).Total += ((ItemVenda)itemVendaListBindingSource.Current).SubTotal;
+            total = ((Venda)bindingSourceVenda.Current).Total;
             labelSubtotal.Text = $"subtotal: {((Venda)bindingSourceVenda.Current).Total:F2}";
             textBoxCodigodeBarras.Text = "";
             textBoxCodigodeBarras.Focus();
