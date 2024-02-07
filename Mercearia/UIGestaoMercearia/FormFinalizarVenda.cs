@@ -57,7 +57,10 @@ namespace UIGestaoMercearia
         private void textBoxTroco_KeyDown(object sender, KeyEventArgs e)
         {
             textBoxValorPago.Focus();
-            if (e.KeyCode == Keys.Enter && !string.IsNullOrEmpty(textBoxTroco.Text));
+            if (e.KeyCode == Keys.Enter && !string.IsNullOrEmpty(textBoxTroco.Text))
+            {
+                AdicionarTroco();
+            }
                 
         }
     }
