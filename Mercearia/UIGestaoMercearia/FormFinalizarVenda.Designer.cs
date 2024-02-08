@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFinalizarVenda));
             buttonBuscarFormaPagamento = new Button();
             labelFormaPagamento = new Label();
             textBoxFormaPagamento = new TextBox();
@@ -122,9 +123,13 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(132, 175);
+            pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
+            pictureBox1.Location = new Point(145, 148);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(421, 284);
+            pictureBox1.Size = new Size(398, 339);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 37;
             pictureBox1.TabStop = false;
             pictureBox1.Visible = false;

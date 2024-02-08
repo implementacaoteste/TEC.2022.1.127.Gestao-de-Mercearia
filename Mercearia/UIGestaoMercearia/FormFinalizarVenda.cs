@@ -34,12 +34,22 @@ namespace UIGestaoMercearia
                 labelTotal.Visible = true;
                 labelFormaPagamento.Visible = true;
                 textBoxFormaPagamento.Text = _formaPagamento.Tipo;
+
             }
-            else if (_formaPagamento.Tipo == "PIX")
+            else if (_formaPagamento.Tipo.ToUpper() == "PIX")
             {
                 pictureBox1.Visible = true;
+                textBoxTroco.Visible = false;
+                labelFormaPagamento.Visible = true;
+                textBoxFormaPagamento.Text = _formaPagamento.Tipo;
+                textBoxTotal.Visible = true;
+                textBoxTotal.Text = _totalVenda.ToString();
+                labelExTroco.Visible = false;
+                labelTroco.Visible = false;
+                labelTotal.Visible = true;
             }
-        }
+            
+            }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -90,6 +100,7 @@ namespace UIGestaoMercearia
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Venda Concluída!");
             Close();
         }
     }
