@@ -43,13 +43,12 @@
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
+            bindingSourceVenda = new BindingSource(components);
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
-            bindingSourceVenda = new BindingSource(components);
             vendaBindingSource = new BindingSource(components);
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             IdUsuario = new DataGridViewTextBoxColumn();
-            IdCliente = new DataGridViewTextBoxColumn();
             IdFormaPagamento = new DataGridViewTextBoxColumn();
             DataVenda = new DataGridViewTextBoxColumn();
             Total = new DataGridViewTextBoxColumn();
@@ -210,7 +209,7 @@
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, IdUsuario, IdCliente, IdFormaPagamento, DataVenda, Total });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, IdUsuario, IdFormaPagamento, DataVenda, Total });
             dataGridView1.DataSource = bindingSourceVenda;
             dataGridView1.Location = new Point(0, 157);
             dataGridView1.Name = "dataGridView1";
@@ -219,6 +218,10 @@
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(1105, 338);
             dataGridView1.TabIndex = 1;
+            // 
+            // bindingSourceVenda
+            // 
+            bindingSourceVenda.DataSource = typeof(Models.Venda);
             // 
             // buttonSelecionar
             // 
@@ -242,10 +245,6 @@
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
             // 
-            // bindingSourceVenda
-            // 
-            bindingSourceVenda.DataSource = typeof(Models.Venda);
-            // 
             // vendaBindingSource
             // 
             vendaBindingSource.DataSource = typeof(Models.Venda);
@@ -267,15 +266,6 @@
             IdUsuario.Name = "IdUsuario";
             IdUsuario.ReadOnly = true;
             IdUsuario.Width = 125;
-            // 
-            // IdCliente
-            // 
-            IdCliente.DataPropertyName = "IdCliente";
-            IdCliente.HeaderText = "IdCliente";
-            IdCliente.MinimumWidth = 6;
-            IdCliente.Name = "IdCliente";
-            IdCliente.ReadOnly = true;
-            IdCliente.Width = 125;
             // 
             // IdFormaPagamento
             // 
@@ -353,7 +343,6 @@
         private PictureBox pictureBox1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn IdUsuario;
-        private DataGridViewTextBoxColumn IdCliente;
         private DataGridViewTextBoxColumn IdFormaPagamento;
         private DataGridViewTextBoxColumn DataVenda;
         private DataGridViewTextBoxColumn Total;

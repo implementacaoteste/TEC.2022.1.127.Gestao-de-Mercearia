@@ -127,6 +127,8 @@ namespace UIGestaoMercearia
         private void FormConsultaVenda_Load(object sender, EventArgs e)
         {
             HabilitarComponentes();
+            comboBoxVenda.SelectedIndex = 1;
+            buttonBuscar_Click(sender, e);
         }
 
         private void HabilitarComponentes()
