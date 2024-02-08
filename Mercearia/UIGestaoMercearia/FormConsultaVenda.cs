@@ -35,19 +35,12 @@ namespace UIGestaoMercearia
                     case 0:
                         if (String.IsNullOrEmpty(textBoxVenda.Text))
                             throw new Exception("Informe um Id para fazer a busca.") { Data = { { "Id", 10030 } } };
-                        bindingSourceVenda.DataSource = new ProdutoBLL().BuscarPorId(Convert.ToInt32(textBoxVenda.Text));
-                        break;
-                    case 1:
-                        bindingSourceVenda.DataSource = new ProdutoBLL().BuscarPorNome(textBoxVenda.Text);
-                        break;
-                    case 2:
-                        bindingSourceVenda.DataSource = new ProdutoBLL().BuscarPorCodigoDeBarra(textBoxVenda.Text);
-                        break;
-                    case 3:
-                        bindingSourceVenda.DataSource = new ProdutoBLL().BuscarTodos();
+                        bindingSourceVenda.DataSource = new VendaBLL().BuscarPorId(Convert.ToInt32(textBoxVenda.Text));
                         break;
                     default:
+                        bindingSourceVenda.DataSource = new VendaBLL().BuscarTodos();
                         break;
+                    
                 }
             }
             catch (Exception ex)

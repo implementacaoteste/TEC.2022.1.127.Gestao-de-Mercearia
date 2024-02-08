@@ -114,7 +114,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = "SELECT Id, IdUsuario, IdCliente, IdProduto, PrecoVenda, IdFormaPagamento, DataVenda FROM Venda";
+                cmd.CommandText = "SELECT Id, IdUsuario, IdFormaPagamento, DataVenda, Total FROM Venda";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cn.Open();
                 using (SqlDataReader rd = cmd.ExecuteReader())
@@ -124,7 +124,7 @@ namespace DAL
                         venda = new Venda();
                         venda.Id = Convert.ToInt32(rd["Id"]);
                         venda.IdUsuario = Convert.ToInt32(rd["IdUsuario"]);
-                        venda.IdCliente = Convert.ToInt32(rd["IdCliente"]);
+                        //venda.IdCliente = Convert.ToInt32(rd["IdCliente"]);
                         venda.IdFormaPagamento = Convert.ToInt32(rd["IdFormaPagamento"]);
                         venda.DataVenda = Convert.ToDateTime(rd["DataVenda"]);
                         venda.Total = Convert.ToDouble(rd["Total"]);
@@ -151,7 +151,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT Id, IdUsuario, IdCliente, IdProduto, PrecoVenda, IdFormaPagamento, DataVenda FROM Venda WHERE Id = @Id";
+                cmd.CommandText = @"SELECT Id, IdUsuario, IdFormaPagamento, DataVenda, Total FROM Venda WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id", _id);
                 cn.Open();
@@ -162,7 +162,7 @@ namespace DAL
                     {
                         venda.Id = Convert.ToInt32(rd["Id"]);
                         venda.IdUsuario = Convert.ToInt32(rd["IdUsuario"]);
-                        venda.IdCliente = Convert.ToInt32(rd["IdCliente"]);
+                        //venda.IdCliente = Convert.ToInt32(rd["IdCliente"]);
                         venda.IdFormaPagamento = Convert.ToInt32(rd["IdFormaPagamento"]);
                         venda.DataVenda = Convert.ToDateTime(rd["DataVenda"]);
                         venda.Total = Convert.ToDouble(rd["Total"]);
