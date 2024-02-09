@@ -25,53 +25,49 @@ namespace UIGestaoMercearia
             if (_formaPagamento.Tipo.ToUpper() == "DINHEIRO")
             {
                 textBoxValorPago.Visible = true;
+                //textBoxValorPago.Focus();
+                textBoxTotal.Visible = true;
+                textBoxTotal.Text = _totalVenda.ToString();
                 textBoxTroco.Visible = true;
                 label2.Visible = true;
-                label1.Visible = true;
-                label4.Visible = true;
-                label9.Visible = true;
+                labelValorPago.Visible = true;
+                labelTotal.Visible = true;
+                labelFormaPagamento.Visible = true;
                 textBoxFormaPagamento.Text = _formaPagamento.Tipo;
+
             }
-            else if (_formaPagamento.Tipo == "PIX")
+            else if (_formaPagamento.Tipo.ToUpper() == "PIX")
             {
                 pictureBox1.Visible = true;
+                textBoxTroco.Visible = false;
+                labelFormaPagamento.Visible = true;
+                textBoxFormaPagamento.Text = _formaPagamento.Tipo;
+                textBoxTotal.Visible = true;
+                textBoxTotal.Text = _totalVenda.ToString();
+                labelExTroco.Visible = false;
+                labelTroco.Visible = false;
+                labelTotal.Visible = true;
             }
-        }
+            
+            }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-
-
             if (e.KeyChar == (char)Keys.Enter)
             {
-
-                if (!string.IsNullOrEmpty(textBoxValorPago.Text))
-
-
-                    textBoxValorPago.Text = null;
-                textBoxValorPago.Focus();
-                if (e.KeyChar == (char)Keys.Enter)
+                if (string.IsNullOrEmpty(textBoxValorPago.Text))
                 {
-                    if (string.IsNullOrEmpty(textBoxValorPago.Text))
-                    {
-                        textBoxValorPago.Focus();
-                    }
-                    else
-
-
-                    {
-                        e.Handled = true;
-                        AdicionarTroco();
-                    }
+                    textBoxValorPago.Focus();
+                }
+                else
+                {
+                    e.Handled = true;
+                    AdicionarTroco();
                 }
                 textBoxValorPago.Focus();
             }
         }
         private void AdicionarTroco()
         {
-
-
-
             double troco;
             if (Convert.ToDouble(textBoxValorPago.Text) != 0)
             {
@@ -90,18 +86,8 @@ namespace UIGestaoMercearia
             }
 
         }
-
-        private void buttonOk_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void buttonBuscarFormaPagamento_Click(object sender, EventArgs e)
         {
-
-
-            ((ItemVenda)bindingSourceFinalizarVenda.Current).Troco = ((ItemVenda)bindingSourceFinalizarVenda.Current).ValorPago - ((ItemVenda)bindingSourceFinalizarVenda.Current).SubTotal;
-            textBoxTroco.Text = $"{((Venda)bindingSourceFinalizarVenda.Current).Total:F2}";
 
 
 
@@ -110,6 +96,12 @@ namespace UIGestaoMercearia
         private void FormFinalizarVenda_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Venda Concluída!");
+            Close();
         }
     }
 }

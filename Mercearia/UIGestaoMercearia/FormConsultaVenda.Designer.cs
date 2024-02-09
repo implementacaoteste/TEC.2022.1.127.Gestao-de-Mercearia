@@ -43,17 +43,15 @@
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
-            Column7 = new DataGridViewTextBoxColumn();
+            bindingSourceVenda = new BindingSource(components);
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
-            bindingSourceVenda = new BindingSource(components);
             vendaBindingSource = new BindingSource(components);
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            IdUsuario = new DataGridViewTextBoxColumn();
+            IdFormaPagamento = new DataGridViewTextBoxColumn();
+            DataVenda = new DataGridViewTextBoxColumn();
+            Total = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -208,9 +206,11 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.AutoGenerateColumns = false;
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, IdUsuario, IdFormaPagamento, DataVenda, Total });
+            dataGridView1.DataSource = bindingSourceVenda;
             dataGridView1.Location = new Point(0, 157);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -219,61 +219,9 @@
             dataGridView1.Size = new Size(1105, 338);
             dataGridView1.TabIndex = 1;
             // 
-            // Column1
+            // bindingSourceVenda
             // 
-            Column1.HeaderText = "Id";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Nome";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "IdFuncionario";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            Column3.Width = 140;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "IdCliente";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            Column4.Width = 140;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "IdProduto";
-            Column5.MinimumWidth = 6;
-            Column5.Name = "Column5";
-            Column5.ReadOnly = true;
-            Column5.Width = 140;
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Forma de Pagamento";
-            Column6.MinimumWidth = 6;
-            Column6.Name = "Column6";
-            Column6.ReadOnly = true;
-            Column6.Width = 200;
-            // 
-            // Column7
-            // 
-            Column7.HeaderText = "DataVenda";
-            Column7.MinimumWidth = 6;
-            Column7.Name = "Column7";
-            Column7.ReadOnly = true;
-            Column7.Width = 140;
+            bindingSourceVenda.DataSource = typeof(Models.Venda);
             // 
             // buttonSelecionar
             // 
@@ -297,13 +245,54 @@
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
             // 
-            // bindingSourceVenda
-            // 
-            bindingSourceVenda.DataSource = typeof(Models.Venda);
-            // 
             // vendaBindingSource
             // 
             vendaBindingSource.DataSource = typeof(Models.Venda);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            dataGridViewTextBoxColumn1.HeaderText = "Id";
+            dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // IdUsuario
+            // 
+            IdUsuario.DataPropertyName = "IdUsuario";
+            IdUsuario.HeaderText = "IdUsuario";
+            IdUsuario.MinimumWidth = 6;
+            IdUsuario.Name = "IdUsuario";
+            IdUsuario.ReadOnly = true;
+            IdUsuario.Width = 125;
+            // 
+            // IdFormaPagamento
+            // 
+            IdFormaPagamento.DataPropertyName = "IdFormaPagamento";
+            IdFormaPagamento.HeaderText = "IdFormaPagamento";
+            IdFormaPagamento.MinimumWidth = 6;
+            IdFormaPagamento.Name = "IdFormaPagamento";
+            IdFormaPagamento.ReadOnly = true;
+            IdFormaPagamento.Width = 125;
+            // 
+            // DataVenda
+            // 
+            DataVenda.DataPropertyName = "DataVenda";
+            DataVenda.HeaderText = "DataVenda";
+            DataVenda.MinimumWidth = 6;
+            DataVenda.Name = "DataVenda";
+            DataVenda.ReadOnly = true;
+            DataVenda.Width = 125;
+            // 
+            // Total
+            // 
+            Total.DataPropertyName = "Total";
+            Total.HeaderText = "Total";
+            Total.MinimumWidth = 6;
+            Total.Name = "Total";
+            Total.ReadOnly = true;
+            Total.Width = 125;
             // 
             // FormConsultaVenda
             // 
@@ -352,12 +341,10 @@
         private BindingSource bindingSourceVenda;
         private BindingSource vendaBindingSource;
         private PictureBox pictureBox1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column6;
-        private DataGridViewTextBoxColumn Column7;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn IdUsuario;
+        private DataGridViewTextBoxColumn IdFormaPagamento;
+        private DataGridViewTextBoxColumn DataVenda;
+        private DataGridViewTextBoxColumn Total;
     }
 }

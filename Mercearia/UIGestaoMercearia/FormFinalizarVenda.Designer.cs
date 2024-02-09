@@ -1,4 +1,4 @@
-﻿namespace UIGestaoMercearia
+namespace UIGestaoMercearia
 {
     partial class FormFinalizarVenda
     {
@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFinalizarVenda));
             buttonBuscarFormaPagamento = new Button();
-            label9 = new Label();
+            labelFormaPagamento = new Label();
             textBoxFormaPagamento = new TextBox();
             textBoxValorPago = new TextBox();
-            label1 = new Label();
+            labelValorPago = new Label();
             textBoxTroco = new TextBox();
             label2 = new Label();
             pictureBox1 = new PictureBox();
@@ -43,7 +44,7 @@
             bindingSourceFinalizarVenda = new BindingSource(components);
             labelTroco = new Label();
             textBoxTotal = new TextBox();
-            label4 = new Label();
+            labelTotal = new Label();
             labelExTroco = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).BeginInit();
@@ -59,7 +60,7 @@
             buttonBuscarFormaPagamento.Text = "...";
             buttonBuscarFormaPagamento.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // labelFormaPagamento
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -92,7 +93,7 @@
             textBoxValorPago.Visible = false;
             textBoxValorPago.KeyPress += textBoxValorPago_KeyPress;
             // 
-            // label1
+            // labelValorPago
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label1.AutoSize = true;
@@ -160,6 +161,7 @@
             buttonOk.TabIndex = 38;
             buttonOk.Text = "Ok";
             buttonOk.UseVisualStyleBackColor = true;
+            buttonOk.Click += buttonOk_Click;
             // 
             // label3
             // 
@@ -185,7 +187,7 @@
             labelTroco.Name = "labelTroco";
             labelTroco.Size = new Size(349, 144);
             labelTroco.TabIndex = 40;
-            labelTroco.Text = "R$ 0";
+            labelTroco.Text = "0";
             // 
             // textBoxTotal
             // 
@@ -196,7 +198,7 @@
             textBoxTotal.Size = new Size(176, 43);
             textBoxTotal.TabIndex = 41;
             // 
-            // label4
+            // labelTotal
             // 
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label4.AutoSize = true;
@@ -219,7 +221,7 @@
             labelExTroco.Name = "labelExTroco";
             labelExTroco.Size = new Size(566, 144);
             labelExTroco.TabIndex = 40;
-            labelExTroco.Text = "TROCO:";
+            labelExTroco.Text = "TROCO: R$";
             // 
             // FormFinalizarVenda
             // 
@@ -236,9 +238,9 @@
             Controls.Add(pictureBox1);
             Controls.Add(buttonBuscarFormaPagamento);
             Controls.Add(label2);
-            Controls.Add(label4);
-            Controls.Add(label1);
-            Controls.Add(label9);
+            Controls.Add(labelTotal);
+            Controls.Add(labelValorPago);
+            Controls.Add(labelFormaPagamento);
             Controls.Add(textBoxTroco);
             Controls.Add(textBoxValorPago);
             Controls.Add(textBoxFormaPagamento);
@@ -259,10 +261,10 @@
         #endregion
 
         private Button buttonBuscarFormaPagamento;
-        private Label label9;
+        private Label labelFormaPagamento;
         private TextBox textBoxFormaPagamento;
         private TextBox textBoxValorPago;
-        private Label label1;
+        private Label labelValorPago;
         private TextBox textBoxTroco;
         private Label label2;
         private PictureBox pictureBox1;
@@ -272,7 +274,7 @@
         private BindingSource bindingSourceFinalizarVenda;
         private Label labelTroco;
         private TextBox textBoxTotal;
-        private Label label4;
+        private Label labelTotal;
         private Label labelExTroco;
     }
 }
