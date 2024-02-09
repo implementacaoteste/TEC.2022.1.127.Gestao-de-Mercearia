@@ -3,7 +3,7 @@ using Models;
 using System.Security.Cryptography;
 namespace UIGestaoMercearia
 {
-    
+
     public partial class FormInicializarVenda : Form
     {
         int id;
@@ -177,6 +177,11 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void labelNomeEmpresa_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

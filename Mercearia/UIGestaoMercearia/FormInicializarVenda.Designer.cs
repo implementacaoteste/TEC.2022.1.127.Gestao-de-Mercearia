@@ -30,7 +30,8 @@
         {
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
-            label1 = new Label();
+            labelNomeEmpresa = new Label();
+            labelPDV = new Label();
             labelNomeProduto = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
@@ -43,6 +44,11 @@
             label11 = new Label();
             buttonCancelar = new Button();
             dataGridView1 = new DataGridView();
+            itemVendaListBindingSource = new BindingSource(components);
+            bindingSourceVenda = new BindingSource(components);
+            label12 = new Label();
+            labelpreco = new Label();
+            pictureBox1 = new PictureBox();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             idVendaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -51,11 +57,6 @@
             subTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             produtoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nomeProdutoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            itemVendaListBindingSource = new BindingSource(components);
-            bindingSourceVenda = new BindingSource(components);
-            label12 = new Label();
-            labelpreco = new Label();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -69,24 +70,42 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.FromArgb(50, 153, 204);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(labelNomeEmpresa);
+            panel1.Controls.Add(labelPDV);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1466, 64);
             panel1.TabIndex = 0;
             // 
-            // label1
+            // labelNomeEmpresa
             // 
-            label1.Anchor = AnchorStyles.Top;
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(50, 153, 204);
-            label1.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(588, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(276, 44);
-            label1.TabIndex = 0;
-            label1.Text = "INICIAR VENDA";
+            labelNomeEmpresa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            labelNomeEmpresa.AutoSize = true;
+            labelNomeEmpresa.BackColor = Color.Transparent;
+            labelNomeEmpresa.Cursor = Cursors.No;
+            labelNomeEmpresa.FlatStyle = FlatStyle.Popup;
+            labelNomeEmpresa.Font = new Font("Bernard MT Condensed", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            labelNomeEmpresa.ForeColor = Color.White;
+            labelNomeEmpresa.Location = new Point(573, 21);
+            labelNomeEmpresa.Name = "labelNomeEmpresa";
+            labelNomeEmpresa.Size = new Size(322, 40);
+            labelNomeEmpresa.TabIndex = 6;
+            labelNomeEmpresa.Text = "MERCEARIA SUPER TOP";
+            labelNomeEmpresa.TextAlign = ContentAlignment.MiddleCenter;
+            labelNomeEmpresa.Click += labelNomeEmpresa_Click;
+            // 
+            // labelPDV
+            // 
+            labelPDV.Anchor = AnchorStyles.Top;
+            labelPDV.AutoSize = true;
+            labelPDV.BackColor = Color.FromArgb(50, 153, 204);
+            labelPDV.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPDV.ForeColor = Color.White;
+            labelPDV.Location = new Point(454, 0);
+            labelPDV.Name = "labelPDV";
+            labelPDV.Size = new Size(136, 67);
+            labelPDV.TabIndex = 0;
+            labelPDV.Text = "PDV";
             // 
             // labelNomeProduto
             // 
@@ -150,7 +169,7 @@
             buttonTroco.BackColor = Color.FromArgb(50, 153, 204);
             buttonTroco.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonTroco.ForeColor = SystemColors.Window;
-            buttonTroco.Location = new Point(1224, 654);
+            buttonTroco.Location = new Point(1224, 701);
             buttonTroco.Name = "buttonTroco";
             buttonTroco.Size = new Size(208, 53);
             buttonTroco.TabIndex = 22;
@@ -208,10 +227,10 @@
             // buttonCancelar
             // 
             buttonCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            buttonCancelar.BackColor = Color.Red;
+            buttonCancelar.BackColor = Color.Coral;
             buttonCancelar.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonHighlight;
-            buttonCancelar.Location = new Point(1013, 654);
+            buttonCancelar.Location = new Point(1013, 701);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(205, 53);
             buttonCancelar.TabIndex = 9;
@@ -234,14 +253,59 @@
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(973, 368);
+            dataGridView1.Size = new Size(973, 415);
             dataGridView1.TabIndex = 7;
+            // 
+            // itemVendaListBindingSource
+            // 
+            itemVendaListBindingSource.DataMember = "ItemVendaList";
+            itemVendaListBindingSource.DataSource = bindingSourceVenda;
+            // 
+            // bindingSourceVenda
+            // 
+            bindingSourceVenda.DataSource = typeof(Models.Venda);
+            // 
+            // label12
+            // 
+            label12.Anchor = AnchorStyles.Top;
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ImageAlign = ContentAlignment.TopCenter;
+            label12.Location = new Point(846, 149);
+            label12.Name = "label12";
+            label12.Size = new Size(200, 31);
+            label12.TabIndex = 18;
+            label12.Text = "PREÇO UNITÁRIO";
+            label12.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // labelpreco
+            // 
+            labelpreco.Anchor = AnchorStyles.Top;
+            labelpreco.AutoSize = true;
+            labelpreco.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            labelpreco.ImageAlign = ContentAlignment.TopCenter;
+            labelpreco.Location = new Point(908, 195);
+            labelpreco.Name = "labelpreco";
+            labelpreco.Size = new Size(73, 59);
+            labelpreco.TabIndex = 20;
+            labelpreco.Text = "...";
+            labelpreco.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Captura_de_tela_2024_01_31_0909582;
+            pictureBox1.Location = new Point(-516, 64);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(949, 1002);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 21;
+            pictureBox1.TabStop = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
             dataGridViewTextBoxColumn1.DataPropertyName = "Id";
             dataGridViewTextBoxColumn1.HeaderText = "Id";
-            dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dataGridViewTextBoxColumn1.MinimumWidth = 10;
             dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             dataGridViewTextBoxColumn1.ReadOnly = true;
             dataGridViewTextBoxColumn1.Width = 125;
@@ -309,51 +373,6 @@
             nomeProdutoDataGridViewTextBoxColumn.ReadOnly = true;
             nomeProdutoDataGridViewTextBoxColumn.Width = 200;
             // 
-            // itemVendaListBindingSource
-            // 
-            itemVendaListBindingSource.DataMember = "ItemVendaList";
-            itemVendaListBindingSource.DataSource = bindingSourceVenda;
-            // 
-            // bindingSourceVenda
-            // 
-            bindingSourceVenda.DataSource = typeof(Models.Venda);
-            // 
-            // label12
-            // 
-            label12.Anchor = AnchorStyles.Top;
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.ImageAlign = ContentAlignment.TopCenter;
-            label12.Location = new Point(846, 149);
-            label12.Name = "label12";
-            label12.Size = new Size(200, 31);
-            label12.TabIndex = 18;
-            label12.Text = "PREÇO UNITÁRIO";
-            label12.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labelpreco
-            // 
-            labelpreco.Anchor = AnchorStyles.Top;
-            labelpreco.AutoSize = true;
-            labelpreco.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            labelpreco.ImageAlign = ContentAlignment.TopCenter;
-            labelpreco.Location = new Point(908, 195);
-            labelpreco.Name = "labelpreco";
-            labelpreco.Size = new Size(73, 59);
-            labelpreco.TabIndex = 20;
-            labelpreco.Text = "...";
-            labelpreco.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.Captura_de_tela_2024_01_31_0909582;
-            pictureBox1.Location = new Point(-516, 64);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(949, 1002);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 21;
-            pictureBox1.TabStop = false;
-            // 
             // FormInicializarVenda
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -400,7 +419,6 @@
         #endregion
 
         private Panel panel1;
-        private Label label1;
         private Label labelNomeProduto;
         private Panel panel2;
         private Panel panel3;
@@ -427,6 +445,8 @@
         private Button button1;
         private PictureBox pictureBox1;
         private Button buttonTroco;
+        private Label labelNomeEmpresa;
+        private Label labelPDV;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn idVendaDataGridViewTextBoxColumn;
