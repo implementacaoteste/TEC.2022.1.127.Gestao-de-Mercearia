@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConfiguracao));
             panel1 = new Panel();
+            buttonCancelar = new Button();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            label7 = new Label();
             label10 = new Label();
             textBoxNovoNomeUsuario = new TextBox();
             label3 = new Label();
@@ -37,8 +41,6 @@
             textBoxNomeUsuario = new TextBox();
             label8 = new Label();
             label5 = new Label();
-            label7 = new Label();
-            buttonCancelar = new Button();
             buttonAlterarSenha = new Button();
             buttonAlterarNomeUsuario = new Button();
             textBoxSenha = new TextBox();
@@ -49,14 +51,20 @@
             textBoxConfirmacaoSenha = new TextBox();
             textBoxNovaSenha = new TextBox();
             pictureBoxLogo = new PictureBox();
+            panel5 = new Panel();
             panel2 = new Panel();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Left;
             panel1.BackColor = Color.FromArgb(50, 153, 204);
+            panel1.Controls.Add(buttonCancelar);
+            panel1.Controls.Add(panel3);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(textBoxNovoNomeUsuario);
             panel1.Controls.Add(label3);
@@ -64,8 +72,6 @@
             panel1.Controls.Add(textBoxNomeUsuario);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(buttonCancelar);
             panel1.Controls.Add(buttonAlterarSenha);
             panel1.Controls.Add(buttonAlterarNomeUsuario);
             panel1.Controls.Add(textBoxSenha);
@@ -76,11 +82,57 @@
             panel1.Controls.Add(textBoxConfirmacaoSenha);
             panel1.Controls.Add(textBoxNovaSenha);
             panel1.Controls.Add(pictureBoxLogo);
-            panel1.Dock = DockStyle.Fill;
+            panel1.Controls.Add(panel5);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(795, 566);
+            panel1.Size = new Size(459, 648);
             panel1.TabIndex = 0;
+            // 
+            // buttonCancelar
+            // 
+            buttonCancelar.Anchor = AnchorStyles.Right;
+            buttonCancelar.Location = new Point(310, 598);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(133, 29);
+            buttonCancelar.TabIndex = 14;
+            buttonCancelar.Text = "&Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(50, 153, 204);
+            panel3.BackgroundImageLayout = ImageLayout.Center;
+            panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Controls.Add(panel4);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(459, 58);
+            panel3.TabIndex = 31;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(50, 153, 204);
+            panel4.BackgroundImageLayout = ImageLayout.Center;
+            panel4.Controls.Add(label7);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(455, 58);
+            panel4.TabIndex = 32;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(78, 5);
+            label7.Name = "label7";
+            label7.Size = new Size(293, 44);
+            label7.TabIndex = 0;
+            label7.Text = "CONFIGURAÇÃO";
+            label7.Click += label7_Click_1;
             // 
             // label10
             // 
@@ -95,10 +147,10 @@
             // 
             // textBoxNovoNomeUsuario
             // 
-            textBoxNovoNomeUsuario.Anchor = AnchorStyles.Right;
+            textBoxNovoNomeUsuario.Anchor = AnchorStyles.Left;
             textBoxNovoNomeUsuario.Location = new Point(246, 473);
             textBoxNovoNomeUsuario.Name = "textBoxNovoNomeUsuario";
-            textBoxNovoNomeUsuario.Size = new Size(198, 27);
+            textBoxNovoNomeUsuario.Size = new Size(188, 27);
             textBoxNovoNomeUsuario.TabIndex = 10;
             // 
             // label3
@@ -125,10 +177,10 @@
             // 
             // textBoxNomeUsuario
             // 
-            textBoxNomeUsuario.Anchor = AnchorStyles.Right;
+            textBoxNomeUsuario.Anchor = AnchorStyles.Left;
             textBoxNomeUsuario.Location = new Point(246, 430);
             textBoxNomeUsuario.Name = "textBoxNomeUsuario";
-            textBoxNomeUsuario.Size = new Size(198, 27);
+            textBoxNomeUsuario.Size = new Size(188, 27);
             textBoxNomeUsuario.TabIndex = 12;
             // 
             // label8
@@ -153,32 +205,6 @@
             label5.TabIndex = 9;
             label5.Text = "NOME DE USUÁRIO ATUAL";
             // 
-            // label7
-            // 
-            label7.BackColor = Color.FromArgb(50, 153, 204);
-            label7.BorderStyle = BorderStyle.Fixed3D;
-            label7.Dock = DockStyle.Top;
-            label7.Enabled = false;
-            label7.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = SystemColors.ButtonFace;
-            label7.Location = new Point(0, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(795, 61);
-            label7.TabIndex = 1;
-            label7.Text = "CONFIGURAÇÃO";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // buttonCancelar
-            // 
-            buttonCancelar.Anchor = AnchorStyles.Right;
-            buttonCancelar.Location = new Point(617, 525);
-            buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(133, 29);
-            buttonCancelar.TabIndex = 14;
-            buttonCancelar.Text = "&Cancelar";
-            buttonCancelar.UseVisualStyleBackColor = true;
-            buttonCancelar.Click += buttonCancelar_Click;
-            // 
             // buttonAlterarSenha
             // 
             buttonAlterarSenha.Location = new Point(18, 309);
@@ -201,11 +227,11 @@
             // 
             // textBoxSenha
             // 
-            textBoxSenha.Anchor = AnchorStyles.Right;
+            textBoxSenha.Anchor = AnchorStyles.Left;
             textBoxSenha.Location = new Point(147, 182);
             textBoxSenha.Name = "textBoxSenha";
             textBoxSenha.PasswordChar = '*';
-            textBoxSenha.Size = new Size(223, 27);
+            textBoxSenha.Size = new Size(287, 27);
             textBoxSenha.TabIndex = 3;
             // 
             // label4
@@ -251,20 +277,20 @@
             // 
             // textBoxConfirmacaoSenha
             // 
-            textBoxConfirmacaoSenha.Anchor = AnchorStyles.Right;
+            textBoxConfirmacaoSenha.Anchor = AnchorStyles.Left;
             textBoxConfirmacaoSenha.Location = new Point(242, 273);
             textBoxConfirmacaoSenha.Name = "textBoxConfirmacaoSenha";
             textBoxConfirmacaoSenha.PasswordChar = '*';
-            textBoxConfirmacaoSenha.Size = new Size(128, 27);
+            textBoxConfirmacaoSenha.Size = new Size(192, 27);
             textBoxConfirmacaoSenha.TabIndex = 7;
             // 
             // textBoxNovaSenha
             // 
-            textBoxNovaSenha.Anchor = AnchorStyles.Right;
+            textBoxNovaSenha.Anchor = AnchorStyles.Left;
             textBoxNovaSenha.Location = new Point(147, 225);
             textBoxNovaSenha.Name = "textBoxNovaSenha";
             textBoxNovaSenha.PasswordChar = '*';
-            textBoxNovaSenha.Size = new Size(223, 27);
+            textBoxNovaSenha.Size = new Size(287, 27);
             textBoxNovaSenha.TabIndex = 5;
             // 
             // pictureBoxLogo
@@ -283,6 +309,18 @@
             pictureBoxLogo.TabIndex = 28;
             pictureBoxLogo.TabStop = false;
             // 
+            // panel5
+            // 
+            panel5.AutoScroll = true;
+            panel5.BackColor = Color.FromArgb(50, 153, 204);
+            panel5.BackgroundImageLayout = ImageLayout.Center;
+            panel5.BorderStyle = BorderStyle.Fixed3D;
+            panel5.ForeColor = Color.White;
+            panel5.Location = new Point(-9, 364);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(468, 216);
+            panel5.TabIndex = 32;
+            // 
             // panel2
             // 
             panel2.Location = new Point(0, 0);
@@ -294,7 +332,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(795, 566);
+            ClientSize = new Size(455, 639);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
@@ -307,6 +345,9 @@
             KeyDown += FormConfiguracao_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             ResumeLayout(false);
         }
@@ -323,7 +364,6 @@
         private Button buttonAlterarSenha;
         private Label label6;
         private TextBox textBoxConfirmacaoSenha;
-        private Label label7;
         private Label label8;
         private Label label9;
         private PictureBox pictureBoxLogo;
@@ -335,5 +375,9 @@
         private Panel panel2;
         private Button buttonCancelar;
         private Button buttonAlterarNomeUsuario;
+        private Panel panel3;
+        private Label label7;
+        private Panel panel4;
+        private Panel panel5;
     }
 }
