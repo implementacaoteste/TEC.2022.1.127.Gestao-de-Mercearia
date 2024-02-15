@@ -106,7 +106,7 @@ namespace UIGestaoMercearia
             total = ((Venda)bindingSourceVenda.Current).Total;
             labelSubtotal.Text = $"subtotal: {((Venda)bindingSourceVenda.Current).Total:F2}";
             textBoxCodigodeBarras.Text = "";
-            textBoxCodigodeBarras.Focus();
+            buttonFinalizarVenda.Focus();
         }
         private void textBoxQuantidade_KeyPress(object sender, KeyPressEventArgs e)
         {

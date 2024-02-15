@@ -62,14 +62,14 @@ namespace UIGestaoMercearia
             // 
             // labelFormaPagamento
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(7, 119);
-            label9.Name = "label9";
-            label9.Size = new Size(271, 24);
-            label9.TabIndex = 35;
-            label9.Text = "FORMA DE PAGAMENTO";
+            labelFormaPagamento.AutoSize = true;
+            labelFormaPagamento.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelFormaPagamento.ForeColor = Color.White;
+            labelFormaPagamento.Location = new Point(7, 119);
+            labelFormaPagamento.Name = "label9";
+            labelFormaPagamento.Size = new Size(271, 24);
+            labelFormaPagamento.TabIndex = 35;
+            labelFormaPagamento.Text = "FORMA DE PAGAMENTO";
             // 
             // textBoxFormaPagamento
             // 
@@ -95,16 +95,16 @@ namespace UIGestaoMercearia
             // 
             // labelValorPago
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(793, 117);
-            label1.Name = "label1";
-            label1.Size = new Size(153, 24);
-            label1.TabIndex = 35;
-            label1.Text = "VALOR PAGO";
-            label1.Visible = false;
+            labelValorPago.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            labelValorPago.AutoSize = true;
+            labelValorPago.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelValorPago.ForeColor = Color.White;
+            labelValorPago.Location = new Point(793, 117);
+            labelValorPago.Name = "label1";
+            labelValorPago.Size = new Size(153, 24);
+            labelValorPago.TabIndex = 35;
+            labelValorPago.Text = "VALOR PAGO";
+            labelValorPago.Visible = false;
             // 
             // textBoxTroco
             // 
@@ -200,16 +200,16 @@ namespace UIGestaoMercearia
             // 
             // labelTotal
             // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label4.AutoSize = true;
-            label4.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(611, 119);
-            label4.Name = "label4";
-            label4.Size = new Size(80, 24);
-            label4.TabIndex = 35;
-            label4.Text = "TOTAL";
-            label4.Visible = false;
+            labelTotal.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            labelTotal.AutoSize = true;
+            labelTotal.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTotal.ForeColor = Color.White;
+            labelTotal.Location = new Point(611, 119);
+            labelTotal.Name = "label4";
+            labelTotal.Size = new Size(80, 24);
+            labelTotal.TabIndex = 35;
+            labelTotal.Text = "TOTAL";
+            labelTotal.Visible = false;
             // 
             // labelExTroco
             // 
