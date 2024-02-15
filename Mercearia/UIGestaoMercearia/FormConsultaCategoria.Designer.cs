@@ -43,12 +43,12 @@
             buttonInserir = new Button();
             buttonAlterar = new Button();
             dataGridViewCategoria = new DataGridView();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             bindingSourceCategoria = new BindingSource(components);
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
             panel3 = new Panel();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCategoria).BeginInit();
@@ -211,7 +211,7 @@
             dataGridViewCategoria.AutoGenerateColumns = false;
             dataGridViewCategoria.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridViewCategoria.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCategoria.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2 });
+            dataGridViewCategoria.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn1 });
             dataGridViewCategoria.DataSource = bindingSourceCategoria;
             dataGridViewCategoria.Location = new Point(12, 151);
             dataGridViewCategoria.Name = "dataGridViewCategoria";
@@ -221,24 +221,6 @@
             dataGridViewCategoria.Size = new Size(553, 387);
             dataGridViewCategoria.TabIndex = 7;
             dataGridViewCategoria.DoubleClick += dataGridViewCategoria_DoubleClick;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            dataGridViewTextBoxColumn1.HeaderText = "Id";
-            dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.ReadOnly = true;
-            dataGridViewTextBoxColumn1.Width = 180;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
-            dataGridViewTextBoxColumn2.HeaderText = "Nome";
-            dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.ReadOnly = true;
-            dataGridViewTextBoxColumn2.Width = 350;
             // 
             // bindingSourceCategoria
             // 
@@ -279,6 +261,24 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(579, 50);
             panel3.TabIndex = 9;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.DataPropertyName = "Nome";
+            dataGridViewTextBoxColumn2.HeaderText = "Nome";
+            dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
+            dataGridViewTextBoxColumn2.Width = 350;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            dataGridViewTextBoxColumn1.HeaderText = "Id";
+            dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            dataGridViewTextBoxColumn1.Width = 180;
             // 
             // FormConsultaCategoria
             // 
@@ -334,9 +334,9 @@
         private Panel panel1;
         private Label label4;
         private Label label3;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private Panel panel3;
         private Label label7;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
     }
 }

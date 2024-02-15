@@ -38,12 +38,12 @@
             buttonInserir = new Button();
             buttonAlterar = new Button();
             dataGridViewMarca = new DataGridView();
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             bindingSourceMarca = new BindingSource(components);
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
             label3 = new Label();
+            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMarca).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceMarca).BeginInit();
             SuspendLayout();
@@ -143,7 +143,7 @@
             dataGridViewMarca.AutoGenerateColumns = false;
             dataGridViewMarca.BackgroundColor = SystemColors.ButtonFace;
             dataGridViewMarca.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewMarca.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, nomeDataGridViewTextBoxColumn });
+            dataGridViewMarca.Columns.AddRange(new DataGridViewColumn[] { nomeDataGridViewTextBoxColumn, idDataGridViewTextBoxColumn });
             dataGridViewMarca.DataSource = bindingSourceMarca;
             dataGridViewMarca.Location = new Point(13, 144);
             dataGridViewMarca.Name = "dataGridViewMarca";
@@ -153,24 +153,6 @@
             dataGridViewMarca.Size = new Size(596, 380);
             dataGridViewMarca.TabIndex = 10;
             dataGridViewMarca.DoubleClick += dataGridViewMarca_DoubleClick;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.ReadOnly = true;
-            idDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            nomeDataGridViewTextBoxColumn.Width = 350;
             // 
             // bindingSourceMarca
             // 
@@ -213,6 +195,24 @@
             label3.TabIndex = 11;
             label3.Text = "GERENCIAMENTO DE MARCAS";
             label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            nomeDataGridViewTextBoxColumn.Width = 400;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.ReadOnly = true;
+            idDataGridViewTextBoxColumn.Width = 125;
             // 
             // FormConsultaMarca
             // 
@@ -257,12 +257,12 @@
         private ComboBox comboBoxBuscarPor;
         private DataGridView dataGridViewMarca;
         private BindingSource bindingSourceMarca;
-        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private Label label2;
         private Label label1;
         private Button buttonSelecionar;
         private Button buttonCancelar;
         private Label label3;
+        private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
     }
 }
