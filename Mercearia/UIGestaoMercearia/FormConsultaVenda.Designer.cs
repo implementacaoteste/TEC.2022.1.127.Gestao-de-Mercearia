@@ -47,8 +47,8 @@
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
             vendaBindingSource = new BindingSource(components);
-            Total = new DataGridViewTextBoxColumn();
             DataVenda = new DataGridViewTextBoxColumn();
+            Total = new DataGridViewTextBoxColumn();
             IdFormaPagamento = new DataGridViewTextBoxColumn();
             IdUsuario = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
@@ -209,7 +209,7 @@
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Total, DataVenda, IdFormaPagamento, IdUsuario, dataGridViewTextBoxColumn1 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { DataVenda, Total, IdFormaPagamento, IdUsuario, dataGridViewTextBoxColumn1 });
             dataGridView1.DataSource = bindingSourceVenda;
             dataGridView1.Location = new Point(0, 157);
             dataGridView1.Name = "dataGridView1";
@@ -249,15 +249,6 @@
             // 
             vendaBindingSource.DataSource = typeof(Models.Venda);
             // 
-            // Total
-            // 
-            Total.DataPropertyName = "Total";
-            Total.HeaderText = "Total";
-            Total.MinimumWidth = 6;
-            Total.Name = "Total";
-            Total.ReadOnly = true;
-            Total.Width = 250;
-            // 
             // DataVenda
             // 
             DataVenda.DataPropertyName = "DataVenda";
@@ -266,6 +257,15 @@
             DataVenda.Name = "DataVenda";
             DataVenda.ReadOnly = true;
             DataVenda.Width = 250;
+            // 
+            // Total
+            // 
+            Total.DataPropertyName = "Total";
+            Total.HeaderText = "Total";
+            Total.MinimumWidth = 6;
+            Total.Name = "Total";
+            Total.ReadOnly = true;
+            Total.Width = 250;
             // 
             // IdFormaPagamento
             // 
@@ -341,8 +341,8 @@
         private BindingSource bindingSourceVenda;
         private BindingSource vendaBindingSource;
         private PictureBox pictureBox1;
-        private DataGridViewTextBoxColumn Total;
         private DataGridViewTextBoxColumn DataVenda;
+        private DataGridViewTextBoxColumn Total;
         private DataGridViewTextBoxColumn IdFormaPagamento;
         private DataGridViewTextBoxColumn IdUsuario;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
