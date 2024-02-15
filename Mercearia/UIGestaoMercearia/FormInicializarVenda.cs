@@ -165,9 +165,11 @@ namespace UIGestaoMercearia
                             using (FormFinalizarVenda formFinalizarVenda = new FormFinalizarVenda(formaPagamento, ((Venda)bindingSourceVenda.Current).Total))
                             {
                                 formFinalizarVenda.ShowDialog();
+                                
                             }
                         }
                     }
+                    
                 }
                 ((Venda)bindingSourceVenda.Current).IdFormaPagamento = formaPagamento.Id;
                 new VendaBLL().Inserir((Venda)bindingSourceVenda.Current);

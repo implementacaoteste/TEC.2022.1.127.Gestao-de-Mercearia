@@ -75,7 +75,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1466, 64);
-            panel1.TabIndex = 0;
+            panel1.TabIndex = 2;
             // 
             // labelNomeEmpresa
             // 
@@ -86,10 +86,10 @@
             labelNomeEmpresa.FlatStyle = FlatStyle.Popup;
             labelNomeEmpresa.Font = new Font("Bernard MT Condensed", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             labelNomeEmpresa.ForeColor = Color.White;
-            labelNomeEmpresa.Location = new Point(573, 21);
+            labelNomeEmpresa.Location = new Point(596, 21);
             labelNomeEmpresa.Name = "labelNomeEmpresa";
             labelNomeEmpresa.Size = new Size(322, 40);
-            labelNomeEmpresa.TabIndex = 6;
+            labelNomeEmpresa.TabIndex = 0;
             labelNomeEmpresa.Text = "MERCEARIA SUPER TOP";
             labelNomeEmpresa.TextAlign = ContentAlignment.MiddleCenter;
             labelNomeEmpresa.Click += labelNomeEmpresa_Click;
@@ -101,10 +101,10 @@
             labelPDV.BackColor = Color.FromArgb(50, 153, 204);
             labelPDV.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
             labelPDV.ForeColor = Color.White;
-            labelPDV.Location = new Point(454, 0);
+            labelPDV.Location = new Point(459, 0);
             labelPDV.Name = "labelPDV";
             labelPDV.Size = new Size(136, 67);
-            labelPDV.TabIndex = 0;
+            labelPDV.TabIndex = 1;
             labelPDV.Text = "PDV";
             // 
             // labelNomeProduto
@@ -115,7 +115,7 @@
             labelNomeProduto.Location = new Point(356, 10);
             labelNomeProduto.Name = "labelNomeProduto";
             labelNomeProduto.Size = new Size(377, 47);
-            labelNomeProduto.TabIndex = 1;
+            labelNomeProduto.TabIndex = 0;
             labelNomeProduto.Text = "Nome do Produto";
             // 
             // panel2
@@ -185,7 +185,7 @@
             label6.Location = new Point(1240, 149);
             label6.Name = "label6";
             label6.Size = new Size(163, 31);
-            label6.TabIndex = 5;
+            label6.TabIndex = 3;
             label6.Text = "QUANTIDADE";
             // 
             // textBoxQuantidade
@@ -198,7 +198,7 @@
             textBoxQuantidade.Location = new Point(1224, 183);
             textBoxQuantidade.Name = "textBoxQuantidade";
             textBoxQuantidade.Size = new Size(179, 80);
-            textBoxQuantidade.TabIndex = 15;
+            textBoxQuantidade.TabIndex = 10;
             textBoxQuantidade.Text = "1";
             textBoxQuantidade.KeyDown += textBoxQuantidade_KeyDown;
             textBoxQuantidade.KeyPress += textBoxQuantidade_KeyPress;
@@ -210,7 +210,7 @@
             textBoxCodigodeBarras.Location = new Point(454, 195);
             textBoxCodigodeBarras.Name = "textBoxCodigodeBarras";
             textBoxCodigodeBarras.Size = new Size(298, 65);
-            textBoxCodigodeBarras.TabIndex = 19;
+            textBoxCodigodeBarras.TabIndex = 11;
             textBoxCodigodeBarras.KeyDown += textBoxCodigodeBarras_KeyDown;
             textBoxCodigodeBarras.KeyPress += textBoxCodigodeBarras_KeyPress;
             // 
@@ -221,7 +221,7 @@
             label11.Location = new Point(454, 149);
             label11.Name = "label11";
             label11.Size = new Size(219, 31);
-            label11.TabIndex = 13;
+            label11.TabIndex = 3;
             label11.Text = "CÓDIGO DE BARRA";
             // 
             // buttonCancelar
@@ -254,7 +254,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(973, 415);
-            dataGridView1.TabIndex = 7;
+            dataGridView1.TabIndex = 11;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -346,7 +346,7 @@
             label12.Location = new Point(846, 149);
             label12.Name = "label12";
             label12.Size = new Size(200, 31);
-            label12.TabIndex = 18;
+            label12.TabIndex = 2;
             label12.Text = "PREÇO UNITÁRIO";
             label12.TextAlign = ContentAlignment.TopCenter;
             // 
@@ -359,7 +359,7 @@
             labelpreco.Location = new Point(908, 195);
             labelpreco.Name = "labelpreco";
             labelpreco.Size = new Size(73, 59);
-            labelpreco.TabIndex = 20;
+            labelpreco.TabIndex = 0;
             labelpreco.Text = "...";
             labelpreco.TextAlign = ContentAlignment.TopCenter;
             // 

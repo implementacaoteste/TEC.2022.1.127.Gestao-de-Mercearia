@@ -29,14 +29,11 @@ namespace UIGestaoMercearia
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFinalizarVenda));
             buttonBuscarFormaPagamento = new Button();
             labelFormaPagamento = new Label();
             textBoxFormaPagamento = new TextBox();
             textBoxValorPago = new TextBox();
             labelValorPago = new Label();
-            textBoxTroco = new TextBox();
-            label2 = new Label();
             pictureBox1 = new PictureBox();
             buttonCancelar = new Button();
             buttonOk = new Button();
@@ -53,10 +50,10 @@ namespace UIGestaoMercearia
             // buttonBuscarFormaPagamento
             // 
             buttonBuscarFormaPagamento.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            buttonBuscarFormaPagamento.Location = new Point(524, 147);
+            buttonBuscarFormaPagamento.Location = new Point(542, 149);
             buttonBuscarFormaPagamento.Name = "buttonBuscarFormaPagamento";
             buttonBuscarFormaPagamento.Size = new Size(54, 43);
-            buttonBuscarFormaPagamento.TabIndex = 36;
+            buttonBuscarFormaPagamento.TabIndex = 3;
             buttonBuscarFormaPagamento.Text = "...";
             buttonBuscarFormaPagamento.UseVisualStyleBackColor = true;
             // 
@@ -65,10 +62,10 @@ namespace UIGestaoMercearia
             labelFormaPagamento.AutoSize = true;
             labelFormaPagamento.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelFormaPagamento.ForeColor = Color.White;
-            labelFormaPagamento.Location = new Point(7, 119);
-            labelFormaPagamento.Name = "label9";
+            labelFormaPagamento.Location = new Point(25, 122);
+            labelFormaPagamento.Name = "labelFormaPagamento";
             labelFormaPagamento.Size = new Size(271, 24);
-            labelFormaPagamento.TabIndex = 35;
+            labelFormaPagamento.TabIndex = 5;
             labelFormaPagamento.Text = "FORMA DE PAGAMENTO";
             // 
             // textBoxFormaPagamento
@@ -76,20 +73,20 @@ namespace UIGestaoMercearia
             textBoxFormaPagamento.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxFormaPagamento.Cursor = Cursors.IBeam;
             textBoxFormaPagamento.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxFormaPagamento.Location = new Point(7, 149);
+            textBoxFormaPagamento.Location = new Point(25, 149);
             textBoxFormaPagamento.Name = "textBoxFormaPagamento";
             textBoxFormaPagamento.Size = new Size(511, 43);
-            textBoxFormaPagamento.TabIndex = 34;
+            textBoxFormaPagamento.TabIndex = 5;
             // 
             // textBoxValorPago
             // 
             textBoxValorPago.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBoxValorPago.Cursor = Cursors.IBeam;
             textBoxValorPago.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxValorPago.Location = new Point(793, 147);
+            textBoxValorPago.Location = new Point(894, 149);
             textBoxValorPago.Name = "textBoxValorPago";
-            textBoxValorPago.Size = new Size(189, 43);
-            textBoxValorPago.TabIndex = 34;
+            textBoxValorPago.Size = new Size(223, 43);
+            textBoxValorPago.TabIndex = 1;
             textBoxValorPago.Visible = false;
             textBoxValorPago.KeyPress += textBoxValorPago_KeyPress;
             // 
@@ -99,36 +96,12 @@ namespace UIGestaoMercearia
             labelValorPago.AutoSize = true;
             labelValorPago.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelValorPago.ForeColor = Color.White;
-            labelValorPago.Location = new Point(793, 117);
-            labelValorPago.Name = "label1";
+            labelValorPago.Location = new Point(894, 122);
+            labelValorPago.Name = "labelValorPago";
             labelValorPago.Size = new Size(153, 24);
-            labelValorPago.TabIndex = 35;
+            labelValorPago.TabIndex = 2;
             labelValorPago.Text = "VALOR PAGO";
             labelValorPago.Visible = false;
-            // 
-            // textBoxTroco
-            // 
-            textBoxTroco.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            textBoxTroco.Cursor = Cursors.IBeam;
-            textBoxTroco.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxTroco.Location = new Point(1002, 147);
-            textBoxTroco.Name = "textBoxTroco";
-            textBoxTroco.Size = new Size(134, 43);
-            textBoxTroco.TabIndex = 34;
-            textBoxTroco.Visible = false;
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(1002, 117);
-            label2.Name = "label2";
-            label2.Size = new Size(86, 24);
-            label2.TabIndex = 35;
-            label2.Text = "TROCO";
-            label2.Visible = false;
             // 
             // pictureBox1
             // 
@@ -185,7 +158,7 @@ namespace UIGestaoMercearia
             labelTroco.ForeColor = SystemColors.ButtonHighlight;
             labelTroco.Location = new Point(656, 401);
             labelTroco.Name = "labelTroco";
-            labelTroco.Size = new Size(349, 144);
+            labelTroco.Size = new Size(139, 144);
             labelTroco.TabIndex = 40;
             labelTroco.Text = "0";
             // 
@@ -193,10 +166,10 @@ namespace UIGestaoMercearia
             // 
             textBoxTotal.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBoxTotal.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxTotal.Location = new Point(598, 147);
+            textBoxTotal.Location = new Point(623, 149);
             textBoxTotal.Name = "textBoxTotal";
-            textBoxTotal.Size = new Size(176, 43);
-            textBoxTotal.TabIndex = 41;
+            textBoxTotal.Size = new Size(237, 43);
+            textBoxTotal.TabIndex = 7;
             // 
             // labelTotal
             // 
@@ -204,10 +177,10 @@ namespace UIGestaoMercearia
             labelTotal.AutoSize = true;
             labelTotal.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelTotal.ForeColor = Color.White;
-            labelTotal.Location = new Point(611, 119);
-            labelTotal.Name = "label4";
+            labelTotal.Location = new Point(623, 122);
+            labelTotal.Name = "labelTotal";
             labelTotal.Size = new Size(80, 24);
-            labelTotal.TabIndex = 35;
+            labelTotal.TabIndex = 1;
             labelTotal.Text = "TOTAL";
             labelTotal.Visible = false;
             // 
@@ -219,7 +192,7 @@ namespace UIGestaoMercearia
             labelExTroco.ForeColor = SystemColors.ButtonHighlight;
             labelExTroco.Location = new Point(137, 401);
             labelExTroco.Name = "labelExTroco";
-            labelExTroco.Size = new Size(566, 144);
+            labelExTroco.Size = new Size(776, 144);
             labelExTroco.TabIndex = 40;
             labelExTroco.Text = "TROCO: R$";
             // 
@@ -237,11 +210,9 @@ namespace UIGestaoMercearia
             Controls.Add(buttonCancelar);
             Controls.Add(pictureBox1);
             Controls.Add(buttonBuscarFormaPagamento);
-            Controls.Add(label2);
             Controls.Add(labelTotal);
             Controls.Add(labelValorPago);
             Controls.Add(labelFormaPagamento);
-            Controls.Add(textBoxTroco);
             Controls.Add(textBoxValorPago);
             Controls.Add(textBoxFormaPagamento);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -265,8 +236,6 @@ namespace UIGestaoMercearia
         private TextBox textBoxFormaPagamento;
         private TextBox textBoxValorPago;
         private Label labelValorPago;
-        private TextBox textBoxTroco;
-        private Label label2;
         private PictureBox pictureBox1;
         private Button buttonCancelar;
         private Button buttonOk;

@@ -28,8 +28,6 @@ namespace UIGestaoMercearia
                 //textBoxValorPago.Focus();
                 textBoxTotal.Visible = true;
                 textBoxTotal.Text = _totalVenda.ToString();
-                textBoxTroco.Visible = true;
-                label2.Visible = true;
                 labelValorPago.Visible = true;
                 labelTotal.Visible = true;
                 labelFormaPagamento.Visible = true;
@@ -39,7 +37,6 @@ namespace UIGestaoMercearia
             else if (_formaPagamento.Tipo.ToUpper() == "PIX")
             {
                 pictureBox1.Visible = true;
-                textBoxTroco.Visible = false;
                 labelFormaPagamento.Visible = true;
                 textBoxFormaPagamento.Text = _formaPagamento.Tipo;
                 textBoxTotal.Visible = true;
@@ -63,7 +60,6 @@ namespace UIGestaoMercearia
                     e.Handled = true;
                     AdicionarTroco();
                 }
-                textBoxValorPago.Focus();
             }
         }
         private void AdicionarTroco()
@@ -73,18 +69,9 @@ namespace UIGestaoMercearia
             {
 
                 troco = Convert.ToDouble(textBoxValorPago.Text) - totalVenda;
-                textBoxTroco.Text = troco.ToString();
                 labelTroco.Text = troco.ToString();
             }
-        }
-        private void textBoxTroco_KeyDown(object sender, KeyEventArgs e)
-        {
-            textBoxValorPago.Focus();
-            if (e.KeyCode == Keys.Enter && !string.IsNullOrEmpty(textBoxTroco.Text))
-            {
-                AdicionarTroco();
-            }
-
+            buttonOk.Focus();
         }
         private void buttonBuscarFormaPagamento_Click(object sender, EventArgs e)
         {
