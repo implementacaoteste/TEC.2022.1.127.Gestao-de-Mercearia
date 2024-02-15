@@ -33,12 +33,6 @@
             buttonCancelar = new Button();
             buttonSelecionar = new Button();
             dataGridViewProduto = new DataGridView();
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            Quantidade = new DataGridViewTextBoxColumn();
-            precoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            descricaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            codigoDeBarraDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             bindingSourceProduto = new BindingSource(components);
             comboBoxBuscarPor = new ComboBox();
             textBoxProduto = new TextBox();
@@ -50,6 +44,12 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            descricaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            precoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            codigoDeBarraDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            Quantidade = new DataGridViewTextBoxColumn();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewProduto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceProduto).BeginInit();
@@ -64,7 +64,7 @@
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(0, 472);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1016, 81);
+            panel1.Size = new Size(982, 81);
             panel1.TabIndex = 0;
             // 
             // buttonCancelar
@@ -95,7 +95,7 @@
             dataGridViewProduto.AutoGenerateColumns = false;
             dataGridViewProduto.BackgroundColor = SystemColors.ButtonFace;
             dataGridViewProduto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewProduto.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, nomeDataGridViewTextBoxColumn, Quantidade, precoDataGridViewTextBoxColumn, descricaoDataGridViewTextBoxColumn, codigoDeBarraDataGridViewTextBoxColumn });
+            dataGridViewProduto.Columns.AddRange(new DataGridViewColumn[] { nomeDataGridViewTextBoxColumn, descricaoDataGridViewTextBoxColumn, precoDataGridViewTextBoxColumn, codigoDeBarraDataGridViewTextBoxColumn, Quantidade, idDataGridViewTextBoxColumn });
             dataGridViewProduto.DataSource = bindingSourceProduto;
             dataGridViewProduto.Location = new Point(3, 132);
             dataGridViewProduto.Name = "dataGridViewProduto";
@@ -105,60 +105,6 @@
             dataGridViewProduto.Size = new Size(976, 334);
             dataGridViewProduto.TabIndex = 1;
             dataGridViewProduto.DoubleClick += dataGridViewProduto_DoubleClick;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.ReadOnly = true;
-            idDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            nomeDataGridViewTextBoxColumn.Width = 275;
-            // 
-            // Quantidade
-            // 
-            Quantidade.DataPropertyName = "Quantidade";
-            Quantidade.HeaderText = "Quantidade";
-            Quantidade.MinimumWidth = 6;
-            Quantidade.Name = "Quantidade";
-            Quantidade.ReadOnly = true;
-            Quantidade.Width = 125;
-            // 
-            // precoDataGridViewTextBoxColumn
-            // 
-            precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
-            precoDataGridViewTextBoxColumn.HeaderText = "Preco";
-            precoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
-            precoDataGridViewTextBoxColumn.ReadOnly = true;
-            precoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // descricaoDataGridViewTextBoxColumn
-            // 
-            descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
-            descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
-            descricaoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
-            descricaoDataGridViewTextBoxColumn.ReadOnly = true;
-            descricaoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // codigoDeBarraDataGridViewTextBoxColumn
-            // 
-            codigoDeBarraDataGridViewTextBoxColumn.DataPropertyName = "CodigoDeBarra";
-            codigoDeBarraDataGridViewTextBoxColumn.HeaderText = "CodigoDeBarra";
-            codigoDeBarraDataGridViewTextBoxColumn.MinimumWidth = 6;
-            codigoDeBarraDataGridViewTextBoxColumn.Name = "codigoDeBarraDataGridViewTextBoxColumn";
-            codigoDeBarraDataGridViewTextBoxColumn.ReadOnly = true;
-            codigoDeBarraDataGridViewTextBoxColumn.Width = 150;
             // 
             // bindingSourceProduto
             // 
@@ -236,7 +182,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1016, 138);
+            panel2.Size = new Size(982, 138);
             panel2.TabIndex = 2;
             // 
             // label3
@@ -245,7 +191,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(164, 87);
+            label3.Location = new Point(130, 87);
             label3.Name = "label3";
             label3.Size = new Size(201, 18);
             label3.TabIndex = 9;
@@ -271,11 +217,65 @@
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(0, 0);
+            label1.Location = new Point(-17, 0);
             label1.Name = "label1";
             label1.Size = new Size(987, 46);
             label1.TabIndex = 3;
             label1.Text = "                     CONSULTA DE PRODUTO                        ";
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            nomeDataGridViewTextBoxColumn.Width = 275;
+            // 
+            // descricaoDataGridViewTextBoxColumn
+            // 
+            descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
+            descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
+            descricaoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
+            descricaoDataGridViewTextBoxColumn.ReadOnly = true;
+            descricaoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // precoDataGridViewTextBoxColumn
+            // 
+            precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
+            precoDataGridViewTextBoxColumn.HeaderText = "Preco";
+            precoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
+            precoDataGridViewTextBoxColumn.ReadOnly = true;
+            precoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // codigoDeBarraDataGridViewTextBoxColumn
+            // 
+            codigoDeBarraDataGridViewTextBoxColumn.DataPropertyName = "CodigoDeBarra";
+            codigoDeBarraDataGridViewTextBoxColumn.HeaderText = "CodigoDeBarra";
+            codigoDeBarraDataGridViewTextBoxColumn.MinimumWidth = 6;
+            codigoDeBarraDataGridViewTextBoxColumn.Name = "codigoDeBarraDataGridViewTextBoxColumn";
+            codigoDeBarraDataGridViewTextBoxColumn.ReadOnly = true;
+            codigoDeBarraDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // Quantidade
+            // 
+            Quantidade.DataPropertyName = "Quantidade";
+            Quantidade.HeaderText = "Quantidade";
+            Quantidade.MinimumWidth = 6;
+            Quantidade.Name = "Quantidade";
+            Quantidade.ReadOnly = true;
+            Quantidade.Width = 125;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.ReadOnly = true;
+            idDataGridViewTextBoxColumn.Width = 125;
             // 
             // FormConsultaProduto
             // 
@@ -319,14 +319,14 @@
         private Panel panel2;
         private Button buttonCancelar;
         private Button buttonSelecionar;
-        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn Quantidade;
-        private DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn codigoDeBarraDataGridViewTextBoxColumn;
         private Label label1;
         private Label label2;
         private Label label3;
+        private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn codigoDeBarraDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Quantidade;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
     }
 }
