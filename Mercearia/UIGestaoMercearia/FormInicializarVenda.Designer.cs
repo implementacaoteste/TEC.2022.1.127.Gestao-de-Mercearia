@@ -30,10 +30,10 @@
         {
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
-            labelNomeEmpresa = new Label();
             labelPDV = new Label();
             labelNomeProduto = new Label();
             panel2 = new Panel();
+            pictureBoxLogo = new PictureBox();
             panel3 = new Panel();
             label4 = new Label();
             labelSubtotal = new Label();
@@ -59,6 +59,7 @@
             pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)itemVendaListBindingSource).BeginInit();
@@ -70,29 +71,11 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.FromArgb(50, 153, 204);
-            panel1.Controls.Add(labelNomeEmpresa);
             panel1.Controls.Add(labelPDV);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1466, 64);
             panel1.TabIndex = 2;
-            // 
-            // labelNomeEmpresa
-            // 
-            labelNomeEmpresa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            labelNomeEmpresa.AutoSize = true;
-            labelNomeEmpresa.BackColor = Color.Transparent;
-            labelNomeEmpresa.Cursor = Cursors.No;
-            labelNomeEmpresa.FlatStyle = FlatStyle.Popup;
-            labelNomeEmpresa.Font = new Font("Bernard MT Condensed", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            labelNomeEmpresa.ForeColor = Color.White;
-            labelNomeEmpresa.Location = new Point(596, 21);
-            labelNomeEmpresa.Name = "labelNomeEmpresa";
-            labelNomeEmpresa.Size = new Size(322, 40);
-            labelNomeEmpresa.TabIndex = 0;
-            labelNomeEmpresa.Text = "MERCEARIA SUPER TOP";
-            labelNomeEmpresa.TextAlign = ContentAlignment.MiddleCenter;
-            labelNomeEmpresa.Click += labelNomeEmpresa_Click;
             // 
             // labelPDV
             // 
@@ -101,7 +84,7 @@
             labelPDV.BackColor = Color.FromArgb(50, 153, 204);
             labelPDV.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
             labelPDV.ForeColor = Color.White;
-            labelPDV.Location = new Point(459, 0);
+            labelPDV.Location = new Point(677, 0);
             labelPDV.Name = "labelPDV";
             labelPDV.Size = new Size(136, 67);
             labelPDV.TabIndex = 1;
@@ -112,7 +95,7 @@
             labelNomeProduto.Anchor = AnchorStyles.Top;
             labelNomeProduto.AutoSize = true;
             labelNomeProduto.Font = new Font("Stencil", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            labelNomeProduto.Location = new Point(356, 10);
+            labelNomeProduto.Location = new Point(356, 6);
             labelNomeProduto.Name = "labelNomeProduto";
             labelNomeProduto.Size = new Size(377, 47);
             labelNomeProduto.TabIndex = 0;
@@ -123,11 +106,29 @@
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel2.BackColor = Color.White;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(pictureBoxLogo);
             panel2.Controls.Add(labelNomeProduto);
             panel2.Location = new Point(399, 64);
             panel2.Name = "panel2";
             panel2.Size = new Size(1067, 73);
             panel2.TabIndex = 1;
+            // 
+            // pictureBoxLogo
+            // 
+            pictureBoxLogo.AccessibleRole = AccessibleRole.MenuBar;
+            pictureBoxLogo.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBoxLogo.BackColor = Color.Transparent;
+            pictureBoxLogo.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBoxLogo.Cursor = Cursors.No;
+            pictureBoxLogo.ErrorImage = null;
+            pictureBoxLogo.Image = Properties.Resources.shopping_cart_icon_illustration_free_vector2;
+            pictureBoxLogo.InitialImage = null;
+            pictureBoxLogo.Location = new Point(891, -8);
+            pictureBoxLogo.Name = "pictureBoxLogo";
+            pictureBoxLogo.Size = new Size(162, 79);
+            pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxLogo.TabIndex = 3;
+            pictureBoxLogo.TabStop = false;
             // 
             // panel3
             // 
@@ -406,6 +407,7 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -445,7 +447,6 @@
         private Button button1;
         private PictureBox pictureBox1;
         private Button buttonFinalizarVenda;
-        private Label labelNomeEmpresa;
         private Label labelPDV;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -455,5 +456,6 @@
         private DataGridViewTextBoxColumn subTotalDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn produtoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeProdutoDataGridViewTextBoxColumn;
+        private PictureBox pictureBoxLogo;
     }
 }

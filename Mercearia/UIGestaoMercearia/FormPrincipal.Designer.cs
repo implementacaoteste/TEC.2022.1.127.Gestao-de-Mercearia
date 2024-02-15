@@ -82,7 +82,7 @@ namespace UIGestaoMercearia
             label1.Location = new Point(400, 17);
             label1.Name = "label1";
             label1.Size = new Size(285, 40);
-            label1.TabIndex = 1;
+            label1.TabIndex = 0;
             label1.Text = "CAIXA ABERTO";
             label1.TextAlign = ContentAlignment.TopCenter;
             label1.Click += label1_Click;
@@ -98,7 +98,7 @@ namespace UIGestaoMercearia
             MENU.Location = new Point(91, 14);
             MENU.Name = "MENU";
             MENU.Size = new Size(282, 50);
-            MENU.TabIndex = 2;
+            MENU.TabIndex = 1;
             MENU.Text = "MENU";
             MENU.TextAlign = ContentAlignment.TopCenter;
             // 
@@ -127,7 +127,7 @@ namespace UIGestaoMercearia
             buttonCliente.Location = new Point(15, 194);
             buttonCliente.Name = "buttonCliente";
             buttonCliente.Size = new Size(406, 68);
-            buttonCliente.TabIndex = 3;
+            buttonCliente.TabIndex = 4;
             buttonCliente.Text = "Clientes";
             buttonCliente.UseVisualStyleBackColor = false;
             buttonCliente.Click += buttonCliente_Click;
@@ -154,7 +154,7 @@ namespace UIGestaoMercearia
             panel2.Location = new Point(1125, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(433, 1055);
-            panel2.TabIndex = 15;
+            panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
             // 
             // pictureBoxEstatistica
@@ -207,7 +207,7 @@ namespace UIGestaoMercearia
             panel5.Location = new Point(12, 82);
             panel5.Name = "panel5";
             panel5.Size = new Size(409, 10);
-            panel5.TabIndex = 17;
+            panel5.TabIndex = 2;
             // 
             // buttonPermissao
             // 
@@ -234,7 +234,7 @@ namespace UIGestaoMercearia
             buttonProdutos.Location = new Point(15, 119);
             buttonProdutos.Name = "buttonProdutos";
             buttonProdutos.Size = new Size(406, 69);
-            buttonProdutos.TabIndex = 8;
+            buttonProdutos.TabIndex = 3;
             buttonProdutos.Text = "Produtos";
             buttonProdutos.UseVisualStyleBackColor = false;
             buttonProdutos.Click += buttonProdutos_Click;
@@ -249,7 +249,7 @@ namespace UIGestaoMercearia
             buttonFuncionarios.Location = new Point(15, 268);
             buttonFuncionarios.Name = "buttonFuncionarios";
             buttonFuncionarios.Size = new Size(406, 66);
-            buttonFuncionarios.TabIndex = 10;
+            buttonFuncionarios.TabIndex = 5;
             buttonFuncionarios.Text = "Funcionários";
             buttonFuncionarios.UseVisualStyleBackColor = false;
             buttonFuncionarios.Click += buttonFuncionarios_Click;
@@ -264,7 +264,7 @@ namespace UIGestaoMercearia
             button8.Location = new Point(15, 340);
             button8.Name = "button8";
             button8.Size = new Size(406, 63);
-            button8.TabIndex = 24;
+            button8.TabIndex = 6;
             button8.Text = "Estoque";
             button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
@@ -279,7 +279,7 @@ namespace UIGestaoMercearia
             buttonGrupoUsuario.Location = new Point(15, 481);
             buttonGrupoUsuario.Name = "buttonGrupoUsuario";
             buttonGrupoUsuario.Size = new Size(406, 66);
-            buttonGrupoUsuario.TabIndex = 21;
+            buttonGrupoUsuario.TabIndex = 6;
             buttonGrupoUsuario.Text = "Grupo de Usuários";
             buttonGrupoUsuario.UseVisualStyleBackColor = false;
             buttonGrupoUsuario.Click += buttonGrupoUsuario_Click_1;
@@ -309,7 +309,7 @@ namespace UIGestaoMercearia
             buttonFornecedores.Location = new Point(15, 409);
             buttonFornecedores.Name = "buttonFornecedores";
             buttonFornecedores.Size = new Size(406, 66);
-            buttonFornecedores.TabIndex = 9;
+            buttonFornecedores.TabIndex = 7;
             buttonFornecedores.Text = "Fornecedores";
             buttonFornecedores.UseVisualStyleBackColor = false;
             buttonFornecedores.Click += buttonFornecedores_Click;
@@ -341,7 +341,7 @@ namespace UIGestaoMercearia
             labelNomeEmpresa.Location = new Point(428, 0);
             labelNomeEmpresa.Name = "labelNomeEmpresa";
             labelNomeEmpresa.Size = new Size(229, 55);
-            labelNomeEmpresa.TabIndex = 5;
+            labelNomeEmpresa.TabIndex = 0;
             labelNomeEmpresa.Text = "MERCEARIA";
             labelNomeEmpresa.TextAlign = ContentAlignment.MiddleCenter;
             labelNomeEmpresa.Click += label2_Click;
@@ -351,7 +351,7 @@ namespace UIGestaoMercearia
             splitter1.Location = new Point(0, 0);
             splitter1.Name = "splitter1";
             splitter1.Size = new Size(4, 1055);
-            splitter1.TabIndex = 7;
+            splitter1.TabIndex = 0;
             splitter1.TabStop = false;
             // 
             // panel3
@@ -362,7 +362,7 @@ namespace UIGestaoMercearia
             panel3.Location = new Point(0, 58);
             panel3.Name = "panel3";
             panel3.Size = new Size(1128, 68);
-            panel3.TabIndex = 16;
+            panel3.TabIndex = 1;
             // 
             // pictureBoxLogo
             // 
@@ -390,7 +390,7 @@ namespace UIGestaoMercearia
             panel4.Location = new Point(0, 125);
             panel4.Name = "panel4";
             panel4.Size = new Size(1128, 133);
-            panel4.TabIndex = 17;
+            panel4.TabIndex = 1;
             // 
             // buttonConsultarVenda
             // 
@@ -404,7 +404,7 @@ namespace UIGestaoMercearia
             buttonConsultarVenda.Margin = new Padding(10);
             buttonConsultarVenda.Name = "buttonConsultarVenda";
             buttonConsultarVenda.Size = new Size(439, 81);
-            buttonConsultarVenda.TabIndex = 20;
+            buttonConsultarVenda.TabIndex = 1;
             buttonConsultarVenda.Text = "CONSULTAR VENDA";
             buttonConsultarVenda.UseVisualStyleBackColor = false;
             buttonConsultarVenda.Click += buttonConsultaVenda;
@@ -418,7 +418,7 @@ namespace UIGestaoMercearia
             buttonIniciarVenda.Location = new Point(22, 30);
             buttonIniciarVenda.Name = "buttonIniciarVenda";
             buttonIniciarVenda.Size = new Size(506, 81);
-            buttonIniciarVenda.TabIndex = 17;
+            buttonIniciarVenda.TabIndex = 0;
             buttonIniciarVenda.Text = "INICIAR VENDA";
             buttonIniciarVenda.UseVisualStyleBackColor = false;
             buttonIniciarVenda.Click += buttonIniciarVenda_Click;
