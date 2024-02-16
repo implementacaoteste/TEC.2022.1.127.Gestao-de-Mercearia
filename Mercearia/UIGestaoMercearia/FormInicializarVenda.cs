@@ -94,6 +94,8 @@ namespace UIGestaoMercearia
             {
                 buttonFinalizarVenda_Click(sender, e);
             }
+            else if (e.KeyCode == Keys.Escape)
+                Close();
         }
         private void AdicionarProduto()
         {
