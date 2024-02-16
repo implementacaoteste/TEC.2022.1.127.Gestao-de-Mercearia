@@ -267,7 +267,6 @@
             // 
             itemVendaListBindingSource.DataMember = "ItemVendaList";
             itemVendaListBindingSource.DataSource = bindingSourceVenda;
-            itemVendaListBindingSource.CurrentChanged += itemVendaListBindingSource_CurrentChanged;
             // 
             // bindingSourceVenda
             // 
