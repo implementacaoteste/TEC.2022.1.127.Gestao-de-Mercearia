@@ -39,10 +39,6 @@
             label4 = new Label();
             label3 = new Label();
             dataGridViewCategoria = new DataGridView();
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            tipoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            descricaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            trocoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
             bindingSourcePagamento = new BindingSource(components);
             panel3 = new Panel();
             buttonInserir = new Button();
@@ -50,6 +46,10 @@
             buttonExcluir = new Button();
             buttonSelecionar = new Button();
             buttonAlterar = new Button();
+            tipoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            descricaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            trocoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCategoria).BeginInit();
@@ -161,7 +161,7 @@
             dataGridViewCategoria.AutoGenerateColumns = false;
             dataGridViewCategoria.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridViewCategoria.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCategoria.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, tipoDataGridViewTextBoxColumn, descricaoDataGridViewTextBoxColumn, trocoDataGridViewCheckBoxColumn });
+            dataGridViewCategoria.Columns.AddRange(new DataGridViewColumn[] { tipoDataGridViewTextBoxColumn, descricaoDataGridViewTextBoxColumn, idDataGridViewTextBoxColumn, trocoDataGridViewCheckBoxColumn });
             dataGridViewCategoria.DataSource = bindingSourcePagamento;
             dataGridViewCategoria.Location = new Point(12, 172);
             dataGridViewCategoria.Name = "dataGridViewCategoria";
@@ -171,42 +171,6 @@
             dataGridViewCategoria.Size = new Size(553, 294);
             dataGridViewCategoria.TabIndex = 3;
             dataGridViewCategoria.DoubleClick += dataGridViewCategoria_DoubleClick;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.ReadOnly = true;
-            idDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // tipoDataGridViewTextBoxColumn
-            // 
-            tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
-            tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
-            tipoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
-            tipoDataGridViewTextBoxColumn.ReadOnly = true;
-            tipoDataGridViewTextBoxColumn.Width = 175;
-            // 
-            // descricaoDataGridViewTextBoxColumn
-            // 
-            descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
-            descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
-            descricaoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
-            descricaoDataGridViewTextBoxColumn.ReadOnly = true;
-            descricaoDataGridViewTextBoxColumn.Width = 175;
-            // 
-            // trocoDataGridViewCheckBoxColumn
-            // 
-            trocoDataGridViewCheckBoxColumn.DataPropertyName = "Troco";
-            trocoDataGridViewCheckBoxColumn.HeaderText = "Troco";
-            trocoDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            trocoDataGridViewCheckBoxColumn.Name = "trocoDataGridViewCheckBoxColumn";
-            trocoDataGridViewCheckBoxColumn.ReadOnly = true;
-            trocoDataGridViewCheckBoxColumn.Width = 75;
             // 
             // bindingSourcePagamento
             // 
@@ -284,6 +248,42 @@
             buttonAlterar.UseVisualStyleBackColor = false;
             buttonAlterar.Click += buttonAlterar_Click;
             // 
+            // tipoDataGridViewTextBoxColumn
+            // 
+            tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
+            tipoDataGridViewTextBoxColumn.HeaderText = "Tipo";
+            tipoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            tipoDataGridViewTextBoxColumn.Name = "tipoDataGridViewTextBoxColumn";
+            tipoDataGridViewTextBoxColumn.ReadOnly = true;
+            tipoDataGridViewTextBoxColumn.Width = 175;
+            // 
+            // descricaoDataGridViewTextBoxColumn
+            // 
+            descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
+            descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
+            descricaoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
+            descricaoDataGridViewTextBoxColumn.ReadOnly = true;
+            descricaoDataGridViewTextBoxColumn.Width = 175;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.ReadOnly = true;
+            idDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // trocoDataGridViewCheckBoxColumn
+            // 
+            trocoDataGridViewCheckBoxColumn.DataPropertyName = "Troco";
+            trocoDataGridViewCheckBoxColumn.HeaderText = "Troco";
+            trocoDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            trocoDataGridViewCheckBoxColumn.Name = "trocoDataGridViewCheckBoxColumn";
+            trocoDataGridViewCheckBoxColumn.ReadOnly = true;
+            trocoDataGridViewCheckBoxColumn.Width = 75;
+            // 
             // FormPagamento
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -336,9 +336,9 @@
         private Button buttonSelecionar;
         private Button buttonAlterar;
         private BindingSource bindingSourcePagamento;
-        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn tipoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewCheckBoxColumn trocoDataGridViewCheckBoxColumn;
     }
 }

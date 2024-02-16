@@ -31,11 +31,11 @@
             components = new System.ComponentModel.Container();
             bindingSourceEstoque = new BindingSource(components);
             dataGridViewEstoque = new DataGridView();
-            IdProduto = new DataGridViewTextBoxColumn();
             datadeEntradaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             datadeSaidaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             estoqueMinimoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             estoqueMaximoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            IdProduto = new DataGridViewTextBoxColumn();
             labelGerenProd = new Label();
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
@@ -70,7 +70,7 @@
             dataGridViewEstoque.AutoGenerateColumns = false;
             dataGridViewEstoque.BackgroundColor = SystemColors.ButtonFace;
             dataGridViewEstoque.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewEstoque.Columns.AddRange(new DataGridViewColumn[] { IdProduto, datadeEntradaDataGridViewTextBoxColumn, datadeSaidaDataGridViewTextBoxColumn, estoqueMinimoDataGridViewTextBoxColumn, estoqueMaximoDataGridViewTextBoxColumn });
+            dataGridViewEstoque.Columns.AddRange(new DataGridViewColumn[] { datadeEntradaDataGridViewTextBoxColumn, datadeSaidaDataGridViewTextBoxColumn, estoqueMinimoDataGridViewTextBoxColumn, estoqueMaximoDataGridViewTextBoxColumn, IdProduto });
             dataGridViewEstoque.DataSource = bindingSourceEstoque;
             dataGridViewEstoque.Location = new Point(12, 154);
             dataGridViewEstoque.Name = "dataGridViewEstoque";
@@ -80,15 +80,6 @@
             dataGridViewEstoque.Size = new Size(820, 234);
             dataGridViewEstoque.TabIndex = 4;
             dataGridViewEstoque.DoubleClick += dataGridViewEstoque_DoubleClick;
-            // 
-            // IdProduto
-            // 
-            IdProduto.DataPropertyName = "IdProduto";
-            IdProduto.HeaderText = "Código do Produto";
-            IdProduto.MinimumWidth = 6;
-            IdProduto.Name = "IdProduto";
-            IdProduto.ReadOnly = true;
-            IdProduto.Width = 125;
             // 
             // datadeEntradaDataGridViewTextBoxColumn
             // 
@@ -125,6 +116,15 @@
             estoqueMaximoDataGridViewTextBoxColumn.Name = "estoqueMaximoDataGridViewTextBoxColumn";
             estoqueMaximoDataGridViewTextBoxColumn.ReadOnly = true;
             estoqueMaximoDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // IdProduto
+            // 
+            IdProduto.DataPropertyName = "IdProduto";
+            IdProduto.HeaderText = "Código do Produto";
+            IdProduto.MinimumWidth = 6;
+            IdProduto.Name = "IdProduto";
+            IdProduto.ReadOnly = true;
+            IdProduto.Width = 125;
             // 
             // labelGerenProd
             // 
@@ -163,7 +163,6 @@
             buttonCancelar.TabIndex = 1;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
-            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // panel1
             // 
@@ -188,6 +187,7 @@
             button2.TabIndex = 3;
             button2.Text = "&Cancelar";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // comboBoxBuscarPor
             // 
@@ -341,10 +341,10 @@
         private Panel panel3;
         private Label label2;
         private Button button2;
-        private DataGridViewTextBoxColumn IdProduto;
         private DataGridViewTextBoxColumn datadeEntradaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn datadeSaidaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn estoqueMinimoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn estoqueMaximoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn IdProduto;
     }
 }

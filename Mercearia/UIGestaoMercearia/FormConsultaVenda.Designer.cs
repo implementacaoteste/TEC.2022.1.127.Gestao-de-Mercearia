@@ -47,11 +47,11 @@
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
             vendaBindingSource = new BindingSource(components);
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            IdUsuario = new DataGridViewTextBoxColumn();
-            IdFormaPagamento = new DataGridViewTextBoxColumn();
             DataVenda = new DataGridViewTextBoxColumn();
             Total = new DataGridViewTextBoxColumn();
+            IdFormaPagamento = new DataGridViewTextBoxColumn();
+            IdUsuario = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -209,7 +209,7 @@
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, IdUsuario, IdFormaPagamento, DataVenda, Total });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { DataVenda, Total, IdFormaPagamento, IdUsuario, dataGridViewTextBoxColumn1 });
             dataGridView1.DataSource = bindingSourceVenda;
             dataGridView1.Location = new Point(0, 157);
             dataGridView1.Name = "dataGridView1";
@@ -249,33 +249,6 @@
             // 
             vendaBindingSource.DataSource = typeof(Models.Venda);
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            dataGridViewTextBoxColumn1.HeaderText = "Id";
-            dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.ReadOnly = true;
-            dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // IdUsuario
-            // 
-            IdUsuario.DataPropertyName = "IdUsuario";
-            IdUsuario.HeaderText = "IdUsuario";
-            IdUsuario.MinimumWidth = 6;
-            IdUsuario.Name = "IdUsuario";
-            IdUsuario.ReadOnly = true;
-            IdUsuario.Width = 125;
-            // 
-            // IdFormaPagamento
-            // 
-            IdFormaPagamento.DataPropertyName = "IdFormaPagamento";
-            IdFormaPagamento.HeaderText = "IdFormaPagamento";
-            IdFormaPagamento.MinimumWidth = 6;
-            IdFormaPagamento.Name = "IdFormaPagamento";
-            IdFormaPagamento.ReadOnly = true;
-            IdFormaPagamento.Width = 125;
-            // 
             // DataVenda
             // 
             DataVenda.DataPropertyName = "DataVenda";
@@ -283,7 +256,7 @@
             DataVenda.MinimumWidth = 6;
             DataVenda.Name = "DataVenda";
             DataVenda.ReadOnly = true;
-            DataVenda.Width = 125;
+            DataVenda.Width = 250;
             // 
             // Total
             // 
@@ -292,7 +265,34 @@
             Total.MinimumWidth = 6;
             Total.Name = "Total";
             Total.ReadOnly = true;
-            Total.Width = 125;
+            Total.Width = 250;
+            // 
+            // IdFormaPagamento
+            // 
+            IdFormaPagamento.DataPropertyName = "IdFormaPagamento";
+            IdFormaPagamento.HeaderText = "IdFormaPagamento";
+            IdFormaPagamento.MinimumWidth = 6;
+            IdFormaPagamento.Name = "IdFormaPagamento";
+            IdFormaPagamento.ReadOnly = true;
+            IdFormaPagamento.Width = 175;
+            // 
+            // IdUsuario
+            // 
+            IdUsuario.DataPropertyName = "IdUsuario";
+            IdUsuario.HeaderText = "IdUsuario";
+            IdUsuario.MinimumWidth = 6;
+            IdUsuario.Name = "IdUsuario";
+            IdUsuario.ReadOnly = true;
+            IdUsuario.Width = 175;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            dataGridViewTextBoxColumn1.HeaderText = "Id";
+            dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.ReadOnly = true;
+            dataGridViewTextBoxColumn1.Width = 200;
             // 
             // FormConsultaVenda
             // 
@@ -341,10 +341,10 @@
         private BindingSource bindingSourceVenda;
         private BindingSource vendaBindingSource;
         private PictureBox pictureBox1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn IdUsuario;
-        private DataGridViewTextBoxColumn IdFormaPagamento;
         private DataGridViewTextBoxColumn DataVenda;
         private DataGridViewTextBoxColumn Total;
+        private DataGridViewTextBoxColumn IdFormaPagamento;
+        private DataGridViewTextBoxColumn IdUsuario;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
     }
 }

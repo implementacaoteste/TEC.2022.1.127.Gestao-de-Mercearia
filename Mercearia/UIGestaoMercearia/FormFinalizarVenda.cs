@@ -91,6 +91,7 @@ namespace UIGestaoMercearia
             Close();
         }
 
+
         private void FormFinalizarVenda_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -99,6 +100,17 @@ namespace UIGestaoMercearia
                 this.DialogResult = DialogResult.Cancel;
             else if (e.KeyCode == Keys.F11)
                 buttonBuscarFormaPagamento_Click(sender, e);
+        }
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

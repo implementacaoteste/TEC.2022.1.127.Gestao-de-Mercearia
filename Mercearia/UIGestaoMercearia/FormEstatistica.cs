@@ -14,7 +14,7 @@ namespace UIGestaoMercearia
     public partial class FormEstatistica : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn 
+        private static extern IntPtr CreateRoundRectRgn
             (
                 int nLeftRect,
                 int nTopRect,
@@ -29,6 +29,11 @@ namespace UIGestaoMercearia
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+        }
+
+        private void FormEstatistica_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

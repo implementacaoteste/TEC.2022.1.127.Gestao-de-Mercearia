@@ -38,16 +38,16 @@
             buttonInserir = new Button();
             buttonExcluir = new Button();
             funcionarioDataGridView = new DataGridView();
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            profissaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            Telefone = new DataGridViewTextBoxColumn();
-            salarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            ativoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
             funcionarioBindingSource = new BindingSource(components);
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
             label3 = new Label();
+            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            profissaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            Telefone = new DataGridViewTextBoxColumn();
+            salarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ativoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)funcionarioDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)funcionarioBindingSource).BeginInit();
             SuspendLayout();
@@ -148,7 +148,7 @@
             funcionarioDataGridView.AutoGenerateColumns = false;
             funcionarioDataGridView.BackgroundColor = Color.White;
             funcionarioDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            funcionarioDataGridView.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, nomeDataGridViewTextBoxColumn, profissaoDataGridViewTextBoxColumn, Telefone, salarioDataGridViewTextBoxColumn, ativoDataGridViewCheckBoxColumn });
+            funcionarioDataGridView.Columns.AddRange(new DataGridViewColumn[] { nomeDataGridViewTextBoxColumn, profissaoDataGridViewTextBoxColumn, Telefone, salarioDataGridViewTextBoxColumn, idDataGridViewTextBoxColumn, ativoDataGridViewCheckBoxColumn });
             funcionarioDataGridView.DataSource = funcionarioBindingSource;
             funcionarioDataGridView.Location = new Point(12, 120);
             funcionarioDataGridView.Name = "funcionarioDataGridView";
@@ -157,60 +157,6 @@
             funcionarioDataGridView.RowTemplate.Height = 29;
             funcionarioDataGridView.Size = new Size(823, 286);
             funcionarioDataGridView.TabIndex = 13;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.ReadOnly = true;
-            idDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            nomeDataGridViewTextBoxColumn.Width = 225;
-            // 
-            // profissaoDataGridViewTextBoxColumn
-            // 
-            profissaoDataGridViewTextBoxColumn.DataPropertyName = "Profissao";
-            profissaoDataGridViewTextBoxColumn.HeaderText = "Profissao";
-            profissaoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            profissaoDataGridViewTextBoxColumn.Name = "profissaoDataGridViewTextBoxColumn";
-            profissaoDataGridViewTextBoxColumn.ReadOnly = true;
-            profissaoDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // Telefone
-            // 
-            Telefone.DataPropertyName = "Telefone";
-            Telefone.HeaderText = "Telefone";
-            Telefone.MinimumWidth = 6;
-            Telefone.Name = "Telefone";
-            Telefone.ReadOnly = true;
-            Telefone.Width = 165;
-            // 
-            // salarioDataGridViewTextBoxColumn
-            // 
-            salarioDataGridViewTextBoxColumn.DataPropertyName = "Salario";
-            salarioDataGridViewTextBoxColumn.HeaderText = "Salario";
-            salarioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            salarioDataGridViewTextBoxColumn.Name = "salarioDataGridViewTextBoxColumn";
-            salarioDataGridViewTextBoxColumn.ReadOnly = true;
-            salarioDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ativoDataGridViewCheckBoxColumn
-            // 
-            ativoDataGridViewCheckBoxColumn.DataPropertyName = "Ativo";
-            ativoDataGridViewCheckBoxColumn.HeaderText = "Ativo";
-            ativoDataGridViewCheckBoxColumn.MinimumWidth = 6;
-            ativoDataGridViewCheckBoxColumn.Name = "ativoDataGridViewCheckBoxColumn";
-            ativoDataGridViewCheckBoxColumn.ReadOnly = true;
-            ativoDataGridViewCheckBoxColumn.Width = 50;
             // 
             // funcionarioBindingSource
             // 
@@ -249,6 +195,60 @@
             label3.Size = new Size(222, 18);
             label3.TabIndex = 16;
             label3.Text = "INSIRA AS INFORMAÇÕES:";
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            nomeDataGridViewTextBoxColumn.Width = 225;
+            // 
+            // profissaoDataGridViewTextBoxColumn
+            // 
+            profissaoDataGridViewTextBoxColumn.DataPropertyName = "Profissao";
+            profissaoDataGridViewTextBoxColumn.HeaderText = "Profissao";
+            profissaoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            profissaoDataGridViewTextBoxColumn.Name = "profissaoDataGridViewTextBoxColumn";
+            profissaoDataGridViewTextBoxColumn.ReadOnly = true;
+            profissaoDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // Telefone
+            // 
+            Telefone.DataPropertyName = "Telefone";
+            Telefone.HeaderText = "Telefone";
+            Telefone.MinimumWidth = 6;
+            Telefone.Name = "Telefone";
+            Telefone.ReadOnly = true;
+            Telefone.Width = 165;
+            // 
+            // salarioDataGridViewTextBoxColumn
+            // 
+            salarioDataGridViewTextBoxColumn.DataPropertyName = "Salario";
+            salarioDataGridViewTextBoxColumn.HeaderText = "Salario";
+            salarioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            salarioDataGridViewTextBoxColumn.Name = "salarioDataGridViewTextBoxColumn";
+            salarioDataGridViewTextBoxColumn.ReadOnly = true;
+            salarioDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.ReadOnly = true;
+            idDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // ativoDataGridViewCheckBoxColumn
+            // 
+            ativoDataGridViewCheckBoxColumn.DataPropertyName = "Ativo";
+            ativoDataGridViewCheckBoxColumn.HeaderText = "Ativo";
+            ativoDataGridViewCheckBoxColumn.MinimumWidth = 6;
+            ativoDataGridViewCheckBoxColumn.Name = "ativoDataGridViewCheckBoxColumn";
+            ativoDataGridViewCheckBoxColumn.ReadOnly = true;
+            ativoDataGridViewCheckBoxColumn.Width = 50;
             // 
             // FormConsultaFuncionario
             // 
@@ -299,11 +299,11 @@
         private Button buttonSelecionar;
         private Button buttonCancelar;
         private Label label3;
-        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn profissaoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn Telefone;
         private DataGridViewTextBoxColumn salarioDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewCheckBoxColumn ativoDataGridViewCheckBoxColumn;
     }
 }
