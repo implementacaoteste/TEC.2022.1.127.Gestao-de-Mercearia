@@ -45,8 +45,8 @@ namespace UIGestaoMercearia
                 labelTroco.Visible = false;
                 labelTotal.Visible = true;
             }
-            
-            }
+
+        }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -89,6 +89,18 @@ namespace UIGestaoMercearia
         {
             MessageBox.Show("Venda Concluída!");
             Close();
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
