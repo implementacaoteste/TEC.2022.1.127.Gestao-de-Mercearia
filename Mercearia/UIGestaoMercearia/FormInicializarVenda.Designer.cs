@@ -50,11 +50,6 @@
             label11 = new Label();
             buttonCancelar = new Button();
             dataGridView1 = new DataGridView();
-            itemVendaListBindingSource = new BindingSource(components);
-            bindingSourceVenda = new BindingSource(components);
-            label12 = new Label();
-            labelpreco = new Label();
-            pictureBox1 = new PictureBox();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             idVendaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -63,6 +58,11 @@
             subTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             produtoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nomeProdutoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            itemVendaListBindingSource = new BindingSource(components);
+            bindingSourceVenda = new BindingSource(components);
+            label12 = new Label();
+            labelpreco = new Label();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
@@ -79,8 +79,9 @@
             panel1.BackColor = Color.FromArgb(50, 153, 204);
             panel1.Controls.Add(labelPDV);
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1466, 64);
+            panel1.Size = new Size(1283, 48);
             panel1.TabIndex = 2;
             // 
             // labelPDV
@@ -90,9 +91,9 @@
             labelPDV.BackColor = Color.FromArgb(50, 153, 204);
             labelPDV.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
             labelPDV.ForeColor = Color.White;
-            labelPDV.Location = new Point(677, 0);
+            labelPDV.Location = new Point(592, 0);
             labelPDV.Name = "labelPDV";
-            labelPDV.Size = new Size(136, 67);
+            labelPDV.Size = new Size(110, 53);
             labelPDV.TabIndex = 1;
             labelPDV.Text = "PDV";
             // 
@@ -101,9 +102,9 @@
             labelNomeProduto.Anchor = AnchorStyles.Top;
             labelNomeProduto.AutoSize = true;
             labelNomeProduto.Font = new Font("Stencil", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            labelNomeProduto.Location = new Point(356, 6);
+            labelNomeProduto.Location = new Point(312, 4);
             labelNomeProduto.Name = "labelNomeProduto";
-            labelNomeProduto.Size = new Size(377, 47);
+            labelNomeProduto.Size = new Size(303, 38);
             labelNomeProduto.TabIndex = 0;
             labelNomeProduto.Text = "Nome do Produto";
             // 
@@ -114,9 +115,10 @@
             panel2.BorderStyle = BorderStyle.Fixed3D;
             panel2.Controls.Add(pictureBoxLogo);
             panel2.Controls.Add(labelNomeProduto);
-            panel2.Location = new Point(399, 64);
+            panel2.Location = new Point(349, 48);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1067, 73);
+            panel2.Size = new Size(934, 56);
             panel2.TabIndex = 1;
             // 
             // pictureBoxLogo
@@ -129,9 +131,10 @@
             pictureBoxLogo.ErrorImage = null;
             pictureBoxLogo.Image = Properties.Resources.shopping_cart_icon_illustration_free_vector2;
             pictureBoxLogo.InitialImage = null;
-            pictureBoxLogo.Location = new Point(891, -8);
+            pictureBoxLogo.Location = new Point(780, -6);
+            pictureBoxLogo.Margin = new Padding(3, 2, 3, 2);
             pictureBoxLogo.Name = "pictureBoxLogo";
-            pictureBoxLogo.Size = new Size(162, 79);
+            pictureBoxLogo.Size = new Size(142, 59);
             pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxLogo.TabIndex = 3;
             pictureBoxLogo.TabStop = false;
@@ -143,9 +146,10 @@
             panel3.BorderStyle = BorderStyle.Fixed3D;
             panel3.Controls.Add(label4);
             panel3.Controls.Add(labelSubtotal);
-            panel3.Location = new Point(399, 771);
+            panel3.Location = new Point(349, 578);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1067, 182);
+            panel3.Size = new Size(934, 138);
             panel3.TabIndex = 2;
             // 
             // label4
@@ -153,9 +157,9 @@
             label4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(934, 49);
+            label4.Location = new Point(817, 37);
             label4.Name = "label4";
-            label4.Size = new Size(97, 28);
+            label4.Size = new Size(79, 21);
             label4.TabIndex = 3;
             label4.Text = "Subtotal:";
             // 
@@ -164,9 +168,9 @@
             labelSubtotal.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             labelSubtotal.AutoSize = true;
             labelSubtotal.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            labelSubtotal.Location = new Point(839, 77);
+            labelSubtotal.Location = new Point(734, 58);
             labelSubtotal.Name = "labelSubtotal";
-            labelSubtotal.Size = new Size(187, 59);
+            labelSubtotal.Size = new Size(148, 47);
             labelSubtotal.TabIndex = 2;
             labelSubtotal.Text = "000,00";
             // 
@@ -176,9 +180,10 @@
             buttonFinalizarVenda.BackColor = Color.FromArgb(50, 153, 204);
             buttonFinalizarVenda.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonFinalizarVenda.ForeColor = SystemColors.Window;
-            buttonFinalizarVenda.Location = new Point(1224, 701);
+            buttonFinalizarVenda.Location = new Point(1071, 526);
+            buttonFinalizarVenda.Margin = new Padding(3, 2, 3, 2);
             buttonFinalizarVenda.Name = "buttonFinalizarVenda";
-            buttonFinalizarVenda.Size = new Size(208, 53);
+            buttonFinalizarVenda.Size = new Size(182, 40);
             buttonFinalizarVenda.TabIndex = 22;
             buttonFinalizarVenda.Text = "Finalizar Venda";
             buttonFinalizarVenda.UseVisualStyleBackColor = false;
@@ -189,9 +194,9 @@
             label6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(1240, 149);
+            label6.Location = new Point(1085, 112);
             label6.Name = "label6";
-            label6.Size = new Size(163, 31);
+            label6.Size = new Size(136, 25);
             label6.TabIndex = 3;
             label6.Text = "QUANTIDADE";
             // 
@@ -202,9 +207,10 @@
             textBoxQuantidade.BorderStyle = BorderStyle.None;
             textBoxQuantidade.Cursor = Cursors.IBeam;
             textBoxQuantidade.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            textBoxQuantidade.Location = new Point(1224, 183);
+            textBoxQuantidade.Location = new Point(1071, 137);
+            textBoxQuantidade.Margin = new Padding(3, 2, 3, 2);
             textBoxQuantidade.Name = "textBoxQuantidade";
-            textBoxQuantidade.Size = new Size(179, 80);
+            textBoxQuantidade.Size = new Size(157, 64);
             textBoxQuantidade.TabIndex = 10;
             textBoxQuantidade.Text = "1";
             textBoxQuantidade.KeyDown += textBoxQuantidade_KeyDown;
@@ -214,9 +220,10 @@
             // 
             textBoxCodigodeBarras.BackColor = Color.WhiteSmoke;
             textBoxCodigodeBarras.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            textBoxCodigodeBarras.Location = new Point(454, 195);
+            textBoxCodigodeBarras.Location = new Point(397, 146);
+            textBoxCodigodeBarras.Margin = new Padding(3, 2, 3, 2);
             textBoxCodigodeBarras.Name = "textBoxCodigodeBarras";
-            textBoxCodigodeBarras.Size = new Size(298, 65);
+            textBoxCodigodeBarras.Size = new Size(261, 53);
             textBoxCodigodeBarras.TabIndex = 11;
             textBoxCodigodeBarras.KeyDown += textBoxCodigodeBarras_KeyDown;
             textBoxCodigodeBarras.KeyPress += textBoxCodigodeBarras_KeyPress;
@@ -225,9 +232,9 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(454, 149);
+            label11.Location = new Point(397, 112);
             label11.Name = "label11";
-            label11.Size = new Size(219, 31);
+            label11.Size = new Size(182, 25);
             label11.TabIndex = 3;
             label11.Text = "CÓDIGO DE BARRA";
             // 
@@ -237,9 +244,10 @@
             buttonCancelar.BackColor = Color.Coral;
             buttonCancelar.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonHighlight;
-            buttonCancelar.Location = new Point(1013, 701);
+            buttonCancelar.Location = new Point(886, 526);
+            buttonCancelar.Margin = new Padding(3, 2, 3, 2);
             buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(205, 53);
+            buttonCancelar.Size = new Size(179, 40);
             buttonCancelar.TabIndex = 9;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
@@ -255,60 +263,14 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, idVendaDataGridViewTextBoxColumn, quantidadeDataGridViewTextBoxColumn, valorUnitarioDataGridViewTextBoxColumn, subTotalDataGridViewTextBoxColumn, produtoDataGridViewTextBoxColumn, nomeProdutoDataGridViewTextBoxColumn });
             dataGridView1.DataSource = itemVendaListBindingSource;
-            dataGridView1.Location = new Point(459, 280);
+            dataGridView1.Location = new Point(402, 210);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(973, 415);
+            dataGridView1.Size = new Size(851, 311);
             dataGridView1.TabIndex = 11;
-            // 
-            // itemVendaListBindingSource
-            // 
-            itemVendaListBindingSource.DataMember = "ItemVendaList";
-            itemVendaListBindingSource.DataSource = bindingSourceVenda;
-            // 
-            // bindingSourceVenda
-            // 
-            bindingSourceVenda.DataSource = typeof(Models.Venda);
-            // 
-            // label12
-            // 
-            label12.Anchor = AnchorStyles.Top;
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.ImageAlign = ContentAlignment.TopCenter;
-            label12.Location = new Point(846, 149);
-            label12.Name = "label12";
-            label12.Size = new Size(200, 31);
-            label12.TabIndex = 2;
-            label12.Text = "PREÇO UNITÁRIO";
-            label12.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labelpreco
-            // 
-            labelpreco.Anchor = AnchorStyles.Top;
-            labelpreco.AutoSize = true;
-            labelpreco.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            labelpreco.ImageAlign = ContentAlignment.TopCenter;
-            labelpreco.Location = new Point(908, 195);
-            labelpreco.Name = "labelpreco";
-            labelpreco.Size = new Size(73, 59);
-            labelpreco.TabIndex = 0;
-            labelpreco.Text = "...";
-            labelpreco.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.AccessibleRole = AccessibleRole.None;
-            pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.Image = Properties.Resources.Captura_de_tela_2024_01_31_0909582;
-            pictureBox1.Location = new Point(-476, 64);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(878, 1002);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 21;
-            pictureBox1.TabStop = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -398,12 +360,60 @@
             nomeProdutoDataGridViewTextBoxColumn.ReadOnly = true;
             nomeProdutoDataGridViewTextBoxColumn.Width = 200;
             // 
+            // itemVendaListBindingSource
+            // 
+            itemVendaListBindingSource.DataMember = "ItemVendaList";
+            itemVendaListBindingSource.DataSource = bindingSourceVenda;
+            // 
+            // bindingSourceVenda
+            // 
+            bindingSourceVenda.DataSource = typeof(Models.Venda);
+            // 
+            // label12
+            // 
+            label12.Anchor = AnchorStyles.Top;
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ImageAlign = ContentAlignment.TopCenter;
+            label12.Location = new Point(740, 112);
+            label12.Name = "label12";
+            label12.Size = new Size(167, 25);
+            label12.TabIndex = 2;
+            label12.Text = "PREÇO UNITÁRIO";
+            label12.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // labelpreco
+            // 
+            labelpreco.Anchor = AnchorStyles.Top;
+            labelpreco.AutoSize = true;
+            labelpreco.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            labelpreco.ImageAlign = ContentAlignment.TopCenter;
+            labelpreco.Location = new Point(794, 146);
+            labelpreco.Name = "labelpreco";
+            labelpreco.Size = new Size(59, 47);
+            labelpreco.TabIndex = 0;
+            labelpreco.Text = "...";
+            labelpreco.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.AccessibleRole = AccessibleRole.None;
+            pictureBox1.BackgroundImageLayout = ImageLayout.None;
+            pictureBox1.Image = Properties.Resources.Captura_de_tela_2024_01_31_0909582;
+            pictureBox1.Location = new Point(-416, 48);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(874, 752);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 21;
+            pictureBox1.TabStop = false;
+            // 
             // FormInicializarVenda
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(1466, 954);
+            ClientSize = new Size(1199, 562);
             Controls.Add(buttonFinalizarVenda);
             Controls.Add(textBoxCodigodeBarras);
             Controls.Add(labelpreco);
@@ -419,6 +429,7 @@
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormInicializarVenda";

@@ -77,11 +77,11 @@ namespace UIGestaoMercearia
             label1.BackColor = Color.FromArgb(50, 153, 204);
             label1.Cursor = Cursors.No;
             label1.FlatStyle = FlatStyle.Popup;
-            label1.Font = new Font("Swis721 Blk BT", 19.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 19.8F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(400, 17);
+            label1.Location = new Point(250, 13);
             label1.Name = "label1";
-            label1.Size = new Size(285, 40);
+            label1.Size = new Size(215, 31);
             label1.TabIndex = 0;
             label1.Text = "CAIXA ABERTO";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -93,12 +93,12 @@ namespace UIGestaoMercearia
             MENU.BackColor = Color.FromArgb(50, 153, 204);
             MENU.Cursor = Cursors.No;
             MENU.FlatStyle = FlatStyle.Popup;
-            MENU.Font = new Font("Swis721 Blk BT", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
+            MENU.Font = new Font("Microsoft Sans Serif", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
             MENU.ForeColor = Color.White;
-            MENU.Location = new Point(91, 14);
+            MENU.Location = new Point(80, 10);
             MENU.Name = "MENU";
-            MENU.Size = new Size(282, 50);
-            MENU.TabIndex = 1;
+            MENU.Size = new Size(247, 38);
+            MENU.TabIndex = 0;
             MENU.Text = "MENU";
             MENU.TextAlign = ContentAlignment.TopCenter;
             // 
@@ -109,10 +109,11 @@ namespace UIGestaoMercearia
             buttonUsuario.FlatStyle = FlatStyle.Flat;
             buttonUsuario.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonUsuario.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonUsuario.Location = new Point(15, 553);
+            buttonUsuario.Location = new Point(13, 415);
+            buttonUsuario.Margin = new Padding(3, 2, 3, 2);
             buttonUsuario.Name = "buttonUsuario";
-            buttonUsuario.Size = new Size(406, 66);
-            buttonUsuario.TabIndex = 2;
+            buttonUsuario.Size = new Size(355, 50);
+            buttonUsuario.TabIndex = 8;
             buttonUsuario.Text = "Usuários";
             buttonUsuario.UseVisualStyleBackColor = false;
             buttonUsuario.Click += buttonUsuario_Click;
@@ -124,10 +125,11 @@ namespace UIGestaoMercearia
             buttonCliente.FlatStyle = FlatStyle.Flat;
             buttonCliente.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonCliente.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonCliente.Location = new Point(15, 194);
+            buttonCliente.Location = new Point(13, 146);
+            buttonCliente.Margin = new Padding(3, 2, 3, 2);
             buttonCliente.Name = "buttonCliente";
-            buttonCliente.Size = new Size(406, 68);
-            buttonCliente.TabIndex = 4;
+            buttonCliente.Size = new Size(355, 51);
+            buttonCliente.TabIndex = 3;
             buttonCliente.Text = "Clientes";
             buttonCliente.UseVisualStyleBackColor = false;
             buttonCliente.Click += buttonCliente_Click;
@@ -151,9 +153,10 @@ namespace UIGestaoMercearia
             panel2.Controls.Add(buttonMarcas);
             panel2.Controls.Add(buttonFornecedores);
             panel2.Controls.Add(buttonCategorias);
-            panel2.Location = new Point(1125, 0);
+            panel2.Location = new Point(783, 0);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(433, 1055);
+            panel2.Size = new Size(379, 976);
             panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
             // 
@@ -167,9 +170,10 @@ namespace UIGestaoMercearia
             pictureBoxEstatistica.ErrorImage = null;
             pictureBoxEstatistica.Image = (Image)resources.GetObject("pictureBoxEstatistica.Image");
             pictureBoxEstatistica.InitialImage = null;
-            pictureBoxEstatistica.Location = new Point(24, 905);
+            pictureBoxEstatistica.Location = new Point(21, 772);
+            pictureBoxEstatistica.Margin = new Padding(3, 2, 3, 2);
             pictureBoxEstatistica.Name = "pictureBoxEstatistica";
-            pictureBoxEstatistica.Size = new Size(406, 147);
+            pictureBoxEstatistica.Size = new Size(355, 110);
             pictureBoxEstatistica.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxEstatistica.TabIndex = 21;
             pictureBoxEstatistica.TabStop = false;
@@ -182,9 +186,10 @@ namespace UIGestaoMercearia
             buttonPagamento.FlatStyle = FlatStyle.Flat;
             buttonPagamento.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonPagamento.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonPagamento.Location = new Point(15, 832);
+            buttonPagamento.Location = new Point(13, 624);
+            buttonPagamento.Margin = new Padding(3, 2, 3, 2);
             buttonPagamento.Name = "buttonPagamento";
-            buttonPagamento.Size = new Size(406, 58);
+            buttonPagamento.Size = new Size(355, 44);
             buttonPagamento.TabIndex = 27;
             buttonPagamento.Text = "Formas de Pagamento";
             buttonPagamento.UseVisualStyleBackColor = false;
@@ -193,9 +198,10 @@ namespace UIGestaoMercearia
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(79, 17);
+            pictureBox1.Location = new Point(69, 13);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(59, 47);
+            pictureBox1.Size = new Size(52, 35);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
@@ -204,10 +210,11 @@ namespace UIGestaoMercearia
             // 
             panel5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel5.BackColor = Color.White;
-            panel5.Location = new Point(12, 82);
+            panel5.Location = new Point(10, 62);
+            panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(409, 10);
-            panel5.TabIndex = 2;
+            panel5.Size = new Size(358, 8);
+            panel5.TabIndex = 1;
             // 
             // buttonPermissao
             // 
@@ -216,9 +223,10 @@ namespace UIGestaoMercearia
             buttonPermissao.FlatStyle = FlatStyle.Flat;
             buttonPermissao.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonPermissao.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonPermissao.Location = new Point(15, 763);
+            buttonPermissao.Location = new Point(13, 572);
+            buttonPermissao.Margin = new Padding(3, 2, 3, 2);
             buttonPermissao.Name = "buttonPermissao";
-            buttonPermissao.Size = new Size(406, 63);
+            buttonPermissao.Size = new Size(355, 47);
             buttonPermissao.TabIndex = 25;
             buttonPermissao.Text = "Permissões";
             buttonPermissao.UseVisualStyleBackColor = false;
@@ -231,10 +239,11 @@ namespace UIGestaoMercearia
             buttonProdutos.FlatStyle = FlatStyle.Flat;
             buttonProdutos.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonProdutos.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonProdutos.Location = new Point(15, 119);
+            buttonProdutos.Location = new Point(13, 89);
+            buttonProdutos.Margin = new Padding(3, 2, 3, 2);
             buttonProdutos.Name = "buttonProdutos";
-            buttonProdutos.Size = new Size(406, 69);
-            buttonProdutos.TabIndex = 3;
+            buttonProdutos.Size = new Size(355, 52);
+            buttonProdutos.TabIndex = 2;
             buttonProdutos.Text = "Produtos";
             buttonProdutos.UseVisualStyleBackColor = false;
             buttonProdutos.Click += buttonProdutos_Click;
@@ -246,10 +255,11 @@ namespace UIGestaoMercearia
             buttonFuncionarios.FlatStyle = FlatStyle.Flat;
             buttonFuncionarios.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonFuncionarios.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonFuncionarios.Location = new Point(15, 268);
+            buttonFuncionarios.Location = new Point(13, 201);
+            buttonFuncionarios.Margin = new Padding(3, 2, 3, 2);
             buttonFuncionarios.Name = "buttonFuncionarios";
-            buttonFuncionarios.Size = new Size(406, 66);
-            buttonFuncionarios.TabIndex = 5;
+            buttonFuncionarios.Size = new Size(355, 50);
+            buttonFuncionarios.TabIndex = 4;
             buttonFuncionarios.Text = "Funcionários";
             buttonFuncionarios.UseVisualStyleBackColor = false;
             buttonFuncionarios.Click += buttonFuncionarios_Click;
@@ -261,10 +271,11 @@ namespace UIGestaoMercearia
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             button8.ForeColor = Color.FromArgb(50, 153, 204);
-            button8.Location = new Point(15, 340);
+            button8.Location = new Point(13, 255);
+            button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
-            button8.Size = new Size(406, 63);
-            button8.TabIndex = 6;
+            button8.Size = new Size(355, 47);
+            button8.TabIndex = 5;
             button8.Text = "Estoque";
             button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
@@ -276,10 +287,11 @@ namespace UIGestaoMercearia
             buttonGrupoUsuario.FlatStyle = FlatStyle.Flat;
             buttonGrupoUsuario.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonGrupoUsuario.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonGrupoUsuario.Location = new Point(15, 481);
+            buttonGrupoUsuario.Location = new Point(13, 361);
+            buttonGrupoUsuario.Margin = new Padding(3, 2, 3, 2);
             buttonGrupoUsuario.Name = "buttonGrupoUsuario";
-            buttonGrupoUsuario.Size = new Size(406, 66);
-            buttonGrupoUsuario.TabIndex = 6;
+            buttonGrupoUsuario.Size = new Size(355, 50);
+            buttonGrupoUsuario.TabIndex = 2;
             buttonGrupoUsuario.Text = "Grupo de Usuários";
             buttonGrupoUsuario.UseVisualStyleBackColor = false;
             buttonGrupoUsuario.Click += buttonGrupoUsuario_Click_1;
@@ -291,10 +303,11 @@ namespace UIGestaoMercearia
             buttonMarcas.FlatStyle = FlatStyle.Flat;
             buttonMarcas.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonMarcas.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonMarcas.Location = new Point(15, 694);
+            buttonMarcas.Location = new Point(13, 520);
+            buttonMarcas.Margin = new Padding(3, 2, 3, 2);
             buttonMarcas.Name = "buttonMarcas";
-            buttonMarcas.Size = new Size(406, 63);
-            buttonMarcas.TabIndex = 23;
+            buttonMarcas.Size = new Size(355, 47);
+            buttonMarcas.TabIndex = 10;
             buttonMarcas.Text = "Marcas";
             buttonMarcas.UseVisualStyleBackColor = false;
             buttonMarcas.Click += buttonMarcas_Click;
@@ -306,10 +319,11 @@ namespace UIGestaoMercearia
             buttonFornecedores.FlatStyle = FlatStyle.Flat;
             buttonFornecedores.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonFornecedores.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonFornecedores.Location = new Point(15, 409);
+            buttonFornecedores.Location = new Point(13, 307);
+            buttonFornecedores.Margin = new Padding(3, 2, 3, 2);
             buttonFornecedores.Name = "buttonFornecedores";
-            buttonFornecedores.Size = new Size(406, 66);
-            buttonFornecedores.TabIndex = 7;
+            buttonFornecedores.Size = new Size(355, 50);
+            buttonFornecedores.TabIndex = 9;
             buttonFornecedores.Text = "Fornecedores";
             buttonFornecedores.UseVisualStyleBackColor = false;
             buttonFornecedores.Click += buttonFornecedores_Click;
@@ -321,10 +335,11 @@ namespace UIGestaoMercearia
             buttonCategorias.FlatStyle = FlatStyle.Flat;
             buttonCategorias.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonCategorias.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonCategorias.Location = new Point(15, 625);
+            buttonCategorias.Location = new Point(13, 469);
+            buttonCategorias.Margin = new Padding(3, 2, 3, 2);
             buttonCategorias.Name = "buttonCategorias";
-            buttonCategorias.Size = new Size(406, 63);
-            buttonCategorias.TabIndex = 22;
+            buttonCategorias.Size = new Size(355, 47);
+            buttonCategorias.TabIndex = 9;
             buttonCategorias.Text = "Categorias";
             buttonCategorias.UseVisualStyleBackColor = false;
             buttonCategorias.Click += buttonCategorias_Click;
@@ -338,9 +353,9 @@ namespace UIGestaoMercearia
             labelNomeEmpresa.FlatStyle = FlatStyle.Popup;
             labelNomeEmpresa.Font = new Font("Bernard MT Condensed", 28.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             labelNomeEmpresa.ForeColor = Color.FromArgb(50, 153, 204);
-            labelNomeEmpresa.Location = new Point(428, 0);
+            labelNomeEmpresa.Location = new Point(374, 0);
             labelNomeEmpresa.Name = "labelNomeEmpresa";
-            labelNomeEmpresa.Size = new Size(229, 55);
+            labelNomeEmpresa.Size = new Size(187, 45);
             labelNomeEmpresa.TabIndex = 0;
             labelNomeEmpresa.Text = "MERCEARIA";
             labelNomeEmpresa.TextAlign = ContentAlignment.MiddleCenter;
@@ -349,8 +364,9 @@ namespace UIGestaoMercearia
             // splitter1
             // 
             splitter1.Location = new Point(0, 0);
+            splitter1.Margin = new Padding(3, 2, 3, 2);
             splitter1.Name = "splitter1";
-            splitter1.Size = new Size(4, 1055);
+            splitter1.Size = new Size(4, 747);
             splitter1.TabIndex = 0;
             splitter1.TabStop = false;
             // 
@@ -359,10 +375,11 @@ namespace UIGestaoMercearia
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel3.BackColor = Color.FromArgb(50, 153, 204);
             panel3.Controls.Add(label1);
-            panel3.Location = new Point(0, 58);
+            panel3.Location = new Point(0, 44);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1128, 68);
-            panel3.TabIndex = 1;
+            panel3.Size = new Size(786, 51);
+            panel3.TabIndex = 0;
             // 
             // pictureBoxLogo
             // 
@@ -373,9 +390,10 @@ namespace UIGestaoMercearia
             pictureBoxLogo.ErrorImage = null;
             pictureBoxLogo.Image = Properties.Resources.shopping_cart_icon_illustration_free_vector2;
             pictureBoxLogo.InitialImage = null;
-            pictureBoxLogo.Location = new Point(337, 3);
+            pictureBoxLogo.Location = new Point(295, 2);
+            pictureBoxLogo.Margin = new Padding(3, 2, 3, 2);
             pictureBoxLogo.Name = "pictureBoxLogo";
-            pictureBoxLogo.Size = new Size(67, 52);
+            pictureBoxLogo.Size = new Size(59, 39);
             pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBoxLogo.TabIndex = 2;
             pictureBoxLogo.TabStop = false;
@@ -387,9 +405,10 @@ namespace UIGestaoMercearia
             panel4.Controls.Add(buttonConsultarVenda);
             panel4.Controls.Add(buttonIniciarVenda);
             panel4.Controls.Add(pictureBox3);
-            panel4.Location = new Point(0, 125);
+            panel4.Location = new Point(0, 94);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1128, 133);
+            panel4.Size = new Size(786, 100);
             panel4.TabIndex = 1;
             // 
             // buttonConsultarVenda
@@ -400,10 +419,10 @@ namespace UIGestaoMercearia
             buttonConsultarVenda.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonConsultarVenda.ForeColor = SystemColors.ButtonHighlight;
             buttonConsultarVenda.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonConsultarVenda.Location = new Point(541, 30);
-            buttonConsultarVenda.Margin = new Padding(10);
+            buttonConsultarVenda.Location = new Point(272, 22);
+            buttonConsultarVenda.Margin = new Padding(9, 8, 9, 8);
             buttonConsultarVenda.Name = "buttonConsultarVenda";
-            buttonConsultarVenda.Size = new Size(439, 81);
+            buttonConsultarVenda.Size = new Size(384, 61);
             buttonConsultarVenda.TabIndex = 1;
             buttonConsultarVenda.Text = "CONSULTAR VENDA";
             buttonConsultarVenda.UseVisualStyleBackColor = false;
@@ -415,9 +434,10 @@ namespace UIGestaoMercearia
             buttonIniciarVenda.FlatStyle = FlatStyle.Flat;
             buttonIniciarVenda.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonIniciarVenda.ForeColor = SystemColors.ButtonHighlight;
-            buttonIniciarVenda.Location = new Point(22, 30);
+            buttonIniciarVenda.Location = new Point(19, 22);
+            buttonIniciarVenda.Margin = new Padding(3, 2, 3, 2);
             buttonIniciarVenda.Name = "buttonIniciarVenda";
-            buttonIniciarVenda.Size = new Size(506, 81);
+            buttonIniciarVenda.Size = new Size(242, 61);
             buttonIniciarVenda.TabIndex = 0;
             buttonIniciarVenda.Text = "PDV";
             buttonIniciarVenda.UseVisualStyleBackColor = false;
@@ -433,9 +453,10 @@ namespace UIGestaoMercearia
             pictureBox3.ErrorImage = null;
             pictureBox3.Image = Properties.Resources.settings_512px;
             pictureBox3.InitialImage = null;
-            pictureBox3.Location = new Point(1010, 20);
+            pictureBox3.Location = new Point(683, 15);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(109, 91);
+            pictureBox3.Size = new Size(95, 68);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 19;
             pictureBox3.TabStop = false;
@@ -451,20 +472,21 @@ namespace UIGestaoMercearia
             pictureBox2.ErrorImage = null;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.InitialImage = null;
-            pictureBox2.Location = new Point(0, 255);
+            pictureBox2.Location = new Point(0, 191);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1125, 800);
+            pictureBox2.Size = new Size(783, 785);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
             // 
             // FormPrincipal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1558, 1055);
+            ClientSize = new Size(998, 747);
             Controls.Add(panel2);
             Controls.Add(panel4);
             Controls.Add(pictureBoxLogo);
@@ -475,10 +497,9 @@ namespace UIGestaoMercearia
             ForeColor = Color.Transparent;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;
-            MinimumSize = new Size(1157, 733);
+            MinimumSize = new Size(1014, 554);
             Name = "FormPrincipal";
             ShowIcon = false;
             ShowInTaskbar = false;

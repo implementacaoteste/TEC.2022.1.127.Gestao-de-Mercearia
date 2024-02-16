@@ -38,16 +38,16 @@
             buttonInserir = new Button();
             buttonExcluir = new Button();
             funcionarioDataGridView = new DataGridView();
-            funcionarioBindingSource = new BindingSource(components);
-            buttonSelecionar = new Button();
-            buttonCancelar = new Button();
-            label3 = new Label();
             nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             profissaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             Telefone = new DataGridViewTextBoxColumn();
             salarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ativoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
+            funcionarioBindingSource = new BindingSource(components);
+            buttonSelecionar = new Button();
+            buttonCancelar = new Button();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)funcionarioDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)funcionarioBindingSource).BeginInit();
             SuspendLayout();
@@ -61,7 +61,7 @@
             label1.ForeColor = SystemColors.ButtonFace;
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(848, 48);
+            label1.Size = new Size(742, 36);
             label1.TabIndex = 3;
             label1.Text = "CONSULTA FUNCIONÁRIO";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -69,11 +69,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(12, 63);
+            label2.Location = new Point(10, 47);
             label2.Name = "label2";
-            label2.Size = new Size(120, 18);
+            label2.Size = new Size(88, 15);
             label2.TabIndex = 4;
             label2.Text = "BUSCAR POR:";
             // 
@@ -81,27 +81,24 @@
             // 
             comboBoxBuscarPor.FormattingEnabled = true;
             comboBoxBuscarPor.Items.AddRange(new object[] { "Id", "Nome", "Todos" });
-            comboBoxBuscarPor.Location = new Point(12, 85);
-            comboBoxBuscarPor.Margin = new Padding(3, 4, 3, 4);
+            comboBoxBuscarPor.Location = new Point(10, 64);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
-            comboBoxBuscarPor.Size = new Size(144, 28);
+            comboBoxBuscarPor.Size = new Size(126, 23);
             comboBoxBuscarPor.TabIndex = 7;
             // 
             // textBoxBuscar
             // 
             textBoxBuscar.Cursor = Cursors.IBeam;
-            textBoxBuscar.Location = new Point(162, 86);
-            textBoxBuscar.Margin = new Padding(3, 4, 3, 4);
+            textBoxBuscar.Location = new Point(142, 64);
             textBoxBuscar.Name = "textBoxBuscar";
-            textBoxBuscar.Size = new Size(349, 27);
+            textBoxBuscar.Size = new Size(306, 23);
             textBoxBuscar.TabIndex = 8;
             // 
             // buttonBuscar
             // 
-            buttonBuscar.Location = new Point(517, 86);
-            buttonBuscar.Margin = new Padding(3, 4, 3, 4);
+            buttonBuscar.Location = new Point(452, 64);
             buttonBuscar.Name = "buttonBuscar";
-            buttonBuscar.Size = new Size(75, 29);
+            buttonBuscar.Size = new Size(66, 22);
             buttonBuscar.TabIndex = 9;
             buttonBuscar.Text = "&Buscar";
             buttonBuscar.UseVisualStyleBackColor = true;
@@ -109,10 +106,9 @@
             // 
             // buttonAlterar
             // 
-            buttonAlterar.Location = new Point(598, 86);
-            buttonAlterar.Margin = new Padding(3, 4, 3, 4);
+            buttonAlterar.Location = new Point(523, 64);
             buttonAlterar.Name = "buttonAlterar";
-            buttonAlterar.Size = new Size(75, 29);
+            buttonAlterar.Size = new Size(66, 22);
             buttonAlterar.TabIndex = 10;
             buttonAlterar.Text = "&Alterar";
             buttonAlterar.UseVisualStyleBackColor = true;
@@ -120,10 +116,9 @@
             // 
             // buttonInserir
             // 
-            buttonInserir.Location = new Point(679, 86);
-            buttonInserir.Margin = new Padding(3, 4, 3, 4);
+            buttonInserir.Location = new Point(594, 64);
             buttonInserir.Name = "buttonInserir";
-            buttonInserir.Size = new Size(75, 29);
+            buttonInserir.Size = new Size(66, 22);
             buttonInserir.TabIndex = 11;
             buttonInserir.Text = "&Inserir";
             buttonInserir.UseVisualStyleBackColor = true;
@@ -131,10 +126,9 @@
             // 
             // buttonExcluir
             // 
-            buttonExcluir.Location = new Point(760, 86);
-            buttonExcluir.Margin = new Padding(3, 4, 3, 4);
+            buttonExcluir.Location = new Point(665, 64);
             buttonExcluir.Name = "buttonExcluir";
-            buttonExcluir.Size = new Size(75, 29);
+            buttonExcluir.Size = new Size(66, 22);
             buttonExcluir.TabIndex = 12;
             buttonExcluir.Text = "&Excluir";
             buttonExcluir.UseVisualStyleBackColor = true;
@@ -150,51 +144,14 @@
             funcionarioDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             funcionarioDataGridView.Columns.AddRange(new DataGridViewColumn[] { nomeDataGridViewTextBoxColumn, profissaoDataGridViewTextBoxColumn, Telefone, salarioDataGridViewTextBoxColumn, idDataGridViewTextBoxColumn, ativoDataGridViewCheckBoxColumn });
             funcionarioDataGridView.DataSource = funcionarioBindingSource;
-            funcionarioDataGridView.Location = new Point(12, 120);
+            funcionarioDataGridView.Location = new Point(10, 90);
+            funcionarioDataGridView.Margin = new Padding(3, 2, 3, 2);
             funcionarioDataGridView.Name = "funcionarioDataGridView";
             funcionarioDataGridView.ReadOnly = true;
             funcionarioDataGridView.RowHeadersWidth = 51;
             funcionarioDataGridView.RowTemplate.Height = 29;
-            funcionarioDataGridView.Size = new Size(823, 286);
+            funcionarioDataGridView.Size = new Size(720, 214);
             funcionarioDataGridView.TabIndex = 13;
-            // 
-            // funcionarioBindingSource
-            // 
-            funcionarioBindingSource.DataSource = typeof(Models.Funcionario);
-            // 
-            // buttonSelecionar
-            // 
-            buttonSelecionar.Location = new Point(663, 413);
-            buttonSelecionar.Margin = new Padding(3, 4, 3, 4);
-            buttonSelecionar.Name = "buttonSelecionar";
-            buttonSelecionar.Size = new Size(91, 29);
-            buttonSelecionar.TabIndex = 14;
-            buttonSelecionar.Text = "&Selecionar";
-            buttonSelecionar.UseVisualStyleBackColor = true;
-            buttonSelecionar.Click += buttonSelecionar_Click;
-            // 
-            // buttonCancelar
-            // 
-            buttonCancelar.DialogResult = DialogResult.Cancel;
-            buttonCancelar.Location = new Point(760, 413);
-            buttonCancelar.Margin = new Padding(3, 4, 3, 4);
-            buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(75, 29);
-            buttonCancelar.TabIndex = 15;
-            buttonCancelar.Text = "&Cancelar";
-            buttonCancelar.UseVisualStyleBackColor = true;
-            buttonCancelar.Click += buttonCancelar_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(162, 63);
-            label3.Name = "label3";
-            label3.Size = new Size(222, 18);
-            label3.TabIndex = 16;
-            label3.Text = "INSIRA AS INFORMAÇÕES:";
             // 
             // nomeDataGridViewTextBoxColumn
             // 
@@ -250,12 +207,48 @@
             ativoDataGridViewCheckBoxColumn.ReadOnly = true;
             ativoDataGridViewCheckBoxColumn.Width = 50;
             // 
+            // funcionarioBindingSource
+            // 
+            funcionarioBindingSource.DataSource = typeof(Models.Funcionario);
+            // 
+            // buttonSelecionar
+            // 
+            buttonSelecionar.Location = new Point(580, 310);
+            buttonSelecionar.Name = "buttonSelecionar";
+            buttonSelecionar.Size = new Size(80, 22);
+            buttonSelecionar.TabIndex = 14;
+            buttonSelecionar.Text = "&Selecionar";
+            buttonSelecionar.UseVisualStyleBackColor = true;
+            buttonSelecionar.Click += buttonSelecionar_Click;
+            // 
+            // buttonCancelar
+            // 
+            buttonCancelar.DialogResult = DialogResult.Cancel;
+            buttonCancelar.Location = new Point(665, 310);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(66, 22);
+            buttonCancelar.TabIndex = 15;
+            buttonCancelar.Text = "&Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(142, 47);
+            label3.Name = "label3";
+            label3.Size = new Size(158, 15);
+            label3.TabIndex = 16;
+            label3.Text = "INSIRA AS INFORMAÇÕES:";
+            // 
             // FormConsultaFuncionario
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
-            ClientSize = new Size(848, 456);
+            ClientSize = new Size(742, 342);
             Controls.Add(label3);
             Controls.Add(buttonCancelar);
             Controls.Add(buttonSelecionar);
@@ -270,6 +263,7 @@
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormConsultaFuncionario";
@@ -277,6 +271,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormConsultaFuncionario_Load;
+            KeyDown += FormConsultaFuncionario_KeyDown;
             ((System.ComponentModel.ISupportInitialize)funcionarioDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)funcionarioBindingSource).EndInit();
             ResumeLayout(false);

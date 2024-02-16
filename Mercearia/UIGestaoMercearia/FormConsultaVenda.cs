@@ -40,7 +40,7 @@ namespace UIGestaoMercearia
                     default:
                         bindingSourceVenda.DataSource = new VendaBLL().BuscarTodos();
                         break;
-                    
+
                 }
             }
             catch (Exception ex)
@@ -150,6 +150,12 @@ namespace UIGestaoMercearia
                 button.ForeColor = SystemColors.ControlText;
             }
             button.Enabled = ativo;
+        }
+
+        private void FormConsultaVenda_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
         }
     }
 }

@@ -121,12 +121,12 @@ namespace UIGestaoMercearia
                     return;
                 }
 
-                
+
                 Funcionario selectedFuncionario = (Funcionario)funcionarioBindingSource.Current;
 
-                
+
                 MessageBox.Show($"Funcionario Selecionado: {selectedFuncionario.Nome}, Id: {selectedFuncionario.Id}");
-               
+
 
             }
             catch (Exception ex)
@@ -151,6 +151,12 @@ namespace UIGestaoMercearia
         {
             comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1; //seleciona sempre o ultimo indice da ComboBox
             buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
+        }
+
+        private void FormConsultaFuncionario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
         }
     }
 }
