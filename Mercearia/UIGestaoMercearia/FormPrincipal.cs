@@ -292,15 +292,6 @@ namespace UIGestaoMercearia
         {
 
         }
-
-        private void PDV_Click(object sender, EventArgs e)
-        {
-            using (FormPDV frm = new FormPDV())
-            {
-                frm.ShowDialog();
-            }
-        }
-
         private void buttonPagamento_Click(object sender, EventArgs e)
         {
             using (FormPagamento frm = new FormPagamento())
