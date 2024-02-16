@@ -49,7 +49,7 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"UPDATE Estoque SET DataDeEntrada = @DataDeEntrada, DataDeSaida = @DataDeSaida, EstoqueMinimo = @EstoqueMinimo, EstoqueMaximo = @EstoqueMaximo, @QuantidadeEmEstoque, IdProduto = @IdProduto WHERE Id = @Id"; 
+                cmd.CommandText = @"UPDATE Estoque SET DataDeEntrada = @DataDeEntrada, DataDeSaida = @DataDeSaida, EstoqueMinimo = @EstoqueMinimo, EstoqueMaximo = @EstoqueMaximo, QuantidadeEmEstoque = @QuantidadeEmEstoque, IdProduto = @IdProduto WHERE Id = @Id"; 
                                     
                 cmd.CommandType = System.Data.CommandType.Text;
 
