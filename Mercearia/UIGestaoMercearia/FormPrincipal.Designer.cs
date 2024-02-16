@@ -419,7 +419,7 @@ namespace UIGestaoMercearia
             buttonIniciarVenda.Name = "buttonIniciarVenda";
             buttonIniciarVenda.Size = new Size(506, 81);
             buttonIniciarVenda.TabIndex = 0;
-            buttonIniciarVenda.Text = "INICIAR VENDA";
+            buttonIniciarVenda.Text = "PDV";
             buttonIniciarVenda.UseVisualStyleBackColor = false;
             buttonIniciarVenda.Click += buttonIniciarVenda_Click;
             // 
