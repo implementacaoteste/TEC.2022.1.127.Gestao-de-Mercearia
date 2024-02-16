@@ -52,9 +52,9 @@
             label1.ForeColor = SystemColors.ControlLightLight;
             label1.Location = new Point(60, 9);
             label1.Name = "label1";
-            label1.Size = new Size(439, 52);
+            label1.Size = new Size(467, 52);
             label1.TabIndex = 0;
-            label1.Text = "Estatísca de Ganhos";
+            label1.Text = "Estatística de Ganhos";
             // 
             // panel1
             // 
@@ -173,6 +173,7 @@
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
+            Load += FormEstatistica_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel5.ResumeLayout(false);
