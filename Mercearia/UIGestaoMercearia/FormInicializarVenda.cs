@@ -165,11 +165,11 @@ namespace UIGestaoMercearia
                             using (FormFinalizarVenda formFinalizarVenda = new FormFinalizarVenda(formaPagamento, ((Venda)bindingSourceVenda.Current).Total))
                             {
                                 formFinalizarVenda.ShowDialog();
-                                
+
                             }
                         }
                     }
-                    
+
                 }
                 ((Venda)bindingSourceVenda.Current).IdFormaPagamento = formaPagamento.Id;
                 new VendaBLL().Inserir((Venda)bindingSourceVenda.Current);
@@ -182,6 +182,11 @@ namespace UIGestaoMercearia
         }
 
         private void labelNomeEmpresa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void itemVendaListBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
         }
