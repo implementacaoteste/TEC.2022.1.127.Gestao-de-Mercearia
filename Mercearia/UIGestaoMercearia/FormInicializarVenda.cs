@@ -90,7 +90,10 @@ namespace UIGestaoMercearia
         }
         private void textBoxCodigodeBarras_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.F12)
+            {
+                buttonFinalizarVenda_Click(sender, e);
+            }
         }
         private void AdicionarProduto()
         {
@@ -106,7 +109,7 @@ namespace UIGestaoMercearia
             total = ((Venda)bindingSourceVenda.Current).Total;
             labelSubtotal.Text = $"subtotal: {((Venda)bindingSourceVenda.Current).Total:F2}";
             textBoxCodigodeBarras.Text = "";
-            buttonFinalizarVenda.Focus();
+            textBoxCodigodeBarras.Focus();
         }
         private void textBoxQuantidade_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -133,6 +136,7 @@ namespace UIGestaoMercearia
                 else
                     textBoxQuantidade.Focus();
             }
+
             //if (e.KeyChar == (char)Keys.Enter)
             //{
             //    e.Handled = true;
@@ -146,7 +150,7 @@ namespace UIGestaoMercearia
                 textBoxCodigodeBarras.Focus();
         }
 
-        private void finaliz(object sender, EventArgs e)
+        private void buttonFinalizarVenda_Click(object sender, EventArgs e)
         {
             textBoxCodigodeBarras.Text = "";
             labelpreco.Text = "";
@@ -165,11 +169,12 @@ namespace UIGestaoMercearia
                             using (FormFinalizarVenda formFinalizarVenda = new FormFinalizarVenda(formaPagamento, ((Venda)bindingSourceVenda.Current).Total))
                             {
                                 formFinalizarVenda.ShowDialog();
-                                
+
                             }
                         }
+
                     }
-                    
+
                 }
                 ((Venda)bindingSourceVenda.Current).IdFormaPagamento = formaPagamento.Id;
                 new VendaBLL().Inserir((Venda)bindingSourceVenda.Current);
@@ -179,11 +184,6 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void labelNomeEmpresa_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -17,13 +17,13 @@ namespace UIGestaoMercearia
     {
         public FormaPagamento pagamento;
         private bool selecionarRegistro;
+
         public FormPagamento(bool _selecionarRegistro = false)
         {
             InitializeComponent();
             this.selecionarRegistro = _selecionarRegistro;
             buttonSelecionar.Visible = selecionarRegistro;
             bindingSourcePagamento.MoveNext();
-
         }
 
         private void buttonInserir_Click(object sender, EventArgs e)
@@ -94,6 +94,7 @@ namespace UIGestaoMercearia
             comboBoxBuscarPor.SelectedIndex = comboBoxBuscarPor.Items.Count - 1; //seleciona sempre o ultimo indice da ComboBox
             buttonBuscar_Click(sender, e); //O evento load faz o botão buscar ser clicado
             HabilitarComponentes();
+
         }
 
         private void HabilitarComponentes()
@@ -101,7 +102,6 @@ namespace UIGestaoMercearia
             HabilitarBotao(buttonInserir, new UsuarioBLL().ValidarPermissao(36, false));
             HabilitarBotao(buttonAlterar, new UsuarioBLL().ValidarPermissao(37, false));
             HabilitarBotao(buttonExcluir, new UsuarioBLL().ValidarPermissao(38, false));
-
         }
         private void HabilitarBotao(System.Windows.Forms.Button button, bool ativo)
         {
@@ -149,7 +149,6 @@ namespace UIGestaoMercearia
 
                 pagamento = (FormaPagamento)bindingSourcePagamento.Current;
                 this.DialogResult = DialogResult.OK;
-
             }
             catch (Exception ex)
             {
@@ -177,6 +176,22 @@ namespace UIGestaoMercearia
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void textBoxBuscarPor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonSelecionar_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Down)
+            {
+                bindingSourcePagamento.MoveNext();
+            }
+            else if(e.KeyCode == Keys.Up)
+            {
+                bindingSourcePagamento.MovePrevious();
             }
         }
     }

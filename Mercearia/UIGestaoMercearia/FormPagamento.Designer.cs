@@ -65,7 +65,7 @@
             label2.Location = new Point(167, 107);
             label2.Name = "label2";
             label2.Size = new Size(201, 18);
-            label2.TabIndex = 3;
+            label2.TabIndex = 0;
             label2.Text = "INSIRA A INFORMAÇÃO:";
             // 
             // label1
@@ -76,7 +76,7 @@
             label1.Location = new Point(25, 108);
             label1.Name = "label1";
             label1.Size = new Size(120, 18);
-            label1.TabIndex = 1;
+            label1.TabIndex = 5;
             label1.Text = "BUSCAR POR:";
             // 
             // buttonBuscar
@@ -86,7 +86,7 @@
             buttonBuscar.Location = new Point(482, 126);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(94, 29);
-            buttonBuscar.TabIndex = 5;
+            buttonBuscar.TabIndex = 2;
             buttonBuscar.Text = "&Buscar";
             buttonBuscar.UseVisualStyleBackColor = false;
             buttonBuscar.Click += buttonBuscar_Click;
@@ -99,6 +99,7 @@
             textBoxBuscarPor.Name = "textBoxBuscarPor";
             textBoxBuscarPor.Size = new Size(309, 27);
             textBoxBuscarPor.TabIndex = 1;
+            textBoxBuscarPor.KeyDown += textBoxBuscarPor_KeyDown;
             // 
             // comboBoxBuscarPor
             // 
@@ -107,7 +108,7 @@
             comboBoxBuscarPor.Location = new Point(25, 129);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             comboBoxBuscarPor.Size = new Size(136, 28);
-            comboBoxBuscarPor.TabIndex = 0;
+            comboBoxBuscarPor.TabIndex = 6;
             // 
             // panel2
             // 
@@ -168,7 +169,7 @@
             dataGridViewCategoria.RowHeadersWidth = 51;
             dataGridViewCategoria.RowTemplate.Height = 29;
             dataGridViewCategoria.Size = new Size(553, 294);
-            dataGridViewCategoria.TabIndex = 0;
+            dataGridViewCategoria.TabIndex = 3;
             dataGridViewCategoria.DoubleClick += dataGridViewCategoria_DoubleClick;
             // 
             // idDataGridViewTextBoxColumn
@@ -222,7 +223,7 @@
             panel3.Location = new Point(0, 472);
             panel3.Name = "panel3";
             panel3.Size = new Size(579, 50);
-            panel3.TabIndex = 0;
+            panel3.TabIndex = 4;
             // 
             // buttonInserir
             // 

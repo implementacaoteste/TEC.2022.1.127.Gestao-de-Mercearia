@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,7 +26,6 @@ namespace UIGestaoMercearia
             if (_formaPagamento.Tipo.ToUpper() == "DINHEIRO")
             {
                 textBoxValorPago.Visible = true;
-                //textBoxValorPago.Focus();
                 textBoxTotal.Visible = true;
                 textBoxTotal.Text = _totalVenda.ToString();
                 labelValorPago.Visible = true;
@@ -45,8 +45,7 @@ namespace UIGestaoMercearia
                 labelTroco.Visible = false;
                 labelTotal.Visible = true;
             }
-            
-            }
+        }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -54,6 +53,7 @@ namespace UIGestaoMercearia
                 if (string.IsNullOrEmpty(textBoxValorPago.Text))
                 {
                     textBoxValorPago.Focus();
+
                 }
                 else
                 {
@@ -87,8 +87,18 @@ namespace UIGestaoMercearia
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Venda Concluída!");
+            //MessageBox.Show("Venda Concluída!");
             Close();
+        }
+
+        private void FormFinalizarVenda_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                buttonOk_Click(sender, e);
+            else if (e.KeyCode == Keys.Escape)
+                this.DialogResult = DialogResult.Cancel;
+            else if (e.KeyCode == Keys.F11)
+                buttonBuscarFormaPagamento_Click(sender, e);
         }
     }
 }

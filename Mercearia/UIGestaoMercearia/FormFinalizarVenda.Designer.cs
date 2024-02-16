@@ -65,7 +65,7 @@ namespace UIGestaoMercearia
             labelFormaPagamento.Location = new Point(25, 122);
             labelFormaPagamento.Name = "labelFormaPagamento";
             labelFormaPagamento.Size = new Size(271, 24);
-            labelFormaPagamento.TabIndex = 5;
+            labelFormaPagamento.TabIndex = 1;
             labelFormaPagamento.Text = "FORMA DE PAGAMENTO";
             // 
             // textBoxFormaPagamento
@@ -76,7 +76,8 @@ namespace UIGestaoMercearia
             textBoxFormaPagamento.Location = new Point(25, 149);
             textBoxFormaPagamento.Name = "textBoxFormaPagamento";
             textBoxFormaPagamento.Size = new Size(511, 43);
-            textBoxFormaPagamento.TabIndex = 5;
+            textBoxFormaPagamento.TabIndex = 2;
+            textBoxFormaPagamento.TabStop = false;
             // 
             // textBoxValorPago
             // 
@@ -86,7 +87,7 @@ namespace UIGestaoMercearia
             textBoxValorPago.Location = new Point(894, 149);
             textBoxValorPago.Name = "textBoxValorPago";
             textBoxValorPago.Size = new Size(223, 43);
-            textBoxValorPago.TabIndex = 1;
+            textBoxValorPago.TabIndex = 5;
             textBoxValorPago.Visible = false;
             textBoxValorPago.KeyPress += textBoxValorPago_KeyPress;
             // 
@@ -99,7 +100,7 @@ namespace UIGestaoMercearia
             labelValorPago.Location = new Point(894, 122);
             labelValorPago.Name = "labelValorPago";
             labelValorPago.Size = new Size(153, 24);
-            labelValorPago.TabIndex = 2;
+            labelValorPago.TabIndex = 4;
             labelValorPago.Text = "VALOR PAGO";
             labelValorPago.Visible = false;
             // 
@@ -146,7 +147,7 @@ namespace UIGestaoMercearia
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
             label3.Size = new Size(1143, 94);
-            label3.TabIndex = 39;
+            label3.TabIndex = 0;
             label3.Text = "FINALIZAR VENDA";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -159,7 +160,7 @@ namespace UIGestaoMercearia
             labelTroco.Location = new Point(656, 401);
             labelTroco.Name = "labelTroco";
             labelTroco.Size = new Size(139, 144);
-            labelTroco.TabIndex = 40;
+            labelTroco.TabIndex = 6;
             labelTroco.Text = "0";
             // 
             // textBoxTotal
@@ -169,7 +170,7 @@ namespace UIGestaoMercearia
             textBoxTotal.Location = new Point(623, 149);
             textBoxTotal.Name = "textBoxTotal";
             textBoxTotal.Size = new Size(237, 43);
-            textBoxTotal.TabIndex = 7;
+            textBoxTotal.TabIndex = 2;
             // 
             // labelTotal
             // 
@@ -193,7 +194,7 @@ namespace UIGestaoMercearia
             labelExTroco.Location = new Point(137, 401);
             labelExTroco.Name = "labelExTroco";
             labelExTroco.Size = new Size(776, 144);
-            labelExTroco.TabIndex = 40;
+            labelExTroco.TabIndex = 5;
             labelExTroco.Text = "TROCO: R$";
             // 
             // FormFinalizarVenda
@@ -216,6 +217,7 @@ namespace UIGestaoMercearia
             Controls.Add(textBoxValorPago);
             Controls.Add(textBoxFormaPagamento);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            KeyPreview = true;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormFinalizarVenda";
@@ -223,6 +225,7 @@ namespace UIGestaoMercearia
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormFinalizarVenda_Load;
+            KeyDown += FormFinalizarVenda_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).EndInit();
             ResumeLayout(false);

@@ -79,7 +79,7 @@
             // 
             // labelPDV
             // 
-            labelPDV.Anchor = AnchorStyles.Top;
+            labelPDV.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             labelPDV.AutoSize = true;
             labelPDV.BackColor = Color.FromArgb(50, 153, 204);
             labelPDV.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
@@ -176,7 +176,7 @@
             buttonFinalizarVenda.TabIndex = 22;
             buttonFinalizarVenda.Text = "Finalizar Venda";
             buttonFinalizarVenda.UseVisualStyleBackColor = false;
-            buttonFinalizarVenda.Click += finaliz;
+            buttonFinalizarVenda.Click += buttonFinalizarVenda_Click;
             // 
             // label6
             // 
@@ -366,10 +366,12 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.AccessibleRole = AccessibleRole.None;
+            pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = Properties.Resources.Captura_de_tela_2024_01_31_0909582;
-            pictureBox1.Location = new Point(-516, 64);
+            pictureBox1.Location = new Point(-476, 64);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(949, 1002);
+            pictureBox1.Size = new Size(878, 1002);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
