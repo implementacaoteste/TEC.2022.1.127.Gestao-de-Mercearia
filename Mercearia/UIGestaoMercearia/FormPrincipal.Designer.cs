@@ -85,7 +85,6 @@ namespace UIGestaoMercearia
             label1.TabIndex = 0;
             label1.Text = "CAIXA ABERTO";
             label1.TextAlign = ContentAlignment.TopCenter;
-            label1.Click += label1_Click;
             // 
             // MENU
             // 
@@ -158,7 +157,6 @@ namespace UIGestaoMercearia
             panel2.Name = "panel2";
             panel2.Size = new Size(379, 976);
             panel2.TabIndex = 3;
-            panel2.Paint += panel2_Paint;
             // 
             // pictureBoxEstatistica
             // 
@@ -359,7 +357,6 @@ namespace UIGestaoMercearia
             labelNomeEmpresa.TabIndex = 0;
             labelNomeEmpresa.Text = "MERCEARIA";
             labelNomeEmpresa.TextAlign = ContentAlignment.MiddleCenter;
-            labelNomeEmpresa.Click += label2_Click;
             // 
             // splitter1
             // 

@@ -1,8 +1,5 @@
 ﻿using Models;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Security.Cryptography;
 
 namespace DAL
 {
@@ -154,7 +151,7 @@ namespace DAL
                 cmd.CommandText = @"SELECT Permissao.Id, Permissao.Descricao FROM Permissao
                                     INNER JOIN PermissaoGrupoUsuario ON Permissao.Id = PermissaoGrupoUsuario.IdPermissao
                                     WHERE PermissaoGrupoUsuario.IdGrupoUsuario = @IdGrupoUsuario ORDER BY Permissao.Descricao";
-                
+
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@IdGrupoUsuario", _idGrupoUsuario);
                 cn.Open();
