@@ -22,6 +22,7 @@ namespace UIGestaoMercearia
             InitializeComponent();
             this.selecionarRegistro = _selecionarRegistro;
             buttonSelecionar.Visible = selecionarRegistro;
+            bindingSourcePagamento.MoveNext();
 
         }
 

@@ -98,7 +98,7 @@
             textBoxBuscarPor.Location = new Point(167, 128);
             textBoxBuscarPor.Name = "textBoxBuscarPor";
             textBoxBuscarPor.Size = new Size(309, 27);
-            textBoxBuscarPor.TabIndex = 4;
+            textBoxBuscarPor.TabIndex = 1;
             // 
             // comboBoxBuscarPor
             // 
@@ -107,7 +107,7 @@
             comboBoxBuscarPor.Location = new Point(25, 129);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             comboBoxBuscarPor.Size = new Size(136, 28);
-            comboBoxBuscarPor.TabIndex = 2;
+            comboBoxBuscarPor.TabIndex = 0;
             // 
             // panel2
             // 
@@ -168,7 +168,7 @@
             dataGridViewCategoria.RowHeadersWidth = 51;
             dataGridViewCategoria.RowTemplate.Height = 29;
             dataGridViewCategoria.Size = new Size(553, 294);
-            dataGridViewCategoria.TabIndex = 6;
+            dataGridViewCategoria.TabIndex = 0;
             dataGridViewCategoria.DoubleClick += dataGridViewCategoria_DoubleClick;
             // 
             // idDataGridViewTextBoxColumn
