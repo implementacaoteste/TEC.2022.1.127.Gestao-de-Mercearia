@@ -142,17 +142,6 @@ namespace UIGestaoMercearia
 
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
         private void FormConsultaEstoque_Load(object sender, EventArgs e)
         {
@@ -163,6 +152,18 @@ namespace UIGestaoMercearia
         private void dataGridViewEstoque_DoubleClick(object sender, EventArgs e)
         {
             buttonSelecionar_Click(sender, e);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
