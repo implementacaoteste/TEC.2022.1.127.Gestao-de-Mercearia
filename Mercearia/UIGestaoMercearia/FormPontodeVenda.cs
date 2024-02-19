@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 namespace UIGestaoMercearia
 {
 
-    public partial class FormInicializarVenda : Form
+    public partial class FormPontodeVenda : Form
     {
         int id;
         private object itemVenda;
@@ -12,7 +12,7 @@ namespace UIGestaoMercearia
 
         public Produto produtoAtual { get; private set; }
 
-        public FormInicializarVenda(int _id = 0)
+        public FormPontodeVenda(int _id = 0)
         {
             InitializeComponent();
             id = _id;

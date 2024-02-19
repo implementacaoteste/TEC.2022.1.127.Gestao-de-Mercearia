@@ -1,6 +1,6 @@
 ﻿namespace UIGestaoMercearia
 {
-    partial class FormInicializarVenda
+    partial class FormPontodeVenda
     {
         /// <summary>
         /// Required designer variable.
@@ -50,11 +50,6 @@
             label11 = new Label();
             buttonCancelar = new Button();
             dataGridView1 = new DataGridView();
-            itemVendaListBindingSource = new BindingSource(components);
-            bindingSourceVenda = new BindingSource(components);
-            label12 = new Label();
-            labelpreco = new Label();
-            pictureBox1 = new PictureBox();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             idVendaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -63,6 +58,11 @@
             subTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             produtoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nomeProdutoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            itemVendaListBindingSource = new BindingSource(components);
+            bindingSourceVenda = new BindingSource(components);
+            label12 = new Label();
+            labelpreco = new Label();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
@@ -92,9 +92,9 @@
             labelPDV.ForeColor = Color.White;
             labelPDV.Location = new Point(677, 0);
             labelPDV.Name = "labelPDV";
-            labelPDV.Size = new Size(136, 67);
+            labelPDV.Size = new Size(488, 67);
             labelPDV.TabIndex = 1;
-            labelPDV.Text = "PDV";
+            labelPDV.Text = "PONTO DE VENDA";
             // 
             // labelNomeProduto
             // 
@@ -263,53 +263,6 @@
             dataGridView1.Size = new Size(973, 415);
             dataGridView1.TabIndex = 11;
             // 
-            // itemVendaListBindingSource
-            // 
-            itemVendaListBindingSource.DataMember = "ItemVendaList";
-            itemVendaListBindingSource.DataSource = bindingSourceVenda;
-            // 
-            // bindingSourceVenda
-            // 
-            bindingSourceVenda.DataSource = typeof(Models.Venda);
-            // 
-            // label12
-            // 
-            label12.Anchor = AnchorStyles.Top;
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.ImageAlign = ContentAlignment.TopCenter;
-            label12.Location = new Point(846, 149);
-            label12.Name = "label12";
-            label12.Size = new Size(200, 31);
-            label12.TabIndex = 2;
-            label12.Text = "PREÇO UNITÁRIO";
-            label12.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labelpreco
-            // 
-            labelpreco.Anchor = AnchorStyles.Top;
-            labelpreco.AutoSize = true;
-            labelpreco.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            labelpreco.ImageAlign = ContentAlignment.TopCenter;
-            labelpreco.Location = new Point(908, 195);
-            labelpreco.Name = "labelpreco";
-            labelpreco.Size = new Size(73, 59);
-            labelpreco.TabIndex = 0;
-            labelpreco.Text = "...";
-            labelpreco.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.AccessibleRole = AccessibleRole.None;
-            pictureBox1.BackgroundImageLayout = ImageLayout.None;
-            pictureBox1.Image = Properties.Resources.Captura_de_tela_2024_01_31_0909582;
-            pictureBox1.Location = new Point(-476, 64);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(878, 1002);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 21;
-            pictureBox1.TabStop = false;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             dataGridViewTextBoxColumn1.DataPropertyName = "Id";
@@ -398,7 +351,54 @@
             nomeProdutoDataGridViewTextBoxColumn.ReadOnly = true;
             nomeProdutoDataGridViewTextBoxColumn.Width = 200;
             // 
-            // FormInicializarVenda
+            // itemVendaListBindingSource
+            // 
+            itemVendaListBindingSource.DataMember = "ItemVendaList";
+            itemVendaListBindingSource.DataSource = bindingSourceVenda;
+            // 
+            // bindingSourceVenda
+            // 
+            bindingSourceVenda.DataSource = typeof(Models.Venda);
+            // 
+            // label12
+            // 
+            label12.Anchor = AnchorStyles.Top;
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ImageAlign = ContentAlignment.TopCenter;
+            label12.Location = new Point(846, 149);
+            label12.Name = "label12";
+            label12.Size = new Size(200, 31);
+            label12.TabIndex = 2;
+            label12.Text = "PREÇO UNITÁRIO";
+            label12.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // labelpreco
+            // 
+            labelpreco.Anchor = AnchorStyles.Top;
+            labelpreco.AutoSize = true;
+            labelpreco.Font = new Font("Stencil", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            labelpreco.ImageAlign = ContentAlignment.TopCenter;
+            labelpreco.Location = new Point(908, 195);
+            labelpreco.Name = "labelpreco";
+            labelpreco.Size = new Size(73, 59);
+            labelpreco.TabIndex = 0;
+            labelpreco.Text = "...";
+            labelpreco.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.AccessibleRole = AccessibleRole.None;
+            pictureBox1.BackgroundImageLayout = ImageLayout.None;
+            pictureBox1.Image = Properties.Resources.Captura_de_tela_2024_01_31_0909582;
+            pictureBox1.Location = new Point(-476, 64);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(878, 1002);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 21;
+            pictureBox1.TabStop = false;
+            // 
+            // FormPontodeVenda
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -421,7 +421,7 @@
             KeyPreview = true;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "FormInicializarVenda";
+            Name = "FormPontodeVenda";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             WindowState = FormWindowState.Maximized;

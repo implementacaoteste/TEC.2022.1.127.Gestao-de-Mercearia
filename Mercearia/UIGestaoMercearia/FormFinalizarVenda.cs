@@ -48,7 +48,7 @@ namespace UIGestaoMercearia
         }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Enter)
+            if (e.KeyChar == (char)Keys.Tab)
             {
                 if (string.IsNullOrEmpty(textBoxValorPago.Text))
                 {
@@ -71,20 +71,7 @@ namespace UIGestaoMercearia
                 troco = Convert.ToDouble(textBoxValorPago.Text) - totalVenda;
                 labelTroco.Text = troco.ToString();
             }
-            buttonOk.Focus();
         }
-        private void buttonBuscarFormaPagamento_Click(object sender, EventArgs e)
-        {
-
-
-
-        }
-
-        private void FormFinalizarVenda_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonOk_Click(object sender, EventArgs e)
         {
             //MessageBox.Show("Venda Concluída!");
@@ -95,12 +82,21 @@ namespace UIGestaoMercearia
         private void FormFinalizarVenda_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-                buttonOk_Click(sender, e);
+                AdicionarTroco();
             else if (e.KeyCode == Keys.Escape)
                 this.DialogResult = DialogResult.Cancel;
             else if (e.KeyCode == Keys.F11)
                 buttonBuscarFormaPagamento_Click(sender, e);
+            else if (e.KeyCode == Keys.F12)
+                buttonOk_Click(sender, e);
+                
         }
+
+        private void buttonBuscarFormaPagamento_Click(object sender, KeyEventArgs e)
+        {
+
+        }
+
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             try

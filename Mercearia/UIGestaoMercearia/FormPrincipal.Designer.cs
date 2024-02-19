@@ -79,7 +79,7 @@ namespace UIGestaoMercearia
             label1.FlatStyle = FlatStyle.Popup;
             label1.Font = new Font("Swis721 Blk BT", 19.8F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(400, 17);
+            label1.Location = new Point(348, 17);
             label1.Name = "label1";
             label1.Size = new Size(285, 40);
             label1.TabIndex = 0;
@@ -151,9 +151,9 @@ namespace UIGestaoMercearia
             panel2.Controls.Add(buttonMarcas);
             panel2.Controls.Add(buttonFornecedores);
             panel2.Controls.Add(buttonCategorias);
-            panel2.Location = new Point(1125, 0);
+            panel2.Location = new Point(1022, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(433, 1055);
+            panel2.Size = new Size(433, 1008);
             panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
             // 
@@ -167,7 +167,7 @@ namespace UIGestaoMercearia
             pictureBoxEstatistica.ErrorImage = null;
             pictureBoxEstatistica.Image = (Image)resources.GetObject("pictureBoxEstatistica.Image");
             pictureBoxEstatistica.InitialImage = null;
-            pictureBoxEstatistica.Location = new Point(24, 905);
+            pictureBoxEstatistica.Location = new Point(24, 882);
             pictureBoxEstatistica.Name = "pictureBoxEstatistica";
             pictureBoxEstatistica.Size = new Size(406, 147);
             pictureBoxEstatistica.SizeMode = PictureBoxSizeMode.Zoom;
@@ -350,7 +350,7 @@ namespace UIGestaoMercearia
             // 
             splitter1.Location = new Point(0, 0);
             splitter1.Name = "splitter1";
-            splitter1.Size = new Size(4, 1055);
+            splitter1.Size = new Size(4, 1008);
             splitter1.TabIndex = 0;
             splitter1.TabStop = false;
             // 
@@ -361,7 +361,7 @@ namespace UIGestaoMercearia
             panel3.Controls.Add(label1);
             panel3.Location = new Point(0, 58);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1128, 68);
+            panel3.Size = new Size(1025, 68);
             panel3.TabIndex = 1;
             // 
             // pictureBoxLogo
@@ -389,7 +389,7 @@ namespace UIGestaoMercearia
             panel4.Controls.Add(pictureBox3);
             panel4.Location = new Point(0, 125);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1128, 133);
+            panel4.Size = new Size(1025, 133);
             panel4.TabIndex = 1;
             // 
             // buttonConsultarVenda
@@ -400,7 +400,7 @@ namespace UIGestaoMercearia
             buttonConsultarVenda.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonConsultarVenda.ForeColor = SystemColors.ButtonHighlight;
             buttonConsultarVenda.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonConsultarVenda.Location = new Point(541, 30);
+            buttonConsultarVenda.Location = new Point(438, 30);
             buttonConsultarVenda.Margin = new Padding(10);
             buttonConsultarVenda.Name = "buttonConsultarVenda";
             buttonConsultarVenda.Size = new Size(439, 81);
@@ -417,9 +417,9 @@ namespace UIGestaoMercearia
             buttonIniciarVenda.ForeColor = SystemColors.ButtonHighlight;
             buttonIniciarVenda.Location = new Point(22, 30);
             buttonIniciarVenda.Name = "buttonIniciarVenda";
-            buttonIniciarVenda.Size = new Size(506, 81);
+            buttonIniciarVenda.Size = new Size(403, 81);
             buttonIniciarVenda.TabIndex = 0;
-            buttonIniciarVenda.Text = "PDV";
+            buttonIniciarVenda.Text = "PONTO DE VENDA";
             buttonIniciarVenda.UseVisualStyleBackColor = false;
             buttonIniciarVenda.Click += buttonIniciarVenda_Click;
             // 
@@ -433,7 +433,7 @@ namespace UIGestaoMercearia
             pictureBox3.ErrorImage = null;
             pictureBox3.Image = Properties.Resources.settings_512px;
             pictureBox3.InitialImage = null;
-            pictureBox3.Location = new Point(1010, 20);
+            pictureBox3.Location = new Point(907, 20);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(109, 91);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -453,7 +453,7 @@ namespace UIGestaoMercearia
             pictureBox2.InitialImage = null;
             pictureBox2.Location = new Point(0, 255);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1125, 800);
+            pictureBox2.Size = new Size(1022, 753);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
@@ -464,7 +464,7 @@ namespace UIGestaoMercearia
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1558, 1055);
+            ClientSize = new Size(1455, 1008);
             Controls.Add(panel2);
             Controls.Add(panel4);
             Controls.Add(pictureBoxLogo);
