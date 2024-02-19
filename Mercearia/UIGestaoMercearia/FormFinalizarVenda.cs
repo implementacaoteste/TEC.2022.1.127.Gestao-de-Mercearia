@@ -89,7 +89,6 @@ namespace UIGestaoMercearia
                 buttonBuscarFormaPagamento_Click(sender, e);
             else if (e.KeyCode == Keys.F12)
                 buttonOk_Click(sender, e);
-                
         }
 
         private void buttonBuscarFormaPagamento_Click(object sender, KeyEventArgs e)
