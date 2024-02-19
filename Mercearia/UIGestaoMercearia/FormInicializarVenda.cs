@@ -185,5 +185,10 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void textBoxQuantidade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
