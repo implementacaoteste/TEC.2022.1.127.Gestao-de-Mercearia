@@ -59,6 +59,8 @@ namespace UIGestaoMercearia
             textBoxNomeCategoria = new TextBox();
             label5 = new Label();
             buttonBuscarCategoria = new Button();
+            textBoxCustoCompra = new TextBox();
+            labelCustoCompra = new Label();
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource).BeginInit();
             SuspendLayout();
             // 
@@ -98,7 +100,7 @@ namespace UIGestaoMercearia
             textBoxNome.Location = new Point(12, 84);
             textBoxNome.Name = "textBoxNome";
             textBoxNome.Size = new Size(409, 27);
-            textBoxNome.TabIndex = 14;
+            textBoxNome.TabIndex = 0;
             // 
             // label3
             // 
@@ -115,10 +117,10 @@ namespace UIGestaoMercearia
             // 
             textBoxDescricao.Cursor = Cursors.IBeam;
             textBoxDescricao.DataBindings.Add(new Binding("Text", produtoBindingSource, "Preco", true));
-            textBoxDescricao.Location = new Point(12, 137);
+            textBoxDescricao.Location = new Point(12, 195);
             textBoxDescricao.Name = "textBoxDescricao";
             textBoxDescricao.Size = new Size(152, 27);
-            textBoxDescricao.TabIndex = 16;
+            textBoxDescricao.TabIndex = 3;
             // 
             // label6
             // 
@@ -138,18 +140,18 @@ namespace UIGestaoMercearia
             textBoxCodigoDeBarra.Location = new Point(236, 133);
             textBoxCodigoDeBarra.Name = "textBoxCodigoDeBarra";
             textBoxCodigoDeBarra.Size = new Size(423, 27);
-            textBoxCodigoDeBarra.TabIndex = 22;
+            textBoxCodigoDeBarra.TabIndex = 7;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = SystemColors.ButtonHighlight;
-            label7.Location = new Point(12, 114);
+            label7.Location = new Point(12, 174);
             label7.Name = "label7";
-            label7.Size = new Size(56, 18);
+            label7.Size = new Size(137, 18);
             label7.TabIndex = 23;
-            label7.Text = "Preço";
+            label7.Text = "Preço de Venda";
             // 
             // textBoxPreco
             // 
@@ -159,7 +161,7 @@ namespace UIGestaoMercearia
             textBoxPreco.Multiline = true;
             textBoxPreco.Name = "textBoxPreco";
             textBoxPreco.Size = new Size(423, 78);
-            textBoxPreco.TabIndex = 24;
+            textBoxPreco.TabIndex = 8;
             // 
             // buttonSalvar
             // 
@@ -168,7 +170,7 @@ namespace UIGestaoMercearia
             buttonSalvar.Location = new Point(485, 316);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
-            buttonSalvar.TabIndex = 28;
+            buttonSalvar.TabIndex = 9;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = false;
             buttonSalvar.Click += buttonSalvar_Click;
@@ -180,7 +182,7 @@ namespace UIGestaoMercearia
             textBoxQtdEstoque.Location = new Point(427, 84);
             textBoxQtdEstoque.Name = "textBoxQtdEstoque";
             textBoxQtdEstoque.Size = new Size(232, 27);
-            textBoxQtdEstoque.TabIndex = 27;
+            textBoxQtdEstoque.TabIndex = 1;
             // 
             // buttonCancelar
             // 
@@ -190,7 +192,7 @@ namespace UIGestaoMercearia
             buttonCancelar.Location = new Point(585, 316);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
-            buttonCancelar.TabIndex = 28;
+            buttonCancelar.TabIndex = 10;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -199,17 +201,17 @@ namespace UIGestaoMercearia
             // 
             textBoxNomeFornecedor.Cursor = Cursors.IBeam;
             textBoxNomeFornecedor.DataBindings.Add(new Binding("Text", produtoBindingSource, "NomeFornecedor", true));
-            textBoxNomeFornecedor.Location = new Point(12, 186);
+            textBoxNomeFornecedor.Location = new Point(12, 246);
             textBoxNomeFornecedor.Name = "textBoxNomeFornecedor";
             textBoxNomeFornecedor.Size = new Size(152, 27);
-            textBoxNomeFornecedor.TabIndex = 29;
+            textBoxNomeFornecedor.TabIndex = 4;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = SystemColors.ButtonHighlight;
-            label9.Location = new Point(12, 163);
+            label9.Location = new Point(12, 225);
             label9.Name = "label9";
             label9.Size = new Size(101, 18);
             label9.TabIndex = 30;
@@ -230,17 +232,17 @@ namespace UIGestaoMercearia
             // 
             textBoxNomeMarca.Cursor = Cursors.IBeam;
             textBoxNomeMarca.DataBindings.Add(new Binding("Text", produtoBindingSource, "NomeMarca", true));
-            textBoxNomeMarca.Location = new Point(12, 235);
+            textBoxNomeMarca.Location = new Point(12, 297);
             textBoxNomeMarca.Name = "textBoxNomeMarca";
             textBoxNomeMarca.Size = new Size(152, 27);
-            textBoxNomeMarca.TabIndex = 31;
+            textBoxNomeMarca.TabIndex = 5;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(12, 212);
+            label4.Location = new Point(12, 276);
             label4.Name = "label4";
             label4.Size = new Size(59, 18);
             label4.TabIndex = 32;
@@ -248,7 +250,7 @@ namespace UIGestaoMercearia
             // 
             // buttonBuscarFornecedor
             // 
-            buttonBuscarFornecedor.Location = new Point(170, 186);
+            buttonBuscarFornecedor.Location = new Point(170, 246);
             buttonBuscarFornecedor.Name = "buttonBuscarFornecedor";
             buttonBuscarFornecedor.Size = new Size(29, 29);
             buttonBuscarFornecedor.TabIndex = 33;
@@ -258,7 +260,7 @@ namespace UIGestaoMercearia
             // 
             // buttonBuscarMarca
             // 
-            buttonBuscarMarca.Location = new Point(170, 235);
+            buttonBuscarMarca.Location = new Point(170, 297);
             buttonBuscarMarca.Name = "buttonBuscarMarca";
             buttonBuscarMarca.Size = new Size(29, 29);
             buttonBuscarMarca.TabIndex = 33;
@@ -269,17 +271,17 @@ namespace UIGestaoMercearia
             // textBoxNomeCategoria
             // 
             textBoxNomeCategoria.DataBindings.Add(new Binding("Text", produtoBindingSource, "NomeCategoria", true));
-            textBoxNomeCategoria.Location = new Point(12, 285);
+            textBoxNomeCategoria.Location = new Point(12, 349);
             textBoxNomeCategoria.Name = "textBoxNomeCategoria";
             textBoxNomeCategoria.Size = new Size(152, 27);
-            textBoxNomeCategoria.TabIndex = 34;
+            textBoxNomeCategoria.TabIndex = 6;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ButtonFace;
-            label5.Location = new Point(12, 265);
+            label5.Location = new Point(12, 327);
             label5.Name = "label5";
             label5.Size = new Size(88, 18);
             label5.TabIndex = 35;
@@ -287,7 +289,7 @@ namespace UIGestaoMercearia
             // 
             // buttonBuscarCategoria
             // 
-            buttonBuscarCategoria.Location = new Point(170, 283);
+            buttonBuscarCategoria.Location = new Point(170, 347);
             buttonBuscarCategoria.Name = "buttonBuscarCategoria";
             buttonBuscarCategoria.Size = new Size(29, 29);
             buttonBuscarCategoria.TabIndex = 33;
@@ -295,13 +297,33 @@ namespace UIGestaoMercearia
             buttonBuscarCategoria.UseVisualStyleBackColor = true;
             buttonBuscarCategoria.Click += buttonBuscarCategoria_Click;
             // 
+            // textBoxCustoCompra
+            // 
+            textBoxCustoCompra.Location = new Point(12, 144);
+            textBoxCustoCompra.Name = "textBoxCustoCompra";
+            textBoxCustoCompra.Size = new Size(152, 27);
+            textBoxCustoCompra.TabIndex = 2;
+            // 
+            // labelCustoCompra
+            // 
+            labelCustoCompra.AutoSize = true;
+            labelCustoCompra.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCustoCompra.ForeColor = SystemColors.ButtonHighlight;
+            labelCustoCompra.Location = new Point(12, 121);
+            labelCustoCompra.Name = "labelCustoCompra";
+            labelCustoCompra.Size = new Size(149, 18);
+            labelCustoCompra.TabIndex = 37;
+            labelCustoCompra.Text = "Custo de Compra";
+            // 
             // FormCadastroProduto
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
             CancelButton = buttonCancelar;
-            ClientSize = new Size(705, 359);
+            ClientSize = new Size(705, 388);
+            Controls.Add(labelCustoCompra);
+            Controls.Add(textBoxCustoCompra);
             Controls.Add(label5);
             Controls.Add(textBoxNomeCategoria);
             Controls.Add(buttonBuscarCategoria);
@@ -362,6 +384,8 @@ namespace UIGestaoMercearia
         private TextBox textBoxNomeCategoria;
         private Label label5;
         private Button buttonBuscarCategoria;
+        private TextBox textBoxCustoCompra;
+        private Label labelCustoCompra;
 
         public int ComboBoxProdutos_SelectedIndexChanged { get; private set; }
     }
