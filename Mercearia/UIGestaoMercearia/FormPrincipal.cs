@@ -237,6 +237,16 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
