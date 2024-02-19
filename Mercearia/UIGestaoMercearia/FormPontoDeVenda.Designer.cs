@@ -1,6 +1,6 @@
 ﻿namespace UIGestaoMercearia
 {
-    partial class FormInicializarVenda
+    partial class FormPontoDeVenda
     {
         /// <summary>
         /// Required designer variable.
