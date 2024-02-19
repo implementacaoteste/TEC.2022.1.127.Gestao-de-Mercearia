@@ -50,22 +50,25 @@ namespace UIGestaoMercearia
             // buttonBuscarFormaPagamento
             // 
             buttonBuscarFormaPagamento.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            buttonBuscarFormaPagamento.Location = new Point(542, 149);
+            buttonBuscarFormaPagamento.Location = new Point(474, 112);
+            buttonBuscarFormaPagamento.Margin = new Padding(3, 2, 3, 2);
             buttonBuscarFormaPagamento.Name = "buttonBuscarFormaPagamento";
             buttonBuscarFormaPagamento.Size = new Size(54, 43);
             buttonBuscarFormaPagamento.TabIndex = 2;
+
             buttonBuscarFormaPagamento.Text = "...";
             buttonBuscarFormaPagamento.UseVisualStyleBackColor = true;
             // 
             // labelFormaPagamento
             // 
             labelFormaPagamento.AutoSize = true;
-            labelFormaPagamento.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelFormaPagamento.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelFormaPagamento.ForeColor = Color.White;
-            labelFormaPagamento.Location = new Point(25, 122);
+            labelFormaPagamento.Location = new Point(22, 92);
             labelFormaPagamento.Name = "labelFormaPagamento";
             labelFormaPagamento.Size = new Size(271, 24);
             labelFormaPagamento.TabIndex = 3;
+
             labelFormaPagamento.Text = "FORMA DE PAGAMENTO";
             // 
             // textBoxFormaPagamento
@@ -73,9 +76,10 @@ namespace UIGestaoMercearia
             textBoxFormaPagamento.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBoxFormaPagamento.Cursor = Cursors.IBeam;
             textBoxFormaPagamento.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxFormaPagamento.Location = new Point(25, 149);
+            textBoxFormaPagamento.Location = new Point(22, 112);
+            textBoxFormaPagamento.Margin = new Padding(3, 2, 3, 2);
             textBoxFormaPagamento.Name = "textBoxFormaPagamento";
-            textBoxFormaPagamento.Size = new Size(511, 43);
+            textBoxFormaPagamento.Size = new Size(448, 36);
             textBoxFormaPagamento.TabIndex = 2;
             textBoxFormaPagamento.TabStop = false;
             // 
@@ -84,7 +88,8 @@ namespace UIGestaoMercearia
             textBoxValorPago.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBoxValorPago.Cursor = Cursors.IBeam;
             textBoxValorPago.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxValorPago.Location = new Point(894, 149);
+            textBoxValorPago.Location = new Point(782, 112);
+            textBoxValorPago.Margin = new Padding(3, 2, 3, 2);
             textBoxValorPago.Name = "textBoxValorPago";
             textBoxValorPago.Size = new Size(223, 43);
             textBoxValorPago.TabIndex = 1;
@@ -95,9 +100,9 @@ namespace UIGestaoMercearia
             // 
             labelValorPago.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelValorPago.AutoSize = true;
-            labelValorPago.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelValorPago.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelValorPago.ForeColor = Color.White;
-            labelValorPago.Location = new Point(894, 122);
+            labelValorPago.Location = new Point(782, 92);
             labelValorPago.Name = "labelValorPago";
             labelValorPago.Size = new Size(153, 24);
             labelValorPago.TabIndex = 1;
@@ -107,9 +112,10 @@ namespace UIGestaoMercearia
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Location = new Point(176, 214);
+            pictureBox1.Location = new Point(154, 160);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(794, 600);
+            pictureBox1.Size = new Size(695, 450);
             pictureBox1.TabIndex = 37;
             pictureBox1.TabStop = false;
             pictureBox1.Visible = false;
@@ -118,9 +124,10 @@ namespace UIGestaoMercearia
             // 
             buttonCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonCancelar.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCancelar.Location = new Point(1022, 829);
+            buttonCancelar.Location = new Point(894, 622);
+            buttonCancelar.Margin = new Padding(3, 2, 3, 2);
             buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(107, 37);
+            buttonCancelar.Size = new Size(94, 28);
             buttonCancelar.TabIndex = 38;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
@@ -130,9 +137,10 @@ namespace UIGestaoMercearia
             // 
             buttonOk.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonOk.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonOk.Location = new Point(909, 829);
+            buttonOk.Location = new Point(795, 622);
+            buttonOk.Margin = new Padding(3, 2, 3, 2);
             buttonOk.Name = "buttonOk";
-            buttonOk.Size = new Size(107, 35);
+            buttonOk.Size = new Size(94, 26);
             buttonOk.TabIndex = 38;
             buttonOk.Text = "Ok";
             buttonOk.UseVisualStyleBackColor = true;
@@ -147,7 +155,7 @@ namespace UIGestaoMercearia
             label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
-            label3.Size = new Size(1143, 94);
+            label3.Size = new Size(1000, 70);
             label3.TabIndex = 0;
             label3.Text = "FINALIZAR VENDA";
             label3.TextAlign = ContentAlignment.MiddleCenter;
@@ -156,19 +164,21 @@ namespace UIGestaoMercearia
             // 
             labelTroco.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             labelTroco.AutoSize = true;
-            labelTroco.Font = new Font("Swis721 Blk BT", 72F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTroco.Font = new Font("Microsoft Sans Serif", 72F, FontStyle.Regular, GraphicsUnit.Point);
             labelTroco.ForeColor = SystemColors.ButtonHighlight;
-            labelTroco.Location = new Point(656, 401);
+            labelTroco.Location = new Point(574, 301);
             labelTroco.Name = "labelTroco";
             labelTroco.Size = new Size(139, 144);
             labelTroco.TabIndex = 4;
             labelTroco.Text = "0";
+            labelTroco.Click += labelTroco_Click;
             // 
             // textBoxTotal
             // 
             textBoxTotal.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBoxTotal.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxTotal.Location = new Point(623, 149);
+            textBoxTotal.Location = new Point(545, 112);
+            textBoxTotal.Margin = new Padding(3, 2, 3, 2);
             textBoxTotal.Name = "textBoxTotal";
             textBoxTotal.Size = new Size(237, 43);
             textBoxTotal.TabIndex = 0;
@@ -177,9 +187,9 @@ namespace UIGestaoMercearia
             // 
             labelTotal.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelTotal.AutoSize = true;
-            labelTotal.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTotal.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             labelTotal.ForeColor = Color.White;
-            labelTotal.Location = new Point(623, 122);
+            labelTotal.Location = new Point(545, 92);
             labelTotal.Name = "labelTotal";
             labelTotal.Size = new Size(80, 24);
             labelTotal.TabIndex = 0;
@@ -190,9 +200,9 @@ namespace UIGestaoMercearia
             // 
             labelExTroco.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             labelExTroco.AutoSize = true;
-            labelExTroco.Font = new Font("Swis721 Blk BT", 72F, FontStyle.Regular, GraphicsUnit.Point);
+            labelExTroco.Font = new Font("Microsoft Sans Serif", 72F, FontStyle.Regular, GraphicsUnit.Point);
             labelExTroco.ForeColor = SystemColors.ButtonHighlight;
-            labelExTroco.Location = new Point(137, 401);
+            labelExTroco.Location = new Point(120, 301);
             labelExTroco.Name = "labelExTroco";
             labelExTroco.Size = new Size(776, 144);
             labelExTroco.TabIndex = 4;
@@ -200,10 +210,10 @@ namespace UIGestaoMercearia
             // 
             // FormFinalizarVenda
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
-            ClientSize = new Size(1143, 876);
+            ClientSize = new Size(1000, 562);
             Controls.Add(label3);
             Controls.Add(labelTroco);
             Controls.Add(textBoxTotal);
@@ -219,6 +229,7 @@ namespace UIGestaoMercearia
             Controls.Add(textBoxFormaPagamento);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormFinalizarVenda";

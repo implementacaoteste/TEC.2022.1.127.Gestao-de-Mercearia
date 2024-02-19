@@ -12,7 +12,6 @@ namespace UIGestaoMercearia
         {
             InitializeComponent();
         }
-
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
             try
@@ -32,8 +31,6 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
-
         private void HabilitarComponentes()
         {
             HabilitarBotao(buttonFornecedores, new UsuarioBLL().ValidarPermissao(23, false));
@@ -48,27 +45,7 @@ namespace UIGestaoMercearia
             HabilitarBotao(buttonCliente, new UsuarioBLL().ValidarPermissao(39, false));
             HabilitarBotao(buttonPermissao, new UsuarioBLL().ValidarPermissao(47, false));
             pictureBoxEstatistica.Enabled = new UsuarioBLL().ValidarPermissao(48, false);
-
-
-            //buttonGrupoUsuario.Enabled = new UsuarioBLL().ValidarPermissao(9, false);
-            //buttonUsuario.Enabled = new UsuarioBLL().ValidarPermissao(1, false);
-            //buttonFornecedores.Enabled = new UsuarioBLL().ValidarPermissao(23, false);
-
-            //buttonFornecedores.BackColor = buttonFornecedores.Enabled ? SystemColors.Control : Color.White;
-            //buttonFornecedores.ForeColor = buttonFornecedores.Enabled ? SystemColors.Control : Color.White;
-
-            ////buttonProdutos.Enabled = new UsuarioBLL().ValidarPermissao(11, false);
-            //buttonFuncionarios.Enabled = new UsuarioBLL().ValidarPermissao(15, false);
-            //button8.Enabled = new UsuarioBLL().ValidarPermissao(19, false);
-            //buttonCategorias.Enabled = new UsuarioBLL().ValidarPermissao(27, false);
-            //buttonMarcas.Enabled = new UsuarioBLL().ValidarPermissao(31, false);
-            ////buttonPagamento.Enabled = new UsuarioBLL().ValidarPermissao(35, false);
-            ////buttonCliente.Enabled = new UsuarioBLL().ValidarPermissao(39, false);
-            ////buttonConsultarVenda.Enabled = new UsuarioBLL().ValidarPermissao(43, false);
-            //buttonPermissao.Enabled = new UsuarioBLL().ValidarPermissao(47, false);
-            //pictureBoxEstatistica.Enabled = new UsuarioBLL().ValidarPermissao(48, false);
         }
-
         private void HabilitarBotao(System.Windows.Forms.Button button, bool ativo)
         {
             if (ativo)
@@ -83,7 +60,6 @@ namespace UIGestaoMercearia
             }
             button.Enabled = ativo;
         }
-
         private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
@@ -104,8 +80,6 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
-
         private void buttonCliente_Click(object sender, EventArgs e)
         {
             using (FormConsultaCliente frm = new FormConsultaCliente())
@@ -119,16 +93,6 @@ namespace UIGestaoMercearia
             labelNomeEmpresa.Left = panel3.Width / 2 - labelNomeEmpresa.Width / 2;
             pictureBoxLogo.Left = labelNomeEmpresa.Left - pictureBoxLogo.Width;
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonProdutos_Click(object sender, EventArgs e)
         {
             using (FormConsultaProduto frm = new FormConsultaProduto())
@@ -136,21 +100,13 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonFuncionarios_Click(object sender, EventArgs e)
         {
             using (FormConsultaFuncionario frm = new FormConsultaFuncionario())
             {
                 frm.ShowDialog();
             }
-
         }
-
         private void buttonFornecedores_Click(object sender, EventArgs e)
         {
             using (FormConsultaFornecedor frm = new FormConsultaFornecedor())
@@ -158,7 +114,6 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
-
         private void buttonEstatistica_Click(object sender, EventArgs e)
         {
             using (FormEstatistica frm = new FormEstatistica())
@@ -166,21 +121,13 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
-
         private void buttonEstoque_Click(object sender, EventArgs e)
         {
             using (FormConsultaEstoque frm = new FormConsultaEstoque())
             {
                 frm.ShowDialog();
             }
-
         }
-
-        private void buttonConfig_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormPrincipal_Resize(object sender, EventArgs e)
         {
             PosicionarTopo();
@@ -190,12 +137,6 @@ namespace UIGestaoMercearia
         {
             PosicionarTopo();
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void buttonGrupoUsuario_Click_1(object sender, EventArgs e)
         {
             try
@@ -211,7 +152,6 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void buttonCategorias_Click(object sender, EventArgs e)
         {
             try
@@ -225,9 +165,7 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
-
         private void buttonMarcas_Click(object sender, EventArgs e)
         {
             try
@@ -242,7 +180,6 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             using (FormConfiguracao frm = new FormConfiguracao(Constantes.IdUsuarioLogado))
@@ -250,7 +187,6 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
-
         private void buttonConsultaVenda(object sender, EventArgs e)
         {
             using (FormConsultaVenda frm = new FormConsultaVenda())
@@ -258,7 +194,6 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
-
         private void buttonIniciarVenda_Click(object sender, EventArgs e)
         {
             using (FormPontodeVenda frm = new FormPontodeVenda())
@@ -266,7 +201,6 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
-
         private void button8_Click(object sender, EventArgs e)
         {
             using (FormConsultaEstoque frm = new FormConsultaEstoque())
@@ -274,7 +208,6 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
-
         private void button9_Click(object sender, EventArgs e)
         {
             using (FormConsultaPermissao frm = new FormConsultaPermissao())
@@ -282,12 +215,10 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
-
         private void monthCalendar2_DateChanged(object sender, DateRangeEventArgs e)
         {
 
         }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -299,7 +230,6 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
-
         private void pictureBoxEstatistica_Click(object sender, EventArgs e)
         {
             using (FormEstatistica frm = new FormEstatistica())
