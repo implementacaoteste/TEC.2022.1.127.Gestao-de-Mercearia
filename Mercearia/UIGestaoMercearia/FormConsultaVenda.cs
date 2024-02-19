@@ -77,7 +77,7 @@ namespace UIGestaoMercearia
         {
             try
             {
-                using (FormPontodeVenda frm = new FormPontodeVenda())
+                using (FormPontoDeVenda frm = new FormPontoDeVenda())
 
                 {
                     frm.ShowDialog();

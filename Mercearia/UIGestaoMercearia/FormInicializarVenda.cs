@@ -3,24 +3,14 @@ using Models;
 using System.Security.Cryptography;
 namespace UIGestaoMercearia
 {
-
-<<<<<<<< HEAD:Mercearia/UIGestaoMercearia/FormPontodeVenda.cs
-    public partial class FormPontodeVenda : Form
-========
     public partial class FormPontoDeVenda : Form
->>>>>>>> 9d4367e4902d0fa213bbe9d3a20ffac752900ad8:Mercearia/UIGestaoMercearia/FormPontoDeVenda.cs
     {
         int id;
         private object itemVenda;
         double total;
 
         public Produto produtoAtual { get; private set; }
-
-<<<<<<<< HEAD:Mercearia/UIGestaoMercearia/FormPontodeVenda.cs
-        public FormPontodeVenda(int _id = 0)
-========
         public FormPontoDeVenda(int _id = 0)
->>>>>>>> 9d4367e4902d0fa213bbe9d3a20ffac752900ad8:Mercearia/UIGestaoMercearia/FormPontoDeVenda.cs
         {
             InitializeComponent();
             id = _id;

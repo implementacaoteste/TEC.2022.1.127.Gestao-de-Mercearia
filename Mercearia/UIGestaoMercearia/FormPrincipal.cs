@@ -196,7 +196,7 @@ namespace UIGestaoMercearia
         }
         private void buttonIniciarVenda_Click(object sender, EventArgs e)
         {
-            using (FormPontodeVenda frm = new FormPontodeVenda())
+            using (FormPontoDeVenda frm = new FormPontoDeVenda())
             {
                 frm.ShowDialog();
             }
