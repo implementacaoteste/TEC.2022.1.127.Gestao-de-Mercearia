@@ -46,6 +46,10 @@ namespace UIGestaoMercearia
                 labelTroco.Visible = false;
                 labelTotal.Visible = true;
             }
+            else if (_formaPagamento.Tipo.ToUpper() == "CARTÃO DE DÉBITO")
+            {
+
+            }
         }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
