@@ -24,6 +24,7 @@ namespace Models
         public int IdVenda { get; set; }
         public double Quantidade { get; set; }
         public double ValorUnitario { get; set; }
+        public double Custo { get; set; }
         public double SubTotal { get; set; }
         public Produto Produto { get; set; }
         public string NomeProduto
