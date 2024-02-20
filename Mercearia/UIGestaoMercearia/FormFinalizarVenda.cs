@@ -53,7 +53,6 @@ namespace UIGestaoMercearia
                 if (string.IsNullOrEmpty(textBoxValorPago.Text))
                 {
                     textBoxValorPago.Focus();
-
                 }
                 else
                 {
@@ -65,11 +64,13 @@ namespace UIGestaoMercearia
         private void AdicionarTroco()
         {
             double troco;
-            if (Convert.ToDouble(textBoxValorPago.Text) != 0)
-            {
 
+            if (FormaPagamento.Id == 1 && Convert.ToDouble(textBoxValorPago.Text) != 0)
+            {
                 troco = Convert.ToDouble(textBoxValorPago.Text) - totalVenda;
                 labelTroco.Text = troco.ToString();
+                MessageBox.Show("Venda Concluida com sucesso!");
+                Close();
             }
         }
         private void buttonOk_Click(object sender, EventArgs e)
@@ -109,6 +110,11 @@ namespace UIGestaoMercearia
         }
 
         private void labelTroco_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormFinalizarVenda_Load(object sender, EventArgs e)
         {
 
         }
