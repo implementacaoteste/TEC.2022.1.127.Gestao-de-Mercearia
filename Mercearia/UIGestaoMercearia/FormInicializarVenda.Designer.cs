@@ -209,7 +209,6 @@
             textBoxQuantidade.TabIndex = 10;
             textBoxQuantidade.Text = "1";
             textBoxQuantidade.TextAlign = HorizontalAlignment.Right;
-            textBoxQuantidade.TextChanged += textBoxQuantidade_TextChanged;
             textBoxQuantidade.KeyDown += textBoxQuantidade_KeyDown;
             textBoxQuantidade.KeyPress += textBoxQuantidade_KeyPress;
             // 
@@ -405,9 +404,9 @@
             // 
             panel4.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel4.BackColor = Color.White;
-            panel4.Location = new Point(399, 749);
+            panel4.Location = new Point(399, 768);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1073, 69);
+            panel4.Size = new Size(1073, 50);
             panel4.TabIndex = 4;
             // 
             // FormPontoDeVenda

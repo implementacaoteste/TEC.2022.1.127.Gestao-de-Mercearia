@@ -27,7 +27,7 @@ namespace UIGestaoMercearia
                     new ClienteBLL().Alterar(cliente);
 
                 MessageBox.Show("Registro salvo com sucesso!");
-                this.Close();
+                Close();
             }
             catch (Exception ex)
             {

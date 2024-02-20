@@ -55,7 +55,6 @@ namespace UIGestaoMercearia
         {
             bindingSourceVenda.AddNew();
             textBoxCodigodeBarras.Focus();
-
         }
         private void button1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -77,12 +76,9 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
                 if (frm.produto != null)
                 {
-
                     textBoxCodigodeBarras.Text = frm.produto.CodigoDeBarra;
                     labelNomeProduto.Text = frm.produto.Nome;
                     textBoxPrecoProduto.Text = $" {frm.produto.Preco:C}";
-
-
                 }
             }
         }
@@ -123,7 +119,6 @@ namespace UIGestaoMercearia
             //    textBoxCodigodeBarras.Focus();
             //}
         }
-
         private void textBoxCodigodeBarras_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -136,20 +131,17 @@ namespace UIGestaoMercearia
                 else
                     textBoxQuantidade.Focus();
             }
-
             //if (e.KeyChar == (char)Keys.Enter)
             //{
             //    e.Handled = true;
             //    textBoxQuantidade.Focus();
             //}
         }
-
         private void textBoxQuantidade_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter && !string.IsNullOrEmpty(textBoxQuantidade.Text))
                 textBoxCodigodeBarras.Focus();
         }
-
         private void buttonFinalizarVenda_Click(object sender, EventArgs e)
         {
             textBoxCodigodeBarras.Text = "";
@@ -172,9 +164,7 @@ namespace UIGestaoMercearia
 
                             }
                         }
-
                     }
-
                 }
                 ((Venda)bindingSourceVenda.Current).IdFormaPagamento = formaPagamento.Id;
                 new VendaBLL().Inserir((Venda)bindingSourceVenda.Current);
@@ -184,11 +174,6 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void textBoxQuantidade_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

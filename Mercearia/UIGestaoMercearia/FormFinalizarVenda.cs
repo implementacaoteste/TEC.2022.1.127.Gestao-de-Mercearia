@@ -17,6 +17,7 @@ namespace UIGestaoMercearia
     {
         private double totalVenda;
         public FormaPagamento FormaPagamento;
+        public Cliente Cliente;
         public FormFinalizarVenda(FormaPagamento _formaPagamento, double _totalVenda)
         {
             InitializeComponent();
@@ -89,6 +90,7 @@ namespace UIGestaoMercearia
                 buttonBuscarFormaPagamento_Click(sender, e);
             else if (e.KeyCode == Keys.F12)
                 buttonOk_Click(sender, e);
+            else if (e.KeyCode == Keys.F10);
         }
 
         private void buttonBuscarFormaPagamento_Click(object sender, KeyEventArgs e)
@@ -107,10 +109,12 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void labelTroco_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            using (FormCadastroCliente frm = new FormCadastroCliente())
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }
