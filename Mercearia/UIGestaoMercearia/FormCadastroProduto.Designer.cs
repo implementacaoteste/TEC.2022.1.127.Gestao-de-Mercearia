@@ -299,6 +299,7 @@ namespace UIGestaoMercearia
             // 
             // textBoxCustoCompra
             // 
+            textBoxCustoCompra.DataBindings.Add(new Binding("Text", produtoBindingSource, "Custo", true));
             textBoxCustoCompra.Location = new Point(12, 144);
             textBoxCustoCompra.Name = "textBoxCustoCompra";
             textBoxCustoCompra.Size = new Size(152, 27);
