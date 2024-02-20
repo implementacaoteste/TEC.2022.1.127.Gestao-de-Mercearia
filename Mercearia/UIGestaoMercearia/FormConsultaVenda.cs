@@ -158,5 +158,17 @@ namespace UIGestaoMercearia
             if (e.KeyCode == Keys.Escape)
                 Close();
         }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
+        }
     }
 }
