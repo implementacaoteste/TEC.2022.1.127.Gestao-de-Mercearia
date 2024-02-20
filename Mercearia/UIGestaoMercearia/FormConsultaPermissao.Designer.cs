@@ -89,13 +89,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
             label1.Location = new Point(12, 88);
             label1.Name = "label1";
-            label1.Size = new Size(242, 18);
+            label1.Size = new Size(251, 18);
             label1.TabIndex = 1;
-            label1.Text = "&Informe o que deseja buscar";
+            label1.Text = "INFORME O QUE DESEJA BUSCA:";
             // 
             // textBoxBuscar
             // 

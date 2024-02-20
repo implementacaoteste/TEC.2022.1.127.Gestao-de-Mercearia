@@ -85,11 +85,11 @@
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(343, 100);
             label2.Name = "label2";
-            label2.Size = new Size(144, 18);
+            label2.Size = new Size(118, 18);
             label2.TabIndex = 5;
             label2.Text = "Data de Entrada:";
             // 
@@ -97,11 +97,11 @@
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
-            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(343, 185);
             label3.Name = "label3";
-            label3.Size = new Size(127, 18);
+            label3.Size = new Size(104, 18);
             label3.TabIndex = 6;
             label3.Text = "Data de Saída:";
             // 
@@ -153,11 +153,11 @@
             // 
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
-            label4.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(41, 272);
             label4.Name = "label4";
-            label4.Size = new Size(141, 18);
+            label4.Size = new Size(120, 18);
             label4.TabIndex = 12;
             label4.Text = "Estoque Máximo";
             // 
@@ -165,11 +165,11 @@
             // 
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label5.AutoSize = true;
-            label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ButtonHighlight;
             label5.Location = new Point(343, 272);
             label5.Name = "label5";
-            label5.Size = new Size(137, 18);
+            label5.Size = new Size(116, 18);
             label5.TabIndex = 13;
             label5.Text = "Estoque Mínimo";
             // 
@@ -177,11 +177,11 @@
             // 
             label6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label6.AutoSize = true;
-            label6.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.ButtonHighlight;
             label6.Location = new Point(41, 100);
             label6.Name = "label6";
-            label6.Size = new Size(72, 18);
+            label6.Size = new Size(61, 18);
             label6.TabIndex = 14;
             label6.Text = "Produto";
             // 
@@ -189,11 +189,11 @@
             // 
             label7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label7.AutoSize = true;
-            label7.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = SystemColors.ButtonHighlight;
             label7.Location = new Point(41, 185);
             label7.Name = "label7";
-            label7.Size = new Size(201, 18);
+            label7.Size = new Size(167, 18);
             label7.TabIndex = 15;
             label7.Text = "Quantidade em Estoque";
             // 
@@ -227,7 +227,7 @@
             buttonSalvar.UseVisualStyleBackColor = true;
             buttonSalvar.Click += buttonSalvar_Click;
             // 
-            // FormeCadastroEstoque
+            // FormCadastroEstoque
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -254,7 +254,7 @@
             KeyPreview = true;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "FormeCadastroEstoque";
+            Name = "FormCadastroEstoque";
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;

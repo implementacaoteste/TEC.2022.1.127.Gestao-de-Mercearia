@@ -46,13 +46,13 @@
             // nomeGrupoLabel
             // 
             nomeGrupoLabel.AutoSize = true;
-            nomeGrupoLabel.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            nomeGrupoLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             nomeGrupoLabel.ForeColor = SystemColors.ButtonHighlight;
             nomeGrupoLabel.Location = new Point(12, 80);
             nomeGrupoLabel.Name = "nomeGrupoLabel";
-            nomeGrupoLabel.Size = new Size(132, 18);
+            nomeGrupoLabel.Size = new Size(145, 18);
             nomeGrupoLabel.TabIndex = 1;
-            nomeGrupoLabel.Text = "Nome do grupo";
+            nomeGrupoLabel.Text = "NOME DO GRUPO:";
             nomeGrupoLabel.Click += nomeGrupoLabel_Click;
             // 
             // label1
@@ -72,13 +72,13 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(12, 144);
             label2.Name = "label2";
-            label2.Size = new Size(103, 18);
+            label2.Size = new Size(111, 18);
             label2.TabIndex = 5;
-            label2.Text = "Permissões";
+            label2.Text = "PERMISSÕES:";
             // 
             // nomeGrupoTextBox
             // 

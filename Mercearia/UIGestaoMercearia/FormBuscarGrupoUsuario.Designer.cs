@@ -45,6 +45,7 @@
             buttonExcluirPermissao = new Button();
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)grupoUsuarioDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)grupoUsuarioBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)permissoesDataGridView).BeginInit();
@@ -227,12 +228,24 @@
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(12, 96);
+            label2.Name = "label2";
+            label2.Size = new Size(111, 18);
+            label2.TabIndex = 13;
+            label2.Text = "BUSCAR POR:";
+            // 
             // FormBuscarGrupoUsuario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
             ClientSize = new Size(1132, 636);
+            Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(buttonExcluirPermissao);
@@ -283,5 +296,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private PictureBox pictureBox1;
+        private Label label2;
     }
 }
