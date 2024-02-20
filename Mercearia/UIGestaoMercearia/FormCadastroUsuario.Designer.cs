@@ -58,66 +58,66 @@
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            nomeLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             nomeLabel.ForeColor = SystemColors.ButtonHighlight;
             nomeLabel.Location = new Point(3, 97);
             nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new Size(55, 18);
+            nomeLabel.Size = new Size(49, 18);
             nomeLabel.TabIndex = 1;
             nomeLabel.Text = "Nome";
             // 
             // cPFLabel
             // 
             cPFLabel.AutoSize = true;
-            cPFLabel.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            cPFLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             cPFLabel.ForeColor = SystemColors.ButtonHighlight;
             cPFLabel.Location = new Point(225, 156);
             cPFLabel.Name = "cPFLabel";
-            cPFLabel.Size = new Size(40, 18);
+            cPFLabel.Size = new Size(38, 18);
             cPFLabel.TabIndex = 3;
             cPFLabel.Text = "CPF";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            emailLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             emailLabel.ForeColor = SystemColors.ButtonHighlight;
             emailLabel.Location = new Point(330, 97);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new Size(58, 18);
+            emailLabel.Size = new Size(50, 18);
             emailLabel.TabIndex = 5;
             emailLabel.Text = "E-mail";
             // 
             // nomeUsuarioLabel
             // 
             nomeUsuarioLabel.AutoSize = true;
-            nomeUsuarioLabel.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            nomeUsuarioLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             nomeUsuarioLabel.ForeColor = SystemColors.ButtonHighlight;
             nomeUsuarioLabel.Location = new Point(3, 156);
             nomeUsuarioLabel.Name = "nomeUsuarioLabel";
-            nomeUsuarioLabel.Size = new Size(146, 18);
+            nomeUsuarioLabel.Size = new Size(122, 18);
             nomeUsuarioLabel.TabIndex = 7;
             nomeUsuarioLabel.Text = "Nome de usuário";
             // 
             // senhaLabel
             // 
             senhaLabel.AutoSize = true;
-            senhaLabel.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            senhaLabel.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             senhaLabel.ForeColor = SystemColors.ButtonHighlight;
             senhaLabel.Location = new Point(6, 213);
             senhaLabel.Name = "senhaLabel";
-            senhaLabel.Size = new Size(59, 18);
+            senhaLabel.Size = new Size(50, 18);
             senhaLabel.TabIndex = 9;
             senhaLabel.Text = "Senha";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(112, 213);
             label1.Name = "label1";
-            label1.Size = new Size(144, 18);
+            label1.Size = new Size(118, 18);
             label1.TabIndex = 11;
             label1.Text = "Confirmar senha";
             // 

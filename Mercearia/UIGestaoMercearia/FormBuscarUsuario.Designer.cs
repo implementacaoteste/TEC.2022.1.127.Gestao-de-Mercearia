@@ -251,11 +251,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(50, 153, 204);
-            label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
             label1.Location = new Point(12, 91);
             label1.Name = "label1";
-            label1.Size = new Size(205, 18);
+            label1.Size = new Size(189, 18);
             label1.TabIndex = 0;
             label1.Text = "OQUE DESEJA BUSCAR?";
             // 

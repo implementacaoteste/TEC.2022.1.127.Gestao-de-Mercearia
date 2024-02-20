@@ -85,11 +85,11 @@ namespace UIGestaoMercearia
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(12, 61);
             label2.Name = "label2";
-            label2.Size = new Size(55, 18);
+            label2.Size = new Size(49, 18);
             label2.TabIndex = 13;
             label2.Text = "Nome";
             // 
@@ -105,11 +105,11 @@ namespace UIGestaoMercearia
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(236, 163);
             label3.Name = "label3";
-            label3.Size = new Size(91, 18);
+            label3.Size = new Size(76, 18);
             label3.TabIndex = 15;
             label3.Text = "Descrição";
             // 
@@ -125,11 +125,11 @@ namespace UIGestaoMercearia
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.ButtonHighlight;
             label6.Location = new Point(236, 110);
             label6.Name = "label6";
-            label6.Size = new Size(139, 18);
+            label6.Size = new Size(114, 18);
             label6.TabIndex = 21;
             label6.Text = "Codigo de barra";
             // 
@@ -145,11 +145,11 @@ namespace UIGestaoMercearia
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = SystemColors.ButtonHighlight;
             label7.Location = new Point(12, 174);
             label7.Name = "label7";
-            label7.Size = new Size(137, 18);
+            label7.Size = new Size(113, 18);
             label7.TabIndex = 23;
             label7.Text = "Preço de Venda";
             // 
@@ -209,22 +209,22 @@ namespace UIGestaoMercearia
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label9.ForeColor = SystemColors.ButtonHighlight;
             label9.Location = new Point(12, 225);
             label9.Name = "label9";
-            label9.Size = new Size(101, 18);
+            label9.Size = new Size(85, 18);
             label9.TabIndex = 30;
             label9.Text = "Fornecedor";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = SystemColors.ButtonHighlight;
             label8.Location = new Point(427, 61);
             label8.Name = "label8";
-            label8.Size = new Size(101, 18);
+            label8.Size = new Size(83, 18);
             label8.TabIndex = 25;
             label8.Text = "Quantidade";
             // 
@@ -240,11 +240,11 @@ namespace UIGestaoMercearia
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(12, 276);
             label4.Name = "label4";
-            label4.Size = new Size(59, 18);
+            label4.Size = new Size(50, 18);
             label4.TabIndex = 32;
             label4.Text = "Marca";
             // 
@@ -279,11 +279,11 @@ namespace UIGestaoMercearia
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ButtonFace;
             label5.Location = new Point(12, 327);
             label5.Name = "label5";
-            label5.Size = new Size(88, 18);
+            label5.Size = new Size(72, 18);
             label5.TabIndex = 35;
             label5.Text = "Categoria";
             // 
@@ -308,11 +308,11 @@ namespace UIGestaoMercearia
             // labelCustoCompra
             // 
             labelCustoCompra.AutoSize = true;
-            labelCustoCompra.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCustoCompra.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             labelCustoCompra.ForeColor = SystemColors.ButtonHighlight;
             labelCustoCompra.Location = new Point(12, 121);
             labelCustoCompra.Name = "labelCustoCompra";
-            labelCustoCompra.Size = new Size(149, 18);
+            labelCustoCompra.Size = new Size(126, 18);
             labelCustoCompra.TabIndex = 37;
             labelCustoCompra.Text = "Custo de Compra";
             // 

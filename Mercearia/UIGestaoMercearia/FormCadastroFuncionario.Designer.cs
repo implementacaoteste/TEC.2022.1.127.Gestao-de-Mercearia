@@ -83,33 +83,33 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(12, 77);
             label2.Name = "label2";
-            label2.Size = new Size(55, 18);
+            label2.Size = new Size(49, 18);
             label2.TabIndex = 19;
             label2.Text = "Nome";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(335, 130);
             label3.Name = "label3";
-            label3.Size = new Size(47, 18);
+            label3.Size = new Size(42, 18);
             label3.TabIndex = 20;
             label3.Text = "Fone";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(12, 183);
             label4.Name = "label4";
-            label4.Size = new Size(85, 18);
+            label4.Size = new Size(72, 18);
             label4.TabIndex = 21;
             label4.Text = "Profissão";
             // 
@@ -125,11 +125,11 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ButtonHighlight;
             label5.Location = new Point(12, 130);
             label5.Name = "label5";
-            label5.Size = new Size(66, 18);
+            label5.Size = new Size(54, 18);
             label5.TabIndex = 23;
             label5.Text = "Salario";
             label5.Click += label5_Click;

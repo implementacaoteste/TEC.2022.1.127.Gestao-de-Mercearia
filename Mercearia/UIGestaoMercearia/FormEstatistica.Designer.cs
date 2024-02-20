@@ -71,11 +71,11 @@
             // 
             label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
             label2.Location = new Point(14, 9);
             label2.Name = "label2";
-            label2.Size = new Size(92, 23);
+            label2.Size = new Size(102, 29);
             label2.TabIndex = 0;
             label2.Text = "Ganhos:";
             // 
@@ -134,11 +134,11 @@
             // 
             label4.Anchor = AnchorStyles.Top;
             label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
             label4.Location = new Point(13, 9);
             label4.Name = "label4";
-            label4.Size = new Size(83, 23);
+            label4.Size = new Size(94, 29);
             label4.TabIndex = 0;
             label4.Text = "Gastos:";
             // 
