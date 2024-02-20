@@ -47,16 +47,16 @@
             IdFormaPagamento = new DataGridViewTextBoxColumn();
             IdUsuario = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            vendaBindingSource = new BindingSource(components);
             bindingSourceVenda = new BindingSource(components);
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
-            vendaBindingSource = new BindingSource(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).BeginInit();
             ((System.ComponentModel.ISupportInitialize)vendaBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -252,6 +252,10 @@
             dataGridViewTextBoxColumn1.ReadOnly = true;
             dataGridViewTextBoxColumn1.Width = 200;
             // 
+            // vendaBindingSource
+            // 
+            vendaBindingSource.DataSource = typeof(Models.Venda);
+            // 
             // bindingSourceVenda
             // 
             bindingSourceVenda.DataSource = typeof(Models.Venda);
@@ -278,10 +282,6 @@
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
             // 
-            // vendaBindingSource
-            // 
-            vendaBindingSource.DataSource = typeof(Models.Venda);
-            // 
             // FormConsultaVenda
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -306,8 +306,8 @@
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).EndInit();
             ((System.ComponentModel.ISupportInitialize)vendaBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).EndInit();
             ResumeLayout(false);
         }
 
