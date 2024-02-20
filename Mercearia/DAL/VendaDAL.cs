@@ -91,9 +91,12 @@ namespace DAL
                 SqlCommand cmd = cn.CreateCommand();
                 cmd.CommandText = @"DELETE FROM Venda WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
+                
                 cmd.Parameters.AddWithValue("@Id", _id);
+
                 cmd.Connection = cn;
                 cn.Open();
+
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)

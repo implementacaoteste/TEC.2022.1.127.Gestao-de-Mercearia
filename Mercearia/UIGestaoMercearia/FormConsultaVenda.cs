@@ -135,7 +135,7 @@ namespace UIGestaoMercearia
         private void HabilitarComponentes()
         {
             HabilitarBotao(buttonInserir, new UsuarioBLL().ValidarPermissao(44, false));
-            HabilitarBotao(buttonAlterar, new UsuarioBLL().ValidarPermissao(45, false));
+            //HabilitarBotao(buttonAlterar, new UsuarioBLL().ValidarPermissao(45, false));
             HabilitarBotao(buttonExcluir, new UsuarioBLL().ValidarPermissao(46, false));
         }
         private void HabilitarBotao(System.Windows.Forms.Button button, bool ativo)
@@ -157,6 +157,29 @@ namespace UIGestaoMercearia
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
+        }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (bindingSourceVenda.Count <= 0)
+                {
+                    MessageBox.Show("Não existe registro para ser excluído");
+                    return;
+                }
+
+                if (MessageBox.Show("Deseja realmente excluir este registro?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
+                    return;
+
+                int id = ((Venda)bindingSourceVenda.Current).Id;
+                new VendaBLL().Excluir(id);
+                bindingSourceVenda.RemoveCurrent();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
