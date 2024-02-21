@@ -64,6 +64,8 @@
             labelpreco = new Label();
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
+            subtotal1 = new Label();
+            subtotal2 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
@@ -177,7 +179,7 @@
             buttonFinalizarVenda.BackColor = Color.FromArgb(50, 153, 204);
             buttonFinalizarVenda.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonFinalizarVenda.ForeColor = SystemColors.Window;
-            buttonFinalizarVenda.Location = new Point(1189, 665);
+            buttonFinalizarVenda.Location = new Point(1189, 724);
             buttonFinalizarVenda.Name = "buttonFinalizarVenda";
             buttonFinalizarVenda.Size = new Size(208, 66);
             buttonFinalizarVenda.TabIndex = 22;
@@ -239,7 +241,7 @@
             buttonCancelar.BackColor = Color.Coral;
             buttonCancelar.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCancelar.ForeColor = SystemColors.ButtonHighlight;
-            buttonCancelar.Location = new Point(978, 665);
+            buttonCancelar.Location = new Point(978, 724);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(205, 66);
             buttonCancelar.TabIndex = 9;
@@ -404,10 +406,34 @@
             // 
             panel4.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel4.BackColor = Color.White;
-            panel4.Location = new Point(399, 768);
+            panel4.Location = new Point(399, 807);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1073, 50);
+            panel4.Size = new Size(1073, 11);
             panel4.TabIndex = 4;
+            // 
+            // subtotal1
+            // 
+            subtotal1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            subtotal1.AutoSize = true;
+            subtotal1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            subtotal1.Location = new Point(489, 683);
+            subtotal1.Name = "subtotal1";
+            subtotal1.Size = new Size(108, 31);
+            subtotal1.TabIndex = 23;
+            subtotal1.Text = "SubTotal";
+            // 
+            // subtotal2
+            // 
+            subtotal2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            subtotal2.AutoSize = true;
+            subtotal2.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            subtotal2.ImageAlign = ContentAlignment.TopCenter;
+            subtotal2.Location = new Point(494, 719);
+            subtotal2.Name = "subtotal2";
+            subtotal2.Size = new Size(87, 71);
+            subtotal2.TabIndex = 24;
+            subtotal2.Text = "...";
+            subtotal2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FormPontoDeVenda
             // 
@@ -415,6 +441,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1472, 814);
+            Controls.Add(subtotal2);
+            Controls.Add(subtotal1);
             Controls.Add(panel4);
             Controls.Add(buttonFinalizarVenda);
             Controls.Add(textBoxCodigodeBarras);
@@ -494,5 +522,7 @@
         private DataGridViewTextBoxColumn produtoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nomeProdutoDataGridViewTextBoxColumn;
         private Panel panel4;
+        private Label subtotal1;
+        private Label subtotal2;
     }
 }
