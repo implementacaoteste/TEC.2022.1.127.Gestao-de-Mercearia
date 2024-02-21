@@ -110,10 +110,10 @@
             // buttonCancelar
             // 
             buttonCancelar.DialogResult = DialogResult.Cancel;
-            buttonCancelar.Location = new Point(713, 566);
+            buttonCancelar.Location = new Point(710, 566);
             buttonCancelar.Margin = new Padding(3, 4, 3, 4);
             buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(75, 35);
+            buttonCancelar.Size = new Size(78, 35);
             buttonCancelar.TabIndex = 6;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
@@ -132,10 +132,10 @@
             // 
             // buttonSelecionar
             // 
-            buttonSelecionar.Location = new Point(621, 566);
+            buttonSelecionar.Location = new Point(611, 566);
             buttonSelecionar.Margin = new Padding(3, 4, 3, 4);
             buttonSelecionar.Name = "buttonSelecionar";
-            buttonSelecionar.Size = new Size(83, 35);
+            buttonSelecionar.Size = new Size(93, 35);
             buttonSelecionar.TabIndex = 5;
             buttonSelecionar.Text = "&Selecionar";
             buttonSelecionar.UseVisualStyleBackColor = true;
