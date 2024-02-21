@@ -221,7 +221,7 @@ namespace UIGestaoMercearia
             buttonGrupoUsuario.Location = new Point(15, 517);
             buttonGrupoUsuario.Name = "buttonGrupoUsuario";
             buttonGrupoUsuario.Size = new Size(399, 74);
-            buttonGrupoUsuario.TabIndex = 2;
+            buttonGrupoUsuario.TabIndex = 7;
             buttonGrupoUsuario.Text = "Grupo de Usuários";
             buttonGrupoUsuario.UseVisualStyleBackColor = false;
             buttonGrupoUsuario.Click += buttonGrupoUsuario_Click_1;
@@ -236,7 +236,7 @@ namespace UIGestaoMercearia
             buttonFornecedores.Location = new Point(15, 437);
             buttonFornecedores.Name = "buttonFornecedores";
             buttonFornecedores.Size = new Size(399, 74);
-            buttonFornecedores.TabIndex = 9;
+            buttonFornecedores.TabIndex = 6;
             buttonFornecedores.Text = "Fornecedores";
             buttonFornecedores.UseVisualStyleBackColor = false;
             buttonFornecedores.Click += buttonFornecedores_Click;
