@@ -29,7 +29,6 @@ namespace UIGestaoMercearia
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Label label1;
             Label MENU;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             buttonUsuario = new Button();
@@ -52,6 +51,7 @@ namespace UIGestaoMercearia
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             splitter1 = new Splitter();
             panel3 = new Panel();
+            labelPDV = new Label();
             pictureBoxLogo = new PictureBox();
             panel4 = new Panel();
             buttonConsultarVenda = new Button();
@@ -59,8 +59,6 @@ namespace UIGestaoMercearia
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             toolTip1 = new ToolTip(components);
-            labelPDV = new Label();
-            label1 = new Label();
             MENU = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -71,22 +69,6 @@ namespace UIGestaoMercearia
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.Top;
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(50, 153, 204);
-            label1.Cursor = Cursors.No;
-            label1.FlatStyle = FlatStyle.Popup;
-            label1.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(437, 25);
-            label1.Name = "label1";
-            label1.Size = new Size(283, 39);
-            label1.TabIndex = 0;
-            label1.Text = "CAIXA ABERTO";
-            label1.TextAlign = ContentAlignment.TopCenter;
             // 
             // MENU
             // 
@@ -370,12 +352,24 @@ namespace UIGestaoMercearia
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel3.BackColor = Color.FromArgb(50, 153, 204);
             panel3.Controls.Add(labelPDV);
-            panel3.Controls.Add(label1);
             panel3.Location = new Point(0, 58);
             panel3.Name = "panel3";
             panel3.Size = new Size(1221, 91);
             panel3.TabIndex = 1;
             panel3.Paint += panel3_Paint;
+            // 
+            // labelPDV
+            // 
+            labelPDV.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            labelPDV.AutoSize = true;
+            labelPDV.BackColor = Color.FromArgb(50, 153, 204);
+            labelPDV.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPDV.ForeColor = Color.White;
+            labelPDV.Location = new Point(371, 0);
+            labelPDV.Name = "labelPDV";
+            labelPDV.Size = new Size(410, 67);
+            labelPDV.TabIndex = 2;
+            labelPDV.Text = "CAIXA ABERTO";
             // 
             // pictureBoxLogo
             // 
@@ -473,19 +467,6 @@ namespace UIGestaoMercearia
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
             // 
-            // labelPDV
-            // 
-            labelPDV.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            labelPDV.AutoSize = true;
-            labelPDV.BackColor = Color.FromArgb(50, 153, 204);
-            labelPDV.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            labelPDV.ForeColor = Color.White;
-            labelPDV.Location = new Point(381, 15);
-            labelPDV.Name = "labelPDV";
-            labelPDV.Size = new Size(410, 67);
-            labelPDV.TabIndex = 2;
-            labelPDV.Text = "CAIXA ABERTO";
-            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -530,7 +511,6 @@ namespace UIGestaoMercearia
         }
 
         #endregion
-        private Label label1;
         private Button buttonUsuario;
         private Button buttonCliente;
         private Label labelNomeEmpresa;
