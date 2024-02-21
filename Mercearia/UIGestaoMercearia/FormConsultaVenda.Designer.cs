@@ -47,16 +47,16 @@
             IdFormaPagamento = new DataGridViewTextBoxColumn();
             IdUsuario = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            vendaBindingSource = new BindingSource(components);
             bindingSourceVenda = new BindingSource(components);
+            vendaBindingSource = new BindingSource(components);
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -86,7 +86,7 @@
             label3.Location = new Point(302, 100);
             label3.Name = "label3";
             label3.Size = new Size(176, 18);
-            label3.TabIndex = 8;
+            label3.TabIndex = 3;
             label3.Text = "INSIRA A INFORMAÇÃO:";
             // 
             // label2
@@ -97,7 +97,7 @@
             label2.Location = new Point(11, 100);
             label2.Name = "label2";
             label2.Size = new Size(111, 18);
-            label2.TabIndex = 7;
+            label2.TabIndex = 1;
             label2.Text = "BUSCAR POR:";
             // 
             // buttonExcluir
@@ -106,7 +106,7 @@
             buttonExcluir.Location = new Point(907, 121);
             buttonExcluir.Name = "buttonExcluir";
             buttonExcluir.Size = new Size(94, 29);
-            buttonExcluir.TabIndex = 6;
+            buttonExcluir.TabIndex = 7;
             buttonExcluir.Text = "&Excluir";
             buttonExcluir.UseVisualStyleBackColor = true;
             buttonExcluir.Click += buttonExcluir_Click;
@@ -117,7 +117,7 @@
             buttonInserir.Location = new Point(807, 121);
             buttonInserir.Name = "buttonInserir";
             buttonInserir.Size = new Size(94, 29);
-            buttonInserir.TabIndex = 5;
+            buttonInserir.TabIndex = 6;
             buttonInserir.Text = "&Inserir";
             buttonInserir.UseVisualStyleBackColor = true;
             buttonInserir.Click += buttonInserir_Click;
@@ -128,7 +128,7 @@
             buttonBuscar.Location = new Point(707, 121);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(94, 29);
-            buttonBuscar.TabIndex = 3;
+            buttonBuscar.TabIndex = 5;
             buttonBuscar.Text = "&Buscar";
             buttonBuscar.UseVisualStyleBackColor = true;
             buttonBuscar.Click += buttonBuscar_Click;
@@ -139,7 +139,7 @@
             textBoxVenda.Location = new Point(301, 123);
             textBoxVenda.Name = "textBoxVenda";
             textBoxVenda.Size = new Size(394, 27);
-            textBoxVenda.TabIndex = 2;
+            textBoxVenda.TabIndex = 4;
             // 
             // comboBoxVenda
             // 
@@ -149,7 +149,7 @@
             comboBoxVenda.Location = new Point(11, 123);
             comboBoxVenda.Name = "comboBoxVenda";
             comboBoxVenda.Size = new Size(283, 28);
-            comboBoxVenda.TabIndex = 1;
+            comboBoxVenda.TabIndex = 2;
             // 
             // label1
             // 
@@ -173,7 +173,7 @@
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(1116, 76);
-            panel2.TabIndex = 9;
+            panel2.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -205,7 +205,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(1105, 339);
-            dataGridView1.TabIndex = 1;
+            dataGridView1.TabIndex = 0;
             // 
             // DataVenda
             // 
@@ -252,13 +252,13 @@
             dataGridViewTextBoxColumn1.ReadOnly = true;
             dataGridViewTextBoxColumn1.Width = 200;
             // 
-            // vendaBindingSource
-            // 
-            vendaBindingSource.DataSource = typeof(Models.Venda);
-            // 
             // bindingSourceVenda
             // 
             bindingSourceVenda.DataSource = typeof(Models.Venda);
+            // 
+            // vendaBindingSource
+            // 
+            vendaBindingSource.DataSource = typeof(Models.Venda);
             // 
             // buttonSelecionar
             // 
@@ -266,7 +266,7 @@
             buttonSelecionar.Location = new Point(890, 501);
             buttonSelecionar.Name = "buttonSelecionar";
             buttonSelecionar.Size = new Size(103, 29);
-            buttonSelecionar.TabIndex = 10;
+            buttonSelecionar.TabIndex = 1;
             buttonSelecionar.Text = "&Selecionar";
             buttonSelecionar.UseVisualStyleBackColor = true;
             buttonSelecionar.Click += buttonSelecionar_Click;
@@ -277,7 +277,7 @@
             buttonCancelar.Location = new Point(999, 501);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
-            buttonCancelar.TabIndex = 11;
+            buttonCancelar.TabIndex = 2;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -306,8 +306,8 @@
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceVenda).EndInit();
+            ((System.ComponentModel.ISupportInitialize)vendaBindingSource).EndInit();
             ResumeLayout(false);
         }
 

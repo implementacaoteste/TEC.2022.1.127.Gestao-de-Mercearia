@@ -144,20 +144,5 @@ namespace UIGestaoMercearia
             if (e.KeyCode == Keys.Enter)
                 buttonBuscar_Click(null, null);
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void grupoUsuarioDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void FormBuscarGrupoUsuario_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

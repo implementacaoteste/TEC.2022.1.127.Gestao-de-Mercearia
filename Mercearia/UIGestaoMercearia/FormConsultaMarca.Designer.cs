@@ -67,7 +67,7 @@
             label1.Location = new Point(14, 87);
             label1.Name = "label1";
             label1.Size = new Size(107, 18);
-            label1.TabIndex = 3;
+            label1.TabIndex = 1;
             label1.Text = "BUSCAR POR";
             // 
             // buttonBuscar
@@ -77,7 +77,7 @@
             buttonBuscar.Location = new Point(502, 111);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(107, 29);
-            buttonBuscar.TabIndex = 2;
+            buttonBuscar.TabIndex = 5;
             buttonBuscar.Text = "&Buscar";
             buttonBuscar.UseVisualStyleBackColor = false;
             buttonBuscar.Click += buttonBuscar_Click;
@@ -88,7 +88,7 @@
             textBoxBuscarPor.Location = new Point(150, 111);
             textBoxBuscarPor.Name = "textBoxBuscarPor";
             textBoxBuscarPor.Size = new Size(346, 27);
-            textBoxBuscarPor.TabIndex = 1;
+            textBoxBuscarPor.TabIndex = 4;
             // 
             // comboBoxBuscarPor
             // 
@@ -97,7 +97,7 @@
             comboBoxBuscarPor.Location = new Point(14, 110);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             comboBoxBuscarPor.Size = new Size(131, 28);
-            comboBoxBuscarPor.TabIndex = 0;
+            comboBoxBuscarPor.TabIndex = 2;
             // 
             // buttonExcluir
             // 
@@ -106,7 +106,7 @@
             buttonExcluir.Location = new Point(314, 530);
             buttonExcluir.Name = "buttonExcluir";
             buttonExcluir.Size = new Size(94, 29);
-            buttonExcluir.TabIndex = 2;
+            buttonExcluir.TabIndex = 10;
             buttonExcluir.Text = "&Excluir";
             buttonExcluir.UseVisualStyleBackColor = false;
             buttonExcluir.Click += buttonExcluir_Click;
@@ -118,7 +118,7 @@
             buttonInserir.Location = new Point(114, 530);
             buttonInserir.Name = "buttonInserir";
             buttonInserir.Size = new Size(94, 29);
-            buttonInserir.TabIndex = 2;
+            buttonInserir.TabIndex = 8;
             buttonInserir.Text = "&Inserir";
             buttonInserir.UseVisualStyleBackColor = false;
             buttonInserir.Click += buttonInserir_Click;
@@ -130,7 +130,7 @@
             buttonAlterar.Location = new Point(14, 530);
             buttonAlterar.Name = "buttonAlterar";
             buttonAlterar.Size = new Size(94, 29);
-            buttonAlterar.TabIndex = 2;
+            buttonAlterar.TabIndex = 7;
             buttonAlterar.Text = "&Alterar";
             buttonAlterar.UseVisualStyleBackColor = false;
             buttonAlterar.Click += buttonAlterar_Click;
@@ -151,7 +151,7 @@
             dataGridViewMarca.RowHeadersWidth = 51;
             dataGridViewMarca.RowTemplate.Height = 29;
             dataGridViewMarca.Size = new Size(596, 380);
-            dataGridViewMarca.TabIndex = 10;
+            dataGridViewMarca.TabIndex = 6;
             dataGridViewMarca.DoubleClick += dataGridViewMarca_DoubleClick;
             // 
             // nomeDataGridViewTextBoxColumn
@@ -183,7 +183,7 @@
             buttonSelecionar.Location = new Point(214, 530);
             buttonSelecionar.Name = "buttonSelecionar";
             buttonSelecionar.Size = new Size(94, 29);
-            buttonSelecionar.TabIndex = 1;
+            buttonSelecionar.TabIndex = 9;
             buttonSelecionar.Text = "&Selecionar";
             buttonSelecionar.UseVisualStyleBackColor = false;
             buttonSelecionar.Click += buttonSelecionar_Click;
@@ -195,7 +195,7 @@
             buttonCancelar.Location = new Point(515, 530);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
-            buttonCancelar.TabIndex = 1;
+            buttonCancelar.TabIndex = 11;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -210,7 +210,7 @@
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
             label3.Size = new Size(621, 67);
-            label3.TabIndex = 11;
+            label3.TabIndex = 0;
             label3.Text = "GERENCIAMENTO DE MARCAS";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 

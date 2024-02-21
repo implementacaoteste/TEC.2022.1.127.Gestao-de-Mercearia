@@ -54,7 +54,7 @@
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(704, 61);
-            label1.TabIndex = 14;
+            label1.TabIndex = 0;
             label1.Text = "CADASTRO DE FUNCIONÁRIO";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -65,7 +65,7 @@
             textBoxNome.Location = new Point(12, 100);
             textBoxNome.Name = "textBoxNome";
             textBoxNome.Size = new Size(611, 27);
-            textBoxNome.TabIndex = 16;
+            textBoxNome.TabIndex = 2;
             // 
             // bindingSourceCadastrarFuncionario
             // 
@@ -78,7 +78,7 @@
             textBoxFone.Location = new Point(335, 153);
             textBoxFone.Name = "textBoxFone";
             textBoxFone.Size = new Size(218, 27);
-            textBoxFone.TabIndex = 18;
+            textBoxFone.TabIndex = 6;
             // 
             // label2
             // 
@@ -88,7 +88,7 @@
             label2.Location = new Point(12, 77);
             label2.Name = "label2";
             label2.Size = new Size(49, 18);
-            label2.TabIndex = 19;
+            label2.TabIndex = 1;
             label2.Text = "Nome";
             // 
             // label3
@@ -99,7 +99,7 @@
             label3.Location = new Point(335, 130);
             label3.Name = "label3";
             label3.Size = new Size(42, 18);
-            label3.TabIndex = 20;
+            label3.TabIndex = 5;
             label3.Text = "Fone";
             // 
             // label4
@@ -110,7 +110,7 @@
             label4.Location = new Point(12, 183);
             label4.Name = "label4";
             label4.Size = new Size(72, 18);
-            label4.TabIndex = 21;
+            label4.TabIndex = 8;
             label4.Text = "Profissão";
             // 
             // textBoxProfissao
@@ -120,7 +120,7 @@
             textBoxProfissao.Location = new Point(12, 206);
             textBoxProfissao.Name = "textBoxProfissao";
             textBoxProfissao.Size = new Size(360, 27);
-            textBoxProfissao.TabIndex = 22;
+            textBoxProfissao.TabIndex = 9;
             // 
             // label5
             // 
@@ -130,7 +130,7 @@
             label5.Location = new Point(12, 130);
             label5.Name = "label5";
             label5.Size = new Size(54, 18);
-            label5.TabIndex = 23;
+            label5.TabIndex = 3;
             label5.Text = "Salario";
             // 
             // textBoxSalario
@@ -140,7 +140,7 @@
             textBoxSalario.Location = new Point(12, 153);
             textBoxSalario.Name = "textBoxSalario";
             textBoxSalario.Size = new Size(317, 27);
-            textBoxSalario.TabIndex = 24;
+            textBoxSalario.TabIndex = 4;
             // 
             // ativoCheckBox
             // 
@@ -152,7 +152,7 @@
             ativoCheckBox.Margin = new Padding(3, 4, 3, 4);
             ativoCheckBox.Name = "ativoCheckBox";
             ativoCheckBox.Size = new Size(69, 24);
-            ativoCheckBox.TabIndex = 26;
+            ativoCheckBox.TabIndex = 7;
             ativoCheckBox.Text = "Ativo";
             ativoCheckBox.UseVisualStyleBackColor = true;
             // 
@@ -162,7 +162,7 @@
             buttonSalvar.Location = new Point(482, 276);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
-            buttonSalvar.TabIndex = 27;
+            buttonSalvar.TabIndex = 10;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = false;
             buttonSalvar.Click += button1_Click;
@@ -173,7 +173,7 @@
             button2.Location = new Point(582, 276);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
-            button2.TabIndex = 28;
+            button2.TabIndex = 11;
             button2.Text = "&Cancelar";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;

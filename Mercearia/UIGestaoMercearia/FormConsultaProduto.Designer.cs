@@ -66,7 +66,7 @@
             panel1.Location = new Point(0, 472);
             panel1.Name = "panel1";
             panel1.Size = new Size(982, 81);
-            panel1.TabIndex = 0;
+            panel1.TabIndex = 2;
             // 
             // buttonCancelar
             // 
@@ -83,7 +83,7 @@
             buttonSelecionar.Location = new Point(733, 25);
             buttonSelecionar.Name = "buttonSelecionar";
             buttonSelecionar.Size = new Size(94, 29);
-            buttonSelecionar.TabIndex = 1;
+            buttonSelecionar.TabIndex = 0;
             buttonSelecionar.Text = "&Selecionar";
             buttonSelecionar.UseVisualStyleBackColor = true;
             buttonSelecionar.Click += buttonSelecionar_Click;
@@ -181,7 +181,7 @@
             comboBoxBuscarPor.Location = new Point(3, 108);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             comboBoxBuscarPor.Size = new Size(155, 28);
-            comboBoxBuscarPor.TabIndex = 0;
+            comboBoxBuscarPor.TabIndex = 2;
             // 
             // textBoxProduto
             // 
@@ -189,14 +189,14 @@
             textBoxProduto.Location = new Point(164, 108);
             textBoxProduto.Name = "textBoxProduto";
             textBoxProduto.Size = new Size(402, 27);
-            textBoxProduto.TabIndex = 1;
+            textBoxProduto.TabIndex = 4;
             // 
             // buttonBuscar
             // 
             buttonBuscar.Location = new Point(572, 106);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(94, 29);
-            buttonBuscar.TabIndex = 2;
+            buttonBuscar.TabIndex = 5;
             buttonBuscar.Text = "&Buscar";
             buttonBuscar.UseVisualStyleBackColor = true;
             buttonBuscar.Click += buttonBuscar_Click;
@@ -206,7 +206,7 @@
             buttonAlterar.Location = new Point(672, 106);
             buttonAlterar.Name = "buttonAlterar";
             buttonAlterar.Size = new Size(94, 29);
-            buttonAlterar.TabIndex = 2;
+            buttonAlterar.TabIndex = 6;
             buttonAlterar.Text = "&Alterar";
             buttonAlterar.UseVisualStyleBackColor = true;
             buttonAlterar.Click += buttonAlterar_Click;
@@ -216,7 +216,7 @@
             buttonInserir.Location = new Point(772, 106);
             buttonInserir.Name = "buttonInserir";
             buttonInserir.Size = new Size(94, 29);
-            buttonInserir.TabIndex = 2;
+            buttonInserir.TabIndex = 7;
             buttonInserir.Text = "&Inserir";
             buttonInserir.UseVisualStyleBackColor = true;
             buttonInserir.Click += buttonInserir_Click;
@@ -226,7 +226,7 @@
             buttonEcluir.Location = new Point(868, 106);
             buttonEcluir.Name = "buttonEcluir";
             buttonEcluir.Size = new Size(94, 29);
-            buttonEcluir.TabIndex = 2;
+            buttonEcluir.TabIndex = 8;
             buttonEcluir.Text = "&Excluir";
             buttonEcluir.UseVisualStyleBackColor = true;
             buttonEcluir.Click += buttonExcluir_Click;
@@ -247,7 +247,7 @@
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(982, 138);
-            panel2.TabIndex = 2;
+            panel2.TabIndex = 0;
             // 
             // label3
             // 
@@ -255,10 +255,10 @@
             label3.AutoSize = true;
             label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(130, 87);
+            label3.Location = new Point(164, 87);
             label3.Name = "label3";
             label3.Size = new Size(201, 18);
-            label3.TabIndex = 9;
+            label3.TabIndex = 3;
             label3.Text = "INSIRA A INFORMAÇÃO:";
             // 
             // label2
@@ -269,7 +269,7 @@
             label2.Location = new Point(3, 87);
             label2.Name = "label2";
             label2.Size = new Size(120, 18);
-            label2.TabIndex = 8;
+            label2.TabIndex = 1;
             label2.Text = "BUSCAR POR:";
             // 
             // label1
@@ -284,7 +284,7 @@
             label1.Location = new Point(-17, 0);
             label1.Name = "label1";
             label1.Size = new Size(987, 46);
-            label1.TabIndex = 3;
+            label1.TabIndex = 0;
             label1.Text = "                     CONSULTA DE PRODUTO                        ";
             // 
             // FormConsultaProduto

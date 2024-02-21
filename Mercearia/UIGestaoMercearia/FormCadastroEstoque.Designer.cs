@@ -72,14 +72,14 @@
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(657, 75);
-            panel1.TabIndex = 1;
+            panel1.TabIndex = 0;
             // 
             // textBoxNomeProduto
             // 
             textBoxNomeProduto.Location = new Point(41, 121);
             textBoxNomeProduto.Name = "textBoxNomeProduto";
             textBoxNomeProduto.Size = new Size(215, 27);
-            textBoxNomeProduto.TabIndex = 4;
+            textBoxNomeProduto.TabIndex = 2;
             // 
             // label2
             // 
@@ -90,7 +90,7 @@
             label2.Location = new Point(343, 100);
             label2.Name = "label2";
             label2.Size = new Size(118, 18);
-            label2.TabIndex = 5;
+            label2.TabIndex = 8;
             label2.Text = "Data de Entrada:";
             // 
             // label3
@@ -102,7 +102,7 @@
             label3.Location = new Point(343, 185);
             label3.Name = "label3";
             label3.Size = new Size(104, 18);
-            label3.TabIndex = 6;
+            label3.TabIndex = 10;
             label3.Text = "Data de Saída:";
             // 
             // textBox2
@@ -111,7 +111,7 @@
             textBox2.Location = new Point(343, 206);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(216, 27);
-            textBox2.TabIndex = 7;
+            textBox2.TabIndex = 11;
             // 
             // bindingSourceEstoque
             // 
@@ -122,7 +122,7 @@
             textBoxQtdEstoque.Location = new Point(41, 206);
             textBoxQtdEstoque.Name = "textBoxQtdEstoque";
             textBoxQtdEstoque.Size = new Size(215, 27);
-            textBoxQtdEstoque.TabIndex = 8;
+            textBoxQtdEstoque.TabIndex = 5;
             // 
             // textBoxEstoqueMaximo
             // 
@@ -130,7 +130,7 @@
             textBoxEstoqueMaximo.Location = new Point(41, 293);
             textBoxEstoqueMaximo.Name = "textBoxEstoqueMaximo";
             textBoxEstoqueMaximo.Size = new Size(216, 27);
-            textBoxEstoqueMaximo.TabIndex = 9;
+            textBoxEstoqueMaximo.TabIndex = 7;
             // 
             // textBoxDataEntrada
             // 
@@ -138,7 +138,7 @@
             textBoxDataEntrada.Location = new Point(343, 121);
             textBoxDataEntrada.Name = "textBoxDataEntrada";
             textBoxDataEntrada.Size = new Size(216, 27);
-            textBoxDataEntrada.TabIndex = 10;
+            textBoxDataEntrada.TabIndex = 9;
             // 
             // textBoxEstoqueMinimo
             // 
@@ -146,7 +146,7 @@
             textBoxEstoqueMinimo.Location = new Point(343, 293);
             textBoxEstoqueMinimo.Name = "textBoxEstoqueMinimo";
             textBoxEstoqueMinimo.Size = new Size(215, 27);
-            textBoxEstoqueMinimo.TabIndex = 11;
+            textBoxEstoqueMinimo.TabIndex = 13;
             textBoxEstoqueMinimo.TextChanged += textBox6_TextChanged;
             // 
             // label4
@@ -158,7 +158,7 @@
             label4.Location = new Point(41, 272);
             label4.Name = "label4";
             label4.Size = new Size(120, 18);
-            label4.TabIndex = 12;
+            label4.TabIndex = 6;
             label4.Text = "Estoque Máximo";
             // 
             // label5
@@ -170,7 +170,7 @@
             label5.Location = new Point(343, 272);
             label5.Name = "label5";
             label5.Size = new Size(116, 18);
-            label5.TabIndex = 13;
+            label5.TabIndex = 12;
             label5.Text = "Estoque Mínimo";
             // 
             // label6
@@ -182,7 +182,7 @@
             label6.Location = new Point(41, 100);
             label6.Name = "label6";
             label6.Size = new Size(61, 18);
-            label6.TabIndex = 14;
+            label6.TabIndex = 1;
             label6.Text = "Produto";
             // 
             // label7
@@ -194,7 +194,7 @@
             label7.Location = new Point(41, 185);
             label7.Name = "label7";
             label7.Size = new Size(167, 18);
-            label7.TabIndex = 15;
+            label7.TabIndex = 4;
             label7.Text = "Quantidade em Estoque";
             // 
             // buttonBuscarProduto
@@ -202,7 +202,7 @@
             buttonBuscarProduto.Location = new Point(262, 119);
             buttonBuscarProduto.Name = "buttonBuscarProduto";
             buttonBuscarProduto.Size = new Size(36, 29);
-            buttonBuscarProduto.TabIndex = 17;
+            buttonBuscarProduto.TabIndex = 3;
             buttonBuscarProduto.Text = "...";
             buttonBuscarProduto.UseVisualStyleBackColor = true;
             buttonBuscarProduto.Click += buttonBuscarProduto_Click;
@@ -212,7 +212,7 @@
             buttonCancelar.Location = new Point(465, 350);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
-            buttonCancelar.TabIndex = 23;
+            buttonCancelar.TabIndex = 15;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -222,7 +222,7 @@
             buttonSalvar.Location = new Point(365, 350);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
-            buttonSalvar.TabIndex = 24;
+            buttonSalvar.TabIndex = 14;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = true;
             buttonSalvar.Click += buttonSalvar_Click;

@@ -26,7 +26,5 @@ namespace BLL
         {
             return new ItemVendaDAL().BuscarPorIdVenda(_idVenda);
         }
-
-
     }
 }

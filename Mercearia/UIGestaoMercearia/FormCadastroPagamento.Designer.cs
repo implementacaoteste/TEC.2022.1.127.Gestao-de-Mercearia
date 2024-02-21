@@ -49,7 +49,7 @@
             label1.Location = new Point(108, 77);
             label1.Name = "label1";
             label1.Size = new Size(46, 20);
-            label1.TabIndex = 59;
+            label1.TabIndex = 1;
             label1.Text = "Tipo:";
             // 
             // textBox1
@@ -59,7 +59,7 @@
             textBox1.Location = new Point(108, 104);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(401, 27);
-            textBox1.TabIndex = 58;
+            textBox1.TabIndex = 2;
             // 
             // formaPagamentoBindingSource
             // 
@@ -73,7 +73,7 @@
             buttonCancelar.Location = new Point(313, 334);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
-            buttonCancelar.TabIndex = 57;
+            buttonCancelar.TabIndex = 7;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -85,7 +85,7 @@
             buttonSalvar.Location = new Point(213, 334);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
-            buttonSalvar.TabIndex = 56;
+            buttonSalvar.TabIndex = 6;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = false;
             buttonSalvar.Click += buttonSalvar_Click;
@@ -100,7 +100,7 @@
             label10.Location = new Point(0, 0);
             label10.Name = "label10";
             label10.Size = new Size(694, 61);
-            label10.TabIndex = 55;
+            label10.TabIndex = 0;
             label10.Text = "CADASTO DE FORMA DE PAGAMENTO";
             label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -111,7 +111,7 @@
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(408, 112);
-            textBox2.TabIndex = 60;
+            textBox2.TabIndex = 4;
             // 
             // label2
             // 
@@ -121,7 +121,7 @@
             label2.Location = new Point(108, 139);
             label2.Name = "label2";
             label2.Size = new Size(86, 20);
-            label2.TabIndex = 59;
+            label2.TabIndex = 3;
             label2.Text = "Descrição";
             // 
             // checkBox1
@@ -134,7 +134,7 @@
             checkBox1.Location = new Point(231, 294);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(139, 24);
-            checkBox1.TabIndex = 61;
+            checkBox1.TabIndex = 5;
             checkBox1.Text = "Aceita Troco";
             checkBox1.UseVisualStyleBackColor = true;
             // 

@@ -74,7 +74,7 @@
             cPFLabel.Location = new Point(225, 156);
             cPFLabel.Name = "cPFLabel";
             cPFLabel.Size = new Size(38, 18);
-            cPFLabel.TabIndex = 3;
+            cPFLabel.TabIndex = 7;
             cPFLabel.Text = "CPF";
             // 
             // emailLabel
@@ -85,7 +85,7 @@
             emailLabel.Location = new Point(330, 97);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new Size(50, 18);
-            emailLabel.TabIndex = 5;
+            emailLabel.TabIndex = 3;
             emailLabel.Text = "E-mail";
             // 
             // nomeUsuarioLabel
@@ -96,7 +96,7 @@
             nomeUsuarioLabel.Location = new Point(3, 156);
             nomeUsuarioLabel.Name = "nomeUsuarioLabel";
             nomeUsuarioLabel.Size = new Size(122, 18);
-            nomeUsuarioLabel.TabIndex = 7;
+            nomeUsuarioLabel.TabIndex = 5;
             nomeUsuarioLabel.Text = "Nome de usuário";
             // 
             // senhaLabel
@@ -143,7 +143,7 @@
             cPFTextBox.Margin = new Padding(3, 4, 3, 4);
             cPFTextBox.Name = "cPFTextBox";
             cPFTextBox.Size = new Size(331, 27);
-            cPFTextBox.TabIndex = 4;
+            cPFTextBox.TabIndex = 8;
             // 
             // emailTextBox
             // 
@@ -153,7 +153,7 @@
             emailTextBox.Margin = new Padding(3, 4, 3, 4);
             emailTextBox.Name = "emailTextBox";
             emailTextBox.Size = new Size(393, 27);
-            emailTextBox.TabIndex = 6;
+            emailTextBox.TabIndex = 4;
             // 
             // nomeUsuarioTextBox
             // 
@@ -163,7 +163,7 @@
             nomeUsuarioTextBox.Margin = new Padding(3, 4, 3, 4);
             nomeUsuarioTextBox.Name = "nomeUsuarioTextBox";
             nomeUsuarioTextBox.Size = new Size(213, 27);
-            nomeUsuarioTextBox.TabIndex = 8;
+            nomeUsuarioTextBox.TabIndex = 6;
             // 
             // senhaTextBox
             // 

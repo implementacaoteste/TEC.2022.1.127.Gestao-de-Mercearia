@@ -82,7 +82,7 @@
             dataGridViewFornecedor.RowHeadersWidth = 51;
             dataGridViewFornecedor.RowTemplate.Height = 29;
             dataGridViewFornecedor.Size = new Size(958, 367);
-            dataGridViewFornecedor.TabIndex = 1;
+            dataGridViewFornecedor.TabIndex = 9;
             dataGridViewFornecedor.DoubleClick += dataGridViewFornecedor_DoubleClick;
             // 
             // nomeDataGridViewTextBoxColumn
@@ -148,7 +148,7 @@
             buttonBuscar.Location = new Point(576, 87);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(94, 29);
-            buttonBuscar.TabIndex = 2;
+            buttonBuscar.TabIndex = 5;
             buttonBuscar.Text = "&Buscar";
             buttonBuscar.UseVisualStyleBackColor = true;
             buttonBuscar.Click += buttonBuscar_Click;
@@ -158,7 +158,7 @@
             buttonAlterar.Location = new Point(676, 87);
             buttonAlterar.Name = "buttonAlterar";
             buttonAlterar.Size = new Size(94, 29);
-            buttonAlterar.TabIndex = 2;
+            buttonAlterar.TabIndex = 6;
             buttonAlterar.Text = "&Alterar";
             buttonAlterar.UseVisualStyleBackColor = true;
             buttonAlterar.Click += buttonAlterar_Click;
@@ -168,7 +168,7 @@
             buttonInserir.Location = new Point(776, 87);
             buttonInserir.Name = "buttonInserir";
             buttonInserir.Size = new Size(94, 29);
-            buttonInserir.TabIndex = 2;
+            buttonInserir.TabIndex = 7;
             buttonInserir.Text = "&Inserir";
             buttonInserir.UseVisualStyleBackColor = true;
             buttonInserir.Click += buttonInserir_Click;
@@ -178,7 +178,7 @@
             buttonExcluir.Location = new Point(876, 87);
             buttonExcluir.Name = "buttonExcluir";
             buttonExcluir.Size = new Size(94, 29);
-            buttonExcluir.TabIndex = 2;
+            buttonExcluir.TabIndex = 8;
             buttonExcluir.Text = "&Excluir";
             buttonExcluir.UseVisualStyleBackColor = true;
             buttonExcluir.Click += buttonExcluir_Click;
@@ -188,7 +188,7 @@
             buttonSelecionar.Location = new Point(776, 512);
             buttonSelecionar.Name = "buttonSelecionar";
             buttonSelecionar.Size = new Size(94, 29);
-            buttonSelecionar.TabIndex = 3;
+            buttonSelecionar.TabIndex = 10;
             buttonSelecionar.Text = "&Selecionar";
             buttonSelecionar.UseVisualStyleBackColor = true;
             buttonSelecionar.Click += buttonSelecionar_Click;
@@ -198,7 +198,7 @@
             buttonCancelar.Location = new Point(876, 512);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
-            buttonCancelar.TabIndex = 3;
+            buttonCancelar.TabIndex = 11;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -218,7 +218,7 @@
             comboBoxBuscarPor.Location = new Point(12, 89);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             comboBoxBuscarPor.Size = new Size(133, 28);
-            comboBoxBuscarPor.TabIndex = 5;
+            comboBoxBuscarPor.TabIndex = 2;
             // 
             // label2
             // 
@@ -228,7 +228,7 @@
             label2.Location = new Point(12, 66);
             label2.Name = "label2";
             label2.Size = new Size(111, 18);
-            label2.TabIndex = 6;
+            label2.TabIndex = 1;
             label2.Text = "BUSCAR POR:";
             // 
             // label3
@@ -239,7 +239,7 @@
             label3.Location = new Point(151, 66);
             label3.Name = "label3";
             label3.Size = new Size(197, 18);
-            label3.TabIndex = 7;
+            label3.TabIndex = 3;
             label3.Text = "INSIRA AS INFORMAÇÕES:";
             // 
             // FormConsultaFornecedor

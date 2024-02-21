@@ -20,7 +20,16 @@ namespace UIGestaoMercearia
         {
             try
             {
-                Close();
+                if (MessageBox.Show("Deseja realmente cancelar essa venda", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                {
+                    textBoxCodigodeBarras.Focus();
+                    return;
+                }
+
+                bindingSourceVenda.CancelEdit();
+                bindingSourceVenda.AddNew();
+                textBoxCodigodeBarras.Focus();
+
             }
             catch (Exception ex)
             {
@@ -88,6 +97,10 @@ namespace UIGestaoMercearia
             {
                 buttonFinalizarVenda_Click(sender, e);
             }
+            if (e.KeyCode == Keys.F11)
+            {
+                buttonCancelar_Click(sender, e);
+            }
             else if (e.KeyCode == Keys.Escape)
                 Close();
         }
@@ -148,7 +161,7 @@ namespace UIGestaoMercearia
             textBoxCodigodeBarras.Text = "";
             labelpreco.Text = "";
             textBoxQuantidade.Text = "1";
-            
+
 
             try
             {

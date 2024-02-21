@@ -80,7 +80,7 @@
             usuarioDataGridView.RowHeadersWidth = 51;
             usuarioDataGridView.RowTemplate.Height = 24;
             usuarioDataGridView.Size = new Size(729, 610);
-            usuarioDataGridView.TabIndex = 8;
+            usuarioDataGridView.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -155,7 +155,7 @@
             grupoUsuariosDataGridView.RowHeadersWidth = 51;
             grupoUsuariosDataGridView.RowTemplate.Height = 24;
             grupoUsuariosDataGridView.Size = new Size(584, 610);
-            grupoUsuariosDataGridView.TabIndex = 9;
+            grupoUsuariosDataGridView.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn8
             // 
@@ -173,7 +173,7 @@
             textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(405, 27);
-            textBox1.TabIndex = 1;
+            textBox1.TabIndex = 2;
             // 
             // buttonBuscar
             // 
@@ -182,7 +182,7 @@
             buttonBuscar.Margin = new Padding(3, 4, 3, 4);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(75, 28);
-            buttonBuscar.TabIndex = 2;
+            buttonBuscar.TabIndex = 3;
             buttonBuscar.Text = "&Buscar";
             buttonBuscar.UseVisualStyleBackColor = true;
             buttonBuscar.Click += buttonBuscar_Click;
@@ -194,7 +194,7 @@
             buttonAlterar.Margin = new Padding(3, 4, 3, 4);
             buttonAlterar.Name = "buttonAlterar";
             buttonAlterar.Size = new Size(75, 28);
-            buttonAlterar.TabIndex = 3;
+            buttonAlterar.TabIndex = 4;
             buttonAlterar.Text = "Al&terar";
             buttonAlterar.UseVisualStyleBackColor = true;
             buttonAlterar.Click += buttonAlterar_Click;
@@ -206,7 +206,7 @@
             buttonAdicionarUsuario.Margin = new Padding(3, 4, 3, 4);
             buttonAdicionarUsuario.Name = "buttonAdicionarUsuario";
             buttonAdicionarUsuario.Size = new Size(84, 28);
-            buttonAdicionarUsuario.TabIndex = 4;
+            buttonAdicionarUsuario.TabIndex = 5;
             buttonAdicionarUsuario.Text = "&Adicionar";
             buttonAdicionarUsuario.UseVisualStyleBackColor = true;
             buttonAdicionarUsuario.Click += buttonAdicionarUsuario_Click;
@@ -218,7 +218,7 @@
             buttonExcluirUsuario.Margin = new Padding(3, 4, 3, 4);
             buttonExcluirUsuario.Name = "buttonExcluirUsuario";
             buttonExcluirUsuario.Size = new Size(66, 28);
-            buttonExcluirUsuario.TabIndex = 5;
+            buttonExcluirUsuario.TabIndex = 6;
             buttonExcluirUsuario.Text = "&Excluir";
             buttonExcluirUsuario.UseVisualStyleBackColor = true;
             buttonExcluirUsuario.Click += buttonExcluirUsuario_Click;
@@ -230,7 +230,7 @@
             buttonAdicionarGrupoUsuario.Margin = new Padding(3, 4, 3, 4);
             buttonAdicionarGrupoUsuario.Name = "buttonAdicionarGrupoUsuario";
             buttonAdicionarGrupoUsuario.Size = new Size(91, 40);
-            buttonAdicionarGrupoUsuario.TabIndex = 6;
+            buttonAdicionarGrupoUsuario.TabIndex = 7;
             buttonAdicionarGrupoUsuario.Text = "A&dicionar";
             buttonAdicionarGrupoUsuario.UseVisualStyleBackColor = true;
             buttonAdicionarGrupoUsuario.Click += buttonAdicionarGrupoUsuario_Click;
@@ -242,7 +242,7 @@
             buttonExcluirGrupoUsuario.Margin = new Padding(3, 4, 3, 4);
             buttonExcluirGrupoUsuario.Name = "buttonExcluirGrupoUsuario";
             buttonExcluirGrupoUsuario.Size = new Size(75, 40);
-            buttonExcluirGrupoUsuario.TabIndex = 7;
+            buttonExcluirGrupoUsuario.TabIndex = 8;
             buttonExcluirGrupoUsuario.Text = "E&xcluir";
             buttonExcluirGrupoUsuario.UseVisualStyleBackColor = true;
             buttonExcluirGrupoUsuario.Click += buttonExcluirGrupoUsuario_Click;
@@ -256,7 +256,7 @@
             label1.Location = new Point(12, 91);
             label1.Name = "label1";
             label1.Size = new Size(189, 18);
-            label1.TabIndex = 0;
+            label1.TabIndex = 1;
             label1.Text = "OQUE DESEJA BUSCAR?";
             // 
             // label2
@@ -269,7 +269,7 @@
             label2.Location = new Point(0, 0);
             label2.Name = "label2";
             label2.Size = new Size(1343, 78);
-            label2.TabIndex = 10;
+            label2.TabIndex = 0;
             label2.Text = "GESTÃO DE USUÁRIO";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 

@@ -78,7 +78,7 @@
             dataGridViewEstoque.RowHeadersWidth = 51;
             dataGridViewEstoque.RowTemplate.Height = 29;
             dataGridViewEstoque.Size = new Size(820, 234);
-            dataGridViewEstoque.TabIndex = 4;
+            dataGridViewEstoque.TabIndex = 8;
             dataGridViewEstoque.DoubleClick += dataGridViewEstoque_DoubleClick;
             // 
             // datadeEntradaDataGridViewTextBoxColumn
@@ -175,7 +175,7 @@
             panel1.Location = new Point(0, 396);
             panel1.Name = "panel1";
             panel1.Size = new Size(848, 60);
-            panel1.TabIndex = 3;
+            panel1.TabIndex = 0;
             // 
             // button2
             // 
@@ -184,7 +184,7 @@
             button2.Location = new Point(742, 19);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
-            button2.TabIndex = 3;
+            button2.TabIndex = 0;
             button2.Text = "&Cancelar";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
@@ -196,7 +196,7 @@
             comboBoxBuscarPor.Location = new Point(10, 123);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             comboBoxBuscarPor.Size = new Size(105, 28);
-            comboBoxBuscarPor.TabIndex = 0;
+            comboBoxBuscarPor.TabIndex = 2;
             // 
             // textBoxBuscarPor
             // 
@@ -204,14 +204,14 @@
             textBoxBuscarPor.Location = new Point(121, 122);
             textBoxBuscarPor.Name = "textBoxBuscarPor";
             textBoxBuscarPor.Size = new Size(387, 27);
-            textBoxBuscarPor.TabIndex = 1;
+            textBoxBuscarPor.TabIndex = 3;
             // 
             // buttonBuscar
             // 
             buttonBuscar.Location = new Point(514, 121);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(78, 27);
-            buttonBuscar.TabIndex = 2;
+            buttonBuscar.TabIndex = 4;
             buttonBuscar.Text = "&Buscar";
             buttonBuscar.UseVisualStyleBackColor = true;
             buttonBuscar.Click += buttonBuscar_Click;
@@ -221,7 +221,7 @@
             buttonAlterar.Location = new Point(598, 121);
             buttonAlterar.Name = "buttonAlterar";
             buttonAlterar.Size = new Size(79, 27);
-            buttonAlterar.TabIndex = 2;
+            buttonAlterar.TabIndex = 5;
             buttonAlterar.Text = "&Alterar";
             buttonAlterar.UseVisualStyleBackColor = true;
             buttonAlterar.Click += buttonAlterar_Click;
@@ -231,7 +231,7 @@
             buttonInserir.Location = new Point(683, 120);
             buttonInserir.Name = "buttonInserir";
             buttonInserir.Size = new Size(73, 28);
-            buttonInserir.TabIndex = 2;
+            buttonInserir.TabIndex = 6;
             buttonInserir.Text = "&Inserir";
             buttonInserir.UseVisualStyleBackColor = true;
             buttonInserir.Click += buttonInserir_Click;
@@ -241,7 +241,7 @@
             buttonExcluir.Location = new Point(762, 120);
             buttonExcluir.Name = "buttonExcluir";
             buttonExcluir.Size = new Size(70, 27);
-            buttonExcluir.TabIndex = 2;
+            buttonExcluir.TabIndex = 7;
             buttonExcluir.Text = "&Excluir";
             buttonExcluir.UseVisualStyleBackColor = true;
             buttonExcluir.Click += buttonExcluir_Click;
@@ -272,7 +272,7 @@
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
             panel3.Size = new Size(848, 66);
-            panel3.TabIndex = 6;
+            panel3.TabIndex = 0;
             // 
             // label2
             // 
@@ -293,7 +293,7 @@
             label1.Location = new Point(12, 100);
             label1.Name = "label1";
             label1.Size = new Size(111, 18);
-            label1.TabIndex = 5;
+            label1.TabIndex = 1;
             label1.Text = "BUSCAR POR:";
             // 
             // FormConsultaEstoque

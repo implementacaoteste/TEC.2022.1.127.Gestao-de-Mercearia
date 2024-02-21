@@ -64,7 +64,7 @@
             grupoUsuarioDataGridView.RowHeadersWidth = 51;
             grupoUsuarioDataGridView.RowTemplate.Height = 24;
             grupoUsuarioDataGridView.Size = new Size(1019, 391);
-            grupoUsuarioDataGridView.TabIndex = 4;
+            grupoUsuarioDataGridView.TabIndex = 5;
             grupoUsuarioDataGridView.MouseDoubleClick += grupoUsuarioDataGridView_MouseDoubleClick;
             // 
             // dataGridViewTextBoxColumn2
@@ -89,7 +89,7 @@
             buttonSelecionar.Margin = new Padding(3, 4, 3, 4);
             buttonSelecionar.Name = "buttonSelecionar";
             buttonSelecionar.Size = new Size(93, 35);
-            buttonSelecionar.TabIndex = 5;
+            buttonSelecionar.TabIndex = 6;
             buttonSelecionar.Text = "&Selecionar";
             buttonSelecionar.UseVisualStyleBackColor = true;
             buttonSelecionar.Click += buttonSelecionar_Click;
@@ -100,7 +100,7 @@
             buttonCancelar.Margin = new Padding(3, 4, 3, 4);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(75, 35);
-            buttonCancelar.TabIndex = 6;
+            buttonCancelar.TabIndex = 7;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -157,7 +157,7 @@
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(229, 35);
-            button1.TabIndex = 8;
+            button1.TabIndex = 4;
             button1.Text = "&Gerenciar grupos";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;

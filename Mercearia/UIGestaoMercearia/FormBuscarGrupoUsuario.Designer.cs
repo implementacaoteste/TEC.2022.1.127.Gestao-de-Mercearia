@@ -74,7 +74,6 @@
             grupoUsuarioDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             grupoUsuarioDataGridView.Size = new Size(559, 468);
             grupoUsuarioDataGridView.TabIndex = 7;
-            grupoUsuarioDataGridView.CellContentClick += grupoUsuarioDataGridView_CellContentClick;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -268,7 +267,6 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "    ";
-            Load += FormBuscarGrupoUsuario_Load;
             KeyDown += FormBuscarGrupoUsuario_KeyDown;
             ((System.ComponentModel.ISupportInitialize)grupoUsuarioDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)grupoUsuarioBindingSource).EndInit();

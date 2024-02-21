@@ -77,7 +77,7 @@
             label2.Location = new Point(12, 144);
             label2.Name = "label2";
             label2.Size = new Size(111, 18);
-            label2.TabIndex = 5;
+            label2.TabIndex = 3;
             label2.Text = "PERMISSÕES:";
             // 
             // nomeGrupoTextBox
@@ -102,7 +102,7 @@
             buttonSalvar.Margin = new Padding(3, 4, 3, 4);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(75, 29);
-            buttonSalvar.TabIndex = 3;
+            buttonSalvar.TabIndex = 5;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = false;
             buttonSalvar.Click += buttonSalvar_Click;
@@ -115,7 +115,7 @@
             buttonCancelar.Margin = new Padding(3, 4, 3, 4);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(75, 29);
-            buttonCancelar.TabIndex = 4;
+            buttonCancelar.TabIndex = 6;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -126,7 +126,7 @@
             textBoxPermissoes.Location = new Point(12, 167);
             textBoxPermissoes.Name = "textBoxPermissoes";
             textBoxPermissoes.Size = new Size(536, 27);
-            textBoxPermissoes.TabIndex = 6;
+            textBoxPermissoes.TabIndex = 4;
             // 
             // FormCadastroGrupoUsuario
             // 

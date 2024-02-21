@@ -78,7 +78,7 @@ namespace UIGestaoMercearia
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(705, 49);
-            label1.TabIndex = 12;
+            label1.TabIndex = 0;
             label1.Text = "CADASTRO DE PRODUTO";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -90,7 +90,7 @@ namespace UIGestaoMercearia
             label2.Location = new Point(12, 61);
             label2.Name = "label2";
             label2.Size = new Size(49, 18);
-            label2.TabIndex = 13;
+            label2.TabIndex = 1;
             label2.Text = "Nome";
             // 
             // textBoxNome
@@ -100,7 +100,7 @@ namespace UIGestaoMercearia
             textBoxNome.Location = new Point(12, 84);
             textBoxNome.Name = "textBoxNome";
             textBoxNome.Size = new Size(409, 27);
-            textBoxNome.TabIndex = 0;
+            textBoxNome.TabIndex = 2;
             // 
             // label3
             // 
@@ -110,7 +110,7 @@ namespace UIGestaoMercearia
             label3.Location = new Point(236, 163);
             label3.Name = "label3";
             label3.Size = new Size(76, 18);
-            label3.TabIndex = 15;
+            label3.TabIndex = 11;
             label3.Text = "Descrição";
             // 
             // textBoxDescricao
@@ -120,7 +120,7 @@ namespace UIGestaoMercearia
             textBoxDescricao.Location = new Point(12, 195);
             textBoxDescricao.Name = "textBoxDescricao";
             textBoxDescricao.Size = new Size(152, 27);
-            textBoxDescricao.TabIndex = 3;
+            textBoxDescricao.TabIndex = 10;
             // 
             // label6
             // 
@@ -130,7 +130,7 @@ namespace UIGestaoMercearia
             label6.Location = new Point(236, 110);
             label6.Name = "label6";
             label6.Size = new Size(114, 18);
-            label6.TabIndex = 21;
+            label6.TabIndex = 7;
             label6.Text = "Codigo de barra";
             // 
             // textBoxCodigoDeBarra
@@ -140,7 +140,7 @@ namespace UIGestaoMercearia
             textBoxCodigoDeBarra.Location = new Point(236, 133);
             textBoxCodigoDeBarra.Name = "textBoxCodigoDeBarra";
             textBoxCodigoDeBarra.Size = new Size(423, 27);
-            textBoxCodigoDeBarra.TabIndex = 7;
+            textBoxCodigoDeBarra.TabIndex = 8;
             // 
             // label7
             // 
@@ -150,7 +150,7 @@ namespace UIGestaoMercearia
             label7.Location = new Point(12, 174);
             label7.Name = "label7";
             label7.Size = new Size(113, 18);
-            label7.TabIndex = 23;
+            label7.TabIndex = 9;
             label7.Text = "Preço de Venda";
             // 
             // textBoxPreco
@@ -161,7 +161,7 @@ namespace UIGestaoMercearia
             textBoxPreco.Multiline = true;
             textBoxPreco.Name = "textBoxPreco";
             textBoxPreco.Size = new Size(423, 78);
-            textBoxPreco.TabIndex = 8;
+            textBoxPreco.TabIndex = 12;
             // 
             // buttonSalvar
             // 
@@ -170,7 +170,7 @@ namespace UIGestaoMercearia
             buttonSalvar.Location = new Point(485, 347);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
-            buttonSalvar.TabIndex = 9;
+            buttonSalvar.TabIndex = 22;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = false;
             buttonSalvar.Click += buttonSalvar_Click;
@@ -182,7 +182,7 @@ namespace UIGestaoMercearia
             textBoxQtdEstoque.Location = new Point(427, 84);
             textBoxQtdEstoque.Name = "textBoxQtdEstoque";
             textBoxQtdEstoque.Size = new Size(232, 27);
-            textBoxQtdEstoque.TabIndex = 1;
+            textBoxQtdEstoque.TabIndex = 4;
             // 
             // buttonCancelar
             // 
@@ -192,7 +192,7 @@ namespace UIGestaoMercearia
             buttonCancelar.Location = new Point(585, 347);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
-            buttonCancelar.TabIndex = 10;
+            buttonCancelar.TabIndex = 23;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -204,7 +204,7 @@ namespace UIGestaoMercearia
             textBoxNomeFornecedor.Location = new Point(12, 246);
             textBoxNomeFornecedor.Name = "textBoxNomeFornecedor";
             textBoxNomeFornecedor.Size = new Size(152, 27);
-            textBoxNomeFornecedor.TabIndex = 4;
+            textBoxNomeFornecedor.TabIndex = 14;
             // 
             // label9
             // 
@@ -214,7 +214,7 @@ namespace UIGestaoMercearia
             label9.Location = new Point(12, 225);
             label9.Name = "label9";
             label9.Size = new Size(85, 18);
-            label9.TabIndex = 30;
+            label9.TabIndex = 13;
             label9.Text = "Fornecedor";
             // 
             // label8
@@ -225,7 +225,7 @@ namespace UIGestaoMercearia
             label8.Location = new Point(427, 61);
             label8.Name = "label8";
             label8.Size = new Size(83, 18);
-            label8.TabIndex = 25;
+            label8.TabIndex = 3;
             label8.Text = "Quantidade";
             // 
             // textBoxNomeMarca
@@ -235,7 +235,7 @@ namespace UIGestaoMercearia
             textBoxNomeMarca.Location = new Point(12, 297);
             textBoxNomeMarca.Name = "textBoxNomeMarca";
             textBoxNomeMarca.Size = new Size(152, 27);
-            textBoxNomeMarca.TabIndex = 5;
+            textBoxNomeMarca.TabIndex = 17;
             // 
             // label4
             // 
@@ -245,7 +245,7 @@ namespace UIGestaoMercearia
             label4.Location = new Point(12, 276);
             label4.Name = "label4";
             label4.Size = new Size(50, 18);
-            label4.TabIndex = 32;
+            label4.TabIndex = 16;
             label4.Text = "Marca";
             // 
             // buttonBuscarFornecedor
@@ -253,7 +253,7 @@ namespace UIGestaoMercearia
             buttonBuscarFornecedor.Location = new Point(170, 246);
             buttonBuscarFornecedor.Name = "buttonBuscarFornecedor";
             buttonBuscarFornecedor.Size = new Size(29, 29);
-            buttonBuscarFornecedor.TabIndex = 33;
+            buttonBuscarFornecedor.TabIndex = 15;
             buttonBuscarFornecedor.Text = "...";
             buttonBuscarFornecedor.UseVisualStyleBackColor = true;
             buttonBuscarFornecedor.Click += buttonBuscarFornecedor_Click;
@@ -263,7 +263,7 @@ namespace UIGestaoMercearia
             buttonBuscarMarca.Location = new Point(170, 297);
             buttonBuscarMarca.Name = "buttonBuscarMarca";
             buttonBuscarMarca.Size = new Size(29, 29);
-            buttonBuscarMarca.TabIndex = 33;
+            buttonBuscarMarca.TabIndex = 18;
             buttonBuscarMarca.Text = "...";
             buttonBuscarMarca.UseVisualStyleBackColor = true;
             buttonBuscarMarca.Click += buttonBuscarMarca_Click;
@@ -274,7 +274,7 @@ namespace UIGestaoMercearia
             textBoxNomeCategoria.Location = new Point(12, 349);
             textBoxNomeCategoria.Name = "textBoxNomeCategoria";
             textBoxNomeCategoria.Size = new Size(152, 27);
-            textBoxNomeCategoria.TabIndex = 6;
+            textBoxNomeCategoria.TabIndex = 20;
             // 
             // label5
             // 
@@ -284,7 +284,7 @@ namespace UIGestaoMercearia
             label5.Location = new Point(12, 327);
             label5.Name = "label5";
             label5.Size = new Size(72, 18);
-            label5.TabIndex = 35;
+            label5.TabIndex = 19;
             label5.Text = "Categoria";
             // 
             // buttonBuscarCategoria
@@ -292,7 +292,7 @@ namespace UIGestaoMercearia
             buttonBuscarCategoria.Location = new Point(170, 347);
             buttonBuscarCategoria.Name = "buttonBuscarCategoria";
             buttonBuscarCategoria.Size = new Size(29, 29);
-            buttonBuscarCategoria.TabIndex = 33;
+            buttonBuscarCategoria.TabIndex = 21;
             buttonBuscarCategoria.Text = "...";
             buttonBuscarCategoria.UseVisualStyleBackColor = true;
             buttonBuscarCategoria.Click += buttonBuscarCategoria_Click;
@@ -303,7 +303,7 @@ namespace UIGestaoMercearia
             textBoxCustoCompra.Location = new Point(12, 144);
             textBoxCustoCompra.Name = "textBoxCustoCompra";
             textBoxCustoCompra.Size = new Size(152, 27);
-            textBoxCustoCompra.TabIndex = 2;
+            textBoxCustoCompra.TabIndex = 6;
             // 
             // labelCustoCompra
             // 
@@ -313,7 +313,7 @@ namespace UIGestaoMercearia
             labelCustoCompra.Location = new Point(12, 121);
             labelCustoCompra.Name = "labelCustoCompra";
             labelCustoCompra.Size = new Size(126, 18);
-            labelCustoCompra.TabIndex = 37;
+            labelCustoCompra.TabIndex = 5;
             labelCustoCompra.Text = "Custo de Compra";
             // 
             // FormCadastroProduto

@@ -95,7 +95,7 @@
             emailLabel.Location = new Point(12, 129);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new Size(50, 18);
-            emailLabel.TabIndex = 9;
+            emailLabel.TabIndex = 5;
             emailLabel.Text = "E-mail";
             // 
             // label2
@@ -106,7 +106,7 @@
             label2.Location = new Point(430, 129);
             label2.Name = "label2";
             label2.Size = new Size(39, 18);
-            label2.TabIndex = 14;
+            label2.TabIndex = 9;
             label2.Text = "CEP";
             // 
             // label3
@@ -117,7 +117,7 @@
             label3.Location = new Point(10, 184);
             label3.Name = "label3";
             label3.Size = new Size(72, 18);
-            label3.TabIndex = 16;
+            label3.TabIndex = 11;
             label3.Text = "Endereco";
             // 
             // nomeTextBox
@@ -166,7 +166,7 @@
             emailTextBox.Margin = new Padding(3, 4, 3, 4);
             emailTextBox.Name = "emailTextBox";
             emailTextBox.Size = new Size(212, 27);
-            emailTextBox.TabIndex = 10;
+            emailTextBox.TabIndex = 6;
             // 
             // label1
             // 
@@ -178,7 +178,7 @@
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(670, 61);
-            label1.TabIndex = 11;
+            label1.TabIndex = 0;
             label1.Text = "CADASTRO DE CLIENTE";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -189,7 +189,7 @@
             buttonSalvar.Margin = new Padding(3, 4, 3, 4);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(75, 29);
-            buttonSalvar.TabIndex = 12;
+            buttonSalvar.TabIndex = 13;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = false;
             buttonSalvar.Click += buttonSalvar_Click;
@@ -202,7 +202,7 @@
             buttonCancelar.Margin = new Padding(3, 4, 3, 4);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(75, 29);
-            buttonCancelar.TabIndex = 12;
+            buttonCancelar.TabIndex = 14;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -216,7 +216,7 @@
             textBoxCEP.Margin = new Padding(3, 4, 3, 4);
             textBoxCEP.Name = "textBoxCEP";
             textBoxCEP.Size = new Size(222, 27);
-            textBoxCEP.TabIndex = 13;
+            textBoxCEP.TabIndex = 10;
             // 
             // textBoxEndereco
             // 
@@ -227,7 +227,7 @@
             textBoxEndereco.Margin = new Padding(3, 4, 3, 4);
             textBoxEndereco.Name = "textBoxEndereco";
             textBoxEndereco.Size = new Size(412, 27);
-            textBoxEndereco.TabIndex = 15;
+            textBoxEndereco.TabIndex = 12;
             // 
             // FormCadastroCliente
             // 

@@ -48,7 +48,7 @@
             label1.Location = new Point(29, 100);
             label1.Name = "label1";
             label1.Size = new Size(153, 18);
-            label1.TabIndex = 54;
+            label1.TabIndex = 1;
             label1.Text = "INSIRA UMA MARCA:";
             // 
             // textBox1
@@ -58,7 +58,7 @@
             textBox1.Location = new Point(29, 121);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(728, 27);
-            textBox1.TabIndex = 53;
+            textBox1.TabIndex = 2;
             // 
             // marcaBindingSource
             // 
@@ -72,7 +72,7 @@
             buttonCancelar.Location = new Point(663, 172);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
-            buttonCancelar.TabIndex = 52;
+            buttonCancelar.TabIndex = 4;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -84,7 +84,7 @@
             buttonSalvar.Location = new Point(563, 172);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
-            buttonSalvar.TabIndex = 51;
+            buttonSalvar.TabIndex = 3;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = false;
             buttonSalvar.Click += buttonSalvar_Click;
@@ -99,7 +99,7 @@
             label10.Location = new Point(0, 0);
             label10.Name = "label10";
             label10.Size = new Size(782, 61);
-            label10.TabIndex = 50;
+            label10.TabIndex = 0;
             label10.Text = "CADASTO DE MARCA";
             label10.TextAlign = ContentAlignment.MiddleCenter;
             // 

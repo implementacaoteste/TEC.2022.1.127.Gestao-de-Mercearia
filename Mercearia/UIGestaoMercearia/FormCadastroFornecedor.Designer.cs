@@ -56,7 +56,7 @@
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(636, 61);
-            label1.TabIndex = 13;
+            label1.TabIndex = 0;
             label1.Text = "CADASTRO DE FORNECEDOR";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -68,7 +68,7 @@
             label2.Location = new Point(12, 71);
             label2.Name = "label2";
             label2.Size = new Size(49, 18);
-            label2.TabIndex = 14;
+            label2.TabIndex = 1;
             label2.Text = "Nome";
             // 
             // textBoxNome
@@ -77,7 +77,7 @@
             textBoxNome.Location = new Point(12, 94);
             textBoxNome.Name = "textBoxNome";
             textBoxNome.Size = new Size(539, 27);
-            textBoxNome.TabIndex = 15;
+            textBoxNome.TabIndex = 2;
             // 
             // fornecedorBindingSource
             // 
@@ -91,7 +91,7 @@
             label3.Location = new Point(12, 124);
             label3.Name = "label3";
             label3.Size = new Size(42, 18);
-            label3.TabIndex = 16;
+            label3.TabIndex = 3;
             label3.Text = "Fone";
             // 
             // textBoxEmail
@@ -100,7 +100,7 @@
             textBoxEmail.Location = new Point(288, 147);
             textBoxEmail.Name = "textBoxEmail";
             textBoxEmail.Size = new Size(263, 27);
-            textBoxEmail.TabIndex = 17;
+            textBoxEmail.TabIndex = 6;
             // 
             // label4
             // 
@@ -110,7 +110,7 @@
             label4.Location = new Point(288, 124);
             label4.Name = "label4";
             label4.Size = new Size(50, 18);
-            label4.TabIndex = 18;
+            label4.TabIndex = 5;
             label4.Text = "E-mail";
             // 
             // textBoxFone
@@ -119,7 +119,7 @@
             textBoxFone.Location = new Point(12, 147);
             textBoxFone.Name = "textBoxFone";
             textBoxFone.Size = new Size(270, 27);
-            textBoxFone.TabIndex = 19;
+            textBoxFone.TabIndex = 4;
             // 
             // label5
             // 
@@ -129,7 +129,7 @@
             label5.Location = new Point(12, 186);
             label5.Name = "label5";
             label5.Size = new Size(39, 18);
-            label5.TabIndex = 20;
+            label5.TabIndex = 7;
             label5.Text = "CEP";
             // 
             // textBoxCep
@@ -138,7 +138,7 @@
             textBoxCep.Location = new Point(12, 209);
             textBoxCep.Name = "textBoxCep";
             textBoxCep.Size = new Size(131, 27);
-            textBoxCep.TabIndex = 21;
+            textBoxCep.TabIndex = 8;
             // 
             // buttonSalvar
             // 
@@ -147,7 +147,7 @@
             buttonSalvar.Location = new Point(448, 290);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(75, 29);
-            buttonSalvar.TabIndex = 24;
+            buttonSalvar.TabIndex = 11;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = false;
             buttonSalvar.Click += buttonSalvar_Click;
@@ -158,7 +158,7 @@
             buttonCancelar.Location = new Point(529, 290);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(82, 29);
-            buttonCancelar.TabIndex = 23;
+            buttonCancelar.TabIndex = 12;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += button2_Click;
@@ -169,7 +169,7 @@
             textBoxEndereco.Location = new Point(149, 209);
             textBoxEndereco.Name = "textBoxEndereco";
             textBoxEndereco.Size = new Size(402, 27);
-            textBoxEndereco.TabIndex = 25;
+            textBoxEndereco.TabIndex = 10;
             // 
             // label6
             // 
@@ -179,7 +179,7 @@
             label6.Location = new Point(149, 186);
             label6.Name = "label6";
             label6.Size = new Size(48, 18);
-            label6.TabIndex = 26;
+            label6.TabIndex = 9;
             label6.Text = "Bairro";
             // 
             // FormCadastroFornecedor

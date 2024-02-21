@@ -46,7 +46,7 @@
             buttonCancelar.Location = new Point(664, 159);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(94, 29);
-            buttonCancelar.TabIndex = 47;
+            buttonCancelar.TabIndex = 4;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -58,7 +58,7 @@
             buttonSalvar.Location = new Point(564, 159);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(94, 29);
-            buttonSalvar.TabIndex = 46;
+            buttonSalvar.TabIndex = 3;
             buttonSalvar.Text = "&Salvar";
             buttonSalvar.UseVisualStyleBackColor = false;
             buttonSalvar.Click += buttonSalvar_Click;
@@ -73,7 +73,7 @@
             label10.Location = new Point(0, 0);
             label10.Name = "label10";
             label10.Size = new Size(782, 61);
-            label10.TabIndex = 31;
+            label10.TabIndex = 0;
             label10.Text = "CADASTRO DE CATEGORIA";
             label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -84,7 +84,7 @@
             textBox1Nome.Location = new Point(26, 110);
             textBox1Nome.Name = "textBox1Nome";
             textBox1Nome.Size = new Size(728, 27);
-            textBox1Nome.TabIndex = 48;
+            textBox1Nome.TabIndex = 2;
             // 
             // categoriaBindingSource
             // 
@@ -98,7 +98,7 @@
             label1.Location = new Point(26, 89);
             label1.Name = "label1";
             label1.Size = new Size(182, 18);
-            label1.TabIndex = 49;
+            label1.TabIndex = 1;
             label1.Text = "INSIRA UMA CATEGORIA";
             // 
             // FormCadastroCategoria

@@ -95,7 +95,7 @@
             buttonCancelar.Location = new Point(310, 597);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(133, 29);
-            buttonCancelar.TabIndex = 14;
+            buttonCancelar.TabIndex = 16;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -121,7 +121,7 @@
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
             panel4.Size = new Size(455, 59);
-            panel4.TabIndex = 32;
+            panel4.TabIndex = 0;
             // 
             // label7
             // 
@@ -143,7 +143,7 @@
             label10.Location = new Point(18, 387);
             label10.Name = "label10";
             label10.Size = new Size(376, 29);
-            label10.TabIndex = 30;
+            label10.TabIndex = 10;
             label10.Text = "ALTERAR NOME DE USUÁRIO";
             // 
             // textBoxNovoNomeUsuario
@@ -152,7 +152,7 @@
             textBoxNovoNomeUsuario.Location = new Point(246, 473);
             textBoxNovoNomeUsuario.Name = "textBoxNovoNomeUsuario";
             textBoxNovoNomeUsuario.Size = new Size(188, 27);
-            textBoxNovoNomeUsuario.TabIndex = 10;
+            textBoxNovoNomeUsuario.TabIndex = 14;
             // 
             // label3
             // 
@@ -162,7 +162,7 @@
             label3.Location = new Point(18, 477);
             label3.Name = "label3";
             label3.Size = new Size(198, 18);
-            label3.TabIndex = 11;
+            label3.TabIndex = 13;
             label3.Text = "NOVO NOME DE USUÁRIO";
             // 
             // label9
@@ -173,7 +173,7 @@
             label9.Location = new Point(11, 144);
             label9.Name = "label9";
             label9.Size = new Size(223, 29);
-            label9.TabIndex = 29;
+            label9.TabIndex = 1;
             label9.Text = "ALTERAR SENHA";
             // 
             // textBoxNomeUsuario
@@ -192,7 +192,7 @@
             label8.Location = new Point(69, 73);
             label8.Name = "label8";
             label8.Size = new Size(347, 36);
-            label8.TabIndex = 27;
+            label8.TabIndex = 0;
             label8.Text = "Privacidade e Segurança";
             // 
             // label5
@@ -203,7 +203,7 @@
             label5.Location = new Point(18, 435);
             label5.Name = "label5";
             label5.Size = new Size(200, 18);
-            label5.TabIndex = 9;
+            label5.TabIndex = 11;
             label5.Text = "NOME DE USUÁRIO ATUAL";
             // 
             // buttonAlterarSenha
@@ -224,7 +224,7 @@
             buttonAlterarNomeUsuario.Location = new Point(17, 515);
             buttonAlterarNomeUsuario.Name = "buttonAlterarNomeUsuario";
             buttonAlterarNomeUsuario.Size = new Size(109, 29);
-            buttonAlterarNomeUsuario.TabIndex = 13;
+            buttonAlterarNomeUsuario.TabIndex = 15;
             buttonAlterarNomeUsuario.Text = "&Salvar";
             buttonAlterarNomeUsuario.UseVisualStyleBackColor = false;
             buttonAlterarNomeUsuario.Click += buttonAlterarNomeUsuario_Click;
@@ -323,7 +323,7 @@
             panel5.Location = new Point(-9, 364);
             panel5.Name = "panel5";
             panel5.Size = new Size(468, 216);
-            panel5.TabIndex = 32;
+            panel5.TabIndex = 9;
             // 
             // panel2
             // 

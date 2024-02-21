@@ -69,7 +69,7 @@
             clienteDataGridView.RowHeadersWidth = 51;
             clienteDataGridView.RowTemplate.Height = 24;
             clienteDataGridView.Size = new Size(835, 291);
-            clienteDataGridView.TabIndex = 1;
+            clienteDataGridView.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -139,7 +139,7 @@
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(848, 55);
-            label1.TabIndex = 2;
+            label1.TabIndex = 0;
             label1.Text = "CONSULTA CLIENTE";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -151,7 +151,7 @@
             label2.Location = new Point(12, 67);
             label2.Name = "label2";
             label2.Size = new Size(111, 18);
-            label2.TabIndex = 3;
+            label2.TabIndex = 1;
             label2.Text = "BUSCAR POR:";
             // 
             // textBoxBuscar
@@ -180,7 +180,7 @@
             buttonSelecionar.Margin = new Padding(3, 4, 3, 4);
             buttonSelecionar.Name = "buttonSelecionar";
             buttonSelecionar.Size = new Size(91, 29);
-            buttonSelecionar.TabIndex = 5;
+            buttonSelecionar.TabIndex = 10;
             buttonSelecionar.Text = "&Selecionar";
             buttonSelecionar.UseVisualStyleBackColor = true;
             buttonSelecionar.Click += buttonSelecionar_Click;
@@ -192,7 +192,7 @@
             buttonCancelar.Margin = new Padding(3, 4, 3, 4);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(75, 29);
-            buttonCancelar.TabIndex = 5;
+            buttonCancelar.TabIndex = 11;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = true;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -203,7 +203,7 @@
             buttonAlterar.Margin = new Padding(3, 4, 3, 4);
             buttonAlterar.Name = "buttonAlterar";
             buttonAlterar.Size = new Size(75, 29);
-            buttonAlterar.TabIndex = 5;
+            buttonAlterar.TabIndex = 6;
             buttonAlterar.Text = "&Alterar";
             buttonAlterar.UseVisualStyleBackColor = true;
             buttonAlterar.Click += buttonAlterar_Click;
@@ -214,7 +214,7 @@
             buttonInserir.Margin = new Padding(3, 4, 3, 4);
             buttonInserir.Name = "buttonInserir";
             buttonInserir.Size = new Size(75, 29);
-            buttonInserir.TabIndex = 5;
+            buttonInserir.TabIndex = 7;
             buttonInserir.Text = "&Inserir";
             buttonInserir.UseVisualStyleBackColor = true;
             buttonInserir.Click += buttonInserir_Click;
@@ -225,7 +225,7 @@
             buttonExcluir.Margin = new Padding(3, 4, 3, 4);
             buttonExcluir.Name = "buttonExcluir";
             buttonExcluir.Size = new Size(75, 29);
-            buttonExcluir.TabIndex = 5;
+            buttonExcluir.TabIndex = 8;
             buttonExcluir.Text = "&Excluir";
             buttonExcluir.UseVisualStyleBackColor = true;
             buttonExcluir.Click += buttonExcluir_Click;
@@ -238,7 +238,7 @@
             comboBoxBuscarPor.Margin = new Padding(3, 4, 3, 4);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             comboBoxBuscarPor.Size = new Size(144, 28);
-            comboBoxBuscarPor.TabIndex = 6;
+            comboBoxBuscarPor.TabIndex = 2;
             // 
             // label3
             // 
@@ -248,7 +248,7 @@
             label3.Location = new Point(163, 67);
             label3.Name = "label3";
             label3.Size = new Size(197, 18);
-            label3.TabIndex = 7;
+            label3.TabIndex = 3;
             label3.Text = "INSIRA AS INFORMAÇÕES:";
             // 
             // FormConsultaCliente
