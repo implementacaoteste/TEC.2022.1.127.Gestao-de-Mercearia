@@ -156,6 +156,7 @@
             grupoUsuariosDataGridView.RowTemplate.Height = 24;
             grupoUsuariosDataGridView.Size = new Size(584, 610);
             grupoUsuariosDataGridView.TabIndex = 9;
+           
             // 
             // dataGridViewTextBoxColumn8
             // 
