@@ -59,6 +59,7 @@ namespace UIGestaoMercearia
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             toolTip1 = new ToolTip(components);
+            labelPDV = new Label();
             label1 = new Label();
             MENU = new Label();
             panel2.SuspendLayout();
@@ -368,6 +369,7 @@ namespace UIGestaoMercearia
             // 
             panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel3.BackColor = Color.FromArgb(50, 153, 204);
+            panel3.Controls.Add(labelPDV);
             panel3.Controls.Add(label1);
             panel3.Location = new Point(0, 58);
             panel3.Name = "panel3";
@@ -471,6 +473,19 @@ namespace UIGestaoMercearia
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
             // 
+            // labelPDV
+            // 
+            labelPDV.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            labelPDV.AutoSize = true;
+            labelPDV.BackColor = Color.FromArgb(50, 153, 204);
+            labelPDV.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            labelPDV.ForeColor = Color.White;
+            labelPDV.Location = new Point(381, 15);
+            labelPDV.Name = "labelPDV";
+            labelPDV.Size = new Size(410, 67);
+            labelPDV.TabIndex = 2;
+            labelPDV.Text = "CAIXA ABERTO";
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -543,6 +558,7 @@ namespace UIGestaoMercearia
         private Button buttonPagamento;
         private PictureBox pictureBoxEstatistica;
         private Panel panel1;
+        private Label labelPDV;
     }
 }
 
