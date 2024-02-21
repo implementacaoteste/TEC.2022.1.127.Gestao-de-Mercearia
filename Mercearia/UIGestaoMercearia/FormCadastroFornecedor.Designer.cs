@@ -63,11 +63,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(12, 71);
             label2.Name = "label2";
-            label2.Size = new Size(55, 18);
+            label2.Size = new Size(49, 18);
             label2.TabIndex = 14;
             label2.Text = "Nome";
             // 
@@ -86,11 +86,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(12, 124);
             label3.Name = "label3";
-            label3.Size = new Size(47, 18);
+            label3.Size = new Size(42, 18);
             label3.TabIndex = 16;
             label3.Text = "Fone";
             // 
@@ -105,11 +105,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(288, 124);
             label4.Name = "label4";
-            label4.Size = new Size(58, 18);
+            label4.Size = new Size(50, 18);
             label4.TabIndex = 18;
             label4.Text = "E-mail";
             // 
@@ -124,11 +124,11 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ButtonHighlight;
             label5.Location = new Point(12, 186);
             label5.Name = "label5";
-            label5.Size = new Size(41, 18);
+            label5.Size = new Size(39, 18);
             label5.TabIndex = 20;
             label5.Text = "CEP";
             // 
@@ -174,11 +174,11 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.ButtonHighlight;
             label6.Location = new Point(149, 186);
             label6.Name = "label6";
-            label6.Size = new Size(58, 18);
+            label6.Size = new Size(48, 18);
             label6.TabIndex = 26;
             label6.Text = "Bairro";
             // 

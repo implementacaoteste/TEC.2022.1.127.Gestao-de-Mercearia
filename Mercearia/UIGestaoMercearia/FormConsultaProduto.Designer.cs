@@ -47,6 +47,7 @@
             nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             descricaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             precoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            Custo = new DataGridViewTextBoxColumn();
             codigoDeBarraDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             Quantidade = new DataGridViewTextBoxColumn();
             idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -95,7 +96,7 @@
             dataGridViewProduto.AutoGenerateColumns = false;
             dataGridViewProduto.BackgroundColor = SystemColors.ButtonFace;
             dataGridViewProduto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewProduto.Columns.AddRange(new DataGridViewColumn[] { nomeDataGridViewTextBoxColumn, descricaoDataGridViewTextBoxColumn, precoDataGridViewTextBoxColumn, codigoDeBarraDataGridViewTextBoxColumn, Quantidade, idDataGridViewTextBoxColumn });
+            dataGridViewProduto.Columns.AddRange(new DataGridViewColumn[] { nomeDataGridViewTextBoxColumn, descricaoDataGridViewTextBoxColumn, precoDataGridViewTextBoxColumn, Custo, codigoDeBarraDataGridViewTextBoxColumn, Quantidade, idDataGridViewTextBoxColumn });
             dataGridViewProduto.DataSource = bindingSourceProduto;
             dataGridViewProduto.Location = new Point(3, 132);
             dataGridViewProduto.Name = "dataGridViewProduto";
@@ -250,6 +251,15 @@
             precoDataGridViewTextBoxColumn.ReadOnly = true;
             precoDataGridViewTextBoxColumn.Width = 125;
             // 
+            // Custo
+            // 
+            Custo.DataPropertyName = "Custo";
+            Custo.HeaderText = "Custo";
+            Custo.MinimumWidth = 6;
+            Custo.Name = "Custo";
+            Custo.ReadOnly = true;
+            Custo.Width = 125;
+            // 
             // codigoDeBarraDataGridViewTextBoxColumn
             // 
             codigoDeBarraDataGridViewTextBoxColumn.DataPropertyName = "CodigoDeBarra";
@@ -325,6 +335,7 @@
         private DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn Custo;
         private DataGridViewTextBoxColumn codigoDeBarraDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn Quantidade;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;

@@ -54,45 +54,49 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(50, 153, 204);
+            panel2.BackColor = Color.White;
             panel2.Controls.Add(label3);
             panel2.Dock = DockStyle.Top;
+            panel2.ForeColor = SystemColors.ControlText;
             panel2.Location = new Point(0, 0);
-            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(507, 62);
+            panel2.Size = new Size(579, 80);
             panel2.TabIndex = 8;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.White;
             label3.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(81, 9);
+            label3.ForeColor = Color.FromArgb(50, 153, 204);
+            label3.Location = new Point(93, 20);
             label3.Name = "label3";
-            label3.Size = new Size(330, 36);
+            label3.Size = new Size(412, 44);
             label3.TabIndex = 9;
             label3.Text = "INSIRA A INFORMAÇÃO";
+            label3.Click += label3_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(50, 153, 204);
             label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(50, 153, 204);
-            label2.Location = new Point(136, 71);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(155, 95);
             label2.Name = "label2";
-            label2.Size = new Size(141, 15);
+            label2.Size = new Size(176, 18);
             label2.TabIndex = 4;
             label2.Text = "INSIRA A INFORMAÇÃO:";
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(50, 153, 204);
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(50, 153, 204);
-            label1.Location = new Point(12, 71);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(14, 95);
             label1.Name = "label1";
-            label1.Size = new Size(88, 15);
+            label1.Size = new Size(111, 18);
             label1.TabIndex = 3;
             label1.Text = "BUSCAR POR:";
             // 
@@ -100,10 +104,9 @@
             // 
             buttonBuscar.BackColor = SystemColors.ButtonHighlight;
             buttonBuscar.FlatStyle = FlatStyle.Flat;
-            buttonBuscar.Location = new Point(412, 88);
-            buttonBuscar.Margin = new Padding(3, 2, 3, 2);
+            buttonBuscar.Location = new Point(471, 117);
             buttonBuscar.Name = "buttonBuscar";
-            buttonBuscar.Size = new Size(82, 22);
+            buttonBuscar.Size = new Size(94, 29);
             buttonBuscar.TabIndex = 2;
             buttonBuscar.Text = "Buscar";
             buttonBuscar.UseVisualStyleBackColor = false;
@@ -113,30 +116,28 @@
             // 
             textBoxBuscarPor.BorderStyle = BorderStyle.FixedSingle;
             textBoxBuscarPor.Cursor = Cursors.IBeam;
-            textBoxBuscarPor.Location = new Point(136, 90);
-            textBoxBuscarPor.Margin = new Padding(3, 2, 3, 2);
+            textBoxBuscarPor.Location = new Point(155, 120);
             textBoxBuscarPor.Name = "textBoxBuscarPor";
-            textBoxBuscarPor.Size = new Size(271, 23);
+            textBoxBuscarPor.Size = new Size(309, 27);
             textBoxBuscarPor.TabIndex = 1;
             // 
             // comboBoxBuscarPor
             // 
             comboBoxBuscarPor.FormattingEnabled = true;
             comboBoxBuscarPor.Items.AddRange(new object[] { "Id", "Todos" });
-            comboBoxBuscarPor.Location = new Point(12, 88);
-            comboBoxBuscarPor.Margin = new Padding(3, 2, 3, 2);
+            comboBoxBuscarPor.Location = new Point(14, 117);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
-            comboBoxBuscarPor.Size = new Size(120, 23);
+            comboBoxBuscarPor.Size = new Size(137, 28);
             comboBoxBuscarPor.TabIndex = 0;
             // 
             // buttonExcluir
             // 
             buttonExcluir.BackColor = SystemColors.ButtonHighlight;
-            buttonExcluir.FlatStyle = FlatStyle.Flat;
-            buttonExcluir.Location = new Point(277, 6);
-            buttonExcluir.Margin = new Padding(3, 2, 3, 2);
+            buttonExcluir.FlatStyle = FlatStyle.System;
+            buttonExcluir.ForeColor = SystemColors.ControlText;
+            buttonExcluir.Location = new Point(349, 8);
             buttonExcluir.Name = "buttonExcluir";
-            buttonExcluir.Size = new Size(84, 22);
+            buttonExcluir.Size = new Size(96, 29);
             buttonExcluir.TabIndex = 2;
             buttonExcluir.Text = "&Excluir";
             buttonExcluir.UseVisualStyleBackColor = false;
@@ -145,11 +146,11 @@
             // buttonInserir
             // 
             buttonInserir.BackColor = SystemColors.ButtonHighlight;
-            buttonInserir.FlatStyle = FlatStyle.Flat;
-            buttonInserir.Location = new Point(99, 6);
-            buttonInserir.Margin = new Padding(3, 2, 3, 2);
+            buttonInserir.FlatStyle = FlatStyle.System;
+            buttonInserir.ForeColor = SystemColors.ControlText;
+            buttonInserir.Location = new Point(122, 8);
             buttonInserir.Name = "buttonInserir";
-            buttonInserir.Size = new Size(84, 22);
+            buttonInserir.Size = new Size(96, 29);
             buttonInserir.TabIndex = 2;
             buttonInserir.Text = "&Inserir";
             buttonInserir.UseVisualStyleBackColor = false;
@@ -158,11 +159,11 @@
             // buttonAlterar
             // 
             buttonAlterar.BackColor = SystemColors.ButtonHighlight;
-            buttonAlterar.FlatStyle = FlatStyle.Flat;
-            buttonAlterar.Location = new Point(188, 6);
-            buttonAlterar.Margin = new Padding(3, 2, 3, 2);
+            buttonAlterar.FlatStyle = FlatStyle.System;
+            buttonAlterar.ForeColor = SystemColors.ControlText;
+            buttonAlterar.Location = new Point(235, 8);
             buttonAlterar.Name = "buttonAlterar";
-            buttonAlterar.Size = new Size(84, 22);
+            buttonAlterar.Size = new Size(96, 29);
             buttonAlterar.TabIndex = 2;
             buttonAlterar.Text = "&Alterar";
             buttonAlterar.UseVisualStyleBackColor = false;
@@ -178,13 +179,12 @@
             dataGridViewCategoria.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCategoria.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn1 });
             dataGridViewCategoria.DataSource = bindingSourceCategoria;
-            dataGridViewCategoria.Location = new Point(10, 113);
-            dataGridViewCategoria.Margin = new Padding(3, 2, 3, 2);
+            dataGridViewCategoria.Location = new Point(11, 151);
             dataGridViewCategoria.Name = "dataGridViewCategoria";
             dataGridViewCategoria.ReadOnly = true;
             dataGridViewCategoria.RowHeadersWidth = 51;
             dataGridViewCategoria.RowTemplate.Height = 29;
-            dataGridViewCategoria.Size = new Size(484, 290);
+            dataGridViewCategoria.Size = new Size(553, 387);
             dataGridViewCategoria.TabIndex = 7;
             dataGridViewCategoria.DoubleClick += dataGridViewCategoria_DoubleClick;
             // 
@@ -213,10 +213,11 @@
             // buttonSelecionar
             // 
             buttonSelecionar.BackColor = SystemColors.ButtonHighlight;
-            buttonSelecionar.Location = new Point(10, 6);
-            buttonSelecionar.Margin = new Padding(3, 2, 3, 2);
+            buttonSelecionar.FlatStyle = FlatStyle.System;
+            buttonSelecionar.ForeColor = SystemColors.ControlText;
+            buttonSelecionar.Location = new Point(11, 8);
             buttonSelecionar.Name = "buttonSelecionar";
-            buttonSelecionar.Size = new Size(84, 22);
+            buttonSelecionar.Size = new Size(96, 29);
             buttonSelecionar.TabIndex = 1;
             buttonSelecionar.Text = "&Selecionar";
             buttonSelecionar.UseVisualStyleBackColor = false;
@@ -225,11 +226,11 @@
             // buttonCancelar
             // 
             buttonCancelar.BackColor = SystemColors.ButtonHighlight;
-            buttonCancelar.FlatStyle = FlatStyle.Flat;
-            buttonCancelar.Location = new Point(410, 6);
-            buttonCancelar.Margin = new Padding(3, 2, 3, 2);
+            buttonCancelar.FlatStyle = FlatStyle.System;
+            buttonCancelar.ForeColor = SystemColors.ControlText;
+            buttonCancelar.Location = new Point(469, 8);
             buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(84, 22);
+            buttonCancelar.Size = new Size(96, 29);
             buttonCancelar.TabIndex = 1;
             buttonCancelar.Text = "&Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
@@ -243,19 +244,18 @@
             panel3.Controls.Add(buttonExcluir);
             panel3.Controls.Add(buttonSelecionar);
             panel3.Controls.Add(buttonAlterar);
-            panel3.Location = new Point(0, 408);
-            panel3.Margin = new Padding(3, 2, 3, 2);
+            panel3.Location = new Point(0, 544);
             panel3.Name = "panel3";
-            panel3.Size = new Size(507, 38);
+            panel3.Size = new Size(579, 51);
             panel3.TabIndex = 9;
             // 
             // FormConsultaCategoria
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonFace;
+            BackColor = Color.FromArgb(50, 153, 204);
             CancelButton = buttonCancelar;
-            ClientSize = new Size(507, 445);
+            ClientSize = new Size(579, 593);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(buttonBuscar);
@@ -265,7 +265,6 @@
             Controls.Add(dataGridViewCategoria);
             Controls.Add(panel3);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormConsultaCategoria";

@@ -43,13 +43,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(29, 100);
             label1.Name = "label1";
-            label1.Size = new Size(156, 18);
+            label1.Size = new Size(153, 18);
             label1.TabIndex = 54;
-            label1.Text = "Insira uma Marca:";
+            label1.Text = "INSIRA UMA MARCA:";
             // 
             // textBox1
             // 

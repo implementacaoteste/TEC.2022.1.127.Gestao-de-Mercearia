@@ -44,11 +44,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(108, 77);
             label1.Name = "label1";
-            label1.Size = new Size(64, 24);
+            label1.Size = new Size(46, 20);
             label1.TabIndex = 59;
             label1.Text = "Tipo:";
             // 
@@ -116,11 +116,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(108, 139);
             label2.Name = "label2";
-            label2.Size = new Size(120, 24);
+            label2.Size = new Size(86, 20);
             label2.TabIndex = 59;
             label2.Text = "Descrição";
             // 

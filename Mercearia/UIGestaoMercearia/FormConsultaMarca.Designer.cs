@@ -38,12 +38,12 @@
             buttonInserir = new Button();
             buttonAlterar = new Button();
             dataGridViewMarca = new DataGridView();
+            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             bindingSourceMarca = new BindingSource(components);
             buttonSelecionar = new Button();
             buttonCancelar = new Button();
             label3 = new Label();
-            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMarca).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceMarca).BeginInit();
             SuspendLayout();
@@ -51,22 +51,22 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(150, 87);
             label2.Name = "label2";
-            label2.Size = new Size(201, 18);
+            label2.Size = new Size(176, 18);
             label2.TabIndex = 3;
             label2.Text = "INSIRA A INFORMAÇÃO:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(14, 87);
             label1.Name = "label1";
-            label1.Size = new Size(115, 18);
+            label1.Size = new Size(107, 18);
             label1.TabIndex = 3;
             label1.Text = "BUSCAR POR";
             // 
@@ -154,6 +154,24 @@
             dataGridViewMarca.TabIndex = 10;
             dataGridViewMarca.DoubleClick += dataGridViewMarca_DoubleClick;
             // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            nomeDataGridViewTextBoxColumn.Width = 400;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.ReadOnly = true;
+            idDataGridViewTextBoxColumn.Width = 125;
+            // 
             // bindingSourceMarca
             // 
             bindingSourceMarca.DataSource = typeof(Models.Marca);
@@ -195,24 +213,6 @@
             label3.TabIndex = 11;
             label3.Text = "GERENCIAMENTO DE MARCAS";
             label3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            nomeDataGridViewTextBoxColumn.Width = 400;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.ReadOnly = true;
-            idDataGridViewTextBoxColumn.Width = 125;
             // 
             // FormConsultaMarca
             // 

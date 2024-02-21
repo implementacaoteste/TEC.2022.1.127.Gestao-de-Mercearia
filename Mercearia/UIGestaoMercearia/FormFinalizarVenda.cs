@@ -17,6 +17,7 @@ namespace UIGestaoMercearia
     {
         private double totalVenda;
         public FormaPagamento FormaPagamento;
+        public Cliente Cliente;
         public FormFinalizarVenda(FormaPagamento _formaPagamento, double _totalVenda)
         {
             InitializeComponent();
@@ -45,6 +46,10 @@ namespace UIGestaoMercearia
                 labelTroco.Visible = false;
                 labelTotal.Visible = true;
             }
+            else if (_formaPagamento.Tipo.ToUpper() == "CARTÃO DE DÉBITO")
+            {
+
+            }
         }
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -53,7 +58,6 @@ namespace UIGestaoMercearia
                 if (string.IsNullOrEmpty(textBoxValorPago.Text))
                 {
                     textBoxValorPago.Focus();
-
                 }
                 else
                 {
@@ -65,11 +69,13 @@ namespace UIGestaoMercearia
         private void AdicionarTroco()
         {
             double troco;
-            if (Convert.ToDouble(textBoxValorPago.Text) != 0)
-            {
 
+            if (FormaPagamento.Id == 1 && Convert.ToDouble(textBoxValorPago.Text) != 0)
+            {
                 troco = Convert.ToDouble(textBoxValorPago.Text) - totalVenda;
                 labelTroco.Text = troco.ToString();
+                MessageBox.Show("Venda Concluida com sucesso!");
+                Close();
             }
         }
         private void buttonOk_Click(object sender, EventArgs e)
@@ -89,6 +95,7 @@ namespace UIGestaoMercearia
                 buttonBuscarFormaPagamento_Click(sender, e);
             else if (e.KeyCode == Keys.F12)
                 buttonOk_Click(sender, e);
+            else if (e.KeyCode == Keys.F10);
         }
 
         private void buttonBuscarFormaPagamento_Click(object sender, KeyEventArgs e)
@@ -107,8 +114,15 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (FormCadastroCliente frm = new FormCadastroCliente())
+            {
+                frm.ShowDialog();
+            }
+        }
 
-        private void labelTroco_Click(object sender, EventArgs e)
+        private void FormFinalizarVenda_Load(object sender, EventArgs e)
         {
 
         }

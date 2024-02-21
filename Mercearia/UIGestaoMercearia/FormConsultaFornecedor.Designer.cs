@@ -31,6 +31,12 @@
             components = new System.ComponentModel.Container();
             label1 = new Label();
             dataGridViewFornecedor = new DataGridView();
+            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            Endereco = new DataGridViewTextBoxColumn();
+            emailDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            foneDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            cEPDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            Id = new DataGridViewTextBoxColumn();
             bindingSourceFornecedor = new BindingSource(components);
             buttonBuscar = new Button();
             buttonAlterar = new Button();
@@ -42,12 +48,6 @@
             comboBoxBuscarPor = new ComboBox();
             label2 = new Label();
             label3 = new Label();
-            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            Endereco = new DataGridViewTextBoxColumn();
-            emailDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            foneDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            cEPDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            Id = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridViewFornecedor).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceFornecedor).BeginInit();
             SuspendLayout();
@@ -84,6 +84,60 @@
             dataGridViewFornecedor.Size = new Size(958, 367);
             dataGridViewFornecedor.TabIndex = 1;
             dataGridViewFornecedor.DoubleClick += dataGridViewFornecedor_DoubleClick;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            nomeDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // Endereco
+            // 
+            Endereco.DataPropertyName = "Endereco";
+            Endereco.HeaderText = "Endereco";
+            Endereco.MinimumWidth = 6;
+            Endereco.Name = "Endereco";
+            Endereco.ReadOnly = true;
+            Endereco.Width = 200;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            emailDataGridViewTextBoxColumn.MinimumWidth = 6;
+            emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            emailDataGridViewTextBoxColumn.ReadOnly = true;
+            emailDataGridViewTextBoxColumn.Width = 175;
+            // 
+            // foneDataGridViewTextBoxColumn
+            // 
+            foneDataGridViewTextBoxColumn.DataPropertyName = "Fone";
+            foneDataGridViewTextBoxColumn.HeaderText = "Fone";
+            foneDataGridViewTextBoxColumn.MinimumWidth = 6;
+            foneDataGridViewTextBoxColumn.Name = "foneDataGridViewTextBoxColumn";
+            foneDataGridViewTextBoxColumn.ReadOnly = true;
+            foneDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // cEPDataGridViewTextBoxColumn
+            // 
+            cEPDataGridViewTextBoxColumn.DataPropertyName = "CEP";
+            cEPDataGridViewTextBoxColumn.HeaderText = "CEP";
+            cEPDataGridViewTextBoxColumn.MinimumWidth = 6;
+            cEPDataGridViewTextBoxColumn.Name = "cEPDataGridViewTextBoxColumn";
+            cEPDataGridViewTextBoxColumn.ReadOnly = true;
+            cEPDataGridViewTextBoxColumn.Width = 175;
+            // 
+            // Id
+            // 
+            Id.DataPropertyName = "Id";
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            Id.Width = 50;
             // 
             // bindingSourceFornecedor
             // 
@@ -169,78 +223,24 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(12, 66);
             label2.Name = "label2";
-            label2.Size = new Size(97, 18);
+            label2.Size = new Size(111, 18);
             label2.TabIndex = 6;
-            label2.Text = "Buscar por";
+            label2.Text = "BUSCAR POR:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(151, 66);
             label3.Name = "label3";
-            label3.Size = new Size(222, 18);
+            label3.Size = new Size(197, 18);
             label3.TabIndex = 7;
             label3.Text = "INSIRA AS INFORMAÇÕES:";
-            // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            nomeDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // Endereco
-            // 
-            Endereco.DataPropertyName = "Endereco";
-            Endereco.HeaderText = "Endereco";
-            Endereco.MinimumWidth = 6;
-            Endereco.Name = "Endereco";
-            Endereco.ReadOnly = true;
-            Endereco.Width = 200;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            emailDataGridViewTextBoxColumn.ReadOnly = true;
-            emailDataGridViewTextBoxColumn.Width = 175;
-            // 
-            // foneDataGridViewTextBoxColumn
-            // 
-            foneDataGridViewTextBoxColumn.DataPropertyName = "Fone";
-            foneDataGridViewTextBoxColumn.HeaderText = "Fone";
-            foneDataGridViewTextBoxColumn.MinimumWidth = 6;
-            foneDataGridViewTextBoxColumn.Name = "foneDataGridViewTextBoxColumn";
-            foneDataGridViewTextBoxColumn.ReadOnly = true;
-            foneDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // cEPDataGridViewTextBoxColumn
-            // 
-            cEPDataGridViewTextBoxColumn.DataPropertyName = "CEP";
-            cEPDataGridViewTextBoxColumn.HeaderText = "CEP";
-            cEPDataGridViewTextBoxColumn.MinimumWidth = 6;
-            cEPDataGridViewTextBoxColumn.Name = "cEPDataGridViewTextBoxColumn";
-            cEPDataGridViewTextBoxColumn.ReadOnly = true;
-            cEPDataGridViewTextBoxColumn.Width = 175;
-            // 
-            // Id
-            // 
-            Id.DataPropertyName = "Id";
-            Id.HeaderText = "Id";
-            Id.MinimumWidth = 6;
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            Id.Width = 50;
             // 
             // FormConsultaFornecedor
             // 

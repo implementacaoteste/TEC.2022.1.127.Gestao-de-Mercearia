@@ -39,6 +39,10 @@
             label4 = new Label();
             label3 = new Label();
             dataGridViewCategoria = new DataGridView();
+            tipoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            descricaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            trocoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
             bindingSourcePagamento = new BindingSource(components);
             panel3 = new Panel();
             buttonInserir = new Button();
@@ -46,10 +50,6 @@
             buttonExcluir = new Button();
             buttonSelecionar = new Button();
             buttonAlterar = new Button();
-            tipoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            descricaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            trocoDataGridViewCheckBoxColumn = new DataGridViewCheckBoxColumn();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCategoria).BeginInit();
@@ -60,22 +60,22 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(50, 153, 204);
-            label2.Location = new Point(167, 107);
+            label2.Location = new Point(154, 108);
             label2.Name = "label2";
-            label2.Size = new Size(201, 18);
+            label2.Size = new Size(176, 18);
             label2.TabIndex = 0;
             label2.Text = "INSIRA A INFORMAÇÃO:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Swis721 Blk BT", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(50, 153, 204);
-            label1.Location = new Point(25, 108);
+            label1.Location = new Point(12, 109);
             label1.Name = "label1";
-            label1.Size = new Size(120, 18);
+            label1.Size = new Size(111, 18);
             label1.TabIndex = 5;
             label1.Text = "BUSCAR POR:";
             // 
@@ -83,7 +83,7 @@
             // 
             buttonBuscar.BackColor = SystemColors.ButtonHighlight;
             buttonBuscar.FlatStyle = FlatStyle.Flat;
-            buttonBuscar.Location = new Point(482, 126);
+            buttonBuscar.Location = new Point(469, 127);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(94, 29);
             buttonBuscar.TabIndex = 2;
@@ -95,7 +95,7 @@
             // 
             textBoxBuscarPor.BorderStyle = BorderStyle.FixedSingle;
             textBoxBuscarPor.Cursor = Cursors.IBeam;
-            textBoxBuscarPor.Location = new Point(167, 128);
+            textBoxBuscarPor.Location = new Point(154, 129);
             textBoxBuscarPor.Name = "textBoxBuscarPor";
             textBoxBuscarPor.Size = new Size(309, 27);
             textBoxBuscarPor.TabIndex = 1;
@@ -105,7 +105,7 @@
             // 
             comboBoxBuscarPor.FormattingEnabled = true;
             comboBoxBuscarPor.Items.AddRange(new object[] { "Id", "Todos" });
-            comboBoxBuscarPor.Location = new Point(25, 129);
+            comboBoxBuscarPor.Location = new Point(12, 130);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             comboBoxBuscarPor.Size = new Size(136, 28);
             comboBoxBuscarPor.TabIndex = 6;
@@ -172,82 +172,6 @@
             dataGridViewCategoria.TabIndex = 3;
             dataGridViewCategoria.DoubleClick += dataGridViewCategoria_DoubleClick;
             // 
-            // bindingSourcePagamento
-            // 
-            bindingSourcePagamento.DataSource = typeof(Models.FormaPagamento);
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.FromArgb(50, 153, 204);
-            panel3.Controls.Add(buttonInserir);
-            panel3.Controls.Add(buttonCancelar);
-            panel3.Controls.Add(buttonExcluir);
-            panel3.Controls.Add(buttonSelecionar);
-            panel3.Controls.Add(buttonAlterar);
-            panel3.Location = new Point(0, 472);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(579, 50);
-            panel3.TabIndex = 4;
-            // 
-            // buttonInserir
-            // 
-            buttonInserir.BackColor = SystemColors.ButtonHighlight;
-            buttonInserir.FlatStyle = FlatStyle.Flat;
-            buttonInserir.Location = new Point(239, 8);
-            buttonInserir.Name = "buttonInserir";
-            buttonInserir.Size = new Size(96, 29);
-            buttonInserir.TabIndex = 2;
-            buttonInserir.Text = "&Inserir";
-            buttonInserir.UseVisualStyleBackColor = false;
-            buttonInserir.Click += buttonInserir_Click;
-            // 
-            // buttonCancelar
-            // 
-            buttonCancelar.BackColor = SystemColors.ButtonHighlight;
-            buttonCancelar.FlatStyle = FlatStyle.Flat;
-            buttonCancelar.Location = new Point(469, 8);
-            buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(96, 29);
-            buttonCancelar.TabIndex = 4;
-            buttonCancelar.Text = "&Cancelar";
-            buttonCancelar.UseVisualStyleBackColor = false;
-            buttonCancelar.Click += buttonCancelar_Click;
-            // 
-            // buttonExcluir
-            // 
-            buttonExcluir.BackColor = SystemColors.ButtonHighlight;
-            buttonExcluir.FlatStyle = FlatStyle.Flat;
-            buttonExcluir.Location = new Point(358, 8);
-            buttonExcluir.Name = "buttonExcluir";
-            buttonExcluir.Size = new Size(96, 29);
-            buttonExcluir.TabIndex = 3;
-            buttonExcluir.Text = "&Excluir";
-            buttonExcluir.UseVisualStyleBackColor = false;
-            buttonExcluir.Click += buttonExcluir_Click;
-            // 
-            // buttonSelecionar
-            // 
-            buttonSelecionar.BackColor = SystemColors.ButtonHighlight;
-            buttonSelecionar.Location = new Point(11, 8);
-            buttonSelecionar.Name = "buttonSelecionar";
-            buttonSelecionar.Size = new Size(96, 29);
-            buttonSelecionar.TabIndex = 0;
-            buttonSelecionar.Text = "&Selecionar";
-            buttonSelecionar.UseVisualStyleBackColor = false;
-            buttonSelecionar.Click += buttonSelecionar_Click;
-            // 
-            // buttonAlterar
-            // 
-            buttonAlterar.BackColor = SystemColors.ButtonHighlight;
-            buttonAlterar.FlatStyle = FlatStyle.Flat;
-            buttonAlterar.Location = new Point(127, 8);
-            buttonAlterar.Name = "buttonAlterar";
-            buttonAlterar.Size = new Size(96, 29);
-            buttonAlterar.TabIndex = 1;
-            buttonAlterar.Text = "&Alterar";
-            buttonAlterar.UseVisualStyleBackColor = false;
-            buttonAlterar.Click += buttonAlterar_Click;
-            // 
             // tipoDataGridViewTextBoxColumn
             // 
             tipoDataGridViewTextBoxColumn.DataPropertyName = "Tipo";
@@ -283,6 +207,83 @@
             trocoDataGridViewCheckBoxColumn.Name = "trocoDataGridViewCheckBoxColumn";
             trocoDataGridViewCheckBoxColumn.ReadOnly = true;
             trocoDataGridViewCheckBoxColumn.Width = 75;
+            // 
+            // bindingSourcePagamento
+            // 
+            bindingSourcePagamento.DataSource = typeof(Models.FormaPagamento);
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(50, 153, 204);
+            panel3.Controls.Add(buttonInserir);
+            panel3.Controls.Add(buttonCancelar);
+            panel3.Controls.Add(buttonExcluir);
+            panel3.Controls.Add(buttonSelecionar);
+            panel3.Controls.Add(buttonAlterar);
+            panel3.Location = new Point(0, 472);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(579, 50);
+            panel3.TabIndex = 4;
+            // 
+            // buttonInserir
+            // 
+            buttonInserir.BackColor = SystemColors.ButtonHighlight;
+            buttonInserir.FlatStyle = FlatStyle.System;
+            buttonInserir.Location = new Point(239, 8);
+            buttonInserir.Name = "buttonInserir";
+            buttonInserir.Size = new Size(96, 29);
+            buttonInserir.TabIndex = 2;
+            buttonInserir.Text = "&Inserir";
+            buttonInserir.UseVisualStyleBackColor = false;
+            buttonInserir.Click += buttonInserir_Click;
+            // 
+            // buttonCancelar
+            // 
+            buttonCancelar.BackColor = SystemColors.ButtonHighlight;
+            buttonCancelar.FlatStyle = FlatStyle.System;
+            buttonCancelar.Location = new Point(469, 8);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(96, 29);
+            buttonCancelar.TabIndex = 4;
+            buttonCancelar.Text = "&Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = false;
+            buttonCancelar.Click += buttonCancelar_Click;
+            // 
+            // buttonExcluir
+            // 
+            buttonExcluir.BackColor = SystemColors.ButtonHighlight;
+            buttonExcluir.FlatStyle = FlatStyle.System;
+            buttonExcluir.Location = new Point(358, 8);
+            buttonExcluir.Name = "buttonExcluir";
+            buttonExcluir.Size = new Size(96, 29);
+            buttonExcluir.TabIndex = 3;
+            buttonExcluir.Text = "&Excluir";
+            buttonExcluir.UseVisualStyleBackColor = false;
+            buttonExcluir.Click += buttonExcluir_Click;
+            // 
+            // buttonSelecionar
+            // 
+            buttonSelecionar.BackColor = SystemColors.ButtonHighlight;
+            buttonSelecionar.FlatStyle = FlatStyle.System;
+            buttonSelecionar.Location = new Point(11, 8);
+            buttonSelecionar.Name = "buttonSelecionar";
+            buttonSelecionar.Size = new Size(96, 29);
+            buttonSelecionar.TabIndex = 0;
+            buttonSelecionar.Text = "&Selecionar";
+            buttonSelecionar.UseVisualStyleBackColor = false;
+            buttonSelecionar.Click += buttonSelecionar_Click;
+            // 
+            // buttonAlterar
+            // 
+            buttonAlterar.BackColor = SystemColors.ButtonHighlight;
+            buttonAlterar.FlatStyle = FlatStyle.System;
+            buttonAlterar.Location = new Point(127, 8);
+            buttonAlterar.Name = "buttonAlterar";
+            buttonAlterar.Size = new Size(96, 29);
+            buttonAlterar.TabIndex = 1;
+            buttonAlterar.Text = "&Alterar";
+            buttonAlterar.UseVisualStyleBackColor = false;
+            buttonAlterar.Click += buttonAlterar_Click;
             // 
             // FormPagamento
             // 

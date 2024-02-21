@@ -44,6 +44,7 @@ namespace UIGestaoMercearia
             textBoxTotal = new TextBox();
             labelTotal = new Label();
             labelExTroco = new Label();
+            buttonCadastrarUsuário = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).BeginInit();
             SuspendLayout();
@@ -54,7 +55,6 @@ namespace UIGestaoMercearia
             buttonBuscarFormaPagamento.Location = new Point(542, 149);
             buttonBuscarFormaPagamento.Name = "buttonBuscarFormaPagamento";
             buttonBuscarFormaPagamento.Size = new Size(54, 43);
-            buttonBuscarFormaPagamento.TabIndex = 2;
             buttonBuscarFormaPagamento.TabIndex = 3;
             buttonBuscarFormaPagamento.Text = "...";
             buttonBuscarFormaPagamento.UseVisualStyleBackColor = true;
@@ -66,8 +66,6 @@ namespace UIGestaoMercearia
             labelFormaPagamento.ForeColor = Color.White;
             labelFormaPagamento.Location = new Point(25, 123);
             labelFormaPagamento.Name = "labelFormaPagamento";
-            labelFormaPagamento.Size = new Size(271, 24);
-            labelFormaPagamento.TabIndex = 3;
             labelFormaPagamento.Size = new Size(250, 25);
             labelFormaPagamento.TabIndex = 1;
             labelFormaPagamento.Text = "FORMA DE PAGAMENTO";
@@ -91,7 +89,6 @@ namespace UIGestaoMercearia
             textBoxValorPago.Location = new Point(894, 149);
             textBoxValorPago.Name = "textBoxValorPago";
             textBoxValorPago.Size = new Size(223, 43);
-            textBoxValorPago.TabIndex = 1;
             textBoxValorPago.TabIndex = 5;
             textBoxValorPago.Visible = false;
             textBoxValorPago.KeyPress += textBoxValorPago_KeyPress;
@@ -104,8 +101,6 @@ namespace UIGestaoMercearia
             labelValorPago.ForeColor = Color.White;
             labelValorPago.Location = new Point(894, 123);
             labelValorPago.Name = "labelValorPago";
-            labelValorPago.Size = new Size(153, 24);
-            labelValorPago.TabIndex = 1;
             labelValorPago.Size = new Size(143, 25);
             labelValorPago.TabIndex = 4;
             labelValorPago.Text = "VALOR PAGO";
@@ -115,9 +110,9 @@ namespace UIGestaoMercearia
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(176, 213);
+            pictureBox1.Location = new Point(176, 208);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(794, 600);
+            pictureBox1.Size = new Size(819, 533);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 37;
             pictureBox1.TabStop = false;
@@ -127,7 +122,7 @@ namespace UIGestaoMercearia
             // 
             buttonCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonCancelar.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCancelar.Location = new Point(1022, 829);
+            buttonCancelar.Location = new Point(1022, 1063);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(107, 37);
             buttonCancelar.TabIndex = 38;
@@ -139,7 +134,7 @@ namespace UIGestaoMercearia
             // 
             buttonOk.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             buttonOk.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonOk.Location = new Point(909, 829);
+            buttonOk.Location = new Point(909, 1063);
             buttonOk.Name = "buttonOk";
             buttonOk.Size = new Size(107, 35);
             buttonOk.TabIndex = 38;
@@ -167,14 +162,12 @@ namespace UIGestaoMercearia
             labelTroco.AutoSize = true;
             labelTroco.Font = new Font("Microsoft Sans Serif", 72F, FontStyle.Regular, GraphicsUnit.Point);
             labelTroco.ForeColor = SystemColors.ButtonHighlight;
-            labelTroco.Location = new Point(656, 401);
+            labelTroco.Location = new Point(846, 401);
             labelTroco.Name = "labelTroco";
-            labelTroco.Size = new Size(139, 144);
-            labelTroco.TabIndex = 4;
             labelTroco.Size = new Size(124, 135);
             labelTroco.TabIndex = 6;
             labelTroco.Text = "0";
-            labelTroco.Click += labelTroco_Click;
+            labelTroco.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textBoxTotal
             // 
@@ -183,7 +176,6 @@ namespace UIGestaoMercearia
             textBoxTotal.Location = new Point(623, 149);
             textBoxTotal.Name = "textBoxTotal";
             textBoxTotal.Size = new Size(237, 43);
-            textBoxTotal.TabIndex = 0;
             textBoxTotal.TabIndex = 2;
             // 
             // labelTotal
@@ -194,8 +186,6 @@ namespace UIGestaoMercearia
             labelTotal.ForeColor = Color.White;
             labelTotal.Location = new Point(623, 123);
             labelTotal.Name = "labelTotal";
-            labelTotal.Size = new Size(80, 24);
-            labelTotal.TabIndex = 0;
             labelTotal.Size = new Size(79, 25);
             labelTotal.TabIndex = 1;
             labelTotal.Text = "TOTAL";
@@ -207,20 +197,31 @@ namespace UIGestaoMercearia
             labelExTroco.AutoSize = true;
             labelExTroco.Font = new Font("Microsoft Sans Serif", 72F, FontStyle.Regular, GraphicsUnit.Point);
             labelExTroco.ForeColor = SystemColors.ButtonHighlight;
-            labelExTroco.Location = new Point(137, 401);
+            labelExTroco.Location = new Point(142, 401);
             labelExTroco.Name = "labelExTroco";
-            labelExTroco.Size = new Size(776, 144);
-            labelExTroco.TabIndex = 4;
             labelExTroco.Size = new Size(709, 135);
             labelExTroco.TabIndex = 5;
             labelExTroco.Text = "TROCO: R$";
+            // 
+            // buttonCadastrarUsuário
+            // 
+            buttonCadastrarUsuário.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCadastrarUsuário.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonCadastrarUsuário.Location = new Point(321, 763);
+            buttonCadastrarUsuário.Name = "buttonCadastrarUsuário";
+            buttonCadastrarUsuário.Size = new Size(530, 69);
+            buttonCadastrarUsuário.TabIndex = 39;
+            buttonCadastrarUsuário.Text = "CADASTRAR USUÁRIO";
+            buttonCadastrarUsuário.UseVisualStyleBackColor = true;
+            buttonCadastrarUsuário.Click += button1_Click;
             // 
             // FormFinalizarVenda
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
-            ClientSize = new Size(1143, 749);
+            ClientSize = new Size(1143, 844);
+            Controls.Add(buttonCadastrarUsuário);
             Controls.Add(label3);
             Controls.Add(labelTroco);
             Controls.Add(textBoxTotal);
@@ -242,6 +243,7 @@ namespace UIGestaoMercearia
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
+            Load += FormFinalizarVenda_Load;
             KeyDown += FormFinalizarVenda_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).EndInit();
@@ -265,5 +267,7 @@ namespace UIGestaoMercearia
         private TextBox textBoxTotal;
         private Label labelTotal;
         private Label labelExTroco;
+        private Button button1;
+        private Button buttonCadastrarUsuário;
     }
 }
