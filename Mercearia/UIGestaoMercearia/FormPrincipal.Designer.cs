@@ -360,12 +360,12 @@ namespace UIGestaoMercearia
             // 
             // labelPDV
             // 
-            labelPDV.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            labelPDV.Anchor = AnchorStyles.None;
             labelPDV.AutoSize = true;
             labelPDV.BackColor = Color.FromArgb(50, 153, 204);
             labelPDV.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point);
             labelPDV.ForeColor = Color.White;
-            labelPDV.Location = new Point(371, 0);
+            labelPDV.Location = new Point(383, 0);
             labelPDV.Name = "labelPDV";
             labelPDV.Size = new Size(410, 67);
             labelPDV.TabIndex = 2;

@@ -65,7 +65,7 @@
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
             subtotal1 = new Label();
-            subtotal2 = new Label();
+            Subtotal2 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
@@ -389,6 +389,7 @@
             labelpreco.TabIndex = 0;
             labelpreco.Text = "...";
             labelpreco.TextAlign = ContentAlignment.MiddleCenter;
+            labelpreco.Click += labelpreco_Click;
             // 
             // pictureBox1
             // 
@@ -422,18 +423,19 @@
             subtotal1.TabIndex = 23;
             subtotal1.Text = "SubTotal";
             // 
-            // subtotal2
+            // Subtotal2
             // 
-            subtotal2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            subtotal2.AutoSize = true;
-            subtotal2.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            subtotal2.ImageAlign = ContentAlignment.TopCenter;
-            subtotal2.Location = new Point(494, 719);
-            subtotal2.Name = "subtotal2";
-            subtotal2.Size = new Size(87, 71);
-            subtotal2.TabIndex = 24;
-            subtotal2.Text = "...";
-            subtotal2.TextAlign = ContentAlignment.MiddleCenter;
+            Subtotal2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            Subtotal2.BackColor = Color.WhiteSmoke;
+            Subtotal2.BorderStyle = BorderStyle.None;
+            Subtotal2.Cursor = Cursors.IBeam;
+            Subtotal2.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
+            Subtotal2.Location = new Point(479, 717);
+            Subtotal2.Name = "Subtotal2";
+            Subtotal2.Size = new Size(179, 80);
+            Subtotal2.TabIndex = 24;
+            Subtotal2.Text = "1";
+            Subtotal2.TextChanged += textBox2_TextChanged;
             // 
             // FormPontoDeVenda
             // 
@@ -441,7 +443,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1472, 814);
-            Controls.Add(subtotal2);
+            Controls.Add(Subtotal2);
             Controls.Add(subtotal1);
             Controls.Add(panel4);
             Controls.Add(buttonFinalizarVenda);
@@ -523,6 +525,6 @@
         private DataGridViewTextBoxColumn nomeProdutoDataGridViewTextBoxColumn;
         private Panel panel4;
         private Label subtotal1;
-        private Label subtotal2;
+        private TextBox Subtotal2;
     }
 }

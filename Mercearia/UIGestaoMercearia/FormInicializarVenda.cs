@@ -93,6 +93,7 @@ namespace UIGestaoMercearia
         }
         private void AdicionarProduto()
         {
+            Subtotal2.Text = "0,0";
             Produto produto = new ProdutoBLL().BuscarPorCodigoDeBarra(textBoxCodigodeBarras.Text);
             labelNomeProduto.Text = produto.Nome;
             labelpreco.Text = $" {produto.Preco:C}";
@@ -103,7 +104,7 @@ namespace UIGestaoMercearia
             ((ItemVenda)itemVendaListBindingSource.Current).SubTotal = ((ItemVenda)itemVendaListBindingSource.Current).Quantidade * ((ItemVenda)itemVendaListBindingSource.Current).ValorUnitario;
             ((Venda)bindingSourceVenda.Current).Total += ((ItemVenda)itemVendaListBindingSource.Current).SubTotal;
             total = ((Venda)bindingSourceVenda.Current).Total;
-            labelSubtotal.Text = $"subtotal: {((Venda)bindingSourceVenda.Current).Total:F2}";
+            Subtotal2.Text = $" {((Venda)bindingSourceVenda.Current).Total:F2}";
             textBoxCodigodeBarras.Text = "";
             textBoxCodigodeBarras.Focus();
         }
@@ -147,6 +148,8 @@ namespace UIGestaoMercearia
             textBoxCodigodeBarras.Text = "";
             labelpreco.Text = "";
             textBoxQuantidade.Text = "1";
+            
+
             try
             {
                 FormaPagamento formaPagamento = new FormaPagamento();
@@ -174,6 +177,21 @@ namespace UIGestaoMercearia
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void labelpreco_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void subtotal2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
