@@ -210,6 +210,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormCadastroFornecedor_Load;
+            KeyDown += FormCadastroFornecedor_KeyDown;
             ((System.ComponentModel.ISupportInitialize)fornecedorBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();

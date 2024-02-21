@@ -46,7 +46,7 @@ namespace UIGestaoMercearia
         }
 
         private void buttonExcluir_Click(object sender, EventArgs e)
-        { 
+        {
             try
             {
                 if (bindingSourceProduto.Count <= 0)
@@ -177,6 +177,12 @@ namespace UIGestaoMercearia
         private void dataGridViewProduto_DoubleClick(object sender, EventArgs e)
         {
             buttonSelecionar_Click(sender, e);
+        }
+
+        private void FormConsultaProduto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
         }
     }
 }

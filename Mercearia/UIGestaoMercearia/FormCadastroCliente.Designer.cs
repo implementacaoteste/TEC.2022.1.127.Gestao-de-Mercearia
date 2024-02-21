@@ -258,6 +258,7 @@
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormCadastroCliente_Load;
+            KeyDown += FormCadastroCliente_KeyDown;
             ((System.ComponentModel.ISupportInitialize)clienteBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();

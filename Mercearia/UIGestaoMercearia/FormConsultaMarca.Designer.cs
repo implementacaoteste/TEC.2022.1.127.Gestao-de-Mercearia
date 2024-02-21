@@ -242,6 +242,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormConsultaMarca_Load;
+            KeyDown += FormConsultaMarca_KeyDown;
             ((System.ComponentModel.ISupportInitialize)dataGridViewMarca).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceMarca).EndInit();
             ResumeLayout(false);

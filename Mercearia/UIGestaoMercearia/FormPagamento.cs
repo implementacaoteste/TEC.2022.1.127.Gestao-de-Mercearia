@@ -189,10 +189,16 @@ namespace UIGestaoMercearia
             {
                 bindingSourcePagamento.MoveNext();
             }
-            else if(e.KeyCode == Keys.Up)
+            else if (e.KeyCode == Keys.Up)
             {
                 bindingSourcePagamento.MovePrevious();
             }
+        }
+
+        private void FormPagamento_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
         }
     }
 }

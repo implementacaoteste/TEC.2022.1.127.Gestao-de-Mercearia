@@ -127,6 +127,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormCadastroMarca_Load;
+            KeyDown += FormCadastroMarca_KeyDown;
             ((System.ComponentModel.ISupportInitialize)marcaBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)marcaBindingSource1).EndInit();
             ResumeLayout(false);

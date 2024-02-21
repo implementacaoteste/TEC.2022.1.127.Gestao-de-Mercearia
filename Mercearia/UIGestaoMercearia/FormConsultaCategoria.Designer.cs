@@ -272,6 +272,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormConsultaCategoria_Load;
+            KeyDown += FormConsultaCategoria_KeyDown;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCategoria).EndInit();

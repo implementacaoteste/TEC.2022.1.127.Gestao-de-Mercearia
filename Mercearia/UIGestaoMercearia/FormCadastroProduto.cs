@@ -71,14 +71,14 @@ namespace UIGestaoMercearia
             }
         }
 
-      
+
 
         private void buttonBuscarFornecedor_Click(object sender, EventArgs e)
         {
             using (FormConsultaFornecedor frm = new FormConsultaFornecedor(true))
             {
                 frm.ShowDialog();
-                if(frm.fornecedor != null)
+                if (frm.fornecedor != null)
                 {
                     ((Produto)produtoBindingSource.Current).Fornecedor = frm.fornecedor;
                     textBoxNomeFornecedor.Text = frm.fornecedor.Nome;
@@ -116,5 +116,10 @@ namespace UIGestaoMercearia
             }
         }
 
+        private void FormCadastroProduto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

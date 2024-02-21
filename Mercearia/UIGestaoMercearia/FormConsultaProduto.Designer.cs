@@ -33,6 +33,13 @@
             buttonCancelar = new Button();
             buttonSelecionar = new Button();
             dataGridViewProduto = new DataGridView();
+            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            descricaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            precoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            Custo = new DataGridViewTextBoxColumn();
+            codigoDeBarraDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            Quantidade = new DataGridViewTextBoxColumn();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             bindingSourceProduto = new BindingSource(components);
             comboBoxBuscarPor = new ComboBox();
             textBoxProduto = new TextBox();
@@ -44,13 +51,6 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            nomeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            descricaoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            precoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            Custo = new DataGridViewTextBoxColumn();
-            codigoDeBarraDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            Quantidade = new DataGridViewTextBoxColumn();
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewProduto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceProduto).BeginInit();
@@ -106,6 +106,69 @@
             dataGridViewProduto.Size = new Size(976, 334);
             dataGridViewProduto.TabIndex = 1;
             dataGridViewProduto.DoubleClick += dataGridViewProduto_DoubleClick;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            nomeDataGridViewTextBoxColumn.Width = 275;
+            // 
+            // descricaoDataGridViewTextBoxColumn
+            // 
+            descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
+            descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
+            descricaoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
+            descricaoDataGridViewTextBoxColumn.ReadOnly = true;
+            descricaoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // precoDataGridViewTextBoxColumn
+            // 
+            precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
+            precoDataGridViewTextBoxColumn.HeaderText = "Preco";
+            precoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
+            precoDataGridViewTextBoxColumn.ReadOnly = true;
+            precoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // Custo
+            // 
+            Custo.DataPropertyName = "Custo";
+            Custo.HeaderText = "Custo";
+            Custo.MinimumWidth = 6;
+            Custo.Name = "Custo";
+            Custo.ReadOnly = true;
+            Custo.Width = 125;
+            // 
+            // codigoDeBarraDataGridViewTextBoxColumn
+            // 
+            codigoDeBarraDataGridViewTextBoxColumn.DataPropertyName = "CodigoDeBarra";
+            codigoDeBarraDataGridViewTextBoxColumn.HeaderText = "CodigoDeBarra";
+            codigoDeBarraDataGridViewTextBoxColumn.MinimumWidth = 6;
+            codigoDeBarraDataGridViewTextBoxColumn.Name = "codigoDeBarraDataGridViewTextBoxColumn";
+            codigoDeBarraDataGridViewTextBoxColumn.ReadOnly = true;
+            codigoDeBarraDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // Quantidade
+            // 
+            Quantidade.DataPropertyName = "Quantidade";
+            Quantidade.HeaderText = "Quantidade";
+            Quantidade.MinimumWidth = 6;
+            Quantidade.Name = "Quantidade";
+            Quantidade.ReadOnly = true;
+            Quantidade.Width = 125;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.ReadOnly = true;
+            idDataGridViewTextBoxColumn.Width = 125;
             // 
             // bindingSourceProduto
             // 
@@ -224,69 +287,6 @@
             label1.TabIndex = 3;
             label1.Text = "                     CONSULTA DE PRODUTO                        ";
             // 
-            // nomeDataGridViewTextBoxColumn
-            // 
-            nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            nomeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            nomeDataGridViewTextBoxColumn.ReadOnly = true;
-            nomeDataGridViewTextBoxColumn.Width = 275;
-            // 
-            // descricaoDataGridViewTextBoxColumn
-            // 
-            descricaoDataGridViewTextBoxColumn.DataPropertyName = "Descricao";
-            descricaoDataGridViewTextBoxColumn.HeaderText = "Descricao";
-            descricaoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            descricaoDataGridViewTextBoxColumn.Name = "descricaoDataGridViewTextBoxColumn";
-            descricaoDataGridViewTextBoxColumn.ReadOnly = true;
-            descricaoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // precoDataGridViewTextBoxColumn
-            // 
-            precoDataGridViewTextBoxColumn.DataPropertyName = "Preco";
-            precoDataGridViewTextBoxColumn.HeaderText = "Preco";
-            precoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            precoDataGridViewTextBoxColumn.Name = "precoDataGridViewTextBoxColumn";
-            precoDataGridViewTextBoxColumn.ReadOnly = true;
-            precoDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // Custo
-            // 
-            Custo.DataPropertyName = "Custo";
-            Custo.HeaderText = "Custo";
-            Custo.MinimumWidth = 6;
-            Custo.Name = "Custo";
-            Custo.ReadOnly = true;
-            Custo.Width = 125;
-            // 
-            // codigoDeBarraDataGridViewTextBoxColumn
-            // 
-            codigoDeBarraDataGridViewTextBoxColumn.DataPropertyName = "CodigoDeBarra";
-            codigoDeBarraDataGridViewTextBoxColumn.HeaderText = "CodigoDeBarra";
-            codigoDeBarraDataGridViewTextBoxColumn.MinimumWidth = 6;
-            codigoDeBarraDataGridViewTextBoxColumn.Name = "codigoDeBarraDataGridViewTextBoxColumn";
-            codigoDeBarraDataGridViewTextBoxColumn.ReadOnly = true;
-            codigoDeBarraDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // Quantidade
-            // 
-            Quantidade.DataPropertyName = "Quantidade";
-            Quantidade.HeaderText = "Quantidade";
-            Quantidade.MinimumWidth = 6;
-            Quantidade.Name = "Quantidade";
-            Quantidade.ReadOnly = true;
-            Quantidade.Width = 125;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.ReadOnly = true;
-            idDataGridViewTextBoxColumn.Width = 125;
-            // 
             // FormConsultaProduto
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -305,6 +305,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormConsultaProduto_Load;
+            KeyDown += FormConsultaProduto_KeyDown;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewProduto).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceProduto).EndInit();

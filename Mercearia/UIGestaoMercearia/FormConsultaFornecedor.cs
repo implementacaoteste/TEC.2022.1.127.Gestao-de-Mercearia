@@ -36,7 +36,7 @@ namespace UIGestaoMercearia
                         bindingSourceFornecedor.DataSource = new FornecedorBLL().BuscarPorNome(textBoxBuscarPor.Text);
                         break;
                     case 1:
-                        if(String.IsNullOrEmpty(textBoxBuscarPor.Text))
+                        if (String.IsNullOrEmpty(textBoxBuscarPor.Text))
                             throw new Exception("Informe um Id para fazer a busca.") { Data = { { "Id", 10031 } } };
                         bindingSourceFornecedor.DataSource = new FornecedorBLL().BuscarPorId(Convert.ToInt32(textBoxBuscarPor.Text));
                         break;
@@ -161,6 +161,12 @@ namespace UIGestaoMercearia
         private void dataGridViewFornecedor_DoubleClick(object sender, EventArgs e)
         {
             buttonSelecionar_Click(sender, e);
+        }
+
+        private void FormConsultaFornecedor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
         }
     }
 

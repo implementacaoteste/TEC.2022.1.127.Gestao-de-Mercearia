@@ -35,5 +35,11 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void FormEstatistica_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

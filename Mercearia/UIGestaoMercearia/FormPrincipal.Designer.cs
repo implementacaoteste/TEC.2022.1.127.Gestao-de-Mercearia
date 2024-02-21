@@ -56,7 +56,7 @@ namespace UIGestaoMercearia
             panel4 = new Panel();
             buttonConsultarVenda = new Button();
             buttonIniciarVenda = new Button();
-            pictureBox3 = new PictureBox();
+            pictureBoxConfiguração = new PictureBox();
             pictureBox2 = new PictureBox();
             toolTip1 = new ToolTip(components);
             MENU = new Label();
@@ -66,7 +66,7 @@ namespace UIGestaoMercearia
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxConfiguração).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -395,7 +395,7 @@ namespace UIGestaoMercearia
             panel4.Controls.Add(pictureBoxEstatistica);
             panel4.Controls.Add(buttonConsultarVenda);
             panel4.Controls.Add(buttonIniciarVenda);
-            panel4.Controls.Add(pictureBox3);
+            panel4.Controls.Add(pictureBoxConfiguração);
             panel4.Location = new Point(0, 143);
             panel4.Name = "panel4";
             panel4.Size = new Size(1218, 135);
@@ -431,24 +431,24 @@ namespace UIGestaoMercearia
             buttonIniciarVenda.UseVisualStyleBackColor = false;
             buttonIniciarVenda.Click += buttonIniciarVenda_Click;
             // 
-            // pictureBox3
+            // pictureBoxConfiguração
             // 
-            pictureBox3.AccessibleRole = AccessibleRole.MenuBar;
-            pictureBox3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox3.BackColor = Color.Transparent;
-            pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox3.Cursor = Cursors.Hand;
-            pictureBox3.ErrorImage = null;
-            pictureBox3.Image = Properties.Resources.settings_512px;
-            pictureBox3.InitialImage = null;
-            pictureBox3.Location = new Point(1069, 24);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(114, 94);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 19;
-            pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
+            pictureBoxConfiguração.AccessibleRole = AccessibleRole.MenuBar;
+            pictureBoxConfiguração.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBoxConfiguração.BackColor = Color.Transparent;
+            pictureBoxConfiguração.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBoxConfiguração.Cursor = Cursors.Hand;
+            pictureBoxConfiguração.ErrorImage = null;
+            pictureBoxConfiguração.Image = Properties.Resources.settings_512px;
+            pictureBoxConfiguração.InitialImage = null;
+            pictureBoxConfiguração.Location = new Point(1069, 24);
+            pictureBoxConfiguração.Margin = new Padding(3, 4, 3, 4);
+            pictureBoxConfiguração.Name = "pictureBoxConfiguração";
+            pictureBoxConfiguração.Size = new Size(114, 94);
+            pictureBoxConfiguração.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxConfiguração.TabIndex = 19;
+            pictureBoxConfiguração.TabStop = false;
+            pictureBoxConfiguração.Click += pictureBoxConfiguracao_Click;
             // 
             // pictureBox2
             // 
@@ -504,7 +504,7 @@ namespace UIGestaoMercearia
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxConfiguração).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -524,7 +524,7 @@ namespace UIGestaoMercearia
         private PictureBox pictureBoxLogo;
         private Panel panel4;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox3;
+        private PictureBox pictureBoxConfiguração;
         private Button buttonConsultarVenda;
         private Button buttonIniciarVenda;
         private Button buttonGrupoUsuario;

@@ -132,7 +132,6 @@
             label5.Size = new Size(54, 18);
             label5.TabIndex = 23;
             label5.Text = "Salario";
-            label5.Click += label5_Click;
             // 
             // textBoxSalario
             // 
@@ -206,6 +205,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormCadastroFuncionario_Load;
+            KeyDown += FormCadastroFuncionario_KeyDown;
             ((System.ComponentModel.ISupportInitialize)bindingSourceCadastrarFuncionario).EndInit();
             ResumeLayout(false);
             PerformLayout();

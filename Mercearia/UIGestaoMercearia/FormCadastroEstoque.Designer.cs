@@ -259,6 +259,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormeCadastroEstoque_Load;
+            KeyDown += FormCadastroEstoque_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)bindingSourceEstoque).EndInit();

@@ -121,6 +121,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormCadastroCategoria_Load;
+            KeyDown += FormCadastroCategoria_KeyDown;
             ((System.ComponentModel.ISupportInitialize)categoriaBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();

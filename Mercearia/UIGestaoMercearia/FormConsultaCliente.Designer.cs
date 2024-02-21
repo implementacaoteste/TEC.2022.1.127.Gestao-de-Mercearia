@@ -280,6 +280,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormConsultaCliente_Load;
+            KeyDown += FormConsultaCliente_KeyDown;
             ((System.ComponentModel.ISupportInitialize)clienteDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)clienteBindingSource).EndInit();
             ResumeLayout(false);

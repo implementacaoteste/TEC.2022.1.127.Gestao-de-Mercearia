@@ -356,6 +356,7 @@ namespace UIGestaoMercearia
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormCadastroProduto_Load;
+            KeyDown += FormCadastroProduto_KeyDown;
             ((System.ComponentModel.ISupportInitialize)produtoBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();

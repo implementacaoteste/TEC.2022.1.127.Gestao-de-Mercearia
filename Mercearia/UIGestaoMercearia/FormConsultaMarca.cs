@@ -154,15 +154,10 @@ namespace UIGestaoMercearia
         {
             buttonSelecionar_Click(sender, e);
         }
-
-        private void label3_Click(object sender, EventArgs e)
+        private void FormConsultaMarca_KeyDown(object sender, KeyEventArgs e)
         {
-
-        }
-
-        private void labelGerenProd_Click(object sender, EventArgs e)
-        {
-
+            if (e.KeyCode == Keys.Escape)
+                Close();
         }
     }
 }

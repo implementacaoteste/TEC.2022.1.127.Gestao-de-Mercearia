@@ -160,6 +160,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormCadastroPagamento_Load;
+            KeyDown += FormCadastroPagamento_KeyDown;
             ((System.ComponentModel.ISupportInitialize)formaPagamentoBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();

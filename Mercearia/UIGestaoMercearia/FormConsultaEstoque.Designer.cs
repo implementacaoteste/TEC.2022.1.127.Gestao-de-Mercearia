@@ -313,6 +313,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormConsultaEstoque_Load;
+            KeyDown += FormConsultaEstoque_KeyDown;
             ((System.ComponentModel.ISupportInitialize)bindingSourceEstoque).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewEstoque).EndInit();
             panel1.ResumeLayout(false);

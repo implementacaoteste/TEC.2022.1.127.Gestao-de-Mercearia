@@ -174,6 +174,7 @@
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += FormEstatistica_Load;
+            KeyDown += FormEstatistica_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel5.ResumeLayout(false);
