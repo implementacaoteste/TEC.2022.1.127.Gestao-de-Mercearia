@@ -44,7 +44,7 @@ namespace UIGestaoMercearia
             textBoxTotal = new TextBox();
             labelTotal = new Label();
             labelExTroco = new Label();
-            buttonCadastrarUsuário = new Button();
+            buttonCadastrarCliente = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).BeginInit();
             SuspendLayout();
@@ -203,17 +203,17 @@ namespace UIGestaoMercearia
             labelExTroco.TabIndex = 5;
             labelExTroco.Text = "TROCO: R$";
             // 
-            // buttonCadastrarUsuário
+            // buttonCadastrarCliente
             // 
-            buttonCadastrarUsuário.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCadastrarUsuário.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonCadastrarUsuário.Location = new Point(321, 763);
-            buttonCadastrarUsuário.Name = "buttonCadastrarUsuário";
-            buttonCadastrarUsuário.Size = new Size(530, 69);
-            buttonCadastrarUsuário.TabIndex = 39;
-            buttonCadastrarUsuário.Text = "CADASTRAR USUÁRIO";
-            buttonCadastrarUsuário.UseVisualStyleBackColor = true;
-            buttonCadastrarUsuário.Click += button1_Click;
+            buttonCadastrarCliente.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCadastrarCliente.ForeColor = Color.FromArgb(50, 153, 204);
+            buttonCadastrarCliente.Location = new Point(321, 763);
+            buttonCadastrarCliente.Name = "buttonCadastrarCliente";
+            buttonCadastrarCliente.Size = new Size(530, 69);
+            buttonCadastrarCliente.TabIndex = 39;
+            buttonCadastrarCliente.Text = "CADASTRAR CLIENTE";
+            buttonCadastrarCliente.UseVisualStyleBackColor = true;
+            buttonCadastrarCliente.Click += button1_Click;
             // 
             // FormFinalizarVenda
             // 
@@ -221,7 +221,7 @@ namespace UIGestaoMercearia
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
             ClientSize = new Size(1143, 844);
-            Controls.Add(buttonCadastrarUsuário);
+            Controls.Add(buttonCadastrarCliente);
             Controls.Add(label3);
             Controls.Add(labelTroco);
             Controls.Add(textBoxTotal);
@@ -268,6 +268,6 @@ namespace UIGestaoMercearia
         private Label labelTotal;
         private Label labelExTroco;
         private Button button1;
-        private Button buttonCadastrarUsuário;
+        private Button buttonCadastrarCliente;
     }
 }

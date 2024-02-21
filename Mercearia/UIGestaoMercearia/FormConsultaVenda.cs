@@ -48,31 +48,6 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void buttonAlterar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (bindingSourceVenda.Count == 0)
-                {
-                    MessageBox.Show("Não existe venda para ser alterado.");
-                    return;
-                }
-
-                int id = ((Venda)bindingSourceVenda.Current).Id;
-
-                using (FormConsultaVenda frm = new FormConsultaVenda(id))
-                {
-                    frm.ShowDialog();
-                }
-                buttonBuscar_Click(null, null);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void buttonInserir_Click(object sender, EventArgs e)
         {
             try
