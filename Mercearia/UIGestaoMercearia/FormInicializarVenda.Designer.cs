@@ -434,7 +434,7 @@
             Subtotal2.Name = "Subtotal2";
             Subtotal2.Size = new Size(179, 80);
             Subtotal2.TabIndex = 24;
-            Subtotal2.Text = "1";
+            Subtotal2.Text = "00,00";
             Subtotal2.TextChanged += textBox2_TextChanged;
             // 
             // FormPontoDeVenda
