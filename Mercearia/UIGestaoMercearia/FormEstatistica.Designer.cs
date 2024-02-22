@@ -30,18 +30,18 @@
         {
             label1 = new Label();
             panel1 = new Panel();
-            label2 = new Label();
-            label3 = new Label();
+            labelG = new Label();
+            labelGanhos = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             panel2 = new Panel();
             panel4 = new Panel();
             panel5 = new Panel();
-            panel3 = new Panel();
-            label4 = new Label();
-            label5 = new Label();
+            labelGastos = new Label();
+            labelGs = new Label();
+            labelS = new Label();
+            labelSaldo = new Label();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
-            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -59,37 +59,41 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(50, 153, 204);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(labelS);
+            panel1.Controls.Add(labelGs);
+            panel1.Controls.Add(labelG);
+            panel1.Controls.Add(labelSaldo);
+            panel1.Controls.Add(labelGastos);
+            panel1.Controls.Add(labelGanhos);
             panel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             panel1.Location = new Point(11, 92);
             panel1.Name = "panel1";
-            panel1.Size = new Size(268, 130);
+            panel1.Size = new Size(543, 130);
             panel1.TabIndex = 1;
             // 
-            // label2
+            // labelG
             // 
-            label2.Anchor = AnchorStyles.Top;
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(14, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(102, 29);
-            label2.TabIndex = 0;
-            label2.Text = "Ganhos:";
+            labelG.Anchor = AnchorStyles.Top;
+            labelG.AutoSize = true;
+            labelG.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            labelG.ForeColor = Color.White;
+            labelG.Location = new Point(17, 20);
+            labelG.Name = "labelG";
+            labelG.Size = new Size(102, 29);
+            labelG.TabIndex = 0;
+            labelG.Text = "Ganhos:";
             // 
-            // label3
+            // labelGanhos
             // 
-            label3.Anchor = AnchorStyles.Top;
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(14, 58);
-            label3.Name = "label3";
-            label3.Size = new Size(160, 51);
-            label3.TabIndex = 1;
-            label3.Text = "R$ 123";
+            labelGanhos.Anchor = AnchorStyles.Top;
+            labelGanhos.AutoSize = true;
+            labelGanhos.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            labelGanhos.ForeColor = Color.White;
+            labelGanhos.Location = new Point(17, 58);
+            labelGanhos.Name = "labelGanhos";
+            labelGanhos.Size = new Size(110, 51);
+            labelGanhos.TabIndex = 1;
+            labelGanhos.Text = "R$ 0";
             // 
             // panel2
             // 
@@ -119,40 +123,53 @@
             panel5.Size = new Size(615, 81);
             panel5.TabIndex = 3;
             // 
-            // panel3
+            // labelGastos
             // 
-            panel3.BackColor = Color.FromArgb(50, 153, 204);
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(label5);
-            panel3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            panel3.Location = new Point(285, 92);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(268, 130);
-            panel3.TabIndex = 2;
+            labelGastos.Anchor = AnchorStyles.Top;
+            labelGastos.AutoSize = true;
+            labelGastos.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            labelGastos.ForeColor = Color.White;
+            labelGastos.Location = new Point(183, 58);
+            labelGastos.Name = "labelGastos";
+            labelGastos.Size = new Size(110, 51);
+            labelGastos.TabIndex = 1;
+            labelGastos.Text = "R$ 0";
             // 
-            // label4
+            // labelGs
             // 
-            label4.Anchor = AnchorStyles.Top;
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(13, 9);
-            label4.Name = "label4";
-            label4.Size = new Size(94, 29);
-            label4.TabIndex = 0;
-            label4.Text = "Gastos:";
+            labelGs.Anchor = AnchorStyles.Top;
+            labelGs.AutoSize = true;
+            labelGs.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            labelGs.ForeColor = Color.White;
+            labelGs.Location = new Point(183, 20);
+            labelGs.Name = "labelGs";
+            labelGs.Size = new Size(94, 29);
+            labelGs.TabIndex = 0;
+            labelGs.Text = "Gastos:";
             // 
-            // label5
+            // labelS
             // 
-            label5.Anchor = AnchorStyles.Top;
-            label5.AutoSize = true;
-            label5.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(13, 58);
-            label5.Name = "label5";
-            label5.Size = new Size(160, 51);
-            label5.TabIndex = 1;
-            label5.Text = "R$ 123";
+            labelS.Anchor = AnchorStyles.Top;
+            labelS.AutoSize = true;
+            labelS.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            labelS.ForeColor = Color.White;
+            labelS.Location = new Point(357, 20);
+            labelS.Name = "labelS";
+            labelS.Size = new Size(82, 29);
+            labelS.TabIndex = 0;
+            labelS.Text = "Saldo:";
+            // 
+            // labelSaldo
+            // 
+            labelSaldo.Anchor = AnchorStyles.Top;
+            labelSaldo.AutoSize = true;
+            labelSaldo.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSaldo.ForeColor = Color.White;
+            labelSaldo.Location = new Point(357, 58);
+            labelSaldo.Name = "labelSaldo";
+            labelSaldo.Size = new Size(110, 51);
+            labelSaldo.TabIndex = 1;
+            labelSaldo.Text = "R$ 0";
             // 
             // FormEstatistica
             // 
@@ -160,7 +177,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(566, 638);
-            Controls.Add(panel3);
             Controls.Add(panel4);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -179,8 +195,6 @@
             panel1.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -188,14 +202,15 @@
 
         private Label label1;
         private Panel panel1;
-        private Label label3;
-        private Label label2;
+        private Label labelGanhos;
+        private Label labelG;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Panel panel2;
         private Panel panel4;
         private Panel panel5;
-        private Panel panel3;
-        private Label label4;
-        private Label label5;
+        private Label labelS;
+        private Label labelGs;
+        private Label labelSaldo;
+        private Label labelGastos;
     }
 }
