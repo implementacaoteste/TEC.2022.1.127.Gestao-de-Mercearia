@@ -212,7 +212,6 @@
             textBoxQuantidade.Text = "1";
             textBoxQuantidade.TextAlign = HorizontalAlignment.Right;
             textBoxQuantidade.KeyDown += textBoxQuantidade_KeyDown;
-            textBoxQuantidade.KeyPress += textBoxQuantidade_KeyPress;
             // 
             // textBoxCodigodeBarras
             // 
@@ -389,7 +388,6 @@
             labelpreco.TabIndex = 0;
             labelpreco.Text = "...";
             labelpreco.TextAlign = ContentAlignment.MiddleCenter;
-            labelpreco.Click += labelpreco_Click;
             // 
             // pictureBox1
             // 
@@ -435,7 +433,6 @@
             Subtotal2.Size = new Size(179, 80);
             Subtotal2.TabIndex = 24;
             Subtotal2.Text = "00,00";
-            Subtotal2.TextChanged += textBox2_TextChanged;
             // 
             // FormPontoDeVenda
             // 
