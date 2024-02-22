@@ -115,7 +115,7 @@ namespace UIGestaoMercearia
             ((ItemVenda)itemVendaListBindingSource.Current).SubTotal = ((ItemVenda)itemVendaListBindingSource.Current).Quantidade * ((ItemVenda)itemVendaListBindingSource.Current).ValorUnitario;
             ((Venda)bindingSourceVenda.Current).Total += ((ItemVenda)itemVendaListBindingSource.Current).SubTotal;
             total = ((Venda)bindingSourceVenda.Current).Total;
-            Subtotal2.Text = $" {((Venda)bindingSourceVenda.Current).Total:C}";
+            Subtotal2.Text = $" {((Venda)bindingSourceVenda.Current).Total:F2}";
             textBoxCodigodeBarras.Text = "";
             textBoxCodigodeBarras.Focus();
         }
