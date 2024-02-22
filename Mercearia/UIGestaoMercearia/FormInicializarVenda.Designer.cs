@@ -252,12 +252,12 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { NomeProduto, ValorUnitario, subTotalDataGridViewTextBoxColumn, quantidadeDataGridViewTextBoxColumn, dataGridViewTextBoxColumn2 });
             dataGridView1.DataSource = itemVendaListBindingSource;
-            dataGridView1.Location = new Point(489, 363);
+            dataGridView1.Location = new Point(458, 359);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(918, 292);
+            dataGridView1.Size = new Size(1011, 292);
             dataGridView1.TabIndex = 11;
             // 
             // itemVendaListBindingSource
@@ -288,7 +288,7 @@
             labelpreco.AutoSize = true;
             labelpreco.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
             labelpreco.ImageAlign = ContentAlignment.TopCenter;
-            labelpreco.Location = new Point(920, 256);
+            labelpreco.Location = new Point(923, 258);
             labelpreco.Name = "labelpreco";
             labelpreco.Size = new Size(87, 71);
             labelpreco.TabIndex = 0;
