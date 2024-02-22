@@ -225,7 +225,7 @@
             buttonAlterarNomeUsuario.Name = "buttonAlterarNomeUsuario";
             buttonAlterarNomeUsuario.Size = new Size(109, 29);
             buttonAlterarNomeUsuario.TabIndex = 15;
-            buttonAlterarNomeUsuario.Text = "&Salvar";
+            buttonAlterarNomeUsuario.Text = "S&alvar";
             buttonAlterarNomeUsuario.UseVisualStyleBackColor = false;
             buttonAlterarNomeUsuario.Click += buttonAlterarNomeUsuario_Click;
             // 
