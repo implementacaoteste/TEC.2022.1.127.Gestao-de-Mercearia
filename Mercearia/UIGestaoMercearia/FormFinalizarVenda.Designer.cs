@@ -58,6 +58,7 @@ namespace UIGestaoMercearia
             buttonBuscarFormaPagamento.TabIndex = 3;
             buttonBuscarFormaPagamento.Text = "...";
             buttonBuscarFormaPagamento.UseVisualStyleBackColor = true;
+            buttonBuscarFormaPagamento.Click += buttonBuscarFormaPagamento_Click;
             // 
             // labelFormaPagamento
             // 
