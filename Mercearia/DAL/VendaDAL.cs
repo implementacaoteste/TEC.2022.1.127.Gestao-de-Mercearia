@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -91,7 +92,7 @@ namespace DAL
                 SqlCommand cmd = cn.CreateCommand();
                 cmd.CommandText = @"DELETE FROM Venda WHERE Id = @Id";
                 cmd.CommandType = System.Data.CommandType.Text;
-                
+
                 cmd.Parameters.AddWithValue("@Id", _id);
 
                 cmd.Connection = cn;
@@ -181,6 +182,61 @@ namespace DAL
             {
                 cn.Close();
             }
+        }
+
+        public Estatistica BuscarReceita(DateTime _dataInicio, DateTime _dataFim)
+        {
+            Estatistica estatistica = new Estatistica();
+            SqlConnection cn = new SqlConnection(Conexao.StringDeConexao);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = @"select 
+                SUM(ValorUnitario * Quantidade)Ganhos, 
+                SUM(CustoProduto * Quantidade)Gastos, 
+                SUM(ValorUnitario * Quantidade) - SUM(CustoProduto * Quantidade)Saldo 
+                from ItemVenda
+                INNER JOIN Venda
+                on Venda.Id = ItemVenda.IdVenda
+                WHERE CONVERT(DATETIME, CONVERT(VARCHAR, Venda.DataVenda, 107)) BETWEEN @DataInicial AND @DataFinal";
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Parameters.AddWithValue("@DataInicial", _dataInicio);
+                cmd.Parameters.AddWithValue("@DataFinal", _dataFim);
+                cn.Open();
+                using (SqlDataReader rd = cmd.ExecuteReader())
+                {
+                    estatistica = new Estatistica();
+                    if (rd.Read())
+                    {
+                        estatistica.Ganhos = Convert.ToDouble(rd["Ganhos"]);
+                        estatistica.Gastos = Convert.ToDouble(rd["Gastos"]);
+                        //estatistica.Saldo = Convert.ToDouble(rd["Saldo"]);
+                        
+                    }
+                }
+                return estatistica;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao tentar buscar receita por data no banco de dados");
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            /*
+                select 
+                SUM(ValorUnitario * Quantidade)Ganhos, 
+                SUM(CustoProduto * Quantidade)Gastos, 
+                SUM(ValorUnitario * Quantidade) - SUM(CustoProduto * Quantidade)Saldo 
+                from ItemVenda
+                INNER JOIN Venda
+                on Venda.Id = ItemVenda.IdVenda
+                WHERE CONVERT(DATETIME, CONVERT(VARCHAR, Venda.DataVenda, 107)) BETWEEN @DataInicial AND @DataFinal
+
+             */
         }
 
     }
