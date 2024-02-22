@@ -16,14 +16,15 @@ namespace DAL
             try
             {
                 SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO ItemVenda(IdProduto, IdVenda, Quantidade, ValorUnitario, SubTotal) 
-                                    VALUES(@IdProduto, @IdVenda, @Quantidade, @ValorUnitario, @SubTotal)";
+                cmd.CommandText = @"INSERT INTO ItemVenda(IdProduto, IdVenda, Quantidade, ValorUnitario, CustoProduto, SubTotal) 
+                                    VALUES(@IdProduto, @IdVenda, @Quantidade, @ValorUnitario, @CustoProduto, @SubTotal)";
                 cmd.CommandType = System.Data.CommandType.Text;
 
                 cmd.Parameters.AddWithValue("@IdProduto", _item.IdProduto);
                 cmd.Parameters.AddWithValue("@IdVenda", _item.IdVenda);
                 cmd.Parameters.AddWithValue("@Quantidade", _item.Quantidade);
                 cmd.Parameters.AddWithValue("@ValorUnitario", _item.ValorUnitario);
+                cmd.Parameters.AddWithValue("@CustoProduto", _item.CustoProduto);
                 cmd.Parameters.AddWithValue("@SubTotal", _item.SubTotal);
                 cmd.Connection = cn;
                 cn.Open();
@@ -50,6 +51,7 @@ namespace DAL
                                                      IdVenda = @IdVenda,
                                                      Quantidade = Quantidade,
                                                      ValorUnitario = @ValorUnitario,
+                                                     CustoProduto = @CustoProduto,
                                                      SubTotal = @SubTotal
                                                      WHERE Id = @Id";
 
@@ -60,6 +62,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@IdVenda", _item.IdVenda);
                 cmd.Parameters.AddWithValue("@Quantidade", _item.Quantidade);
                 cmd.Parameters.AddWithValue("@ValorUnitario", _item.ValorUnitario);
+                cmd.Parameters.AddWithValue("@CustoProduto", _item.CustoProduto);
                 cmd.Parameters.AddWithValue("@SubTotal", _item.SubTotal);
 
                 cmd.Connection = cn;
@@ -110,7 +113,7 @@ namespace DAL
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-                cmd.CommandText = @"SELECT IdProduto, IdVenda, Quantidade, ValorUnitario, SubTotal FROM ItemVenda WHERE IdVenda = @IdVenda";
+                cmd.CommandText = @"SELECT IdProduto, IdVenda, Quantidade, ValorUnitario, CustoProduto, SubTotal FROM ItemVenda WHERE IdVenda = @IdVenda";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@IdVenda", _IdVenda);
 
@@ -125,6 +128,7 @@ namespace DAL
                         item.IdVenda = (int)rd["IdVenda"];
                         item.Quantidade = (int)rd["Quantidade"];
                         item.ValorUnitario = Convert.ToDouble(rd["ValorUnitario"]);
+                        item.CustoProduto = Convert.ToDouble(rd["CustoProduto"]);
                         item.SubTotal = Convert.ToDouble(rd["SubTotal"]);
 
                     }
