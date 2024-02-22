@@ -59,6 +59,7 @@ namespace UIGestaoMercearia
             pictureBoxConfiguração = new PictureBox();
             pictureBox2 = new PictureBox();
             toolTip1 = new ToolTip(components);
+            pictureBox3 = new PictureBox();
             MENU = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -68,6 +69,7 @@ namespace UIGestaoMercearia
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxConfiguração).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // MENU
@@ -467,6 +469,22 @@ namespace UIGestaoMercearia
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.AccessibleRole = AccessibleRole.MenuBar;
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox3.Cursor = Cursors.No;
+            pictureBox3.ErrorImage = null;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.InitialImage = null;
+            pictureBox3.Location = new Point(22, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(52, 52);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 19;
+            pictureBox3.TabStop = false;
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -474,6 +492,7 @@ namespace UIGestaoMercearia
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1634, 1055);
+            Controls.Add(pictureBox3);
             Controls.Add(panel2);
             Controls.Add(panel4);
             Controls.Add(pictureBoxLogo);
@@ -506,6 +525,7 @@ namespace UIGestaoMercearia
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBoxConfiguração).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -539,6 +559,7 @@ namespace UIGestaoMercearia
         private PictureBox pictureBoxEstatistica;
         private Panel panel1;
         private Label labelPDV;
+        private PictureBox pictureBox3;
     }
 }
 

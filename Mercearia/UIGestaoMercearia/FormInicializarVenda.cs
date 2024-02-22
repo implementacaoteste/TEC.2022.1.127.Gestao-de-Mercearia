@@ -58,8 +58,6 @@ namespace UIGestaoMercearia
                 }
             }
         }
-
-
         private void FormInicializarVenda_Load(object sender, EventArgs e)
         {
             bindingSourceVenda.AddNew();
@@ -121,18 +119,6 @@ namespace UIGestaoMercearia
             textBoxCodigodeBarras.Text = "";
             textBoxCodigodeBarras.Focus();
         }
-        private void textBoxQuantidade_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //if (e.KeyChar == (char)Keys.Enter)
-            //{
-            //    double.TryParse(labelpreco.Text, out double preco);
-            //    double.TryParse(textBoxQuantidade.Text, out double quantidade);
-            //    double subtotal = quantidade * preco;
-            //    labelSubtotal.Text = $"subtotal: {Convert.ToDouble(labelSubtotal.Text) + subtotal:F2}";
-            //    //e.Handled = true;
-            //    textBoxCodigodeBarras.Focus();
-            //}
-        }
         private void textBoxCodigodeBarras_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -145,11 +131,6 @@ namespace UIGestaoMercearia
                 else
                     textBoxQuantidade.Focus();
             }
-            //if (e.KeyChar == (char)Keys.Enter)
-            //{
-            //    e.Handled = true;
-            //    textBoxQuantidade.Focus();
-            //}
         }
         private void textBoxQuantidade_KeyDown(object sender, KeyEventArgs e)
         {
@@ -193,19 +174,9 @@ namespace UIGestaoMercearia
             }
         }
 
-        private void labelpreco_Click(object sender, EventArgs e)
+        private void pictureBoxAjuda_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void subtotal2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
+        
         }
     }
 }
