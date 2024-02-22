@@ -7,33 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 using System.Runtime.InteropServices;
+using Models;
 
 namespace UIGestaoMercearia
 {
     public partial class FormEstatistica : Form
     {
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-            (
-                int nLeftRect,
-                int nTopRect,
-                int nRightRect,
-                int nBottomRect,
-                int nWidthEllipse,
-                int nHeightEllipse
-            );
-
-
+        Estatistica estatistica;
         public FormEstatistica()
         {
             InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
 
         private void FormEstatistica_Load(object sender, EventArgs e)
         {
-
+            estatistica = new Estatistica();
+            //$" {frm.produto.Preco:C}";
+            //labelGanhos = 
         }
 
         private void FormEstatistica_KeyDown(object sender, KeyEventArgs e)
