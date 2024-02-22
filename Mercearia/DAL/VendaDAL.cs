@@ -212,7 +212,6 @@ namespace DAL
                         estatistica.Ganhos = Convert.ToDouble(rd["Ganhos"]);
                         estatistica.Gastos = Convert.ToDouble(rd["Gastos"]);
                         //estatistica.Saldo = Convert.ToDouble(rd["Saldo"]);
-                        
                     }
                 }
                 return estatistica;

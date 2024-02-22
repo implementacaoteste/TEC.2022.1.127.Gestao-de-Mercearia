@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DAL;
 using System.Runtime.InteropServices;
 using Models;
+using BLL;
 
 namespace UIGestaoMercearia
 {
@@ -24,8 +25,13 @@ namespace UIGestaoMercearia
         private void FormEstatistica_Load(object sender, EventArgs e)
         {
             estatistica = new Estatistica();
+            DateTime dataInicio = dateTimePickerInicio.Value = dateTimePickerInicio.Value.AddDays(-30);
+            DateTime dataFim = dateTimePickerFim.Value;
+            bindingSourceEstatistica.DataSource = new VendaBLL().BuscarReceita(dataInicio, dataFim);
             //$" {frm.produto.Preco:C}";
-            //labelGanhos = 
+            //
+
+            labelGanhos = 
         }
 
         private void FormEstatistica_KeyDown(object sender, KeyEventArgs e)
