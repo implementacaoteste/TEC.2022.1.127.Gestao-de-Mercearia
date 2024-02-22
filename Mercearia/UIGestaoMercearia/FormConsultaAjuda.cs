@@ -16,5 +16,20 @@ namespace UIGestaoMercearia
         {
             InitializeComponent();
         }
+
+        private void FormConsultaAjuda_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

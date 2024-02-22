@@ -256,6 +256,15 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void buttonAjuda_Click(object sender, EventArgs e)
+        {
+            //using (FormConsultaAjuda frm = new FormConsultaAjuda(Constantes.))
+            //{
+            //    frm.ShowDialog();
+            //}
+
+        }
     }
 }
 

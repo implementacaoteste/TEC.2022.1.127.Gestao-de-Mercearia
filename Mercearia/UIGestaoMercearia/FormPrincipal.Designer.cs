@@ -482,6 +482,7 @@ namespace UIGestaoMercearia
             buttonAjuda.TabIndex = 22;
             buttonAjuda.Text = "?";
             buttonAjuda.UseVisualStyleBackColor = false;
+            buttonAjuda.Click += buttonAjuda_Click;
             // 
             // FormPrincipal
             // 
