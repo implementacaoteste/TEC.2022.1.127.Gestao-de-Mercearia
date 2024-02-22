@@ -48,6 +48,11 @@
             label11 = new Label();
             buttonCancelar = new Button();
             dataGridView1 = new DataGridView();
+            nomeProdutoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            valorUnitarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            subTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            quantidadeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             itemVendaListBindingSource = new BindingSource(components);
             bindingSourceVenda = new BindingSource(components);
             label12 = new Label();
@@ -56,11 +61,6 @@
             panel4 = new Panel();
             subtotal1 = new Label();
             Subtotal2 = new TextBox();
-            nomeProdutoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            valorUnitarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            subTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            quantidadeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
@@ -262,6 +262,63 @@
             dataGridView1.Size = new Size(918, 292);
             dataGridView1.TabIndex = 11;
             // 
+            // nomeProdutoDataGridViewTextBoxColumn
+            // 
+            nomeProdutoDataGridViewTextBoxColumn.DataPropertyName = "NomeProduto";
+            nomeProdutoDataGridViewTextBoxColumn.HeaderText = "Nome Produto";
+            nomeProdutoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nomeProdutoDataGridViewTextBoxColumn.Name = "nomeProdutoDataGridViewTextBoxColumn";
+            nomeProdutoDataGridViewTextBoxColumn.ReadOnly = true;
+            nomeProdutoDataGridViewTextBoxColumn.Width = 365;
+            // 
+            // valorUnitarioDataGridViewTextBoxColumn
+            // 
+            valorUnitarioDataGridViewTextBoxColumn.DataPropertyName = "ValorUnitario";
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle1.Format = "C2";
+            dataGridViewCellStyle1.NullValue = null;
+            valorUnitarioDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            valorUnitarioDataGridViewTextBoxColumn.HeaderText = "Valor Unitario";
+            valorUnitarioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            valorUnitarioDataGridViewTextBoxColumn.Name = "valorUnitarioDataGridViewTextBoxColumn";
+            valorUnitarioDataGridViewTextBoxColumn.ReadOnly = true;
+            valorUnitarioDataGridViewTextBoxColumn.Width = 275;
+            // 
+            // subTotalDataGridViewTextBoxColumn
+            // 
+            subTotalDataGridViewTextBoxColumn.DataPropertyName = "SubTotal";
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.NullValue = null;
+            subTotalDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            subTotalDataGridViewTextBoxColumn.HeaderText = "SubTotal";
+            subTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            subTotalDataGridViewTextBoxColumn.Name = "subTotalDataGridViewTextBoxColumn";
+            subTotalDataGridViewTextBoxColumn.ReadOnly = true;
+            subTotalDataGridViewTextBoxColumn.Width = 250;
+            // 
+            // quantidadeDataGridViewTextBoxColumn
+            // 
+            quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopRight;
+            quantidadeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            quantidadeDataGridViewTextBoxColumn.HeaderText = "Quantidade";
+            quantidadeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
+            quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            quantidadeDataGridViewTextBoxColumn.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.DataPropertyName = "IdProduto";
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.TopRight;
+            dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewTextBoxColumn2.HeaderText = "IdProduto";
+            dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.ReadOnly = true;
+            dataGridViewTextBoxColumn2.Width = 175;
+            // 
             // itemVendaListBindingSource
             // 
             itemVendaListBindingSource.DataMember = "ItemVendaList";
@@ -339,67 +396,10 @@
             Subtotal2.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
             Subtotal2.Location = new Point(479, 717);
             Subtotal2.Name = "Subtotal2";
-            Subtotal2.Size = new Size(179, 80);
+            Subtotal2.Size = new Size(248, 80);
             Subtotal2.TabIndex = 24;
             Subtotal2.Text = "1";
             Subtotal2.TextChanged += textBox2_TextChanged;
-            // 
-            // nomeProdutoDataGridViewTextBoxColumn
-            // 
-            nomeProdutoDataGridViewTextBoxColumn.DataPropertyName = "NomeProduto";
-            nomeProdutoDataGridViewTextBoxColumn.HeaderText = "Nome Produto";
-            nomeProdutoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            nomeProdutoDataGridViewTextBoxColumn.Name = "nomeProdutoDataGridViewTextBoxColumn";
-            nomeProdutoDataGridViewTextBoxColumn.ReadOnly = true;
-            nomeProdutoDataGridViewTextBoxColumn.Width = 365;
-            // 
-            // valorUnitarioDataGridViewTextBoxColumn
-            // 
-            valorUnitarioDataGridViewTextBoxColumn.DataPropertyName = "ValorUnitario";
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            valorUnitarioDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            valorUnitarioDataGridViewTextBoxColumn.HeaderText = "Valor Unitario";
-            valorUnitarioDataGridViewTextBoxColumn.MinimumWidth = 6;
-            valorUnitarioDataGridViewTextBoxColumn.Name = "valorUnitarioDataGridViewTextBoxColumn";
-            valorUnitarioDataGridViewTextBoxColumn.ReadOnly = true;
-            valorUnitarioDataGridViewTextBoxColumn.Width = 275;
-            // 
-            // subTotalDataGridViewTextBoxColumn
-            // 
-            subTotalDataGridViewTextBoxColumn.DataPropertyName = "SubTotal";
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            subTotalDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            subTotalDataGridViewTextBoxColumn.HeaderText = "SubTotal";
-            subTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
-            subTotalDataGridViewTextBoxColumn.Name = "subTotalDataGridViewTextBoxColumn";
-            subTotalDataGridViewTextBoxColumn.ReadOnly = true;
-            subTotalDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // quantidadeDataGridViewTextBoxColumn
-            // 
-            quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopRight;
-            quantidadeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            quantidadeDataGridViewTextBoxColumn.HeaderText = "Quantidade";
-            quantidadeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
-            quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
-            quantidadeDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.DataPropertyName = "IdProduto";
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.TopRight;
-            dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewTextBoxColumn2.HeaderText = "IdProduto";
-            dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.ReadOnly = true;
-            dataGridViewTextBoxColumn2.Width = 175;
             // 
             // FormPontoDeVenda
             // 
