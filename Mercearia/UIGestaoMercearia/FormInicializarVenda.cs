@@ -1,6 +1,6 @@
 using BLL;
 using Models;
-using System.Security.Cryptography;
+
 namespace UIGestaoMercearia
 {
     public partial class FormPontoDeVenda : Form

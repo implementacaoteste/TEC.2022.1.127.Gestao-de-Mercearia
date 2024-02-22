@@ -1,7 +1,5 @@
 ﻿using BLL;
 using Models;
-using System;
-using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace UIGestaoMercearia
@@ -254,6 +252,15 @@ namespace UIGestaoMercearia
 
         private void pictureBox2_Click_2(object sender, EventArgs e)
         {
+
+        }
+
+        private void buttonAjuda_Click(object sender, EventArgs e)
+        {
+            //using (FormConsultaAjuda frm = new FormConsultaAjuda(Constantes.))
+            //{
+            //    frm.ShowDialog();
+            //}
 
         }
     }
