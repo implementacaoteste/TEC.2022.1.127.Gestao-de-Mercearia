@@ -1,15 +1,4 @@
-﻿using BLL;
-using Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics.Eventing.Reader;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Models;
 
 namespace UIGestaoMercearia
 {
@@ -23,34 +12,39 @@ namespace UIGestaoMercearia
             InitializeComponent();
             totalVenda = _totalVenda;
             FormaPagamento = _formaPagamento;
+            AjustarLayout();
+        }
 
-            if (_formaPagamento.Tipo.ToUpper() == "DINHEIRO")
+        private void AjustarLayout()
+        {
+            if (FormaPagamento.Tipo.ToUpper() == "DINHEIRO")
             {
                 textBoxValorPago.Visible = true;
                 textBoxTotal.Visible = true;
-                textBoxTotal.Text = _totalVenda.ToString();
+                textBoxTotal.Text = totalVenda.ToString();
                 labelValorPago.Visible = true;
                 labelTotal.Visible = true;
                 labelFormaPagamento.Visible = true;
-                textBoxFormaPagamento.Text = _formaPagamento.Tipo;
-
+                textBoxFormaPagamento.Text = FormaPagamento.Tipo;
+                pictureBox1.Visible = false;
             }
-            else if (_formaPagamento.Tipo.ToUpper() == "PIX")
+            else if (FormaPagamento.Tipo.ToUpper() == "PIX")
             {
                 pictureBox1.Visible = true;
                 labelFormaPagamento.Visible = true;
-                textBoxFormaPagamento.Text = _formaPagamento.Tipo;
+                textBoxFormaPagamento.Text = FormaPagamento.Tipo;
                 textBoxTotal.Visible = true;
-                textBoxTotal.Text = _totalVenda.ToString();
+                textBoxTotal.Text = totalVenda.ToString();
                 labelExTroco.Visible = false;
                 labelTroco.Visible = false;
                 labelTotal.Visible = true;
             }
-            else if (_formaPagamento.Tipo.ToUpper() == "CARTÃO DE DÉBITO")
+            else if (FormaPagamento.Tipo.ToUpper() == "CARTÃO DE DÉBITO")
             {
 
             }
         }
+
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Tab)
@@ -95,7 +89,7 @@ namespace UIGestaoMercearia
                 buttonBuscarFormaPagamento_Click(sender, e);
             else if (e.KeyCode == Keys.F12)
                 buttonOk_Click(sender, e);
-            else if (e.KeyCode == Keys.F10);
+            else if (e.KeyCode == Keys.F10) ;
         }
 
         private void buttonBuscarFormaPagamento_Click(object sender, KeyEventArgs e)
@@ -125,6 +119,33 @@ namespace UIGestaoMercearia
         private void FormFinalizarVenda_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonBuscarFormaPagamento_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (FormPagamento frm = new FormPagamento(true))
+                {
+                    frm.ShowDialog();
+                    if (frm.DialogResult == DialogResult.OK)
+                    {
+                        FormaPagamento = frm.pagamento;
+                        AjustarLayout();
+                        //if (frm.pagamento.Tipo.ToUpper() == "DINHEIRO" || frm.pagamento.Tipo.ToUpper() == "PIX")
+                        //{
+                        //    using (FormFinalizarVenda formFinalizarVenda = new FormFinalizarVenda(frm.pagamento, 40))//((Venda)bindingSourceFinalizarVenda.Current).Total))
+                        //    {
+                        //        formFinalizarVenda.ShowDialog();
+                        //    }
+                        //}
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
