@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
-
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             panel1 = new Panel();
             buttonAjuda = new Button();
             labelPDV = new Label();
@@ -54,7 +52,6 @@
             ValorUnitario = new DataGridViewTextBoxColumn();
             subTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             quantidadeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             itemVendaListBindingSource = new BindingSource(components);
             bindingSourceVenda = new BindingSource(components);
             label12 = new Label();
@@ -217,23 +214,23 @@
             textBoxQuantidade.BackColor = Color.WhiteSmoke;
             textBoxQuantidade.BorderStyle = BorderStyle.None;
             textBoxQuantidade.Cursor = Cursors.IBeam;
-
             textBoxQuantidade.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxQuantidade.Location = new Point(1218, 245);
+            textBoxQuantidade.Location = new Point(1024, 257);
             textBoxQuantidade.Name = "textBoxQuantidade";
             textBoxQuantidade.Size = new Size(179, 72);
             textBoxQuantidade.TabIndex = 10;
             textBoxQuantidade.Text = "1";
             textBoxQuantidade.TextAlign = HorizontalAlignment.Right;
+            textBoxQuantidade.TextChanged += textBoxQuantidade_TextChanged;
             textBoxQuantidade.KeyDown += textBoxQuantidade_KeyDown;
             // 
             // textBoxCodigodeBarras
             // 
             textBoxCodigodeBarras.BackColor = Color.WhiteSmoke;
             textBoxCodigodeBarras.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            textBoxCodigodeBarras.Location = new Point(489, 242);
+            textBoxCodigodeBarras.Location = new Point(480, 244);
             textBoxCodigodeBarras.Name = "textBoxCodigodeBarras";
-            textBoxCodigodeBarras.Size = new Size(298, 87);
+            textBoxCodigodeBarras.Size = new Size(254, 87);
             textBoxCodigodeBarras.TabIndex = 11;
             textBoxCodigodeBarras.KeyDown += textBoxCodigodeBarras_KeyDown;
             textBoxCodigodeBarras.KeyPress += textBoxCodigodeBarras_KeyPress;
@@ -270,20 +267,21 @@
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.BackgroundColor = Color.FromArgb(50, 153, 204);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { NomeProduto, ValorUnitario, subTotalDataGridViewTextBoxColumn, quantidadeDataGridViewTextBoxColumn, dataGridViewTextBoxColumn2 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { NomeProduto, ValorUnitario, subTotalDataGridViewTextBoxColumn, quantidadeDataGridViewTextBoxColumn });
             dataGridView1.DataSource = itemVendaListBindingSource;
-            dataGridView1.Location = new Point(489, 355);
+            dataGridView1.Location = new Point(458, 351);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(758, 292);
+            dataGridView1.Size = new Size(758, 309);
             dataGridView1.TabIndex = 11;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // NomeProduto
             // 
             NomeProduto.DataPropertyName = "NomeProduto";
-            NomeProduto.HeaderText = "Nome Produto";
+            NomeProduto.HeaderText = "Nome do produto";
             NomeProduto.MinimumWidth = 6;
             NomeProduto.Name = "NomeProduto";
             NomeProduto.ReadOnly = true;
@@ -292,7 +290,9 @@
             // ValorUnitario
             // 
             ValorUnitario.DataPropertyName = "ValorUnitario";
-            ValorUnitario.HeaderText = "Valor Unitario";
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleRight;
+            ValorUnitario.DefaultCellStyle = dataGridViewCellStyle4;
+            ValorUnitario.HeaderText = "Valor Unitário";
             ValorUnitario.MinimumWidth = 6;
             ValorUnitario.Name = "ValorUnitario";
             ValorUnitario.ReadOnly = true;
@@ -301,12 +301,11 @@
             // subTotalDataGridViewTextBoxColumn
             // 
             subTotalDataGridViewTextBoxColumn.DataPropertyName = "SubTotal";
-
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle7.Format = "C2";
-            dataGridViewCellStyle7.NullValue = null;
-            subTotalDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
-            subTotalDataGridViewTextBoxColumn.HeaderText = "SubTotal";
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            subTotalDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            subTotalDataGridViewTextBoxColumn.HeaderText = "Subtotal";
             subTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
             subTotalDataGridViewTextBoxColumn.Name = "subTotalDataGridViewTextBoxColumn";
             subTotalDataGridViewTextBoxColumn.ReadOnly = true;
@@ -315,25 +314,13 @@
             // quantidadeDataGridViewTextBoxColumn
             // 
             quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
-
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.TopRight;
-            quantidadeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.TopRight;
+            quantidadeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
             quantidadeDataGridViewTextBoxColumn.HeaderText = "Quantidade";
             quantidadeDataGridViewTextBoxColumn.MinimumWidth = 6;
             quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
             quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
             quantidadeDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.DataPropertyName = "IdProduto";
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.TopRight;
-            dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle9;
-            dataGridViewTextBoxColumn2.HeaderText = "IdProduto";
-            dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.ReadOnly = true;
-            dataGridViewTextBoxColumn2.Width = 215;
             // 
             // itemVendaListBindingSource
             // 
@@ -364,7 +351,7 @@
             labelpreco.FlatStyle = FlatStyle.System;
             labelpreco.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
             labelpreco.ImageAlign = ContentAlignment.TopCenter;
-            labelpreco.Location = new Point(836, 245);
+            labelpreco.Location = new Point(740, 258);
             labelpreco.Name = "labelpreco";
             labelpreco.Size = new Size(87, 71);
             labelpreco.TabIndex = 0;
@@ -500,11 +487,10 @@
         private TextBox Subtotal2;
         private DataGridViewTextBoxColumn nomeProdutoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn valorUnitarioDataGridViewTextBoxColumn;
+        private Button buttonAjuda;
         private DataGridViewTextBoxColumn NomeProduto;
         private DataGridViewTextBoxColumn ValorUnitario;
         private DataGridViewTextBoxColumn subTotalDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private Button buttonAjuda;
     }
 }
