@@ -36,7 +36,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-                throw new Exception("Ocorre um erro ao abrir uma venda no banco de dados.", ex);
+               // throw new Exception("Ocorre um erro ao abrir uma venda no banco de dados.", ex);
             }
             finally
             {
@@ -193,13 +193,13 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandText = @"select 
-                SUM(ValorUnitario * Quantidade)Ganhos, 
-                SUM(CustoProduto * Quantidade)Gastos, 
-                SUM(ValorUnitario * Quantidade) - SUM(CustoProduto * Quantidade)Saldo 
+                ISNULL(SUM(ValorUnitario * Quantidade), 0)Ganhos, 
+                ISNULL(SUM(CustoProduto * Quantidade), 0)Gastos, 
+                ISNULL(SUM(ValorUnitario * Quantidade), 0) - ISNULL(SUM(CustoProduto * Quantidade), 0)Saldo 
                 from ItemVenda
                 INNER JOIN Venda
                 on Venda.Id = ItemVenda.IdVenda
-                WHERE CONVERT(DATETIME, CONVERT(VARCHAR, Venda.DataVenda, 107)) BETWEEN @DataInicial AND @DataFinal";
+                WHERE CONVERT(DATETIME, CONVERT(VARCHAR, Venda.DataVenda, 107)) BETWEEN CONVERT(DATETIME, CONVERT(VARCHAR, @DataInicial, 107)) AND CONVERT(DATETIME, CONVERT(VARCHAR, @DataFinal, 107))";
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@DataInicial", _dataInicio);
                 cmd.Parameters.AddWithValue("@DataFinal", _dataFim);
