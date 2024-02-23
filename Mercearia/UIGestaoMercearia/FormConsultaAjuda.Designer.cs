@@ -544,7 +544,6 @@
             label41.Size = new Size(103, 28);
             label41.TabIndex = 43;
             label41.Text = "F1 - Entrar";
-            label41.Click += label41_Click;
             // 
             // panel4
             // 
@@ -613,7 +612,6 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(328, 182);
             panel10.TabIndex = 0;
-            panel10.Paint += panel10_Paint;
             // 
             // panel9
             // 
@@ -654,7 +652,6 @@
             Name = "FormConsultaAjuda";
             ShowIcon = false;
             StartPosition = FormStartPosition.Manual;
-            Load += FormConsultaAjuda_Load;
             KeyDown += FormConsultaAjuda_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

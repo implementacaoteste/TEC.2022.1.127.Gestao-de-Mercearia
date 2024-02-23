@@ -25,11 +25,15 @@ namespace UIGestaoMercearia
                     textBoxCodigodeBarras.Focus();
                     return;
                 }
+                textBoxCodigodeBarras.Text = "";
+                labelpreco.Text = "";
+                textBoxQuantidade.Text = "1";
+                labelNomeProduto.Text = "NOME DO PRODUTO";
+                labelSubtotal.Text = "00,00";
 
                 bindingSourceVenda.CancelEdit();
                 bindingSourceVenda.AddNew();
                 textBoxCodigodeBarras.Focus();
-
             }
             catch (Exception ex)
             {

@@ -209,7 +209,7 @@ namespace UIGestaoMercearia
             // 
             buttonCadastrarCliente.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCadastrarCliente.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonCadastrarCliente.Location = new Point(284, 574);
+            buttonCadastrarCliente.Location = new Point(321, 763);
             buttonCadastrarCliente.Name = "buttonCadastrarCliente";
             buttonCadastrarCliente.Size = new Size(530, 69);
             buttonCadastrarCliente.TabIndex = 4;
