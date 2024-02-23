@@ -181,6 +181,8 @@ namespace UIGestaoMercearia
                 bindingSourcePagamento.MovePrevious();
             else if (e.KeyCode == Keys.F1)
                 buttonAjuda_Click(sender, e);
+            //else if(e.KeyCode == Keys.F2)
+
         }
 
         private void FormPagamento_KeyDown(object sender, KeyEventArgs e)

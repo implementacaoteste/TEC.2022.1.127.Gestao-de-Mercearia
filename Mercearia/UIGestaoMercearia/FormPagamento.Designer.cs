@@ -66,7 +66,7 @@
             label2.Location = new Point(154, 108);
             label2.Name = "label2";
             label2.Size = new Size(176, 18);
-            label2.TabIndex = 0;
+            label2.TabIndex = 2;
             label2.Text = "INSIRA A INFORMAÇÃO:";
             // 
             // label1
@@ -77,7 +77,7 @@
             label1.Location = new Point(12, 109);
             label1.Name = "label1";
             label1.Size = new Size(111, 18);
-            label1.TabIndex = 5;
+            label1.TabIndex = 0;
             label1.Text = "BUSCAR POR:";
             // 
             // buttonBuscar
@@ -87,7 +87,7 @@
             buttonBuscar.Location = new Point(469, 127);
             buttonBuscar.Name = "buttonBuscar";
             buttonBuscar.Size = new Size(94, 29);
-            buttonBuscar.TabIndex = 2;
+            buttonBuscar.TabIndex = 4;
             buttonBuscar.Text = "&Buscar";
             buttonBuscar.UseVisualStyleBackColor = false;
             buttonBuscar.Click += buttonBuscar_Click;
@@ -99,7 +99,7 @@
             textBoxBuscarPor.Location = new Point(154, 129);
             textBoxBuscarPor.Name = "textBoxBuscarPor";
             textBoxBuscarPor.Size = new Size(309, 27);
-            textBoxBuscarPor.TabIndex = 1;
+            textBoxBuscarPor.TabIndex = 3;
             textBoxBuscarPor.KeyDown += textBoxBuscarPor_KeyDown;
             // 
             // comboBoxBuscarPor
@@ -109,7 +109,7 @@
             comboBoxBuscarPor.Location = new Point(12, 130);
             comboBoxBuscarPor.Name = "comboBoxBuscarPor";
             comboBoxBuscarPor.Size = new Size(136, 28);
-            comboBoxBuscarPor.TabIndex = 6;
+            comboBoxBuscarPor.TabIndex = 1;
             // 
             // panel2
             // 
@@ -144,7 +144,7 @@
             buttonAjuda.Location = new Point(3, 3);
             buttonAjuda.Name = "buttonAjuda";
             buttonAjuda.Size = new Size(58, 50);
-            buttonAjuda.TabIndex = 23;
+            buttonAjuda.TabIndex = 0;
             buttonAjuda.Text = "?";
             buttonAjuda.UseVisualStyleBackColor = false;
             buttonAjuda.Click += buttonAjuda_Click;
@@ -187,7 +187,7 @@
             dataGridViewCategoria.RowHeadersWidth = 51;
             dataGridViewCategoria.RowTemplate.Height = 29;
             dataGridViewCategoria.Size = new Size(553, 294);
-            dataGridViewCategoria.TabIndex = 3;
+            dataGridViewCategoria.TabIndex = 5;
             dataGridViewCategoria.DoubleClick += dataGridViewCategoria_DoubleClick;
             // 
             // tipoDataGridViewTextBoxColumn
@@ -241,7 +241,7 @@
             panel3.Location = new Point(0, 472);
             panel3.Name = "panel3";
             panel3.Size = new Size(583, 50);
-            panel3.TabIndex = 4;
+            panel3.TabIndex = 6;
             // 
             // buttonInserir
             // 
