@@ -32,6 +32,10 @@ namespace BLL
         {
             new VendaDAL().Excluir(_id);
         }
+        public Estatistica BuscarReceita(DateTime inicio, DateTime fim)
+        {
+            return new VendaDAL().BuscarReceita(inicio, fim);
+        }
 
     }
 }
