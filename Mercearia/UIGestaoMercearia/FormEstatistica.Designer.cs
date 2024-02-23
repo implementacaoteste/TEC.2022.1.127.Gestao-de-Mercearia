@@ -121,7 +121,7 @@
             labelSaldo.AutoSize = true;
             labelSaldo.DataBindings.Add(new Binding("Text", bindingSourceEstatistica, "Saldo", true));
             labelSaldo.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSaldo.ForeColor = Color.White;
+            labelSaldo.ForeColor = Color.Lime;
             labelSaldo.Location = new Point(391, 55);
             labelSaldo.Name = "labelSaldo";
             labelSaldo.Size = new Size(76, 37);
