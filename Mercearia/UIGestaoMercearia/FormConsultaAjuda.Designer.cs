@@ -649,6 +649,8 @@
             Controls.Add(panel5);
             Controls.Add(panel4);
             ForeColor = Color.Gainsboro;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FormConsultaAjuda";
             ShowIcon = false;
             StartPosition = FormStartPosition.Manual;
