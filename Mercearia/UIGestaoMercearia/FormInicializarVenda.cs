@@ -30,6 +30,7 @@ namespace UIGestaoMercearia
                 textBoxQuantidade.Text = "1";
                 labelNomeProduto.Text = "NOME DO PRODUTO";
                 labelSubtotal.Text = "00,00";
+                Subtotal2.Text = "00,00";
 
                 bindingSourceVenda.CancelEdit();
                 bindingSourceVenda.AddNew();
