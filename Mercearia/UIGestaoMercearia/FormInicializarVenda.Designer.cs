@@ -217,6 +217,7 @@
             textBoxQuantidade.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxQuantidade.Location = new Point(1024, 257);
             textBoxQuantidade.Name = "textBoxQuantidade";
+            textBoxQuantidade.ReadOnly = true;
             textBoxQuantidade.Size = new Size(179, 72);
             textBoxQuantidade.TabIndex = 10;
             textBoxQuantidade.Text = "1";
@@ -400,6 +401,7 @@
             Subtotal2.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
             Subtotal2.Location = new Point(458, 718);
             Subtotal2.Name = "Subtotal2";
+            Subtotal2.ReadOnly = true;
             Subtotal2.Size = new Size(333, 72);
             Subtotal2.TabIndex = 24;
             Subtotal2.Text = "00,00";
