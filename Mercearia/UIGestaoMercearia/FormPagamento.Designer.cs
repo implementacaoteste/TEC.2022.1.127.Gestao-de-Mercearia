@@ -50,6 +50,7 @@
             buttonExcluir = new Button();
             buttonSelecionar = new Button();
             buttonAlterar = new Button();
+            buttonAjuda = new Button();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCategoria).BeginInit();
@@ -124,6 +125,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(50, 153, 204);
+            panel1.Controls.Add(buttonAjuda);
             panel1.Controls.Add(label4);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -285,6 +287,20 @@
             buttonAlterar.UseVisualStyleBackColor = false;
             buttonAlterar.Click += buttonAlterar_Click;
             // 
+            // buttonAjuda
+            // 
+            buttonAjuda.BackColor = Color.FromArgb(50, 153, 204);
+            buttonAjuda.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonAjuda.Cursor = Cursors.Help;
+            buttonAjuda.Font = new Font("Swis721 Blk BT", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAjuda.ForeColor = Color.White;
+            buttonAjuda.Location = new Point(3, 3);
+            buttonAjuda.Name = "buttonAjuda";
+            buttonAjuda.Size = new Size(58, 50);
+            buttonAjuda.TabIndex = 23;
+            buttonAjuda.Text = "?";
+            buttonAjuda.UseVisualStyleBackColor = false;
+            // 
             // FormPagamento
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -342,5 +358,6 @@
         private DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private DataGridViewCheckBoxColumn trocoDataGridViewCheckBoxColumn;
+        private Button buttonAjuda;
     }
 }
