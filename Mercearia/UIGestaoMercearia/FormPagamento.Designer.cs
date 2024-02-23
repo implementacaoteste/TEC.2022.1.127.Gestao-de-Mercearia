@@ -36,6 +36,7 @@
             comboBoxBuscarPor = new ComboBox();
             panel2 = new Panel();
             panel1 = new Panel();
+            buttonAjuda = new Button();
             label4 = new Label();
             label3 = new Label();
             dataGridViewCategoria = new DataGridView();
@@ -50,7 +51,6 @@
             buttonExcluir = new Button();
             buttonSelecionar = new Button();
             buttonAlterar = new Button();
-            buttonAjuda = new Button();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCategoria).BeginInit();
@@ -132,6 +132,21 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(583, 83);
             panel1.TabIndex = 0;
+            // 
+            // buttonAjuda
+            // 
+            buttonAjuda.BackColor = Color.FromArgb(50, 153, 204);
+            buttonAjuda.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonAjuda.Cursor = Cursors.Help;
+            buttonAjuda.Font = new Font("Swis721 Blk BT", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAjuda.ForeColor = Color.White;
+            buttonAjuda.Location = new Point(3, 3);
+            buttonAjuda.Name = "buttonAjuda";
+            buttonAjuda.Size = new Size(58, 50);
+            buttonAjuda.TabIndex = 23;
+            buttonAjuda.Text = "?";
+            buttonAjuda.UseVisualStyleBackColor = false;
+            buttonAjuda.Click += buttonAjuda_Click;
             // 
             // label4
             // 
@@ -286,20 +301,6 @@
             buttonAlterar.Text = "&Alterar";
             buttonAlterar.UseVisualStyleBackColor = false;
             buttonAlterar.Click += buttonAlterar_Click;
-            // 
-            // buttonAjuda
-            // 
-            buttonAjuda.BackColor = Color.FromArgb(50, 153, 204);
-            buttonAjuda.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonAjuda.Cursor = Cursors.Help;
-            buttonAjuda.Font = new Font("Swis721 Blk BT", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonAjuda.ForeColor = Color.White;
-            buttonAjuda.Location = new Point(3, 3);
-            buttonAjuda.Name = "buttonAjuda";
-            buttonAjuda.Size = new Size(58, 50);
-            buttonAjuda.TabIndex = 23;
-            buttonAjuda.Text = "?";
-            buttonAjuda.UseVisualStyleBackColor = false;
             // 
             // FormPagamento
             // 

@@ -172,23 +172,27 @@ namespace UIGestaoMercearia
         private void textBoxBuscarPor_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-            {
                 buttonSelecionar_Click(sender, e);
-            }
             else if (e.KeyCode == Keys.Down)
-            {
                 bindingSourcePagamento.MoveNext();
-            }
             else if (e.KeyCode == Keys.Up)
-            {
                 bindingSourcePagamento.MovePrevious();
-            }
+            else if (e.KeyCode == Keys.F1)
+                buttonAjuda_Click(sender, e);
         }
 
         private void FormPagamento_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
+        }
+
+        private void buttonAjuda_Click(object sender, EventArgs e)
+        {
+            using (FormConsultaAjuda frm = new FormConsultaAjuda())
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }

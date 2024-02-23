@@ -92,13 +92,11 @@ namespace UIGestaoMercearia
         private void textBoxCodigodeBarras_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F12)
-            {
                 buttonFinalizarVenda_Click(sender, e);
-            }
             if (e.KeyCode == Keys.F11)
-            {
                 buttonCancelar_Click(sender, e);
-            }
+            else if (e.KeyCode == Keys.F1)
+                buttonAjuda_Click(sender, e);
             else if (e.KeyCode == Keys.Escape)
                 Close();
         }
@@ -176,7 +174,15 @@ namespace UIGestaoMercearia
 
         private void pictureBoxAjuda_Click(object sender, EventArgs e)
         {
-        
+
+        }
+
+        private void buttonAjuda_Click(object sender, EventArgs e)
+        {
+            using (FormConsultaAjuda frm = new FormConsultaAjuda())
+            {
+                frm.ShowDialog();
+            }
         }
     }
 }

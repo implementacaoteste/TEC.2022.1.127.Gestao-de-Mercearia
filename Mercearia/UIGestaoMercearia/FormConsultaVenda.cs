@@ -142,10 +142,24 @@ namespace UIGestaoMercearia
                 new VendaBLL().Excluir(id);
                 bindingSourceVenda.RemoveCurrent();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void buttonAjuda_Click(object sender, EventArgs e)
+        {
+            using (FormConsultaAjuda frm = new FormConsultaAjuda())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void buttonAjuda_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+                buttonAjuda_Click(sender, e);
         }
     }
 }

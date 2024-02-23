@@ -40,6 +40,7 @@
             comboBoxVenda = new ComboBox();
             label1 = new Label();
             panel2 = new Panel();
+            buttonAjuda = new Button();
             pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
             DataVenda = new DataGridViewTextBoxColumn();
@@ -169,11 +170,28 @@
             // 
             panel2.BackColor = Color.FromArgb(50, 153, 204);
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(buttonAjuda);
             panel2.Controls.Add(pictureBox1);
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(1116, 76);
             panel2.TabIndex = 0;
+            // 
+            // buttonAjuda
+            // 
+            buttonAjuda.BackColor = Color.FromArgb(50, 153, 204);
+            buttonAjuda.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonAjuda.Cursor = Cursors.Help;
+            buttonAjuda.Font = new Font("Swis721 Blk BT", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAjuda.ForeColor = Color.White;
+            buttonAjuda.Location = new Point(10, 4);
+            buttonAjuda.Name = "buttonAjuda";
+            buttonAjuda.Size = new Size(76, 60);
+            buttonAjuda.TabIndex = 41;
+            buttonAjuda.Text = "?";
+            buttonAjuda.UseVisualStyleBackColor = false;
+            buttonAjuda.Click += buttonAjuda_Click;
+            buttonAjuda.KeyDown += buttonAjuda_KeyDown;
             // 
             // pictureBox1
             // 
@@ -334,5 +352,6 @@
         private DataGridViewTextBoxColumn IdFormaPagamento;
         private DataGridViewTextBoxColumn IdUsuario;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private Button buttonAjuda;
     }
 }
