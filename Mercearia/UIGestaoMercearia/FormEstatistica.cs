@@ -31,9 +31,9 @@ namespace UIGestaoMercearia
             bindingSourceEstatistica.DataSource = new VendaBLL().BuscarReceita(dataInicio, dataFim);
 
 
-            labelGanhos.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Ganhos);
-            labelGastos.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Gastos);
-            labelSaldo.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Saldo);
+            labelGanhos.Text = ((Estatistica)bindingSourceEstatistica.Current).Ganhos.ToString("C");
+            labelGastos.Text = ((Estatistica)bindingSourceEstatistica.Current).Gastos.ToString("C");
+            labelSaldo.Text = ((Estatistica)bindingSourceEstatistica.Current).Saldo.ToString("C");
             //   estatistica = new VendaBLL().BuscarReceita(dataInicio, dataFim);
 
 
@@ -55,9 +55,9 @@ namespace UIGestaoMercearia
             DateTime dataFim = dateTimePickerFim.Value;
             bindingSourceEstatistica.DataSource = new VendaBLL().BuscarReceita(dataInicio, dataFim);
 
-            labelGanhos.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Ganhos);
-            labelGastos.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Gastos);
-            labelSaldo.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Saldo);
+            labelGanhos.Text = ((Estatistica)bindingSourceEstatistica.Current).Ganhos.ToString("C");
+            labelGastos.Text = ((Estatistica)bindingSourceEstatistica.Current).Gastos.ToString("C");
+            labelSaldo.Text = ((Estatistica)bindingSourceEstatistica.Current).Saldo.ToString("C");
         }
     }
 }

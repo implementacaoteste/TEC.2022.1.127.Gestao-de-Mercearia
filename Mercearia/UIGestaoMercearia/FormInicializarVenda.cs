@@ -113,6 +113,7 @@ namespace UIGestaoMercearia
             itemVendaListBindingSource.AddNew();
             ((ItemVenda)itemVendaListBindingSource.Current).Produto = produto;
             ((ItemVenda)itemVendaListBindingSource.Current).ValorUnitario = produto.Preco;
+            ((ItemVenda)itemVendaListBindingSource.Current).CustoProduto = produto.Custo;
             ((ItemVenda)itemVendaListBindingSource.Current).Quantidade = Convert.ToDouble(textBoxQuantidade.Text);
             ((ItemVenda)itemVendaListBindingSource.Current).SubTotal = ((ItemVenda)itemVendaListBindingSource.Current).Quantidade * ((ItemVenda)itemVendaListBindingSource.Current).ValorUnitario;
             ((Venda)bindingSourceVenda.Current).Total += ((ItemVenda)itemVendaListBindingSource.Current).SubTotal;
