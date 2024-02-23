@@ -60,9 +60,9 @@
             label1.ForeColor = SystemColors.ControlLightLight;
             label1.Location = new Point(56, 9);
             label1.Name = "label1";
-            label1.Size = new Size(467, 52);
+            label1.Size = new Size(459, 52);
             label1.TabIndex = 0;
-            label1.Text = "Estatística de Ganhos";
+            label1.Text = "Estatística de Vendas";
             // 
             // panel1
             // 
