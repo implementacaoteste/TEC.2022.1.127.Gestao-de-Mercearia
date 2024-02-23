@@ -281,7 +281,7 @@
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(-17, 0);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
             label1.Size = new Size(987, 46);
             label1.TabIndex = 0;
