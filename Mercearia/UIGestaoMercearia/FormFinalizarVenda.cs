@@ -64,7 +64,7 @@ namespace UIGestaoMercearia
         {
             double troco;
 
-            if (FormaPagamento.Id == 1 && Convert.ToDouble(textBoxValorPago.Text) != 0)
+            if (!String.IsNullOrEmpty(textBoxValorPago.Text) && FormaPagamento.Id == 1 && Convert.ToDouble(textBoxValorPago.Text) != 0)
             {
                 troco = Convert.ToDouble(textBoxValorPago.Text) - totalVenda;
                 labelTroco.Text = troco.ToString();
