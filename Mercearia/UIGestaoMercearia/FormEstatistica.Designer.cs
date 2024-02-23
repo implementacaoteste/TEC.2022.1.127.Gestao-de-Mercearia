@@ -35,6 +35,7 @@
             labelGs = new Label();
             labelG = new Label();
             labelSaldo = new Label();
+            bindingSourceEstatistica = new BindingSource(components);
             labelGastos = new Label();
             labelGanhos = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -45,11 +46,10 @@
             labelDataFim = new Label();
             labelPeriodo = new Label();
             panel5 = new Panel();
-            bindingSourceEstatistica = new BindingSource(components);
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceEstatistica).BeginInit();
             panel2.SuspendLayout();
             panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)bindingSourceEstatistica).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -76,7 +76,7 @@
             panel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             panel1.Location = new Point(11, 92);
             panel1.Name = "panel1";
-            panel1.Size = new Size(543, 130);
+            panel1.Size = new Size(587, 130);
             panel1.TabIndex = 1;
             // 
             // labelS
@@ -85,7 +85,7 @@
             labelS.AutoSize = true;
             labelS.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             labelS.ForeColor = Color.White;
-            labelS.Location = new Point(357, 20);
+            labelS.Location = new Point(408, 20);
             labelS.Name = "labelS";
             labelS.Size = new Size(82, 29);
             labelS.TabIndex = 0;
@@ -97,7 +97,7 @@
             labelGs.AutoSize = true;
             labelGs.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             labelGs.ForeColor = Color.White;
-            labelGs.Location = new Point(183, 20);
+            labelGs.Location = new Point(254, 20);
             labelGs.Name = "labelGs";
             labelGs.Size = new Size(94, 29);
             labelGs.TabIndex = 0;
@@ -109,7 +109,7 @@
             labelG.AutoSize = true;
             labelG.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             labelG.ForeColor = Color.White;
-            labelG.Location = new Point(17, 20);
+            labelG.Location = new Point(71, 20);
             labelG.Name = "labelG";
             labelG.Size = new Size(102, 29);
             labelG.TabIndex = 0;
@@ -120,24 +120,28 @@
             labelSaldo.Anchor = AnchorStyles.Top;
             labelSaldo.AutoSize = true;
             labelSaldo.DataBindings.Add(new Binding("Text", bindingSourceEstatistica, "Saldo", true));
-            labelSaldo.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            labelSaldo.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
             labelSaldo.ForeColor = Color.White;
-            labelSaldo.Location = new Point(357, 58);
+            labelSaldo.Location = new Point(391, 55);
             labelSaldo.Name = "labelSaldo";
-            labelSaldo.Size = new Size(110, 51);
+            labelSaldo.Size = new Size(76, 37);
             labelSaldo.TabIndex = 1;
             labelSaldo.Text = "R$ 0";
+            // 
+            // bindingSourceEstatistica
+            // 
+            bindingSourceEstatistica.DataSource = typeof(Models.Estatistica);
             // 
             // labelGastos
             // 
             labelGastos.Anchor = AnchorStyles.Top;
             labelGastos.AutoSize = true;
             labelGastos.DataBindings.Add(new Binding("Text", bindingSourceEstatistica, "Gastos", true));
-            labelGastos.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            labelGastos.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
             labelGastos.ForeColor = Color.White;
-            labelGastos.Location = new Point(183, 58);
+            labelGastos.Location = new Point(233, 58);
             labelGastos.Name = "labelGastos";
-            labelGastos.Size = new Size(110, 51);
+            labelGastos.Size = new Size(76, 37);
             labelGastos.TabIndex = 1;
             labelGastos.Text = "R$ 0";
             // 
@@ -146,11 +150,11 @@
             labelGanhos.Anchor = AnchorStyles.Top;
             labelGanhos.AutoSize = true;
             labelGanhos.DataBindings.Add(new Binding("Text", bindingSourceEstatistica, "Ganhos", true));
-            labelGanhos.Font = new Font("Century Gothic", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            labelGanhos.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
             labelGanhos.ForeColor = Color.White;
-            labelGanhos.Location = new Point(17, 58);
+            labelGanhos.Location = new Point(55, 60);
             labelGanhos.Name = "labelGanhos";
-            labelGanhos.Size = new Size(110, 51);
+            labelGanhos.Size = new Size(76, 37);
             labelGanhos.TabIndex = 1;
             labelGanhos.Text = "R$ 0";
             // 
@@ -163,21 +167,21 @@
             panel2.Controls.Add(labelDataFim);
             panel2.Controls.Add(labelPeriodo);
             panel2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            panel2.Location = new Point(11, 240);
+            panel2.Location = new Point(11, 228);
             panel2.Name = "panel2";
-            panel2.Size = new Size(543, 388);
+            panel2.Size = new Size(587, 430);
             panel2.TabIndex = 2;
             // 
             // dateTimePickerFim
             // 
-            dateTimePickerFim.Location = new Point(60, 279);
+            dateTimePickerFim.Location = new Point(71, 279);
             dateTimePickerFim.Name = "dateTimePickerFim";
             dateTimePickerFim.Size = new Size(407, 34);
             dateTimePickerFim.TabIndex = 1;
             // 
             // dateTimePickerInicio
             // 
-            dateTimePickerInicio.Location = new Point(60, 154);
+            dateTimePickerInicio.Location = new Point(71, 154);
             dateTimePickerInicio.Name = "dateTimePickerInicio";
             dateTimePickerInicio.Size = new Size(405, 34);
             dateTimePickerInicio.TabIndex = 1;
@@ -188,7 +192,7 @@
             labelDataInicio.BackColor = Color.FromArgb(50, 153, 204);
             labelDataInicio.Font = new Font("Britannic Bold", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
             labelDataInicio.ForeColor = SystemColors.ControlLightLight;
-            labelDataInicio.Location = new Point(183, 99);
+            labelDataInicio.Location = new Point(208, 99);
             labelDataInicio.Name = "labelDataInicio";
             labelDataInicio.Size = new Size(138, 52);
             labelDataInicio.TabIndex = 0;
@@ -200,7 +204,7 @@
             labelDataFim.BackColor = Color.FromArgb(50, 153, 204);
             labelDataFim.Font = new Font("Britannic Bold", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
             labelDataFim.ForeColor = SystemColors.ControlLightLight;
-            labelDataFim.Location = new Point(183, 224);
+            labelDataFim.Location = new Point(208, 224);
             labelDataFim.Name = "labelDataFim";
             labelDataFim.Size = new Size(123, 52);
             labelDataFim.TabIndex = 0;
@@ -212,7 +216,7 @@
             labelPeriodo.BackColor = Color.FromArgb(50, 153, 204);
             labelPeriodo.Font = new Font("Britannic Bold", 28.2F, FontStyle.Regular, GraphicsUnit.Point);
             labelPeriodo.ForeColor = SystemColors.ControlLightLight;
-            labelPeriodo.Location = new Point(60, 12);
+            labelPeriodo.Location = new Point(71, 12);
             labelPeriodo.Name = "labelPeriodo";
             labelPeriodo.Size = new Size(429, 52);
             labelPeriodo.TabIndex = 0;
@@ -228,16 +232,12 @@
             panel5.Size = new Size(615, 81);
             panel5.TabIndex = 3;
             // 
-            // bindingSourceEstatistica
-            // 
-            bindingSourceEstatistica.DataSource = typeof(Models.Estatistica);
-            // 
             // FormEstatistica
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(566, 638);
+            ClientSize = new Size(610, 670);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(panel5);
@@ -253,11 +253,11 @@
             KeyDown += FormEstatistica_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceEstatistica).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)bindingSourceEstatistica).EndInit();
             ResumeLayout(false);
         }
 
