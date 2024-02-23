@@ -470,7 +470,6 @@ namespace UIGestaoMercearia
             // 
             // buttonAjuda
             // 
-            buttonAjuda.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             buttonAjuda.BackColor = Color.FromArgb(50, 153, 204);
             buttonAjuda.BackgroundImageLayout = ImageLayout.Zoom;
             buttonAjuda.Cursor = Cursors.Help;

@@ -31,5 +31,20 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label41_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

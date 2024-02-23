@@ -45,6 +45,7 @@ namespace UIGestaoMercearia
             labelTotal = new Label();
             labelExTroco = new Label();
             buttonCadastrarCliente = new Button();
+            buttonAjuda = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).BeginInit();
             SuspendLayout();
@@ -216,12 +217,27 @@ namespace UIGestaoMercearia
             buttonCadastrarCliente.UseVisualStyleBackColor = true;
             buttonCadastrarCliente.Click += button1_Click;
             // 
+            // buttonAjuda
+            // 
+            buttonAjuda.BackColor = Color.FromArgb(50, 153, 204);
+            buttonAjuda.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonAjuda.Cursor = Cursors.Help;
+            buttonAjuda.Font = new Font("Swis721 Blk BT", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAjuda.ForeColor = Color.White;
+            buttonAjuda.Location = new Point(12, 12);
+            buttonAjuda.Name = "buttonAjuda";
+            buttonAjuda.Size = new Size(76, 60);
+            buttonAjuda.TabIndex = 40;
+            buttonAjuda.Text = "?";
+            buttonAjuda.UseVisualStyleBackColor = false;
+            // 
             // FormFinalizarVenda
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(50, 153, 204);
             ClientSize = new Size(1143, 844);
+            Controls.Add(buttonAjuda);
             Controls.Add(buttonCadastrarCliente);
             Controls.Add(label3);
             Controls.Add(labelTroco);
@@ -270,5 +286,6 @@ namespace UIGestaoMercearia
         private Label labelExTroco;
         private Button button1;
         private Button buttonCadastrarCliente;
+        private Button buttonAjuda;
     }
 }
