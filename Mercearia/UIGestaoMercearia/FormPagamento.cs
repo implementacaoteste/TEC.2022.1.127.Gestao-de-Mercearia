@@ -139,10 +139,12 @@ namespace UIGestaoMercearia
 
                 pagamento = (FormaPagamento)bindingSourcePagamento.Current;
                 this.DialogResult = DialogResult.OK;
+                Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                Close();
             }
         }
 
