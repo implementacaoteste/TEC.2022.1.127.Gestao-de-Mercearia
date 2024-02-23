@@ -228,9 +228,9 @@
             // 
             textBoxCodigodeBarras.BackColor = Color.WhiteSmoke;
             textBoxCodigodeBarras.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            textBoxCodigodeBarras.Location = new Point(480, 244);
+            textBoxCodigodeBarras.Location = new Point(445, 244);
             textBoxCodigodeBarras.Name = "textBoxCodigodeBarras";
-            textBoxCodigodeBarras.Size = new Size(254, 87);
+            textBoxCodigodeBarras.Size = new Size(289, 87);
             textBoxCodigodeBarras.TabIndex = 11;
             textBoxCodigodeBarras.KeyDown += textBoxCodigodeBarras_KeyDown;
             textBoxCodigodeBarras.KeyPress += textBoxCodigodeBarras_KeyPress;
