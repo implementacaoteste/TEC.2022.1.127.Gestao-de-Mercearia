@@ -62,7 +62,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(50, 153, 204);
+            label2.ForeColor = Color.White;
             label2.Location = new Point(154, 108);
             label2.Name = "label2";
             label2.Size = new Size(176, 18);
@@ -73,7 +73,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(50, 153, 204);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(12, 109);
             label1.Name = "label1";
             label1.Size = new Size(111, 18);
@@ -124,10 +124,11 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(50, 153, 204);
+            panel1.BackColor = Color.White;
             panel1.Controls.Add(buttonAjuda);
             panel1.Controls.Add(label4);
             panel1.Dock = DockStyle.Top;
+            panel1.ForeColor = Color.FromArgb(50, 153, 204);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(583, 83);
@@ -152,7 +153,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
+            label4.ForeColor = Color.FromArgb(50, 153, 204);
             label4.Location = new Point(67, 18);
             label4.Name = "label4";
             label4.Size = new Size(426, 44);
@@ -239,7 +240,7 @@
             panel3.Controls.Add(buttonAlterar);
             panel3.Location = new Point(0, 472);
             panel3.Name = "panel3";
-            panel3.Size = new Size(579, 50);
+            panel3.Size = new Size(583, 50);
             panel3.TabIndex = 4;
             // 
             // buttonInserir
@@ -306,6 +307,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(50, 153, 204);
             CancelButton = buttonCancelar;
             ClientSize = new Size(583, 520);
             Controls.Add(label2);
