@@ -422,6 +422,11 @@ GO
 INSERT INTO PermissaoGrupoUsuario (IdGrupoUsuario, IdPermissao)VALUES(2, 1)
 INSERT INTO PermissaoGrupoUsuario (IdGrupoUsuario, IdPermissao)VALUES(2, 2)
 INSERT INTO PermissaoGrupoUsuario (IdGrupoUsuario, IdPermissao)VALUES(2, 3)
+INSERT INTO PermissaoGrupoUsuario (IdGrupoUsuario, IdPermissao)VALUES(2, 11)
+INSERT INTO PermissaoGrupoUsuario (IdGrupoUsuario, IdPermissao)VALUES(2, 35)
+INSERT INTO PermissaoGrupoUsuario (IdGrupoUsuario, IdPermissao)VALUES(2, 39)
+INSERT INTO PermissaoGrupoUsuario (IdGrupoUsuario, IdPermissao)VALUES(2, 43)
+INSERT INTO PermissaoGrupoUsuario (IdGrupoUsuario, IdPermissao)VALUES(2, 44)
 GO
 INSERT INTO Fornecedor (Nome, Email, Telefone, Endereco, CEP) VALUES ('Alimentos LTDA', 'Altda@gmail.com', '639993542317', 'Rua X, Avenida Filadélfia', '887234-875')
 INSERT INTO Fornecedor (Nome, Email, Telefone, Endereco, CEP) VALUES ('Bebidas LTDA', 'Bltda@gmail.com', '61981856954', 'Rua Z, Avenida Filadélfia', '66690-690')
