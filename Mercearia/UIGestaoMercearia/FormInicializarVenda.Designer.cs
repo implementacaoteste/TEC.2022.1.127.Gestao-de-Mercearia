@@ -356,9 +356,10 @@
             // 
             labelpreco.Anchor = AnchorStyles.Top;
             labelpreco.AutoSize = true;
+            labelpreco.FlatStyle = FlatStyle.System;
             labelpreco.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
             labelpreco.ImageAlign = ContentAlignment.TopCenter;
-            labelpreco.Location = new Point(923, 258);
+            labelpreco.Location = new Point(836, 245);
             labelpreco.Name = "labelpreco";
             labelpreco.Size = new Size(87, 71);
             labelpreco.TabIndex = 0;
