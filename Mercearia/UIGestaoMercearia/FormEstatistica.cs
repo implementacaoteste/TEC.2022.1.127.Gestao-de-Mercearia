@@ -29,9 +29,6 @@ namespace UIGestaoMercearia
             DateTime dataFim = dateTimePickerFim.Value;
             bindingSourceEstatistica.DataSource = new VendaBLL().BuscarReceita(dataInicio, dataFim);
             //$" {frm.produto.Preco:C}";
-            //
-
-            labelGanhos = 
         }
 
         private void FormEstatistica_KeyDown(object sender, KeyEventArgs e)
