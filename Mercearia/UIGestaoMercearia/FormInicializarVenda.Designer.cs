@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+
             panel1 = new Panel();
             buttonAjuda = new Button();
             labelPDV = new Label();
@@ -215,10 +217,11 @@
             textBoxQuantidade.BackColor = Color.WhiteSmoke;
             textBoxQuantidade.BorderStyle = BorderStyle.None;
             textBoxQuantidade.Cursor = Cursors.IBeam;
-            textBoxQuantidade.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            textBoxQuantidade.Location = new Point(1037, 245);
+
+            textBoxQuantidade.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxQuantidade.Location = new Point(1218, 245);
             textBoxQuantidade.Name = "textBoxQuantidade";
-            textBoxQuantidade.Size = new Size(179, 80);
+            textBoxQuantidade.Size = new Size(179, 72);
             textBoxQuantidade.TabIndex = 10;
             textBoxQuantidade.Text = "1";
             textBoxQuantidade.TextAlign = HorizontalAlignment.Right;
@@ -298,10 +301,11 @@
             // subTotalDataGridViewTextBoxColumn
             // 
             subTotalDataGridViewTextBoxColumn.DataPropertyName = "SubTotal";
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.TopRight;
-            dataGridViewCellStyle4.Format = "C2";
-            dataGridViewCellStyle4.NullValue = null;
-            subTotalDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.TopRight;
+            dataGridViewCellStyle7.Format = "C2";
+            dataGridViewCellStyle7.NullValue = null;
+            subTotalDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
             subTotalDataGridViewTextBoxColumn.HeaderText = "SubTotal";
             subTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
             subTotalDataGridViewTextBoxColumn.Name = "subTotalDataGridViewTextBoxColumn";
@@ -311,8 +315,9 @@
             // quantidadeDataGridViewTextBoxColumn
             // 
             quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.TopRight;
-            quantidadeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.TopRight;
+            quantidadeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
             quantidadeDataGridViewTextBoxColumn.HeaderText = "Quantidade";
             quantidadeDataGridViewTextBoxColumn.MinimumWidth = 6;
             quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
@@ -322,8 +327,8 @@
             // dataGridViewTextBoxColumn2
             // 
             dataGridViewTextBoxColumn2.DataPropertyName = "IdProduto";
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.TopRight;
-            dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.TopRight;
+            dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle9;
             dataGridViewTextBoxColumn2.HeaderText = "IdProduto";
             dataGridViewTextBoxColumn2.MinimumWidth = 6;
             dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
@@ -356,9 +361,10 @@
             // 
             labelpreco.Anchor = AnchorStyles.Top;
             labelpreco.AutoSize = true;
+            labelpreco.FlatStyle = FlatStyle.System;
             labelpreco.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
             labelpreco.ImageAlign = ContentAlignment.TopCenter;
-            labelpreco.Location = new Point(832, 258);
+            labelpreco.Location = new Point(836, 245);
             labelpreco.Name = "labelpreco";
             labelpreco.Size = new Size(87, 71);
             labelpreco.TabIndex = 0;
@@ -391,11 +397,12 @@
             subtotal1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             subtotal1.AutoSize = true;
             subtotal1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            subtotal1.Location = new Point(489, 683);
+            subtotal1.Location = new Point(458, 683);
             subtotal1.Name = "subtotal1";
-            subtotal1.Size = new Size(108, 31);
+            subtotal1.Size = new Size(125, 31);
             subtotal1.TabIndex = 23;
-            subtotal1.Text = "SubTotal";
+            subtotal1.Text = "SUBTOTAL";
+            subtotal1.Click += subtotal1_Click;
             // 
             // Subtotal2
             // 
@@ -403,10 +410,10 @@
             Subtotal2.BackColor = Color.WhiteSmoke;
             Subtotal2.BorderStyle = BorderStyle.None;
             Subtotal2.Cursor = Cursors.IBeam;
-            Subtotal2.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            Subtotal2.Location = new Point(479, 717);
+            Subtotal2.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            Subtotal2.Location = new Point(458, 718);
             Subtotal2.Name = "Subtotal2";
-            Subtotal2.Size = new Size(179, 80);
+            Subtotal2.Size = new Size(179, 72);
             Subtotal2.TabIndex = 24;
             Subtotal2.Text = "00,00";
             // 
