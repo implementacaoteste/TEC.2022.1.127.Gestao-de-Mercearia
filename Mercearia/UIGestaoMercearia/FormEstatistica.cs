@@ -17,6 +17,7 @@ namespace UIGestaoMercearia
     public partial class FormEstatistica : Form
     {
         Estatistica estatistica;
+        //Venda venda;
         public FormEstatistica()
         {
             InitializeComponent();
@@ -28,19 +29,35 @@ namespace UIGestaoMercearia
             DateTime dataInicio = dateTimePickerInicio.Value = dateTimePickerInicio.Value.AddDays(-30);
             DateTime dataFim = dateTimePickerFim.Value;
             bindingSourceEstatistica.DataSource = new VendaBLL().BuscarReceita(dataInicio, dataFim);
-            estatistica = new VendaBLL().BuscarReceita(dataInicio, dataFim);
-            //$" {frm.produto.Preco:C}";
-            //
 
-            labelGanhos.Text = estatistica.Ganhos.ToString("C");
+
+            labelGanhos.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Ganhos);
+            labelGastos.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Gastos);
+            labelSaldo.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Saldo);
+            //   estatistica = new VendaBLL().BuscarReceita(dataInicio, dataFim);
+
+
+            //((Estatistica)bindingSourceEstatistica.Current).Ganhos = );
+            /*labelGanhos.Text = estatistica.Ganhos.ToString("C");
             labelGastos.Text = estatistica.Gastos.ToString("C");
-            labelSaldo.Text = estatistica.Saldo.ToString("C");
+            labelSaldo.Text = estatistica.Saldo.ToString("C");*/
         }
 
         private void FormEstatistica_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
+        }
+
+        private void dateTimePickerInicio_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime dataInicio = dateTimePickerInicio.Value = dateTimePickerInicio.Value;
+            DateTime dataFim = dateTimePickerFim.Value;
+            bindingSourceEstatistica.DataSource = new VendaBLL().BuscarReceita(dataInicio, dataFim);
+
+            labelGanhos.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Ganhos);
+            labelGastos.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Gastos);
+            labelSaldo.Text = Convert.ToString(((Estatistica)bindingSourceEstatistica.Current).Saldo);
         }
     }
 }

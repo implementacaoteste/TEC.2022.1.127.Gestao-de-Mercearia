@@ -185,6 +185,7 @@
             dateTimePickerInicio.Name = "dateTimePickerInicio";
             dateTimePickerInicio.Size = new Size(405, 34);
             dateTimePickerInicio.TabIndex = 1;
+            dateTimePickerInicio.ValueChanged += dateTimePickerInicio_ValueChanged;
             // 
             // labelDataInicio
             // 
