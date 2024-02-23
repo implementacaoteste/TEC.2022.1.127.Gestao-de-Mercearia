@@ -261,7 +261,6 @@ namespace UIGestaoMercearia
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Load += FormFinalizarVenda_Load;
             KeyDown += FormFinalizarVenda_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSourceFinalizarVenda).EndInit();

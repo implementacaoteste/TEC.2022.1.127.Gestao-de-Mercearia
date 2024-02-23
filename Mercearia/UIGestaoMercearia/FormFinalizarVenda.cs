@@ -14,7 +14,6 @@ namespace UIGestaoMercearia
             FormaPagamento = _formaPagamento;
             AjustarLayout();
         }
-
         private void AjustarLayout()
         {
             if (FormaPagamento.Tipo.ToUpper() == "DINHEIRO")
@@ -42,9 +41,10 @@ namespace UIGestaoMercearia
                 labelTroco.Visible = false;
                 labelTotal.Visible = true;
                 buttonCadastrarCliente.Visible = false;
+                labelValorPago.Visible = false;
+                textBoxValorPago.Visible = false;
             }
         }
-
         private void textBoxValorPago_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Tab)
@@ -68,7 +68,6 @@ namespace UIGestaoMercearia
             {
                 troco = Convert.ToDouble(textBoxValorPago.Text) - totalVenda;
                 labelTroco.Text = troco.ToString();
-                
             }
         }
         private void buttonOk_Click(object sender, EventArgs e)
@@ -76,8 +75,6 @@ namespace UIGestaoMercearia
             MessageBox.Show("Venda Concluida com sucesso!");
             Close();
         }
-
-
         private void FormFinalizarVenda_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -111,12 +108,6 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
-
-        private void FormFinalizarVenda_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonBuscarFormaPagamento_Click(object sender, EventArgs e)
         {
             try
@@ -143,7 +134,6 @@ namespace UIGestaoMercearia
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void buttonAjuda_Click(object sender, EventArgs e)
         {
             using (FormConsultaAjuda frm = new FormConsultaAjuda())

@@ -189,5 +189,10 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
+
+        private void subtotal1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
