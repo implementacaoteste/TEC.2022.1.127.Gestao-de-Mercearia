@@ -72,6 +72,7 @@
             panel6 = new Panel();
             panel7 = new Panel();
             panel8 = new Panel();
+            label35 = new Label();
             panel10 = new Panel();
             panel9 = new Panel();
             panel1.SuspendLayout();
@@ -81,6 +82,7 @@
             panel5.SuspendLayout();
             panel6.SuspendLayout();
             panel7.SuspendLayout();
+            panel8.SuspendLayout();
             panel10.SuspendLayout();
             panel9.SuspendLayout();
             SuspendLayout();
@@ -93,7 +95,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(734, 68);
+            panel1.Size = new Size(739, 68);
             panel1.TabIndex = 1;
             // 
             // panel2
@@ -104,7 +106,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(734, 68);
+            panel2.Size = new Size(739, 68);
             panel2.TabIndex = 2;
             // 
             // panel3
@@ -114,7 +116,7 @@
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(734, 68);
+            panel3.Size = new Size(739, 68);
             panel3.TabIndex = 3;
             // 
             // label32
@@ -123,7 +125,7 @@
             label32.AutoSize = true;
             label32.Font = new Font("Britannic Bold", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label32.ForeColor = Color.White;
-            label32.Location = new Point(191, 9);
+            label32.Location = new Point(193, 9);
             label32.Name = "label32";
             label32.Size = new Size(358, 44);
             label32.TabIndex = 0;
@@ -243,9 +245,9 @@
             label10.ForeColor = Color.White;
             label10.Location = new Point(20, 90);
             label10.Name = "label10";
-            label10.Size = new Size(178, 28);
+            label10.Size = new Size(146, 28);
             label10.TabIndex = 13;
-            label10.Text = "F11 - Configuração";
+            label10.Text = "F11 - Estatística";
             // 
             // label12
             // 
@@ -255,9 +257,9 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(20, 118);
             label12.Name = "label12";
-            label12.Size = new Size(149, 28);
+            label12.Size = new Size(181, 28);
             label12.TabIndex = 14;
-            label12.Text = "F12 - Estatística";
+            label12.Text = "F12 - Configuração";
             // 
             // label13
             // 
@@ -505,7 +507,7 @@
             label33.BackColor = Color.WhiteSmoke;
             label33.Font = new Font("Britannic Bold", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point);
             label33.ForeColor = Color.FromArgb(50, 153, 204);
-            label33.Location = new Point(12, 85);
+            label33.Location = new Point(18, 87);
             label33.Name = "label33";
             label33.Size = new Size(185, 48);
             label33.TabIndex = 1;
@@ -561,9 +563,9 @@
             panel5.Controls.Add(label1);
             panel5.Controls.Add(label5);
             panel5.Controls.Add(label25);
-            panel5.Location = new Point(370, 583);
+            panel5.Location = new Point(369, 617);
             panel5.Name = "panel5";
-            panel5.Size = new Size(345, 204);
+            panel5.Size = new Size(353, 204);
             panel5.TabIndex = 0;
             // 
             // panel6
@@ -587,18 +589,31 @@
             panel7.Controls.Add(label9);
             panel7.Controls.Add(label13);
             panel7.Controls.Add(label14);
-            panel7.Location = new Point(370, 375);
+            panel7.Location = new Point(369, 409);
             panel7.Name = "panel7";
-            panel7.Size = new Size(345, 182);
+            panel7.Size = new Size(353, 182);
             panel7.TabIndex = 0;
             // 
             // panel8
             // 
             panel8.BackColor = Color.FromArgb(50, 153, 204);
+            panel8.Controls.Add(label35);
             panel8.Location = new Point(370, 156);
             panel8.Name = "panel8";
-            panel8.Size = new Size(345, 192);
+            panel8.Size = new Size(352, 230);
             panel8.TabIndex = 0;
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.BackColor = Color.FromArgb(50, 153, 204);
+            label35.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label35.ForeColor = Color.White;
+            label35.Location = new Point(26, 185);
+            label35.Name = "label35";
+            label35.Size = new Size(204, 28);
+            label35.TabIndex = 48;
+            label35.Text = "Enter - Mostrar Troco";
             // 
             // panel10
             // 
@@ -631,7 +646,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.WhiteSmoke;
-            ClientSize = new Size(734, 942);
+            ClientSize = new Size(739, 942);
             Controls.Add(label33);
             Controls.Add(label26);
             Controls.Add(label24);
@@ -649,11 +664,10 @@
             Controls.Add(panel5);
             Controls.Add(panel4);
             ForeColor = Color.Gainsboro;
-            MaximizeBox = false;
-            MinimizeBox = false;
             Name = "FormConsultaAjuda";
             ShowIcon = false;
             StartPosition = FormStartPosition.Manual;
+            WindowState = FormWindowState.Minimized;
             KeyDown += FormConsultaAjuda_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -669,6 +683,8 @@
             panel6.PerformLayout();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
             panel9.ResumeLayout(false);
@@ -725,5 +741,6 @@
         private Panel panel8;
         private Panel panel10;
         private Panel panel9;
+        private Label label35;
     }
 }
