@@ -399,9 +399,9 @@
             label22.ForeColor = Color.White;
             label22.Location = new Point(396, 285);
             label22.Name = "label22";
-            label22.Size = new Size(110, 28);
+            label22.Size = new Size(120, 28);
             label22.TabIndex = 27;
-            label22.Text = "12 - Salvar ";
+            label22.Text = "F12 - Salvar ";
             // 
             // label23
             // 
@@ -411,9 +411,9 @@
             label23.ForeColor = Color.White;
             label23.Location = new Point(396, 257);
             label23.Name = "label23";
-            label23.Size = new Size(308, 28);
+            label23.Size = new Size(318, 28);
             label23.TabIndex = 28;
-            label23.Text = "11 - Buscar Forma de Pagamento";
+            label23.Text = "F11 - Buscar Forma de Pagamento";
             // 
             // label24
             // 
@@ -423,9 +423,9 @@
             label24.ForeColor = Color.White;
             label24.Location = new Point(396, 232);
             label24.Name = "label24";
-            label24.Size = new Size(234, 28);
+            label24.Size = new Size(244, 28);
             label24.TabIndex = 29;
-            label24.Text = "10 - Cadastro de Cliente ";
+            label24.Text = "F10 - Cadastro de Cliente ";
             // 
             // label25
             // 
@@ -653,9 +653,9 @@
             ForeColor = Color.Gainsboro;
             Name = "FormConsultaAjuda";
             ShowIcon = false;
-            StartPosition = FormStartPosition.WindowsDefaultBounds;
-            WindowState = FormWindowState.Minimized;
+            StartPosition = FormStartPosition.Manual;
             Load += FormConsultaAjuda_Load;
+            KeyDown += FormConsultaAjuda_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

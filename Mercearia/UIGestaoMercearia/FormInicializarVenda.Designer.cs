@@ -33,6 +33,7 @@
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel1 = new Panel();
+            buttonAjuda = new Button();
             labelPDV = new Label();
             labelNomeProduto = new Label();
             panel2 = new Panel();
@@ -60,7 +61,6 @@
             panel4 = new Panel();
             subtotal1 = new Label();
             Subtotal2 = new TextBox();
-            buttonAjuda = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).BeginInit();
@@ -81,6 +81,21 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1472, 84);
             panel1.TabIndex = 2;
+            // 
+            // buttonAjuda
+            // 
+            buttonAjuda.BackColor = Color.FromArgb(50, 153, 204);
+            buttonAjuda.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonAjuda.Cursor = Cursors.Help;
+            buttonAjuda.Font = new Font("Swis721 Blk BT", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAjuda.ForeColor = Color.White;
+            buttonAjuda.Location = new Point(12, 9);
+            buttonAjuda.Name = "buttonAjuda";
+            buttonAjuda.Size = new Size(84, 67);
+            buttonAjuda.TabIndex = 23;
+            buttonAjuda.Text = "?";
+            buttonAjuda.UseVisualStyleBackColor = false;
+            buttonAjuda.Click += buttonAjuda_Click;
             // 
             // labelPDV
             // 
@@ -394,20 +409,6 @@
             Subtotal2.Size = new Size(179, 80);
             Subtotal2.TabIndex = 24;
             Subtotal2.Text = "00,00";
-            // 
-            // buttonAjuda
-            // 
-            buttonAjuda.BackColor = Color.FromArgb(50, 153, 204);
-            buttonAjuda.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonAjuda.Cursor = Cursors.Help;
-            buttonAjuda.Font = new Font("Swis721 Blk BT", 25.8000011F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonAjuda.ForeColor = Color.White;
-            buttonAjuda.Location = new Point(12, 9);
-            buttonAjuda.Name = "buttonAjuda";
-            buttonAjuda.Size = new Size(84, 67);
-            buttonAjuda.TabIndex = 23;
-            buttonAjuda.Text = "?";
-            buttonAjuda.UseVisualStyleBackColor = false;
             // 
             // FormPontoDeVenda
             // 

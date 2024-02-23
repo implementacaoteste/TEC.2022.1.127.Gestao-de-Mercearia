@@ -68,13 +68,12 @@ namespace UIGestaoMercearia
             {
                 troco = Convert.ToDouble(textBoxValorPago.Text) - totalVenda;
                 labelTroco.Text = troco.ToString();
-                MessageBox.Show("Venda Concluida com sucesso!");
-                Close();
+                
             }
         }
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Venda Concluída!");
+            MessageBox.Show("Venda Concluida com sucesso!");
             Close();
         }
 
@@ -89,6 +88,8 @@ namespace UIGestaoMercearia
                 buttonBuscarFormaPagamento_Click(sender, e);
             else if (e.KeyCode == Keys.F12)
                 buttonOk_Click(sender, e);
+            else if (e.KeyCode == Keys.F1)
+                buttonAjuda_Click(sender, e);
             else if (e.KeyCode == Keys.F10)
                 button1_Click(sender, e);
         }
@@ -140,6 +141,14 @@ namespace UIGestaoMercearia
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonAjuda_Click(object sender, EventArgs e)
+        {
+            using (FormConsultaAjuda frm = new FormConsultaAjuda())
+            {
+                frm.ShowDialog();
             }
         }
     }

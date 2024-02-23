@@ -46,5 +46,11 @@ namespace UIGestaoMercearia
         {
 
         }
+
+        private void FormConsultaAjuda_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

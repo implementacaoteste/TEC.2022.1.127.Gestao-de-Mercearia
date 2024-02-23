@@ -61,18 +61,11 @@ namespace UIGestaoMercearia
         private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F12)
-            {
                 pictureBoxEstatistica_Click(sender, e);
-            }
             else if (e.KeyCode == Keys.F11)
-            {
                 pictureBoxConfiguracao_Click(sender, e);
-
-            }
             else if(e.KeyCode == Keys.F1)
-            {
                 buttonAjuda_Click(sender, e);
-            }
             else if (e.KeyCode == Keys.Escape)
                 Close();
         }

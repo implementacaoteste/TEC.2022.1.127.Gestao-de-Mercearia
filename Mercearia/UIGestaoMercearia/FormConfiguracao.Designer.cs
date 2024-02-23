@@ -33,6 +33,7 @@
             buttonCancelar = new Button();
             panel3 = new Panel();
             panel4 = new Panel();
+            buttonAjuda = new Button();
             label7 = new Label();
             label10 = new Label();
             textBoxNovoNomeUsuario = new TextBox();
@@ -116,12 +117,29 @@
             // 
             panel4.BackColor = Color.FromArgb(50, 153, 204);
             panel4.BackgroundImageLayout = ImageLayout.Center;
+            panel4.Controls.Add(buttonAjuda);
             panel4.Controls.Add(label7);
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
             panel4.Size = new Size(455, 59);
             panel4.TabIndex = 0;
+            // 
+            // buttonAjuda
+            // 
+            buttonAjuda.BackColor = Color.FromArgb(50, 153, 204);
+            buttonAjuda.BackgroundImageLayout = ImageLayout.Zoom;
+            buttonAjuda.Cursor = Cursors.Help;
+            buttonAjuda.Font = new Font("Swis721 Blk BT", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAjuda.ForeColor = Color.White;
+            buttonAjuda.Location = new Point(3, 3);
+            buttonAjuda.Name = "buttonAjuda";
+            buttonAjuda.Size = new Size(57, 46);
+            buttonAjuda.TabIndex = 42;
+            buttonAjuda.Text = "?";
+            buttonAjuda.UseVisualStyleBackColor = false;
+            buttonAjuda.Click += buttonAjuda_Click;
+            buttonAjuda.KeyDown += buttonAjuda_KeyDown;
             // 
             // label7
             // 
@@ -383,5 +401,6 @@
         private Label label7;
         private Panel panel4;
         private Panel panel5;
+        private Button buttonAjuda;
     }
 }

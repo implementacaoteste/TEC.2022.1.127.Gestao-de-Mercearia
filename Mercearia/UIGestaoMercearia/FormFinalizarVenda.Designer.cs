@@ -56,7 +56,7 @@ namespace UIGestaoMercearia
             buttonBuscarFormaPagamento.Location = new Point(542, 149);
             buttonBuscarFormaPagamento.Name = "buttonBuscarFormaPagamento";
             buttonBuscarFormaPagamento.Size = new Size(54, 43);
-            buttonBuscarFormaPagamento.TabIndex = 3;
+            buttonBuscarFormaPagamento.TabIndex = 2;
             buttonBuscarFormaPagamento.Text = "...";
             buttonBuscarFormaPagamento.UseVisualStyleBackColor = true;
             buttonBuscarFormaPagamento.Click += buttonBuscarFormaPagamento_Click;
@@ -69,7 +69,7 @@ namespace UIGestaoMercearia
             labelFormaPagamento.Location = new Point(25, 123);
             labelFormaPagamento.Name = "labelFormaPagamento";
             labelFormaPagamento.Size = new Size(250, 25);
-            labelFormaPagamento.TabIndex = 1;
+            labelFormaPagamento.TabIndex = 3;
             labelFormaPagamento.Text = "FORMA DE PAGAMENTO";
             // 
             // textBoxFormaPagamento
@@ -80,7 +80,7 @@ namespace UIGestaoMercearia
             textBoxFormaPagamento.Location = new Point(25, 149);
             textBoxFormaPagamento.Name = "textBoxFormaPagamento";
             textBoxFormaPagamento.Size = new Size(511, 43);
-            textBoxFormaPagamento.TabIndex = 2;
+            textBoxFormaPagamento.TabIndex = 3;
             textBoxFormaPagamento.TabStop = false;
             // 
             // textBoxValorPago
@@ -91,7 +91,7 @@ namespace UIGestaoMercearia
             textBoxValorPago.Location = new Point(894, 149);
             textBoxValorPago.Name = "textBoxValorPago";
             textBoxValorPago.Size = new Size(223, 43);
-            textBoxValorPago.TabIndex = 5;
+            textBoxValorPago.TabIndex = 1;
             textBoxValorPago.Visible = false;
             textBoxValorPago.KeyPress += textBoxValorPago_KeyPress;
             // 
@@ -104,7 +104,7 @@ namespace UIGestaoMercearia
             labelValorPago.Location = new Point(894, 123);
             labelValorPago.Name = "labelValorPago";
             labelValorPago.Size = new Size(143, 25);
-            labelValorPago.TabIndex = 4;
+            labelValorPago.TabIndex = 1;
             labelValorPago.Text = "VALOR PAGO";
             labelValorPago.Visible = false;
             // 
@@ -154,7 +154,7 @@ namespace UIGestaoMercearia
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
             label3.Size = new Size(1143, 93);
-            label3.TabIndex = 0;
+            label3.TabIndex = 5;
             label3.Text = "FINALIZAR VENDA";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -178,7 +178,7 @@ namespace UIGestaoMercearia
             textBoxTotal.Location = new Point(623, 149);
             textBoxTotal.Name = "textBoxTotal";
             textBoxTotal.Size = new Size(237, 43);
-            textBoxTotal.TabIndex = 2;
+            textBoxTotal.TabIndex = 0;
             // 
             // labelTotal
             // 
@@ -189,7 +189,7 @@ namespace UIGestaoMercearia
             labelTotal.Location = new Point(623, 123);
             labelTotal.Name = "labelTotal";
             labelTotal.Size = new Size(79, 25);
-            labelTotal.TabIndex = 1;
+            labelTotal.TabIndex = 0;
             labelTotal.Text = "TOTAL";
             labelTotal.Visible = false;
             // 
@@ -202,17 +202,17 @@ namespace UIGestaoMercearia
             labelExTroco.Location = new Point(142, 401);
             labelExTroco.Name = "labelExTroco";
             labelExTroco.Size = new Size(709, 135);
-            labelExTroco.TabIndex = 5;
+            labelExTroco.TabIndex = 6;
             labelExTroco.Text = "TROCO: R$";
             // 
             // buttonCadastrarCliente
             // 
             buttonCadastrarCliente.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCadastrarCliente.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonCadastrarCliente.Location = new Point(321, 763);
+            buttonCadastrarCliente.Location = new Point(284, 574);
             buttonCadastrarCliente.Name = "buttonCadastrarCliente";
             buttonCadastrarCliente.Size = new Size(530, 69);
-            buttonCadastrarCliente.TabIndex = 39;
+            buttonCadastrarCliente.TabIndex = 4;
             buttonCadastrarCliente.Text = "CADASTRAR CLIENTE";
             buttonCadastrarCliente.UseVisualStyleBackColor = true;
             buttonCadastrarCliente.Click += button1_Click;
@@ -227,9 +227,10 @@ namespace UIGestaoMercearia
             buttonAjuda.Location = new Point(12, 12);
             buttonAjuda.Name = "buttonAjuda";
             buttonAjuda.Size = new Size(76, 60);
-            buttonAjuda.TabIndex = 40;
+            buttonAjuda.TabIndex = 5;
             buttonAjuda.Text = "?";
             buttonAjuda.UseVisualStyleBackColor = false;
+            buttonAjuda.Click += buttonAjuda_Click;
             // 
             // FormFinalizarVenda
             // 
