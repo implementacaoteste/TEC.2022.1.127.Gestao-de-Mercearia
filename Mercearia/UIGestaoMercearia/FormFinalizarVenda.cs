@@ -27,6 +27,9 @@ namespace UIGestaoMercearia
                 labelFormaPagamento.Visible = true;
                 textBoxFormaPagamento.Text = FormaPagamento.Tipo;
                 pictureBox1.Visible = false;
+                labelExTroco.Visible = true;
+                labelTroco.Visible = true;
+                buttonCadastrarCliente.Visible = true;
             }
             else if (FormaPagamento.Tipo.ToUpper() == "PIX")
             {
@@ -38,6 +41,7 @@ namespace UIGestaoMercearia
                 labelExTroco.Visible = false;
                 labelTroco.Visible = false;
                 labelTotal.Visible = true;
+                buttonCadastrarCliente.Visible = false;
             }
             else if (FormaPagamento.Tipo.ToUpper() == "CARTÃO DE DÉBITO")
             {
