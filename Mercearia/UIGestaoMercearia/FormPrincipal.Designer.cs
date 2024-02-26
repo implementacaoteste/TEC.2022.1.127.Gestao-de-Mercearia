@@ -93,7 +93,7 @@ namespace UIGestaoMercearia
             buttonUsuario.FlatStyle = FlatStyle.Flat;
             buttonUsuario.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonUsuario.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonUsuario.Location = new Point(15, 597);
+            buttonUsuario.Location = new Point(15, 517);
             buttonUsuario.Name = "buttonUsuario";
             buttonUsuario.Size = new Size(399, 73);
             buttonUsuario.TabIndex = 8;
@@ -202,7 +202,7 @@ namespace UIGestaoMercearia
             buttonGrupoUsuario.FlatStyle = FlatStyle.Flat;
             buttonGrupoUsuario.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             buttonGrupoUsuario.ForeColor = Color.FromArgb(50, 153, 204);
-            buttonGrupoUsuario.Location = new Point(15, 517);
+            buttonGrupoUsuario.Location = new Point(15, 596);
             buttonGrupoUsuario.Name = "buttonGrupoUsuario";
             buttonGrupoUsuario.Size = new Size(399, 74);
             buttonGrupoUsuario.TabIndex = 7;
