@@ -87,9 +87,9 @@
             labelS.ForeColor = Color.White;
             labelS.Location = new Point(408, 20);
             labelS.Name = "labelS";
-            labelS.Size = new Size(82, 29);
+            labelS.Size = new Size(79, 29);
             labelS.TabIndex = 0;
-            labelS.Text = "Saldo:";
+            labelS.Text = "Lucro:";
             // 
             // labelGs
             // 

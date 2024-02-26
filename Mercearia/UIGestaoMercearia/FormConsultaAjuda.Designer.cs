@@ -245,9 +245,9 @@
             label10.ForeColor = Color.White;
             label10.Location = new Point(20, 90);
             label10.Name = "label10";
-            label10.Size = new Size(146, 28);
+            label10.Size = new Size(178, 28);
             label10.TabIndex = 13;
-            label10.Text = "F11 - Estatística";
+            label10.Text = "F11 - Configuração";
             // 
             // label12
             // 
@@ -257,9 +257,9 @@
             label12.ForeColor = Color.White;
             label12.Location = new Point(20, 118);
             label12.Name = "label12";
-            label12.Size = new Size(181, 28);
+            label12.Size = new Size(149, 28);
             label12.TabIndex = 14;
-            label12.Text = "F12 - Configuração";
+            label12.Text = "F12 - Estatística";
             // 
             // label13
             // 
@@ -667,7 +667,6 @@
             Name = "FormConsultaAjuda";
             ShowIcon = false;
             StartPosition = FormStartPosition.Manual;
-            WindowState = FormWindowState.Minimized;
             KeyDown += FormConsultaAjuda_KeyDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
