@@ -217,7 +217,6 @@
             textBoxQuantidade.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxQuantidade.Location = new Point(1024, 257);
             textBoxQuantidade.Name = "textBoxQuantidade";
-            textBoxQuantidade.ReadOnly = true;
             textBoxQuantidade.Size = new Size(179, 72);
             textBoxQuantidade.TabIndex = 10;
             textBoxQuantidade.Text = "1";
