@@ -94,7 +94,7 @@
             buttonAjuda.TabIndex = 23;
             buttonAjuda.Text = "?";
             buttonAjuda.UseVisualStyleBackColor = false;
-            buttonAjuda.Click += buttonAjuda_Click;
+            buttonAjuda.KeyDown += buttonAjuda_KeyDown;
             // 
             // labelPDV
             // 
@@ -277,6 +277,7 @@
             dataGridView1.Size = new Size(758, 309);
             dataGridView1.TabIndex = 11;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.Click += dataGridView1_Click;
             // 
             // NomeProduto
             // 

@@ -100,7 +100,7 @@ namespace UIGestaoMercearia
             if (e.KeyCode == Keys.F11)
                 buttonCancelar_Click(sender, e);
             else if (e.KeyCode == Keys.F1)
-                buttonAjuda_Click(sender, e);
+                buttonAjuda_KeyDown(sender, e);
             else if (e.KeyCode == Keys.Escape)
                 Close();
         }
@@ -181,15 +181,6 @@ namespace UIGestaoMercearia
         {
 
         }
-
-        private void buttonAjuda_Click(object sender, EventArgs e)
-        {
-            using (FormConsultaAjuda frm = new FormConsultaAjuda())
-            {
-                frm.ShowDialog();
-            }
-        }
-
         private void subtotal1_Click(object sender, EventArgs e)
         {
 
@@ -201,6 +192,19 @@ namespace UIGestaoMercearia
         }
 
         private void textBoxQuantidade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAjuda_KeyDown(object sender, KeyEventArgs e)
+        {
+            using (FormConsultaAjuda frm = new FormConsultaAjuda())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
         {
 
         }

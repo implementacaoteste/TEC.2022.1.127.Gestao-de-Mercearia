@@ -141,5 +141,13 @@ namespace UIGestaoMercearia
                 frm.ShowDialog();
             }
         }
+
+        private void buttonAjuda_KeyDown(object sender, KeyEventArgs e)
+        {
+            using (FormConsultaAjuda frm = new FormConsultaAjuda())
+            {
+                frm.ShowDialog();
+            }
+        }
     }
 }
