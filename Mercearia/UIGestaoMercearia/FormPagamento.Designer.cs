@@ -148,6 +148,7 @@
             buttonAjuda.Text = "?";
             buttonAjuda.UseVisualStyleBackColor = false;
             buttonAjuda.Click += buttonAjuda_Click;
+            buttonAjuda.KeyDown += buttonAjuda_KeyDown;
             // 
             // label4
             // 

@@ -224,13 +224,14 @@ namespace UIGestaoMercearia
             buttonAjuda.Cursor = Cursors.Help;
             buttonAjuda.Font = new Font("Swis721 Blk BT", 24F, FontStyle.Regular, GraphicsUnit.Point);
             buttonAjuda.ForeColor = Color.White;
-            buttonAjuda.Location = new Point(12, 12);
+            buttonAjuda.Location = new Point(12, 15);
             buttonAjuda.Name = "buttonAjuda";
             buttonAjuda.Size = new Size(76, 60);
             buttonAjuda.TabIndex = 5;
             buttonAjuda.Text = "?";
             buttonAjuda.UseVisualStyleBackColor = false;
             buttonAjuda.Click += buttonAjuda_Click;
+            buttonAjuda.KeyDown += buttonAjuda_KeyDown;
             // 
             // FormFinalizarVenda
             // 

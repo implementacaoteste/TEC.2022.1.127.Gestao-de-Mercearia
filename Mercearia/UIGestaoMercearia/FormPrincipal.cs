@@ -64,8 +64,8 @@ namespace UIGestaoMercearia
                 pictureBoxEstatistica_Click(sender, e);
             else if (e.KeyCode == Keys.F11)
                 pictureBoxConfiguracao_Click(sender, e);
-            else if(e.KeyCode == Keys.F1)
-                buttonAjuda_Click(sender, e);
+            else if (e.KeyCode == Keys.F1)
+                buttonAjuda_KeyDown(sender, e);
             else if (e.KeyCode == Keys.Escape)
                 Close();
         }
@@ -250,6 +250,13 @@ namespace UIGestaoMercearia
         private void pictureBox2_Click_2(object sender, EventArgs e)
         {
 
+        }
+        private void buttonAjuda_KeyDown(object sender, KeyEventArgs e)
+        {
+            using (FormConsultaAjuda frm = new FormConsultaAjuda())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void buttonAjuda_Click(object sender, EventArgs e)

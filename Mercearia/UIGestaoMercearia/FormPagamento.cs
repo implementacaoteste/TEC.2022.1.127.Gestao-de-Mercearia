@@ -180,7 +180,7 @@ namespace UIGestaoMercearia
             else if (e.KeyCode == Keys.Up)
                 bindingSourcePagamento.MovePrevious();
             else if (e.KeyCode == Keys.F1)
-                buttonAjuda_Click(sender, e);
+                buttonAjuda_KeyDown(sender, e);
             //else if(e.KeyCode == Keys.F2)
 
         }
@@ -189,6 +189,13 @@ namespace UIGestaoMercearia
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
+        }
+        private void buttonAjuda_KeyDown(object sender, KeyEventArgs e)
+        {
+            using (FormConsultaAjuda frm = new FormConsultaAjuda())
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void buttonAjuda_Click(object sender, EventArgs e)
