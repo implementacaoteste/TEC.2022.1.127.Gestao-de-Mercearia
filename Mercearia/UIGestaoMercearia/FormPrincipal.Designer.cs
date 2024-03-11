@@ -358,7 +358,7 @@ namespace UIGestaoMercearia
             panel3.Location = new Point(399, 59);
             panel3.Name = "panel3";
             panel3.Size = new Size(1242, 91);
-            panel3.TabIndex = 1;
+            panel3.TabIndex = 0;
             panel3.Paint += panel3_Paint;
             // 
             // labelPDV
@@ -371,7 +371,7 @@ namespace UIGestaoMercearia
             labelPDV.Location = new Point(393, 0);
             labelPDV.Name = "labelPDV";
             labelPDV.Size = new Size(410, 67);
-            labelPDV.TabIndex = 2;
+            labelPDV.TabIndex = 0;
             labelPDV.Text = "CAIXA ABERTO";
             // 
             // pictureBox3
